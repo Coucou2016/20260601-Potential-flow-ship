@@ -1,0 +1,7 @@
+implementation_block,source,formula_or_convention
+wave_kinematics,"Faltinsen Eq. 9.90, 9.107, 9.116",omega_e=omega0+kU; zeta=zeta_a sin(omega_e t-kx)
+finite_length_phase,Faltinsen Eq. 9.95-9.98,constant-section exact strip integrals / long-wave limits
+excitation,Faltinsen Eq. 9.110-9.117,F_hat=F_c-iF_s; includes generalized FK and diffraction analogy
+motion_equation,Faltinsen Eq. 9.119,[-omega_e^2(M+A)+i omega_e B+C]xi=F_exc
+response_amplitude,Faltinsen Eq. 9.120,RAO_j=abs(xi_j)/zeta_a
+point_acceleration,rigid-body small-angle kinematics,"a_z(x)=-omega_e^2(eta3+x eta5), x positive forward"

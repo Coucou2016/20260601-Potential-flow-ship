@@ -1,0 +1,28 @@
+{
+  "axis": "stations",
+  "values": [
+    57,
+    85,
+    113
+  ],
+  "stations": 85,
+  "grid_level": 1,
+  "body_panels": 60,
+  "integration_route": "analytic_straight_midpoint_curved",
+  "free": 192,
+  "control": 96,
+  "history_steps": 128,
+  "history_quadrature": 48,
+  "history_k_max": 25.0,
+  "frequency_index": 4,
+  "config_sha256": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+  "case_ids": [
+    "fn167",
+    "fn226",
+    "fn282"
+  ],
+  "relative_limit": 0.05,
+  "near_zero_threshold": 0.02,
+  "absolute_limit": 0.001,
+  "scope": "Single-axis diagnostic; not full-band or physical acceptance"
+}

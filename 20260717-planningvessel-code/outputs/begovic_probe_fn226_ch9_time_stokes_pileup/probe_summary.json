@@ -1,0 +1,39 @@
+{
+  "fn_b": 2.26,
+  "speed_mps": 4.6,
+  "running_trim_deg": 4.174,
+  "mean_wetted_length_over_b": 2.3921433109895345,
+  "keel_wetted_length_m": 1.3,
+  "base_route": "faltinsen_ch9",
+  "phase_length_route": "mean",
+  "phase_length_m": 1.0142687638595627,
+  "force_component_route": "time_plus_stokes_body_forward_speed",
+  "wagner_pileup_factor": 1.5707963267948966,
+  "sample_omega_rad_s": [
+    6.575571103388235,
+    7.957739901990668,
+    9.63043716691076,
+    11.654731263912689,
+    14.104526978352752,
+    17.069263698860603,
+    20.657180752563452,
+    37.18292535461421
+  ],
+  "high_frequency_reference_rad_s": 37.18292535461421,
+  "correction_metadata": {
+    "source": "ma2005_matched_bie_dynamic_minus_high_frequency_limit",
+    "provider_route": "matched_bie_station_sweep",
+    "force_assembly_route": "eq32_stokes_body_plus_end",
+    "planing_base_load_source": "zarnick1978_linearized_momentum_strip",
+    "double_counting_control": "subtract_same_geometry_matched_bie_high_frequency_matrix",
+    "force_component_route": "time_plus_stokes_body_forward_speed",
+    "station_count": 15,
+    "body_panels_per_section": 24,
+    "free_surface_inner_panels": 12,
+    "free_surface_outer_panels": 24,
+    "wagner_pileup_factor": 1.5707963267948966,
+    "response_calibration_used": false,
+    "validity_status": "a1_station_hull_matched_sweep_free_surface_marching_not_benchmark_validated"
+  },
+  "response_calibration_used": false
+}

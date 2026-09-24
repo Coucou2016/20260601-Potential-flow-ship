@@ -1,0 +1,5 @@
+scope,metric,eligible_point_count,median_relative_error,nrmse,median_limit,nrmse_limit,status
+zarnick_base,heave_motion,7,0.7019316444902886,0.5641464669926078,0.15,0.2,FAIL
+zarnick_base,pitch_motion,7,0.2820128440540213,0.32469479870419343,0.15,0.2,FAIL
+zarnick_plus_matched_delta,heave_motion,7,0.2606955187643572,0.3797772115040636,0.15,0.2,FAIL
+zarnick_plus_matched_delta,pitch_motion,7,0.4008891938177886,0.3820265174273094,0.15,0.2,FAIL

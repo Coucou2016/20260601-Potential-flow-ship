@@ -1,0 +1,5 @@
+scope,metric,eligible_point_count,median_relative_error,nrmse,median_limit,nrmse_limit,status
+faltinsen_ch9,heave_motion,5,0.531733905998489,1.5446581289898118,0.15,0.2,FAIL
+faltinsen_ch9,pitch_motion,5,0.4462170667451567,1.4920060759418945,0.15,0.2,FAIL
+nonlinear_2dt_raw_added_and_damping,heave_motion,5,0.32030095405886727,0.30851942937057997,0.15,0.2,FAIL
+nonlinear_2dt_raw_added_and_damping,pitch_motion,5,0.13264355347750603,0.15827744682182399,0.15,0.2,PASS

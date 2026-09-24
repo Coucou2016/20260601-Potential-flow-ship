@@ -1,0 +1,5 @@
+configuration,metric,scope,eligible_point_count,reference_peak_is_interior,peak_is_resolved,computed_peak_lambda_over_l,reference_peak_lambda_over_l,computed_peak_omega_e_rad_s,reference_peak_omega_e_rad_s,peak_frequency_relative_error,limit,status,reason
+A,heave,full_measured_range_including_nonlinear_resonance,5,True,True,3.0,4.0,11.540772492860068,9.147414581544645,0.2616431003514523,0.1,FAIL,peak is bracketed inside the declared scope
+A,pitch,full_measured_range_including_nonlinear_resonance,5,True,True,3.0,3.0,11.540772492860068,11.540772492860068,0.0,0.1,PASS,peak is bracketed inside the declared scope
+B,heave,full_measured_range_including_nonlinear_resonance,6,True,True,3.0,4.0,15.191643547542252,11.885567872556283,0.27815883182323003,0.1,FAIL,peak is bracketed inside the declared scope
+B,pitch,full_measured_range_including_nonlinear_resonance,6,True,True,3.0,4.0,15.191643547542252,11.885567872556283,0.27815883182323003,0.1,FAIL,peak is bracketed inside the declared scope

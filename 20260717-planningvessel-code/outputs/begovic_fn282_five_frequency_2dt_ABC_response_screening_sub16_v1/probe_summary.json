@@ -1,0 +1,61 @@
+{
+  "fn_b": 2.82,
+  "speed_mps": 5.75,
+  "running_trim_deg": 4.024,
+  "mean_wetted_length_over_b": 2.7358490566037736,
+  "keel_wetted_length_m": 1.4563822514041216,
+  "reported_mean_wetted_length_m": 1.16,
+  "base_route": "faltinsen_ch9",
+  "phase_length_route": "mean",
+  "frequency_coordinate_route": "source_encounter",
+  "phase_length_m": 1.16,
+  "restoring_route": "savitsky_dynamic_lift",
+  "force_component_route": "time_derivative_only",
+  "hydrodynamic_correction_source": "nonlinear_2dt_csv",
+  "forced_motion_csv": [
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\begovic_fn282_five_frequency_screening_sub16_v1\\identified_coefficients.csv"
+  ],
+  "excitation_route": "faltinsen_global",
+  "phase_resolved_matrix_application": "replace_with_matched_bie",
+  "wagner_pileup_factor": 1.0,
+  "transom_force_cutoff_length_beams": 0.0,
+  "transom_force_recovery_profile": "hard_zero",
+  "momentum_rate_formulation": "relative_velocity_squared",
+  "sample_omega_rad_s": [
+    7.516249999903586,
+    8.924499998413234,
+    10.457749999870972,
+    12.101750002324813,
+    13.855000000506912
+  ],
+  "high_frequency_reference_rad_s": 24.939,
+  "correction_metadata": {
+    "source": "sun_nonlinear_2dt_forced_motion_precalculation",
+    "source_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\begovic_fn282_five_frequency_screening_sub16_v1\\identified_coefficients.csv",
+    "source_csv_sha256": "cc5ab84b7133f1beeb67c15a778646c33955b1b05fbbb3270d2a47a1cd77a4de",
+    "selected_component": "total",
+    "restoring_subtraction": "nonlinear_2dt_quasistatic_target_state",
+    "restoring_matrices_sha256": null,
+    "restoring_matrices_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\begovic_fn282_five_frequency_screening_sub16_v1\\restoring_matrices.csv",
+    "restoring_matrices_csv_sha256": "fd8f4e298f61613348aec0e98a1ab72b0842390f84c78fc391c35d03928a26f9",
+    "target_context": {
+      "target_identifier": "begovic2014_monohedral_fn282_five_frequency_screening",
+      "beam_m": 0.424,
+      "deadrise_deg": 16.7,
+      "trim_deg": 4.024,
+      "fn_b": 2.82,
+      "mean_wetted_length_over_b": 2.735849056604,
+      "lcg_from_transom_m": 0.6969999999999992,
+      "rho_water_kg_m3": 1000.0,
+      "gravity_m_s2": 9.80665,
+      "matrix_coordinate_contract": "heave_up_pitch_bow_up_force_and_moment_about_cg"
+    },
+    "target_context_required": true,
+    "maximum_harmonic_fit_residual_nrmse": 0.04298414309962873,
+    "matrix_contract": "heave_up_pitch_bow_up_force_and_moment_about_cg",
+    "application_contract": "replace_with_matched_bie",
+    "complete_matrix_contract": "replace_A_B_C_together",
+    "response_calibration_used": false
+  },
+  "response_calibration_used": false
+}

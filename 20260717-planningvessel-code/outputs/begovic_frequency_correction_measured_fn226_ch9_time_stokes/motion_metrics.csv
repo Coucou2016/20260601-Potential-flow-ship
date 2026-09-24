@@ -1,0 +1,9 @@
+scope,metric,eligible_point_count,median_relative_error,nrmse,median_limit,nrmse_limit,status
+faltinsen_ch9,heave_motion,7,0.5732837733668714,3.9187897039752184,0.15,0.2,FAIL
+faltinsen_ch9,pitch_motion,7,0.6621381863629547,3.7458965895966156,0.15,0.2,FAIL
+matched_delta_added_only,heave_motion,7,0.45809663129974065,1.675530963887916,0.15,0.2,FAIL
+matched_delta_added_only,pitch_motion,7,0.6055524235368521,1.3694957043541123,0.15,0.2,FAIL
+matched_delta_damping_only,heave_motion,7,0.5761214874108885,1.62583549091603,0.15,0.2,FAIL
+matched_delta_damping_only,pitch_motion,7,0.6504778522695093,1.623314763671235,0.15,0.2,FAIL
+matched_delta_added_and_damping,heave_motion,7,0.4546944585577653,1.1571705609386798,0.15,0.2,FAIL
+matched_delta_added_and_damping,pitch_motion,7,0.6021627036433084,0.9620024535581828,0.15,0.2,FAIL

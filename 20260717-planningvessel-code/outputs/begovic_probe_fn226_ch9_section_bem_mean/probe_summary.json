@@ -1,0 +1,40 @@
+{
+  "fn_b": 2.26,
+  "speed_mps": 4.6,
+  "running_trim_deg": 4.174,
+  "mean_wetted_length_over_b": 2.3921433109895345,
+  "keel_wetted_length_m": 1.3,
+  "base_route": "faltinsen_ch9",
+  "phase_length_route": "mean",
+  "phase_length_m": 1.0142687638595627,
+  "force_component_route": "time_derivative_only",
+  "hydrodynamic_correction_source": "section_bem",
+  "excitation_route": "faltinsen_global",
+  "wagner_pileup_factor": 1.5707963267948966,
+  "sample_omega_rad_s": [
+    6.575571103388235,
+    7.957739901990668,
+    9.63043716691076,
+    11.654731263912689,
+    14.104526978352752,
+    17.069263698860603,
+    20.657180752563452,
+    37.18292535461421
+  ],
+  "high_frequency_reference_rad_s": 37.18292535461421,
+  "correction_metadata": {
+    "source": "classical_independent_section_bem_radiation_diagnostic",
+    "base_load_source": "supplied_by_longitudinal_frequency_model",
+    "section_solver": "pdstrip_style",
+    "station_count": 15,
+    "body_panels_per_section": 24,
+    "free_surface_panels_per_side": 12,
+    "wagner_pileup_factor": 1.5707963267948966,
+    "kernel_coordinate_convention": "heave_up_x_positive_aft_pitch_kernel",
+    "response_coordinate_convention": "heave_up_pitch_bow_up",
+    "coordinate_transform": "T=diag(1,-1); K_response=T*K_kernel*T",
+    "response_calibration_used": false,
+    "validity_status": "diagnostic_control_not_gate1_replacement"
+  },
+  "response_calibration_used": false
+}

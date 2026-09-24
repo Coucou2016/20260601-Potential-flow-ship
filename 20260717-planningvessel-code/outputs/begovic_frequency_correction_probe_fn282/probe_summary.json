@@ -1,0 +1,29 @@
+{
+  "fn_b": 2.82,
+  "speed_mps": 5.750324779,
+  "running_trim_deg": 4.516354222803499,
+  "mean_wetted_length_over_b": 2.5979912075926395,
+  "sample_omega_rad_s": [
+    7.512992149521591,
+    10.086626173755775,
+    13.541878594345878,
+    18.180754665136984,
+    24.408713893795365,
+    43.93568500883166
+  ],
+  "high_frequency_reference_rad_s": 43.93568500883166,
+  "correction_metadata": {
+    "source": "ma2005_matched_bie_dynamic_minus_high_frequency_limit",
+    "provider_route": "matched_bie_station_sweep",
+    "force_assembly_route": "eq32_stokes_body_plus_end",
+    "planing_base_load_source": "zarnick1978_linearized_momentum_strip",
+    "double_counting_control": "subtract_same_geometry_matched_bie_high_frequency_matrix",
+    "station_count": 15,
+    "body_panels_per_section": 24,
+    "free_surface_inner_panels": 12,
+    "free_surface_outer_panels": 24,
+    "response_calibration_used": false,
+    "validity_status": "a1_station_hull_matched_sweep_free_surface_marching_not_benchmark_validated"
+  },
+  "response_calibration_used": false
+}

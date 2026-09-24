@@ -1,0 +1,244 @@
+{
+  "mode": "quasistatic",
+  "response_calibration_used": false,
+  "numerical_configuration": {
+    "body_panels_per_side": 12,
+    "free_surface_panels_per_side": 15,
+    "bem_substeps_per_plane": 32,
+    "element_interpolation": "linear_node",
+    "pressure_interpolation": "constant_panel",
+    "knuckle_separation_model": "artificial_surface",
+    "jet_cut_enabled": true,
+    "jet_cut_distance_fraction": 0.25,
+    "jet_cut_threshold_over_beam": 0.03325555538987225,
+    "jet_cut_threshold_m": 0.014100355485305834,
+    "free_surface_remesh_updates_per_ground_plane_interval": 8,
+    "free_surface_remesh_interval_s": 0.002861086253234589,
+    "free_surface_smoothing_enabled": true,
+    "free_surface_smoothing_node_count": 7,
+    "free_surface_smoothing_updates_per_ground_plane_interval": 8,
+    "free_surface_smoothing_interval_s": 0.002861086253234589,
+    "uniform_near_body_panels": 6
+  },
+  "restoring_matrix": [
+    [
+      5552.9044771668005,
+      -3924.633622313902
+    ],
+    [
+      1044.1868817601353,
+      1251.729176946256
+    ]
+  ],
+  "coarse_matrix": [
+    [
+      5552.9044771668005,
+      -3924.633622313902
+    ],
+    [
+      1044.1868817601353,
+      1251.729176946256
+    ]
+  ],
+  "refined_matrix": [
+    [
+      5552.9044771668005,
+      -3924.633622313902
+    ],
+    [
+      1044.1868817601353,
+      1251.729176946256
+    ]
+  ],
+  "relative_step_change": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "heave_step_m": 0.00424,
+  "pitch_step_rad": 0.0017453292519943296,
+  "richardson_extrapolation": false,
+  "step_convergence_evaluated": false,
+  "max_potential_bvp_relative_residual": 1.8502052903673794e-15,
+  "max_pressure_bvp_relative_residual": 2.6026072098208584e-15,
+  "source": "nonlinear_2dt_quasistatic_load_derivatives",
+  "load_cases": [
+    {
+      "stage_and_motion": "coarse_heave_plus",
+      "heave_m": 0.00424,
+      "pitch_rad": 0.0,
+      "trim_rad": 0.07023204910025183,
+      "average_wetted_length_m": 1.0995790422836882,
+      "chine_wetting_x_from_leading_m": 0.5755828312560056,
+      "keel_wetted_length_m": 1.387370457911691,
+      "transom_draft_m": 0.09759839226123825,
+      "station_count": 307,
+      "final_jet_cut_count": 46,
+      "separated_state_count": 207,
+      "separation_event_count": 1,
+      "first_separation_time_s": 0.0711285069765875,
+      "first_separation_x_from_leading_m": 0.40901201617966204,
+      "minimum_jet_normal_distance_ratio": 0.08695377492960588,
+      "minimum_jet_projection_ratio": 1.0250067953161903,
+      "maximum_jet_projection_ratio": 1.0707565663377907,
+      "total_vertical_force_n": 321.6554599262537,
+      "total_pitch_moment_nm": -54.21206393253844,
+      "bem_vertical_force_n": 315.52334362706097,
+      "bem_pitch_moment_nm": -57.90743372830687,
+      "front_vertical_force_n": 6.1321162991927025,
+      "front_pitch_moment_nm": 3.695369795768425,
+      "longitudinal_bem_bins": {
+        "aft_post_chine": {
+          "vertical_force_n": 99.1231466915319,
+          "pitch_moment_nm": -55.10916786700085
+        },
+        "middle_post_chine": {
+          "vertical_force_n": 84.98136421190875,
+          "pitch_moment_nm": -22.418079079505446
+        },
+        "forward_post_chine": {
+          "vertical_force_n": 76.65407421663888,
+          "pitch_moment_nm": 2.135039308495429
+        },
+        "pre_chine": {
+          "vertical_force_n": 54.76475850698148,
+          "pitch_moment_nm": 17.484773909703968
+        }
+      }
+    },
+    {
+      "stage_and_motion": "coarse_heave_minus",
+      "heave_m": -0.00424,
+      "pitch_rad": -0.0,
+      "trim_rad": 0.07023204910025183,
+      "average_wetted_length_m": 1.2204209577165044,
+      "chine_wetting_x_from_leading_m": 0.5755828312560056,
+      "keel_wetted_length_m": 1.5082123733445072,
+      "transom_draft_m": 0.10609934930321245,
+      "station_count": 336,
+      "final_jet_cut_count": 46,
+      "separated_state_count": 236,
+      "separation_event_count": 1,
+      "first_separation_time_s": 0.07112850367596985,
+      "first_separation_x_from_leading_m": 0.40901199720003856,
+      "minimum_jet_normal_distance_ratio": 0.08695376942693944,
+      "minimum_jet_projection_ratio": 1.0250068083728658,
+      "maximum_jet_projection_ratio": 1.0707565685650675,
+      "total_vertical_force_n": 368.74408989262815,
+      "total_pitch_moment_nm": -45.357359175212494,
+      "bem_vertical_force_n": 362.61197359343544,
+      "bem_pitch_moment_nm": -49.793745650232154,
+      "front_vertical_force_n": 6.1321162991927025,
+      "front_pitch_moment_nm": 4.436386475019662,
+      "longitudinal_bem_bins": {
+        "aft_post_chine": {
+          "vertical_force_n": 107.13666893970205,
+          "pitch_moment_nm": -59.605416283153914
+        },
+        "middle_post_chine": {
+          "vertical_force_n": 89.9448357478295,
+          "pitch_moment_nm": -23.798848513279232
+        },
+        "forward_post_chine": {
+          "vertical_force_n": 79.849178105142,
+          "pitch_moment_nm": 2.152263284572072
+        },
+        "pre_chine": {
+          "vertical_force_n": 85.68129080076189,
+          "pitch_moment_nm": 31.458255861628942
+        }
+      }
+    },
+    {
+      "stage_and_motion": "coarse_pitch_plus",
+      "heave_m": 0.0,
+      "pitch_rad": 0.0017453292519943296,
+      "trim_rad": 0.07197737835224616,
+      "average_wetted_length_m": 1.1485451698797335,
+      "chine_wetting_x_from_leading_m": 0.5615793510198758,
+      "keel_wetted_length_m": 1.4293348453896715,
+      "transom_draft_m": 0.10305780846389587,
+      "station_count": 318,
+      "final_jet_cut_count": 46,
+      "separated_state_count": 218,
+      "separation_event_count": 1,
+      "first_separation_time_s": 0.07126231979189408,
+      "first_separation_x_from_leading_m": 0.40978148332730285,
+      "minimum_jet_normal_distance_ratio": 0.08225465596741985,
+      "minimum_jet_projection_ratio": 1.0254364657604218,
+      "maximum_jet_projection_ratio": 1.072395120153553,
+      "total_vertical_force_n": 351.9747030855704,
+      "total_pitch_moment_nm": -52.33096282141151,
+      "bem_vertical_force_n": 345.6912404686489,
+      "bem_pitch_moment_nm": -56.394633151226145,
+      "front_vertical_force_n": 6.283462616921512,
+      "front_pitch_moment_nm": 4.063670329814634,
+      "longitudinal_bem_bins": {
+        "aft_post_chine": {
+          "vertical_force_n": 105.17234218856879,
+          "pitch_moment_nm": -58.491667390870376
+        },
+        "middle_post_chine": {
+          "vertical_force_n": 89.4345925065353,
+          "pitch_moment_nm": -23.624292993157574
+        },
+        "forward_post_chine": {
+          "vertical_force_n": 79.82012938364683,
+          "pitch_moment_nm": 2.036073371123628
+        },
+        "pre_chine": {
+          "vertical_force_n": 71.26417638989797,
+          "pitch_moment_nm": 23.685253861678206
+        }
+      }
+    },
+    {
+      "stage_and_motion": "coarse_pitch_minus",
+      "heave_m": -0.0,
+      "pitch_rad": -0.0017453292519943296,
+      "trim_rad": 0.0684867198482575,
+      "average_wetted_length_m": 1.172032776993265,
+      "chine_wetting_x_from_leading_m": 0.5902988434500595,
+      "keel_wetted_length_m": 1.4671821987182947,
+      "transom_draft_m": 0.10063989358604718,
+      "station_count": 325,
+      "final_jet_cut_count": 48,
+      "separated_state_count": 221,
+      "separation_event_count": 1,
+      "first_separation_time_s": 0.0736947982374913,
+      "first_separation_x_from_leading_m": 0.4237690244080508,
+      "minimum_jet_normal_distance_ratio": 0.0915037862940013,
+      "minimum_jet_projection_ratio": 1.0232254413561435,
+      "maximum_jet_projection_ratio": 1.0690888200342745,
+      "total_vertical_force_n": 338.2751473568006,
+      "total_pitch_moment_nm": -47.96160372521334,
+      "bem_vertical_force_n": 332.29445221620654,
+      "bem_pitch_moment_nm": -52.02963593766145,
+      "front_vertical_force_n": 5.980695140594021,
+      "front_pitch_moment_nm": 4.068032212448113,
+      "longitudinal_bem_bins": {
+        "aft_post_chine": {
+          "vertical_force_n": 100.8101594994363,
+          "pitch_moment_nm": -56.068051447880976
+        },
+        "middle_post_chine": {
+          "vertical_force_n": 85.31184976962203,
+          "pitch_moment_nm": -22.55638261173953
+        },
+        "forward_post_chine": {
+          "vertical_force_n": 74.51124403857021,
+          "pitch_moment_nm": 1.8220744336760362
+        },
+        "pre_chine": {
+          "vertical_force_n": 71.661198908578,
+          "pitch_moment_nm": 24.77272368828303
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "begovic_target_2dt_time_convergence_audit_v1",
+  "fn_b": 2.82,
+  "case_code": "C7",
+  "coarse_to_fine_substeps": [
+    8,
+    16,
+    32
+  ],
+  "last_pair": [
+    16,
+    32
+  ],
+  "native_2dt_maximum_last_pair_relative_change": 0.032509410890305214,
+  "fixed_savitsky_maximum_last_pair_relative_change": 0.11618580403639647,
+  "maximum_finest_harmonic_fit_residual_nrmse": 0.0415028515353764,
+  "maximum_bvp_residual": 3.4839458241240923e-15,
+  "finest_native_heave_relative_error": 0.058330106959975724,
+  "finest_native_pitch_relative_error": 0.1338264113459578,
+  "response_calibration_used": false,
+  "checks": {
+    "native_2dt_last_pair_all_coefficients_le_5pct": true,
+    "finest_harmonic_residuals_le_5pct": true,
+    "all_bvp_residuals_le_1e_minus_10": true,
+    "single_point_heave_error_le_15pct": true,
+    "single_point_pitch_error_le_15pct": true
+  },
+  "status": "single_frequency_prototype_pass_not_gate2_acceptance",
+  "limitations": [
+    "Only one Begovic frequency at one speed is audited.",
+    "The native nonlinear 2D+t restoring matrix has not undergone an independent spatial Richardson study.",
+    "Gate 2 still requires the frozen multi-speed frequency coverage and aggregate metrics."
+  ],
+  "prototype_pass": true
+}
