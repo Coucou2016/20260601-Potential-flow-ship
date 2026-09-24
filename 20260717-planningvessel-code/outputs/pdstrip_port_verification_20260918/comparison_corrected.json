@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "a_reference": 295.6835836481728,
+      "b_reference": 1384.7784491617335,
+      "a_python": 295.6835836481679,
+      "b_python": 1384.7784491617342,
+      "a_error": 4.945377440890297e-12,
+      "b_error": 6.821210263296962e-13,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "a_reference": 346.78901545041947,
+      "b_reference": 1382.2928906888494,
+      "a_python": 346.78901545041174,
+      "b_python": 1382.2928906888403,
+      "a_error": 7.73070496506989e-12,
+      "b_error": 9.094947017729282e-12,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "a_reference": 489.81538329747696,
+      "b_reference": 1251.9222249656204,
+      "a_python": 489.81538329748116,
+      "b_python": 1251.9222249656161,
+      "a_error": 4.206412995699793e-12,
+      "b_error": 4.320099833421409e-12,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "a_reference": 749.7870269260461,
+      "b_reference": 964.6147981739899,
+      "a_python": 749.7870269260397,
+      "b_python": 964.6147981739894,
+      "a_error": 6.366462912410498e-12,
+      "b_error": 5.684341886080801e-13,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "a_reference": 1038.1828181880528,
+      "b_reference": 690.338004831566,
+      "a_python": 1038.1828181880478,
+      "b_python": 690.33800483153,
+      "a_error": 5.002220859751105e-12,
+      "b_error": 3.5925040720030665e-11,
+      "passed": true
+    },
+    {
+      "section": "edo_maximum_waterline",
+      "period_s": 1.6,
+      "a_reference": 341.9224681612085,
+      "b_reference": 1083.6600906277733,
+      "a_python": 341.9224681612143,
+      "b_python": 1083.6600906277909,
+      "a_error": 5.7980287238024175e-12,
+      "b_error": 1.750777300912887e-11,
+      "passed": true
+    },
+    {
+      "section": "edo_maximum_waterline",
+      "period_s": 2.0,
+      "a_reference": 370.2208203058058,
+      "b_reference": 1315.7634140573252,
+      "a_python": 370.2208203058037,
+      "b_python": 1315.763414057346,
+      "a_error": 2.0463630789890885e-12,
+      "b_error": 2.0691004465334117e-11,
+      "passed": true
+    },
+    {
+      "section": "edo_maximum_waterline",
+      "period_s": 3.0,
+      "a_reference": 521.380009299872,
+      "b_reference": 1414.9215974383426,
+      "a_python": 521.3800092998794,
+      "b_python": 1414.9215974383228,
+      "a_error": 7.389644451905042e-12,
+      "b_error": 1.978150976356119e-11,
+      "passed": true
+    },
+    {
+      "section": "edo_maximum_waterline",
+      "period_s": 5.0,
+      "a_reference": 846.7544214634943,
+      "b_reference": 1185.2829205662183,
+      "a_python": 846.7544214634454,
+      "b_python": 1185.2829205662704,
+      "a_error": 4.888534022029489e-11,
+      "b_error": 5.206857167650014e-11,
+      "passed": true
+    },
+    {
+      "section": "edo_maximum_waterline",
+      "period_s": 8.0,
+      "a_reference": 1222.1098473209754,
+      "b_reference": 875.0210018638254,
+      "a_python": 1222.109847321035,
+      "b_python": 875.0210018638293,
+      "a_error": 5.95719029661268e-11,
+      "b_error": 3.865352482534945e-12,
+      "passed": true
+    }
+  ],
+  "contract_sha256": "5fe652312e4a9fec7a65842ca7edf6443908bbf97eb919eea0795fc77817a520",
+  "wrapper_sha256": "2c997c477f81a3bf34ebe4f0dc9e4a312bc33ca7ee1d3f6a4819adec21e3a365",
+  "python_sha256": "11103d356cff5e9d93fd76185f6e65e709c26a83604d6bee75b0edeacd794835",
+  "command": [
+    "gfortran",
+    "-std=legacy",
+    "-O2",
+    "-fdefault-real-8",
+    "-fdefault-double-8",
+    "-o",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\pdstrip_port_verification_20260918\\reference.exe",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\pdstrip_port_verification_20260918\\reference.f90"
+  ],
+  "scope": "matched discretization implementation check; not experiment validation"
+}

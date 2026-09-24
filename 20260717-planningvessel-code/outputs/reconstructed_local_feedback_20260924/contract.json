@@ -1,0 +1,27 @@
+{
+  "stations": [
+    12,
+    42,
+    80
+  ],
+  "scope": "Frozen local feedback with exterior history held fixed, not coupled stability acceptance",
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_local_free_surface_step.py": "3ede8f0d59a5022120ae0fd25bc34dc9d8864bdb029545acd76a4e9fa4ee40c9",
+    "planing_seakeeping\\kernels\\linear_2p5d\\__init__.py": "e136ccd28a6eb679b85c134aaa1dbf8d029993e24802386f573d2f219c896c16",
+    "planing_seakeeping\\kernels\\linear_2p5d\\arc_integrals.py": "1a94390f6dd77d650eb811931d6c7570584e19cc6bca3ddec4878296e690bbf2",
+    "planing_seakeeping\\kernels\\linear_2p5d\\boundary_reconstruction.py": "c62de582c4b7d09ec479d4a43b62d08c03f74bd6694801d9b46e583e9a1d9d9c",
+    "planing_seakeeping\\kernels\\linear_2p5d\\formulation.py": "9038d6aff1e00cb9d53033745626ae99b6429711522ef2d492dea8a443247db7",
+    "planing_seakeeping\\kernels\\linear_2p5d\\panel_integrals.py": "770a59af1156f6af869044ca37f5f84af412cd8d5e13cdf7c35ff7ef4bbfb052",
+    "planing_seakeeping\\kernels\\linear_2p5d\\pressure_gradient.py": "7d6727e0df8203456939efe8609a8e27fc096b44b28cf09d80da59d42193fd0d",
+    "planing_seakeeping\\kernels\\linear_2p5d\\reconstructed_history.py": "1899a4f1ff91c67214a80deae9207209c9ec29d7b14f4e0f0246bf53430e6857",
+    "planing_seakeeping\\kernels\\linear_2p5d\\reconstructed_operators.py": "f395c5553125d4dd6f16c813b737348e28c3d65e07a1eb7a394d4bd4bd01d79d",
+    "planing_seakeeping\\kernels\\linear_2p5d\\sensitivity.py": "5397973ca70863905f3c6e8e55cd64cad49a4355e1a0bfa142f313a8aeb65c33",
+    "outputs\\reconstructed_free_20260924\\free_96\\contract.json": "dbfa6458d0a1a2b63f9e94eadf0979e98577aaa1c44725208f621dcffb244b5f",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn167.npz": "5f05d9aaae8a973429c71f235277aaa38ebbc04160b8d62ad3b284516cdcac22",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn226.npz": "70b80b85c1e6581f549895491488bb38efd31401aae316c2e9ff4b1db70f4b22",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn282.npz": "04515b4ec67312d2d8b6a7b346c93f82e210f31ffbc074a625f189db08d451a4",
+    "outputs\\reconstructed_free_20260924\\free_96\\free_surface_fn167.npz": "3ccfe10c6bd15e8397e9cb3b0a5158964403953ab1bf2297fbd2da67d94df620",
+    "outputs\\reconstructed_free_20260924\\free_96\\free_surface_fn226.npz": "913ce169f58563b79049853eb7a88aba639b619ecbad2cd7d7a189ba7f2fb952",
+    "outputs\\reconstructed_free_20260924\\free_96\\free_surface_fn282.npz": "44aff83ff109c7d925bd7ee50355f9649a67d865698a059683310d5050d61adc"
+  }
+}

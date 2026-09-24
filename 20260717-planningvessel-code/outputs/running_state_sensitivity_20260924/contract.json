@@ -1,0 +1,19 @@
+{
+  "input_sha256": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+  "mesh": {
+    "station_count": 29,
+    "body_panels_per_section": 36,
+    "free_surface_inner_panels": 18,
+    "free_surface_outer_panels": 36,
+    "frequency_samples": 9,
+    "frequency_sampling": "case_frequencies",
+    "history_steps": 64,
+    "history_quadrature_count": 32,
+    "history_k_max": 25.0
+  },
+  "excitation_route": "matched_domain_incident_diffraction",
+  "cutoff_quadrature": "clipped_linear",
+  "response_reference_read": false,
+  "recorded_before_solving": true,
+  "scope": "diagnostic calm-water state sensitivity; coarse screening mesh; not acceptance"
+}

@@ -1,0 +1,33 @@
+ +-no.of pressure points per section  0
+ Section hydrodynamic data?         yes
+ Transfer functions?                 no
+ Significant amplitudes?             no
+
+ Simple full V smoke case                                                        
+ In the following input data x,y,z are directed forward, to port side, up
+
+ Gravity acceleration             9.807
+ Water density                 1025.000
+ z of still waterline             0.000
+ z of water bottom               -0.100E+07
+ z for water drift velocity     999.000
+ Wave encounter angles            0.000
+ Offset file name: geomet.out
+ Number of sections                   5
+ Symmetry?                           no
+ Reference draft                  0.300
+ Section no.  1 at x=    -1.000
+ y:    -0.050     0.000     0.050
+ z:     0.000    -0.150     0.000
+ Section no.  2 at x=    -0.500
+ y:    -0.100     0.000     0.100
+ z:     0.000    -0.200     0.000
+ Section no.  3 at x=     0.000
+ y:    -0.150     0.000     0.150
+ z:     0.000    -0.250     0.000
+ Section no.  4 at x=     0.500
+ y:    -0.100     0.000     0.100
+ z:     0.000    -0.200     0.000
+ Section no.  5 at x=     1.000
+ y:    -0.050     0.000     0.050
+ z:     0.000    -0.150     0.000

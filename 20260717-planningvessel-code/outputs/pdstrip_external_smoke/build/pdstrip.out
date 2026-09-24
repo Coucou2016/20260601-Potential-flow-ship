@@ -1,0 +1,22 @@
+ +-no.of pressure points per section  0
+ Section hydrodynamic data?         yes
+ Transfer functions?                 no
+ Significant amplitudes?             no
+
+ Example Yacht 1 testfile March 2006                                             
+ In the following input data x,y,z are directed forward, to port side, up
+
+ Gravity acceleration             9.810
+ Water density                    1.000
+ z of still waterline             0.965
+ z of water bottom               -0.100E+07
+ z for water drift velocity     999.000
+ Wave encounter angles            0.000  30.000  60.000  90.000
+ Offset file name: geomet.out
+ Number of sections                  19
+ Symmetry?                          yes
+ Reference draft                  0.964
+ Section no.  1 at x=    -7.520
+ y:     0.000     0.155     0.255     0.355     0.454     0.553     0.651
+ z:     0.914     0.915     0.918     0.923     0.932     0.946     0.965
+First and last z of a section differ

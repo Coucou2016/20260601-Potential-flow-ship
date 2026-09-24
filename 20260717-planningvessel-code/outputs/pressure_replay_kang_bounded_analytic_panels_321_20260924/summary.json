@@ -1,0 +1,35 @@
+{
+  "stage_acceptance": false,
+  "algebra_replay": {
+    "phase": 1.3263950179409313e-16,
+    "pressure": 0.0,
+    "force": 0.0
+  },
+  "corrected_total_amplitude": [
+    10.16101291876084,
+    2.835046107633716
+  ],
+  "original_total_amplitude": [
+    10.278439178706089,
+    2.825584227701636
+  ],
+  "diffraction_complex_change": [
+    0.057536945548563354,
+    0.020677555057481103
+  ],
+  "total_complex_change": [
+    0.011523276157743725,
+    0.0033593995361122595
+  ],
+  "modes": [
+    "heave",
+    "geometric_midship_pitch"
+  ],
+  "production_changed": false,
+  "limitations": [
+    "Midpoint curved tangent differentiation",
+    "One-sided derivatives at tip and keel",
+    "Not a new solved potential",
+    "No independent complex reference"
+  ]
+}

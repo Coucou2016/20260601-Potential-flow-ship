@@ -1,0 +1,13 @@
+{
+  "stage_acceptance": false,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_implicit_pressure.py": "7c0fb50e6bb4946eab63ba94ca3b0cc2a445fa92f39309ad7940fd16c53a6c9b",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\curved_trace_pressure_diagnostic.py": "0211f5229f227c5c7dcd976b1792a40328f078dbd49e542c0ee636434c36fd51",
+    "outputs\\kang_bounded_analytic_b128_c96_321_20260924\\contract.json": "aa0aead8fd4b47105a4e912e7cf9b992ad07316baa7142d7fedb4f7ff46ab027",
+    "outputs\\kang_bounded_analytic_b128_c96_321_20260924\\fields.npz": "40fb4e2c695d56f6756dd60639746a2e0f934048f44c1f41c0388a2f863f1c04"
+  },
+  "algebra_tolerance": 1e-10,
+  "experimental_response_read": false,
+  "scope": "Same saved potential, not a new diffraction solve or conservative pressure method",
+  "policy": "Subtract moving-trace chain term from saved phase-based derivative only"
+}

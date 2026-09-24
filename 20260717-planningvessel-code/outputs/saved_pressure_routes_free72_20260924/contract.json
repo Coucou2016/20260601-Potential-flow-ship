@@ -1,0 +1,17 @@
+{
+  "scope": "Stored diffraction potentials only; Eq32-like term diagnostic is NOT radiation validation",
+  "phase": "Raw A1 generalized force, no response sine-phase adapter",
+  "cutoff_beams": 0.5,
+  "identity_tolerance": 1e-12,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_saved_pressure_routes.py": "155e0659e1f20ebfab2e4c0aae2f5b5f2b22ee8d3d2ba8b8fcaaf2a063d053fe",
+    "benchmarks\\longitudinal_refined_20260921\\run.json": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+    "outputs\\reconstructed_free_20260924\\free_72\\contract.json": "a9e7fed0757d6edc7b9bb76b2da5f9cf3fa21b47583279a805d284a0f4591034",
+    "outputs\\reconstructed_free_20260924\\free_72\\boundary_fn167.npz": "051c2993d3204dd3b0adfdb14b0c31578e375496c207938d6de25b3f0d99d2b1",
+    "outputs\\reconstructed_free_20260924\\free_72\\boundary_fn226.npz": "550980c3e333606811c439c97d7da2a71db27ce1e27922b080de46b87b331aa5",
+    "outputs\\reconstructed_free_20260924\\free_72\\boundary_fn282.npz": "df9fc99ea0423e380f610580959456839681c997fad26474f9d03fa33fff24ce",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\weighted_transport.py": "4751cf922413e095a395d5668ad46d05759dc70bae94fc5ff75f7ce116e00597",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\formulation.py": "7fd318a3c96e837a9451250931144c881b2244bc002ed418b57217e529b913e7",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\quadrature.py": "16e478783c3f42a6e8d03a8602cfcd684ee6ed6c6463f4939d8b756986d4fc3b"
+  }
+}

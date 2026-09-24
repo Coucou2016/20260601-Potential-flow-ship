@@ -1,0 +1,970 @@
+{
+  "checks_passed": 40,
+  "check_count": 40,
+  "negative_damping_count": 0,
+  "rows": [
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "body",
+      "count": 12,
+      "a": 294.4567262647214,
+      "b": 1380.7568049691918,
+      "residual": 4.200161232293927e-14,
+      "condition": 4481.752303311276
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "body",
+      "count": 24,
+      "a": 295.0938608718618,
+      "b": 1384.4472110557922,
+      "residual": 6.657091887119e-14,
+      "condition": 4663.526428716619
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "body",
+      "count": 48,
+      "a": 295.6835836481679,
+      "b": 1384.7784491617342,
+      "residual": 1.4461228108612512e-13,
+      "condition": 5034.632950124671
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "free",
+      "count": 40,
+      "a": 296.91467077168284,
+      "b": 1381.748541635909,
+      "residual": 5.410660881584e-14,
+      "condition": 1823.7556297017334
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "free",
+      "count": 64,
+      "a": 295.6835836481679,
+      "b": 1384.7784491617342,
+      "residual": 1.4461228108612512e-13,
+      "condition": 5034.632950124671
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "free",
+      "count": 96,
+      "a": 295.6576280239322,
+      "b": 1384.869425818289,
+      "residual": 1.883479402589725e-13,
+      "condition": 12628.461439955681
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "body",
+      "count": 12,
+      "a": 345.61316632297525,
+      "b": 1378.7761980458536,
+      "residual": 5.151029174692708e-14,
+      "condition": 5241.839952493149
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "body",
+      "count": 24,
+      "a": 346.14285381376,
+      "b": 1381.9680692653924,
+      "residual": 8.194122466276932e-14,
+      "condition": 5391.611997417954
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "body",
+      "count": 48,
+      "a": 346.78901545041174,
+      "b": 1382.2928906888403,
+      "residual": 1.6029167351605037e-13,
+      "condition": 5914.912597399204
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "free",
+      "count": 40,
+      "a": 346.1007499089286,
+      "b": 1378.043073416168,
+      "residual": 7.316881124205631e-14,
+      "condition": 2252.5508247534935
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "free",
+      "count": 64,
+      "a": 346.78901545041174,
+      "b": 1382.2928906888403,
+      "residual": 1.6029167351605037e-13,
+      "condition": 5914.912597399204
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "free",
+      "count": 96,
+      "a": 346.82068674819413,
+      "b": 1382.221875583311,
+      "residual": 2.0971873039399612e-13,
+      "condition": 14595.37523971043
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "body",
+      "count": 12,
+      "a": 488.0371482323486,
+      "b": 1251.5724591819542,
+      "residual": 8.137895954262025e-14,
+      "condition": 6477.7446260195875
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "body",
+      "count": 24,
+      "a": 488.77632282552975,
+      "b": 1253.3708075167024,
+      "residual": 1.1422182530971278e-13,
+      "condition": 6795.9807227999445
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "body",
+      "count": 48,
+      "a": 489.81538329748116,
+      "b": 1251.9222249656161,
+      "residual": 2.576717761092695e-13,
+      "condition": 7701.015525238098
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "free",
+      "count": 40,
+      "a": 488.37544953698205,
+      "b": 1258.3911662197643,
+      "residual": 7.128013135775023e-14,
+      "condition": 3064.2582956503143
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "free",
+      "count": 64,
+      "a": 489.81538329748116,
+      "b": 1251.9222249656161,
+      "residual": 2.576717761092695e-13,
+      "condition": 7701.015525238098
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "free",
+      "count": 96,
+      "a": 489.69864451578326,
+      "b": 1251.6017898320665,
+      "residual": 4.2184537197204576e-13,
+      "condition": 18420.02606373789
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "body",
+      "count": 12,
+      "a": 748.6984939957936,
+      "b": 969.3342784419918,
+      "residual": 1.23775625147302e-13,
+      "condition": 8167.001283057863
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "body",
+      "count": 24,
+      "a": 750.3511861307202,
+      "b": 967.3784416053319,
+      "residual": 1.635443045133536e-13,
+      "condition": 8699.085645043724
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "body",
+      "count": 48,
+      "a": 749.7870269260397,
+      "b": 964.6147981739894,
+      "residual": 3.9003686747589294e-13,
+      "condition": 9399.499851943308
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "free",
+      "count": 40,
+      "a": 755.7998381150145,
+      "b": 963.4130802944604,
+      "residual": 1.5610119757548394e-13,
+      "condition": 4126.711198762285
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "free",
+      "count": 64,
+      "a": 749.7870269260397,
+      "b": 964.6147981739894,
+      "residual": 3.9003686747589294e-13,
+      "condition": 9399.499851943308
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "free",
+      "count": 96,
+      "a": 749.5777211450616,
+      "b": 964.9457153068146,
+      "residual": 5.581643500950166e-13,
+      "condition": 22384.22216074046
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "body",
+      "count": 12,
+      "a": 1043.1830783275916,
+      "b": 693.1477628435451,
+      "residual": 1.2899736006030737e-13,
+      "condition": 9653.804842318834
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "body",
+      "count": 24,
+      "a": 1041.4328176412268,
+      "b": 691.0117378362809,
+      "residual": 1.8035374416977126e-13,
+      "condition": 9927.317087723546
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "body",
+      "count": 48,
+      "a": 1038.1828181880478,
+      "b": 690.33800483153,
+      "residual": 4.4286193379963984e-13,
+      "condition": 11143.69682167992
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "free",
+      "count": 40,
+      "a": 1034.8666533623054,
+      "b": 686.0869217470962,
+      "residual": 1.470397762160672e-13,
+      "condition": 4856.759581615206
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "free",
+      "count": 64,
+      "a": 1038.1828181880478,
+      "b": 690.33800483153,
+      "residual": 4.4286193379963984e-13,
+      "condition": 11143.69682167992
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "free",
+      "count": 96,
+      "a": 1038.461422344165,
+      "b": 690.4513102405767,
+      "residual": 5.437416198592135e-13,
+      "condition": 26345.692960651395
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "body",
+      "count": 12,
+      "a": 23.67237889848806,
+      "b": 90.68002450839859,
+      "residual": 3.7475394104872574e-14,
+      "condition": 4252.961055557486
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "body",
+      "count": 24,
+      "a": 24.278741146629585,
+      "b": 89.983727187084,
+      "residual": 4.8039807662379687e-14,
+      "condition": 4365.618447117787
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "body",
+      "count": 48,
+      "a": 24.209250718718387,
+      "b": 90.15463800943621,
+      "residual": 1.1453217130331226e-13,
+      "condition": 4910.180306820257
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "free",
+      "count": 40,
+      "a": 24.098941980851055,
+      "b": 90.2081914743511,
+      "residual": 3.3656757608474167e-14,
+      "condition": 1888.8193522845754
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "free",
+      "count": 64,
+      "a": 24.209250718718387,
+      "b": 90.15463800943621,
+      "residual": 1.1453217130331226e-13,
+      "condition": 4910.180306820257
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "free",
+      "count": 96,
+      "a": 24.2104604943693,
+      "b": 90.13241420566936,
+      "residual": 1.6798718722780082e-13,
+      "condition": 12426.28175361943
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "body",
+      "count": 12,
+      "a": 28.407159017950526,
+      "b": 90.05648389762483,
+      "residual": 3.854608742467244e-14,
+      "condition": 4944.331373244535
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "body",
+      "count": 24,
+      "a": 29.004749441389244,
+      "b": 89.64292200932562,
+      "residual": 5.514177271662237e-14,
+      "condition": 5185.979821499234
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "body",
+      "count": 48,
+      "a": 28.954898386599204,
+      "b": 89.6658396692325,
+      "residual": 1.3169538069881293e-13,
+      "condition": 5903.522506715456
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "free",
+      "count": 40,
+      "a": 28.894826047270897,
+      "b": 90.18648743439047,
+      "residual": 5.006288795295852e-14,
+      "condition": 2339.404220535314
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "free",
+      "count": 64,
+      "a": 28.954898386599204,
+      "b": 89.6658396692325,
+      "residual": 1.3169538069881293e-13,
+      "condition": 5903.522506715456
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "free",
+      "count": 96,
+      "a": 28.948716798038223,
+      "b": 89.64106027986169,
+      "residual": 1.6391597451826354e-13,
+      "condition": 14523.721058044053
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "body",
+      "count": 12,
+      "a": 39.60457759140449,
+      "b": 76.62692238771211,
+      "residual": 5.238399452977553e-14,
+      "condition": 6296.202911657069
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "body",
+      "count": 24,
+      "a": 40.213505755721386,
+      "b": 76.36996624912776,
+      "residual": 8.517424176121553e-14,
+      "condition": 6728.53437257431
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "body",
+      "count": 48,
+      "a": 40.10851853031916,
+      "b": 76.17595929148003,
+      "residual": 2.1089438639867274e-13,
+      "condition": 7325.241857265541
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "free",
+      "count": 40,
+      "a": 40.39098749441301,
+      "b": 76.2612217142647,
+      "residual": 5.130598804007851e-14,
+      "condition": 3154.36157792384
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "free",
+      "count": 64,
+      "a": 40.10851853031916,
+      "b": 76.17595929148003,
+      "residual": 2.1089438639867274e-13,
+      "condition": 7325.241857265541
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "free",
+      "count": 96,
+      "a": 40.095590191414004,
+      "b": 76.1952389242993,
+      "residual": 3.4392763536188274e-13,
+      "condition": 17773.492415127115
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "body",
+      "count": 12,
+      "a": 55.94427969321474,
+      "b": 53.58355559334029,
+      "residual": 8.605728509753036e-14,
+      "condition": 7976.272580906163
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "body",
+      "count": 24,
+      "a": 56.42269862581996,
+      "b": 53.35511061522147,
+      "residual": 1.2466997088113408e-13,
+      "condition": 8189.502555074841
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "body",
+      "count": 48,
+      "a": 56.19068145670681,
+      "b": 53.28881493693358,
+      "residual": 2.6853432738451557e-13,
+      "condition": 9170.302540077153
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "free",
+      "count": 40,
+      "a": 56.062901654651235,
+      "b": 52.93485101555319,
+      "residual": 9.07512667651909e-14,
+      "condition": 3980.821583885973
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "free",
+      "count": 64,
+      "a": 56.19068145670681,
+      "b": 53.28881493693358,
+      "residual": 2.6853432738451557e-13,
+      "condition": 9170.302540077153
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "free",
+      "count": 96,
+      "a": 56.20340123552952,
+      "b": 53.29963619384742,
+      "residual": 3.9440267586056056e-13,
+      "condition": 22016.16516696004
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "body",
+      "count": 12,
+      "a": 71.28893848793209,
+      "b": 35.64235446971419,
+      "residual": 8.889269863249769e-14,
+      "condition": 9170.767266061466
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "body",
+      "count": 24,
+      "a": 71.61378530067668,
+      "b": 35.653692054537636,
+      "residual": 1.4404020558624958e-13,
+      "condition": 9798.267833126036
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "body",
+      "count": 48,
+      "a": 71.37471423380721,
+      "b": 35.806545271862326,
+      "residual": 2.859516804386084e-13,
+      "condition": 11102.121551553066
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "free",
+      "count": 40,
+      "a": 71.28161997376716,
+      "b": 35.935227321002586,
+      "residual": 8.802199986761608e-14,
+      "condition": 4478.490169130198
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "free",
+      "count": 64,
+      "a": 71.37471423380721,
+      "b": 35.806545271862326,
+      "residual": 2.859516804386084e-13,
+      "condition": 11102.121551553066
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "free",
+      "count": 96,
+      "a": 71.37651047897097,
+      "b": 35.801493036777224,
+      "residual": 3.8584497308416826e-13,
+      "condition": 26224.238521611467
+    }
+  ],
+  "checks": [
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.5897227763060755,
+      "limit": 14.784179182408394,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.3312381059420204,
+      "limit": 69.23892245808672,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.025955624235677988,
+      "limit": 14.782881401196612,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.09097665655485798,
+      "limit": 69.24347129091446,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.6461616366517546,
+      "limit": 17.33945077252059,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.3248214234479292,
+      "limit": 69.11464453444202,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.03167129778239541,
+      "limit": 17.341034337409706,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.07101510552934087,
+      "limit": 69.11109377916556,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 1.0390604719514158,
+      "limit": 24.49076916487406,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 1.448582551086247,
+      "limit": 62.596111248280806,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.11673878169790441,
+      "limit": 24.484932225789166,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.3204351335496085,
+      "limit": 62.58008949160333,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.5641592046804362,
+      "limit": 37.48935134630199,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 2.7636434313425298,
+      "limit": 48.23073990869947,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.20930578097818398,
+      "limit": 37.47888605725308,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.3309171328252205,
+      "limit": 48.247285765340735,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 3.2499994531790435,
+      "limit": 51.909140909402396,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.6737330047508294,
+      "limit": 34.5169002415765,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.27860415611712597,
+      "limit": 51.92307111720825,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.11330540904668851,
+      "limit": 34.52256551202884,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.06949042791119808,
+      "limit": 1.2104625359359193,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.17091082235221222,
+      "limit": 4.507731900471811,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.0012097756509135138,
+      "limit": 1.210523024718465,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.02222380376684896,
+      "limit": 4.506620710283468,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.049851054790039484,
+      "limit": 1.4477449193299603,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.022917659906880772,
+      "limit": 4.483291983461625,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.006181588560981055,
+      "limit": 1.4474358399019112,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.02477938937080637,
+      "limit": 4.4820530139930845,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.10498722540222616,
+      "limit": 2.005425926515958,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.1940069576477299,
+      "limit": 3.8087979645740013,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.012928338905155101,
+      "limit": 2.0047795095707004,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.019279632819277026,
+      "limit": 3.8097619462149654,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.23201716911314918,
+      "limit": 2.8095340728353406,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.06629567828788652,
+      "limit": 2.6644407468466795,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.012719778822706473,
+      "limit": 2.810170061776476,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.010821256913835953,
+      "limit": 2.664981809692371,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "body",
+      "quantity": "a",
+      "absolute_change": 0.23907106686947088,
+      "limit": 3.5687357116903606,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "body",
+      "quantity": "b",
+      "absolute_change": 0.15285321732469015,
+      "limit": 1.7903272635931164,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "free",
+      "quantity": "a",
+      "absolute_change": 0.0017962451637600907,
+      "limit": 3.568825523948549,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "axis": "free",
+      "quantity": "b",
+      "absolute_change": 0.005052235085102552,
+      "limit": 1.7900746518388613,
+      "passed": true
+    }
+  ],
+  "overall_stage_complete": false
+}

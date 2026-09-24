@@ -1,0 +1,15 @@
+{
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_free_surface_fields.py": "01de395bd8756b520c3b8d98cabf05d09811c0e32c3a2af91b81b1d1dacc737f",
+    "outputs\\reconstructed_free_20260924\\free_72\\free_surface_fn167.npz": "a297f041fe9c0717dc1edf404cba54c64de37cadb4a2b0ca7fbeba81dd416274",
+    "outputs\\reconstructed_free_20260924\\free_72\\free_surface_fn226.npz": "0d4de6f67d7e04a568431d07bd6d1ca9fbcf45bd9b8e243564f4be2599a95fa4",
+    "outputs\\reconstructed_free_20260924\\free_72\\free_surface_fn282.npz": "cedf9418c630479e5c3bf811b01e9a3ca6c41444cf39ea383332047ac5f1de96",
+    "outputs\\reconstructed_free_20260924\\free_96\\free_surface_fn167.npz": "3ccfe10c6bd15e8397e9cb3b0a5158964403953ab1bf2297fbd2da67d94df620",
+    "outputs\\reconstructed_free_20260924\\free_96\\free_surface_fn226.npz": "913ce169f58563b79049853eb7a88aba639b619ecbad2cd7d7a189ba7f2fb952",
+    "outputs\\reconstructed_free_20260924\\free_96\\free_surface_fn282.npz": "44aff83ff109c7d925bd7ee50355f9649a67d865698a059683310d5050d61adc"
+  },
+  "comparison": "Same x and time; separate sides; fine to mid interpolation; no extrapolation",
+  "common_station_subset": false,
+  "time_comparison": "All recorded times equal",
+  "scope": "Field diagnostic only, no new acceptance threshold"
+}

@@ -1,0 +1,13 @@
+{
+  "cutoff_beams": 0.5,
+  "tolerance": 1e-12,
+  "scope": "Same saved potential, piecewise-linear transport identity; not a new hydrodynamic solution",
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_saved_weighted_transport.py": "36ba9c32f89f3e801ba65d831614be7ce102b7803fd35eb5579ffccd171c2c22",
+    "benchmarks\\longitudinal_reconstructed_20260924\\run.json": "f79f2a089a5e5ea5a2f345b7c3da9a20bdbd5756aa8166e1ea9dfb2b35cfae67",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn167.npz": "5f05d9aaae8a973429c71f235277aaa38ebbc04160b8d62ad3b284516cdcac22",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn226.npz": "70b80b85c1e6581f549895491488bb38efd31401aae316c2e9ff4b1db70f4b22",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn282.npz": "04515b4ec67312d2d8b6a7b346c93f82e210f31ffbc074a625f189db08d451a4",
+    "planing_seakeeping\\kernels\\linear_2p5d\\weighted_transport.py": "db00c141ae7bb8428d00f6873ad43416ddcdd3d8df7ad857e93d8e14b5785131"
+  }
+}

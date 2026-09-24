@@ -1,0 +1,129 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "section": "analytic_v",
+      "period_s": 1.6,
+      "a_reference": 295.6835836481728,
+      "b_reference": 1384.7784491617335,
+      "a_python": 295.6835836481679,
+      "b_python": 1384.7784491617342,
+      "a_error": 4.945377440890297e-12,
+      "b_error": 6.821210263296962e-13,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 2.0,
+      "a_reference": 346.78901545041947,
+      "b_reference": 1382.2928906888494,
+      "a_python": 346.78901545041174,
+      "b_python": 1382.2928906888403,
+      "a_error": 7.73070496506989e-12,
+      "b_error": 9.094947017729282e-12,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 3.0,
+      "a_reference": 489.81538329747696,
+      "b_reference": 1251.9222249656204,
+      "a_python": 489.81538329748116,
+      "b_python": 1251.9222249656161,
+      "a_error": 4.206412995699793e-12,
+      "b_error": 4.320099833421409e-12,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 5.0,
+      "a_reference": 749.7870269260461,
+      "b_reference": 964.6147981739899,
+      "a_python": 749.7870269260397,
+      "b_python": 964.6147981739894,
+      "a_error": 6.366462912410498e-12,
+      "b_error": 5.684341886080801e-13,
+      "passed": true
+    },
+    {
+      "section": "analytic_v",
+      "period_s": 8.0,
+      "a_reference": 1038.1828181880528,
+      "b_reference": 690.338004831566,
+      "a_python": 1038.1828181880478,
+      "b_python": 690.33800483153,
+      "a_error": 5.002220859751105e-12,
+      "b_error": 3.5925040720030665e-11,
+      "passed": true
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 1.6,
+      "a_reference": 63.61331816426447,
+      "b_reference": -737.8589526651446,
+      "a_python": 63.61331816424827,
+      "b_python": -737.8589526651049,
+      "a_error": 1.6200374375330284e-11,
+      "b_error": 3.9676706364843994e-11,
+      "passed": false
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 2.0,
+      "a_reference": 148.61116541244678,
+      "b_reference": -884.5338324086791,
+      "a_python": 148.61116541242313,
+      "b_python": -884.5338324086255,
+      "a_error": 2.3646862246096134e-11,
+      "b_error": 5.3660187404602766e-11,
+      "passed": false
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 3.0,
+      "a_reference": 397.2498379554788,
+      "b_reference": -1365.831378755557,
+      "a_python": 397.2498379556938,
+      "b_python": -1365.831378756197,
+      "a_error": 2.149818101315759e-10,
+      "b_error": 6.400568963726982e-10,
+      "passed": false
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 5.0,
+      "a_reference": 396.72416069731946,
+      "b_reference": -2654.952969390312,
+      "a_python": 396.7241606948238,
+      "b_python": -2654.9529693932295,
+      "a_error": 2.495653461664915e-09,
+      "b_error": 2.9176590032875538e-09,
+      "passed": false
+    },
+    {
+      "section": "edo_selected_wet_section",
+      "period_s": 8.0,
+      "a_reference": -1594.191569237838,
+      "b_reference": -2386.3631358887537,
+      "a_python": -1594.191569240359,
+      "b_python": -2386.363135884542,
+      "a_error": 2.521119313314557e-09,
+      "b_error": 4.211869963910431e-09,
+      "passed": false
+    }
+  ],
+  "contract_sha256": "8ccf1905051a809e3c32249d953071035fa3377bb706c1d8dfefa8acfa6e05fe",
+  "wrapper_sha256": "2c997c477f81a3bf34ebe4f0dc9e4a312bc33ca7ee1d3f6a4819adec21e3a365",
+  "python_sha256": "11103d356cff5e9d93fd76185f6e65e709c26a83604d6bee75b0edeacd794835",
+  "command": [
+    "gfortran",
+    "-std=legacy",
+    "-O2",
+    "-fdefault-real-8",
+    "-fdefault-double-8",
+    "-o",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\pdstrip_tail_diagnostic_20260919\\reference.exe",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\pdstrip_tail_diagnostic_20260919\\reference.f90"
+  ],
+  "scope": "matched discretization implementation check; not experiment validation"
+}
