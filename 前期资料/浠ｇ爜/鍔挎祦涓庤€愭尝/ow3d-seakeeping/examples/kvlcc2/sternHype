@@ -1,0 +1,135 @@
+  * 
+  *
+  * ------------------------------------------------------------------------------------------------------------
+  * 
+  *                                             SURFACE GRID "STERN"
+  * 
+  * ------------------------------------------------------------------------------------------------------------
+  *
+  read rap model
+  cleanedStern.hdf
+  builder
+  create surface grid
+  edge curve tolerance 0.001
+      set view:0 -0.0966628 -0.0644419 0 3.86222 -0.173648 -0.17101 -0.969846 -0.984808 0.0301537 0.17101 1.3667e-16 0.984808 -0.173648
+      choose edge curve 8 -1.430954e+02 3.979491e-05 -2.080018e+01 
+      choose edge curve 3 -1.511000e+02 -1.491172e-10 -2.079674e+01 
+      choose edge curve 42 -1.588613e+02 -1.556619e-05 -2.017732e+01
+      choose edge curve 38 -1.621644e+02 -3.783473e-07 -1.672577e+01 
+      choose edge curve 39 -1.632680e+02 2.577789e-04 -1.601631e+01
+      choose edge curve 20 -1.638215e+02 -3.116000e-04 -1.576698e+01 
+      choose edge curve 40 -1.638304e+02 3.460134e-17 -1.495681e+01
+      choose edge curve 22 -1.637925e+02 3.283266e-05 -1.420132e+01 
+      choose edge curve 34 -1.625896e+02 -4.673474e-05 -1.369605e+01
+      choose edge curve 120 -1.607287e+02 5.306366e-04 -1.068655e+01
+      choose edge curve 121 -1.612167e+02 3.993979e-08 -8.033678e+00 
+      choose edge curve 114 -1.639174e+02 3.438482e-06 -5.870597e+00 
+      choose edge curve 46 -1.712819e+02 6.740774e-04 -3.475264e+00
+      choose edge curve 57 -1.758793e+02 0.000000e+00 -2.173297e+00 
+      choose edge curve 55 -1.760083e+02 -4.450827e-16 -1.727405e+00 
+      choose edge curve 52 -1.760094e+02 -3.180360e-14 -6.476799e-01
+  done
+  pause
+  uniform dissipation 1
+  forward and backward
+  lines to march 136 136
+  distance to march 31 31
+  points on initial curve 117
+  equidistribution 1 (in [0,1])
+  BC: right (forward) outward splay
+  BC: right (backward) outward splay
+  outward splay 0.3 0.3
+  *BC: right (backward) fix z, float x and y
+  *BC: right (forward) fix z, float x and y
+  *stop on negative cells 1
+  generate
+  pause
+  post stretching...
+  GST:pick to stretch
+  stretch r1 1 5 5 0 (id,weight,exponent,position)
+  *stretch r1 2 1 3 0.8 (id,weight,exponent,position)
+  exit
+  GST:stretch grid
+  close post stretching options
+  pause
+  smoothing...
+  GSM:project smoothed grid onto reference surface 0
+  *GSM:do not project 0, 0 112 0 271 (id, l r b t)
+  GSM:smooth ghost points 1 
+  GSM:smooth grid
+  GSM:smooth grid
+  GSM:smooth grid
+  GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  *GSM:smooth grid
+  close smoothing options
+  lines
+  139 325
+  *post stretching...
+  *GST:pick to stretch
+  *stretch r1 1 5 5 0.85 (id,weight,exponent,position)
+  *stretch r1 1 5 5 0.9 (id,weight,exponent,position)
+  *exit
+  *GST:stretch grid
+  close post stretching options
+  *set view:0 0.666101 0.020535 0 10.0202 1 0 0 0 1.38778e-16 -1 0 1 1.38778e-16
+  pause
+  exit
+  * 
+  * ------------------------------------------------------------------------------------------------------------
+  * 
+  *                                             VOLUME GRID "STERN"
+  * 
+  * ------------------------------------------------------------------------------------------------------------
+  * 
+  create volume grid...
+  backward
+  distance to march 90
+  lines to march 159
+  *BC: right fix z, float x and y
+  BC: left fix z, float x and y
+  volume smooths 400
+  geometric stretching, specified ratio
+  1.02
+  apply boundary conditions to start curve 1
+  generate
+  name STERN
+  boundary conditions
+  1 0 0 0 3 0 
+  plot options...
+  plot ghost points 0
+  close plot options
+  reset:0
+  exit
+  * 
+  * ------------------------------------------------------------------------------------------------------------
+  * 
+  *                                                  VIEW AND SAVE
+  * 
+  * ------------------------------------------------------------------------------------------------------------
+  * 
+  colour boundaries by BC number
+  plot reference surface 0
+  plot volume grids 1
+  plot surface grids 1
+  plot shaded on reference surface 0
+  reset:0
+  pause
+  save grids to a file...
+  file name: HYPED_STERN.hdf
+  save file
+  exit 
+  exit
+  exit

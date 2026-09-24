@@ -1,0 +1,92 @@
+\documentclass{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+\thispagestyle{empty}
+
+\def\PI{3.14159265359}
+\def\G{9.81}
+\def\RHO{1000}
+\def\B{0.2}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}
+    [
+      at={(0mm,0mm)},
+      scaled ticks=false,/pgf/number format/fixed relative,
+      xmin=0 , xmax=4, ymin=0, ymax=1, grid=both,
+      ytick ={0.2, 0.4, 0.6, 0.8 ,1},
+      xtick ={0 , 1, 2 , 3 , 4},
+      xlabel={ $K L/2 \pi$},
+      ylabel={ $ L R_w / \rho g A^2 B^2 $}
+    ]
+    \addplot [line width=1.1pt]
+    table [x expr=(\thisrowno{0}*\thisrowno{0}/(2*\PI*\G)),y expr=-\thisrowno{1}/(\RHO*\G*\B*\B)]
+    {../spheroid_ppc/drifts1.txt};
+    \addlegendentry{OW3D (near-field)}    
+    \addplot [line width=1.1pt, black, dash pattern=on 3.5pt off 1.pt]
+    table [x expr=(\thisrowno{0}*\thisrowno{0}/(2*\PI*\G)),y expr=-\thisrowno{3}/(\RHO*\G*\B*\B)]
+    {../spheroid_ppc/drifts1.txt};
+    \addlegendentry{OW3D (far-field)}
+    %
+    \addplot [line width=1.1pt, blue, dash pattern=on 2pt off .5pt]
+    table [x expr=(\thisrowno{0}*\thisrowno{0}/(2*\PI*\G)),y expr=-\thisrowno{2}/(\RHO*\G*\B*\B)]
+    {../spheroid_ppc/drifts1.txt};
+    \addlegendentry{OW3D (Salvesen)}
+    %
+    \addplot [only marks, mark=*, black, mark size=2pt, line width=0.8pt, fill=white]
+    table [x expr=\thisrowno{0}, y expr=\thisrowno{1}]
+    {../analytical_results/Iwashita_zero.dat};
+    \addlegendentry{BEM (Iwashita 1989)};
+    \node [draw=black, fill=white, align=center]  at (axis cs: 2.9, .5) {Submerged spheroid\\$Fr=0$};
+    %
+  \end{axis}
+  %
+  \begin{axis}
+    [
+      at={(-90mm,0mm)},
+      width=90mm,
+      height=31mm,
+      scaled ticks=false,/pgf/number format/fixed relative,
+      xlabel={ $t\sqrt{g/L}$},
+      ylabel={ $F_5(t)/\rho g L^3$},
+    ]
+    \addplot [line width=1.1pt]
+    table [x expr=\thisrowno{0}*sqrt(\G),y expr=\thisrowno{1}/(\RHO*\G)]
+    {../spheroid_ow3df/spheroid.simp5};
+  \end{axis}
+  %
+  \begin{axis}
+    [
+      at={(-90mm,20.8mm)},
+      width=90mm,
+      height=31mm,
+      scaled ticks=false,/pgf/number format/fixed relative,
+      ylabel={ $F_3(t)/\rho g L^2 $},
+      xtickmin = 0
+    ]
+    \addplot [line width=1.1pt]
+    table [x expr=\thisrowno{0}*sqrt(\G),y expr=\thisrowno{1}/(\RHO*\G)]
+    {../spheroid_ow3df/spheroid.simp3};
+  \end{axis}
+  %
+  \begin{axis}
+    [
+      at={(-90mm,41.5mm)},
+      width=90mm,
+      height=31mm,
+      scaled ticks=false,/pgf/number format/fixed relative,
+      ylabel={ $F_1(t)/\rho g L^2$},
+      xtickmin = 0
+    ]
+    \addplot [line width=1.1pt]
+    table [x expr=\thisrowno{0}*sqrt(\G),y expr=\thisrowno{1}/(\RHO*\G)]
+    {../spheroid_ow3df/spheroid.simp1};
+  \end{axis}
+\end{tikzpicture}
+
+\end{document}
+

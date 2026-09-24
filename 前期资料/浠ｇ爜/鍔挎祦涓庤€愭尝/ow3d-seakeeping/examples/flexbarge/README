@@ -1,0 +1,19 @@
+This folder contains the scripts to build an overset grid for
+the flexible barge used in the research work
+
+"Investigation of ship hydroelasticity" (Ocean Engineering 35 (2008) 523–535)
+    by Ivo Senjanović, Šime Malenica and Stipe Tomas̆ević
+
+To generate the grids run the scripts as:
+
+$Overture/bin/rap rap_whole
+$Overture/bin/mbuilder hype_whole
+$Overture/bin/ogen overlap
+
+To employ surface integration by triangulation, build the patches as:
+
+./build_patches
+
+and put the "patches" folder in your calculation directory.
+
+The grid with "round" corners has been built by Matilde H. Andersen.

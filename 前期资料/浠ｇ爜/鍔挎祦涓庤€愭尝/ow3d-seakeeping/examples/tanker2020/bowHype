@@ -1,0 +1,97 @@
+    * 
+    * 
+    read rap model
+    cleanedWhole.hdf
+    builder
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "BOW"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create surface grid
+    edge curve tolerance 0.00001
+    set view:0 -0.0517252 -0.117779 0 5.45314 0.153335 0.336824 0.928998 0.981226 0.0593912 -0.183489 -0.116978 0.939693 -0.321394
+      choose edge curve 7 7.930878e+01 -1.855612e-14 -1.199953e+01 
+      choose edge curve 122 8.499344e+01 1.865510e-14 -1.199587e+01 
+      choose edge curve 291 8.923932e+01 3.947975e-15 -1.181042e+01 
+      choose edge curve 278 9.324909e+01 -8.939234e-15 -6.066947e+00 
+    done
+    pause
+    uniform dissipation 1 
+    forward and backward
+    lines to march 61 61
+    distance to march 19 19 (forward,backward)
+    points on initial curve 151 
+    equidistribution 1 (in [0,1])
+    BC: left (forward) outward splay
+    BC: left (backward) outward splay
+    *BC: left (forward) fix z, float x and y 
+    *BC: left (backward) fix z, float x and y
+    outward splay .15 .15 (left, right for outward splay BC)
+    generate
+      *smoothing...
+      *GSM:project smoothed grid onto reference surface 0
+      *GSM:smooth grid
+      *close smoothing options
+    pause
+    lines
+    135 155
+    exit
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                      VOLUME GRID "BOW"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid...
+    forward
+    distance to march 50
+    lines to march 100
+    BC: right fix z, float x and y
+    volume smooths 20
+    geometric stretching, specified ratio
+    1.02
+    apply boundary conditions to start curve 1 
+    generate
+    *evaluate as nurbs 1
+    *degree of nurbs 3
+    *boundary offset 0 0 0 0 6 6 (l r b t b f)
+    name BOW
+    set view:0 -0.4249 0.0824923 0 1.91381 1 0 0 0 1 0 0 0 1
+    smaller:0
+    boundary conditions
+    0 1 0 0 3 0 
+    plot options...
+    plot ghost points 0
+    *pause
+    *mapping parameters
+    * vertical - circumfrential - radial 
+    *lines 19 27 20
+    *close mapping dialog
+    *pause
+    *
+    exit
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                       VIEW AND SAVE
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    *
+    colour boundaries by BC number
+    plot reference surface 0
+    plot volume grids 1
+    plot surface grids 1
+    plot shaded on reference surface 0
+    set view:0 0.247501 0.048202 0 0.761091 1 0 0 0 1 0 0 0 1
+    pause
+    save grids to a file...
+    file name: HYPED_BOW.hdf
+    save file
+    exit 
+    exit
+    exit
+    

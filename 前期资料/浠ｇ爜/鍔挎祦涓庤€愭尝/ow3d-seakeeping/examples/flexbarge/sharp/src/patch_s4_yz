@@ -1,0 +1,43 @@
+*
+* Rap command file
+*
+new/append model
+filename patch_s4_yz.igs
+all mappings
+read file
+x-r:0 45
+y-r:0 45
+z-r:0 45
+bigger:0
+bigger:0
+bigger:0
+heal model
+HEAL:plot grid lines on boundaries (3D) toggle 1
+set view:0 0.317308 0.0536859 0 2.41393 1.38778e-16 0 1 0 1 0 -1 0 1.38778e-16
+#pause
+close
+* Build the connectivity and a global triangulation
+topology
+merge tolerance 0.005
+split tolerance factor 0.5
+deltaS 0.01
+maximum area 0.00004
+build edge curves 
+merge edge curves 
+* the connectivity is determined
+#pause
+*
+* triangulate
+*
+triangulate
+* global triangulation
+#pause
+exit
+*
+* Save the  hull
+*
+save model
+../patches/s4_yz.hdf
+* model has been saved
+#pause
+exit

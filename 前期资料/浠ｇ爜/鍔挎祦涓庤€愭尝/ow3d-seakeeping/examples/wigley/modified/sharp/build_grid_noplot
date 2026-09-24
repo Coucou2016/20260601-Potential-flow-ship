@@ -1,0 +1,6 @@
+#!/bin/bash
+
+$Overture/bin/rap -noplot rap_whole_noplot
+$Overture/bin/mbuilder -noplot hype_whole_noplot
+$Overture/bin/ogen -noplot overlap_noplot
+

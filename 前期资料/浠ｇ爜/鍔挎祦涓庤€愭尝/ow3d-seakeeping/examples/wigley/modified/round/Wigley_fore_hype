@@ -1,0 +1,90 @@
+    *
+    *
+    read rap model
+    Wigley_rap_out.hdf
+    builder
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "BOW"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create surface grid
+    edge curve tolerance 0.0001
+    set view:0 -0.386073 -0.506101 0 11.1458 0.596149 0.792582 0.128139 0.802859 -0.587526 -0.101147 -0.00488269 0.163176 -0.986585
+    smaller:0
+      choose edge curve 86 7.644855e-01 1.978922e-09 -1.227182e-01 
+      choose edge curve 81 8.095266e-01 1.283725e-07 -1.213341e-01 
+      choose edge curve 77 9.444995e-01 1.097446e-10 -9.806712e-02 
+    done
+    pause
+    uniform dissipation 7 
+    forward and backward
+    lines to march 151 151
+    distance to march 0.14 0.14 (forward,backward)
+    points on initial curve 150 
+    equidistribution 0.2 (in [0,1])
+    BC: left (forward) outward splay
+    BC: left (backward) outward splay
+    outward splay 0.25 0.25 (left, right for outward splay BC)
+    generate
+    lines
+    225 225
+    *post stretching...
+    *GST:pick to stretch
+    *stretch r1 2 1.2 3  1.0 (id,weight,exponent,position)
+    *stretch r2 1 1.2 10 0.5 (id,weight,exponent,position)
+    *exit
+    *GST:stretch grid
+    *close post stretching options
+    pause
+    exit
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                      VOLUME GRID "BOW"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid...
+    backward
+    distance to march 0.5
+    lines to march 159
+    *lines to march 15
+    BC: right fix z, float x and y
+    *BC: left fix z, float x and y
+    *volume smooths 50
+    geometric stretching, specified ratio
+    1.02
+    apply boundary conditions to start curve 1
+    generate
+    name FORE
+    smaller:0
+    boundary conditions
+    0 1 0 0 3 0 
+    plot options...
+    plot ghost points 1
+    pause
+    exit
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                       VIEW AND SAVE
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    *
+    colour boundaries by BC number
+    plot reference surface 0
+    plot volume grids 1
+    plot surface grids 1
+    plot shaded on reference surface 0
+    set view:0 0.247501 0.048202 0 0.761091 1 0 0 0 1 0 0 0 1
+    pause
+    save grids to a file...
+    file name: Wigley_fore_hype_out.hdf
+    save file
+    exit 
+    exit
+    exit
+    

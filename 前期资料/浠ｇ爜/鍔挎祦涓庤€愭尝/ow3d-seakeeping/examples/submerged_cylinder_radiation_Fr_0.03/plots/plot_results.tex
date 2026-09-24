@@ -1,0 +1,85 @@
+\documentclass{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+
+\def\ro{1000}
+\def\L{0.5}
+\def\grav{9.81}
+\def\PI{3.14159265359}
+\def\U{0.0664}
+
+\begin{tikzpicture}
+
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(0mm, 0mm)},
+    legend style={at={(0.97, 0.96)}},
+    xmin=1, xmax=5, ymax=0.3, grid=both, ymin =0,
+    ytickmin = 0.1,
+    xlabel={$\nu a$}, ylabel={$a_{13}/\rho \pi a^2 \omega_e U/g$}
+  ]
+  \addplot
+  [
+    line width=0.9pt, blue,no marks
+  ]
+  table
+  [
+    x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+    y expr=\thisrowno{1}/(\ro*\PI*\L*\L*\thisrowno{0}* \U / \grav),
+  ]
+  {../cylinder_ppc/hydros13.txt};
+  \addlegendentry{OceanWave3D-Seakeeping}
+  %
+  \addplot
+  [
+  each nth point={2}, only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red
+  ]
+  table
+  [
+    x expr=\thisrowno{0},
+    y expr=\thisrowno{1}/10
+  ]
+  {../analytical_results/GX_Wu_a_13_low_submerged.dat};
+  \addlegendentry{\small (Wu and Eatock Taylor, 1990) - Ana.}
+  %
+\end{axis}
+%
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(90mm, 0mm)},
+    legend style={at={(0.98, 0.22)}},
+    xmin=1, xmax=5,
+    ymin=-0.8,ymax=0, grid=both,ytickmin=-0.6,
+    xlabel={\normalsize $\nu a$}, ylabel={$b_{13}/\rho \pi a^2 \omega_e^2 U/g$}
+  ]
+  \addplot
+  [
+    line width=0.8pt, blue,no marks
+  ]
+  table
+  [
+    x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+    y expr=\thisrowno{2}/(\ro*\PI*\L*\L*\thisrowno{0}*\thisrowno{0}* \U / \grav)
+  ]
+  {../cylinder_ppc/hydros13.txt};
+  \addlegendentry{OceanWave3D-Seakeeping}
+  %
+  \addplot
+  [each nth point={2}, only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red]
+  table
+  [
+    x expr=\thisrowno{0},
+    y expr=\thisrowno{1}/10
+  ]
+  {../analytical_results/GX_Wu_b_13_low_submerged.dat};
+  \addlegendentry{(\small Wu and Eatock Taylor, 1990) - Ana.)}
+\end{axis}
+%
+\end{tikzpicture}
+\end{document}

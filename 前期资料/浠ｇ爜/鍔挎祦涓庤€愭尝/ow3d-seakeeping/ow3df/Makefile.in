@@ -1,0 +1,49 @@
+
+
+# =========================================================================================
+# Define ow3df sources
+# =========================================================================================
+FIRSTORDER_SRC = FirstOrder.cpp BuildFrequenciesAndWaveNumbers.cpp BuildMotionData.cpp BuildTransformData.cpp ComputeAsymptoticCoefficients_.cpp\
+ComputeBodySurfaceForces.cpp ComputeForceAnalyticalTransform_.cpp ComputeFrequencyDomainIntegrals_.cpp ComputeHydrodynamicCoefficients.cpp\
+ComputePotentialsAnalyticalTransform_.cpp ComputePotentialsAsymptoticCoefficients_.cpp ComputeResponseAmplitudeOperator.cpp ComputeWaveExcitationForces.cpp\
+PrintFrequencyDomainResults.cpp PrintPseudoImpulses_.cpp PrintTimedomainAsymptoticForces_.cpp PrintTimedomainResults.cpp\
+TransformPotentialAndDerivatives.cpp TransformWaterlineElevations.cpp Fft_.cpp ComputeGModesDisplacements.cpp LeastSquare.cpp LeastSquareModelFunctions.cpp\
+WavenumberDeep.cpp FindCriticalDepth.cpp DepthCriticalFunction.cpp DispersionDeep.cpp TransformVelocityPotentials.cpp
+SECONDORDER_SRC = SecondOrder.cpp ComputeDphiDnOnBody_.cpp ComputeDriftFarField_m.cpp ComputeDriftFarField_theta.cpp ComputeDriftNearField.cpp\
+ComputeDriftFarFieldDirect_m.cpp ComputePotentialsDerivatives_.cpp\
+ComputeDriftSalvesen.cpp ComputeKochinFunction_.cpp ComputeWaterlineTrapz_.cpp PrintDriftForces.cpp ComputeWaveDriftForces.cpp
+FIRSTORDER_FULL = $(addprefix ./firstorder/,$(FIRSTORDER_SRC))
+SECONDORDER_FULL = $(addprefix ./secondorder/,$(SECONDORDER_SRC))
+OW3DF_SRC = ow3df.cpp $(FIRSTORDER_FULL) $(SECONDORDER_FULL)
+
+# =========================================================================================
+# Define the rule for makeing ow3dt executable
+# =========================================================================================	
+ow3df: $(OW3DF_SRC:%.cpp=%.o) $(UTIL_SRC:%.cpp=%.o) $(FORTRAN_SRC:%.f90=%.o)
+	$(LINK.deps) $^ $(FLIBS) $(OGMGLIB) $(GSL_LIBS) $(GLIBS) $(PETSCLIB) -o $@
+
+# =========================================================================================
+# Define the pattern rule for making .d files from .cpp files.
+# =========================================================================================
+ifneq ($(MAKECMDGOALS),clean)
+include $(OW3DF_SRC:%.cpp=%.d)
+include $(UTIL_SRC:%.cpp=%.d)
+endif
+%.d: %.cpp
+	$(CXX) -std=c++11 -M $(CPPFLAGS) $(CCFLAGS) $< > $@.$$$$; \
+	sed 's,\($(notdir $*)\)\.o[ :]*,$(@D)/\1.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$
+
+.PHONY: clean
+clean:
+	@rm -f ow3df
+	@rm -f *.o
+	@rm -f *.d*
+	@rm -f */*.o
+	@rm -f */*.d*
+	@rm -f ../utility/*/*.o
+	@rm -f ../utility/*/*.d*
+	@rm -f ../utility/*/*/*.o
+	@rm -f ../utility/*/*/.d*
+	@rm -f ../utility/*/*/*.mod
+	@echo "erased all .d, , and .o files..."

@@ -1,0 +1,59 @@
+\documentclass{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+
+\def\ro{1000}
+\def\L{0.5}
+\def\grav{9.81}
+\def\PI{3.14159265359}
+\def\U{0.886}
+
+\begin{tikzpicture}
+
+\begin{axis}
+  [
+    at={(0mm, 0mm)},
+    scaled ticks=false,/pgf/number format/fixed relative,
+    legend style={at={(0.97, 0.65)}},ytickmin=0.2,
+    xmin=0,xmax=7, ymin=0, ymax=6,grid=both,
+    ytick={0, 1 ,2 ,3 ,4, 5, 6},
+    xlabel={$\nu a$}, ylabel={$\frac{a_{22}}{\rho \pi a^3}$}
+  ]
+  \addplot [line width=0.8pt, blue,no marks]
+  table [x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav), y expr=\thisrowno{1}/(\ro*\PI*\L*\L*\L)]
+  {../sphere_ppc/hydros22.txt};
+  \addlegendentry{\small OceanWave3D-Seakeeping}
+  \addplot [only marks, mark=*, red, mark size=1.5pt, line width=0.6pt, fill=white]
+  table [x expr=\thisrowno{0}, y expr=\thisrowno{1}]
+  {../analytical_results/a_sway_sway.dat};
+  \addlegendentry{\small (Wu \& Eatock Taylor, 1988)}
+\end{axis}
+%
+\begin{axis}
+  [
+    at={(90mm, 0mm)},ytickmin=0.05,
+    scaled ticks=false,/pgf/number format/fixed relative,
+    legend style={at={(0.97, 0.85)}},
+    xmin=0,xmax=7,ymax=0.15, grid=both, ymin=0,
+    yticklabels={0, , 0.05, , 0.1, , 0.15},
+    ytick = {0, 0.025, 0.05, 0.075, 0.1, 0.125, 0.15},
+    xlabel={$\nu a$}, ylabel={$\frac{b_{22}}{\rho \pi a^3 \omega_e}$}
+  ]
+  \addplot
+  [line width=0.8pt, blue,no marks]
+  table [x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav), y expr=\thisrowno{2}/(\ro*\PI*\L*\L*\L * \thisrowno{0})]
+  {../sphere_ppc/hydros22.txt};
+  \addlegendentry{\small OceanWave3D-Seakeeping}
+  %
+  \addplot
+  [only marks, mark=*, red, mark size=1.5pt, line width=0.6pt, fill=white]
+  table [x expr=\thisrowno{0}, y expr=\thisrowno{1}]
+  {../analytical_results/b_sway_sway.dat};
+  \addlegendentry{\small (Wu \& Eatock Taylor, 1988)}
+\end{axis}
+\end{tikzpicture}
+\end{document}

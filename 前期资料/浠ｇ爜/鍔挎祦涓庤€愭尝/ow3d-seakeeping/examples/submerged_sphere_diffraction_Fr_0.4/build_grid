@@ -1,0 +1,374 @@
+*
+* command file to create a submerged sphere in a cylindrical grid
+*
+*** The geometry consists of:
+*
+ * a submerged hemisphere
+ * the cylinrical background grid
+ * two orthographic patches to remove singularities in the hemisphere
+ * one core grid to remove singularity at the center of the cylinde grid
+*
+*** The geometry parameters
+*
+ ** cylinder:
+  $cyl_res_radi = 1.0;
+  $cyl_res_circ = 1.0;
+  $cyl_res_vert = 1.0;
+  $cyl_L1 = 20; # circumfrential
+  $cyl_L2 = 50; # vertical
+  $cyl_L3 = 55; # radial
+  $cyl_depth = -9;
+  $cyl_out_radius = 15;
+  $cyl_in_radius  = 0.10;
+  @cyl_str_0 = (0,1,1);     # circumfrential
+  @cyl_str_1 = (8, 5, 0.9);   # vertical
+  @cyl_str_2 = (10,8,0);    # radial
+*
+ ** core
+  $core_res_width = 1.0;
+  $core_res_length = 1.0;
+  $core_L1 = 15;
+  $core_L3 = 8;
+  $core_left_x = -0.25;
+  $core_right_x = 0.25;
+  $core_bottom_y = $cyl_depth;
+  $core_aft_z = 0.5;
+*
+ ** sphere
+  $sph_res_radi = 1.0;
+  $sph_res_circ = 1.0;
+  $sph_res_vert = 1.0;
+  $sph_L1 = 29; # circumfrential
+  $sph_L2 = 29;
+  $sph_L3 = 9; # radial
+  $sph_x = 0;
+  $sph_y = 0;
+  $sph_z = -1;
+  $sph_in_radius  = 0.5;
+  $sph_out_radius = 0.75;
+  @sph_str_2 = (2,2,0);    # radial
+*
+ ** north and south patch
+  $patch_res_radi = 1;
+  $patch_res_circ = 1;
+  $patch_res_vert = 1;
+  $patch_L1 = 8;
+  $patch_L2 = 15;
+*
+* 
+*
+* Generate the gird
+*
+create mappings
+*
+* // ************ cylinder ************* //
+*
+	Cylinder
+	orientation
+	0 2 1
+	bounds on the radial variable
+	$cyl_in_radius $cyl_out_radius
+	bounds on the axial variable
+	$cyl_depth 0
+	exit
+	rotate/scale/shift
+	rotate
+	90 1
+	0 0 0
+	mappingName
+	cylinder-full
+  	exit
+  	reparameterize
+    	transform which mapping?
+    	cylinder-full
+    	restrict parameter space
+    	set corners
+        0.25 0.75 0.0 1.0 0.0 1.0
+      	exit
+    	boundary conditions
+	5 5 2 1 0 4
+	lines
+	* circumferential, vertical, radial
+	$L1 = int($cyl_L1 * $cyl_res_circ) + 1;
+	$L2 = int($cyl_L2 * $cyl_res_vert);
+	$L3 = int($cyl_L3 * $cyl_res_radi);
+	$L1 $L2 $L3
+     	share
+      	6 6 7 5 0 0
+    	mappingName
+      	cylinder
+    	exit
+*
+* //  ************ cylinder core ************* //
+*
+	Box
+	mappingName
+	cylinderCore
+	set corners
+	$core_left_x $core_right_x $core_bottom_y 0  0 $core_aft_z
+	boundary conditions
+	0 0 2 1 5 0
+	lines
+	*length, height, width
+	$L1 = int($core_L1 * $core_res_length);
+	$L2 = int($cyl_L2  * $cyl_res_vert);
+	$L3 = int($core_L3 * $core_res_width) + 1;
+	$L1 $L2 $L3
+	share
+	0 0 7 5 6 0
+	exit
+*
+* //  ************ sphere ************* //
+*
+	Sphere
+    	centre
+      	$sph_x $sph_y $sph_z
+    	inner and outer radii
+      	$sph_in_radius $sph_out_radius
+	mappingName
+	sphereUnrotated
+  	exit
+	rotate/scale/shift
+	rotate
+	90 2
+	rotate/scale/shift
+	rotate
+	-90 0
+	0 0 0
+	mappingName
+	sphereRotated
+  	exit
+	reparameterize
+    	transform which mapping?
+      	sphereRotated
+    	restrict parameter space
+      	set corners
+	0.1 0.9 0.25 0.75 0.0 1.0
+      	exit
+    	boundary conditions     
+	0 0 5 5 3 0
+    	share
+      	5 0 6 6 8 0
+    	lines
+	*vertical, circumferential, radial
+	$L1 = int($sph_L1 * $sph_res_vert);
+	$L2 = int($sph_L2 * $sph_res_circ) + 1;
+	$L3 = int($sph_L3 * $sph_res_radi);
+	$L1 $L2 $L3
+    	mappingName
+      	hemisphere
+    	exit
+*
+* //  ************ south patch ************* //
+*
+	reparameterize
+	transform which mapping?
+	sphereRotated
+	orthographic
+	choose north or south pole
+	-1
+      	specify sa,sb
+	0.65 0.65
+	exit
+	mappingName
+	southPole-full
+  	exit
+  	reparameterize
+    	transform which mapping?
+    	southPole-full
+    	restrict parameter space
+    	set corners
+        0.0 0.5 0.0 1.0 0.0 1.0
+      	exit
+    	boundary conditions
+	0 5 0 0 3 0
+    	share
+      	0 6 0 0 8 0
+	lines
+	*longitudinal,transverse,radial
+	$L1 = int($patch_L1 * $patch_res_vert) + 1;
+	$L2 = int($patch_L2 * $patch_res_circ);
+	$L3 = int($sph_L3   * $sph_res_radi);
+	$L1 $L2 $L3
+    	mappingName
+      	southPole
+    	exit
+*
+* //  ************ north patch ************* //
+*
+	reparameterize
+	transform which mapping?
+	sphereRotated
+	orthographic
+	choose north or south pole
+	1
+      	specify sa,sb
+	0.65 0.65
+	exit
+	mappingName
+	northPole-full
+  	exit
+  	reparameterize
+    	transform which mapping?
+    	northPole-full
+    	restrict parameter space
+    	set corners
+        0.0 0.5 0.0 1.0 0.0 1.0
+      	exit
+    	boundary conditions
+	0 5 0 0 3 0
+    	share
+      	0 6 0 0 8 0
+	lines
+	*longitudinal,transverse,radial
+	$L1 = int($patch_L1 * $patch_res_vert) + 1;
+	$L2 = int($patch_L2 * $patch_res_circ);
+	$L3 = int($sph_L3   * $sph_res_radi);
+	$L1 $L2 $L3
+    	mappingName
+      	northPole
+    	exit
+*
+* //  ************ stretch ************* //
+*
+* // ***** cylinder
+*
+	stretch coordinates
+	transform which mapping?
+	cylinder
+	stretch
+	** radially **
+	specify stretching along axis=2
+	layers
+	1
+	$cyl_s20 = $cyl_str_2[0];
+	$cyl_s21 = $cyl_str_2[1];
+	$cyl_s22 = $cyl_str_2[2];
+	$cyl_s20 $cyl_s21 $cyl_s22
+	exit
+	** vertically **
+	specify stretching along axis=1
+	layers
+	1
+	$cyl_s10 = $cyl_str_1[0];
+	$cyl_s11 = $cyl_str_1[1];
+	$cyl_s12 = $cyl_str_1[2];
+	$cyl_s10 $cyl_s11 $cyl_s12
+	exit
+ 	** circumfrentially **	
+	specify stretching along axis=0
+	layers
+	1
+	$cyl_s00 = $cyl_str_0[0];
+	$cyl_s01 = $cyl_str_0[1];
+	$cyl_s02 = $cyl_str_0[2];
+	$cyl_s00 $cyl_s01 $cyl_s02
+	exit
+	exit
+    	mappingName
+      	str_cylinder
+	exit
+*
+* // ***** hemisphere
+*
+	stretch coordinates
+	transform which mapping?
+	hemisphere
+	stretch
+	** radially **
+	specify stretching along axis=2
+	layers
+	1
+	$sph_s20 = $sph_str_2[0];
+	$sph_s21 = $sph_str_2[1];
+	$sph_s22 = $sph_str_2[2];
+	$sph_s20 $sph_s21 $sph_s22
+	exit	
+	exit
+    	mappingName
+      	str_hemisphere
+	exit
+*
+* // ***** cylinder core
+*
+	stretch coordinates
+	transform which mapping?
+	cylinderCore
+	stretch
+	** vertically **
+	specify stretching along axis=1
+	layers
+	1
+	$cyl_s10 $cyl_s11 $cyl_s12
+	exit
+	exit
+    	mappingName
+      	str_core
+	exit
+*
+* // ***** poles
+*
+	stretch coordinates
+	transform which mapping?
+	southPole
+	stretch
+	specify stretching along axis=2
+	layers
+	1
+	$sph_s20 $sph_s21 $sph_s22	
+	exit
+	exit
+    	mappingName
+      	str_s_pole
+	exit
+	stretch coordinates
+	transform which mapping?
+	northPole
+	stretch
+	specify stretching along axis=2
+	layers
+	1
+	$sph_s20 $sph_s21 $sph_s22	
+	exit
+	exit
+    	mappingName
+      	str_n_pole
+	exit
+*
+* //  ************ view ************* //
+*
+  	view mappings
+	str_cylinder
+	str_core
+	str_hemisphere
+	str_s_pole
+	str_n_pole
+	colour boundaries by boundary condition number
+	pause
+	colour boundaries by share value
+    	pause
+  	erase and exit
+exit
+	generate an overlapping grid
+	str_cylinder
+	str_core
+	str_hemisphere
+	str_s_pole
+	str_n_pole
+	done
+ 	change parameters
+  	interpolation type
+    	implicit for all grids
+  	order of accuracy 
+    	fourth order
+  	ghost points
+    	all
+    	2 2 2 2 2 2
+	*1 1 1 1 1 1 
+	exit
+  	compute overlap
+ 	exit
+	save an overlapping grid
+	sphere.hdf
+	exit
+exit

@@ -1,0 +1,209 @@
+    *
+    *
+    read rap model
+    barge_rapped.hdf
+    builder
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "FORE"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create surface grid
+    edge curve tolerance 0.0001
+    set view:0 -0.437681 0.116908 0 3.15549 0.866025 -0.321394 0.383022 0 0.766044 0.642788 -0.5 -0.55667 0.663414 
+      choose edge curve 47 4.004000e+01 -2.346774e+00 3.581365e-16 
+      choose edge curve 45 4.002082e+01 -4.923349e+00 2.042072e-15 
+      choose edge curve 41 1.994500e+01 -5.000000e+00 1.110223e-15 
+    done
+    pause
+    uniform dissipation 2
+    forward and backward
+    lines to march 450 450
+    distance to march 8.5 8.5 (forward, backward)
+    points on initial curve 215
+    equidistribution 0.35 (in [0,1])
+    BC: right (forward) outward splay
+    BC: right (backward) outward splay
+    BC: left (forward) fix y, float x and z
+    BC: left (backward) fix y, float x and z
+    outward splay 0.20 0.20
+      reparameterize initial curve
+      set corners
+      0. 0.22
+      exit
+      plot options...
+      plot reference surface 1
+      set view:0 -0.0340204 -0.0522426 0 1.31808 0.866025 0.321394 0.383022 0 0.766045 -0.642787 -0.5 0.556671 0.663414
+      bigger:0
+      pause
+    generate
+    lines
+    141 291
+    plot options...
+    plot reference surface 1
+    pause
+    exit
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                      VOLUME GRID "FORE"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid
+    backward
+    distance to march 16
+    lines to march 100
+    BC: left fix y, float x and z
+    BC: bottom free floating
+    BC: top free floating
+    volume smooths 10
+    geometric stretching, specified ratio
+    1.03
+    apply boundary conditions to start curve 1
+    generate
+    name FORE
+    smaller:0
+    boundary conditions
+    1 0 0 0 3 0 
+    plot options...
+    plot ghost points 0
+    set view:0 -0.478968 0.0260294 0 3.45587 0.939693 -0.262003 0.219846 0 0.642788 0.766044 -0.34202 -0.719846 0.604023
+    pause
+    exit
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "AFT"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create surface grid
+    edge curve tolerance 0.0001
+    set view:0 0.489855 -0.276329 0 4.14 0.866025 -0.321394 0.383022 0 0.766044 0.642788 -0.5 -0.55667 0.663414
+      choose edge curve 25 -4.004000e+01 -2.503226e+00 3.950476e-16 
+      choose edge curve 22 -3.996335e+01 -4.980820e+00 2.898544e-15 
+      choose edge curve 12 -1.994500e+01 -5.000000e+00 1.554312e-15 
+      done
+      pause
+      uniform dissipation 2
+      forward and backward
+      lines to march 450 450
+      distance to march 8.5 8.5 (forward, backward)
+      points on initial curve 215
+      equidistribution 0.35 (in [0,1])
+      BC: left (forward) outward splay
+      BC: left (backward) outward splay
+      BC: right (forward) fix y, float x and z
+      BC: right (backward) fix y, float x and z
+      outward splay 0.2 0.2
+      	    reparameterize initial curve
+      	    set corners
+      	    0.78 1
+      	    exit
+      generate
+      lines
+      141 291
+      plot options...
+      plot reference surface 1
+      pause
+      exit
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                      VOLUME GRID "AFT"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid...
+    backward
+    distance to march 16
+    lines to march 100
+    BC: right fix y, float x and z
+    BC: bottom free floating
+    BC: top free floating
+    volume smooths 10
+    geometric stretching, specified ratio
+    1.03
+    apply boundary conditions to start curve 1
+    generate
+    name AFT
+    smaller:0
+    boundary conditions
+    0 1 0 0 3 0 
+    plot options...
+    plot ghost points 0
+    pause
+    exit
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "MIDSECTION"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create surface grid
+    edge curve tolerance .01
+     set view:0 0.144426 -0.142265 0 1.16228 0.766044 -0.413176 0.492404 0 0.766044 0.642788 -0.642788 -0.492404 0.586824
+      choose edge curve 32 -1.976340e-12 -2.503226e+00 5.000000e+00 
+      choose edge curve 30 7.486493e-15 -4.980820e+00 4.923349e+00 
+      choose edge curve 27 2.486900e-14 -5.000000e+00 2.346774e+00 
+      choose edge curve 15 2.461576e-14 -5.000000e+00 -2.503226e+00 
+      choose edge curve 17 -2.916454e-14 -4.923349e+00 -4.980820e+00 
+      choose edge curve 20 -2.094933e-12 -2.346774e+00 -5.000000e+00 
+      done
+      pause
+      uniform dissipation 2
+      forward and backward
+      lines to march 655 655
+      distance to march 38 38 (forward, backward)
+      points on initial curve 901
+      equidistribution 0.35 (in [0,1])
+      BC: left (forward) fix y, float x and z
+      BC: left (backward) fix y, float x and z
+      BC: right (forward) fix y, float x and z
+      BC: right (backward) fix y, float x and z
+       generate
+       lines
+       201 451
+       pause
+    exit
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                      VOLUME GRID "MIDSECTION"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid...
+    backward
+    distance to march 16
+    lines to march 100
+    BC: right fix y, float x and z
+    BC: left fix y, float x and z
+    volume smooths 10
+    geometric stretching, specified ratio
+    1.03
+    apply boundary conditions to start curve 1
+    generate
+    name MIDSEC
+    boundary conditions
+    1 1 0 0 3 0
+    pause
+    exit
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                      SAVE THE GRIDS
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    colour boundaries by BC number
+    plot reference surface 0
+    plot volume grids 1
+    plot surface grids 1
+    plot shaded on reference surface 0
+    pause
+    save grids to a file...
+    file name: barge_hyped.hdf
+    save file
+    exit 
+    exit
+    exit

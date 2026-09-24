@@ -1,0 +1,132 @@
+\documentclass{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+
+\def\ro{1000}
+\def\L{0.5}
+\def\grav{9.81}
+\def\PI{3.14159265359}
+\def\U{0.0664}
+
+\begin{tikzpicture}
+%
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(0mm, 0mm)},
+    legend style={at={(0.985, 0.9)}},
+    xmin=0, xmax=6, ymax=2, grid=both, ymin=-0.5,
+    xlabel={\normalsize $\nu a$}, ylabel=
+    {$a_{ij}/\rho \pi a^2 \omega_e U/g$}
+  ]
+  \addplot
+  [
+    line width=0.8pt, black,no marks
+  ]
+  table
+  [
+    x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+    y expr=\thisrowno{1}/(\ro*\PI*\L*\L*\thisrowno{0}* \U / \grav),forget plot]
+  {../cylinder_ppc/hydros13.txt};
+  %
+  \addplot
+  [
+    line width=0.8pt, black, no marks
+  ]
+  table
+  [
+    x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+    y expr=\thisrowno{1}/(\ro*\PI*\L*\L*\thisrowno{0}* \U / \grav)
+  ]
+  {../cylinder_ppc/hydros31.txt};
+  \addlegendentry{\small OceanWave3D-Seakeeping}
+  %
+  \addplot
+  [
+    only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red
+  ]
+  table
+  [
+    x expr=\thisrowno{0},
+    y expr=\thisrowno{1}/10, forget plot
+  ]
+  {../analytical_results/GX_Wu_a_13_low_floating.dat};
+  %
+  \addplot
+  [
+    only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red
+  ]
+  table
+  [
+    x expr=\thisrowno{0},
+    y expr=\thisrowno{1}/10
+  ]
+  {../analytical_results/GX_Wu_a_31_low_floating.dat};
+  \addlegendentry{(Wu \& Eatock Taylor, 1990) - Ana.}
+  \node at (axis cs:0.4, -.22){$a_{31}$};
+  \node at (axis cs:1.1, 0.7){$a_{13}$};
+%
+\end{axis}
+%
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(85mm, 0mm)},
+    legend style={at={(0.989, 0.9)}},
+    xmin=0, xmax=6, ymax=4, grid=both,
+    ytick={-3, -2, -1, 0, 1, 2, 3, 4}, ymin = -3,
+    xlabel={\small $\nu a$}, ylabel={$b_{ij}/\rho \pi a^2 \omega_e^2 U/g$}
+  ]
+  \addplot
+  [
+    line width=0.8pt, black,no marks
+  ]
+  table
+  [
+    x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+    y expr=\thisrowno{2}/(\ro*\PI*\L*\L*\thisrowno{0}* \thisrowno{0} *\U / \grav), forget plot]
+  {../cylinder_ppc/hydros13.txt};
+%
+  \addplot
+   [
+     line width=0.8pt, black,no marks
+   ]
+   table
+   [x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+     y expr=\thisrowno{2}*1/(\ro*\PI*\L*\L*\thisrowno{0}* \thisrowno{0} *\U / \grav),
+   ]
+   {../cylinder_ppc/hydros31.txt};
+   \addlegendentry{\small OceanWave3D-Seakeeping}
+%
+   \addplot
+   [
+     only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red
+   ]
+   table
+   [
+     x expr=\thisrowno{0},
+     y expr=\thisrowno{1}/10, forget plot
+   ]
+   {../analytical_results/GX_Wu_b_13_low_floating.dat};
+%
+   \addplot
+   [
+     only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red]
+   table
+   [
+     x expr=\thisrowno{0},
+     y expr=\thisrowno{1}/10
+   ]
+   {../analytical_results/GX_Wu_b_31_low_floating.dat};
+   \addlegendentry{\small (Wu \& Eatock Taylor, 1990) - Ana.}
+%
+   \node at (axis cs:0.53, 1.7){$b_{13}$};
+   \node at (axis cs:0.45, -0.5) {$b_{31}$};
+\end{axis}
+\end{tikzpicture}
+%
+\end{document}

@@ -1,0 +1,20 @@
+
+
+This folder contains the scripts to build an overset grid for
+a rectangular barge with following specifications:
+
+Length = 80 m
+Breadth = 10 m
+Depth  = 5  m
+
+To generate the grid, run the scripts as:
+
+$Overture/bin/rap barge_rap
+$Overture/bin/mbuilder barge_hype
+$Overture/bin/ogen barge_overlap
+
+To employ surface integration by triangulation, build the patches as:
+
+./build_patches
+
+and put the "patches" folder in your calculation directory.

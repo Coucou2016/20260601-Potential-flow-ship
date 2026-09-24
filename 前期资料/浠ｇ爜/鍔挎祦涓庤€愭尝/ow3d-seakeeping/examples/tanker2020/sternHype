@@ -1,0 +1,157 @@
+  * 
+  * 
+  * ------------------------------------------------------------------------------------------------------------ 
+  * 
+  *                                             SURFACE GRID "STERN" 
+  * 
+  * ------------------------------------------------------------------------------------------------------------ 
+  * 
+  read rap model 
+  cleanedStern.hdf 
+  builder 
+    create surface grid 
+      edge curve tolerance 0.000000001
+      set view:0 0.0807364 -0.293562 0 8.07072 0.150384 -0.5 -0.852869 -0.984808 6.4674e-17 -0.173648 0.0868241 0.866025 -0.492404
+      choose edge curve 26 -7.749474e+01 -6.098381e-15 -1.212467e+01 
+      choose edge curve 30 -8.162634e+01 -2.868950e-13 -1.189421e+01 
+      choose edge curve 33 -8.472442e+01 3.351250e-09 -1.150779e+01
+      choose edge curve 3 -8.520948e+01 -1.805914e-10 -1.135417e+01 
+      choose edge curve 7 -8.616355e+01 -2.215841e-09 -7.295651e+00 
+      choose edge curve 57 -8.714005e+01 4.936940e-10 -4.582522e+00 
+      choose edge curve 119 -8.818238e+01 3.050453e-15 -3.992540e+00 
+      choose edge curve 117 -8.866737e+01 -9.880056e-15 -3.811436e+00 
+      choose edge curve 76 -9.045747e+01 4.755556e-14 -3.257753e+00 
+      choose edge curve 73 -9.450188e+01 -5.272049e-13 -2.050644e+00
+      choose edge curve 66 -9.713278e+01 -2.958888e-03 -1.210542e+00 
+      choose edge curve 130 -9.718000e+01 -4.583360e-13 -5.370212e-01
+      done
+      pause
+      uniform dissipation 4 
+      forward and backward 
+      lines to march 381 381 
+      distance to march 17 17 
+      points on initial curve 201 
+      equidistribution 1 (in [0,1]) 
+      BC: left (forward) outward splay 
+      BC: left (backward) outward splay 
+      outward splay 0.35 0.35 (left, right for outward splay BC) 
+      *BC: left (backward) fix z, float x and y 
+      *BC: left (forward) fix z, float x and y
+      generate
+      smoothing...
+      *GSM:number of elliptic smooths 3
+      GSM:project smoothed grid onto reference surface 0
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid    
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      close smoothing options
+      lines
+      111 201 
+      *post stretching... 
+      *GST:pick to stretch 
+      *stretch r1 1 2 3 0 (id,weight,exponent,position) 
+      *stretch r2 2 2 5 0.6 
+      *stretch r2 3 2 5 0.35 
+      *exit 
+      *GST:stretch grid 
+      *close post stretching options
+      pause 
+      exit 
+    * 
+    * ------------------------------------------------------------------------------------------------------------ 
+    * 
+    *                                             VOLUME GRID "STERN" 
+    * 
+    * ------------------------------------------------------------------------------------------------------------ 
+    * 
+    create volume grid... 
+    forward
+    distance to march 48
+    lines to march 100
+    BC: right fix z, float x and y 
+    *BC: left fix z, float x and y 
+    volume smooths 600 
+    geometric stretching, specified ratio 
+    1.02 
+    apply boundary conditions to start curve 1 
+    generate
+    *smoothing...
+    *GSM:smooth grid
+    *GSM:smooth grid
+    *GSM:smooth grid
+    *GSM:smooth grid
+    *GSM:smooth grid
+    *GSM:smooth grid
+    *evaluate as nurbs 1
+    *degree of nurbs 3
+    name STERN
+    *boundary offset 0 0 0 0 3 3 (l r b t b f)
+    boundary conditions
+    0 1 0 0 3 0
+    plot ghost points 1 
+    ghost lines to plot: 2
+    pause
+    close plot options
+    exit
+    * 
+    * 
+    * ------------------------------------------------------------------------------------------------------------ 
+    * 
+    *                                               VIEW AND SAVE 
+    * 
+    * ------------------------------------------------------------------------------------------------------------ 
+    * 
+    set view:0 -0.0386738 0.160878 0 1.07814 1 0 0 0 1 0 0 0 1
+    colour boundaries by BC number
+    plot reference surface 0
+    plot volume grids 1
+    plot surface grids 1
+    plot shaded on reference surface 0
+    pause
+    save grids to a file...
+    file name: HYPED_STERN.hdf
+    save file
+    exit 
+    exit
+    exit

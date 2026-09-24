@@ -1,0 +1,11 @@
+
+This folder contains input file, grid file, mass matrix file, stiffness matrix file, shear stiffness matrix file
+for the Type I Wigley hull case in the Journal paper 
+'Solving for hydroelastic ship response using Timoshenko beam modes at forward speed'
+
+Note that please select the Euler beam and Newman hydrostatic model inside the codes, 'OW3DConstants.cpp'.
+
+
+In the paper, two types of base flow 'double body' and 'Neumann-Kelvin' have been used,
+so just set 'db' and 'nk' in the 'base' line in ow3d.in file for the corresponding case;
+

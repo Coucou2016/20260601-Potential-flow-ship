@@ -1,0 +1,444 @@
+*
+* This scripts is for building the overlapping grid for a submerged spheroid
+*
+*
+* ---------------------------------
+* -- Variables:
+* ---------------------------------
+*
+*
+   $res = 1; # resolution
+   *
+   *
+   *
+   * for spheroid:
+   *
+   $L              =  1;         
+   $B              =  1./6 * $L; 
+   $b              =  0.5  * $B; # SEMI-AXIS
+   $l              =  0.5  * $L; # SEMI-AXIS
+   $d              =  0;
+   $sph_L1         =  80; # circumfrential
+   $sph_L2         =  30;
+   $sph_L3         =  22; # radial
+   $patch_L1       =  22;
+   $patch_L2       =  18;
+   @sph_str_2      =  (2, 10, 0);    # radial
+   *
+   ** for cylinder:
+   *
+   $cyl_L1         =  24; # circumfrential
+   $cyl_L2         =  30; # vertical
+   $cyl_L3         =  51; # radial
+   $cyl_depth      = -1.25;
+   $cyl_out_radius =  15;
+   $cyl_in_radius  =  0.10;
+   @cyl_str_0      =  (0, 2, 5);     # circumfrential
+   @cyl_str_1      =  (5, 6, 1);   # vertical
+   @cyl_str_2      =  (12, 9, 0);    # radial
+   *
+   * for core:
+   *
+   $core_L1        =  15;
+   $core_L3        =  8;
+   $core_left_x    = -0.25;
+   $core_right_x   =  0.25;
+   $core_bottom_y  =  $cyl_depth;
+   $core_aft_z     =  0.3;
+   * 
+   * 
+   * - NOTE : SHARE VALUES :
+   * 
+   * 6 : free surface
+   * 7 : body
+   * 8 : wall
+   * 9 : symmetry plane
+   * 
+   * - NOTE : BOUNDARY TAGS :
+   * 
+   * 1 : free surface
+   * 2 :
+   * 3 : body
+   * 4 : wall
+   * 5 : symmetry
+*
+* ---------------------------------
+* -- Mapping for cylinder
+* ---------------------------------
+*
+  create mappings
+ *
+    Cylinder
+    orientation
+    0 2 1
+    bounds on the radial variable
+    $cyl_in_radius $cyl_out_radius
+    bounds on the axial variable
+    $cyl_depth 0
+    exit
+    rotate/scale/shift
+    rotate
+    90 1
+    0 0 0
+    mappingName
+    cylinder-full
+    exit
+    reparameterize
+    transform which mapping?
+    cylinder-full
+    restrict parameter space
+    set corners
+    0.25 0.75 0.0 1.0 0.0 1.0
+    exit
+    boundary conditions
+    5 5 2 1 0 4
+    lines
+    * circumferential, vertical, radial
+    $L1 = int($cyl_L1) + 1;
+    $L2 = int($cyl_L2);
+    $L3 = int($cyl_L3);
+    $L1 $L2 $L3
+    share
+    9 9 8 6 0 0
+    mappingName
+    cylinder
+    exit
+*
+* ---------------------------------
+* -- Mapping for the core
+* ---------------------------------
+*
+    Box
+    mappingName
+    cylinderCore
+    set corners
+    $core_left_x $core_right_x $core_bottom_y 0  0 $core_aft_z
+    boundary conditions
+    0 0 2 0 5 0
+    lines
+    *length, height, width
+    $L1 = int($core_L1);
+    $L2 = int($cyl_L2);
+    $L3 = int($core_L3) + 1;
+    $L1 $L2 $L3
+    share
+    0 0 8 0 9 0
+    exit
+*
+* ---------------------------------
+*  -- Mapping for the ellipse
+* ---------------------------------
+*
+    Circle or ellipse
+    specify centre
+    0 $d 
+    specify axes of the ellipse
+    $l $b
+    specify start/end angles
+    0 0.5
+    mappingName
+    ellipse
+    *pause
+    exit
+*
+*
+* ---------------------------------
+* -- Build hyperbolic grid
+* ---------------------------------
+*
+*
+    hyperbolic
+    distance to march
+    0.3
+    lines to march 
+    300
+    points on initial curve 150
+    *geometric stretching, specified ratio
+    *1.1
+    boundary condition options...
+    BC: right fix y, float x and z
+    BC: left fix y, float x and z
+    generate
+    mappingName
+    ellipse-surface
+    *pause
+    exit
+*
+* ---------------------------------
+* -- Making a body of revolution
+* ---------------------------------
+*
+* 
+    body of revolution
+    tangent of line to revolve about
+    1 0 0
+    choose a point on the line to revolve about
+    0 $d 0
+    mappingName
+    spheroid
+    exit
+    reparameterize
+    transform which mapping?
+    spheroid
+    restrict parameter space
+    set corners
+    0.15 0.85 .5 .75 0 1
+    exit
+    boundary conditions     
+    0 0 5 1 3 0
+    share
+    0 0 9 6 7 0
+    lines
+    *vertical, circumferential, radial
+    $L1 = int($sph_L1 * $res);
+    $L2 = int($sph_L2 * $res) + 1;
+    $L3 = int($sph_L3 * $res);
+    $L1 $L2 $L3
+    mappingName
+    half-spheroid
+    *pause
+    exit
+*
+* ---------------------------------
+* -- Patch on the front singularity
+* ---------------------------------
+*
+*
+    reparameterize
+    transform which mapping?
+    spheroid
+    orthographic
+    choose north or south pole
+    1
+    specify sa,sb
+    0.6 0.6
+    exit
+    mappingName
+    front_full
+    exit
+    reparameterize
+    transform which mapping?
+    front_full
+    restrict parameter space
+    set corners
+    0 .5 0 .5 0 1
+    exit
+    boundary conditions
+    0 1 0 5 3 0
+    share
+    0 6 0 9 7 0
+    lines
+    *longitudinal,transverse,radial
+    $L1 = int($patch_L1 * $res);
+    $L2 = int($patch_L2 * $res);
+    $L3 = int($sph_L3   * $res);
+    $L1 $L2 $L3
+    mappingName
+    front
+    *pause
+    exit
+*
+* ---------------------------------
+* -- Patch on the back singularity
+* ---------------------------------
+*
+*
+    reparameterize
+    transform which mapping?
+    spheroid
+    orthographic
+    choose north or south pole
+    -1
+    specify sa,sb
+    0.6 0.6
+    exit
+    mappingName
+    back_full
+    exit
+    reparameterize
+    transform which mapping?
+    back_full
+    restrict parameter space
+    set corners
+    0 .5 .5 1 0 1
+    exit
+    boundary conditions
+    0 1 5 0 3 0
+    share
+    0 6 9 0 7 0
+    lines
+    *longitudinal,transverse,radial
+    $L1 = int($patch_L1 * $res);
+    $L2 = int($patch_L2 * $res);
+    $L3 = int($sph_L3   * $res);
+    $L1 $L2 $L3
+    mappingName
+    back
+    *pause
+    exit
+*
+* ---------------------------------
+* -- Stretch the component grids
+* ---------------------------------
+*
+*   CYLINDER
+*
+    stretch coordinates
+    transform which mapping?
+    cylinder
+    stretch
+    ** radially **
+    specify stretching along axis=2
+    layers
+    1
+    $cyl_s20 = $cyl_str_2[0];
+    $cyl_s21 = $cyl_str_2[1];
+    $cyl_s22 = $cyl_str_2[2];
+    $cyl_s20 $cyl_s21 $cyl_s22
+    exit
+    ** vertically **
+    specify stretching along axis=1
+    layers
+    1
+    $cyl_s10 = $cyl_str_1[0];
+    $cyl_s11 = $cyl_str_1[1];
+    $cyl_s12 = $cyl_str_1[2];
+    $cyl_s10 $cyl_s11 $cyl_s12
+    exit
+    ** circumfrentially **	
+    *specify stretching along axis=0
+    *layers
+    *2
+    *2 4 1
+    *2 4 0
+    *exit
+    exit
+    mappingName
+    str-cylinder
+    *pause
+    exit
+*
+*   CORE
+*
+    stretch coordinates
+    transform which mapping?
+    cylinderCore
+    stretch
+    ** vertically **
+    specify stretching along axis=1
+    layers
+    1
+    $cyl_s10 $cyl_s11 $cyl_s12
+    exit
+    exit
+    mappingName
+    str-core
+    exit
+*
+*
+*   SPHEROID
+*
+*
+    stretch coordinates
+    transform which mapping?
+    half-spheroid
+    stretch
+    ** radially **
+    specify stretching along axis=2
+    layers
+    1
+    $sph_s20 = $sph_str_2[0];
+    $sph_s21 = $sph_str_2[1];
+    $sph_s22 = $sph_str_2[2];
+    $sph_s20 $sph_s21 $sph_s22
+    exit	
+    exit
+    mappingName
+    str-spheroid
+    *pause
+    exit
+*
+*    PATCHES
+*
+*
+    stretch coordinates
+    transform which mapping?
+    front
+    stretch
+    specify stretching along axis=2
+    layers
+    1
+    $sph_s20 $sph_s21 $sph_s22	
+    exit
+    specify stretching along axis=0
+    layers 
+    1
+    2 2 1
+    exit
+    exit
+    mappingName
+    str-front
+    exit
+    stretch coordinates
+    transform which mapping?
+    back
+    stretch
+    specify stretching along axis=2
+    layers
+    1
+    $sph_s20 $sph_s21 $sph_s22	
+    exit
+    specify stretching along axis=0
+    layers
+    1
+    2 2 1
+    exit
+    exit
+    mappingName
+    str-back
+    exit
+*
+* -----------------------------
+* -- View the mappings
+* -----------------------------
+*
+    view mappings
+    set view:0 0.00113486 -0.0103197 0 15.3426 -1 0 1.94289e-16 0 1 0 -1.94289e-16 0 -1
+    str-cylinder
+    str-core
+    str-spheroid
+    str-front
+    str-back
+    colour boundaries by boundary condition number
+    pause
+    colour boundaries by share value
+    pause
+    erase and exit
+    exit
+*
+* -----------------------------------
+* -- BUILD OVERLAPPING GRID
+* -----------------------------------
+*
+    generate an overlapping grid
+    str-cylinder
+    str-core
+    str-spheroid
+    str-front
+    str-back
+    done
+    change parameters
+    interpolation type
+    implicit for all grids
+    order of accuracy 
+    fourth order
+    ghost points
+    all
+    2 2 2 2 2 2
+    exit
+    compute overlap
+    exit
+    save an overlapping grid
+    spheroid_floating_1_6.hdf
+    exit
+exit

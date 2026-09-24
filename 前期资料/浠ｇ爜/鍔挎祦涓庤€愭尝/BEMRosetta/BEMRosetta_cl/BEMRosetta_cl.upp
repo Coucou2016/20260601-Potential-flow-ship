@@ -1,0 +1,96 @@
+description "Hydrodynamic coefficients converter command line utility\377";
+
+noblitz;
+
+uses
+	Core,
+	ScatterDraw,
+	Surface,
+	STEM4U,
+	MatIO,
+	SysInfo,
+	plugin/sqlite3,
+	Hdf5,
+	plugin/zstd,
+	NetCDF,
+	Xlnt,
+	Npy;
+
+options(MSC) /bigobj;
+
+options(MSC) -D_SCL_SECURE_NO_WARNINGS;
+
+options(CLANG & PEDANTIC) "-Wall -Wextra -Wunused-parameter -Wlogical-op-parentheses -Wdeprecated-copy-with-user-provided-copy -Woverloaded-virtual -Wmissing-braces -Wshadow -Wimplicit-fallthrough -Wsign-conversion -Wformat=2";
+
+file
+	main.cpp,
+	BEMRosetta.h,
+	BEMRosetta_int.h,
+	python.cpp,
+	dllapi.cpp,
+	export.h,
+	CommandLine.cpp,
+	BEM.cpp,
+	Mesh readonly separator,
+	Mesh.cpp,
+	hams_mesh.cpp,
+	orca_mesh.cpp,
+	capy_mesh.cpp,
+	aqwa_mesh.cpp,
+	hydrostar_mesh.cpp,
+	salome_mesh.cpp,
+	nemoh_mesh.cpp,
+	wamit_mesh.cpp,
+	SurfaceBSpline.cpp,
+	SurfaceBSpline.h,
+	diodore_mesh.cpp,
+	off_mesh.cpp,
+	Solvers readonly separator,
+	Hydro.cpp,
+	Hydro2.cpp,
+	GridBody.cpp,
+	nemoh.cpp,
+	hams.cpp,
+	aqwa.cpp,
+	wamit.cpp,
+	orcawave.cpp,
+	diodore.cpp,
+	matlab.cpp,
+	bemioh5.cpp,
+	hydrostar.cpp,
+	capytaine.cpp,
+	deeplineswind.cpp,
+	foamm.cpp,
+	diffrac.cpp,
+	diffrac.h,
+	Fast readonly separator,
+	fast.cpp,
+	fastUtils.cpp,
+	hydrodyn.dat,
+	FastOut.cpp,
+	FastOut.h,
+	Wind readonly separator,
+	wind.cpp,
+	bts.cpp,
+	wnd.cpp,
+	Other readonly separator,
+	mooring.cpp,
+	data.brc,
+	main_cl.rc,
+	heal.cpp,
+	heal.h,
+	orca.cpp,
+	orca.h,
+	functions.cpp,
+	functions.h,
+	Simulation.cpp,
+	Simulation.h,
+	Copying;
+
+mainconfig
+	"" = "BEMR_CL",
+	"BEMR_DLL" = "BEMR_DLL DLL",
+	"" = "BEMR_TEST_DLL",
+	"" = "BEMR_TEST_DLL_INTERNAL";
+
+ spellcheck_comments "EN-GB"

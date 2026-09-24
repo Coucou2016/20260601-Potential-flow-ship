@@ -1,0 +1,55 @@
+
+
+# =========================================================================================
+# Define ow3dt sources
+# =========================================================================================
+FIELD_SRC = Field.cpp ApplyNeumannDirichletConditions.cpp BuildSystemMatrix_.cpp ExtractBodyPotentials_.cpp MultiplyByNormals_.cpp StoreBodyIntegrals.cpp StoreBodyPotentials.cpp
+MODES_SRC = Modes.cpp
+FREESURFACE_SRC = FreeSurface.cpp BuildSpongeLayer_.cpp ComputeSolutionSlope.cpp ExtractFreeSurfaceIndices_.cpp InterpolateSolutions.cpp March.cpp\
+PrintElevation.cpp PrintShowFile.cpp SetStageSolution.cpp StoreWaterlineElevations.cpp PrintUpwindVerifications.cpp PrintFilterVerifications.cpp
+DIFFRACTION_SRC = Diffraction.cpp DeepwaterDiffractionBCs_.cpp InterpolateDiffractionBCs_.cpp TransformIntegrands.cpp ComputeInverseTransform_.cpp
+GMODE_SRC = GMode.cpp
+RADIATION_SRC = Radiation.cpp
+RESISTANCE_SRC = Resistance.cpp
+UPWIND_SRC = Upwind.cpp BuildVertexData_.cpp BuildUpwindStenciles_0_1_.cpp BuildUpwindStenciles_0_2_.cpp BuildUpwindStenciles_1_2_.cpp\
+UpwindDifferentiate.cpp ApplyNeumannCondition.cpp
+FIELD_FULL = $(addprefix ./field/,$(FIELD_SRC))
+MODES_FULL = $(addprefix ./modes/,$(MODES_SRC))
+FREESURFACE_FULL = $(addprefix ./freesurface/,$(FREESURFACE_SRC))
+DIFFRACTION_FULL = $(addprefix ./modes/diffraction/,$(DIFFRACTION_SRC))
+GMODE_FULL = $(addprefix ./modes/gmode/,$(GMODE_SRC))
+RADIATION_FULL = $(addprefix ./modes/radiation/,$(RADIATION_SRC))
+RESISTANCE_FULL = $(addprefix ./modes/resistance/,$(RESISTANCE_SRC))
+NEUMANNBC_FULL = $(addprefix ./neumannbc/,$(NEUMANNBC_SRC))
+UPWIND_FULL = $(addprefix ./upwind/,$(UPWIND_SRC))
+OW3DT_SRC = ow3dt.cpp $(FIELD_FULL) $(FILTER_FULL) $(FREESURFACE_FULL) $(DIFFRACTION_FULL) $(GMODE_FULL)\
+$(RADIATION_FULL) $(RESISTANCE_FULL) $(NEUMANNBC_FULL) $(UPWIND_FULL) $(MODES_FULL)
+
+# =========================================================================================
+# Define the rule for makeing ow3dt executable
+# =========================================================================================	
+ow3dt: $(OW3DT_SRC:%.cpp=%.o) $(UTIL_SRC:%.cpp=%.o) $(FORTRAN_SRC:%.f90=%.o)
+	$(LINK.deps) $^ $(FLIBS) $(OGMGLIB) $(GSL_LIBS) $(GLIBS) $(PETSCLIB) -o $@
+
+# =========================================================================================
+# Define the pattern rule for making .d files from .cpp files.
+# =========================================================================================
+ifneq ($(MAKECMDGOALS),clean)
+include $(OW3DT_SRC:%.cpp=%.d)
+include $(UTIL_SRC:%.cpp=%.d)
+endif
+%.d: %.cpp
+	$(CXX) -std=c++11 -M $(CPPFLAGS) $(CCFLAGS) $< > $@.$$$$; \
+	sed 's,\($(notdir $*)\)\.o[ :]*,$(@D)/\1.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$
+
+.PHONY: clean
+clean:
+	@rm -f ow3dt
+	@rm -f *.o
+	@rm -f *.d*
+	@rm -f */*.o
+	@rm -f */*.d*
+	@rm -f */*/*.o
+	@rm -f */*/*.d*
+	@echo "erased all .d, , and .o files..."

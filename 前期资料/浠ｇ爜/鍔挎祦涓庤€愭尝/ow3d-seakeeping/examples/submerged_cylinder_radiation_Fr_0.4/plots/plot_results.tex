@@ -1,0 +1,139 @@
+\documentclass{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+
+\def\ro{1000}
+\def\L{0.5}
+\def\grav{9.81}
+\def\PI{3.14159265359}
+
+\begin{tikzpicture}
+
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(0mm, 0mm)},
+    legend style={at={(0.97, 0.8)}},
+    xmin=0, xmax=2,
+    ytick={-1, 0, 1, 2 , 3, 4, 5, 6}, grid=both,
+    ymin=-1,ymax=6,
+    xlabel={$\nu a$}, ylabel={$a_{33}/\rho \pi a^2$}
+  ]
+  \addplot
+      [line width=0.9pt, black,no marks]
+      table
+      [
+        x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+        y expr=\thisrowno{1}/(\ro*\PI*\L*\L)
+      ]
+      {../cylinder_ppc/hydros33.txt};
+      \addlegendentry{OceanWave3D-Seakeeping}
+      %
+  \addplot
+      [only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red]
+      table
+      [
+        x expr=\thisrowno{0},
+        y expr=\thisrowno{1}
+      ]
+      {../analytical_results/GX_Wu_a_33_high_submerged.dat};
+      \addlegendentry{(Wu 1991) - FEM}     
+\end{axis}
+%
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(0mm, -70mm)},
+    legend style={at={(0.97, 0.8)}},
+    xmin=0, xmax=2, grid=both,
+    ytick={-1, 0, 1, 2 , 3, 4, 5, 6},
+    ymin=-1,ymax=6,
+    xlabel={$\nu a$}, ylabel={$a_{11}/\rho \pi a^2$}
+  ]
+  \addplot
+      [line width=0.9pt, black,no marks]
+      table
+      [
+        x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+        y expr=\thisrowno{1}/(\ro*\PI*\L*\L)
+      ]
+      {../cylinder_ppc/hydros11.txt};
+      \addlegendentry{OceanWave3D-Seakeeping}
+      %
+  \addplot
+      [only marks, mark=o, red, mark size=1.5pt, line width=0.6pt, fill=red]
+      table
+      [
+        x expr=\thisrowno{0},
+        y expr=\thisrowno{1}
+      ]
+      {../analytical_results/GX_Wu_a_11_high_submerged.dat};
+      \addlegendentry{(Wu 1991) - FEM}     
+\end{axis} 
+%
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(90mm, -70mm)},
+    legend style={at={(0.97, 0.8)}}, grid=both,
+    xmin=0, xmax=2,
+    ymin=-0.5, ymax=1.5,
+    xlabel={$\nu a$}, ylabel={$b_{11}/\omega_e \rho \pi a^2$}]
+  \addplot
+      [
+        line width=0.8pt, black,no marks]
+      table
+      [
+        x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+        y expr=\thisrowno{2}/(\ro*\PI*\L*\L*\thisrowno{0})
+      ]
+      {../cylinder_ppc/hydros11.txt};
+      \addlegendentry{OceanWave3D-Seakeeping}
+      %
+  \addplot
+     [only marks, mark=o, red, mark size=1.5pt, line width=0.6pt]
+     table
+     [
+       x expr=\thisrowno{0},
+       y expr=\thisrowno{1}]
+     {../analytical_results/GX_Wu_b_11_high_submerged.dat};
+     \addlegendentry{(Wu 1991) - FEM}
+\end{axis}
+%
+\begin{axis}
+  [
+    scaled ticks=false,/pgf/number format/fixed relative,
+    at={(90mm, 0mm)},
+    legend style={at={(0.97, 0.8)}}, grid=both,
+    xmin=0, xmax=2,
+    ymin=-0.5, ymax=1.5,
+    xlabel={$\nu a$}, ylabel={$b_{33}/\omega_e \rho \pi a^2$}]
+  \addplot
+      [
+        line width=0.8pt, black,no marks]
+      table
+      [
+        x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav),
+        y expr=\thisrowno{2}/(\ro*\PI*\L*\L*\thisrowno{0})
+      ]
+      {../cylinder_ppc/hydros33.txt};
+      \addlegendentry{OceanWave3D-Seakeeping}
+      %
+  \addplot
+     [only marks, mark=o, red, mark size=1.5pt, line width=0.6pt]
+     table
+     [
+       x expr=\thisrowno{0},
+       y expr=\thisrowno{1}]
+     {../analytical_results/GX_Wu_b_33_high_submerged.dat};
+     \addlegendentry{(Wu 1991) - FEM}
+\end{axis}
+
+%
+\end{tikzpicture}
+
+\end{document}

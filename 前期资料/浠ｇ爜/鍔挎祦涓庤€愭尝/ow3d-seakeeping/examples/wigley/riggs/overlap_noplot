@@ -1,0 +1,348 @@
+  *
+  * --------------------------------------------------------------------------------------------
+  * This scrip generates the overlapping grid for the ship grid using "ogen". The script
+  * loads the hdf file containing the grid components, made by "mbuilder" hyperbolic grid
+  * generator. The background grid, and all required transformations are defined in this script.
+  * --------------------------------------------------------------------------------------------
+  * 
+  * - GENERAL VARIABLES
+  * 
+  $scl  = 1./100.; 
+  $L    = 100 * $scl;  # The length of the ship 
+  $B    = 10  * $scl;  # The beam   of the ship
+  $res0 = 1;          # resolution
+  $resh = 1;
+  $resb = 1; 
+  * 
+  * 
+  * - VARIABLES FOR THE CYLINDER GRID
+  *  
+  $Cyln_rin = $B;
+  $Cyln_rot = 15 * $L;
+  $Cyln_atp = 0;
+  $Cyln_abt = -1.5 * $L;  
+  $Cyln_lnc = int(30 * $res0);
+  $Cyln_lnv = int(20 * $res0);
+  $Cyln_lnr = int(55 * $res0);
+  * 
+  * - VARIABLES FOR THE CORE GRID  
+  * 
+  $Core_Cxl = -1.25 * $Cyln_rin;
+  $Core_Cxr =  1.25 * $Cyln_rin;
+  $Core_Cyb = $Cyln_abt;
+  $Core_Cyt =  0;
+  $Core_Czf =  1.25 * $Cyln_rin;
+  $Core_Czk =  0;
+  $Core_ln1 =  int(28 * $res0);
+  $Core_ln2 =  $Cyln_lnv;
+  $Core_ln3 =  int(8 * $res0);
+  *
+  * - NOTE : SHARE VALUES :
+  *
+  * 6 : free surface
+  * 7 : body
+  * 8 : wall
+  * 9 : symmetry plane
+  * 
+  * - NOTE : BOUNDARY TAGS :
+  *  
+  * 1 : free surface
+  * 2 : bed
+  * 3 : body 
+  * 4 : wall
+  * 5 : symmetry
+  * 
+  * ----------------------------------------------------------------------
+  *                   GENERATE THE BACKGROUND GRID
+  * ----------------------------------------------------------------------
+  * 
+  create mappings
+  * 
+  * **** The core grid ****
+  * 
+  Box
+  set corners
+  $Core_Cxl $Core_Cxr $Core_Cyb $Core_Cyt $Core_Czf $Core_Czk 
+  lines
+  $Core_ln1 $Core_ln2 $Core_ln3
+  share
+  0 0 8 0 0 9
+  boundary conditions
+  0 0 2 0 0 5
+  mappingName
+  core
+  exit
+  * 
+  * **** The cylinder grid ****
+  *   
+  Cylinder
+  orientation
+  0 2 1
+  bounds on the radial variable
+  $Cyln_rin $Cyln_rot
+  bounds on the axial variable
+  $Cyln_abt $Cyln_atp 
+  exit
+  rotate/scale/shift
+  rotate
+  90 1
+  0 0 0
+  mappingName
+  fulCylinder
+  exit
+  reparameterize
+  transform which mapping?
+  fulCylinder
+  restrict parameter space
+  set corners
+  0.25 0.75 0. 1. 0. 1.
+  exit
+  boundary conditions
+  5 5 2 1 0 4
+  share
+  9 9 8 6 0 0
+  lines
+  $Cyln_lnc $Cyln_lnv $Cyln_lnr
+  mappingName
+  cylinder
+  exit
+  * ----------------------------------------------------------------------
+  *             LOAD AND TRANSFORM THE HYPERBOLIC COMPONENTS
+  * ----------------------------------------------------------------------
+  open a data-base
+  hypedWhole.hdf
+  open an old file read-only
+  get all mappings from the data-base
+  rotate/scale/shift
+  transform which mapping?
+  HULL
+  rotate
+  -90 0
+  exit
+  scale
+  $scl $scl $scl
+  lines
+  $hull_l1 = int(41 * $resh);
+  $hull_l2 = int(61 * $resh);
+  $hull_l3 = int(23 * $resh);
+  $hull_l1 $hull_l2 $hull_l3
+  mappingName
+  rotHull
+  exit
+  * 
+  rotate/scale/shift
+  transform which mapping?
+  BOW
+  rotate
+  -90 0
+  exit
+  scale
+  $scl $scl $scl
+  $bow_l1 = int(30 * $resb);
+  $bow_l2 = int(32 * $resb);
+  $bow_l3 = int(23 * $resb);
+  lines
+  $bow_l1 $bow_l2 $bow_l3
+  mappingName
+  rotBow
+  exit
+  * 
+  rotate/scale/shift
+  transform which mapping?
+  STERN
+  rotate
+  -90 0
+  exit
+  scale
+  $scl $scl $scl
+  lines
+  $stern_l1 = int(30 * $resb);
+  $stern_l2 = int(32 * $resb);
+  $stern_l3 = int(23 * $resb);
+  $stern_l1 $stern_l2 $stern_l3
+  mappingName
+  rotStern
+  exit
+  * ----------------------------------------------------------------------
+  *                 SPLIT THE HYPERBOLIC COMPONENTS IN 2
+  * ----------------------------------------------------------------------
+  reparameterize
+  transform which mapping?
+  rotHull
+  set corners
+  0 .5 0. 1. 0. 1.
+  share
+  6 9 0 0 7 0 
+  boundary conditions
+  1 5 0 0 3 0
+  mappingName
+  hlfHull
+  exit
+  * 
+  reparameterize
+  transform which mapping?
+  rotBow
+  set corners
+  0 1 0 .5 0 1
+  share
+  0 6 0 9 7 0
+  boundary conditions
+  0 1 0 5 3 0
+  mappingName
+  hlfBow
+  exit
+  * 
+  reparameterize
+  transform which mapping?
+  rotStern
+  set corners
+  0 1 0 .5 0 1
+  share
+  6 0 0 9 7 0
+  boundary conditions
+  1 0 0 5 3 0
+  mappingName
+  hlfStern
+  exit
+  * ----------------------------------------------------------------------
+  *                     STRETCH THE COMPONENT GRIDS
+  * ----------------------------------------------------------------------
+  stretch coordinates
+  transform which mapping?
+  core
+  stretch
+  specify stretching along axis=1
+  layers
+  1
+  6 6 1
+  exit
+  exit
+  mappingName
+  strCore
+  exit
+  * 
+  stretch coordinates
+  transform which mapping?
+  cylinder
+  stretch
+  specify stretching along axis=2
+  layers
+  1
+  8 15 0
+  exit
+  specify stretching along axis=1
+  layers
+  1
+  6 6 1
+  exit 
+  exit
+  mappingName
+  strCylinder
+  exit
+  * 
+  * 
+  stretch coordinates
+  transform which mapping?
+  hlfHull
+  stretch
+  specify stretching along axis=1
+  layers
+  2
+  2 4 0
+  2 4 1
+  exit
+  specify stretching along axis=0
+  layers
+  1
+  2 2 0.5
+  exit
+  *specify stretching along axis=2
+  *layers
+  *1
+  *2 2 0
+  *exit
+  exit
+  mappingName
+  strHull
+  exit
+  * 
+  stretch coordinates
+  transform which mapping?
+  hlfStern
+  stretch
+  specify stretching along axis=1
+  layers
+  2
+  2 6 1
+  2 4 0
+  exit
+  *specify stretching along axis=2
+  *layers
+  *1
+  *2 2 0
+  *exit  
+  exit
+  mappingName
+  strStern
+  exit
+  * 
+  stretch coordinates
+  transform which mapping?
+  hlfBow
+  stretch
+  specify stretching along axis=1
+  layers
+  2
+  2 6 1
+  2 4 0
+  exit
+  *specify stretching along axis=2
+  *layers
+  *1
+  *2 2 0
+  *exit
+  exit
+  mappingName
+  strBow
+  exit
+  * ----------------------------------------------------------------------
+  * View mappings
+  * ----------------------------------------------------------------------
+  view mappings
+  set view:0 -0.114007 -0.0574453 0 1.7866 -0.642788 -0.383022 0.663414 0 0.866025 0.5 -0.766044 0.321394 -0.55667
+  strHull
+  strBow
+  strStern
+  #strCylinder
+  #strCore
+  colour boundaries by share value
+  #pause
+  colour boundaries by boundary condition number
+  #pause
+  erase and exit
+  exit
+  * ----------------------------------------------------------------------
+  * Build overlapping grid 
+  * ----------------------------------------------------------------------
+  generate an overlapping grid
+  strCylinder
+  strCore
+  strStern
+  strBow
+  strHull
+  done
+  change parameters
+  interpolation type
+  implicit for all grids 
+  order of accuracy
+  fourth order
+  ghost points
+  all
+  2 2 2 2 2 2
+  exit
+  compute overlap
+  exit
+  save an overlapping grid
+  wigley.hdf
+  exit
+  exit

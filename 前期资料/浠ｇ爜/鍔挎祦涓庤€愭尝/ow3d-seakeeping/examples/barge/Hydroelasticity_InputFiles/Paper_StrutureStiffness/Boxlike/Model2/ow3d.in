@@ -1,0 +1,22 @@
+The input file for Prism_Barge
+name: Barge3D135714
+sped: 0
+base: 
+idif: 1
+irad: 1
+ires: 0
+mode: 1 0 1 0 1 0 8
+drif: 0
+cour: 0.5
+time: 10
+beta: 180
+grid: Barge_3D.hdf
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grav: 9.81
+ulen: 10
+solv: di
+fftz: 80
+orat: 1
+hsta: ne

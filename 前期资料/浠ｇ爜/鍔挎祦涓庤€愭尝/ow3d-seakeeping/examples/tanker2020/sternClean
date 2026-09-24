@@ -1,0 +1,48 @@
+* 
+* Rap command file 
+* 
+new/append model 
+filename 2020.igs 
+all mappings 
+read file 
+set view:0 0.0225518 -0.0158887 0 2.03727 0.5 -0.55667 0.663414 0.866025 0.321394 -0.383022 -1.20185e-16 0.766044 0.642788 
+smaller:0 
+pause 
+heal model 
+HEAL:plot grid lines on boundaries (3D) toggle 1
+set view:0 -0.181206 -0.0693563 0 7.63302 -0.34202 -0.163176 -0.925417 -0.939693 0.0593912 0.336824 7.82451e-17 0.984808 -0.173648
+smaller:0
+smaller:0
+pause
+HEAL:selection function Delete Surface
+delete surfaces 40 37 91 113 113 113 119 0 4 35 35 4 86 86 54 54 109 4 53 105 109 104 107 106 103 102 103 102 102 35 83 0 1 1 0 47 94 80 32 78 32
+close 
+* 
+* Build the connectivity and a global triangulation 
+*
+set view:0 -0.230138 -0.106319 0 16.0566 -0.34202 -0.163176 -0.925417 -0.939693 0.0593912 0.336824 7.82451e-17 0.984808 -0.173648
+smaller:0
+smaller:0
+pause
+topology
+merge tolerance 0.03
+maximum area 0.001
+deltaS 0.01
+split tolerance factor 1
+build edge curves
+merge edge curves 
+pause 
+* 
+* triangulate 
+* 
+triangulate 
+* global triangulation 
+pause 
+exit 
+* 
+* Save the  hull 
+* 
+save model 
+cleanedStern.hdf 
+* model has been saved 
+exit 

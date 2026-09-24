@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marine Systems Simulator (MSS)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/index_style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/MSSstyles.css">
+<link rel="shortcut icon" href="/figs/fossen-favicon.ico">
+</head>
+
+<body>
+
+<!------------------------------------------------------------------------------------->
+<!-- Header -->
+<!------------------------------------------------------------------------------------->
+<header class="w3-container w3-light-green w3-padding">
+  <div style="font-family:Tahoma; font-weight:Bold; font-size:30px;">
+    Marine Systems Simulator (MSS)
+  </div>
+</header>
+
+<!------------------------------------------------------------------------------------->
+<!-- Navigation -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-hide-small">
+<style type="text/css"> 
+  @media print {
+    .noprint {display:none;}
+  }       
+</style>
+
+<!------------------------------------------------------------------------------------->
+<!-- Navigation -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-bar w3-black noprint">
+
+  <a href="/" class="w3-bar-item w3-button w3-green">Home</a>
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Publications</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/publications/" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-database" aria-hidden="true"></i> Publication database (MySQL)</a>
+      <a href="https://www.amazon.com/author/fossen" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-amazon" aria-hidden="true"></i>mazon.com author page</a>        
+      <a href="https://scholar.google.com/citations?user=Sn8fzegAAAAJ&hl=en" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-google" aria-hidden="true"></i>oogle scholar</a>      
+<!--      <a href="/publications/pdf/Fossen Publications.pdf" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Printable publication list</a>
+-->          
+    </div>  
+  </div> 
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Research</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/php/research/attitude.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Attitude control and estimation</a>  
+      <a href="/php/research/cybersecurity.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Cybersecurity of autonomous vehicles</a>
+      <a href="/html/marineCraftModel.html" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Fossen's marine craft model</a>
+      <a href="/php/research/path_following.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Guidance Systems for path following</a>              
+      <a href="/php/research/sea_state_estimation.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Sea-state estimation</a>
+      <a href="#" class="w3-bar-item w3-button">....more to come</a>        
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Teaching</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://www.ntnu.edu/studies/courses/TTK4190" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> TTK4109 Guidance, Navigation and Control of Marine Craft, Aircraft and Drones</a>       
+      <a href="https://www.ntnu.edu/studies/courses/TK8109" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> TK8109 Advanced Guidance, Navigation and Control Systems</a>  
+    </div>
+  </div> 
+
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">Lecture Material</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://github.com/cybergalactic/FossenHandbook" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> Lecture Notes for Fossen’s Handbook of Marine Craft Hydrodynamics and Motion Control</a>
+      <a href="/html/marineCraftModel.html" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> Mathematical Description of Fossen's Marine Craft Model</a>      
+       <a href="https://drive.google.com/file/d/1ETAf6KjlEDPyxzujcPyctGHI9wNHcLbl/view?usp=sharing" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> Workshop Lecture on 2-D and 3-D Line-of-Sight Guidance Laws for Path Following</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Students</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/php/PhD.php" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i> PhD graduates</a>
+      <a href="/php/MSc.php" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i> MSc graduates</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">Software on GitHub</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+     <a href="/MSS/" class="w3-bar-item w3-button w3-mobile"> 
+      <i class="fa fa-github-square" aria-hidden="true"></i> Marine Systems Simulator (MSS)</a>
+      <a href="/pythonVehicleSim/" class="w3-bar-item w3-button w3-mobile"> <i class="fa fa-github-square" aria-hidden="true"></i> Python Vehicle Simulator</a>
+    </div>  
+  </div> 
+<!--
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">GitHub</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://github.com/cybergalactic/MSS" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> cybergalactic/MSS</a>
+      <a href="https://github.com/cybergalactic/PythonVehicleSimulator" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> cybergalactic/PythonVehicleSimulator</a>
+      <a href="https://github.com/pettsol/CryptoToolbox" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> pettsol/CryptoToolbox</a>  
+      <a href="https://github.com/oysteinvolden/Real-time-sensor-encryption" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> oysteinvolden/Real-time-sensor-encryption</a>             
+    </div>  
+  </div>   
+ -->
+  <a href="/php/recognitions.php" class="w3-bar-item w3-button w3-mobile">Recognitions</a> 
+ <!-- <a href="/php/patents.php" class="w3-bar-item w3-button w3-mobile">Patents</a>   -->  
+  <a href="/php/appointments.php" class="w3-bar-item w3-button w3-mobile">Appointments</a>  
+
+<!--
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">Labs</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://www.ntnu.edu/aur-lab" class="w3-bar-item w3-button w3-mobile">
+        AUR-Lab</a>
+      <a href="https://www.ntnu.edu/imt/lab/cybernetics" class="w3-bar-item w3-button w3-mobile">
+        MC-Lab</a>  
+      <a href="https://www.itk.ntnu.no/english/lab/unmanned" class="w3-bar-item w3-button w3-mobile">
+        UAV-Lab</a>   
+      <a href="https://www.ntnu.edu/smallsat" class="w3-bar-item w3-button w3-mobile">
+        Small Satellite Lab</a>              
+      <a href="https://www.ntnu.edu/oceans/gunnerus" class="w3-bar-item w3-button w3-mobile">
+        Research Vessel</a>              
+    </div>  
+  </div>  
+ -->
+
+  <a href="/html/addressCard.html" class="w3-bar-item w3-button w3-mobile">
+    <i class="fa fa-address-card fa-lg" aria-hidden="true"></i></a>
+  
+  <!--
+  <a href="mailto:&#116;hor.&#102;ossen@ntnu.no" class="w3-bar-item w3-button w3-mobile">
+    <i class="fa fa-envelope fa-lg"></i></a>
+ -->
+
+  <a href="https://use.mazemap.com/#v=1&config=ntnu&zlevel=3&center=10.399500,63.418349&zoom=18&sharepoitype=poi&sharepoi=1000306780&campusid=1" class="w3-bar-item w3-button w3-mobile"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------->
+<!-- Top -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-row w3-mobile w3-padding-small">  
+
+  <div style='margin: 0px 5px;'>
+      <a class="txt" href="https://github.com/cybergalactic/MSS/blob/master/How%20to%20install%20MSS%20for%20MATLAB.md">How to Install MSS for Matlab?</a>  
+      <span style='margin: 0 5px;'>&middot;</span>
+      <a class="txt" href="https://github.com/cybergalactic/MSS/blob/master/How%20to%20install%20MSS%20for%20GNU%20Octave.md">How to install MSS for GNU Octave?</a> 
+  </div>
+
+  <!-- Column1 --> 
+  <div class="w3-half w3-padding-small vl">
+      <p>
+        The Marine Systems Simulator (MSS) is a Matlab and Simulink library for marine systems control design. The m-files are compatible with the free software GNU Octave. MSS includes models for ships, underwater vehicles, uncrewed surface vehicles, and floating structures. The library also contains guidance, navigation, and control (GNC) methods for time-domain simulation. The software can be downloaded from:
+      </p>
+      <p class="indented-text">
+        <i class="fa fa-github-square" aria-hidden="true"></i><b> GitHub Repository:</b>
+          <a class="txt" href="https://github.com/cybergalactic/MSS">https://github.com/cybergalactic/MSS</a> 
+      </p>
+
+
+    <p>
+      Hydrodynamic modelling and the GNC algorithms are described in:
+    </p>  
+    <p class="indented-text">
+      <b> T. I. Fossen (2021)</b>. <a class="txt" href="https://www.fossen.biz/wiley/">Handbook of Marine Craft Hydrodynamics and Motion Control</a>, 2nd Edition, John Wiley & Sons, Chichester, UK.
+    </p>
+    For a list of commands and their description, see the <a class="txt" href="https://github.com/cybergalactic/MSS/blob/master/MSS%20Quick%20Reference.md">MSS Quick Reference</a>.
+
+    <h4><strong>Marine Craft M-FILE Models</strong></h4>
+
+    <p>
+      The marine craft M-file models, located under /MSS/VESSELS/models/, can be simulated using the corresponding user-editable scripts, which start with SIM and are located in the /MSS/VESSELS/ directory:
+    </p> 
+
+    <div class="w3-container">
+      <ul class="w3-ul w3-card-4">
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMclarke83.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMclarke83.jpg" alt="SIMclarke83" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+          <figcaption><code>SIMclarke.m</code></figcaption>
+        </figure>
+            <div class="w3-bar-item text-container">
+                <span><code>clarke83.m</code></span><br>
+                <span class="matlab-comment">Linear surge&#8211;sway&#8211;yaw maneuvering model parametrized using the main dimensions (L,B,T) derived from regression of model tests</span>
+            </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMcontainer.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMcontainer.jpg" alt="SIMcontainer" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMcontainer.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>Lcontainer.m</code></span><br>
+              <span><code>container.m</code></span><br>
+              <span class="matlab-comment">Linearized and nonlinear surge&#8211;sway&#8211;roll&#8211;yaw model of a 175-meter high-speed container ship</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMdsrv.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMdsrv.jpg" alt="SIMdsrv" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMdsrv.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>DSRV.m</code></span><br>
+              <span class="matlab-comment">Linear heave&#8211;pitch vertical-plane model of 5-meter Deep Submergence Rescue Vehicle (DSRV)</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMfrigate.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMfrigate.jpg" alt="SIMfrigate" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMfrigate.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>frigate.m</code></span><br>
+              <span class="matlab-comment">Nonlinear yaw model of a 100-meter frigate</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMmariner.jpg" target="_blank" class="image-link"> 
+              <img src="/MSS/figs/thumbnails/SIMmariner.jpg" alt="SIMmariner" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMmariner.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>mariner.m</code></span><br>
+              <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;yaw maneuvering model of a 160-meter Mariner-class cargo vessel</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMnavalvessel.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMnavalvessel.jpg" alt="SIMnavalvessel" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMnavalvessel.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>navalvessel.m</code></span><br>
+              <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;roll&#8211;yaw maneuvering model of a 51.3-meter multipurpose naval vessel</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMnpsauv.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMnpsauv.jpg" alt="SIMnpsauv" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMnpsauv.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>npsauv.m</code></span><br>
+              <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;heave&#8211;roll&#8211;pitch&#8211;yaw model of the 5.3-meter Naval Postgraduate School Autonomous Underwater Vehicle (AUV)</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMosv.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMosv.jpg" alt="SIMosv" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMosv.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>osv.m</code></span><br>
+              <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;heave&#8211;roll&#8211;pitch&#8211;yaw model of a 83-meter Offshore Supply Vessel (OSV)</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMotter.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMotter.jpg" alt="SIMotter" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMotter.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>otter.m</code></span><br>
+              <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;heave&#8211;roll&#8211;pitch&#8211;yaw model of the 2-meter Maritime Robotics OTTER Uncrewed Surface Vehicle (USV)</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+ <a href="fullscreen_image.php?src=/MSS/figs/SIMremus100.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMremus100.jpg" alt="SIMremus100" class="responsiveTIF w3-bar-item" style="width:160px;">
+            </a>
+            <figcaption><code>SIMremus100.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+              <span><code>remus100.m</code></span><br>
+              <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;heave&#8211;roll&#8211;pitch&#8211;yaw model of the 1.9-meter REMUS 100 Autonomous Underwater Vehicle (AUV)</span>
+          </div>
+        </li>
+
+    <li class="w3-bar">
+      <figure>
+        <a href="fullscreen_image.php?src=/MSS/figs/SIMrig.jpg" target="_blank" class="image-link">
+            <img src="/MSS/figs/thumbnails/SIMrig.jpg" alt="SIMrig" class="responsiveTIF w3-bar-item " style="width:160px;">
+        </a>
+        <figcaption><code>SIMrig.m</code></figcaption>
+      </figure>
+      <div class="w3-bar-item text-container">
+          <span><code>rig.m</code></span><br>
+          <span class="matlab-comment">Linear surge&#8211;sway&#8211;heave&#8211;roll&#8211;pitch&#8211;yaw low-speed model of 84.6-meter semisubmersible</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <figure>
+        <a href="fullscreen_image.php?src=/MSS/figs/SIMsupply.jpg" target="_blank" class="image-link">
+            <img src="/MSS/figs/thumbnails/SIMsupply.jpg" alt="SIMsupply" class="responsiveTIF w3-bar-item" style="width:160px;">
+        </a>
+        <figcaption><code>SIMsupply.m</code></figcaption>
+      </figure>
+      <div class="w3-bar-item text-container">
+          <span><code>supply.m</code></span><br>
+          <span class="matlab-comment">Linear surge&#8211;sway&#8211;yaw DP model of a 76.2-meter supply vessel</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <figure>
+        <a href="fullscreen_image.php?src=/MSS/figs/SIMtanker.jpg" target="_blank" class="image-link">
+            <img src="/MSS/figs/thumbnails/SIMtanker.jpg" alt="SIMtanker" class="responsiveTIF w3-bar-item" style="width:160px;">
+        </a>
+        <figcaption><code>SIMtanker.m</code></figcaption>
+      </figure>
+      <div class="w3-bar-item text-container">
+          <span><code>tanker.m</code></span><br>
+          <span class="matlab-comment">Nonlinear surge&#8211;sway&#8211;yaw course-unstable maneuvering model of a 304-meter tanker</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <figure>
+        <a href="fullscreen_image.php?src=/MSS/figs/SIMzeefakkel.jpg" target="_blank" class="image-link">
+            <img src="/MSS/figs/thumbnails/SIMzeefakkel.jpg" alt="SIMzeefakkel" class="responsiveTIF w3-bar-item" style="width:160px;">
+        </a>
+        <figcaption><code>SIMzeefakkel.m</code></figcaption>
+      </figure>
+      <div class="w3-bar-item text-container">
+          <span><code>zeefakkel.m</code></span><br>
+          <span class="matlab-comment">Nonlinear yaw model of a 45-meter recreational craft</span>
+      </div>
+    </li>
+
+  </ul> <!-- Close the first column list  -->
+
+  </div>  
+
+</div>    <!-- End of Column 1 -->
+
+
+
+  <!-- Column2 -->
+  <div class="w3-half w3-padding">
+
+
+<h4><strong>Inertial Navigation Systems (INS) M-FILE Library</strong></h4>
+
+    <p>
+    The INS library, located in the directory /MSS/INS/, contains user-editable scripts that start with SIM for time-domain simulation of strapdown INS. The INS is implemented using the unit quaternion and the Euler-angle representation of the Error-State Kalman Filter (ESKF) as described in Fossen (2021, Ch. 14.4). For the unit quaternion representation, the error states are represented by the Gibbs vector in a Multiplicative Extended Kalman Filter (MEKF). The SIM scripts call the INS functions located in the directory /MSS/INS/functions/.
+    </p> 
+
+    <div class="w3-container">
+      <ul class="w3-ul w3-card-4">
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMaidedINSeuler.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMaidedINSeuler.jpg" alt="SIMaidedINSeuler" class="responsiveTIF w3-bar-item" style="width:190px;">
+            </a>
+          <figcaption><code>SIMaidedINSeuler.m</code></figcaption>
+        </figure>
+            <div class="w3-bar-item text-container">
+                <span><code>ins_ahrs.m</code></span> <br>
+                <span class="matlab-comment">ESKF aided by position and optional velocity measurements utilizing an Attitude Heading Reference System (AHRS) </span><br>
+                <span><code>ins_euler.m</code></span> <br>
+                 <span class="matlab-comment"> ESKF aided by position, optional velocity, and magnetometer measurements </span><br>
+            </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMaidedINSquat.jpg" target="_blank" class="image-link">
+                <img src="/MSS/figs/thumbnails/SIMaidedINSquat.jpg" alt="SIMaidedINSquat" class="responsiveTIF w3-bar-item" style="width:190px;">
+            </a>
+          <figcaption><code>SIMaidedINSquat.m</code></figcaption>
+        </figure>
+            <div class="w3-bar-item text-container">
+                <span><code>ins_mekf.m</code></span> <br>
+                <span class="matlab-comment">ESKF/MEKF aided by position, optional velocity, and magnetometer measurements </span><br>
+                <span><code>ins_mekf_ins.m</code></span> <br>
+                 <span class="matlab-comment">ESKF/MEKF aided by position, optional velocity, and compass measurements </span>
+            </div>
+        </li>
+
+        <li class="w3-bar">
+          <figure>
+            <a href="fullscreen_image.php?src=/MSS/figs/SIMquatObserver.jpg" target="_blank" class="image-link">
+              <img src="/MSS/figs/thumbnails/SIMquatObserver.jpg" alt="SIMquatObserver" class="responsiveTIF w3-bar-item" style="width:190px;">
+            </a>
+            <figcaption><code>SIMquatObserver.m</code></figcaption>
+          </figure>
+          <div class="w3-bar-item text-container">
+            <span><code>quatObserver.m</code></span> <br>
+            <span class="matlab-comment">Nonlinear quaternion-based attitude observer for 9-DOF IMU measurements. The magnetometer 
+              can operate at a slower rate (typically 100 Hz) compared to the high-rate 
+              specific force and ARS measurements (typically 1000 Hz). </span><br>
+          </div>
+        </li>
+        
+
+      </ul>
+    </div>
+
+<div>
+  &nbsp;
+</div>
+
+    <h4><strong>SIMULINK Demos</strong></h4>
+
+    <p>
+      Several m-file models have been utilized to create SIMULINK demos, which are located in the directory /MSS/SIMULINK/mssSimulinkDemos/:
+    </p> 
+ 
+    <ul>
+      <li>
+        <code>demoAUVdepthHeadingControl.slx</code> <span>&#8211;</span> <span class="matlab-comment">Simultaneously heading and depth control of the Remus 100 AUV</span>
+      </li>
+            <li>
+                <code>demoCS2passiveObserverDP.slx</code> <span>&#8211;</span> <span class="matlab-comment">Passive observer with wave filtering and nonlinear PID control for the CyberShip2 model ship</span>
+            </li>
+            <li>
+                <code>demoDPThrusterModels.slx</code> <span>&#8211;</span> <span class="matlab-comment">Supply vessel with azimuth thrusters</span>
+            </li>
+            <li>
+                <code>demoDSRVdepthControl.slx</code> <span>&#8211;</span> <span class="matlab-comment">DSRV depth control system</span>
+            </li>
+            <li>
+                <code>demoKalmanWavefilterAutop.slx</code> <span>&#8211;</span> <span class="matlab-comment">Kalman-filter based wave filter and heading autopilot for the mariner class cargo ship</span>
+            </li>
+            <li>
+                <code>demoMarinerPathFollowingCourseControl.slx</code> <span>&#8211;</span> <span class="matlab-comment">Mariner-class cargo vessel Line-Of-Sight (LOS) path-following control using a course autopilot</span>
+            </li>
+            <li>
+                <code>demoNavalVesselMano.slx</code> <span>&#8211;</span> <span class="matlab-comment">Zigzag test for the naval ship Mano</span>
+            </li>
+            <li>
+                <code>demoNPSAUV.slx</code> <span>&#8211;</span> <span class="matlab-comment">NPS AUV heading control system</span>
+            </li>
+            <li>
+                <code>demoOtterUSVHeadingControl.slx</code> <span>&#8211;</span> <span class="matlab-comment">Otter USV heading control system</span>
+            </li>
+            <li>
+                <code>demoOtterUSVPathFollowingCourseControl</code> <span>&#8211;</span> <span class="matlab-comment">Otter USV Line-Of-Sight (LOS) path-following control using a course autopilot</span>
+            </li>
+            <li>
+                <code>demoOtterUSVPathFollowingHeadingControl</code> <span>&#8211;</span> <span class="matlab-comment">Otter USV Integral Line-Of-Sight (ILOS) and Adaptive Line-Of-Sight (ALOS) path-following control using a heading autopilot</span>
+            </li>
+            <li>
+                <code>demoPanamaxContainerShip.slx</code> <span>&#8211;</span> <span class="matlab-comment">Panama container ship simulator</span>
+            </li>
+            <li>
+                <code>demoPassiveWavefilterAutopilot1.slx</code> <span>&#8211;</span> <span class="matlab-comment">Passive wave filter and heading autopilot design using compass measurements only</span>
+            </li>
+            <li>
+                <code>demoPassiveWavefilterAutopilot2.slx</code> <span>&#8211;</span> <span class="matlab-comment">Passive wave filter and heading autopilot design using a compass and yaw rate measurements</span>
+            </li>
+            <li>
+                <code>demoS175WindCurrentAutopilot.slx</code> <span>&#8211;</span> <span class="matlab-comment">S-175 container ship heading autopilot with wind and current loads</span>
+            </li>
+            <li>
+                <code>demoSemisubDPsystem.slx</code> <span>&#8211;</span> <span class="matlab-comment">Semisubmersible DP system</span>
+            </li>
+            <li>
+                <code>demoWaveElevation.slx</code> <span>&#8211;</span> <span class="matlab-comment">Computation of wave elevation from wave spectra</span>
+            </li>
+            <li>
+                <code>demoWaypointGuidance.slx</code> <span>&#8211;</span> <span class="matlab-comment">Waypoint guidance system</span>
+            </li>
+    </ul>
+
+
+
+
+<p>
+  The SIMULINK demos are located under /MSS/SIMULNK/mssSimulinkDemos/. Click on any picture below to view a larger version of the screenshot:
+</p>
+
+<!-- SIMULINK Row 1 with plots -->
+<div class="w3-row-padding">
+
+  <div class="w3-half w3-container w3-mobile">
+    <figure>
+      <a href="fullscreen_image.php?src=/MSS/figs/demoOtterUSVPathFollowingHeadingControl.jpg" target="_blank" class="image-link">
+        <img src="/MSS/figs/thumbnails/demoOtterUSVPathFollowingHeadingControl.jpg" alt="demoOtterUSVPathFollowingHeadingControl" class="responsiveTIF">
+      </a>
+      <figcaption>demoOtterUSVPathFollowingHeadingControl.slx</figcaption>
+    </figure>
+  </div>
+
+<div class="w3-half w3-container w3-mobile">
+    <figure>
+      <a href="fullscreen_image.php?src=/MSS/figs/demoAUVdepthHeadingControl.jpg" target="_blank" class="image-link">
+        <img src="/MSS/figs/thumbnails/demoAUVdepthHeadingControl.jpg" alt="demoAUVdepthHeadingControl" class="responsiveTIF">
+      </a>
+      <figcaption>demoAUVdepthHeadingControl.slx</figcaption>
+    </figure>
+  </div>
+
+</div> <!-- End SIMULINK Row 1 -->
+
+<!-- SIMULINK Row 2 with plots -->
+<div class="w3-row-padding">
+
+  <div class="w3-half w3-container w3-mobile">
+    <figure>
+      <a href="fullscreen_image.php?src=/MSS/figs/demoSemisubDPsystem.jpg" target="_blank" class="image-link">
+        <img src="/MSS/figs/thumbnails/demoSemisubDPsystem.jpg" alt="demoSemisubDPsystem" class="responsiveTIF">
+      </a>
+      <figcaption> demoSemisubDPsystem.slx</figcaption>
+    </figure>
+  </div>
+
+</div> <!-- End SIMULINK Row 2 -->
+
+
+
+</div>
+
+
+
+
+<!------------------------------------------------------------------------------------->
+<!-- Bottom -->
+<!------------------------------------------------------------------------------------->
+
+<div class="w3-row">    
+  <div class="w3-half w3-padding-small">
+  </div>  
+  <div class="w3-half w3-padding-small">
+  </div>
+</div>
+
+<div class="w3-row-padding w3-light-green w3-mobile">
+  <center>
+    <span>
+      Copyright &copy; Thor I. Fossen <br>
+      Last updated: 15 September 2024    </span>
+  </center>    
+</div>
+
+<!------------------------------------------------------------------------------------->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+\thispagestyle{empty}
+
+\begin{document}
+
+\def\ro{1000}
+\def\L{1}
+\def\grav{9.81}
+\def\PI{3.14159265359}
+\def\U{0.886}
+
+\begin{tikzpicture}[font=\small]
+  
+  % elevation
+  
+  \begin{axis}
+    [
+      scaled ticks=false,/pgf/number format/fixed relative,
+      at={(0mm, 0mm)},
+      width = 1.5   \textwidth,
+      height= 0.3   \textwidth,
+      ymin = -0.02, ymax = 1,
+      y label style={at={(-0.05, 0.5)}},
+      xmax = 70,
+      xmin = 0,
+      grid=both,
+      ytick={0.5, 1},
+      ylabel={$\zeta_0(t)/D$}
+    ]
+    %
+    \addplot [line width=1.1pt, black,no marks]
+    table [skip first n=2, x expr = \thisrowno{0} * sqrt(\grav/\L),y expr = \thisrowno{1}/\L]
+    {../cylinder_ow3df/cylinder.imps};
+  \end{axis}
+  %
+  \begin{axis}
+    [
+      legend columns=-1,
+      legend style={at={(0.25, 0.9)}},
+      at={(0mm, -26mm)},
+      width = 1.5   \textwidth,
+      height= 0.3   \textwidth, 
+      scaled ticks=false,/pgf/number format/fixed relative,
+      xmin=0,xmax=70, ymax=0.08, grid=both, ymin=-0.08,
+      ylabel={$F_1(t) / \rho g D^2 $}
+    ]
+    %
+    \node[draw=black, fill=white] at (axis cs:65.5, 0.04) {$\beta=0$};
+    %
+    \addplot [ line width=1.1pt, black,no marks]
+    table
+    [skip first n=2, x expr = \thisrowno{0} * sqrt(\grav/\L), y expr = \thisrowno{1}/(\ro *\grav * \L * \L)]
+    {../cylinder_ow3df/cylinder.simp1};
+    %
+    \addlegendentry{$\omega_{01}$}
+    \addplot [line width=1.1pt, black,no marks, dashed, dash pattern=on 1.2mm off 0.4mm]
+    table
+    [skip first n=2, x expr = \thisrowno{0} * sqrt(\grav/\L), y expr = \thisrowno{2}/(\ro *\grav * \L * \L)]
+    {../cylinder_ow3df/cylinder.simp1};
+    %
+    \addlegendentry{$\omega_{02}$}
+    \addplot [line width=1.1pt, black,no marks, dashed, dash pattern=on 0.5mm off 0.2mm]
+    table
+    [skip first n=2,x expr = \thisrowno{0} * sqrt(\grav/\L),y expr = \thisrowno{3}/(\ro *\grav * \L * \L)]
+    {../cylinder_ow3df/cylinder.simp1};
+    \addlegendentry{$\omega_{03}$}
+    %
+    \end{axis}
+
+  %%   % heave
+
+    \begin{axis}
+      [
+        legend columns=-1,
+        at={(0mm, -52mm)},
+        legend style={at={(0.25, 0.9)}},
+        width = 1.5    \textwidth,
+        height= 0.3   \textwidth, 
+        scaled ticks=false,/pgf/number format/fixed relative,
+        xmin=0,xmax=70, ymax=0.08, grid=both, ymin=-0.08,
+        xlabel={$t \sqrt{g/D}$},
+        %y label style={at={(-0.05, 0.5)}},
+        ylabel={$F_3(t) / \rho g D^2 $}
+      ]
+      %
+      \node[draw=black, fill=white] at (axis cs:65.5, 0.04) {$\beta=0$};
+      %
+      \addplot [ line width=1.1pt, black,no marks]
+      table [skip first n=2, x expr = \thisrowno{0} * sqrt(\grav/\L), y expr = \thisrowno{1}/(\ro *\grav * \L * \L)]
+      {../cylinder_ow3df/cylinder.simp3};
+      \addlegendentry{$\omega_{01}$}
+      %
+      \addplot [line width=1.1pt, black,no marks, dashed, dash pattern=on 1.2mm off 0.4mm]
+      table [skip first n=2, x expr = \thisrowno{0} * sqrt(\grav/\L), y expr = \thisrowno{2}/(\ro *\grav * \L * \L)]
+      {../cylinder_ow3df/cylinder.simp3};
+      %
+      \addlegendentry{$\omega_{02}$}
+      \addplot [ line width=1.1pt, black,no marks, dashed, dash pattern=on 0.5mm off 0.2mm]
+      table [skip first n=2, x expr = \thisrowno{0} * sqrt(\grav/\L), y expr = \thisrowno{3}/(\ro *\grav * \L * \L)]
+      {../cylinder_ow3df/cylinder.simp3};
+      \addlegendentry{$\omega_{03}$}
+    \end{axis}
+    %
+    
+    % SURGE
+    
+    \begin{axis}
+    [
+      at={(0mm, -102mm)},
+      width=90mm,
+      height=55mm,
+      scaled ticks=false,/pgf/number format/fixed relative,
+      xmin=0, xmax=1, ymax=80, grid=both, ymin=0,
+      xlabel={$\nu_0 a$},
+      ylabel={$|F_1|/\rho \pi a^2 A \exp{(-\nu_0 \tilde h)}$}
+    ]    
+    \addplot [line width=1.5pt, black, no marks]
+    table [ x expr=\thisrowno{0}, y expr=\thisrowno{1}]{processed_forces_fol.txt};
+    \addlegendentry{OW3D-Seakeeping}        
+    \addplot
+    [only marks, mark=*, black, mark size=2.2pt, line width=0.8pt, fill=white]
+    table [ x expr=\thisrowno{0}, y expr=\thisrowno{1}]{../analytical_results/cyl_wu_0_surge.txt};
+    %
+    \addlegendentry[text depth=1ex, anchor=mid]{(Wu 1990) - FEM}
+    \addlegendimage{empty legend}
+    \addlegendentry{$\beta = 0$}
+    \end{axis}
+
+  % HEAVE
+
+    \begin{axis}
+    [
+      at={(95mm, -102mm)},
+      width=90mm,
+      height=55mm,
+      scaled ticks=false,/pgf/number format/fixed relative,
+      xmin=0,xmax=1, ymax=80, grid=both, ymin=0,
+      xlabel={$\nu_0 a$},
+      ylabel={$|F_3|/\rho \pi a^2 A \exp{(-\nu_0 \tilde h)}$}
+    ]
+    %
+    \addplot
+    [line width=1.5pt, black, no marks]
+    table [ x expr=\thisrowno{0}, y expr=\thisrowno{2}]
+    {processed_forces_fol.txt};
+    \addlegendentry{OW3D-Seakeeping}
+    \addplot
+    [only marks, mark=*, black, mark size=2.2pt, line width=0.8pt, fill=white]
+    table [x expr=\thisrowno{0}, y expr=\thisrowno{1}]
+    {../analytical_results/cyl_wu_0_heave.txt};            
+    \addlegendentry[text depth=1ex, anchor=mid]{(Wu 1990) - FEM}
+    \addlegendimage{empty legend}
+    \addlegendentry{$\beta = 0$}
+    \end{axis}
+    %
+\end{tikzpicture}
+
+\end{document}

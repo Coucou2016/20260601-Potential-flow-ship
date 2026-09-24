@@ -1,0 +1,22 @@
+The input file for the shpere test (Note: U = Fr*sqrt{g*1})
+name: sphere
+sped: 3.445301148
+base: nk
+idif: 0
+irad: 0
+ires: 1
+mode: 1 0 0 0 0 0
+drif: 0
+cour: 0.5
+mult: 48
+beta: 
+grid: sphere.hdf
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grac: 0 0 0
+grav: 9.81
+ulen: 1
+solv: di
+fftz: 1
+orat: 2

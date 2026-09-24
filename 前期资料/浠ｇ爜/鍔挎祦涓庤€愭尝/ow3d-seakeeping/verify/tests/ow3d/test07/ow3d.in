@@ -1,0 +1,22 @@
+The input file for test07
+name: test07
+sped: 0.15
+base: nk
+idif: 1
+irad: 1
+ires: 0
+mode: 1 1 1 0 0 0
+drif: 1
+cour: 1
+time: 4
+beta: 155
+grid: test_grid.hdf
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grac: 0 0 0
+grav: 9.81
+ulen: 10
+solv: di
+fftz: 15
+orat: 1

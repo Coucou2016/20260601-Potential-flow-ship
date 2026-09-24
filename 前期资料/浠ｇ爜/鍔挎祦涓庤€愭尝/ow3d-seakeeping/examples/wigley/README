@@ -1,0 +1,8 @@
+The Wigley hulls specifications are according to 
+
+ "Experiments and Calculations on 4 Wigley Hull Forms in Head Waves"
+  J.M.J. Journée, Delft University of Technology
+
+\eta = (1-\zeta^2)(1-\xi^2)(1+a_2*\xi^2 + a_4*\xi^4) + \alpha*\zeta^2*(1-\zeta^8)(1-\xi^2)^4
+
+Run the Matlab script "GenerateWigleyLines.m" to build lines for the wigley hulls.

@@ -1,0 +1,67 @@
+\documentclass{standalone}
+\usepackage{pgfplots,amsmath}
+\usepackage{path}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+
+\def\ro{1000}
+\def\L{0.5}
+\def\grav{9.81}
+\def\PI{3.14159265359}
+\def\U{0.886}
+
+\begin{tikzpicture}
+  
+\begin{axis}
+  [
+    at={(0mm,0mm)},
+    width=90mm,
+    scaled ticks=false,/pgf/number format/fixed relative,
+    xmin=0,xmax=3, ymax=2, grid=both, ymin=-2,ytickmin=-1,
+    xlabel={ $\nu_0 a$},
+    ylabel={ $ \operatorname{Re}\left\{X_3 \right\} / \rho g \pi a^3 \nu A$}]
+  \addplot [line width=1.5pt, black, no marks]
+  table [x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav, y expr=\thisrowno{2}/(\ro*\grav*\PI*\L*\L*\L * \thisrowno{1}*\thisrowno{1}/(\grav))]
+  {../sphere_ppc/wvf3.txt};
+  \addlegendentry{OW3D-Seakeeping}    
+  \addplot
+  [only marks, mark=*, black, mark size=2.2pt, line width=0.8pt, fill=white]
+  table [x expr=\thisrowno{0},y expr=\thisrowno{1}]
+  {../analytical_results/Wu_pi_HEAVE.dat};
+  \addlegendentry[text depth=1ex, anchor=mid]{(Wu and Eatock Taylor, 1988a) - Ana.}
+  \addlegendimage{empty legend}
+  \addlegendentry{$\beta = \pi$}
+\end{axis}
+
+% ===================================================================
+
+\begin{axis}
+  [
+    at={(100mm,0mm)},
+    width=90mm,
+    scaled ticks=false,/pgf/number format/fixed relative,
+    xmin=0, xmax=3, ymax=0.08, grid=both, ymin=-0.02,ytickmin=0,
+    xlabel={$\nu_0 a$},
+    ylabel={$ \operatorname{Im}\left\{X_3 \right\} / \rho g \pi a^3 \nu A$}
+  ]
+  \addplot [line width=1.5pt, black, no marks]
+  table [x expr=\thisrowno{0}*\thisrowno{0} * \L /\grav, y expr=\thisrowno{3}*1/(\ro*\grav*\PI*\L*\L*\L * \thisrowno{1}*\thisrowno{1}/(\grav))]
+  {../sphere_ppc/wvf3.txt};
+  \addlegendentry{OW3D-Seakeeping}
+  \addplot
+  [only marks, mark=*, black, mark size=2.2pt, line width=0.8pt, fill=white]
+  table [ x expr=\thisrowno{0}, y expr=\thisrowno{2}]
+  {../analytical_results/Wu_pi_HEAVE.dat};
+  \addlegendentry[text depth=1ex, anchor=mid]{(Wu and Eatock Taylor, 1988a) - Ana.}
+  \addlegendimage{empty legend}
+  \addlegendentry{$\beta = \pi$}
+  \addplot [black!60, line width = 0.4mm, dashed, dash pattern=on 1.mm off .3mm] coordinates {(0.267997, 0.015) (0.267997, 0.023) };
+  \addlegendentry{$\nu^c_{0} a = 0.2680$ - ($\tau_{c}=1/4$)}
+  %
+\end{axis}
+
+\end{tikzpicture}
+
+\end{document}

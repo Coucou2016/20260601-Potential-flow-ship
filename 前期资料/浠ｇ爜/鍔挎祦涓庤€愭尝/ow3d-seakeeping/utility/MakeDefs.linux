@@ -1,0 +1,103 @@
+
+# PETSc variables
+PETSCLIB = -L$(PETSC_DIR)/$(PETSC_ARCH)/lib -lpetsc -llapack -lblas 
+PETSC_INCLUDE = -I$(PETSC_DIR)/include -I$(PETSC_DIR)/include/petsc/mpiuni -I$(PETSC_DIR)/$(PETSC_ARCH)/include
+
+# OW3D header files
+OW3D_INCLUDE = -I$(OW3D_DIR)/utility/baseflow -I$(OW3D_DIR)/utility/datastruct -I$(OW3D_DIR)/utility/fdoper\
+-I$(OW3D_DIR)/utility/fileoper -I$(OW3D_DIR)/ow3df/firstorder -I$(OW3D_DIR)/utility/grid -I$(OW3D_DIR)/utility/input\
+-I$(OW3D_DIR)/utility/ow3dutils -I$(OW3D_DIR)/utility/solver -I$(OW3D_DIR)/ow3df/secondorder -I$(OW3D_DIR)/ow3df/firstorder\
+-I$(OW3D_DIR)/ow3dt/field -I$(OW3D_DIR)/ow3dt/filter -I$(OW3D_DIR)/ow3dt/freesurface -I$(OW3D_DIR)/ow3dt/modes\
+-I$(OW3D_DIR)/ow3dt/neumannbc -I$(OW3D_DIR)/ow3dt/upwind -I$(OW3D_DIR)/utility/filter
+
+# GNU scientific libraries
+GSL_LIBS= -L$(GSL_DIR)/lib -lgsl -lgslcblas -lm
+
+# Use the Gnu C++ compiler.
+CXX=g++
+
+# Some libraries are in lib64 instead of lib on some 64-bit machines.
+LIB64=lib64
+
+# The rpath command.
+OV_RPATH=-Wl,-rpath,
+
+# Graphics libraries.
+MOTIF_LIB=$(MOTIF)/$(LIB64)
+OPENGL_LIB=$(OpenGL)/$(LIB64)
+OV_X_LIBRARIES=-L$(XLIBS_LIB) -lXpm -lXp -lXt -lXmu -lXi -lXext -lX11
+OV_MOTIF_LIBRARIES=$(OV_RPATH)$(MOTIF_LIB) -L$(MOTIF_LIB) -lXm
+USE_DOUBLE_OR_SINGLE=-DOV_USE_DOUBLE
+
+# A++ libraries.
+A++=$(APlusPlus)
+A+++=$(APlusPlus)
+AppLibraries=$(OV_RPATH)$(APlusPlus)/lib -L$(APlusPlus)/lib -lApp -lApp_static 
+
+# Includes
+Include=$(OW3D_INCLUDE) -isystem $(Overture)/include $(PETSC_INCLUDE) -I$(GSL_DIR)/include/
+
+# Overture libs
+LibOverture=-lOverture -lOverture_static
+BOXLIB_DEFS=-DBL_USE_DOUBLE -DBL_Solaris
+
+# Perl include files and library (CORE).
+OV_PERL_INCLUDE=/usr/lib64/perl5/CORE
+OV_PERL_LIB=/usr/lib64/perl5/CORE
+OV_PERL_LIBRARIES=$(OV_RPATH)$(OV_PERL_LIB) -L$(OV_PERL_LIB) -lperl -lresolv -lnsl -ldl -lm -lcrypt -lutil -lpthread -lc
+
+# These flags are compiler dependent.
+cc_FLAGS=-fPIC
+CC_FLAGS=-fPIC
+FF_FLAGS=-fPIC
+
+# These values are set by the configure script.
+C_OPTIMIZATION_FLAG=-g
+CPP_OPTIMIZATION_FLAG=-g
+FORTRAN_OPTIMIZATION_FLAG=-g
+
+# Use this flag to optimize files that Bill likes to compile optimized by default.
+STD_OPT_FLAG=-O
+
+CFLAGS=$(cc_FLAGS) $(Include) $(C_OPTIMIZATION_FLAG) -I$(XLIBS) -DSHM
+
+# Flags for c routines we always optimize (except if debug is on).
+CFLAGSO= $(STD_OPT_FLAG) $(cc_FLAGS)  $(Include)  -I$(XLIBS) -DSHM
+
+# Do not include some paths, such as STL, in the places searched by makedepend as it takes too long.
+CC_INCLUDES_FOR_DEPEND=$(Include) -DUSE_MESA -I$(APlusPlus)/include -I$(OpenGL)/include -I$(XLIBS)/include $(BOXLIB_DEFS) -I$(OV_PERL_INCLUDE)
+
+CCFLAGSP = $(CCFLAGS) $(PETSC_INCLUDE)
+
+STL_INCLUDE=
+CC_INCLUDES=$(CC_FLAGS) $(CC_INCLUDES_FOR_DEPEND) $(STL_INCLUDE) 
+CC_FLAGS=-fPIC
+CCFLAGS= $(CC_INCLUDES) $(CPP_OPTIMIZATION_FLAG)
+
+# Things that are always compiled with optimization use this flag (except if debug is on).
+CCFLAGSO= $(CC_INCLUDES) $(STD_OPT_FLAG)
+
+# Things that are always compiled with lots of optimization use this flag (except if debug is on).
+CCFLAGSF= $(CC_INCLUDES) $(STD_OPT_FLAG)
+
+# Things that need to be compiled with no optimization use the following.
+CCFLAGSG= $(CC_INCLUDES) -g
+
+# Notes: There seem to be problems using -O with g77. Some older versions of the egcs compiler also had trouble with -fPIC. Removing it seemed to work.
+FFLAGS=$(FF_FLAGS) -fdefault-real-8 $(FORTRAN_OPTIMIZATION_FLAG) $(Include)
+
+# Here are the hdf libraries. The configure script will change this line for use with hdf5.
+HDF_LIBS=$(OV_RPATH)$(HDF)/lib -L$(HDF)/lib -lhdf5 -ljpeg -lz 
+
+FORTRAN_LIBS=
+FORTRAN_LIBS=-lnsl -lg2c
+FORTRAN_LIBS=-lgfortran
+
+LDFLAGS=-L
+OpenGLibs=-lGL -lGLU -lOSMesa
+
+GLIBS=$(OV_PERL_LIBRARIES) $(OV_RPATH)$(OPENGL_LIB) -L$(OPENGL_LIB) $(OpenGLibs) $(OV_MOTIF_LIBRARIES) $(OV_X_LIBRARIES) -lm
+FLIBS=$(OV_RPATH)$(Overture)/lib $(LDFLAGS)$(Overture)/lib $(LibOverture) $(OV_COMPILER_LIBS) $(HDF_LIBS) $(AppLibraries) $(FORTRAN_LIBS)
+OGMGLIB = $(OV_RPATH)$(Overture)/lib $(LDFLAGS)$(Overture)/lib -lOgmg
+
+

@@ -1,0 +1,8 @@
+
+This folder contains input file, grid file, mass matrix file, stiffness matrix file
+for the prismatic barge case in the Journal paper 
+
+'Solving for hydroelastic ship response using a high-order finite difference method on overlapping grids at zero speed'
+
+Note that please select the Eulerian beam model and Newman hydrostatic model inside the codes, 'OW3DConstants.cpp'.
+
