@@ -1,0 +1,35 @@
+{
+  "scope": "Saved-field pressure postprocess at one frequency per speed; no response acceptance",
+  "grids": {
+    "radiation": {
+      "stations": 113,
+      "body": 72,
+      "free": 96,
+      "control": 120
+    },
+    "diffraction": {
+      "stations": 85,
+      "body": 60,
+      "free": 96,
+      "control": 96
+    }
+  },
+  "coordinate": "Raw A1 generalized rows; no forcing phase adapter",
+  "cutoff_beams": 0.5,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_conservative_pressure_replay.py": "4fb7b99a8f2d47d65dcc817dd625354eee7b040f56569ccf48e22f5a9f0b4391",
+    "benchmarks\\longitudinal_refined_20260921\\run.json": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\trace_transport.py": "87f081313d169bc87883c97ad04f5d91f96922127c9461a7ed3d4bc4a235d6a8",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn167_radiation3.npz": "3e99de5c66cd7937293d461e300c7680a65f2b6ce40b868bcd053636856e2654",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn167_radiation5.npz": "2778f32810952fdf9b32d09c030562ced43b35fa939a7661723ba8765cf54590",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn167.npz": "5f05d9aaae8a973429c71f235277aaa38ebbc04160b8d62ad3b284516cdcac22",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn226_radiation3.npz": "9cb0497f7017cd77150989dd17419ec0adf2a1ea48262de2f95e70c9e9fa2f71",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn226_radiation5.npz": "20bb394e7a3cbaf542e2b3e2f6ef734c6b5fcc08c15269131a6a6999f7d61758",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn226.npz": "70b80b85c1e6581f549895491488bb38efd31401aae316c2e9ff4b1db70f4b22",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn282_radiation3.npz": "eae967d2938f974f94214997cae28553543f8f1f7ddcaea68991c2fb9b1e95e6",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn282_radiation5.npz": "34d99dc5d8ca9dea5092cfc2ecef843044b6ba767f8b1684b7760877706ec933",
+    "outputs\\reconstructed_free_20260924\\free_96\\boundary_fn282.npz": "04515b4ec67312d2d8b6a7b346c93f82e210f31ffbc074a625f189db08d451a4",
+    "outputs\\radiation_pressure_routes_fine_20260924\\contract.json": "5841367261aa6c674d017d601fe8eb4ebbf123a8c62b475980197cf55a0aeaf2",
+    "outputs\\reconstructed_free_20260924\\free_96\\contract.json": "dbfa6458d0a1a2b63f9e94eadf0979e98577aaa1c44725208f621dcffb244b5f"
+  }
+}

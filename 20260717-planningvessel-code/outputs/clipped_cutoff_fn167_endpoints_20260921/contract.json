@@ -1,0 +1,41 @@
+{
+  "input_sha256": "925b1c5163700d66bae069e683b4545e711b569d8998f2e76f13c9fe5b6d812a",
+  "grids": [
+    {
+      "station_count": 15,
+      "body_panels_per_section": 24,
+      "free_surface_inner_panels": 12,
+      "free_surface_outer_panels": 24
+    },
+    {
+      "station_count": 29,
+      "body_panels_per_section": 36,
+      "free_surface_inner_panels": 18,
+      "free_surface_outer_panels": 36
+    },
+    {
+      "station_count": 57,
+      "body_panels_per_section": 48,
+      "free_surface_inner_panels": 24,
+      "free_surface_outer_panels": 48
+    }
+  ],
+  "frequencies": {
+    "fn167": [
+      16.734,
+      5.601
+    ]
+  },
+  "relative_limit": 0.05,
+  "dimensionless_absolute_limit": 0.001,
+  "near_zero_dimensionless_threshold": 0.02,
+  "normalization": "A=rho*L*B^2 times L^(i+j); B=A*sqrt(g/L); F=rho*g*L*B times L^i; i,j=0,1",
+  "acceptance": "fine two grids, each frequency and each component; absolute limit only near zero",
+  "scope": "coupled station and panel refinement; history spectral quadrature/domain held fixed",
+  "limitation": "not independent history-quadrature or domain convergence",
+  "history_steps": 64,
+  "cutoff_quadrature": "clipped_linear",
+  "selected_case_endpoint_diagnostic": "fn167",
+  "history_quadrature_count": 32,
+  "history_k_max": 25.0
+}

@@ -1,0 +1,19 @@
+{
+  "stage_acceptance": "NOT_PASSED",
+  "scope": "Coarse diagnostic candidate, not a formal production run",
+  "variant": "radiation_only",
+  "evaluator_sha256": "a85b41e2f333b41319b55df5cb48c99edea9a32c8f95dd29fe1a7acb5fd51e1e",
+  "per_speed_motion_pass": false,
+  "reference_sha256": "13df2dd6346f4930d101211b9bf839a0f891e2b418b4f1ec909a9d8b15c91a33",
+  "reference_role": "regression_not_blind_holdout",
+  "max_dynamic_reconstruction_residual": 1.843758270201106e-15,
+  "missing": [
+    "independent_excitation",
+    "three_grid",
+    "long_wave_background",
+    "dense_peaks",
+    "stability",
+    "Fridsma",
+    "full_regression"
+  ]
+}

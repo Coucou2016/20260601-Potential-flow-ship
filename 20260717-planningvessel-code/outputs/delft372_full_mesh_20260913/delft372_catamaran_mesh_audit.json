@@ -1,0 +1,39 @@
+{
+  "vertex_count": 1552,
+  "face_count": 3096,
+  "boundary_edge_count": 0,
+  "nonmanifold_edge_count": 0,
+  "degenerate_face_count": 0,
+  "connected_component_count": 2,
+  "surface_area_m2": 3.759339178197217,
+  "enclosed_volume_m3": 0.14351793047248804,
+  "is_watertight": true,
+  "coordinate_system": "x from aft perpendicular, y starboard, z upward from design waterline",
+  "source_markdown": "D:\\Projects\\20260601-Potential-flow-ship\\20260729-\u6587\u732e\u6536\u96c6\\md\\B2.md",
+  "source_sha256": "0dcbcfd3ff0bc66774786f5799e757c5a7d9d8ea5337b475684d894343044408",
+  "mesh_extent_m": {
+    "x": [
+      0.0,
+      3.0435000000000003
+    ],
+    "y": [
+      -0.47,
+      0.47
+    ],
+    "z": [
+      -0.15000000000000002,
+      0.05
+    ]
+  },
+  "reference_particulars": {
+    "lpp_m": 3.0,
+    "demihull_centerline_spacing_m": 0.7,
+    "overall_beam_m": 0.94,
+    "design_draft_m": 0.15
+  },
+  "mesh_files": {
+    "vertices": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\delft372_full_mesh_20260913\\delft372_catamaran_full_vertices.csv",
+    "faces": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\delft372_full_mesh_20260913\\delft372_catamaran_full_faces.csv",
+    "obj": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\delft372_full_mesh_20260913\\delft372_catamaran_full.obj"
+  }
+}

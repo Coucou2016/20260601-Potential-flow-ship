@@ -1,0 +1,32 @@
+{
+  "periods_s": [
+    1.6,
+    2.0,
+    3.0,
+    5.0,
+    8.0
+  ],
+  "grids": [
+    [
+      2,
+      12,
+      16
+    ],
+    [
+      4,
+      24,
+      32
+    ],
+    [
+      8,
+      48,
+      64
+    ]
+  ],
+  "grid_scaled_tolerance": 0.05,
+  "residual_limit": 1e-08,
+  "condition_limit": 1000000000000.0,
+  "damping_negative_tolerance": 1e-08,
+  "excitation": "unchanged_hydrostatic_approximation",
+  "status": "diagnostic_only_never_automatic_promotion"
+}

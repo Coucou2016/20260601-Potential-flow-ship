@@ -1,0 +1,22 @@
+{
+  "conservation_tolerance": 1e-12,
+  "smooth_error_limit": 0.001,
+  "smooth_refinement_ratio_minimum": 3.8,
+  "counts": [
+    20,
+    40,
+    80
+  ],
+  "scope": "Reconstructed trace numerical verification, not a new pressure/response solution",
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_conservative_trace.py": "531df1d38d625e9da917965b558de6233eeadff57a151fe51427433fbc6dd95f",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\trace_transport.py": "4581dcdbe8a7e371e2c0124169caf2a7254a69abc8ef39517e9fbd199dcc902e",
+    "outputs\\radiation_pressure_routes_fine_20260924\\contract.json": "5841367261aa6c674d017d601fe8eb4ebbf123a8c62b475980197cf55a0aeaf2",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn167_radiation3.npz": "3e99de5c66cd7937293d461e300c7680a65f2b6ce40b868bcd053636856e2654",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn167_radiation5.npz": "2778f32810952fdf9b32d09c030562ced43b35fa939a7661723ba8765cf54590",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn226_radiation3.npz": "9cb0497f7017cd77150989dd17419ec0adf2a1ea48262de2f95e70c9e9fa2f71",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn226_radiation5.npz": "20bb394e7a3cbaf542e2b3e2f6ef734c6b5fcc08c15269131a6a6999f7d61758",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn282_radiation3.npz": "eae967d2938f974f94214997cae28553543f8f1f7ddcaea68991c2fb9b1e95e6",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn282_radiation5.npz": "34d99dc5d8ca9dea5092cfc2ecef843044b6ba767f8b1684b7760877706ec933"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "stage_acceptance": "NOT_PASSED",
+  "scope": "Coarse diagnostic candidate, not a formal production run",
+  "per_speed_motion_pass": false,
+  "reference_sha256": "13df2dd6346f4930d101211b9bf839a0f891e2b418b4f1ec909a9d8b15c91a33",
+  "reference_role": "regression_not_blind_holdout",
+  "max_dynamic_reconstruction_residual": 1.1933004889355596e-15,
+  "missing": [
+    "independent_excitation",
+    "three_grid",
+    "long_wave_background",
+    "dense_peaks",
+    "stability",
+    "Fridsma",
+    "full_regression"
+  ]
+}

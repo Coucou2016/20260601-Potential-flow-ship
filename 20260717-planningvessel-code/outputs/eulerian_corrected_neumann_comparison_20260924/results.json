@@ -1,0 +1,15 @@
+{
+  "checks": 30,
+  "passed": 30,
+  "full_band_acceptance": false,
+  "physical_acceptance": false,
+  "hashes": {
+    "outputs\\eulerian_corrected_neumann_mid_20260924\\contract.json": "818cf5559196172adb638dbd1f62678126faf57b50b16d9f13441430c0e93a05",
+    "outputs\\eulerian_corrected_neumann_mid_20260924\\source_hashes.json": "eedee4f62808a7cf13df1f05c6c58345d3622b0990691530be147c449f49cfc4",
+    "outputs\\eulerian_corrected_neumann_mid_20260924\\force_changes.csv": "e5cafa44b31c1dbc36a1fa2b1c706e503feb256ea51d7cb725cc94278c85cd60",
+    "outputs\\eulerian_corrected_neumann_fine_20260924\\contract.json": "ebbb44e2d77bfbd07a398eb140a866a808b940a90f0156bd8de9bd2762facb44",
+    "outputs\\eulerian_corrected_neumann_fine_20260924\\source_hashes.json": "eedee4f62808a7cf13df1f05c6c58345d3622b0990691530be147c449f49cfc4",
+    "outputs\\eulerian_corrected_neumann_fine_20260924\\force_changes.csv": "eccd95aba5df3938ca930aa8eb82b0510bd6e07a8770f8525bf3aadb0d5283a0"
+  },
+  "thresholds_source": "scripts/audit_eulerian_diffraction_grid.py: existing 5%/0.001/0.02 rules"
+}

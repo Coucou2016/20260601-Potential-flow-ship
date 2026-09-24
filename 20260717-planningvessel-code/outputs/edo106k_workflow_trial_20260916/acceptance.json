@@ -1,0 +1,162 @@
+{
+  "numerical_status": "PASS",
+  "physical_validation_status": "NOT_VALIDATED",
+  "overall_project_status": "NOT_COMPLETE",
+  "production": false,
+  "model": "synthetic_float_zero_speed_longitudinal",
+  "speed_mps": 0.0,
+  "checks": [
+    {
+      "name": "boundary_edges",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "nonmanifold_edges",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "orientation_errors",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "independent_pressure_buoyancy_relative",
+      "value": 2.3929759209407118e-05,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "independent_pressure_pitch_relative",
+      "value": 5.608010204014257e-06,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "independent_pressure_horizontal_relative",
+      "value": 1.1116590398815626e-16,
+      "limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "force_equilibrium_relative",
+      "value": 4.120487945511058e-16,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "moment_equilibrium_relative",
+      "value": 7.617503476220847e-18,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "restoring_asymmetry",
+      "value": 3.6342057696710525e-11,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "restoring_derivative_step_change",
+      "value": 1.1281753267675061e-10,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "free_decay_energy_increase_relative",
+      "value": 0.0,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "fine_grid_scaled_C",
+      "value": 1.1864718840472744e-05,
+      "limit": 0.02,
+      "passed": true
+    },
+    {
+      "name": "fine_grid_scaled_A",
+      "value": 1.951036495268238e-05,
+      "limit": 0.02,
+      "passed": true
+    },
+    {
+      "name": "fine_grid_response_change",
+      "value": 0.0018224110382927359,
+      "limit": 0.02,
+      "passed": true
+    },
+    {
+      "name": "time_step_change",
+      "value": 4.958028779200596e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "time_frequency_amplitude_error",
+      "value": 1.4159784456069247e-11,
+      "limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "time_frequency_phase_error_deg",
+      "value": 1.906841478511597e-08,
+      "limit": 1.0,
+      "passed": true
+    },
+    {
+      "name": "spectrum_hs_relative_error",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "regular_max_vertical_excursion_m",
+      "value": 0.05895183259286865,
+      "limit": 0.1,
+      "passed": true
+    },
+    {
+      "name": "regular_max_pitch_deg",
+      "value": 0.6528657060903338,
+      "limit": 3.0,
+      "passed": true
+    },
+    {
+      "name": "irregular_max_vertical_excursion_m",
+      "value": 0.05015587466067216,
+      "limit": 0.1,
+      "passed": true
+    },
+    {
+      "name": "irregular_max_pitch_deg",
+      "value": 0.6107817718051599,
+      "limit": 3.0,
+      "passed": true
+    },
+    {
+      "name": "decay_max_vertical_excursion_m",
+      "value": 0.018450806734372265,
+      "limit": 0.1,
+      "passed": true
+    },
+    {
+      "name": "decay_max_pitch_deg",
+      "value": 0.11459155902616465,
+      "limit": 3.0,
+      "passed": true
+    }
+  ],
+  "dof_status": {
+    "heave": "solved",
+    "pitch": "solved",
+    "surge": "constrained",
+    "sway": "constrained",
+    "roll": "constrained",
+    "yaw": "constrained"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "source_offsets_reconstruction_not_hydrodynamically_validated",
+  "source": "https://ntrs.nasa.gov/citations/19930092989",
+  "pdf_page": 6,
+  "original_unit": "inch_full_size",
+  "length_m": 8.509,
+  "max_chine_beam_m": 1.143,
+  "station_count": 24,
+  "vertices": 408,
+  "triangles": 656,
+  "sha256_offsets": "b410098e912316868f7aabcfd7958a512bfc9a97c34b73e92da7bbe8561c606f",
+  "sha256_pdf": "20ceea9ed88131505bcef7b9dbdce80759bb7aad1debd725fcf55c4e2ae28a32",
+  "limitations": [
+    "Piecewise-linear bottom only; flutes not fully resolved",
+    "No deck, side, step-face or full aircraft reconstruction",
+    "No mass, CG, inertia, aircraft aerodynamic polar or takeoff validation"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "mesh_audit": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\delft372_full_mesh_20260913\\delft372_catamaran_mesh_audit.json",
+  "motion_table": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\delft372_full_mesh_20260913\\delft372_head_sea_180deg_motions.csv",
+  "selected_test": {
+    "test_no": "8720",
+    "froude_number": 0.6,
+    "speed_m_s": 3.347,
+    "omega_0_rad_s": 3.583,
+    "omega_encounter_rad_s": 7.964,
+    "wavelength_over_lpp": 1.601,
+    "wave_amplitude_cm": 1.79,
+    "surge_rao_cm_per_cm": 0.281,
+    "surge_phase_deg": 153.0,
+    "sway_rao_cm_per_cm": 0.027,
+    "sway_phase_deg": 87.0,
+    "heave_rao_cm_per_cm": 2.802,
+    "heave_phase_deg": 312.0,
+    "roll_rao_deg_per_cm": 0.077,
+    "roll_phase_deg": 40.0,
+    "pitch_rao_deg_per_cm": 0.865,
+    "pitch_phase_deg": 160.0,
+    "yaw_rao_deg_per_cm": 0.136,
+    "yaw_phase_deg": 150.0
+  },
+  "timeseries": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\delft372_full_mesh_20260913\\delft372_test_8720_measured_first_harmonic.csv",
+  "interpretation": "The time series is reconstructed from the published first-harmonic RAO and phase. It is not the original raw carriage time history and contains no unreported mean attitude."
+}

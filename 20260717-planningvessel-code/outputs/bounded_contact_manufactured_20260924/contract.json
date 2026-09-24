@@ -1,0 +1,23 @@
+{
+  "stage_acceptance": false,
+  "policies": [
+    "exact_exposure",
+    "bounded_nearest_unvalidated"
+  ],
+  "refinements": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "reference": "Analytic Fourier free-surface oscillator; q=k*phi is prescribed diagonal operator",
+  "scope": "Migration and time-integration consistency, not physical contact BEM validation",
+  "acceptance": "Diagnostic only; no ship threshold replaced",
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_bounded_contact_manufactured.py": "8e68742c73261579c0785a723a922f423a28be736412884fbf11ce1f223d5473",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_moving_free_surface_manufactured.py": "412d778ab8ae79cf9377937990501e599c950c08ea150556681b23721740dd52",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\free_surface_transfer.py": "b114eb7788666da13c158a0a5e0df6dcafbc8f78d02d80a7ad4bd051519ab4f6",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\implicit_free_surface.py": "b9a2cc690eeb1357ddbefa8687280e97f143dfeb5c246ac12c565c5887999b78",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\anchored_free_surface.py": "9d1df6a2e059c1fe7800c7966f6f064b50d5e4a2428b6d083286462b3f5e1a86"
+  }
+}

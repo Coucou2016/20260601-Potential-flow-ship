@@ -1,0 +1,50 @@
+{
+  "stage_acceptance": false,
+  "cutoff": 100.0,
+  "counts": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "pairs": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      95
+    ],
+    [
+      0,
+      48
+    ],
+    [
+      24,
+      48
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      95,
+      95
+    ]
+  ],
+  "lags": [
+    1,
+    128,
+    512
+  ],
+  "dt_s": 0.008642103177064818,
+  "scope": "Finite spectral interval only; not cutoff convergence or physics validation",
+  "reference": "scipy.integrate.quad in original k coordinate, not s=sqrt(k) trapezoid",
+  "epsabs": 1e-10,
+  "epsrel": 1e-10,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_control_history_quadrature.py": "cc2fe41e8a10bc77233e0c494f9521d0588b0cabc1ae70e6b6e35193d401c364",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\formulation.py": "93cd695efe940af5ecbe50da8a20f6d0804052ad2723e241f375d9c5760d0b35"
+  }
+}

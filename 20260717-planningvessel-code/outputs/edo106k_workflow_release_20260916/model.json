@@ -1,0 +1,102 @@
+{
+  "mass": {
+    "mass_kg": 1800.0,
+    "cg_m": [
+      4.164444444444444,
+      0.0,
+      1.71
+    ],
+    "inertia_cg_kg_m2": [
+      [
+        5018.591999999999,
+        0.0,
+        -185.04000000000002
+      ],
+      [
+        0.0,
+        7390.399777777778,
+        0.0
+      ],
+      [
+        -185.04000000000002,
+        0.0,
+        11547.407777777777
+      ]
+    ],
+    "principal_inertias_kg_m2": [
+      5013.351793659064,
+      7390.399777777778,
+      11552.64798411871
+    ],
+    "status": "synthetic_component_model_not_measured"
+  },
+  "M": [
+    [
+      1800.0,
+      0.0
+    ],
+    [
+      0.0,
+      7390.399777777778
+    ]
+  ],
+  "A": [
+    [
+      2592.746530400522,
+      678.9182435689052
+    ],
+    [
+      678.9182435689048,
+      7544.374158900054
+    ]
+  ],
+  "B": [
+    [
+      4135.930288668353,
+      388.6011620040603
+    ],
+    [
+      388.60116200405986,
+      13985.059438232636
+    ]
+  ],
+  "C": [
+    [
+      67679.93141620536,
+      2266.475819851621
+    ],
+    [
+      2266.4758281230615,
+      227599.67422769679
+    ]
+  ],
+  "natural_periods_s": [
+    1.6561671354596343,
+    1.550417256041256
+  ],
+  "bow_x_at_equilibrium_m": 4.204076936922029,
+  "equilibrium": {
+    "cg_height_m": 1.1614401984407174,
+    "pitch_rad": 0.04942915527573444,
+    "volume_m3": 1.756097560975609,
+    "force_residual_rel": 4.120487945511058e-16,
+    "moment_residual_rel": 7.617503476220847e-18,
+    "min_freeboard_m": 0.22904294670661016
+  },
+  "assumptions": [
+    "Real EDO106K tabulated bottom with piecewise linear interpolation; vertical sides, flat deck and end/step faces assumed.",
+    "Synthetic component masses, not the historical aircraft; constrained surge/sway/roll/yaw.",
+    "Zero speed, still mean water and zero mean air flow; no propulsion or flight integration.",
+    "Added mass per length = pi*rho*waterline_halfwidth^2/2, an assumed strip proxy, not a 2.5D BEM result.",
+    "Modal damping ratio 0.12 is a declared assumption, not fitted to experiment.",
+    "Wave excitation is hydrostatic elevation forcing with deep-water phase, without diffraction/radiation memory.",
+    "Linear small-amplitude heave/pitch about solved nonlinear hydrostatic equilibrium; no step ventilation or impact."
+  ],
+  "model": "synthetic_float_zero_speed_longitudinal",
+  "mesh": {
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "orientation_errors": 0,
+    "volume_m3": 4.983730220823756
+  }
+}

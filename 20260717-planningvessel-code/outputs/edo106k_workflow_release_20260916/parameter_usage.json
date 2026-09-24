@@ -1,0 +1,20 @@
+{
+  "used_base_fields": [
+    "geometry.offsets",
+    "mass_components",
+    "environment_assumed.water_density_kg_m3",
+    "environment_assumed.gravity_m_s2"
+  ],
+  "constrained_to_zero": [
+    "speed_mps",
+    "environment_assumed.wind_mps",
+    "environment_assumed.current_mps"
+  ],
+  "not_used_in_zero_speed_workflow": [
+    "prescribed_entry_assumed",
+    "aerodynamics_assumed",
+    "propulsion_assumed",
+    "sensitivity_assumed"
+  ],
+  "reason": "No air-relative motion, propulsion or free-entry simulation; separate workflow spectrum and sensitivity settings apply."
+}

@@ -1,0 +1,14 @@
+{
+  "config_sha256": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+  "stations": 113,
+  "body": 72,
+  "free": 96,
+  "control": 120,
+  "history_steps": 128,
+  "history_quadrature_count": 64,
+  "history_k_max": 25.0,
+  "frequency_index": 4,
+  "corner_node": 36,
+  "cutoff_beams": 0.5,
+  "scope": "same solved potentials; pressure postprocess candidate only; not full-band acceptance"
+}

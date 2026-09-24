@@ -1,0 +1,82 @@
+{
+  "stage_acceptance": false,
+  "physical_contact_validated": false,
+  "manufactured_error_limit_pass": {
+    "exact_exposure": true,
+    "bounded_nearest_unvalidated": false
+  },
+  "rows": [
+    {
+      "policy": "exact_exposure",
+      "level": 1,
+      "final_weighted_error": 0.008121355033381858,
+      "maximum_weighted_error": 0.008121355033381858,
+      "maximum_scaled_point_error": 0.006871213626348723,
+      "exposure_visits": 10,
+      "algebra_residual": 1.9903389700164182e-16
+    },
+    {
+      "policy": "exact_exposure",
+      "level": 2,
+      "final_weighted_error": 0.0020192748697156096,
+      "maximum_weighted_error": 0.0020192748697156096,
+      "maximum_scaled_point_error": 0.0017111127332073534,
+      "exposure_visits": 22,
+      "algebra_residual": 1.377476991865913e-16
+    },
+    {
+      "policy": "exact_exposure",
+      "level": 4,
+      "final_weighted_error": 0.0005033412950411854,
+      "maximum_weighted_error": 0.0005033412950411854,
+      "maximum_scaled_point_error": 0.00042696881759558987,
+      "exposure_visits": 52,
+      "algebra_residual": 2.0647434667696395e-16
+    },
+    {
+      "policy": "exact_exposure",
+      "level": 8,
+      "final_weighted_error": 0.00012591423121095224,
+      "maximum_weighted_error": 0.00012591423121095224,
+      "maximum_scaled_point_error": 0.00010690429821599151,
+      "exposure_visits": 104,
+      "algebra_residual": 1.3662050408067624e-16
+    },
+    {
+      "policy": "bounded_nearest_unvalidated",
+      "level": 1,
+      "final_weighted_error": 0.010480821430021697,
+      "maximum_weighted_error": 0.01657755037314496,
+      "maximum_scaled_point_error": 0.0517174425044052,
+      "exposure_visits": 10,
+      "algebra_residual": 2.2719191568803285e-16
+    },
+    {
+      "policy": "bounded_nearest_unvalidated",
+      "level": 2,
+      "final_weighted_error": 0.006817360462129039,
+      "maximum_weighted_error": 0.01541553200160242,
+      "maximum_scaled_point_error": 0.05053991182041541,
+      "exposure_visits": 22,
+      "algebra_residual": 1.45659821579778e-16
+    },
+    {
+      "policy": "bounded_nearest_unvalidated",
+      "level": 4,
+      "final_weighted_error": 0.006534148418442149,
+      "maximum_weighted_error": 0.015332503558209509,
+      "maximum_scaled_point_error": 0.05161675367878705,
+      "exposure_visits": 52,
+      "algebra_residual": 2.486119847446507e-16
+    },
+    {
+      "policy": "bounded_nearest_unvalidated",
+      "level": 8,
+      "final_weighted_error": 0.006137670945271699,
+      "maximum_weighted_error": 0.014808115424316436,
+      "maximum_scaled_point_error": 0.05032324703855515,
+      "exposure_visits": 104,
+      "algebra_residual": 2.2802391266562637e-16
+    }
+  ]
+}

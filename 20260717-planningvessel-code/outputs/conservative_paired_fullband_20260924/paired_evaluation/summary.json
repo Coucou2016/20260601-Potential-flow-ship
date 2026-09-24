@@ -1,0 +1,15 @@
+{
+  "stage_acceptance": "NOT_PASSED",
+  "variants_evaluated": [
+    "baseline",
+    "radiation_only",
+    "excitation_only",
+    "combined"
+  ],
+  "cases_per_variant": 24,
+  "selected_variant": null,
+  "max_increment_residual": 1.05545934979944e-15,
+  "source_hash": "79821a3f2d7a8dc84399af1896d17524b30e78840e7518488cb3595eee80ae49",
+  "limits_unchanged": true,
+  "reference_role": "regression_not_blind_holdout"
+}
