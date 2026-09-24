@@ -1,0 +1,37 @@
+{
+  "stage_acceptance": false,
+  "rows": [
+    {
+      "convention": "fluid_domain_outward",
+      "body_panels": 64,
+      "control_panels": 96,
+      "body_potential_relative_error": 0.0004959720748717307,
+      "free_normal_relative_error": 0.004221240053552045,
+      "algebra_residual": 2.230764624932356e-16
+    },
+    {
+      "convention": "hull_outward",
+      "body_panels": 64,
+      "control_panels": 96,
+      "body_potential_relative_error": 1.6709018857766436,
+      "free_normal_relative_error": 0.33188051869830487,
+      "algebra_residual": 2.5836079500965805e-16
+    },
+    {
+      "convention": "fluid_domain_outward",
+      "body_panels": 128,
+      "control_panels": 192,
+      "body_potential_relative_error": 0.000125418529159108,
+      "free_normal_relative_error": 0.003658846871471223,
+      "algebra_residual": 2.370401040715825e-16
+    },
+    {
+      "convention": "hull_outward",
+      "body_panels": 128,
+      "control_panels": 192,
+      "body_potential_relative_error": 1.670668355644307,
+      "free_normal_relative_error": 0.33158803181992924,
+      "algebra_residual": 2.8165457776087523e-16
+    }
+  ]
+}

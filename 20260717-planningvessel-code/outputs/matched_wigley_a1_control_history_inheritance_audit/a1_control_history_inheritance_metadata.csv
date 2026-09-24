@@ -1,0 +1,2 @@
+a1_control_history_inheritance_status,reference,checked_equation,checked_implementation,is_hard_gate,note
+diagnostic_a1_eq24_station_control_history_inheritance_not_hard_gate,real_wigley_station_sweep_reconstruction,A1 Eq.24 station-to-station control-surface history RHS,solve_order plus _prepend_control_history,False,This audit verifies queue inheritance and RHS reproducibility. It does not validate the hydrodynamic coefficient magnitude against Ma 2005.

@@ -1,0 +1,3 @@
+benchmark,source,mode,actual_eigenvalue_nondim,expected_real_part,actual_real_part,real_part_rel_error,real_part_tolerance,real_part_status,expected_imaginary_abs,actual_imaginary_abs,imaginary_abs_rel_error,imaginary_abs_tolerance,imaginary_abs_status,mode_status,nondim_scale
+faltinsen_ch9_prescribed_state,Faltinsen Table 9.2,mode_1_high_frequency,-0.1136389202+1.909073599j,-0.12,-0.1136389201509488,0.053008998742093305,0.1,PASS,1.91,1.9090735986686038,0.0004850268750764913,0.1,PASS,PASS,0.31932995678105874
+faltinsen_ch9_prescribed_state,Faltinsen Table 9.2,mode_2_low_frequency,-0.8543501092+0.6687814988j,-0.86,-0.8543501092340999,0.006569640425465182,0.1,PASS,0.67,0.6687814987894299,0.0018186585232389549,0.1,PASS,PASS,0.31932995678105874

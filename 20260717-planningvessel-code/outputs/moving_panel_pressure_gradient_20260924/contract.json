@@ -1,0 +1,16 @@
+{
+  "stations": [
+    33,
+    65,
+    129
+  ],
+  "panels": 24,
+  "omega": 2.0,
+  "speed": 3.0,
+  "rho": 1000.0,
+  "exact_potential": "(1+0.4i)*y+(-0.3+0.7i)*z, fixed-space phi_x=0",
+  "moving_geometry": "y=(1+0.2x)*eta; z=(0.3+0.1x)*abs(eta)",
+  "relative_pressure_limit": 0.001,
+  "independent_of_experiments": true,
+  "scope": "manufactured derivative/pressure verification, not diffraction benchmark"
+}

@@ -1,0 +1,35 @@
+{
+  "stage_acceptance": false,
+  "manufactured_integration_pass": true,
+  "rows": [
+    {
+      "refinement": 1,
+      "min_panels": 36,
+      "max_panels": 42,
+      "exposed_visits": 10,
+      "final_error": 0.008121355033381858,
+      "maximum_error": 0.008121355033381858,
+      "maximum_equation_error": 1.9903389700164182e-16
+    },
+    {
+      "refinement": 2,
+      "min_panels": 70,
+      "max_panels": 82,
+      "exposed_visits": 22,
+      "final_error": 0.0020192748697156096,
+      "maximum_error": 0.0020192748697156096,
+      "maximum_equation_error": 1.377476991865913e-16
+    },
+    {
+      "refinement": 4,
+      "min_panels": 138,
+      "max_panels": 164,
+      "exposed_visits": 52,
+      "final_error": 0.0005033412950411854,
+      "maximum_error": 0.0005033412950411854,
+      "maximum_equation_error": 2.0647434667696395e-16
+    }
+  ],
+  "physical_contact_state_validated": false,
+  "moving_body_BEM_implemented": false
+}

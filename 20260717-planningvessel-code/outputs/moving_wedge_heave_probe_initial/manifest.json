@@ -1,0 +1,68 @@
+{
+  "model": "Sun_2007_Chapter2_moving_wedge_free_surface_BEM_development_probe",
+  "formulae": [
+    "Eq2.1-Eq2.11",
+    "Eq6.1-Eq6.8"
+  ],
+  "limitations": [
+    "no_jet_cut",
+    "no_spray_cut",
+    "no_remeshing",
+    "no_Troesch_acceptance"
+  ],
+  "response_calibration_used": false,
+  "config": {
+    "deadrise_rad": 0.3490658503988659,
+    "mean_draft_m": 0.12,
+    "chine_half_beam_m": 0.55,
+    "free_surface_extent_m": 3.0,
+    "water_depth_m": 1.8,
+    "body_panels_per_side": 5,
+    "free_surface_panels_per_side": 8,
+    "side_wall_panels": 3,
+    "bottom_panels": 10,
+    "gauss_order": 6,
+    "damping_beach_length_m": 1.0,
+    "damping_beach_beta0": 0.3
+  },
+  "summaries": [
+    {
+      "case_index": 0,
+      "amplitude_m": 0.001,
+      "omega_rad_s": 4.0,
+      "sample_count": 145,
+      "runtime_s": 33.2842686,
+      "added_mass_per_length_kg_m": 179.8569336625884,
+      "damping_per_length_kg_m_s": 334.8566819663409,
+      "restoring_per_length_n_m2": 6468.660836363963,
+      "first_harmonic_force_amplitude_n_m": 3.8326211823712732,
+      "harmonic_fit_residual_nrmse": 0.05092357548232766,
+      "max_potential_bvp_residual": 2.831745651096416e-15,
+      "max_pressure_bvp_residual": 1.855612451669136e-15,
+      "max_free_surface_pressure_abs_pa": 1.0532854699107225e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "response_calibration_used": false,
+      "status": "sun_ch2_moving_wedge_free_surface_bem_no_jet_spray_remesh_or_beach_benchmark_pending"
+    },
+    {
+      "case_index": 1,
+      "amplitude_m": 0.002,
+      "omega_rad_s": 4.0,
+      "sample_count": 145,
+      "runtime_s": 31.202536900000005,
+      "added_mass_per_length_kg_m": 179.76161832906493,
+      "damping_per_length_kg_m_s": 335.2614230524022,
+      "restoring_per_length_n_m2": 6468.660836363963,
+      "first_harmonic_force_amplitude_n_m": 7.66923197338236,
+      "harmonic_fit_residual_nrmse": 0.05094972305233824,
+      "max_potential_bvp_residual": 3.37336616828107e-15,
+      "max_pressure_bvp_residual": 2.1834140915444352e-15,
+      "max_free_surface_pressure_abs_pa": 2.1675573120237546e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "response_calibration_used": false,
+      "status": "sun_ch2_moving_wedge_free_surface_bem_no_jet_spray_remesh_or_beach_benchmark_pending",
+      "first_harmonic_ratio_to_base": 2.0010409608594153,
+      "linearity_ratio_deviation_from_two": 0.0010409608594152964
+    }
+  ]
+}

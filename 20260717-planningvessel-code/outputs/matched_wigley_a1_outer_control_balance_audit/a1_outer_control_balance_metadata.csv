@@ -1,0 +1,2 @@
+a1_outer_control_balance_status,reference,checked_equation,checked_channels,is_hard_gate,note
+diagnostic_a1_eq24_outer_control_balance_scale_phase_not_hard_gate,real_wigley_station_sweep_eq24_component_split,A1 Eq.24 outer-control instantaneous and history terms,instantaneous_potential; instantaneous_normal_derivative; history_Bij_psi_n; history_Cij_psi,False,PASS means the stored solved Eq.24 row balances numerically. The scale and phase columns are diagnostic evidence for the remaining Ma 2005 coefficient gap.

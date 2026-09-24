@@ -1,0 +1,4 @@
+lag_s,pass_rows,fail_rows,max_relative_residual,min_relative_residual,finest_panel_count,finest_panel_relative_residual,max_abs_residual,finite_difference_epsilon_m,quadrature_count,k_max,diagnostic_conclusion,gate_role
+0.02,3,0,1.049562564179582e-06,1.0890725049717944e-07,32,1.049562564179582e-06,4.309041399253033e-07,0.0001,256,50.0,eq28_normal_derivative_matches_finite_difference,diagnostic_a1_eq28_history_kernel_normal_derivative_not_hard_gate
+0.05,3,0,9.688438851853621e-07,1.0620113135092977e-07,32,9.688438851853621e-07,9.671058328053483e-07,0.0001,256,50.0,eq28_normal_derivative_matches_finite_difference,diagnostic_a1_eq28_history_kernel_normal_derivative_not_hard_gate
+0.1,3,0,6.998663518800585e-07,9.678482484978876e-08,32,6.998663518800585e-07,1.2673543914321073e-06,0.0001,256,50.0,eq28_normal_derivative_matches_finite_difference,diagnostic_a1_eq28_history_kernel_normal_derivative_not_hard_gate
