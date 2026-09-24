@@ -1,0 +1,212 @@
+{
+  "status": "self_similar_kinematic_residual_localization_diagnostic",
+  "validated": false,
+  "reference_used": false,
+  "metric": "Iafrati 2013 Eq. (52), K = integral(S_nu^2 ds)",
+  "source_hashes": {
+    "coupled_checkpoint.json": "deea45821d077b014232a7b08a5a7ec8453b9118b3f880143eb9071534beea81",
+    "coupled_checkpoint_outer_nodes.csv": "e8460be81b95731d69cf5b2308303f3a9106c872d53073f18f5566af468f0c15",
+    "coupled_pseudo_time_history.csv": "ae6f0c717c55c30c78d2dd0f9b5ec63357e392c8bc0c28da04e112b27fef85ca"
+  },
+  "panel_count": 600,
+  "kinematic_integral": 0.0006671133573718657,
+  "reconstruction_relative_error": 0.0,
+  "root_first_two_panels": {
+    "k_contribution": 1.6601306056033638e-05,
+    "k_fraction": 0.0248852850457612
+  },
+  "interior_excluding_root2_far8": {
+    "k_contribution": 0.0005932237822908853,
+    "k_fraction": 0.8892398506723461
+  },
+  "far_last_eight_panels": {
+    "k_contribution": 5.728826902494673e-05,
+    "k_fraction": 0.08587486428189267
+  },
+  "arc_deciles": [
+    {
+      "normalized_arc_lower": 0.0,
+      "normalized_arc_upper": 0.1,
+      "k_contribution": 0.00022543182012533315,
+      "k_fraction": 0.33792131072511533
+    },
+    {
+      "normalized_arc_lower": 0.1,
+      "normalized_arc_upper": 0.2,
+      "k_contribution": 5.5609134860167e-07,
+      "k_fraction": 0.0008335784952536795
+    },
+    {
+      "normalized_arc_lower": 0.2,
+      "normalized_arc_upper": 0.30000000000000004,
+      "k_contribution": 7.961947486397169e-07,
+      "k_fraction": 0.001193492439990072
+    },
+    {
+      "normalized_arc_lower": 0.30000000000000004,
+      "normalized_arc_upper": 0.4,
+      "k_contribution": 1.7433941922596094e-07,
+      "k_fraction": 0.00026133402561864723
+    },
+    {
+      "normalized_arc_lower": 0.4,
+      "normalized_arc_upper": 0.5,
+      "k_contribution": 5.885409712829978e-06,
+      "k_fraction": 0.00882220337487457
+    },
+    {
+      "normalized_arc_lower": 0.5,
+      "normalized_arc_upper": 0.6000000000000001,
+      "k_contribution": 1.2994203744699383e-05,
+      "k_fraction": 0.019478254484201683
+    },
+    {
+      "normalized_arc_lower": 0.6000000000000001,
+      "normalized_arc_upper": 0.7000000000000001,
+      "k_contribution": 0.0002304013824226886,
+      "k_fraction": 0.3453706628366266
+    },
+    {
+      "normalized_arc_lower": 0.7000000000000001,
+      "normalized_arc_upper": 0.8,
+      "k_contribution": 5.1985816632512316e-05,
+      "k_fraction": 0.07792651137628791
+    },
+    {
+      "normalized_arc_lower": 0.8,
+      "normalized_arc_upper": 0.9,
+      "k_contribution": 1.5162978777100694e-05,
+      "k_fraction": 0.02272923875611813
+    },
+    {
+      "normalized_arc_lower": 0.9,
+      "normalized_arc_upper": 1.0,
+      "k_contribution": 0.0001237251204402342,
+      "k_fraction": 0.1854634134859133
+    }
+  ],
+  "kinematic_integral_linear_exact": 0.0008105060636761292,
+  "linear_exact_to_midpoint_ratio": 1.214945038530135,
+  "linear_exact_regions": {
+    "root_first_two_panels": 6.276384712459073e-05,
+    "interior_excluding_root2_far8": 0.0006903323051598048,
+    "far_last_eight_panels": 5.7409911391733796e-05
+  },
+  "continuous_p1_weak_projection": {
+    "kinematic_integral": 0.0007082449477512288,
+    "fraction_of_linear_exact": 0.8738305356272288,
+    "unresolved_integral": 0.0001022611159249004,
+    "unresolved_fraction_of_linear_exact": 0.1261694643727712
+  },
+  "linear_exact_regions_panel_windows": {
+    "root_first_two_panels": 6.276384712459073e-05,
+    "root_first_window_panels": {
+      "panel_count": 16,
+      "kinematic_integral": 0.0002067672631592444
+    },
+    "interior_excluding_endpoint_windows": {
+      "endpoint_window_panel_count": 16,
+      "kinematic_integral": 0.0005412720841089819
+    },
+    "far_last_window_panels": {
+      "panel_count": 16,
+      "kinematic_integral": 6.24667164079029e-05
+    }
+  },
+  "weak_projected_regions_panel_windows": {
+    "root_first_window_panels": 0.0001839346008964093,
+    "interior_excluding_endpoint_windows": 0.0004619068526128271,
+    "far_last_window_panels": 6.240349424199235e-05
+  },
+  "weak_projection_error_regions": {
+    "root_first_window_panels": 2.4620206913297505e-05,
+    "interior_excluding_endpoint_windows": 7.757132264750358e-05,
+    "far_last_window_panels": 6.958636409937362e-08,
+    "arc_deciles": [
+      {
+        "normalized_arc_lower": 0.0,
+        "normalized_arc_upper": 0.1,
+        "projection_error_integral": 9.806103905269212e-05,
+        "projection_error_fraction": 0.9589279186500098
+      },
+      {
+        "normalized_arc_lower": 0.1,
+        "normalized_arc_upper": 0.2,
+        "projection_error_integral": 1.2781883318230687e-06,
+        "projection_error_fraction": 0.01249926054749645
+      },
+      {
+        "normalized_arc_lower": 0.2,
+        "normalized_arc_upper": 0.30000000000000004,
+        "projection_error_integral": 2.2536874772428752e-07,
+        "projection_error_fraction": 0.0022038557440522766
+      },
+      {
+        "normalized_arc_lower": 0.30000000000000004,
+        "normalized_arc_upper": 0.4,
+        "projection_error_integral": 5.995542843431911e-08,
+        "projection_error_fraction": 0.0005862974200120191
+      },
+      {
+        "normalized_arc_lower": 0.4,
+        "normalized_arc_upper": 0.5,
+        "projection_error_integral": 1.5670143314615893e-08,
+        "projection_error_fraction": 0.00015323657651187668
+      },
+      {
+        "normalized_arc_lower": 0.5,
+        "normalized_arc_upper": 0.6000000000000001,
+        "projection_error_integral": 1.2453896638681735e-07,
+        "projection_error_fraction": 0.0012178526046818967
+      },
+      {
+        "normalized_arc_lower": 0.6000000000000001,
+        "normalized_arc_upper": 0.7000000000000001,
+        "projection_error_integral": 7.152533071804001e-07,
+        "projection_error_fraction": 0.006994381986850949
+      },
+      {
+        "normalized_arc_lower": 0.7000000000000001,
+        "normalized_arc_upper": 0.8,
+        "projection_error_integral": 9.553758642374573e-08,
+        "projection_error_fraction": 0.000934251358003052
+      },
+      {
+        "normalized_arc_lower": 0.8,
+        "normalized_arc_upper": 0.9,
+        "projection_error_integral": 5.418018857085407e-07,
+        "projection_error_fraction": 0.005298219961793052
+      },
+      {
+        "normalized_arc_lower": 0.9,
+        "normalized_arc_upper": 1.0,
+        "projection_error_integral": 1.1437624752125709e-06,
+        "projection_error_fraction": 0.011184725150589391
+      }
+    ]
+  },
+  "continuous_geometry_normal": {
+    "kinematic_integral": 0.0007691614411778894,
+    "ratio_to_panel_normal_linear_exact": 0.9489891262371103,
+    "relative_change_from_panel_normal": 0.05101087376288976,
+    "root_first_window_panels": 0.000254203203886466,
+    "interior_excluding_endpoint_windows": 0.000452842349108182,
+    "far_last_window_panels": 6.211588818324146e-05
+  },
+  "tangential_similarity_identity": {
+    "definition": "S_tau + tau = 0 on the outer free surface",
+    "element_integral": 1.2923980960078899e-23,
+    "element_max_abs": 3.886668764607748e-12,
+    "recovered_integral": 1.2923698022711516e-23,
+    "recovered_max_abs": 3.8902214782865485e-12
+  },
+  "actual_node_pseudo_velocity_identity": {
+    "free_surface_update": "full_gradient",
+    "tangential_identity_applicable": true,
+    "tangential_gauge_note": "S_tau + tau applies to the full-gradient material update. The continuous-normal shape update deliberately sets the tangential gauge to zero and delegates node spacing to regridding.",
+    "tangential_integral": 1.3914653210098872e-06,
+    "normal_integral": 0.0006444745833211901,
+    "tangential_max_abs": 0.018321950284295063,
+    "normal_max_abs": 0.10362731216238541
+  }
+}

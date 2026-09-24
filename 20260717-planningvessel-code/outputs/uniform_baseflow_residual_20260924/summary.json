@@ -1,0 +1,16 @@
+{
+  "physical_acceptance": "NOT_PASSED",
+  "production_changed": false,
+  "scope": "Uniform-flow defect on saved mean V surface; not a solved steady flow or response error estimate",
+  "normal_convention": "x forward, z down; graph normal (-fx,-fy,1), uniform velocity (-U,0,0)",
+  "endpoint_scope": "saved active domain, no transom extrapolation",
+  "experiment_read": false,
+  "hashes": {
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn167_radiation3.npz": "3e99de5c66cd7937293d461e300c7680a65f2b6ce40b868bcd053636856e2654",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn226_radiation3.npz": "9cb0497f7017cd77150989dd17419ec0adf2a1ea48262de2f95e70c9e9fa2f71",
+    "outputs\\radiation_pressure_routes_fine_20260924\\boundary_fn282_radiation3.npz": "eae967d2938f974f94214997cae28553543f8f1f7ddcaea68991c2fb9b1e95e6",
+    "benchmarks\\longitudinal_refined_20260921\\run.json": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+    "outputs\\radiation_pressure_routes_fine_20260924\\contract.json": "5841367261aa6c674d017d601fe8eb4ebbf123a8c62b475980197cf55a0aeaf2",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_uniform_baseflow_residual.py": "bc1032eaa75483149ffbabc565df6342eaea88423eca451e43194e37c774d07a"
+  }
+}

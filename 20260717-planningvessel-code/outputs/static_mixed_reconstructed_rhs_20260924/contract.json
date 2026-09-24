@@ -1,0 +1,39 @@
+{
+  "source_sha256": "32469402d6c945088c7e955118d0f72e324478c506e1f9918af740bfc409c3dc",
+  "driver_sha256": "3bf5c83fab8a6257e9716a87de1f8a9199ccfe79fdd545ce1e8b28c151fdfdff",
+  "arc_self_normal_correction": false,
+  "arc_order": 32,
+  "known_data_order": 64,
+  "known_data_reconstruction": "sample_only_linear",
+  "known_data_helper_sha256": "5fd32a61424d8de49f4bdc76e0ce0abfd5e6a291e2637b0b4dd715d59f233505",
+  "control_panels": 96,
+  "joint_factor": 1,
+  "kernel_hashes": {
+    "formulation.py": "3246693b4e5978b3390c83173fb05bdecdcfaf90ec8680743544322737bbc6e7",
+    "panel_integrals.py": "c57315fcc70aed2d42ab005ec83fd09ac367631dd9a9f54f0e901708babf093e",
+    "arc_integrals.py": "1a94390f6dd77d650eb811931d6c7570584e19cc6bca3ddec4878296e690bbf2",
+    "boundary_reconstruction.py": "c62de582c4b7d09ec479d4a43b62d08c03f74bd6694801d9b46e583e9a1d9d9c"
+  },
+  "station_indices": [
+    12,
+    42,
+    80
+  ],
+  "free_counts": [
+    48,
+    72,
+    96
+  ],
+  "grading_exponents": [
+    1.0,
+    1.5
+  ],
+  "potentials": [
+    "linear_z",
+    "quadratic"
+  ],
+  "route": "analytic_straight_midpoint_curved",
+  "normalized_rms_limit": 0.02,
+  "normalization": "phi/R^degree, q/R^(degree-1)",
+  "scope": "Static Laplace mixed problem with exact outer Dirichlet data; not transient diffraction validation"
+}

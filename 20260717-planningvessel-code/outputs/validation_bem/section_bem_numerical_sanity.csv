@@ -1,0 +1,8 @@
+benchmark,metric,expected,actual,rel_error,tolerance,status,note
+section_bem_numerical_sanity,section_bem_added_mass_panel_convergence,<=5% last refinement change,0.009535375898880687,0.009535375898880687,0.05,PASS,Experimental section-BEM heave added mass; free-surface panels per side 10 -> 12.
+section_bem_numerical_sanity,section_bem_damping_panel_convergence,<=5% last refinement change,0.02097919127139553,0.02097919127139553,0.05,PASS,Experimental section-BEM heave damping; free-surface panels per side 10 -> 12.
+section_bem_numerical_sanity,section_bem_max_residual_norm,<=1e-8,3.0364511178647024e-16,3.0364511178647024e-16,1e-08,PASS,Linear-system residual over the convergence sweep.
+section_bem_numerical_sanity,section_bem_max_condition_number,<=1e6,6.967010071786415,6.967010071786415e-06,1000000.0,PASS,"Conditioning diagnostic over the convergence sweep; this is a numerical sanity gate, not a Ma 2005 acceptance gate."
+section_bem_numerical_sanity,section_bem_convergence_rows,>=4 panel counts,4.0,,,PASS,Detailed convergence data written to section_bem_convergence.csv.
+section_bem_numerical_sanity,section_bem_head_wave_vertical_excitation_nonzero,>0 N/m for unit wave amplitude,2416.237114046624,,,PASS,Experimental fixed-section incident/diffraction excitation; finite nonzero heave force is required before station integration.
+section_bem_numerical_sanity,section_bem_head_wave_lateral_symmetry,<=1e-8 N/m in symmetric head-wave section,6.938893903907228e-18,6.938893903907228e-18,1e-08,PASS,Symmetric V-section with zero transverse wavenumber should not create net lateral excitation.

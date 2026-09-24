@@ -1,0 +1,35 @@
+{
+  "benchmark": "Sun_2007_Table7.1_Fig7.4_eta3_zero_steady_base_flow",
+  "purpose": "numerical_diagnostic_not_a_Troesch_coefficient_acceptance",
+  "sectional_force_normalization": {
+    "legacy_column": "sectional_force_coefficient=F3_2D/(rho*U^2*B)",
+    "sun_2007_fig7_10_column": "sectional_force_over_half_rho_u2_b=F3_2D/(0.5*rho*U^2*B)"
+  },
+  "rows": [
+    {
+      "smoothing_enabled": true,
+      "substeps_per_plane_interval": 16,
+      "time_step_s": 0.0015551924611665996,
+      "body_panels_per_side": 20,
+      "free_surface_panels_per_side": 25,
+      "uniform_near_body_panel_count": 8,
+      "free_surface_smoothing_node_count": 9,
+      "knuckle_separation_model": "artificial_surface",
+      "pressure_interpolation": "constant_panel",
+      "jet_cut_distance_fraction": 0.25,
+      "jet_cut_threshold_over_beam": 0.03325555538987225,
+      "separation_event_count": 1,
+      "first_separation_from_leading_over_beam": 1.6467894839715151,
+      "raw_vertical_force_coefficient": 0.07520604036859142,
+      "stern_corrected_vertical_force_coefficient": 0.058061409947426916,
+      "max_potential_bvp_relative_residual": 1.870016475319383e-15,
+      "max_pressure_bvp_relative_residual": 3.935400885605405e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "maximum_jet_cut_count": 120,
+      "runtime_s": 40.49777,
+      "response_calibration_used": false,
+      "raw_vertical_force_coefficient_change_from_previous_percent": null,
+      "stern_corrected_vertical_force_coefficient_change_from_previous_percent": null
+    }
+  ]
+}

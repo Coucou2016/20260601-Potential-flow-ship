@@ -1,0 +1,48 @@
+{
+  "diagnostic": "Sun_2007_creation_time_zero_ground_plane_stability",
+  "purpose": "separate time-step instability from spatial-grid divergence",
+  "results": [
+    {
+      "status": "failed",
+      "failure": "Right moving-wedge contact left the supported interval: contact=6922.01403 m, limit=0.954 m, time=0.136406749 s.",
+      "requested_substeps_per_ground_plane_interval": 8,
+      "effective_substeps_per_ground_plane_interval": 8,
+      "time_step_s": 0.0027011237483419892,
+      "target_end_time_s": 0.2,
+      "last_completed_time_s": 0.13505618741709943,
+      "completed_step_count": 50,
+      "maximum_potential_condition_number": 1850511.8437168298,
+      "contact_min_m": 0.07677411951499852,
+      "contact_max_m": 0.8471972177930508,
+      "chine_half_beam_m": 0.159,
+      "free_surface_extent_m": 0.954,
+      "separation_event_count": 1,
+      "first_separation_event_time_s": 0.055546525635007574,
+      "jet_cut_count": 42,
+      "body_panels_per_side": 28,
+      "free_surface_panels_per_side": 35,
+      "response_calibration_used": false
+    },
+    {
+      "status": "passed_end_time",
+      "failure": null,
+      "requested_substeps_per_ground_plane_interval": 16,
+      "effective_substeps_per_ground_plane_interval": 16,
+      "time_step_s": 0.0013505618741709946,
+      "target_end_time_s": 0.2,
+      "last_completed_time_s": 0.2012337192514779,
+      "completed_step_count": 149,
+      "maximum_potential_condition_number": 2463.934610548378,
+      "contact_min_m": 0.07677411951499852,
+      "contact_max_m": 0.16153695154487838,
+      "chine_half_beam_m": 0.159,
+      "free_surface_extent_m": 0.954,
+      "separation_event_count": 1,
+      "first_separation_event_time_s": 0.04966418571442933,
+      "jet_cut_count": 72,
+      "body_panels_per_side": 28,
+      "free_surface_panels_per_side": 35,
+      "response_calibration_used": false
+    }
+  ]
+}

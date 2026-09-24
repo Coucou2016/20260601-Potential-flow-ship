@@ -1,0 +1,44 @@
+{
+  "schema": "sun2007_paired_forced_motion_column_screen_v1",
+  "status": "FAIL",
+  "single_frequency_screen_only": true,
+  "used_for_five_frequency_acceptance": false,
+  "sigma": 1.4,
+  "model_variant": "sun_2dt_without_stern_3d_correction",
+  "transom_correction_mode": "none",
+  "coefficient_pass_count": 2,
+  "coefficient_count": 8,
+  "maximum_harmonic_residual_nrmse": 0.03681315129365523,
+  "harmonic_residual_limit": 0.05,
+  "maximum_bvp_relative_residual": 3.592560912965116e-15,
+  "bvp_residual_limit": 1e-08,
+  "response_calibration_used": false,
+  "restoring_matrix_provenance": {
+    "source": "Sun_2007_Fig7.4_Troesch_experimental_square_marker_zero_offset_slopes",
+    "source_path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_fig7_4_troesch_restoring\\restoring_matrices.csv",
+    "source_sha256": "aaf16245eeacba4acfa7c0db2370c44209c3546374e46edf253a33ed8da62e8b",
+    "source_manifest_path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_fig7_4_troesch_restoring\\manifest.json",
+    "source_manifest_sha256": "34d16a5e742a76788acea4f2ad47aa4230560a5f54be8b14f487ef6134ff6997",
+    "heave_diagnostics_sha256": "8957e17c32a193fc68590ad7821a79a5367c082927881c79841c00e681d7e401",
+    "pitch_diagnostics_sha256": "8957e17c32a193fc68590ad7821a79a5367c082927881c79841c00e681d7e401"
+  },
+  "source_runs": {
+    "heave": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_source_front08_spacing03_heave_troeschC_body12_sub16_v2",
+      "input_snapshot_sha256": "ad5dcc313e2e5550bbcbfc99da53b8b5c0ae9877643f8bf91e4b1e917c73c0fe",
+      "identified_coefficients_sha256": "fe54fb126bdb163123e0964b7ee26db6fbeaa203f430390022344ae33b2ec1d1",
+      "run_diagnostics_sha256": "5cc02123402f81953f2bb971130af8c5ffabf8eaf63912a28961aafdb6037b37"
+    },
+    "pitch": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_source_front08_spacing03_pitch_troeschC_body12_sub16_v2",
+      "input_snapshot_sha256": "0cbbe818e07e9ed973e6eee09a3b2a174645cb9930ee6ce92e0ae92e7dfb9de4",
+      "identified_coefficients_sha256": "1c1fdd251af54b6a6e5febb8479f8d0c452becbfc5357c7a245f247d151021ce",
+      "run_diagnostics_sha256": "15a43a8e6a07f2eeaa2a3dabaa48b935aa8c3fd73fa04837104191157f21aef3"
+    }
+  },
+  "benchmark": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+    "sha256": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02",
+    "role": "same_model_NUM_reproduction_not_independent_EFD"
+  }
+}

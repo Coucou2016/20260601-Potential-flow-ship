@@ -1,0 +1,40 @@
+{
+  "schema": "sun2007_longitudinal_load_distribution_audit_v1",
+  "status": "DIAGNOSTIC_ONLY_NOT_ACCEPTANCE",
+  "sigma": 1.4,
+  "coordinate_contract": "heave_up_pitch_bow_up_force_and_moment_about_cg",
+  "lcg_from_transom_over_beam": 1.47,
+  "response_calibration_used": false,
+  "interpretation_limits": [
+    "Required-increment centers are algebraic diagnostics, not fitted load patches.",
+    "Sun NUM is a same-model reproduction target, not independent experimental validation.",
+    "No correction length or coefficient is inferred from the target response."
+  ],
+  "sources": {
+    "baseline_run": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_complete_AB_troesch_experimental_C_stable12_body12_sub16_v3",
+      "input_snapshot_sha256": "69420aae536f841a6cb0974d8555425e33e07ea19a1bfb002a5408410deca59b",
+      "identified_coefficients_sha256": "0fab80c91f747bc3dc0d782fb30b346e32dd0c68bed3ab921ae3e6e0fe05bfe3"
+    },
+    "corrected_heave_run": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_source_keel_reduction_0p5B_heave_body12_sub16_v1",
+      "input_snapshot_sha256": "eca22f73ae7dab51e0dc3ea7fc8f1e1e5f9559001a9c1930dc8f6d13aaf6aa9e",
+      "identified_coefficients_sha256": "918395aee31dd1da0a7f07279fd6da2ff682b4a2f362af94201dd1e296c57fad"
+    },
+    "corrected_pitch_run": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_source_keel_reduction_0p5B_pitch_body12_sub16_v1",
+      "input_snapshot_sha256": "fc193e7a73c090ba3d1750c0ef7549255985fdb9a820011a29cbbbdf0feaffe9",
+      "identified_coefficients_sha256": "b0c081e56bf2382cb9f1b8b8194f6587962280cc6f14c0a268a2f825f22e5e29"
+    },
+    "benchmark": {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+      "sha256": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02",
+      "role": "same_model_NUM_reproduction_not_independent_EFD"
+    }
+  },
+  "outputs": {
+    "coefficient_component_breakdown.csv": "e76983aa149cf5e2f6cc9125633f957a0785e9223d17bbbc9ee64f36c5a4d47e",
+    "damping_load_center_audit.csv": "9e751802ade6e1d0f3a9425af8a0c0391e1e0211de4fcb7886f5310e0a323928",
+    "transom_correction_delta_audit.csv": "0892add7a66cec9acadde26ea681a6e6436063a5e3ef2527a03fc556b8be77de"
+  }
+}

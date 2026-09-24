@@ -1,0 +1,7 @@
+{
+  "source_sha256": "0cf3708c6555b0c60ab102850877acd8bf7500ea0608560171b2542bb1661b5c",
+  "cutoff_m": 0.212,
+  "analytic_absolute_tolerance": 1e-12,
+  "scope": "quadrature only, same fixed physical cutoff",
+  "interpolation": "linear on original stations; no new BEM solve; no experimental fitting"
+}

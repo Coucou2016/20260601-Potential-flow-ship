@@ -1,0 +1,53 @@
+component,row,column,value,units
+raw_bem,heave_force,heave,0.0,N/m
+raw_bem,heave_force,pitch,0.0,N/rad
+raw_bem,pitch_moment,heave,0.0,N
+raw_bem,pitch_moment,pitch,0.0,N m/rad
+resolved_station_bem,heave_force,heave,0.0,N/m
+resolved_station_bem,heave_force,pitch,0.0,N/rad
+resolved_station_bem,pitch_moment,heave,0.0,N
+resolved_station_bem,pitch_moment,pitch,0.0,N m/rad
+transom_extrapolation,heave_force,heave,0.0,N/m
+transom_extrapolation,heave_force,pitch,0.0,N/rad
+transom_extrapolation,pitch_moment,heave,0.0,N
+transom_extrapolation,pitch_moment,pitch,0.0,N m/rad
+pre_chine_bem,heave_force,heave,0.0,N/m
+pre_chine_bem,heave_force,pitch,0.0,N/rad
+pre_chine_bem,pitch_moment,heave,0.0,N
+pre_chine_bem,pitch_moment,pitch,0.0,N m/rad
+post_chine_bem,heave_force,heave,0.0,N/m
+post_chine_bem,heave_force,pitch,0.0,N/rad
+post_chine_bem,pitch_moment,heave,0.0,N
+post_chine_bem,pitch_moment,pitch,0.0,N m/rad
+longitudinal_bin_aft_post_chine,heave_force,heave,0.0,N/m
+longitudinal_bin_aft_post_chine,heave_force,pitch,0.0,N/rad
+longitudinal_bin_aft_post_chine,pitch_moment,heave,0.0,N
+longitudinal_bin_aft_post_chine,pitch_moment,pitch,0.0,N m/rad
+longitudinal_bin_middle_post_chine,heave_force,heave,0.0,N/m
+longitudinal_bin_middle_post_chine,heave_force,pitch,0.0,N/rad
+longitudinal_bin_middle_post_chine,pitch_moment,heave,0.0,N
+longitudinal_bin_middle_post_chine,pitch_moment,pitch,0.0,N m/rad
+longitudinal_bin_forward_post_chine,heave_force,heave,0.0,N/m
+longitudinal_bin_forward_post_chine,heave_force,pitch,0.0,N/rad
+longitudinal_bin_forward_post_chine,pitch_moment,heave,0.0,N
+longitudinal_bin_forward_post_chine,pitch_moment,pitch,0.0,N m/rad
+longitudinal_bin_pre_chine,heave_force,heave,0.0,N/m
+longitudinal_bin_pre_chine,heave_force,pitch,0.0,N/rad
+longitudinal_bin_pre_chine,pitch_moment,heave,0.0,N
+longitudinal_bin_pre_chine,pitch_moment,pitch,0.0,N m/rad
+bem,heave_force,heave,0.0,N/m
+bem,heave_force,pitch,0.0,N/rad
+bem,pitch_moment,heave,0.0,N
+bem,pitch_moment,pitch,0.0,N m/rad
+front,heave_force,heave,0.0,N/m
+front,heave_force,pitch,0.0,N/rad
+front,pitch_moment,heave,0.0,N
+front,pitch_moment,pitch,0.0,N m/rad
+transom,heave_force,heave,0.0,N/m
+transom,heave_force,pitch,0.0,N/rad
+transom,pitch_moment,heave,0.0,N
+transom,pitch_moment,pitch,0.0,N m/rad
+total,heave_force,heave,3264.2405760880692,N/m
+total,heave_force,pitch,-1104.1036338948552,N/rad
+total,pitch_moment,heave,804.2237875511472,N
+total,pitch_moment,pitch,305.02450004564474,N m/rad

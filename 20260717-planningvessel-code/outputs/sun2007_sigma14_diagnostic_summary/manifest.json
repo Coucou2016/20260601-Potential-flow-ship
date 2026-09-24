@@ -1,0 +1,30 @@
+{
+  "source": "Sun_2007_Figs7.13_7.14_sigma_1p4_diagnostic_comparison",
+  "reference_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+  "candidate_sources": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body28_ground_plane_stability.json": "05824f3e782c01f9e5f0ca123dbb4ae74dffaf60ff288607bed741191cf4e48e",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_forced_motion_sigma14_full_matrix_artificial_handoff_0p8B_short\\identified_coefficients.csv": "e482e18a60321e435a43c1f04a35517a0cee133d42b7ec00378c0f06d0fda3f6",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_constant_panel_pressure_coarse_heave\\identified_coefficients.csv": "6c629f85616c18f18f9453e3d64817540b011346003ccb45062aab417689f72f",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_linear_node_pressure_coarse_heave\\identified_coefficients.csv": "4c771564c95d7e6e4026d54eef3867c8c2620e33f021686f22a47d3b621f9e77",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_constant_panel_transom_correction_coarse_heave\\identified_coefficients.csv": "ab1b9e873d0597aab162c7884a684bd57ca1313c2de40e3cb150fa8e48c2ec63",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_constant_panel_sections15_coarse_heave\\identified_coefficients.csv": "05bf1be701ee8e9bc8729de024c3c18a73aa3681f4592d033be3033eb6425b86",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_0p03326B_coarse_heave\\identified_coefficients.csv": "40506e5cf2fc35e64437a6f261940df16975e33bb2a92e989e9b672f197c0785",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body16_sub8_heave\\identified_coefficients.csv": "cf092610568766d646674ed714efa9036bab43aa34ad7074ab9d0d66ddb4fb6b",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body20_sub8_heave\\identified_coefficients.csv": "b5b75c2cbbddf7328bb6e06f16a22a8303029378b1332d2b5f3f12eaa454bd00",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body24_sub8_heave\\identified_coefficients.csv": "c3fe2ce0e75b35a040b81352ef414fa3273c2a2a1419cf9b39f42eb929d28ad2",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body24_sub16_heave\\identified_coefficients.csv": "9c906614947dbf680e092102fbcd8d6e0a98f070d735e164822101828989cf59",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body24_sub32_heave\\identified_coefficients.csv": "0460736d48f98a8d536b78a7517a79d64a0d615da168d75193d93ca90ec5ab0e",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body28_sub16_heave\\identified_coefficients.csv": "595c3c2357ecda096f37f017342ae2ff239ae898e2037596454643797505d2e2",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body24_sub8_heave_fig7p4_restoring\\identified_coefficients_reprocessed.csv": "97143626bef2201b36d74b3558b0a21571429a0ce416f076427b561f124ed6a3",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body24_sub16_heave_fig7p4_restoring\\identified_coefficients_reprocessed.csv": "b0489e715b212cd9e137b8a0d297ba47d8a8c4864a8dbde963dedf44c0568219",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body28_sub16_heave_fig7p4_restoring\\identified_coefficients_reprocessed.csv": "1e1b9721f3cb7849db1841517d20bc62738f80b39333fab2cd187ae6a1ceef8f",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body24_sub32_heave_fig7p4_restoring\\identified_coefficients_reprocessed.csv": "a53bd8d6381c00e003005d8199889174caca09d21e8f2e2845677580e3d2d49b"
+  },
+  "generated_csv_sha256": "61b596215b8d8e3c2b1038eda6529985bed839c1ae2eb1f70a65a9ca446735d1",
+  "generated_physical_csv_sha256": "61b5baba2f0213bb6252708571eccfe30ffc6f547cd6c89ef1cba30a8d9154f9",
+  "generated_convergence_csv_sha256": "98cb56f54ce119ded9a9e114990ea0f0952a545064839fdbd7df3090d671bd91",
+  "selection_policy": "Candidate results are compared only with their matching corrected or uncorrected source variant. Missing candidates are not fabricated.",
+  "stability_diagnostic": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_jet_body28_ground_plane_stability.json",
+  "response_calibration_used": false
+}

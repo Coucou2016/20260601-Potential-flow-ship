@@ -1,0 +1,47 @@
+{
+  "status": "diagnostic_only_solver_behavior_unchanged",
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_gradient_plus28_v197",
+  "completed_iterations": 32,
+  "cumulative_pseudo_time": 0.0309522017214596,
+  "accepted_time_step": 0.0009654310397058666,
+  "maximum_raw_displacement_ratio": 0.2484152481412971,
+  "kinematic_integral_before": 0.005126595004496009,
+  "kinematic_integral_after": 0.0050692870176572025,
+  "kinematic_integral_ratio_after_before": 0.9888214327855921,
+  "final_geometry_normal_integral_to_old_kinematic_ratio": 0.04769866123483618,
+  "diagnostics": {
+    "provisional": {
+      "effective_panel_shift": 0.0,
+      "full_panel_shifts": 0,
+      "fractional_panel_shift": 0.0,
+      "root_displacement_ratio": 0.0,
+      "bisection_iterations": 0,
+      "trigger_code": 0
+    },
+    "final": {
+      "effective_panel_shift": 0.0,
+      "full_panel_shifts": 0,
+      "fractional_panel_shift": 0.0,
+      "root_displacement_ratio": 0.0,
+      "bisection_iterations": 0,
+      "trigger_code": 0
+    },
+    "provisional_geometry_maintenance": {
+      "normal_velocity_integral": 0.00022565245892351742,
+      "tangential_velocity_integral": 2.461023105823742e-07,
+      "net_normal_velocity_integral": 0.0038903888526717148,
+      "maximum_normal_displacement_ratio": 0.0002842723176151013,
+      "normal_velocity_correlation": 0.32251345259835557,
+      "normal_cancellation_fraction": -0.08668931825759457
+    },
+    "final_geometry_maintenance": {
+      "normal_velocity_integral": 0.0002445317184076586,
+      "tangential_velocity_integral": 2.887835269663463e-07,
+      "net_normal_velocity_integral": 0.004606023616999799,
+      "maximum_normal_displacement_ratio": 0.000361813680093595,
+      "normal_velocity_correlation": 0.3680607404715818,
+      "normal_cancellation_fraction": -0.09507596996298101
+    },
+    "rejected_attempt_count": 0
+  }
+}

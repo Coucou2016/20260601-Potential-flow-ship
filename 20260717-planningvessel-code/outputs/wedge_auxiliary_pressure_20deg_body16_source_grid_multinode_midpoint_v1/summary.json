@@ -1,0 +1,177 @@
+{
+  "deadrise_deg": 20.0,
+  "entry_speed_mps": 1.0,
+  "target_draft_m": 0.015000000000000003,
+  "time_step_s": 0.000125,
+  "body_panels_per_side": 16,
+  "free_surface_panels_per_side": 40,
+  "uniform_near_body_panels": 20,
+  "smoothing_node_count": 20,
+  "free_surface_smoothing_enabled": true,
+  "free_surface_smoothing_interval_s": null,
+  "contact_potential_projection": "none",
+  "contact_y_over_Vt": 5.99941925138947,
+  "jet_cut_count": 10,
+  "localized_jet_cut_event_count": 3,
+  "localized_jet_cut_event_times_s": [
+    0.004129241943359378,
+    0.005519897460937504,
+    0.006423156738281254
+  ],
+  "minimum_pre_step_jet_margin_m": -0.0002423570392227443,
+  "nonpositive_pre_step_jet_margin_count": 6,
+  "minimum_jet_normal_distance_ratio": 0.7741426563496966,
+  "jet_cut_distance_fraction": 0.3333333333333333,
+  "comparison_point_count": 14,
+  "material_derivative_scale_m2_s2": 117.09519545471369,
+  "normalized_rmse": 0.460151730545674,
+  "normalized_max_abs_error": 0.5990286890950328,
+  "auxiliary_vs_similarity_nrmse": 0.9289451201007914,
+  "finite_difference_vs_similarity_nrmse": 0.23241435801904523,
+  "auxiliary_cp_max_on_interior_nodes": 179.27322846917178,
+  "finite_difference_cp_max_on_interior_nodes": 38.98646560404421,
+  "similarity_cp_max_on_interior_nodes": 13.253694040466787,
+  "free_supplied_psi_vs_similarity_nrmse": 0.42911727797275717,
+  "pressure_reference_overlap_point_count": 261,
+  "auxiliary_pressure_reference_nrmse": 6.716242435307616,
+  "similarity_pressure_reference_nrmse": 0.2607149761028674,
+  "auxiliary_pressure_peak": {
+    "z_over_Vt": 0.6377075227920422,
+    "cp": 179.27322846917178
+  },
+  "similarity_pressure_peak": {
+    "z_over_Vt": 0.5012318958927054,
+    "cp": 13.253694040466787
+  },
+  "reference_pressure_peak": {
+    "z_over_Vt": 0.5102974828375286,
+    "cp": 17.757009345794394
+  },
+  "pressure_window": {
+    "selection": "complete_jet_cut_cycle",
+    "state_count": 11,
+    "states": [
+      {
+        "time_s": 0.004250000000000003,
+        "draft_m": 0.014250000000000002,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.4170011633308475,
+        "pressure_reference_nrmse": 9.116411637933197,
+        "pressure_peak_z_over_Vt": 0.6018306636155606,
+        "pressure_peak_cp": 244.33552345224442,
+        "vertical_force_coefficient": 1596.1594114941338
+      },
+      {
+        "time_s": 0.004375000000000003,
+        "draft_m": 0.014375000000000002,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.4705185896544934,
+        "pressure_reference_nrmse": 8.96028233312665,
+        "pressure_peak_z_over_Vt": 0.6201372997711669,
+        "pressure_peak_cp": 240.7150748459348,
+        "vertical_force_coefficient": 1570.8233312733819
+      },
+      {
+        "time_s": 0.004500000000000003,
+        "draft_m": 0.014500000000000002,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.5462807584104565,
+        "pressure_reference_nrmse": 8.50904737622165,
+        "pressure_peak_z_over_Vt": 0.6384439359267735,
+        "pressure_peak_cp": 229.73375492674623,
+        "vertical_force_coefficient": 1495.9782446055333
+      },
+      {
+        "time_s": 0.004625000000000003,
+        "draft_m": 0.014625000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.646156336573635,
+        "pressure_reference_nrmse": 7.726321166249625,
+        "pressure_peak_z_over_Vt": 0.665903890160183,
+        "pressure_peak_cp": 204.75306360964345,
+        "vertical_force_coefficient": 1370.1237206046014
+      },
+      {
+        "time_s": 0.004750000000000003,
+        "draft_m": 0.014750000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.762328367478708,
+        "pressure_reference_nrmse": 7.358181561324531,
+        "pressure_peak_z_over_Vt": 0.5743707093821511,
+        "pressure_peak_cp": 190.43757043356422,
+        "vertical_force_coefficient": 1315.2127062947986
+      },
+      {
+        "time_s": 0.0048750000000000035,
+        "draft_m": 0.014875000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.882354933643535,
+        "pressure_reference_nrmse": 7.171920617641831,
+        "pressure_peak_z_over_Vt": 0.6064073226544622,
+        "pressure_peak_cp": 187.34584964619833,
+        "vertical_force_coefficient": 1284.0077543659816
+      },
+      {
+        "time_s": 0.005000000000000004,
+        "draft_m": 0.015000000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 5.99941925138947,
+        "pressure_reference_nrmse": 6.716242435307616,
+        "pressure_peak_z_over_Vt": 0.6384439359267735,
+        "pressure_peak_cp": 179.15580165368772,
+        "vertical_force_coefficient": 1204.7144159846846
+      },
+      {
+        "time_s": 0.005125000000000004,
+        "draft_m": 0.015125000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 6.114035676636417,
+        "pressure_reference_nrmse": 6.22700039171926,
+        "pressure_peak_z_over_Vt": 0.665903890160183,
+        "pressure_peak_cp": 168.24641703188962,
+        "vertical_force_coefficient": 1122.5581382684409
+      },
+      {
+        "time_s": 0.005250000000000004,
+        "draft_m": 0.015250000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 6.228960195644896,
+        "pressure_reference_nrmse": 5.903399157796112,
+        "pressure_peak_z_over_Vt": 0.702517162471396,
+        "pressure_peak_cp": 157.33575632527342,
+        "vertical_force_coefficient": 1070.8840164419555
+      },
+      {
+        "time_s": 0.005375000000000004,
+        "draft_m": 0.015375000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 6.345664198845718,
+        "pressure_reference_nrmse": 5.7995147649022325,
+        "pressure_peak_z_over_Vt": 0.5881006864988558,
+        "pressure_peak_cp": 152.2008859855259,
+        "vertical_force_coefficient": 1056.2238324146351
+      },
+      {
+        "time_s": 0.005500000000000004,
+        "draft_m": 0.015500000000000003,
+        "jet_cut_count": 10,
+        "contact_y_over_Vt": 6.464162515301487,
+        "pressure_reference_nrmse": 5.885248048006101,
+        "pressure_peak_z_over_Vt": 0.6201372997711669,
+        "pressure_peak_cp": 154.1426614104667,
+        "vertical_force_coefficient": 1071.7081616196056
+      }
+    ],
+    "common_reference_point_count": 261,
+    "mean_pressure_reference_nrmse": 7.214575431499026,
+    "rms_temporal_std_normalized": 1.1881164125065369,
+    "max_temporal_std_normalized": 1.8333194998712385,
+    "reference_vertical_force_coefficient": 85.41335520468824,
+    "mean_vertical_force_coefficient": 1287.126703033432,
+    "vertical_force_relative_error": 14.06938464071463,
+    "vertical_force_relative_std": 2.25382620550572
+  },
+  "potential_bvp_relative_residual": 3.681744302990428e-15,
+  "auxiliary_bvp_relative_residual": 1.7529552947453895e-15,
+  "interpretation": "This is an independent diagnostic, not a Gate-2 pass criterion. Large disagreement means the pressure auxiliary BVP and the time-marched potential are not mutually consistent."
+}

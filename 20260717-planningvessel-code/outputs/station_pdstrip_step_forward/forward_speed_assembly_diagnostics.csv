@@ -1,0 +1,13 @@
+component,omega_rad_s,speed_mps,row_dof,col_dof,row_index,col_index,added_mass_coefficient,damping_coefficient,added_mass_value,damping_value,dynamic_operator_real,dynamic_operator_imag,assembly_method,section_solver,status
+main_radiation,4.0,2.0,heave,heave,2,2,A33,B33,4301.956726031441,13180.397653253312,-68831.30761650305,52721.59061301325,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+main_radiation,4.0,2.0,heave,pitch,2,4,A35,B35,1333.1607429858318,16247.082191265123,-21330.57188777331,64988.32876506049,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+main_radiation,4.0,2.0,pitch,heave,4,2,A53,B53,2980.710449642496,7643.168739202243,-47691.367194279934,30572.674956808973,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+main_radiation,4.0,2.0,pitch,pitch,4,4,A55,B55,26641.665494758414,94719.08170694606,-426266.6479161346,378876.32682778424,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+forward_gradient,4.0,2.0,heave,heave,2,2,A33,B33,-175.08304505663207,915.9378738459255,2801.328720906113,3663.751495383702,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+forward_gradient,4.0,2.0,heave,pitch,2,4,A35,B35,-934.9313833661186,3941.9187867287433,14958.902133857897,15767.675146914973,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+forward_gradient,4.0,2.0,pitch,heave,4,2,A53,B53,827.1105575212862,-4311.828575220877,-13233.768920340579,-17247.314300883507,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+forward_gradient,4.0,2.0,pitch,pitch,4,4,A55,B55,-2350.203188545491,15805.509948639226,37603.25101672785,63222.039794556906,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+total,4.0,2.0,heave,heave,2,2,A33,B33,4126.873680974809,14096.335527099238,-66029.97889559694,56385.34210839695,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+total,4.0,2.0,heave,pitch,2,4,A35,B35,398.22935961971325,20189.000977993866,-6371.669753915412,80756.00391197547,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+total,4.0,2.0,pitch,heave,4,2,A53,B53,3807.8210071637823,3331.3401639813665,-60925.136114620516,13325.360655925466,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated
+total,4.0,2.0,pitch,pitch,4,4,A55,B55,24291.462306212925,110524.59165558529,-388663.3968994068,442098.36662234116,pdstrip_step,pdstrip_style,experimental_pdstrip_step_forward_speed_assembly_not_validated

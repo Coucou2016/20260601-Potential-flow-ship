@@ -1,0 +1,48 @@
+{
+  "status": "self_similar_frozen_multigrid_direction_reuse_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "trust_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_strictroot_dct64_relinearized_coarsefine_v761",
+  "initial_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_strictroot_dct64_relinearized_coarsefine_v761",
+  "requested_steps": 4,
+  "accepted_steps": 4,
+  "saved_step_factor": 0.75,
+  "direction_reconstruction_relative_error": 6.154970410019943e-16,
+  "direction_reconstruction_dipole_relative_error": 2.11912411095395e-11,
+  "objective_panel_counts": [
+    320
+  ],
+  "objective_validation_panel_counts": [
+    320,
+    640,
+    1280
+  ],
+  "root_validation_panel_counts": [
+    320,
+    640,
+    1280
+  ],
+  "final_grid_states": {
+    "320": {
+      "exact_objective": 0.005783325823003064,
+      "signed_root_defect": -3.644506793072424e-13,
+      "root_relative_mismatch": 3.644506793072424e-13,
+      "condition_number": 253402.12567003188
+    },
+    "640": {
+      "exact_objective": 0.0056902934740379,
+      "signed_root_defect": 5.555293211382767e-09,
+      "root_relative_mismatch": 5.555293211382767e-09,
+      "condition_number": 571769.6592576446
+    },
+    "1280": {
+      "exact_objective": 0.005834323090118922,
+      "signed_root_defect": 9.14787341328111e-09,
+      "root_relative_mismatch": 9.14787341328111e-09,
+      "condition_number": 1380651.2311406191
+    }
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_strictroot_dct64_relinearized_direction_reuse4_v762\\coupled_checkpoint.json",
+  "conclusion": "accepted_frozen_multigrid_direction_steps"
+}

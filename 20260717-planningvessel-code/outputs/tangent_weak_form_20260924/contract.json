@@ -1,0 +1,20 @@
+{
+  "endpoint_orders": [
+    1,
+    2
+  ],
+  "source_hashes": {
+    "benchmarks\\longitudinal_refined_20260921\\run.json": "9046a6f20be667f627dff576581da9869a63bdfdd76e1618f6b14be0aa26acd8",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_tangent_weak_form.py": "b1f82407621ebf53017aa58d0c51138db8355d4fabd7e16a9827a011cfb6627d",
+    "outputs\\eulerian_split_mid_20260924\\boundary_fn167.npz": "878c9ac88cc79023675331c6cf0af99aa925c26dfd87898396e40b03c381bb2f",
+    "outputs\\eulerian_split_mid_20260924\\boundary_fn226.npz": "ddc180735fc152642b2400efb4204737de46c9e3f613daf735ca1af038235f15",
+    "outputs\\eulerian_split_mid_20260924\\boundary_fn282.npz": "2d2980e7f5eb9ad6ce07413eff9560716d37219878ec57bbe97ffed540025157",
+    "outputs\\eulerian_split_mid_20260924\\force_changes.csv": "7f538600b58ba898111639e49a774e9c4a4738f9644be18a97ee9ba2c47e7d7a",
+    "outputs\\eulerian_split_fine_20260924\\boundary_fn167.npz": "1197e0a67bbfb6e0037790bbe3a900b8d781b6353420ce86512db099c1b3422e",
+    "outputs\\eulerian_split_fine_20260924\\boundary_fn226.npz": "69cb297cba93463f54b62f23b14819450e568596104746f22a47f3b82ff5b87c",
+    "outputs\\eulerian_split_fine_20260924\\boundary_fn282.npz": "ade9c39bd897a72cbb7b277a7c541ecc269ed238612207949be6e24f9c99e211",
+    "outputs\\eulerian_split_fine_20260924\\force_changes.csv": "9d8b3cd5c277cad8489db366a0063ebe8aacbbbed17d24f2876333e8d8884cfe"
+  },
+  "scope": "same solved phi; full wet contour including extrapolated end terms; diagnostic only",
+  "comparison": "existing 5%/near-zero 0.001 dimensionless limits"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "self_similar_deadrise_homotopy_rejected",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_transformation": false,
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_n320_from_v280_regrid0_root8_v281",
+  "source_deadrise_deg": 20.0,
+  "target_deadrise_deg": 19.5,
+  "trials": [
+    {
+      "root_xi_scale": 1.0,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "No shallow-water-compatible outer/jet matching surface remains. Last root error: The jet root requires thickness>0, S_lambda>0, S_tau<0 and delta_lambda>0; invalid=S_lambda<=0; thickness=0.13347429627679094, S_lambda=-2.6306538057893754, S_tau=-4.2880353684210917, delta_lambda=0.0020395069369710363."
+    },
+    {
+      "root_xi_scale": 0.995,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "No shallow-water-compatible outer/jet matching surface remains. Last root error: The jet root requires thickness>0, S_lambda>0, S_tau<0 and delta_lambda>0; invalid=S_lambda<=0; thickness=0.12629511342338257, S_lambda=-2.5177765177577678, S_tau=-4.2664056907899379, delta_lambda=0.0020423145532887377."
+    },
+    {
+      "root_xi_scale": 0.99,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "No shallow-water-compatible outer/jet matching surface remains. Last root error: The jet root requires thickness>0, S_lambda>0, S_tau<0 and delta_lambda>0; invalid=S_lambda<=0; thickness=0.11911591806738379, S_lambda=-2.3947476899384808, S_tau=-4.2447758396543165, delta_lambda=0.0020451221921066491."
+    },
+    {
+      "root_xi_scale": 0.98,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "No shallow-water-compatible outer/jet matching surface remains. Last root error: The jet root requires thickness>0, S_lambda>0, S_tau<0 and delta_lambda>0; invalid=S_lambda<=0; thickness=0.10475748998859327, S_lambda=-2.1131562982778469, S_tau=-4.2015156126731217, delta_lambda=0.0020507375378001863."
+    }
+  ]
+}

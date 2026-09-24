@@ -1,0 +1,91 @@
+{
+  "status": "self_similar_coupled_resume_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_r24_1step_v219",
+    "kind": "formal_v1",
+    "completed_iterations": 1,
+    "cumulative_pseudo_time": 0.0002015819871105,
+    "source_hashes": {
+      "coupled_checkpoint.json": "91490ddb723769c1b76fcb0971a0f70bfef0732690c12382199234e1b74fc792",
+      "coupled_checkpoint_outer_nodes.csv": "f7026267d3dc9d877f55e8454fa6b104d67b412971debb7f11b10f288ef3fac3",
+      "coupled_pseudo_time_history.csv": "1e2969888b1675b35d1fbf05bf4a926b28a01822be1de35c05ee316993e67b0e"
+    },
+    "reconstruction_relative_errors": {
+      "kinematic_rms": 1.3121066733123854e-12,
+      "kinematic_integral": 4.3504566268892653e-13,
+      "kinematic_length_weighted_rms": 8.40777100719059e-13,
+      "solved_dipole_coefficient": 6.5880207514802305e-12,
+      "bem_condition_number": 3.4070069487187294e-13,
+      "body_pressure_min": 1.9667822925839573e-11,
+      "body_pressure_max": 1.802993506479819e-14,
+      "body_vertical_force_coefficient": 1.4082620369730972e-13,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 1.6670912299317645e-12,
+      "root_thickness": 2.7755575615628914e-17,
+      "root_xi": 0.0,
+      "root_eta": 5.551115123125783e-17,
+      "kinematic_integral_linear_exact": 3.9998039602640034e-13,
+      "history_kinematic_rms": 1.3120286107559664e-12,
+      "history_solved_dipole": 6.5880207515236324e-12,
+      "history_interface_s_lambda": 0.0
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.125
+    }
+  },
+  "continuation": {
+    "requested_iterations": 8,
+    "accepted_iterations": 8,
+    "termination_reason": "MAXIMUM_ITERATIONS",
+    "failure_message": null,
+    "completed_iterations": 9,
+    "cumulative_pseudo_time": 0.001809955768337261
+  },
+  "final_state": {
+    "kinematic_rms": 0.012790193658049615,
+    "kinematic_integral": 0.0033902381912288455,
+    "kinematic_integral_linear_exact": 0.003916298736377634,
+    "kinematic_integral_endpoint_gradient": 0.0005260605451487882,
+    "kinematic_convergence_integral": 0.003916298736377634,
+    "kinematic_length_weighted_rms": 0.013103294008485459,
+    "spray_root_corner_angle_deg": 34.293927230075774,
+    "spray_root_normal_derivative_sides": [
+      2.452648537154668,
+      3.8784078873289833
+    ],
+    "solved_dipole_coefficient": 8.165235448809797,
+    "bem_condition_number": 140359.1385814028,
+    "body_pressure_min": -0.0020998752444114643,
+    "body_pressure_max": 17.734224714395587,
+    "body_vertical_force_coefficient": 42.533926370603474,
+    "interface_s_lambda": 2.0535747522140806,
+    "measured_s_lambda": 2.053586294720268,
+    "relative_s_lambda_mismatch": 5.620689568200594e-06,
+    "jet_reached_tip": true,
+    "jet_point_count": 1235,
+    "jet_tip_thickness": 1.685231006320574e-05,
+    "jet_tip_s_lambda": 0.0010121241407747745
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.11098315129818036,
+    "pressure_point_count": 261,
+    "pressure_nrmse": 0.020194411265538687,
+    "pressure_peak_relative_error": 0.013777329645728458,
+    "pressure_peak_location_relative_error": 0.026905829596412578
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 17.734224714395587,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.0020132406080141945,
+    "computed_peak_eta": 0.5054300778204585,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.006427997207669715
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_r24_plus8_v220\\coupled_checkpoint.json"
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "sigma": 1.4,
+    "omega_rad_s": 7.774541989381373,
+    "time_step_s": 0.0054022474966839784,
+    "ground_plane_interval_s": 0.021608989986735914,
+    "bem_substeps_per_ground_plane_interval": 4,
+    "initial_leading_offset_over_beam": 0.8,
+    "heave_minimum_active_planes": 8,
+    "heave_max_potential_residual": 1.3931410028498774e-15,
+    "heave_max_pressure_residual": 2.3785679883306613e-15,
+    "heave_max_front_length_m": 0.34657980890761353,
+    "heave_maximum_jet_cut_count_per_plane": 2,
+    "heave_minimum_jet_normal_distance_ratio": 0.9970564065764081,
+    "heave_minimum_jet_projection_ratio": 1.167492400960967,
+    "heave_maximum_jet_projection_ratio": 3.7452407825886653,
+    "heave_maximum_creation_draft_error_m": 3.469446951953614e-17,
+    "heave_wet_plane_removal_count": 85,
+    "heave_maximum_raw_transom_coverage_gap_m": 0.1211677842438601
+  }
+]

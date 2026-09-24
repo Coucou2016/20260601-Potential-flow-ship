@@ -1,0 +1,98 @@
+{
+  "status": "self_similar_coupled_regridded_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_grid80_untransformed_eq52_resume1605_v113",
+    "kind": "formal_v1",
+    "source_hashes": {
+      "coupled_checkpoint.json": "d54dcfc78c185488e71c2bd88b3e9894e684bbbd949f197c616b52976735b790",
+      "coupled_checkpoint_outer_nodes.csv": "f5ffb07b749e421e625105f2b8a7e6a9be8415589e17a0020a73d2831877342a",
+      "coupled_pseudo_time_history.csv": "922ffff7546b82b5733ddca38ad811199c591c246967582300c740f676d80bc8"
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.125
+    }
+  },
+  "regrid": {
+    "type": "outer_free_surface_arc_length_regrid",
+    "source_panel_count": 80,
+    "target_panel_count": 80,
+    "source_panel_growth": 1.05,
+    "target_panel_growth": 1.05,
+    "source_far_radius": 20.0,
+    "target_far_radius": 20.0,
+    "source_grid_mode": "geometric_root",
+    "target_grid_mode": "double_ended",
+    "target_root_spacing_ratio": 0.08,
+    "target_far_spacing_ratio": 0.25,
+    "target_endpoint_decay": 4.0,
+    "target_far_field_panels": 24,
+    "target_symmetry_panels": 16,
+    "asymptotic_extension_used": false,
+    "source_root_state_recovery": "quadratic_root_extrapolation",
+    "target_root_state_recovery": "quadratic_root_extrapolation",
+    "geometry_relative_l2": 2.384717748895064e-05,
+    "geometry_maximum_absolute_error": 0.0008799863476217124,
+    "state_relative_changes": {
+      "kinematic_rms": 0.0023311334113352514,
+      "kinematic_integral": 0.0030173393972654193,
+      "kinematic_length_weighted_rms": 0.0050240955504282266,
+      "solved_dipole_coefficient": 0.0026892214721028515,
+      "bem_condition_number": 0.5890112730598205,
+      "body_pressure_min": 0.0003628671284587881,
+      "body_pressure_max": 7.518277431368876e-05,
+      "body_vertical_force_coefficient": 0.0005180582712032576,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 0.01891411090773853,
+      "root_thickness": 0.0,
+      "root_xi": 0.0,
+      "root_eta": 0.0
+    },
+    "reference_used_during_transformation": false
+  },
+  "continuation": {
+    "requested_iterations": 12,
+    "accepted_iterations": 12,
+    "termination_reason": "MAXIMUM_ITERATIONS",
+    "failure_message": null,
+    "pseudo_time": 0.0059047931003531305
+  },
+  "final_state": {
+    "kinematic_rms": 0.015925094009922723,
+    "kinematic_integral": 0.0051516603167171245,
+    "kinematic_length_weighted_rms": 0.01809151518522634,
+    "solved_dipole_coefficient": 8.230002090107162,
+    "bem_condition_number": 45811.99596946223,
+    "body_pressure_min": -0.0017869994575363535,
+    "body_pressure_max": 17.725250476567467,
+    "body_vertical_force_coefficient": 42.60859093257205,
+    "interface_s_lambda": 2.0631093169093706,
+    "measured_s_lambda": 1.964025727616065,
+    "relative_s_lambda_mismatch": 0.048026339894454616,
+    "jet_reached_tip": true,
+    "jet_point_count": 522,
+    "jet_tip_thickness": 8.046432980382651e-05,
+    "jet_tip_s_lambda": 0.004608937310200493
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.11133447873239104,
+    "pressure_point_count": 261,
+    "pressure_nrmse": 0.015901919456726962,
+    "pressure_peak_relative_error": 0.013451969552569483,
+    "pressure_peak_location_relative_error": 0.026905829596412578
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 17.725250476567467,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.0025182624328943365,
+    "computed_peak_eta": 0.5046726591890212,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.00791692709058165
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_doubleended80_r20_cfl0125_probe12_v136\\coupled_checkpoint.json"
+}

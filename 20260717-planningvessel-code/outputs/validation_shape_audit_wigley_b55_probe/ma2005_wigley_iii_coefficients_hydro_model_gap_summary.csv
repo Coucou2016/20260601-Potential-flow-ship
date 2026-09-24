@@ -1,0 +1,4 @@
+benchmark,summary_type,coefficient,hydro_model,pass_checks,fail_checks,total_checks,pass_fraction,median_gate_error_ratio,max_gate_error_ratio,blocker_coefficients,recommendation,filter
+ma2005_wigley_iii_coefficients,overall_best,all,hybrid_forward_coupling,3,3,6,0.5,0.8586687791761293,3.930875216370599,B55(3/6),No diagnostic hydro model passes this Ma 2005 set; keep the hard gate failed and use the listed blockers to target section pressure/radiation and forward-speed coupling work.,coefficients=B55
+ma2005_wigley_iii_coefficients,best_model_blocker,B55,hybrid_forward_coupling,3,3,6,0.5,0.8586687791761293,,B55,"pitch diagonal: audit pitch lever arms, real offsets, and sectional radiation magnitude.",coefficients=B55
+ma2005_wigley_iii_coefficients,coefficient_best,B55,hybrid_forward_coupling,3,3,6,0.5,0.8586687791761293,,B55,"pitch diagonal: audit pitch lever arms, real offsets, and sectional radiation magnitude.",coefficients=B55

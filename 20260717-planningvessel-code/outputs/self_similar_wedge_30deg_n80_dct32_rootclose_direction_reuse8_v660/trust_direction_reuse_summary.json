@@ -1,0 +1,18 @@
+{
+  "status": "self_similar_frozen_trust_direction_reuse_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "trust_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_n80_dct32_rootclose_trust025_v659",
+  "initial_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_n80_dct32_rootclose_trust025_v659",
+  "requested_steps": 8,
+  "accepted_steps": 0,
+  "root_gate_policy": "hard_limit_or_monotonic_feasibility_repair",
+  "root_mismatch_limit": 0.001,
+  "final_root_relative_mismatch": 0.015678395722405317,
+  "final_hard_root_pass": false,
+  "initial_objective": 0.11817080554374984,
+  "final_objective": 0.11817080554374984,
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_n80_dct32_rootclose_direction_reuse8_v660\\coupled_checkpoint.json",
+  "conclusion": "no_admissible_frozen_direction_step"
+}

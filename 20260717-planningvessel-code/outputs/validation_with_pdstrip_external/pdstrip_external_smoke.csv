@@ -1,0 +1,6 @@
+benchmark,metric,expected,actual,rel_error,tolerance,status,note
+pdstrip_external_smoke,pdstrip_external_source_available,pdstrip.f90 source file,D:\Projects\20260601-Potential-flow-ship\early_stage_materials\code\potential_flow_seakeeping\pdstrip\pdstrip.f90,,,PASS,Local open-source PDSTRIP source used as an external strip-theory reference path.
+pdstrip_external_smoke,pdstrip_external_compiler_available,Fortran compiler on PATH,gfortran,,,PASS,The smoke run compiles PDSTRIP in an output working directory.
+pdstrip_external_smoke,pdstrip_external_compile_and_run,compile and run return code 0,compile=0; run=0,,,PASS,frequency_blocks=260/260; sectionresults=154555 bytes
+pdstrip_external_smoke,pdstrip_external_sectionresults_complete,260 section-frequency blocks,260,,,PASS,nfre=52; lines=1043; stop_message=False; file=D:\Projects\20260601-Potential-flow-ship\20260717-planningvessel-code\outputs\validation_with_pdstrip_external\pdstrip_external_smoke\sectionresults
+pdstrip_external_smoke,pdstrip_external_sectionresults_parseable,260 parsed blocks with 5 inferred sections,blocks=260; sections=5; frequencies=52,,,PASS,"Parsed radiation, diffraction, and Froude-Krylov blocks for later coefficient comparison."

@@ -1,0 +1,4 @@
+benchmark,summary_type,coefficient,hydro_model,pass_checks,fail_checks,total_checks,pass_fraction,median_gate_error_ratio,max_gate_error_ratio,blocker_coefficients,recommendation,filter
+ma2005_sl7_coefficients,overall_best,all,pressure_transfer_pdstrip_damping_forward,1,4,5,0.2,1.687024338377101,2.87336691790043,B55(4/5),No diagnostic hydro model passes this Ma 2005 set; keep the hard gate failed and use the listed blockers to target section pressure/radiation and forward-speed coupling work.,coefficients=B55
+ma2005_sl7_coefficients,best_model_blocker,B55,pressure_transfer_pdstrip_damping_forward,1,4,5,0.2,1.687024338377101,,B55,"pitch diagonal: audit pitch lever arms, real offsets, and sectional radiation magnitude.",coefficients=B55
+ma2005_sl7_coefficients,coefficient_best,B55,pressure_transfer_pdstrip_damping_forward,1,4,5,0.2,1.687024338377101,,B55,"pitch diagonal: audit pitch lever arms, real offsets, and sectional radiation magnitude.",coefficients=B55

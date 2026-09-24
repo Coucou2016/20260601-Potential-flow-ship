@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "self_similar_coupled_checkpoint_unvalidated",
+  "config": {
+    "deadrise_deg": 20.0,
+    "far_radius": 24.0,
+    "free_surface_panels": 288,
+    "body_panels": 48,
+    "far_field_panels": 29,
+    "symmetry_panels": 19,
+    "free_surface_control_points": 9,
+    "jet_closure": "truncated_control",
+    "jet_control_panels": 1,
+    "gauss_order": 12,
+    "max_nfev": 60,
+    "optimizer_ftol": 1e-08,
+    "optimizer_xtol": 1e-08,
+    "optimizer_gtol": 1e-08,
+    "root_y_initial": null,
+    "root_z_initial": 0.36,
+    "maximum_free_surface_eta": 1.5,
+    "initial_dipole_coefficient": 4.0,
+    "preliminary_iterations": 8,
+    "preliminary_relative_tolerance": 0.0001,
+    "pseudo_cfl": 0.125,
+    "pseudo_max_iterations": 20,
+    "pseudo_kinematic_tolerance": 0.001,
+    "coupled_kinematic_integral_tolerance": 0.001,
+    "free_surface_panel_growth": 1.013645079195646,
+    "coupled_outer_grid_mode": "double_ended",
+    "coupled_outer_root_spacing_ratio": 0.04,
+    "coupled_outer_far_spacing_ratio": 0.25,
+    "coupled_outer_endpoint_decay": 4.0,
+    "coupled_outer_monitor_fractions": null,
+    "body_panel_growth": 1.0,
+    "jet_angle_threshold_deg": 10.0,
+    "jet_interface_min_thickness_panel_ratio": 0.5,
+    "jet_interface_target_thickness_panel_ratio": 1.0,
+    "coupled_root_predictor_relaxation": 0.1,
+    "coupled_root_inner_relaxation": 0.5,
+    "coupled_root_inner_tolerance": 0.001,
+    "coupled_matching_surface_bisection_iterations": 8,
+    "coupled_jet_bie_panel_count": 256,
+    "coupled_root_reconstruction_enabled": false,
+    "coupled_root_reconstruction_panels": 12,
+    "coupled_root_reconstruction_added_panels": 24,
+    "coupled_element_interpolation": "linear_node",
+    "coupled_linear_gradient_recovery": "element",
+    "coupled_linear_corner_treatment": "displaced_double_node",
+    "coupled_linear_cusp_velocity_recovery": "connected_average",
+    "coupled_free_surface_update": "full_gradient",
+    "coupled_root_state_recovery": "quadratic_root_extrapolation",
+    "coupled_smoothing_enabled": false,
+    "coupled_smoothing_root_panels": 12,
+    "coupled_smoothing_turn_threshold_deg": 10.0,
+    "coupled_smoothing_max_local_displacement": 1.0
+  },
+  "completed_iterations": 1,
+  "cumulative_pseudo_time": 0.00016791386203551795,
+  "outer_shape_dipole_coefficient": 8.162838036394177,
+  "expected_state": {
+    "kinematic_rms": 0.012859060866536908,
+    "kinematic_integral": 0.003375608117617968,
+    "kinematic_length_weighted_rms": 0.013074633975711195,
+    "solved_dipole_coefficient": 8.164083452884652,
+    "bem_condition_number": 171321.91589979088,
+    "body_pressure_min": -0.0021271938773423926,
+    "body_pressure_max": 17.733576518269135,
+    "body_vertical_force_coefficient": 42.52401781944094,
+    "interface_s_lambda": 2.0631960136052365,
+    "measured_s_lambda": 2.0632232988252883,
+    "root_thickness": 0.14580623991401573,
+    "root_xi": 4.319450004668862,
+    "root_eta": 0.4169874704956889,
+    "kinematic_integral_linear_exact": 0.003751396616997909
+  },
+  "files": {
+    "outer_nodes": {
+      "name": "coupled_checkpoint_outer_nodes.csv",
+      "sha256": "39cce77165b1ec440f680c13523afca46c68a2d4143d3e39a35074a7d41a0ee9"
+    },
+    "history": {
+      "name": "coupled_pseudo_time_history.csv",
+      "sha256": "c65ec4f001aed1fcccd623c4c2e07cdc714b398152acbfaa1ed1684a57126c96"
+    }
+  },
+  "reference_used_during_solve": false,
+  "parent_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n288_r24_frozen_v221",
+    "kind": "formal_v1",
+    "completed_iterations": 0,
+    "source_hashes": {
+      "coupled_checkpoint.json": "49cec7c39c7e528f3aa5e5d2c6cde5847a06591e97887e1ce7fb1b79f1b0ed07",
+      "coupled_checkpoint_outer_nodes.csv": "f65e14f5aae3b3fdfbeac955881c5811a1113cf75288ceea11fbc221e0532c72",
+      "coupled_pseudo_time_history.csv": "1d95559b8c1054f5449c936dcc816eb252a9db589cae2aef81f95487b85df044"
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.125
+    }
+  }
+}

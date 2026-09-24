@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "12p75deg_three_grid_numerical_gate_only",
+  "physical_validation_status": "NOT_EVALUATED",
+  "metric": "Iafrati 2013 Eq. (52), exact piecewise-linear K",
+  "integration_formula": "sum(ds*(r_left^2+r_left*r_right+r_right^2)/3)",
+  "relative_change_formula": "abs(fine-coarse)/max(abs(fine),1e-12)",
+  "expected_panel_sequence": [
+    320,
+    640,
+    1280
+  ],
+  "expected_deadrise_deg": 12.75,
+  "deadrise_tolerance": 1e-12,
+  "objective_limit": 0.001,
+  "root_mismatch_limit": 0.001,
+  "variation_limit": 0.05,
+  "checkpoint_verification_tolerance": 1e-12,
+  "finite_pass": true,
+  "absolute_gate_pass": true,
+  "finest_pair_pass": true,
+  "reference_isolation_pass": true,
+  "deadrise_consistency_pass": true,
+  "finest_pair": {
+    "coarse_panel_count": 640,
+    "fine_panel_count": 1280,
+    "kinematic_integral_relative_change": 0.04514551760476144,
+    "vertical_force_relative_change": 0.0003086006529274288
+  },
+  "interpretation": "PASS closes only the declared 12.75-degree three-grid numerical gate. It does not prove wedge pressure or whole-vessel validation."
+}

@@ -1,0 +1,121 @@
+{
+  "status": "self_similar_kinematic_residual_localization_diagnostic",
+  "validated": false,
+  "reference_used": false,
+  "metric": "Iafrati 2013 Eq. (52), K = integral(S_nu^2 ds)",
+  "source_hashes": {
+    "coupled_checkpoint.json": "5e1c60d1018dce81bf3bec87f675365a07d97878e68bc26d15d449894271d8d6",
+    "coupled_checkpoint_outer_nodes.csv": "342ab3c3fe0a7b5c6d687a155592273db848966e5bd73ae1ed8b784683b233b7",
+    "coupled_pseudo_time_history.csv": "cfa0dcf1d55fff5aa3fca9147b1db4fdafab121c3c96c50b5cfabc216664c0a1"
+  },
+  "panel_count": 240,
+  "kinematic_integral": 0.0038106453129404735,
+  "reconstruction_relative_error": 0.0,
+  "root_first_two_panels": {
+    "k_contribution": 0.0011139802912609675,
+    "k_fraction": 0.29233376496049895
+  },
+  "interior_excluding_root2_far8": {
+    "k_contribution": 0.0026390799428667516,
+    "k_fraction": 0.6925546006354271
+  },
+  "far_last_eight_panels": {
+    "k_contribution": 5.7585078812754396e-05,
+    "k_fraction": 0.015111634404073948
+  },
+  "arc_deciles": [
+    {
+      "normalized_arc_lower": 0.0,
+      "normalized_arc_upper": 0.1,
+      "k_contribution": 0.002076130416291483,
+      "k_fraction": 0.5448238410542184
+    },
+    {
+      "normalized_arc_lower": 0.1,
+      "normalized_arc_upper": 0.2,
+      "k_contribution": 5.710410669470133e-05,
+      "k_fraction": 0.014985416380995353
+    },
+    {
+      "normalized_arc_lower": 0.2,
+      "normalized_arc_upper": 0.30000000000000004,
+      "k_contribution": 7.320291604949205e-05,
+      "k_fraction": 0.019210110109409588
+    },
+    {
+      "normalized_arc_lower": 0.30000000000000004,
+      "normalized_arc_upper": 0.4,
+      "k_contribution": 9.976899396864187e-05,
+      "k_fraction": 0.026181653178226502
+    },
+    {
+      "normalized_arc_lower": 0.4,
+      "normalized_arc_upper": 0.5,
+      "k_contribution": 0.00013038889695413632,
+      "k_fraction": 0.03421701214525319
+    },
+    {
+      "normalized_arc_lower": 0.5,
+      "normalized_arc_upper": 0.6000000000000001,
+      "k_contribution": 0.00016729537673546105,
+      "k_fraction": 0.04390211184634449
+    },
+    {
+      "normalized_arc_lower": 0.6000000000000001,
+      "normalized_arc_upper": 0.7000000000000001,
+      "k_contribution": 0.00021265127874047244,
+      "k_fraction": 0.05580453211384837
+    },
+    {
+      "normalized_arc_lower": 0.7000000000000001,
+      "normalized_arc_upper": 0.8,
+      "k_contribution": 0.000248012031754629,
+      "k_fraction": 0.06508399795499499
+    },
+    {
+      "normalized_arc_lower": 0.8,
+      "normalized_arc_upper": 0.9,
+      "k_contribution": 0.00031452046598341634,
+      "k_fraction": 0.08253732377436028
+    },
+    {
+      "normalized_arc_lower": 0.9,
+      "normalized_arc_upper": 1.0,
+      "k_contribution": 0.00043157082976803997,
+      "k_fraction": 0.11325400144234878
+    }
+  ],
+  "kinematic_integral_linear_exact": 0.005220430250451604,
+  "linear_exact_to_midpoint_ratio": 1.3699596319614626,
+  "linear_exact_regions": {
+    "root_first_two_panels": 0.0021406116771579093,
+    "interior_excluding_root2_far8": 0.003021312503246809,
+    "far_last_eight_panels": 5.8506070046885174e-05
+  },
+  "continuous_p1_weak_projection": {
+    "kinematic_integral": 0.004861775562138886,
+    "fraction_of_linear_exact": 0.931297867971382,
+    "unresolved_integral": 0.0003586546883127175,
+    "unresolved_fraction_of_linear_exact": 0.06870213202861802
+  },
+  "linear_exact_regions_panel_windows": {
+    "root_first_two_panels": 0.0021406116771579093,
+    "root_first_window_panels": {
+      "panel_count": 16,
+      "kinematic_integral": 0.003177268213660576
+    },
+    "interior_excluding_endpoint_windows": {
+      "endpoint_window_panel_count": 16,
+      "kinematic_integral": 0.001864870268894944
+    },
+    "far_last_window_panels": {
+      "panel_count": 16,
+      "kinematic_integral": 0.0001782917678960831
+    }
+  },
+  "weak_projected_regions_panel_windows": {
+    "root_first_window_panels": 0.003045051812627696,
+    "interior_excluding_endpoint_windows": 0.001638528727514724,
+    "far_last_window_panels": 0.0001781950219964665
+  }
+}

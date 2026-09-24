@@ -1,0 +1,53 @@
+component,row,column,value,units
+raw_bem,heave_force,heave,3289.3130558923385,N/m
+raw_bem,heave_force,pitch,-897.7201840267004,N/rad
+raw_bem,pitch_moment,heave,506.5433302196311,N
+raw_bem,pitch_moment,pitch,358.2159808538254,N m/rad
+bem,heave_force,heave,3289.3130558923385,N/m
+bem,heave_force,pitch,-897.7201840267004,N/rad
+bem,pitch_moment,heave,506.5433302196311,N
+bem,pitch_moment,pitch,358.2159808538254,N m/rad
+front,heave_force,heave,0.0,N/m
+front,heave_force,pitch,-128.24610569537847,N/rad
+front,pitch_moment,heave,129.19180803956615,N
+front,pitch_moment,pitch,2.276726415784117,N m/rad
+transom,heave_force,heave,0.0,N/m
+transom,heave_force,pitch,0.0,N/rad
+transom,pitch_moment,heave,0.0,N
+transom,pitch_moment,pitch,0.0,N m/rad
+total,heave_force,heave,3289.3130558923385,N/m
+total,heave_force,pitch,-1025.9662897221044,N/rad
+total,pitch_moment,heave,635.7351382591972,N
+total,pitch_moment,pitch,360.4927072696095,N m/rad
+longitudinal_bin_aft_post_chine,heave_force,heave,699.3876814561901,N/m
+longitudinal_bin_aft_post_chine,heave_force,pitch,-417.1129018534484,N/rad
+longitudinal_bin_aft_post_chine,pitch_moment,heave,-251.1518979946931,N
+longitudinal_bin_aft_post_chine,pitch_moment,pitch,147.48851919448836,N m/rad
+longitudinal_bin_middle_post_chine,heave_force,heave,400.5935628258344,N/m
+longitudinal_bin_middle_post_chine,heave_force,pitch,-407.91821900567265,N/rad
+longitudinal_bin_middle_post_chine,pitch_moment,heave,-52.984820069880435,N
+longitudinal_bin_middle_post_chine,pitch_moment,pitch,46.695636965082194,N m/rad
+longitudinal_bin_forward_post_chine,heave_force,heave,400.66771773191067,N/m
+longitudinal_bin_forward_post_chine,heave_force,pitch,-518.2316869052971,N/rad
+longitudinal_bin_forward_post_chine,pitch_moment,heave,63.201192983322414,N
+longitudinal_bin_forward_post_chine,pitch_moment,pitch,-53.58052704575204,N m/rad
+longitudinal_bin_pre_chine,heave_force,heave,1788.6640938784133,N/m
+longitudinal_bin_pre_chine,heave_force,pitch,445.5426237377685,N/rad
+longitudinal_bin_pre_chine,pitch_moment,heave,747.478855300884,N
+longitudinal_bin_pre_chine,pitch_moment,pitch,217.6123517399686,N m/rad
+resolved_station_bem,heave_force,heave,0.0,N/m
+resolved_station_bem,heave_force,pitch,0.0,N/rad
+resolved_station_bem,pitch_moment,heave,0.0,N
+resolved_station_bem,pitch_moment,pitch,0.0,N m/rad
+transom_extrapolation,heave_force,heave,0.0,N/m
+transom_extrapolation,heave_force,pitch,0.0,N/rad
+transom_extrapolation,pitch_moment,heave,0.0,N
+transom_extrapolation,pitch_moment,pitch,0.0,N m/rad
+pre_chine_bem,heave_force,heave,0.0,N/m
+pre_chine_bem,heave_force,pitch,0.0,N/rad
+pre_chine_bem,pitch_moment,heave,0.0,N
+pre_chine_bem,pitch_moment,pitch,0.0,N m/rad
+post_chine_bem,heave_force,heave,0.0,N/m
+post_chine_bem,heave_force,pitch,0.0,N/rad
+post_chine_bem,pitch_moment,heave,0.0,N
+post_chine_bem,pitch_moment,pitch,0.0,N m/rad

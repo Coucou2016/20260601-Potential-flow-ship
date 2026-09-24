@@ -1,0 +1,3 @@
+panel_shift,outer_root_xi,outer_root_eta,outer_panel_count,status,termination_reason,iteration_count,initial_s_lambda,final_s_lambda,measured_s_lambda,relative_mismatch,root_thickness,root_s_tau,delta_lambda,reason
+1.96875,2.1325831571880984,0.1804361037268865,80,ROOT_NOT_CONSISTENT,NO_BRACKET_IN_PHYSICAL_DOMAIN,3.0,0.012592692233204786,2.1353634108934605,2.216371404697787,0.037936396863909816,0.04400392522224249,-2.126161716538629,0.009201661478542312,
+2.0,2.133143603412469,0.18030453285198939,80,INELIGIBLE,,,,,,,,,,"The jet root requires thickness>0, S_lambda>0, S_tau<0 and delta_lambda>0."

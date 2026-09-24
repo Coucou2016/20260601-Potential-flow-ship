@@ -1,0 +1,84 @@
+{
+  "status": "self_similar_coupled_resume_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_19p5deg_from20deg_homotopy_scan_v360",
+    "kind": "formal_v1",
+    "completed_iterations": 0,
+    "cumulative_pseudo_time": 0.0,
+    "source_hashes": {
+      "coupled_checkpoint.json": "082356e46a54014db468e99c285e698c010dc8938839b8069b4cc2c101cc6988",
+      "coupled_checkpoint_outer_nodes.csv": "0c6254099679e5100000957a7aba2b985ade14015258d5ba124b2665713fcc5f",
+      "coupled_pseudo_time_history.csv": "a45d5cd41dbe6f244e3c96039d4813c3b9718ac15ec99861e2b471b3814d8040"
+    },
+    "reconstruction_relative_errors": {
+      "kinematic_rms": 0.0,
+      "kinematic_integral": 0.0,
+      "kinematic_length_weighted_rms": 0.0,
+      "solved_dipole_coefficient": 0.0,
+      "bem_condition_number": 0.0,
+      "body_pressure_min": 0.0,
+      "body_pressure_max": 0.0,
+      "body_vertical_force_coefficient": 0.0,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 0.0,
+      "root_thickness": 0.0,
+      "root_xi": 0.0,
+      "root_eta": 0.0,
+      "kinematic_integral_linear_exact": 0.0,
+      "history_kinematic_rms": 2.7755575615628914e-17,
+      "history_solved_dipole": 0.0,
+      "history_interface_s_lambda": 0.0
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.25
+    }
+  },
+  "continuation": {
+    "requested_iterations": 10,
+    "accepted_iterations": 10,
+    "forced_fixed_steps": false,
+    "termination_reason": "MAXIMUM_ITERATIONS",
+    "failure_message": null,
+    "completed_iterations": 10,
+    "cumulative_pseudo_time": 0.0017553451014174588
+  },
+  "final_state": {
+    "kinematic_rms": 0.1818357911338179,
+    "kinematic_integral": 0.7035122579423349,
+    "kinematic_integral_linear_exact": 0.7056406944432804,
+    "kinematic_integral_endpoint_gradient": 0.0021284365009455186,
+    "kinematic_convergence_integral": 0.7056406944432804,
+    "kinematic_length_weighted_rms": 0.20992075245270908,
+    "spray_root_corner_angle_deg": 34.24583026031705,
+    "spray_root_normal_derivative_sides": [
+      7.397725896476795,
+      9.687303739164099
+    ],
+    "solved_dipole_coefficient": 7.9552938528076655,
+    "bem_condition_number": 203448.83368534545,
+    "body_pressure_min": -12.014997968933969,
+    "body_pressure_max": 16.711493145099816,
+    "body_vertical_force_coefficient": 38.265265586751,
+    "interface_s_lambda": 1.1888284211730638,
+    "measured_s_lambda": 6.072578867391747,
+    "relative_s_lambda_mismatch": 4.108036415717328,
+    "jet_reached_tip": true,
+    "jet_point_count": 1944,
+    "jet_tip_thickness": 5.95746390652598e-07,
+    "jet_tip_s_lambda": 0.0003530460631367509
+  },
+  "post_solve_reference_metrics": {
+    "status": "REFERENCE_NOT_AVAILABLE",
+    "reason": "Reference CSV does not contain both requested curves.",
+    "used_during_solve": false
+  },
+  "post_solve_scalar_reference_metrics": {
+    "status": "REFERENCE_NOT_AVAILABLE",
+    "reason": "Scalar reference CSV must contain exactly one requested angle row.",
+    "used_during_solve": false
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_19p5deg_homotopy_resume10_v361\\coupled_checkpoint.json"
+}

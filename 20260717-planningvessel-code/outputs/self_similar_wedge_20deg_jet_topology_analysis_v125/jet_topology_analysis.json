@@ -1,0 +1,43 @@
+{
+  "status": "self_similar_shallow_jet_topology_diagnostic",
+  "validated": false,
+  "reference_used": false,
+  "classification": "FIXED_TOPOLOGY_DOES_NOT_REMOVE_ROOT_CYCLE",
+  "state_count": 12,
+  "iteration_start": 2058,
+  "iteration_end": 2069,
+  "root_state_jump_count": 3,
+  "boundary_panel_change_count": 0,
+  "root_jumps_with_boundary_panel_change": 0,
+  "root_jump_boundary_change_fraction": 0.0,
+  "root_jumps_with_raw_step_parity_change": 3,
+  "explicit_matching_surface_adjustment_count": 0,
+  "rk2_rejected_attempt_total": 0,
+  "kinematic_integral": {
+    "mean": 0.004344041748150332,
+    "minimum": 0.0040535566441488,
+    "maximum": 0.0045989256517218,
+    "range": 0.0005453690075729999
+  },
+  "condition_number": {
+    "minimum": 36813.24260245275,
+    "maximum": 37018.52504733994
+  },
+  "topology_groups": [
+    {
+      "boundary_panel_count": 688,
+      "raw_step_count_is_even": false,
+      "state_count": 3,
+      "kinematic_integral_mean": 0.0045841185372119,
+      "condition_number_median": 36814.55762779361
+    },
+    {
+      "boundary_panel_count": 688,
+      "raw_step_count_is_even": true,
+      "state_count": 9,
+      "kinematic_integral_mean": 0.004264016151796477,
+      "condition_number_median": 36921.20905288906
+    }
+  ],
+  "interpretation": "Coincidence identifies a mechanism candidate, not proof of physical causation. A fixed-topology counterfactual is required."
+}

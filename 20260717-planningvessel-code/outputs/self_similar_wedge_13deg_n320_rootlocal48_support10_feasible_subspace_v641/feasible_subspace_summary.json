@@ -1,0 +1,32 @@
+{
+  "status": "reference_isolated_feasible_subspace_diagnostic",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "trust_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_13deg_n320_rootlocal48_support10_multigrid320_640_1280_v638",
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_13deg_n320_rootlocal16_support10_multigrid320_640_1280_v637",
+  "basis": "root_local",
+  "global_mode_count": 2,
+  "local_support_fraction": 0.1,
+  "objective_panel_counts": [
+    320,
+    640,
+    1280
+  ],
+  "root_constraint_panel_counts": [
+    320,
+    640,
+    1280
+  ],
+  "mode_prefixes": [
+    16,
+    32,
+    48
+  ],
+  "grid_objective_limit": 0.001,
+  "maximum_required_grid_relative_reduction": 0.08453187017209451,
+  "finest_prefix_reachable_relative_reduction": 0.018637339756972682,
+  "maximum_far_endpoint_energy_fraction": 0.36529879668052706,
+  "recommendation": "global_dct_extension_not_ruled_out",
+  "interpretation": "This is a linearized numerical-space diagnostic only; it does not provide wedge physical-validation or Gate 2 credit."
+}

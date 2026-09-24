@@ -1,0 +1,12 @@
+{
+  "status": "FAIL",
+  "stage": "steady_planing_wedge_entry",
+  "exception_type": "ValueError",
+  "message": "Thin-jet remeshing left a free-surface node inside the body after 8 corrective cuts.",
+  "initial_leading_offset_over_beam": 0.04,
+  "ground_plane_spacing_over_beam": 0.34545454545454546,
+  "ground_plane_spacing_rule": "Sun_Fig7.12_keel_wetted_length_over_NX",
+  "response_calibration_used": false,
+  "used_for_acceptance": false,
+  "interpretation": "The 0.04B handoff is outside the numerically admissible thin-jet initialization range for the frozen production discretization and is retained only as a rejected sensitivity case."
+}

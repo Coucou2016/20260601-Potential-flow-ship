@@ -1,0 +1,36 @@
+{
+  "status": "self_similar_endpoint_convergence_audit",
+  "validated": false,
+  "reference_used_during_solve": false,
+  "grid_contract_pass": true,
+  "grid_contract_failed_runs": [],
+  "classification": "DIAGNOSTIC_MATRIX_INCOMPLETE",
+  "thresholds": {
+    "kinematic_integral_max": 0.001,
+    "free_surface_nrmse_max": 0.05,
+    "pressure_nrmse_max": 0.1,
+    "pressure_peak_relative_error_max": 0.05,
+    "pressure_peak_location_relative_error_max": 0.05,
+    "last_level_relative_change_max": 0.05
+  },
+  "coverage": {
+    "root_spacing_level_count": 1,
+    "far_radius_level_count": 1,
+    "pseudo_cfl_level_count": 1,
+    "outer_panel_level_count": 1
+  },
+  "coverage_pass": false,
+  "metric_pass": false,
+  "pair_convergence_pass": false,
+  "best_run": {
+    "run": "self_similar_wedge_20deg_double_corner_four_step_v157",
+    "kinematic_integral": 0.0028587862832552017,
+    "kinematic_integral_linear_exact": 0.00625625246233223,
+    "kinematic_acceptance_integral": 0.00625625246233223,
+    "free_surface_nrmse": 0.11148220944125219,
+    "pressure_nrmse": 0.026218730552575675
+  },
+  "run_count": 2,
+  "eligible_run_count": 2,
+  "pair_count": 0
+}

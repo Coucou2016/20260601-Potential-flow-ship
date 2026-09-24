@@ -1,0 +1,21 @@
+component,row,column,value,units
+raw_bem,heave_force,heave,0.0,N/m
+raw_bem,heave_force,pitch,0.0,N/rad
+raw_bem,pitch_moment,heave,0.0,N
+raw_bem,pitch_moment,pitch,0.0,N m/rad
+bem,heave_force,heave,0.0,N/m
+bem,heave_force,pitch,0.0,N/rad
+bem,pitch_moment,heave,0.0,N
+bem,pitch_moment,pitch,0.0,N m/rad
+front,heave_force,heave,0.0,N/m
+front,heave_force,pitch,0.0,N/rad
+front,pitch_moment,heave,0.0,N
+front,pitch_moment,pitch,0.0,N m/rad
+transom,heave_force,heave,0.0,N/m
+transom,heave_force,pitch,0.0,N/rad
+transom,pitch_moment,heave,0.0,N
+transom,pitch_moment,pitch,0.0,N m/rad
+total,heave_force,heave,0.0,N/m
+total,heave_force,pitch,0.0,N/rad
+total,pitch_moment,heave,0.0,N
+total,pitch_moment,pitch,0.0,N m/rad

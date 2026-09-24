@@ -1,0 +1,50 @@
+{
+  "schema": "sun2007_fixed_earth_time_convergence_v1",
+  "status": "FAIL",
+  "criterion": "all four raw adjacent relative changes must be <=5%; digitization uncertainty is diagnostic and does not replace the strict gate",
+  "latest_pair": [
+    "sub16",
+    "sub32"
+  ],
+  "relative_limit": 0.05,
+  "failed_coefficients": [
+    "A53",
+    "B33",
+    "B53"
+  ],
+  "response_calibration_used": false,
+  "inputs": [
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+      "sha256": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub8_heave_v13_troesch_experimental_restoring\\identified_coefficients_reprocessed.csv",
+      "sha256": "ebce0b509f31bc35db1f4849e9e6efc304681052b34573f01f34be88bb801f38"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub8_heave_v13_contact_potential_preserved\\run_diagnostics.json",
+      "sha256": "6e0731f953ae57b4f20703a5716eb59ef202f847c05d1fc2038703e7f6d1f5a6"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub16_heave_v21_smoothing8_per_plane_troesch_experimental_restoring\\identified_coefficients_reprocessed.csv",
+      "sha256": "a46b26d120c7779baa91d632156828ab08e758c9d4bf7ac29dcf39166bef9201"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub16_heave_v21_smoothing8_per_plane\\run_diagnostics.json",
+      "sha256": "76771a6a1029df3281d591a9bc4a776b979f63867367731a867e17addea874f1"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub32_heave_v22_smoothing8_per_plane_troesch_experimental_restoring\\identified_coefficients_reprocessed.csv",
+      "sha256": "d4cdd88bd190b0e2b2b13faf96af5bab61863199cd62221b3cc78095201607f2"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub32_heave_v22_smoothing8_per_plane\\run_diagnostics.json",
+      "sha256": "5e7d8c2021b0ca18dd1638b7b3f8b9f9e36de8c9bb4e2b209697b6b6ebbbc82d"
+    }
+  ],
+  "outputs": {
+    "coefficient_values": "coefficient_values.csv",
+    "adjacent_changes": "adjacent_changes.csv"
+  }
+}

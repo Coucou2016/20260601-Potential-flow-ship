@@ -1,0 +1,152 @@
+{
+  "status": "iafrati_2013_eq32_second_order_pseudo_time_diagnostic_unvalidated",
+  "solver_mode": "pseudo_time",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "config": {
+    "deadrise_deg": 20.0,
+    "far_radius": 20.0,
+    "free_surface_panels": 120,
+    "body_panels": 72,
+    "far_field_panels": 24,
+    "symmetry_panels": 16,
+    "free_surface_control_points": 9,
+    "jet_closure": "body_root",
+    "jet_control_panels": 1,
+    "gauss_order": 12,
+    "max_nfev": 60,
+    "optimizer_ftol": 1e-08,
+    "optimizer_xtol": 1e-08,
+    "optimizer_gtol": 1e-08,
+    "root_y_initial": null,
+    "root_z_initial": 0.36,
+    "maximum_free_surface_eta": 1.5,
+    "initial_dipole_coefficient": 4.0,
+    "preliminary_iterations": 8,
+    "preliminary_relative_tolerance": 0.0001,
+    "pseudo_cfl": 0.1,
+    "pseudo_max_iterations": 30,
+    "pseudo_kinematic_tolerance": 0.001,
+    "free_surface_panel_growth": 1.05,
+    "body_panel_growth": 1.0,
+    "jet_angle_threshold_deg": 10.0
+  },
+  "final_kinematic_rms": 3.8196477934748314,
+  "bem_relative_residual": 2.1015526797337842e-15,
+  "bem_condition_number": 87591.85824776029,
+  "flux_residual": 5.9396931817445875e-15,
+  "dipole_coefficient": 5.633139894892405,
+  "tau_star": 3.235003993435935,
+  "root_xi": 3.2390699742408233,
+  "root_eta": 0.1789250573290544,
+  "jet_control_normal_derivative": 0.0,
+  "body_vertical_force_coefficient": 23.641489791218042,
+  "preliminary_iteration": {
+    "status": "iafrati_2013_eq51_preliminary_dipole_iteration",
+    "converged": true,
+    "iteration_count": 6,
+    "initial_dipole_coefficient": 4.0,
+    "final_shape_dipole_coefficient": 5.630416369630249,
+    "final_solved_dipole_coefficient": 5.630816628709749,
+    "final_relative_change": 7.108871764066655e-05
+  },
+  "pseudo_time": {
+    "status": "iafrati_2013_eq32_second_order_pseudo_time_diagnostic_unvalidated",
+    "converged": false,
+    "termination_reason": "JET_MODEL_REQUIRED",
+    "failure_message": null,
+    "step_count": 3,
+    "final_pseudo_time": 3.1111930344348835e-05,
+    "maximum_displacement_ratio": 0.09842183560069026,
+    "initial_root_angle_deg": 26.296593682017683,
+    "final_root_angle_deg": 9.999167417208803
+  },
+  "shallow_water_coupling": {
+    "status": "SOURCE_ROOT_AUGMENTED_BIE_COMPLETED_OUTER_PSEUDO_ITERATION_PENDING",
+    "source_status": "iafrati_2013_fig3_outer_to_shallow_jet_interface_unvalidated",
+    "original_cut_node_index": 1,
+    "cut_angle_deg": 33.02961571087955,
+    "root_thickness": 0.00041821650876336895,
+    "root_s_lambda": 2.836654948787387,
+    "root_s_tau": -3.237412591000137,
+    "delta_lambda": 0.0012046376880205352,
+    "point_count": 500,
+    "reached_tip": false,
+    "tip_thickness": 0.0002987739470142318,
+    "outer_bem_relative_residual": 1.8121708937167724e-15,
+    "root_inner_iteration": {
+      "status": "NOT_RUN",
+      "reason": "Disabled by --root-inner-iterations 0."
+    },
+    "augmented_bie": {
+      "status": "iafrati_2013_shallow_jet_augmented_bie_diagnostic_unvalidated",
+      "panel_count": 732,
+      "relative_residual": 6.01130438655344e-15,
+      "condition_number": 284480.1149215528,
+      "flux_residual": -5.218048215738236e-15,
+      "dipole_coefficient": 5.635569152282049,
+      "outer_kinematic_rms": 6.2315968792039325,
+      "body_pressure_min": -27.14238604856329,
+      "body_pressure_max": 11.073114767873113,
+      "body_vertical_force_coefficient": 22.33515231216346,
+      "validated": false,
+      "remaining_requirement": "Continue pseudo-time with the coupled outer/jet BIE until the kinematic condition and pressure benchmarks converge."
+    },
+    "final_root_state": {
+      "thickness": 0.00041821650876336895,
+      "s_lambda": 2.836654948787387,
+      "s_tau": -3.237412591000137,
+      "delta_lambda": 0.0012046376880205352,
+      "cut_angle_deg": 33.02961571087955,
+      "free_root_xi": 3.241441987326753,
+      "free_root_eta": 0.17934334277491415
+    }
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.3059182253806471,
+    "pressure_point_count": 166,
+    "pressure_nrmse": 0.4266039188280609,
+    "pressure_peak_relative_error": 0.026262023151245404,
+    "pressure_peak_location_relative_error": 0.24657534246575405
+  },
+  "distributed_reference": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_fig2_6_wedge_similarity\\fig2_6_zhao_faltinsen_similarity_curves.csv",
+    "sha256": "27501c457dbe61fa2ad9c2bea020ed66780cb7ab6214f3c3f7317d045eb8c994",
+    "used_during_solve": false
+  },
+  "post_solve_coupled_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.30591840089252853,
+    "pressure_point_count": 195,
+    "pressure_nrmse": 0.9435895462997096,
+    "pressure_peak_relative_error": 0.21040649395936084,
+    "pressure_peak_location_relative_error": 0.6706586826347308
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 11.062739131159319,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.3774485576162454,
+    "computed_peak_eta": 0.12161620037555876,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.7609274614201715
+  },
+  "scalar_reference": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\iafrati2013_self_similar_wedge\\table1_pressure_peak.csv",
+    "sha256": "e1e3441db748733a95c691d6029b5cb1791556bc2c0e033a4baf0575b34fb8f6",
+    "used_during_solve": false
+  },
+  "post_solve_coupled_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 11.073114767873113,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.3768646726014005,
+    "computed_peak_eta": 0.12238804354629396,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.7594101758476628
+  }
+}

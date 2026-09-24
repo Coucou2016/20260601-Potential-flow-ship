@@ -1,0 +1,11 @@
+benchmark,gate_status,pass_checks,fail_checks,not_evaluated_checks,info_checks,total_checks
+faltinsen_ch9_prescribed_state,PASS,19,0,0,3,22
+numerical_sanity,PASS,2,0,0,0,2
+physical_trend_sanity,PASS,6,0,0,0,6
+section_bem_numerical_sanity,PASS,25,0,0,0,25
+katayama_regular_head_waves,PASS,9,0,0,0,9
+fridsma_regular_wave_amplitudes,FAIL,15,12,0,0,27
+katayama_regular_wave_amplitudes,PENDING_REFERENCE_OR_IMPLEMENTATION,0,0,1,0,1
+ma2005_wigley_iii_coefficients,FAIL,17,41,0,3,61
+ma2005_sl7_coefficients,FAIL,1,50,1,3,55
+complete_2p5d_solver,PENDING_REFERENCE_OR_IMPLEMENTATION,0,0,2,11,13

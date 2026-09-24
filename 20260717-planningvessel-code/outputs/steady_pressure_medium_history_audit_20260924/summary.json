@@ -1,0 +1,7 @@
+{
+  "replay_passed": true,
+  "physical_acceptance": "NOT_PASSED",
+  "half_domain": true,
+  "field_scope": "Pressure auxiliary BVP transverse velocity, not full 3D steady velocity or Hessian",
+  "force_scope": "Full symmetric force if half_domain is true; saved panels remain half-domain"
+}

@@ -1,0 +1,29 @@
+{
+  "source": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub8_heave_v9\\station_timeseries_sigma_1p4_heave.csv",
+  "source_sha256": "c8349ef7dd2daddd0ff72301edd7327521ee1951cd06c7a468010080bc8da718",
+  "method": "Sun_2007_Eq7.46_station_density_fit_then_longitudinal_integration",
+  "coordinate_contract": "x_from_transom_positive_forward_force_up_moment_bow_up_about_cg",
+  "omega_rad_s": 7.774541989381373,
+  "lcg_from_transom_m": 0.46746,
+  "discard_cycles": 0.5,
+  "retained_cycles": 1.5,
+  "response_calibration_used": false,
+  "diagnostics": {
+    "time_sample_count": 521,
+    "retained_sample_count": 390,
+    "retained_cycle_count": 1.4971271437718887,
+    "x_point_count": 1601,
+    "maximum_resolved_station_x_m": 1.0985454545454545,
+    "max_density_fit_residual_nrmse": 0.21737473348068026,
+    "direct_sine_vertical_force_n": 11.060540795756829,
+    "direct_sine_pitch_moment_nm": 5.617697664161551,
+    "direct_cosine_vertical_force_n": 30.305756137579696,
+    "direct_cosine_pitch_moment_nm": 2.0869578919110805,
+    "spatial_sine_vertical_force_n": 11.062937124425599,
+    "spatial_sine_pitch_moment_nm": 5.619223082961487,
+    "spatial_cosine_vertical_force_n": 30.307957018361847,
+    "spatial_cosine_pitch_moment_nm": 2.0882261123767605,
+    "max_spatial_harmonic_closure_relative_error": 0.0006076885741660266
+  },
+  "output_csv_sha256": "de56ade3de24ddd31a0b420912dcb4af41d142d2ff145ad017a03d46b3791e51"
+}

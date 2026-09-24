@@ -1,0 +1,100 @@
+{
+  "status": "self_similar_coupled_regridded_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_grid80_untransformed_eq52_resume1605_v113",
+    "kind": "formal_v1",
+    "source_hashes": {
+      "coupled_checkpoint.json": "d54dcfc78c185488e71c2bd88b3e9894e684bbbd949f197c616b52976735b790",
+      "coupled_checkpoint_outer_nodes.csv": "f5ffb07b749e421e625105f2b8a7e6a9be8415589e17a0020a73d2831877342a",
+      "coupled_pseudo_time_history.csv": "922ffff7546b82b5733ddca38ad811199c591c246967582300c740f676d80bc8"
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.125
+    }
+  },
+  "regrid": {
+    "type": "outer_free_surface_arc_length_regrid",
+    "source_panel_count": 80,
+    "target_panel_count": 80,
+    "source_panel_growth": 1.05,
+    "target_panel_growth": 1.05,
+    "source_far_radius": 20.0,
+    "target_far_radius": 20.0,
+    "source_grid_mode": "geometric_root",
+    "target_grid_mode": "double_ended",
+    "target_root_spacing_ratio": 0.04,
+    "target_far_spacing_ratio": 0.25,
+    "target_endpoint_decay": 4.0,
+    "target_far_field_panels": 24,
+    "target_symmetry_panels": 16,
+    "asymptotic_extension_used": false,
+    "source_linear_gradient_recovery": "element",
+    "target_linear_gradient_recovery": "connected_nodal",
+    "source_root_state_recovery": "quadratic_root_extrapolation",
+    "target_root_state_recovery": "quadratic_root_extrapolation",
+    "geometry_relative_l2": 1.5007848938092662e-05,
+    "geometry_maximum_absolute_error": 0.00036092383620909174,
+    "state_relative_changes": {
+      "kinematic_rms": 0.001308356185562725,
+      "kinematic_integral": 0.0001499653046095513,
+      "kinematic_length_weighted_rms": 0.0002851579957732289,
+      "solved_dipole_coefficient": 0.0027125134088544513,
+      "bem_condition_number": 0.04788300701304573,
+      "body_pressure_min": 2.2440379041199776e-05,
+      "body_pressure_max": 0.0007695207203970282,
+      "body_vertical_force_coefficient": 0.0006905629270285344,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 0.004766449896658406,
+      "root_thickness": 0.0,
+      "root_xi": 0.0,
+      "root_eta": 0.0
+    },
+    "reference_used_during_transformation": false
+  },
+  "continuation": {
+    "requested_iterations": 24,
+    "accepted_iterations": 24,
+    "termination_reason": "MAXIMUM_ITERATIONS",
+    "failure_message": null,
+    "pseudo_time": 0.011432346355947687
+  },
+  "final_state": {
+    "kinematic_rms": 0.013462041463427011,
+    "kinematic_integral": 0.003662728398750008,
+    "kinematic_length_weighted_rms": 0.015243772247273702,
+    "solved_dipole_coefficient": 8.201107814117245,
+    "bem_condition_number": 58642.77268144215,
+    "body_pressure_min": -0.002596172483464443,
+    "body_pressure_max": 17.714208843114815,
+    "body_vertical_force_coefficient": 42.376720924775704,
+    "interface_s_lambda": 2.128729948271709,
+    "measured_s_lambda": 2.189242609589387,
+    "relative_s_lambda_mismatch": 0.028426650062779262,
+    "jet_reached_tip": true,
+    "jet_point_count": 512,
+    "jet_tip_thickness": 1.7761555321377788e-05,
+    "jet_tip_s_lambda": 0.0011437139063019714
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.11153626520909647,
+    "pressure_point_count": 261,
+    "pressure_nrmse": 0.03127133007709535,
+    "pressure_peak_relative_error": 0.0116280147877841,
+    "pressure_peak_location_relative_error": 0.026905829596412578
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 17.714208843114815,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.003139626161237197,
+    "computed_peak_eta": 0.5045750405496622,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.008108825339763832
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_connected_true_double80_root004_r20_cfl0125_probe24_v146\\coupled_checkpoint.json"
+}

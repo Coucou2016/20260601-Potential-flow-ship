@@ -1,0 +1,123 @@
+{
+  "status": "self_similar_vector_aitken_rejected",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_transformation": false,
+  "qualification": {
+    "result": "REJECTED",
+    "reason": "At least three matching-surface resets, or eight states with explicit zero/smooth shifts and non-jumping topology, are required to infer a phase.",
+    "limits": {
+      "maximum_convergence_factor": 0.9,
+      "maximum_interval_ratio": 1.25,
+      "maximum_node_displacement_ratio": 4.0,
+      "clip_to_displacement_limit": false,
+      "maximum_candidate_residual_ratio": 0.9,
+      "candidate_residual_metric": "Iafrati 2013 Eq. (52) integral K",
+      "maximum_condition_number_ratio": 5.0,
+      "matching_surface_minimum_relative_jump": 0.05,
+      "matching_surface_periods_must_match": true,
+      "matching_surface_phases_must_match": true
+    }
+  },
+  "sources": [
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_19p5deg_n80_jet128_resume60_v367",
+      "completed_iterations": 70,
+      "cumulative_pseudo_time": 0.0613000306012306,
+      "source_hashes": {
+        "coupled_checkpoint.json": "04b251dc41e5ee9b5d969421d60d01b78488c60bab31d004b4ed6ead576b6fd4",
+        "coupled_checkpoint_outer_nodes.csv": "4303a9a81ea190580436d65a8e7f7307d92134963a7601087e842ca6549c9582",
+        "coupled_pseudo_time_history.csv": "12320377e3805fa092684c63a411c3ae029b2d4644fc3f41044cc218ad40e67d"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 0.0,
+        "kinematic_integral": 0.0,
+        "kinematic_length_weighted_rms": 0.0,
+        "solved_dipole_coefficient": 0.0,
+        "bem_condition_number": 0.0,
+        "body_pressure_min": 0.0,
+        "body_pressure_max": 0.0,
+        "body_vertical_force_coefficient": 0.0,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 0.0,
+        "root_thickness": 0.0,
+        "root_xi": 0.0,
+        "root_eta": 0.0,
+        "kinematic_integral_linear_exact": 0.0,
+        "history_kinematic_rms": 4.163336342344337e-17,
+        "history_solved_dipole": 0.0,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "UNAVAILABLE",
+        "reason": "At least three matching-surface resets, or eight states with explicit zero/smooth shifts and non-jumping topology, are required to infer a phase."
+      }
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_19p5deg_n80_jet128_cfl0125_resume10_v372",
+      "completed_iterations": 80,
+      "cumulative_pseudo_time": 0.0663970688778734,
+      "source_hashes": {
+        "coupled_checkpoint.json": "d5385015d9ecdfbd844e5ef92861524108dae743910329c83306b3f4bdcb246b",
+        "coupled_checkpoint_outer_nodes.csv": "b57d44f49416073b8743daac9c6e2100dfb23e9c46153c687b04b7226bce548a",
+        "coupled_pseudo_time_history.csv": "494b21bda60d18c46a863ea2c54f9b2c5c9c0d1d253757901e22444f158e7cc7"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 0.0,
+        "kinematic_integral": 0.0,
+        "kinematic_length_weighted_rms": 0.0,
+        "solved_dipole_coefficient": 0.0,
+        "bem_condition_number": 0.0,
+        "body_pressure_min": 0.0,
+        "body_pressure_max": 0.0,
+        "body_vertical_force_coefficient": 0.0,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 0.0,
+        "root_thickness": 0.0,
+        "root_xi": 0.0,
+        "root_eta": 0.0,
+        "kinematic_integral_linear_exact": 0.0,
+        "history_kinematic_rms": 5.551115123125783e-17,
+        "history_solved_dipole": 0.0,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "UNAVAILABLE",
+        "reason": "At least three matching-surface resets, or eight states with explicit zero/smooth shifts and non-jumping topology, are required to infer a phase."
+      }
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_19p5deg_n80_jet128_cfl0125_resume10_v373",
+      "completed_iterations": 90,
+      "cumulative_pseudo_time": 0.0714905759747186,
+      "source_hashes": {
+        "coupled_checkpoint.json": "ea9b93f7e21e8907ba93bf27cd3182ad9f8b2a1e06467a4edb707403a3d9fb82",
+        "coupled_checkpoint_outer_nodes.csv": "010b31fa59afc065e3f7809222e1d1969268afd5ec3f37f657c465ed337d67c8",
+        "coupled_pseudo_time_history.csv": "a8d370b184d7db5ee1b2b4e2de76b5c178003f5bd2f4aa066a8833b473229025"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 0.0,
+        "kinematic_integral": 0.0,
+        "kinematic_length_weighted_rms": 0.0,
+        "solved_dipole_coefficient": 0.0,
+        "bem_condition_number": 0.0,
+        "body_pressure_min": 0.0,
+        "body_pressure_max": 0.0,
+        "body_vertical_force_coefficient": 0.0,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 0.0,
+        "root_thickness": 0.0,
+        "root_xi": 0.0,
+        "root_eta": 0.0,
+        "kinematic_integral_linear_exact": 0.0,
+        "history_kinematic_rms": 6.245004513516506e-17,
+        "history_solved_dipole": 0.0,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "UNAVAILABLE",
+        "reason": "At least three matching-surface resets, or eight states with explicit zero/smooth shifts and non-jumping topology, are required to infer a phase."
+      }
+    }
+  ]
+}

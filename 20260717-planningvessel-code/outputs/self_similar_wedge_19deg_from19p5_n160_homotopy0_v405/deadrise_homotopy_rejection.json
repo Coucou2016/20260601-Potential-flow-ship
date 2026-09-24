@@ -1,0 +1,41 @@
+{
+  "status": "self_similar_deadrise_homotopy_rejected",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_transformation": false,
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_19p5deg_n160_jet256_dct64_preserve_curvature_trust1_v400",
+  "source_deadrise_deg": 19.5,
+  "target_deadrise_deg": 19.0,
+  "trials": [
+    {
+      "root_xi_scale": 1.0,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The deadrise homotopy lost outer-node xi ordering."
+    },
+    {
+      "root_xi_scale": 0.995,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The deadrise homotopy lost outer-node xi ordering."
+    },
+    {
+      "root_xi_scale": 0.99,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The deadrise homotopy lost outer-node xi ordering."
+    },
+    {
+      "root_xi_scale": 0.98,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The deadrise homotopy lost outer-node xi ordering."
+    },
+    {
+      "root_xi_scale": 0.97,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The deadrise homotopy lost outer-node xi ordering."
+    },
+    {
+      "root_xi_scale": 0.95,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The deadrise homotopy lost outer-node xi ordering."
+    }
+  ]
+}

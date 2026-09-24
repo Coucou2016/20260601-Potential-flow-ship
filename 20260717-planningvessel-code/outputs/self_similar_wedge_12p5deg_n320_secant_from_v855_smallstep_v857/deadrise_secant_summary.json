@@ -1,0 +1,17 @@
+{
+  "status": "self_similar_deadrise_secant_predictor_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "previous_deadrise_deg": 13.0,
+  "current_deadrise_deg": 12.75,
+  "target_deadrise_deg": 12.5,
+  "parameter_ratio": 1.0,
+  "tangential_fraction": 0.980874628721148,
+  "initial_formal_exact_objective": 0.00450585746419209,
+  "final_formal_exact_objective": 0.0043944642489666275,
+  "final_root_relative_mismatch": 2.970457728224651e-07,
+  "accepted": true,
+  "selected_step_factor": 0.075,
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_secant_from_v855_smallstep_v857\\coupled_checkpoint.json"
+}

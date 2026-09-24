@@ -1,0 +1,16 @@
+benchmark,summary_type,response_model,metric,case_count,pass_checks,fail_checks,model_limit_checks,median_abs_relative_error,max_abs_relative_error
+fridsma_regular_wave_amplitudes,model_metric,frequency_domain_linear_rao,heave_rao_m_per_m,5,2,3,0,0.38410626149683436,0.7751160808899477
+fridsma_regular_wave_amplitudes,model_metric,linear_rao_superposition,heave_rao_m_per_m,5,2,3,0,0.3831162816208015,0.7752189370626742
+fridsma_regular_wave_amplitudes,model_metric,frequency_domain_linear_rao,pitch_rao_rad_per_m,5,2,3,0,0.4149537849287535,0.7227821619127215
+fridsma_regular_wave_amplitudes,model_metric,linear_rao_superposition,pitch_rao_rad_per_m,5,2,3,0,0.41280576887117437,0.7229002390470773
+fridsma_regular_wave_amplitudes,model_metric,frequency_domain_linear_rao,cg_accel_g,5,2,3,0,0.43002253801304013,0.8087115053197644
+fridsma_regular_wave_amplitudes,model_metric,linear_rao_superposition,cg_accel_g,5,2,3,0,0.4289997165908069,0.808798995801642
+fridsma_regular_wave_amplitudes,model_metric,frequency_domain_linear_rao,bow_accel_g,5,3,2,0,0.2129447530823434,0.8323028008481993
+fridsma_regular_wave_amplitudes,model_metric,linear_rao_superposition,bow_accel_g,5,3,2,0,0.21407587848576648,0.8323793593942198
+fridsma_regular_wave_amplitudes,model_metric,nonlinear_time_domain,heave_rao_m_per_m,5,2,3,0,0.31006455799465926,11.456634994554053
+fridsma_regular_wave_amplitudes,model_metric,nonlinear_time_domain,pitch_rao_rad_per_m,5,2,3,0,0.35344933567296244,7.388647079580753
+fridsma_regular_wave_amplitudes,model_metric,nonlinear_time_domain,cg_accel_g,5,2,3,0,0.40186315440267656,11.541185610035576
+fridsma_regular_wave_amplitudes,model_metric,nonlinear_time_domain,bow_accel_g,5,2,3,0,0.5346159948815655,21.307570565998674
+fridsma_regular_wave_amplitudes,model_overall,frequency_domain_linear_rao,all,20,9,11,0,0.39953002321279396,0.8323028008481993
+fridsma_regular_wave_amplitudes,model_overall,linear_rao_superposition,all,20,9,11,0,0.397961025245988,0.8323793593942198
+fridsma_regular_wave_amplitudes,model_overall,nonlinear_time_domain,all,20,8,12,0,0.37765624503781947,21.307570565998674

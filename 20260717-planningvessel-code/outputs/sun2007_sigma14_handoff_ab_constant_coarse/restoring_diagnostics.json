@@ -1,0 +1,19 @@
+{
+  "mode": "zero",
+  "response_calibration_used": false,
+  "numerical_configuration": {
+    "body_panels_per_side": 4,
+    "free_surface_panels_per_side": 5,
+    "bem_substeps_per_plane": 2,
+    "element_interpolation": "constant_panel",
+    "pressure_interpolation": "match_potential",
+    "knuckle_separation_model": "clamped",
+    "jet_cut_enabled": true,
+    "jet_cut_distance_fraction": 0.25,
+    "jet_cut_threshold_over_beam": null,
+    "jet_cut_threshold_m": null,
+    "free_surface_smoothing_enabled": false,
+    "free_surface_smoothing_node_count": 7,
+    "uniform_near_body_panels": 6
+  }
+}

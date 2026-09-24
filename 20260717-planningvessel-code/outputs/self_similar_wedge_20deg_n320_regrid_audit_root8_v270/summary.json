@@ -1,0 +1,57 @@
+{
+  "status": "diagnostic_only_solver_behavior_unchanged",
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_frozen320_monotonicjet_v265",
+  "completed_iterations_before_replay": 0,
+  "cumulative_pseudo_time_before_replay": 0.0,
+  "steps_requested": 8,
+  "steps_completed": 8,
+  "root_inner_iterations": 8,
+  "kinematic_integral_initial": 0.002831144046361038,
+  "kinematic_integral_final": 0.002865864757907111,
+  "kinematic_integral_minimum": 0.0027103805666742497,
+  "kinematic_integral_final_to_initial_ratio": 1.012263844925411,
+  "final_maintenance_to_raw_normal_ratio_median": 0.006568699139535062,
+  "final_maintenance_to_raw_normal_ratio_maximum": 0.0066338064259121145,
+  "final_net_to_raw_normal_ratio_median": 1.0926302291320216,
+  "final_normal_cancellation_fraction_median": -0.042999111747956384,
+  "kinematic_change_cancellation_correlation": -0.40855596405423145,
+  "reference_used_during_audit": false,
+  "last_step_diagnostics": {
+    "provisional": {
+      "effective_panel_shift": 0.0,
+      "full_panel_shifts": 0,
+      "fractional_panel_shift": 0.0,
+      "root_displacement_ratio": 0.0,
+      "bisection_iterations": 0,
+      "trigger_code": 0
+    },
+    "final": {
+      "effective_panel_shift": 0.0,
+      "full_panel_shifts": 0,
+      "fractional_panel_shift": 0.0,
+      "root_displacement_ratio": 0.0,
+      "bisection_iterations": 0,
+      "trigger_code": 0
+    },
+    "provisional_geometry_maintenance": {
+      "raw_normal_velocity_integral": 0.0019623032953064623,
+      "normal_velocity_integral": 1.3373913837672816e-05,
+      "tangential_velocity_integral": 1.4322955356353886e-09,
+      "net_normal_velocity_integral": 0.0021360248760019973,
+      "maximum_normal_displacement_ratio": 8.054426838609085e-05,
+      "normal_velocity_correlation": 0.4949032689113944,
+      "normal_cancellation_fraction": -0.040857003920186485
+    },
+    "final_geometry_maintenance": {
+      "raw_normal_velocity_integral": 0.002080785765987459,
+      "normal_velocity_integral": 1.3609028185326792e-05,
+      "tangential_velocity_integral": 1.5497962681723923e-09,
+      "net_normal_velocity_integral": 0.00226477544998919,
+      "maximum_normal_displacement_ratio": 8.488524624855552e-05,
+      "normal_velocity_correlation": 0.506247683499939,
+      "normal_cancellation_fraction": -0.04094142189009749
+    },
+    "rejected_attempt_count": 0
+  },
+  "history_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_n320_regrid_audit_root8_v270\\summary_history.csv"
+}

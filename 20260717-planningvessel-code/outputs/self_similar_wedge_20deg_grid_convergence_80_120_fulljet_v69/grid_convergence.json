@@ -1,0 +1,40 @@
+{
+  "status": "FAIL",
+  "scope": "spatial_grid_convergence_only",
+  "physical_validation_status": "FAIL",
+  "grid_level_count": 2,
+  "three_level_trend_established": false,
+  "same_frozen_source_checkpoint": true,
+  "same_pseudo_cfl": true,
+  "pseudo_time_relative_spread": 0.025544802925231192,
+  "pseudo_time_limit": 0.05,
+  "variation_limit": 0.05,
+  "geometry_limit": 0.001,
+  "regrid_qualification_pass": true,
+  "finest_pair": {
+    "coarse_panel_count": 80,
+    "fine_panel_count": 120,
+    "variations": {
+      "kinematic_rms_relative_change": 0.009956840889406064,
+      "root_body_eta_relative_change": 0.0008750626358363567,
+      "interface_s_lambda_relative_change": 0.026190747239561944,
+      "measured_s_lambda_relative_change": 0.048222780309784455,
+      "solved_dipole_coefficient_relative_change": 0.0004311737085480932,
+      "body_vertical_force_coefficient_relative_change": 0.001856802116965988,
+      "computed_pressure_peak_relative_change": 0.001003635947768182,
+      "computed_peak_eta_relative_change": 0.0009611125334371279,
+      "free_surface_nrmse_relative_change": 1.6435189724446353e-05,
+      "pressure_nrmse_relative_change": 0.002996753502629077,
+      "kinematic_rms_trajectory_relative_l2": 0.008252242857932642,
+      "root_body_eta_trajectory_relative_l2": 0.000615930771245001,
+      "free_surface_eta_relative_l2": 0.00038445985248867137,
+      "body_pressure_curve_relative_l2": 0.0023689331634181568,
+      "shallow_jet_pressure_curve_relative_l2": 0.10205692177790218
+    },
+    "root_mismatch_values": [
+      0.007897189982402733,
+      0.014906068620993832
+    ]
+  },
+  "interpretation": "PASS proves two-level spatial stability for the frozen state and matched continuation only. A third grid is needed for an observed order, and the wedge pressure benchmark remains failed."
+}

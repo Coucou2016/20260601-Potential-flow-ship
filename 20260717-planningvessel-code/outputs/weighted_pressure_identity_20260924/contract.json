@@ -1,0 +1,18 @@
+{
+  "length": 2.0,
+  "cutoffs": [
+    0.2,
+    0.37,
+    0.8
+  ],
+  "phi": "(2-x)*(1+0.5j)",
+  "N": "1+x",
+  "identity": "int_a^L phi_x*N = [phi*N]_a^L - int_a^L phi*N_x",
+  "scope": "Calculus counterexample, not validation of a replacement ship-load model",
+  "tolerance": 1e-12,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_weighted_pressure_identity.py": "34e6bc2b88f888ab7c3b453d23ac7a5e752bf1d4a8c41b6d3c0c06a8c9cdaf31",
+    "planing_seakeeping\\planing_frequency_correction.py": "e6c5b0eb29b64395f00fc3cd258c0fd4f74fee88f793a21d78947354f8a5ff67",
+    "planing_seakeeping\\quadrature.py": "16e478783c3f42a6e8d03a8602cfcd684ee6ed6c6463f4939d8b756986d4fc3b"
+  }
+}

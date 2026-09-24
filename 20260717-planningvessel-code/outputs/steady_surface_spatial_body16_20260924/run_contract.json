@@ -1,0 +1,36 @@
+{
+  "scope": "Existing steady 2Dt diagnostic rerun; not a matched linear baseflow or experimental acceptance",
+  "arguments": {
+    "out": "outputs\\steady_surface_spatial_body16_20260924",
+    "substeps": [
+      32
+    ],
+    "body_panels": 16,
+    "free_surface_panels": 20,
+    "uniform_near_body_panels": 6,
+    "smoothing_node_count": 7,
+    "smoothing": "on",
+    "knuckle_separation_model": "artificial_surface",
+    "pressure_interpolation": "constant_panel",
+    "jet_cut_distance_fraction": 0.25,
+    "jet_cut_threshold_over_beam": null,
+    "export_surface_history": true
+  },
+  "source_sha256": {
+    "scripts\\probe_sun2007_steady_planing_convergence.py": "de1ee6bd4d42600c1dc0e93cca14d5fffc339888204f6ea1b7e25c1430d08dfc",
+    "scripts\\steady_surface_snapshot.py": "2947b18796923bcb52d962ed0aede8219d0422aff550e5cf05214345e1155504",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\__init__.py": "f803ef7b7df3273b3995c6b12df3b0bc48bd47ad47599c98e1cf85d7e73121af",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\boundary_element.py": "6ad537709044c1c719965da7d0e6d1edfa8af322052a94e3bccb0ec77f57a383",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\free_surface.py": "1418a784fb3dd8b8caf8f5353e2544a5e8ed62cc7063503a36d66e07f986303a",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\moving_wedge.py": "4cd45d54c4c585716bef7a273a1de1c6a2b542d8114a9b72e6b783c28a64a2ae",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\plane_manager.py": "7ea6dda73685872711ee7489e753c614a77318d510e4131e8de379dd0a4ba13f",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\planing_forced_motion.py": "8e354821fb4cec4fbfa7b107b03c091bc2777e5fec28cd451d1eead53e12fdb6",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\planing_restoring.py": "e2d69720bd7874e4c25eb9c8425fb14adc942d92fa98ed1f59f5117ec5ca0a84",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\prescribed_motion.py": "a39893b03913cf502c15bbddf8f1017836cb5bcd2841f484ea5a1ba3cf5aa17e",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\section_geometry.py": "80208013ad8f6e5d92fb02fc4be49bd84014ac20464511521987d8243920aec1",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\self_similar_checkpoint.py": "0c52cf1e8f9c09b46b664a86391aa6da29d38ef151b4dfbe0d7cefe080e501ef",
+    "planing_seakeeping\\kernels\\nonlinear_2dt\\self_similar_wedge.py": "bfedb117d6ae31e507f6a75711e791da9c707f44ba26d2429b7d44dfe72b871e"
+  },
+  "response_calibration_used": false,
+  "physical_acceptance": "NOT_PASSED"
+}

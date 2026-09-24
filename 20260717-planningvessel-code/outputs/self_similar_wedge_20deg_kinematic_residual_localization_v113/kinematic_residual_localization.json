@@ -1,0 +1,88 @@
+{
+  "status": "self_similar_kinematic_residual_localization_diagnostic",
+  "validated": false,
+  "reference_used": false,
+  "metric": "Iafrati 2013 Eq. (52), K = integral(S_nu^2 ds)",
+  "source_hashes": {
+    "coupled_checkpoint.json": "d54dcfc78c185488e71c2bd88b3e9894e684bbbd949f197c616b52976735b790",
+    "coupled_checkpoint_outer_nodes.csv": "f5ffb07b749e421e625105f2b8a7e6a9be8415589e17a0020a73d2831877342a",
+    "coupled_pseudo_time_history.csv": "922ffff7546b82b5733ddca38ad811199c591c246967582300c740f676d80bc8"
+  },
+  "panel_count": 80,
+  "kinematic_integral": 0.004316822265118226,
+  "reconstruction_relative_error": 0.0,
+  "root_first_two_panels": {
+    "k_contribution": 0.0023388729182798537,
+    "k_fraction": 0.5418043122087628
+  },
+  "interior_excluding_root2_far8": {
+    "k_contribution": 0.0009722930390813104,
+    "k_fraction": 0.22523351191404264
+  },
+  "far_last_eight_panels": {
+    "k_contribution": 0.0010056563077570626,
+    "k_fraction": 0.2329621758771948
+  },
+  "arc_deciles": [
+    {
+      "normalized_arc_lower": 0.0,
+      "normalized_arc_upper": 0.1,
+      "k_contribution": 0.0026251670421394,
+      "k_fraction": 0.6081248846754417
+    },
+    {
+      "normalized_arc_lower": 0.1,
+      "normalized_arc_upper": 0.2,
+      "k_contribution": 6.479806397210058e-05,
+      "k_fraction": 0.015010593439460483
+    },
+    {
+      "normalized_arc_lower": 0.2,
+      "normalized_arc_upper": 0.30000000000000004,
+      "k_contribution": 6.961659006107878e-05,
+      "k_fraction": 0.016126814074234806
+    },
+    {
+      "normalized_arc_lower": 0.30000000000000004,
+      "normalized_arc_upper": 0.4,
+      "k_contribution": 0.00010871562287477871,
+      "k_fraction": 0.025184178592027647
+    },
+    {
+      "normalized_arc_lower": 0.4,
+      "normalized_arc_upper": 0.5,
+      "k_contribution": 0.00012094436493106104,
+      "k_fraction": 0.028016989698265632
+    },
+    {
+      "normalized_arc_lower": 0.5,
+      "normalized_arc_upper": 0.6000000000000001,
+      "k_contribution": 0.00018896363713449078,
+      "k_fraction": 0.043773782085354304
+    },
+    {
+      "normalized_arc_lower": 0.6000000000000001,
+      "normalized_arc_upper": 0.7000000000000001,
+      "k_contribution": 0.00021226757244344348,
+      "k_fraction": 0.049172182547022256
+    },
+    {
+      "normalized_arc_lower": 0.7000000000000001,
+      "normalized_arc_upper": 0.8,
+      "k_contribution": 0.00030461171261648165,
+      "k_fraction": 0.07056387636754816
+    },
+    {
+      "normalized_arc_lower": 0.8,
+      "normalized_arc_upper": 0.9,
+      "k_contribution": 0.0002729239331783354,
+      "k_fraction": 0.06322334263879191
+    },
+    {
+      "normalized_arc_lower": 0.9,
+      "normalized_arc_upper": 1.0,
+      "k_contribution": 0.0003488137257670561,
+      "k_fraction": 0.0808033558818533
+    }
+  ]
+}

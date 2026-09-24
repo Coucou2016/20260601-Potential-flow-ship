@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "gate": "W-1 self-similar 20-degree wedge-entry public-reference validation",
+  "reference_used_during_solve": false,
+  "evidence_class": "Public nonlinear numerical/self-similar references. This is not an experimental EFD closure; the Aarsnes free-drop experiment remains a separate future gate.",
+  "thresholds": {
+    "free_surface_nrmse_max": 0.1,
+    "pressure_nrmse_max": 0.15,
+    "pressure_peak_relative_error_max": 0.1,
+    "pressure_peak_location_relative_error_max": 0.1,
+    "vertical_force_relative_error_max": 0.1
+  },
+  "checks": {
+    "free_surface_shape": true,
+    "pressure_distribution": true,
+    "pressure_peak": true,
+    "pressure_peak_location": true,
+    "integrated_vertical_force": true
+  },
+  "metrics": {
+    "free_surface": {
+      "point_count": 56,
+      "rmse": 0.03144209109920734,
+      "nrmse_by_reference_range": 0.07313914114154076,
+      "mean_bias": -0.019891258533209794,
+      "maximum_absolute_error": 0.11793167729969584
+    },
+    "pressure_distribution": {
+      "point_count": 261,
+      "rmse": 1.772611565703374,
+      "nrmse_by_reference_range": 0.09982601975276895,
+      "mean_bias": -0.5652148211338464,
+      "maximum_absolute_error": 9.004666036178524
+    },
+    "pressure_peak_relative_error": 0.03257214976988997,
+    "pressure_peak_location_relative_error": 0.056869144060486584,
+    "computed_vertical_force_coefficient": 41.0456454122104,
+    "reference_vertical_force_coefficient_from_pressure_curve": 42.70667760234412,
+    "vertical_force_relative_error": 0.038893968891706814
+  },
+  "inputs": {
+    "candidate_pressure": {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_grid80_quadratic_root_aitken20_resume100_cfl025_v83\\coupled_body_pressure.csv",
+      "sha256": "97b78d3f3674530699961b8cc73688387d3bd68c73205145c902f711eaa19370"
+    },
+    "candidate_free_surface": {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_grid80_quadratic_root_aitken20_resume100_cfl025_v83\\coupled_checkpoint_outer_nodes.csv",
+      "sha256": "c8be094b15d9a4be954645010cbc966c3b1ba3588c6b579d38a3e90b37e0bfda"
+    },
+    "zhao_pressure_curve": {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_fig2_6_wedge_similarity\\fig2_6_zhao_faltinsen_similarity_curves.csv",
+      "sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46"
+    },
+    "iafrati_free_surface": {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\iafrati2013_self_similar_wedge\\iafrati2013_20deg_outer_free_surface.csv",
+      "sha256": "54a53cfdc09f771826f4542d9cb186140cf6ff8cdf0200883789c111dfd419ae"
+    },
+    "iafrati_table_1": {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\iafrati2013_self_similar_wedge\\table1_pressure_peak.csv",
+      "sha256": "e1e3441db748733a95c691d6029b5cb1791556bc2c0e033a4baf0575b34fb8f6"
+    }
+  },
+  "outputs": {
+    "figure": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\wedge_entry_public_validation_20260913\\wedge_entry_public_validation.png",
+    "free_surface_comparison": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\wedge_entry_public_validation_20260913\\free_surface_comparison.csv",
+    "pressure_comparison": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\wedge_entry_public_validation_20260913\\pressure_comparison.csv"
+  }
+}

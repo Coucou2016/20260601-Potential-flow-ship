@@ -1,0 +1,32 @@
+{
+  "physical_acceptance": "NOT_PASSED",
+  "counts": {
+    "COMPARED": 642
+  },
+  "refinement": "spatial",
+  "config_changes": {
+    "body_panels_per_side": [
+      12,
+      16
+    ],
+    "free_surface_panels_per_side": [
+      15,
+      20
+    ]
+  },
+  "scope": "Common-domain surface comparison only; excluded contact zones and unmatched states are not validated",
+  "metrics": "RMS uses 101 equally spaced horizontal samples per side; no potential gauge alignment fitted",
+  "hashes": {
+    "outputs\\steady_surface_history_20260924\\surface_smoothing_True_substeps_32.npz": "46a848dd162b92fce58dced85d17fbc81f6209d065ac46cd9d5f06ef43077584",
+    "outputs\\steady_surface_spatial_body16_20260924\\surface_smoothing_True_substeps_32.npz": "eb02d71609faadd725269cf61437f2a52049f6ca457722ea5dbc2251aa44158b",
+    "outputs\\steady_surface_history_20260924\\surface_smoothing_True_substeps_32.json": "79eb70af5acaa7e9b6790edb6f051bbd1f5dd197bd7587afb387a771121249c2",
+    "outputs\\steady_surface_spatial_body16_20260924\\surface_smoothing_True_substeps_32.json": "9568a68b0455c3b28ebc83fd0ae7ed3023e6bfa2c7ac9ef222aae9ff33c23db5",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\compare_steady_surface_history.py": "d8454d5a89238f642d9f4e420df1abfd5fe11741bffd619e0cd1720d5f84a1b7"
+  },
+  "maxima": {
+    "elevation_rms_over_beam": 0.014343843806284146,
+    "elevation_max_over_beam": 0.04171222331165433,
+    "potential_rms_over_speed_beam": 0.002297552583873785
+  },
+  "minimum_common_fraction_of_union": 0.9917373877330423
+}

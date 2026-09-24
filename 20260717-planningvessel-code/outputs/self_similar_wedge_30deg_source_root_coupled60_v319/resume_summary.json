@@ -1,0 +1,90 @@
+{
+  "status": "self_similar_coupled_resume_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_source_root_coupled20_v318",
+    "kind": "formal_v1",
+    "completed_iterations": 20,
+    "cumulative_pseudo_time": 0.0205726745008327,
+    "source_hashes": {
+      "coupled_checkpoint.json": "81c352999761de69d1c574792ce19a0a1e48ded224eb1b6526e9c1e272a434eb",
+      "coupled_checkpoint_outer_nodes.csv": "68e63895b5b744c396866431bf1f2892a8997a2a79fef206e66fb31a6fdd9b4e",
+      "coupled_pseudo_time_history.csv": "6afaaeb351a49f7bc631b5936b81518d91d7a8a60b096a58e3f54b4c35ea4e73"
+    },
+    "reconstruction_relative_errors": {
+      "kinematic_rms": 0.0,
+      "kinematic_integral": 0.0,
+      "kinematic_length_weighted_rms": 0.0,
+      "solved_dipole_coefficient": 0.0,
+      "bem_condition_number": 0.0,
+      "body_pressure_min": 0.0,
+      "body_pressure_max": 0.0,
+      "body_vertical_force_coefficient": 0.0,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 0.0,
+      "root_thickness": 0.0,
+      "root_xi": 0.0,
+      "root_eta": 0.0,
+      "kinematic_integral_linear_exact": 0.0,
+      "history_kinematic_rms": 0.0,
+      "history_solved_dipole": 0.0,
+      "history_interface_s_lambda": 0.0
+    },
+    "continuation_config_overrides": {}
+  },
+  "continuation": {
+    "requested_iterations": 40,
+    "accepted_iterations": 22,
+    "forced_fixed_steps": false,
+    "termination_reason": "NUMERICAL_FAILURE",
+    "failure_message": "Coupled pseudo-time RK2 could not construct a valid jet stage. Last stage error: The jet root requires thickness>0, S_lambda>0, S_tau<0 and delta_lambda>0.",
+    "completed_iterations": 42,
+    "cumulative_pseudo_time": 0.04465591596271987
+  },
+  "final_state": {
+    "kinematic_rms": 0.49855276621661304,
+    "kinematic_integral": 0.8040856844510281,
+    "kinematic_integral_linear_exact": 0.8313928215715667,
+    "kinematic_integral_endpoint_gradient": 0.02730713712053856,
+    "kinematic_convergence_integral": 0.8313928215715667,
+    "kinematic_length_weighted_rms": 0.21244504477164253,
+    "spray_root_corner_angle_deg": 106.62346657172114,
+    "spray_root_normal_derivative_sides": [
+      6.907373156709213,
+      6.907373156709213
+    ],
+    "solved_dipole_coefficient": 2.5145425021471595,
+    "bem_condition_number": 25779.549211524594,
+    "body_pressure_min": -2.323925415350544,
+    "body_pressure_max": 5.273894880244344,
+    "body_vertical_force_coefficient": 9.48769743863979,
+    "interface_s_lambda": 2.1269651851675313,
+    "measured_s_lambda": 2.6423027568927884,
+    "relative_s_lambda_mismatch": 0.2422877324551348,
+    "jet_reached_tip": true,
+    "jet_point_count": 241,
+    "jet_tip_thickness": 4.3601183343830975e-06,
+    "jet_tip_s_lambda": 0.0009329838272711713
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 30.0,
+    "free_surface_point_count": 38,
+    "free_surface_nrmse": 0.2696873600357759,
+    "pressure_point_count": 236,
+    "pressure_nrmse": 0.4236948725665725,
+    "pressure_peak_relative_error": 0.2241177365607463,
+    "pressure_peak_location_relative_error": 0.6162790697674417
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 30.0,
+    "computed_pressure_peak": 5.273894880244344,
+    "reference_pressure_peak": 6.927,
+    "pressure_peak_relative_error": 0.23864661754809519,
+    "computed_peak_eta": 0.1596769398942769,
+    "reference_peak_eta": 0.4243,
+    "pressure_peak_location_relative_error": 0.6236697150735874
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_source_root_coupled60_v319\\coupled_checkpoint.json"
+}

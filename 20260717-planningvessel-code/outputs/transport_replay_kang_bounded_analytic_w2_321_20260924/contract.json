@@ -1,0 +1,16 @@
+{
+  "stage_acceptance": false,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_implicit_pressure.py": "13f55e1ac399f898aa1b746fbcf963511623279061406b01ce5bdbd9ffb1da5f",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\curved_trace_pressure_diagnostic.py": "0211f5229f227c5c7dcd976b1792a40328f078dbd49e542c0ee636434c36fd51",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\integrated_trace_transport.py": "ea471a15dd4d165fbd2654c813933fa4bc7229847013d256608324e5886211f9",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_contact_trace.py": "bf8d5adb004ba81c8d64005a73d1fbfe6b3f00bed492ad17b8d165a8ac254763",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\kang_reference_geometry.py": "05a9d1195e8feaf18a1fdbb2c3fb20cb9d551604d92ee4d802f2f1e83ec5f8e7",
+    "outputs\\kang_bounded_analytic_w2_321_20260924\\contract.json": "259cfe82a9738f9e87b4de32cd1ba32ae13d6ef694426d8a01c8b673c354929b",
+    "outputs\\kang_bounded_analytic_w2_321_20260924\\fields.npz": "a7c6a143eadb979d48b880a0dc6576071216de384706161f486e4c860915f833"
+  },
+  "algebra_tolerance": 1e-10,
+  "experimental_response_read": false,
+  "scope": "Same saved potential, not a new diffraction solve or conservative pressure method",
+  "policy": "Subtract moving-trace chain term from saved phase-based derivative only"
+}

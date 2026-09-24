@@ -1,0 +1,29 @@
+{
+  "classification": "PHASE_ALIGNED_PLATEAU",
+  "physical_validation_status": "FAIL",
+  "event_definition": "root_thickness and root_resolution_ratio simultaneously increase by at least 5.0%",
+  "reset_count": 55,
+  "modal_cycle_length_steps": 4,
+  "complete_modal_cycle_count": 51,
+  "recent_cycle_count": 40,
+  "final_cycle_phase_index": 0,
+  "final_kinematic_rms": 0.0143702597080947,
+  "kinematic_tolerance": 0.001,
+  "recent_envelope_trend": {
+    "exponential_rate_per_pseudo_time": 0.018117999488022354,
+    "log_linear_r_squared": 0.0013342053258909026,
+    "relative_change_over_window": 0.0029065256063605105
+  },
+  "recent_reset_residual_jump": {
+    "mean_ratio": 1.0120656510004977,
+    "minimum_ratio": 0.9036490395467968,
+    "maximum_ratio": 1.0705334966487412
+  },
+  "zero_asymptote_exponential_projection": {
+    "estimated_additional_pseudo_time_to_tolerance": NaN,
+    "estimated_additional_steps_to_tolerance": NaN,
+    "assumption": "Diagnostic only: recent phase-aligned exponential decay continues unchanged toward zero. This projection is not an acceptance result."
+  },
+  "reference_used": false,
+  "interpretation": "Phase-aligned decay distinguishes slow convergence from the sawtooth introduced by discrete matching-surface resets. Only the original kinematic tolerance passes the physical prerequisite."
+}

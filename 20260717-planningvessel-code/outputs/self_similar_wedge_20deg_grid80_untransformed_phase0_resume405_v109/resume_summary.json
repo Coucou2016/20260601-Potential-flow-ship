@@ -1,0 +1,82 @@
+{
+  "status": "self_similar_coupled_resume_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_grid80_untransformed_phase0_resume404_v108",
+    "kind": "formal_v1",
+    "completed_iterations": 856,
+    "cumulative_pseudo_time": 0.8059550922829446,
+    "source_hashes": {
+      "coupled_checkpoint.json": "3ef20d8ea249e9426de1c8d22981b1e2995dbe801fe333728e47f59b9e986625",
+      "coupled_checkpoint_outer_nodes.csv": "d9fde16b62da64754df13a2f76ed58cf140e9534d9b1ed726c54285fa4f077ea",
+      "coupled_pseudo_time_history.csv": "e15276fca47302e6acfd4c1d3c89a263acabaef82a7bf10c8c3f98d550f44010"
+    },
+    "reconstruction_relative_errors": {
+      "kinematic_rms": 3.2775865355105793e-14,
+      "kinematic_integral": 1.1688566781131726e-14,
+      "kinematic_length_weighted_rms": 1.5758228055773316e-14,
+      "solved_dipole_coefficient": 7.114853248114494e-14,
+      "bem_condition_number": 1.6544086618383748e-14,
+      "body_pressure_min": 2.4584778657299466e-12,
+      "body_pressure_max": 2.6633908334567754e-15,
+      "body_vertical_force_coefficient": 3.0739697030699924e-14,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 1.8906142395023812e-13,
+      "root_thickness": 0.0,
+      "root_xi": 0.0,
+      "root_eta": 0.0,
+      "history_kinematic_rms": 3.274117088558626e-14,
+      "history_solved_dipole": 7.114853248115e-14,
+      "history_interface_s_lambda": 0.0
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.25
+    }
+  },
+  "continuation": {
+    "requested_iterations": 1,
+    "accepted_iterations": 1,
+    "termination_reason": "MAXIMUM_ITERATIONS",
+    "failure_message": null,
+    "completed_iterations": 857,
+    "cumulative_pseudo_time": 0.8069360339859154
+  },
+  "final_state": {
+    "kinematic_rms": 0.02904248294072709,
+    "kinematic_integral": 0.008830355245432391,
+    "kinematic_length_weighted_rms": 0.023646411868450106,
+    "solved_dipole_coefficient": 8.067624823272686,
+    "bem_condition_number": 69855.40986042128,
+    "body_pressure_min": -0.001891642752923417,
+    "body_pressure_max": 17.34829013070587,
+    "body_vertical_force_coefficient": 41.522571382384726,
+    "interface_s_lambda": 2.0739371054746956,
+    "measured_s_lambda": 2.0042614689779783,
+    "relative_s_lambda_mismatch": 0.033595829069642626,
+    "jet_reached_tip": true,
+    "jet_point_count": 514,
+    "jet_tip_thickness": 0.00010004810746031749,
+    "jet_tip_s_lambda": 0.005865918921411633
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.14577497322980165,
+    "pressure_point_count": 261,
+    "pressure_nrmse": 0.07410849630338374,
+    "pressure_peak_relative_error": 0.023649457932435385,
+    "pressure_peak_location_relative_error": 0.04484304932735411
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 17.34829013070587,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.02373156270647889,
+    "computed_peak_eta": 0.4871644303533397,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.04233451866848902
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_grid80_untransformed_phase0_resume405_v109\\coupled_checkpoint.json"
+}

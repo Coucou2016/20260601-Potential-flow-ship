@@ -1,0 +1,4 @@
+iteration,step_factor,exact_objective,exact_relative_decrease,low_mode_objective,predicted_low_mode_objective,trust_ratio,maximum_displacement_ratio,condition_number,condition_number_ratio,dipole_coefficient,root_relative_mismatch,accepted,rejection_reason
+1,1.0,,,,,,,,,,,False,"solver_failure:ValueError:The shallow-water root state has no physical first-step solution: f=0.0474566951968, S_lambda=4.07809154143, S_tau=-4.06810503223, delta_lambda=0.00832732033695."
+1,0.5,,,,,,,,,,,False,"solver_failure:ValueError:The shallow-water root state has no physical first-step solution: f=0.0474566951968, S_lambda=4.07809154143, S_tau=-4.06902799506, delta_lambda=0.00832683441584."
+1,0.25,,,,,,,,,,,False,"solver_failure:ValueError:The shallow-water root state has no physical first-step solution: f=0.0474566951968, S_lambda=4.07809154143, S_tau=-4.06948831177, delta_lambda=0.00832659204047."

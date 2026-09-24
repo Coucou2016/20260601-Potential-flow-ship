@@ -1,0 +1,18 @@
+{
+  "source": "Sun_2007_Eq7.46_to_7.47_checkpoint_reprocessing",
+  "timeseries": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_forced_motion_sigma14_heave_artificial_state_inheritance_short\\timeseries_sigma_1p4_heave.csv",
+  "timeseries_sha256": "3d5d48771fb948235959b019311032ab4894c94f9afd4f3b8abe5f8946592586",
+  "restoring_matrices": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_restoring_artificial_state_inheritance_body12_sub8\\restoring_matrices.csv",
+  "restoring_matrices_sha256": "0285abde9402142bdfe5b5e0aefdb219bdee9f503a5ce507b73205dbbf1965aa",
+  "sigma": 1.4,
+  "omega_rad_s": 7.774541989381373,
+  "motion_dof": "heave",
+  "motion_amplitude": 0.011448,
+  "discard_cycles": 0.5,
+  "retained_cycles": 1.5,
+  "beam_m": 0.318,
+  "lcg_from_transom_m": 0.46746,
+  "rho_water_kg_m3": 1000.0,
+  "gravity_m_s2": 9.80665,
+  "response_calibration_used": false
+}

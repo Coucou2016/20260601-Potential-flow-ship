@@ -1,0 +1,96 @@
+{
+  "status": "iafrati_2013_eq32_second_order_pseudo_time_diagnostic_unvalidated",
+  "solver_mode": "pseudo_time",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "config": {
+    "deadrise_deg": 20.0,
+    "far_radius": 20.0,
+    "free_surface_panels": 36,
+    "body_panels": 24,
+    "far_field_panels": 24,
+    "symmetry_panels": 16,
+    "free_surface_control_points": 9,
+    "jet_closure": "body_root",
+    "jet_control_panels": 1,
+    "gauss_order": 12,
+    "max_nfev": 60,
+    "optimizer_ftol": 1e-08,
+    "optimizer_xtol": 1e-08,
+    "optimizer_gtol": 1e-08,
+    "root_y_initial": null,
+    "root_z_initial": 0.36,
+    "maximum_free_surface_eta": 1.5,
+    "initial_dipole_coefficient": 4.0,
+    "preliminary_iterations": 8,
+    "preliminary_relative_tolerance": 0.0001,
+    "pseudo_cfl": 0.2,
+    "pseudo_max_iterations": 30,
+    "pseudo_kinematic_tolerance": 0.001,
+    "free_surface_panel_growth": 1.05,
+    "jet_angle_threshold_deg": 10.0
+  },
+  "final_kinematic_rms": 0.7625499902394896,
+  "bem_relative_residual": 1.7407440254226788e-15,
+  "bem_condition_number": 2033.9849317800274,
+  "flux_residual": -6.661338147750939e-16,
+  "dipole_coefficient": 5.672496135296144,
+  "tau_star": 3.205563482306559,
+  "root_xi": 3.216212470846451,
+  "root_eta": 0.17060560646386413,
+  "jet_control_normal_derivative": 0.0,
+  "body_vertical_force_coefficient": 23.907866620392113,
+  "preliminary_iteration": {
+    "status": "iafrati_2013_eq51_preliminary_dipole_iteration",
+    "converged": true,
+    "iteration_count": 6,
+    "initial_dipole_coefficient": 4.0,
+    "final_shape_dipole_coefficient": 5.693196948632664,
+    "final_solved_dipole_coefficient": 5.693603484389526,
+    "final_relative_change": 7.140728847603451e-05
+  },
+  "pseudo_time": {
+    "status": "iafrati_2013_eq32_second_order_pseudo_time_diagnostic_unvalidated",
+    "converged": false,
+    "termination_reason": "JET_MODEL_REQUIRED",
+    "failure_message": null,
+    "step_count": 2,
+    "final_pseudo_time": 0.014864520979059848,
+    "maximum_displacement_ratio": 0.1628414080079066,
+    "initial_root_angle_deg": 25.8734087394273,
+    "final_root_angle_deg": 9.562138470148977
+  },
+  "shallow_water_coupling": {
+    "status": "JET_MODEL_REQUIRED",
+    "reason": "The source-defined root angle threshold was reached; the outer BEM must next be coupled to the truncated or shallow-water jet equations."
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "free_surface_point_count": 84,
+    "free_surface_nrmse": 0.30117321464963304,
+    "pressure_point_count": 162,
+    "pressure_nrmse": 0.41993979928704656,
+    "pressure_peak_relative_error": 0.05809326324985988,
+    "pressure_peak_location_relative_error": 0.11320754716981145
+  },
+  "distributed_reference": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_fig2_6_wedge_similarity\\fig2_6_zhao_faltinsen_similarity_curves.csv",
+    "sha256": "27501c457dbe61fa2ad9c2bea020ed66780cb7ab6214f3c3f7317d045eb8c994",
+    "used_during_solve": false
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 20.0,
+    "computed_pressure_peak": 11.160455725550378,
+    "reference_pressure_peak": 17.77,
+    "pressure_peak_relative_error": 0.37194959338489714,
+    "computed_peak_eta": 0.14621798966253363,
+    "reference_peak_eta": 0.5087,
+    "pressure_peak_location_relative_error": 0.7125653830105492
+  },
+  "scalar_reference": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\iafrati2013_self_similar_wedge\\table1_pressure_peak.csv",
+    "sha256": "e1e3441db748733a95c691d6029b5cb1791556bc2c0e033a4baf0575b34fb8f6",
+    "used_during_solve": false
+  }
+}

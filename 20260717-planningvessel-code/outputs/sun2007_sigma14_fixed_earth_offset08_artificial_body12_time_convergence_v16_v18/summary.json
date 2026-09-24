@@ -1,0 +1,48 @@
+{
+  "schema": "sun2007_fixed_earth_time_convergence_v1",
+  "status": "FAIL",
+  "criterion": "all four raw adjacent relative changes must be <=5%; digitization uncertainty is diagnostic and does not replace the strict gate",
+  "latest_pair": [
+    "sub16",
+    "sub32"
+  ],
+  "relative_limit": 0.05,
+  "failed_coefficients": [
+    "A53"
+  ],
+  "response_calibration_used": false,
+  "inputs": [
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+      "sha256": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_offset08_artificial_body12_sub8_heave_v16_reprocessed_fig74\\identified_coefficients_reprocessed.csv",
+      "sha256": "e21d15d96d507c3209116a7cab511ac09980257f72616e1f938e487e212e5edb"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_offset08_artificial_body12_sub8_heave_v16\\run_diagnostics.json",
+      "sha256": "17a3b903f048f38783a82f4a79ac6663c20686919c9fb84a5032e38a17b0d0f4"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_offset08_artificial_body12_sub16_heave_v17_reprocessed_fig74\\identified_coefficients_reprocessed.csv",
+      "sha256": "4d72a5b2002f8f861652e6d59856256c85c89fb314aa5a9c42094c2a19184e4e"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_offset08_artificial_body12_sub16_heave_v17\\run_diagnostics.json",
+      "sha256": "273c57148585ce219e0f340bcb8a7ba03971b4693fa111efd76794be91fee12c"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_offset08_artificial_body12_sub32_heave_v18_reprocessed_fig74\\identified_coefficients_reprocessed.csv",
+      "sha256": "21888c682cff72d2ef02a809985627626a88b1e5946b011a01e52342298b35d0"
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_offset08_artificial_body12_sub32_heave_v18\\run_diagnostics.json",
+      "sha256": "852a08137648508c2486cb06c0b7082231b5d7707b7e114ef24bde83e1764220"
+    }
+  ],
+  "outputs": {
+    "coefficient_values": "coefficient_values.csv",
+    "adjacent_changes": "adjacent_changes.csv"
+  }
+}

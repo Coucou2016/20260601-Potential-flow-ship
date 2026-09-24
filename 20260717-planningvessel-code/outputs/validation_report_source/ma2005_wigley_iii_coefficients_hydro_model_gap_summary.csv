@@ -1,0 +1,3 @@
+benchmark,summary_type,coefficient,hydro_model,pass_checks,fail_checks,total_checks,pass_fraction,median_gate_error_ratio,max_gate_error_ratio,blocker_coefficients,recommendation,filter
+ma2005_wigley_iii_coefficients,overall_best,all,hybrid_forward_coupling,1,0,1,1.0,0.335151638065494,0.335151638065494,none,Best diagnostic model passes the selected side-by-side rows; this is still diagnostic unless the hard Ma gate is run and passes.,row_limit=1
+ma2005_wigley_iii_coefficients,coefficient_best,A33,hybrid_forward_coupling,1,0,1,1.0,0.335151638065494,,none,At least one diagnostic hydro model passes this coefficient subset; preserve it as a regression target.,row_limit=1

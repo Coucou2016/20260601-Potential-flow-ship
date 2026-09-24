@@ -1,0 +1,12 @@
+{
+  "classification": "DESCENDING_NOT_CONVERGED",
+  "physical_validation_status": "FAIL",
+  "kinematic_tolerance": 0.001,
+  "final_kinematic_rms": 0.2007097090883313,
+  "minimum_kinematic_rms": 0.2007097090883313,
+  "detected_topology_events": 35,
+  "complete_cycle_count": 29,
+  "recent_cycle_normalized_slope": -0.109969437830191,
+  "recent_cycle_relative_range": 0.10583990148634236,
+  "interpretation": "Only KINEMATIC_CONVERGED satisfies the residual prerequisite. DESCENDING_NOT_CONVERGED authorizes checkpoint continuation; a limit cycle requires event-model diagnosis rather than more steps."
+}

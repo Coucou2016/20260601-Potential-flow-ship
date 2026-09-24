@@ -1,0 +1,24 @@
+{
+  "benchmark": "Sun_2007_Table7.1_Fig7.4_eta3_zero_steady_base_flow",
+  "purpose": "numerical_diagnostic_not_a_Troesch_coefficient_acceptance",
+  "rows": [
+    {
+      "smoothing_enabled": true,
+      "substeps_per_plane_interval": 32,
+      "time_step_s": 0.0007775962305832998,
+      "body_panels_per_side": 16,
+      "free_surface_panels_per_side": 20,
+      "uniform_near_body_panel_count": 6,
+      "raw_vertical_force_coefficient": 0.14242883886909768,
+      "stern_corrected_vertical_force_coefficient": 0.09277370249137966,
+      "max_potential_bvp_relative_residual": 1.89235952777287e-15,
+      "max_pressure_bvp_relative_residual": 3.4142130317958704e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "maximum_jet_cut_count": 72,
+      "runtime_s": 49.304975500000005,
+      "response_calibration_used": false,
+      "raw_vertical_force_coefficient_change_from_previous_percent": null,
+      "stern_corrected_vertical_force_coefficient_change_from_previous_percent": null
+    }
+  ]
+}

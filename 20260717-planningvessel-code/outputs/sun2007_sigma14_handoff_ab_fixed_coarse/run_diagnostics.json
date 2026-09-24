@@ -1,0 +1,47 @@
+[
+  {
+    "sigma": 1.4,
+    "omega_rad_s": 7.774541989381373,
+    "time_step_s": 0.018007491655613262,
+    "ground_plane_interval_s": 0.036014983311226524,
+    "bem_substeps_per_ground_plane_interval": 2,
+    "station_timeseries_written": false,
+    "initial_leading_offset_over_beam": 0.8,
+    "target_identifier": "sun2007_troesch_prismatic_planing_hull",
+    "beam_m": 0.318,
+    "deadrise_deg": 20.0,
+    "trim_deg": 4.0,
+    "fn_b": 2.5,
+    "mean_wetted_length_over_b": 3.0,
+    "lcg_from_transom_m": 0.46746,
+    "rho_water_kg_m3": 1000.0,
+    "gravity_m_s2": 9.80665,
+    "matrix_coordinate_contract": "heave_up_pitch_bow_up_force_and_moment_about_cg",
+    "heave_minimum_active_planes": 6,
+    "heave_max_potential_residual": 1.2070684146393492e-15,
+    "heave_max_potential_condition_number": 38.497555227263014,
+    "heave_max_pressure_residual": 1.778519908500134e-15,
+    "heave_max_pressure_condition_number": 38.497555227263014,
+    "heave_max_front_length_m": 0.49780276642210186,
+    "heave_maximum_jet_cut_count_per_plane": 2,
+    "heave_minimum_jet_normal_distance_ratio": 0.34658899702257273,
+    "heave_minimum_jet_projection_ratio": 1.9061213487409063,
+    "heave_maximum_jet_projection_ratio": 6.284998475391415,
+    "heave_maximum_creation_draft_error_m": 0.01144688105585722,
+    "heave_wet_plane_removal_count": 45,
+    "heave_maximum_raw_transom_coverage_gap_m": 0.07950000000000013,
+    "longitudinal_bem_bin_labels": [
+      "aft_post_chine",
+      "middle_post_chine",
+      "forward_post_chine",
+      "pre_chine"
+    ],
+    "longitudinal_bem_bin_edges_m": [
+      0.0,
+      0.2332,
+      0.4664,
+      0.6996,
+      1.2084
+    ]
+  }
+]

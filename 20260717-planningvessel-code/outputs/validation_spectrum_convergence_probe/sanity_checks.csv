@@ -1,0 +1,9 @@
+benchmark,metric,expected,actual,rel_error,tolerance,status,note
+numerical_sanity,regular_time_step_convergence_max_rms_change,<=5%,0.003752397616441385,0.003752397616441385,0.05,PASS,Worst RMS metric: bow_vertical_accel_mps2_rms; compared dt=0.08 s against dt=0.04 s for the small-wave Faltinsen prescribed case.
+numerical_sanity,irregular_spectrum_component_convergence_max_rms_change,<=5%,0.004346547869768379,0.004346547869768379,0.05,PASS,Worst spectral RMS metric: bow_vertical_accel_mps2_rms; compared 64 and 128 frequency components using response spectral moments; details in sanity_spectrum_convergence.csv.
+physical_trend_sanity,speed_sweep_equilibrium_converged,all true,"[True, True, True]",,,PASS,"Fn_B sweep: 2.0, 3.0, 4.0."
+physical_trend_sanity,speed_sweep_trim_range_deg,0.5 <= trim <= 16,"[6.6071, 7.457, 6.2103]",,,PASS,Trim should remain in a plausible planing-craft range for the demonstration hull.
+physical_trend_sanity,speed_sweep_positive_wetted_length,lambda_W > 0,"[4.7534, 3.6768, 3.2671]",,,PASS,Average wetted length ratio should remain positive.
+physical_trend_sanity,speed_sweep_mass_matrix_determinant_positive,all positive,"[8240126207.1916, 5083980907.0054, 4375185628.6444]",,,PASS,Total mass matrix determinant over Fn_B sweep.
+physical_trend_sanity,speed_sweep_rao_values_finite,all finite,"[True, True, True]",,,PASS,Frequency-domain RAOs over Fn_B sweep.
+physical_trend_sanity,speed_sweep_bow_accel_rao_increases_with_speed,nondecreasing,"[103.1512, 253.2844, 445.2324]",,,PASS,Peak bow vertical acceleration RAO should not drop materially as Fn_B rises from 2 to 4 in this head-sea example.

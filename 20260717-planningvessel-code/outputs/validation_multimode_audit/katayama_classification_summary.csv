@@ -1,0 +1,10 @@
+benchmark,metric,expected,actual,rel_error,tolerance,status,note
+katayama_regular_head_waves,katayama_classification_dataset_available,D:\Projects\20260601-Potential-flow-ship\20260717-planningvessel-code\benchmarks\katayama\jumping_classification_digitized.csv,loaded,,,PASS,Source-backed Table 1 / Fig. 7 classification cases are available.
+katayama_regular_head_waves,katayama_classification_case_count,>=3,3,,,PASS,Minimum useful gate: one non-jumping case and two jumping cases.
+katayama_regular_head_waves,no_jump_jumping_classification,non_jumping,non_jumping,,,PASS,"Fn_L=1.21, lambda/LOA=1.6, relative motion/draft=1.1, threshold=1.2; Screening classification: relative heave to transom draft, not a full flight/re-entry impact model."
+katayama_regular_head_waves,no_jump_equilibrium_converged,true,True,,,PASS,Solved trim=7.34 deg and lambda_W=1.82.
+katayama_regular_head_waves,regular_jump_jumping_classification,jumping,jumping,,,PASS,"Fn_L=3.63, lambda/LOA=3.59, relative motion/draft=1.37, threshold=1.2; Screening classification: relative heave to transom draft, not a full flight/re-entry impact model."
+katayama_regular_head_waves,regular_jump_equilibrium_converged,true,True,,,PASS,Solved trim=2.17 deg and lambda_W=1.55.
+katayama_regular_head_waves,irregular_jump_jumping_classification,jumping,jumping,,,PASS,"Fn_L=4.04, lambda/LOA=3.59, relative motion/draft=4.99, threshold=1.2; Screening classification: relative heave to transom draft, not a full flight/re-entry impact model."
+katayama_regular_head_waves,irregular_jump_equilibrium_converged,true,True,,,PASS,Solved trim=1.92 deg and lambda_W=1.54.
+katayama_regular_head_waves,katayama_classification_accuracy,1.0 for current source-backed Fig. 7 screening cases,1.0,,,PASS,This gate only checks clear jump/non-jump separation; amplitude validation still requires digitized motion and acceleration curves.

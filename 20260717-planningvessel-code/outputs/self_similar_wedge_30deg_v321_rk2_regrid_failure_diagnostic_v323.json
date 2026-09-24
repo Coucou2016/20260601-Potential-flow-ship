@@ -1,0 +1,803 @@
+{
+  "status": "rk2_first_stage_regrid_diagnostic",
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_source_root_no_predictor_coupled100_v321",
+  "initial_time_step": 0.0011547745437927304,
+  "old_geometry": {
+    "node_count": 81,
+    "root_xi": 2.242464434020834,
+    "root_eta": 0.27996859545691777,
+    "first_panel_length": 0.018329604717853602,
+    "first_body_tangent_projection": 1.6933179350017702e-08,
+    "minimum_body_tangent_projection": -0.0007320502861119663
+  },
+  "rows": [
+    {
+      "attempt": 0,
+      "time_step": 0.0011547745437927304,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2451005314898764,
+        "root_eta": 0.2818097853736885,
+        "first_panel_length": 0.016097813965352353,
+        "first_body_tangent_projection": -3.206640726709231e-05,
+        "minimum_body_tangent_projection": -0.0016515203521636325
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.26112220115409,
+        "root_eta": 0.2506922659743239,
+        "first_panel_length": 0.01956889304118572,
+        "first_body_tangent_projection": 0.005535511728850214,
+        "minimum_body_tangent_projection": 0.005535511728850214
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.26112220115409,
+        "root_eta": 0.2506922659743239,
+        "first_panel_length": 0.01956889304118572,
+        "first_body_tangent_projection": 0.005535511728850214,
+        "minimum_body_tangent_projection": 0.005535511728850214
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.26112220115409,
+        "root_eta": 0.2506922659743239,
+        "first_panel_length": 0.01956889304118572,
+        "first_body_tangent_projection": 0.005535511728850214,
+        "minimum_body_tangent_projection": 0.005535511728850214
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.26112220115409,
+        "root_eta": 0.2506922659743239,
+        "first_panel_length": 0.01828802393258587,
+        "first_body_tangent_projection": 0.005167023123809352,
+        "minimum_body_tangent_projection": 0.005167023123809352
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.26112220115409,
+        "root_eta": 0.2506922659743239,
+        "first_panel_length": 0.01828802393258587,
+        "first_body_tangent_projection": 0.005167023123809352,
+        "minimum_body_tangent_projection": 0.005167023123809352
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.26112220115409,
+        "root_eta": 0.2506922659743239,
+        "first_panel_length": 0.01828802393258587,
+        "first_body_tangent_projection": 0.005167023123809352,
+        "minimum_body_tangent_projection": 0.005167023123809352
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 1,
+      "time_step": 0.0005773872718963652,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.243782482755355,
+        "root_eta": 0.28088919041530314,
+        "first_panel_length": 0.017213700831680088,
+        "first_body_tangent_projection": -1.602473704407758e-05,
+        "minimum_body_tangent_projection": -0.001191785319137586
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.2608667611573274,
+        "root_eta": 0.24888273210007225,
+        "first_panel_length": 0.019884656292377068,
+        "first_body_tangent_projection": 0.0060132806002915875,
+        "minimum_body_tangent_projection": 0.0060132806002915875
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.2608667611573274,
+        "root_eta": 0.24888273210007225,
+        "first_panel_length": 0.019884656292377068,
+        "first_body_tangent_projection": 0.0060132806002915875,
+        "minimum_body_tangent_projection": 0.0060132806002915875
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.2608667611573274,
+        "root_eta": 0.24888273210007225,
+        "first_panel_length": 0.019884656292377068,
+        "first_body_tangent_projection": 0.0060132806002915875,
+        "minimum_body_tangent_projection": 0.0060132806002915875
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.2608667611573274,
+        "root_eta": 0.24888273210007225,
+        "first_panel_length": 0.01828673837752552,
+        "first_body_tangent_projection": 0.005523931850100707,
+        "minimum_body_tangent_projection": 0.005523931850100707
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.2608667611573274,
+        "root_eta": 0.24888273210007225,
+        "first_panel_length": 0.01828673837752552,
+        "first_body_tangent_projection": 0.005523931850100707,
+        "minimum_body_tangent_projection": 0.005523931850100707
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.2608667611573274,
+        "root_eta": 0.24888273210007225,
+        "first_panel_length": 0.01828673837752552,
+        "first_body_tangent_projection": 0.005523931850100707,
+        "minimum_body_tangent_projection": 0.005523931850100707
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 2,
+      "time_step": 0.0002886936359481826,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2431234583880943,
+        "root_eta": 0.28042889293611045,
+        "first_panel_length": 0.017771650847665795,
+        "first_body_tangent_projection": -8.00390193215865e-06,
+        "minimum_body_tangent_projection": -0.00096191780262479
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.260739041158946,
+        "root_eta": 0.2479779651629464,
+        "first_panel_length": 0.020045576324112673,
+        "first_body_tangent_projection": 0.006252165036012481,
+        "minimum_body_tangent_projection": 0.006252165036012481
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.260739041158946,
+        "root_eta": 0.2479779651629464,
+        "first_panel_length": 0.020045576324112673,
+        "first_body_tangent_projection": 0.006252165036012481,
+        "minimum_body_tangent_projection": 0.006252165036012481
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.260739041158946,
+        "root_eta": 0.2479779651629464,
+        "first_panel_length": 0.020045576324112673,
+        "first_body_tangent_projection": 0.006252165036012481,
+        "minimum_body_tangent_projection": 0.006252165036012481
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.260739041158946,
+        "root_eta": 0.2479779651629464,
+        "first_panel_length": 0.01828613755042188,
+        "first_body_tangent_projection": 0.005697363074759068,
+        "minimum_body_tangent_projection": 0.005697363074759068
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.260739041158946,
+        "root_eta": 0.2479779651629464,
+        "first_panel_length": 0.01828613755042188,
+        "first_body_tangent_projection": 0.005697363074759068,
+        "minimum_body_tangent_projection": 0.005697363074759068
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.260739041158946,
+        "root_eta": 0.2479779651629464,
+        "first_panel_length": 0.01828613755042188,
+        "first_body_tangent_projection": 0.005697363074759068,
+        "minimum_body_tangent_projection": 0.005697363074759068
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 3,
+      "time_step": 0.0001443468179740913,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2427939462044644,
+        "root_eta": 0.28019874419651414,
+        "first_panel_length": 0.01805062732332214,
+        "first_body_tangent_projection": -3.993484376610748e-06,
+        "minimum_body_tangent_projection": -0.0008469840443681926
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606751811597556,
+        "root_eta": 0.24752558169438346,
+        "first_panel_length": 0.02012677478545997,
+        "first_body_tangent_projection": 0.006371607253872557,
+        "minimum_body_tangent_projection": 0.006371607253872557
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606751811597556,
+        "root_eta": 0.24752558169438346,
+        "first_panel_length": 0.02012677478545997,
+        "first_body_tangent_projection": 0.006371607253872557,
+        "minimum_body_tangent_projection": 0.006371607253872557
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.2606751811597556,
+        "root_eta": 0.24752558169438346,
+        "first_panel_length": 0.02012677478545997,
+        "first_body_tangent_projection": 0.006371607253872557,
+        "minimum_body_tangent_projection": 0.006371607253872557
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.2606751811597556,
+        "root_eta": 0.24752558169438346,
+        "first_panel_length": 0.018285847436281578,
+        "first_body_tangent_projection": 0.0057828330176987785,
+        "minimum_body_tangent_projection": 0.0057828330176987785
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.2606751811597556,
+        "root_eta": 0.24752558169438346,
+        "first_panel_length": 0.018285847436281578,
+        "first_body_tangent_projection": 0.0057828330176987785,
+        "minimum_body_tangent_projection": 0.0057828330176987785
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.2606751811597556,
+        "root_eta": 0.24752558169438346,
+        "first_panel_length": 0.018285847436281578,
+        "first_body_tangent_projection": 0.0057828330176987785,
+        "minimum_body_tangent_projection": 0.0057828330176987785
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 4,
+      "time_step": 7.217340898704565e-05,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.242629190112649,
+        "root_eta": 0.28008366982671595,
+        "first_panel_length": 0.018190115908370854,
+        "first_body_tangent_projection": -1.988275598630365e-06,
+        "minimum_body_tangent_projection": -0.0007895171652400794
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.26064325116016,
+        "root_eta": 0.247299389960102,
+        "first_panel_length": 0.0201675560319353,
+        "first_body_tangent_projection": 0.0064313283628025806,
+        "minimum_body_tangent_projection": 0.0064313283628025806
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.26064325116016,
+        "root_eta": 0.247299389960102,
+        "first_panel_length": 0.0201675560319353,
+        "first_body_tangent_projection": 0.0064313283628025806,
+        "minimum_body_tangent_projection": 0.0064313283628025806
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.26064325116016,
+        "root_eta": 0.247299389960102,
+        "first_panel_length": 0.0201675560319353,
+        "first_body_tangent_projection": 0.0064313283628025806,
+        "minimum_body_tangent_projection": 0.0064313283628025806
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.26064325116016,
+        "root_eta": 0.247299389960102,
+        "first_panel_length": 0.01828570492635344,
+        "first_body_tangent_projection": 0.005825257995237916,
+        "minimum_body_tangent_projection": 0.005825257995237916
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.26064325116016,
+        "root_eta": 0.247299389960102,
+        "first_panel_length": 0.01828570492635344,
+        "first_body_tangent_projection": 0.005825257995237916,
+        "minimum_body_tangent_projection": 0.005825257995237916
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.26064325116016,
+        "root_eta": 0.247299389960102,
+        "first_panel_length": 0.01828570492635344,
+        "first_body_tangent_projection": 0.005825257995237916,
+        "minimum_body_tangent_projection": 0.005825257995237916
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 5,
+      "time_step": 3.6086704493522824e-05,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2425468120667413,
+        "root_eta": 0.28002613264181686,
+        "first_panel_length": 0.01825986028537955,
+        "first_body_tangent_projection": -9.856712094476194e-07,
+        "minimum_body_tangent_projection": -0.0007607837256760229
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606272861603625,
+        "root_eta": 0.24718629409296128,
+        "first_panel_length": 0.020187991837757917,
+        "first_body_tangent_projection": 0.006461188917267977,
+        "minimum_body_tangent_projection": 0.006461188917267977
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606272861603625,
+        "root_eta": 0.24718629409296128,
+        "first_panel_length": 0.020187991837757917,
+        "first_body_tangent_projection": 0.006461188917267977,
+        "minimum_body_tangent_projection": 0.006461188917267977
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.2606272861603625,
+        "root_eta": 0.24718629409296128,
+        "first_panel_length": 0.020187991837757917,
+        "first_body_tangent_projection": 0.006461188917267977,
+        "minimum_body_tangent_projection": 0.006461188917267977
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.2606272861603625,
+        "root_eta": 0.24718629409296128,
+        "first_panel_length": 0.018285634304492683,
+        "first_body_tangent_projection": 0.005846393172859209,
+        "minimum_body_tangent_projection": 0.005846393172859209
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.2606272861603625,
+        "root_eta": 0.24718629409296128,
+        "first_panel_length": 0.018285634304492683,
+        "first_body_tangent_projection": 0.005846393172859209,
+        "minimum_body_tangent_projection": 0.005846393172859209
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.2606272861603625,
+        "root_eta": 0.24718629409296128,
+        "first_panel_length": 0.018285634304492683,
+        "first_body_tangent_projection": 0.005846393172859209,
+        "minimum_body_tangent_projection": 0.005846393172859209
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 6,
+      "time_step": 1.8043352246761412e-05,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2425056230437876,
+        "root_eta": 0.2799973640493673,
+        "first_panel_length": 0.01829473249472305,
+        "first_body_tangent_projection": -4.84369015063546e-07,
+        "minimum_body_tangent_projection": -0.0007464170058939738
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606193036604636,
+        "root_eta": 0.24712974615939093,
+        "first_panel_length": 0.020198220996337377,
+        "first_body_tangent_projection": 0.006476119194500277,
+        "minimum_body_tangent_projection": 0.006476119194500277
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606193036604636,
+        "root_eta": 0.24712974615939093,
+        "first_panel_length": 0.020198220996337377,
+        "first_body_tangent_projection": 0.006476119194500277,
+        "minimum_body_tangent_projection": 0.006476119194500277
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.2606193036604636,
+        "root_eta": 0.24712974615939093,
+        "first_panel_length": 0.020198220996337377,
+        "first_body_tangent_projection": 0.006476119194500277,
+        "minimum_body_tangent_projection": 0.006476119194500277
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.2606193036604636,
+        "root_eta": 0.24712974615939093,
+        "first_panel_length": 0.018285599151365343,
+        "first_body_tangent_projection": 0.005856941457870417,
+        "minimum_body_tangent_projection": 0.005856941457870417
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.2606193036604636,
+        "root_eta": 0.24712974615939093,
+        "first_panel_length": 0.018285599151365343,
+        "first_body_tangent_projection": 0.005856941457870417,
+        "minimum_body_tangent_projection": 0.005856941457870417
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.2606193036604636,
+        "root_eta": 0.24712974615939093,
+        "first_panel_length": 0.018285599151365343,
+        "first_body_tangent_projection": 0.005856941457870417,
+        "minimum_body_tangent_projection": 0.005856941457870417
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 7,
+      "time_step": 9.021676123380706e-06,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.242485028532311,
+        "root_eta": 0.2799829797531425,
+        "first_panel_length": 0.018312168604569835,
+        "first_body_tangent_projection": -2.33717917842019e-07,
+        "minimum_body_tangent_projection": -0.0007392336460033616
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.260615312410514,
+        "root_eta": 0.24710147219260573,
+        "first_panel_length": 0.020203338384559563,
+        "first_body_tangent_projection": 0.006483584333117025,
+        "minimum_body_tangent_projection": 0.006483584333117025
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.260615312410514,
+        "root_eta": 0.24710147219260573,
+        "first_panel_length": 0.020203338384559563,
+        "first_body_tangent_projection": 0.006483584333117025,
+        "minimum_body_tangent_projection": 0.006483584333117025
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.260615312410514,
+        "root_eta": 0.24710147219260573,
+        "first_panel_length": 0.020203338384559563,
+        "first_body_tangent_projection": 0.006483584333117025,
+        "minimum_body_tangent_projection": 0.006483584333117025
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.260615312410514,
+        "root_eta": 0.24710147219260573,
+        "first_panel_length": 0.018285581614192793,
+        "first_body_tangent_projection": 0.005862210777460636,
+        "minimum_body_tangent_projection": 0.005862210777460636
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.260615312410514,
+        "root_eta": 0.24710147219260573,
+        "first_panel_length": 0.018285581614192793,
+        "first_body_tangent_projection": 0.005862210777460636,
+        "minimum_body_tangent_projection": 0.005862210777460636
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.260615312410514,
+        "root_eta": 0.24710147219260573,
+        "first_panel_length": 0.018285581614192793,
+        "first_body_tangent_projection": 0.005862210777460636,
+        "minimum_body_tangent_projection": 0.005862210777460636
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 8,
+      "time_step": 4.510838061690353e-06,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2424747312765723,
+        "root_eta": 0.27997578760503017,
+        "first_panel_length": 0.01832088666078274,
+        "first_body_tangent_projection": -1.083923692607458e-07,
+        "minimum_body_tangent_projection": -0.0007356419660574714
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606133167855393,
+        "root_eta": 0.24708733520921314,
+        "first_panel_length": 0.020205897780280778,
+        "first_body_tangent_projection": 0.0064873169024248145,
+        "minimum_body_tangent_projection": 0.0064873169024248145
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606133167855393,
+        "root_eta": 0.24708733520921314,
+        "first_panel_length": 0.020205897780280778,
+        "first_body_tangent_projection": 0.0064873169024248145,
+        "minimum_body_tangent_projection": 0.0064873169024248145
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.2606133167855393,
+        "root_eta": 0.24708733520921314,
+        "first_panel_length": 0.020205897780280778,
+        "first_body_tangent_projection": 0.0064873169024248145,
+        "minimum_body_tangent_projection": 0.0064873169024248145
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.2606133167855393,
+        "root_eta": 0.24708733520921314,
+        "first_panel_length": 0.018285572855446356,
+        "first_body_tangent_projection": 0.005864844231907273,
+        "minimum_body_tangent_projection": 0.005864844231907273
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.2606133167855393,
+        "root_eta": 0.24708733520921314,
+        "first_panel_length": 0.018285572855446356,
+        "first_body_tangent_projection": 0.005864844231907273,
+        "minimum_body_tangent_projection": 0.005864844231907273
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.2606133167855393,
+        "root_eta": 0.24708733520921314,
+        "first_panel_length": 0.018285572855446356,
+        "first_body_tangent_projection": 0.005864844231907273,
+        "minimum_body_tangent_projection": 0.005864844231907273
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 9,
+      "time_step": 2.2554190308451765e-06,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2424695826487033,
+        "root_eta": 0.27997219153097397,
+        "first_panel_length": 0.01832524568921097,
+        "first_body_tangent_projection": -4.57295949406189e-08,
+        "minimum_body_tangent_projection": -0.0007338461260849244
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.260612318973052,
+        "root_eta": 0.24708026671751684,
+        "first_panel_length": 0.020207177653466607,
+        "first_body_tangent_projection": 0.006489183187079102,
+        "minimum_body_tangent_projection": 0.006489183187079102
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.260612318973052,
+        "root_eta": 0.24708026671751684,
+        "first_panel_length": 0.020207177653466607,
+        "first_body_tangent_projection": 0.006489183187079102,
+        "minimum_body_tangent_projection": 0.006489183187079102
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.260612318973052,
+        "root_eta": 0.24708026671751684,
+        "first_panel_length": 0.020207177653466607,
+        "first_body_tangent_projection": 0.006489183187079102,
+        "minimum_body_tangent_projection": 0.006489183187079102
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.260612318973052,
+        "root_eta": 0.24708026671751684,
+        "first_panel_length": 0.018285568478532643,
+        "first_body_tangent_projection": 0.005866160657842183,
+        "minimum_body_tangent_projection": 0.005866160657842183
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.260612318973052,
+        "root_eta": 0.24708026671751684,
+        "first_panel_length": 0.018285568478532643,
+        "first_body_tangent_projection": 0.005866160657842183,
+        "minimum_body_tangent_projection": 0.005866160657842183
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.260612318973052,
+        "root_eta": 0.24708026671751684,
+        "first_panel_length": 0.018285568478532643,
+        "first_body_tangent_projection": 0.005866160657842183,
+        "minimum_body_tangent_projection": 0.005866160657842183
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 10,
+      "time_step": 1.1277095154225882e-06,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.2424670083347684,
+        "root_eta": 0.27997039349394587,
+        "first_panel_length": 0.018327425203505637,
+        "first_body_tangent_projection": -1.4398207617491443e-08,
+        "minimum_body_tangent_projection": -0.0007329482060982389
+      },
+      "nonoutward_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606118200668086,
+        "root_eta": 0.2470767324716687,
+        "first_panel_length": 0.02020781763388055,
+        "first_body_tangent_projection": 0.0064901163294056536,
+        "minimum_body_tangent_projection": 0.0064901163294056536
+      },
+      "angle_trim": {
+        "node_count": 79,
+        "root_xi": 2.2606118200668086,
+        "root_eta": 0.2470767324716687,
+        "first_panel_length": 0.02020781763388055,
+        "first_body_tangent_projection": 0.0064901163294056536,
+        "minimum_body_tangent_projection": 0.0064901163294056536
+      },
+      "smoothing": {
+        "node_count": 79,
+        "root_xi": 2.2606118200668086,
+        "root_eta": 0.2470767324716687,
+        "first_panel_length": 0.02020781763388055,
+        "first_body_tangent_projection": 0.0064901163294056536,
+        "minimum_body_tangent_projection": 0.0064901163294056536
+      },
+      "resample": {
+        "node_count": 81,
+        "root_xi": 2.2606118200668086,
+        "root_eta": 0.2470767324716687,
+        "first_panel_length": 0.018285566290690163,
+        "first_body_tangent_projection": 0.005866818795492653,
+        "minimum_body_tangent_projection": 0.005866818795492653
+      },
+      "root_reconstruction": {
+        "node_count": 81,
+        "root_xi": 2.2606118200668086,
+        "root_eta": 0.2470767324716687,
+        "first_panel_length": 0.018285566290690163,
+        "first_body_tangent_projection": 0.005866818795492653,
+        "minimum_body_tangent_projection": 0.005866818795492653
+      },
+      "resolution_relocation": {
+        "node_count": 81,
+        "root_xi": 2.2606118200668086,
+        "root_eta": 0.2470767324716687,
+        "first_panel_length": 0.018285566290690163,
+        "first_body_tangent_projection": 0.005866818795492653,
+        "minimum_body_tangent_projection": 0.005866818795492653
+      },
+      "status": "PASS"
+    },
+    {
+      "attempt": 11,
+      "time_step": 5.638547577112941e-07,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.242465721177801,
+        "root_eta": 0.2799694944754318,
+        "first_panel_length": 0.01832851496067279,
+        "first_body_tangent_projection": 1.2674856875866114e-09,
+        "minimum_body_tangent_projection": -0.0007324992461051026
+      },
+      "nonoutward_trim": {
+        "node_count": 81,
+        "root_xi": 2.242465721177801,
+        "root_eta": 0.2799694944754318,
+        "first_panel_length": 0.01832851496067279,
+        "first_body_tangent_projection": 1.2674856875866114e-09,
+        "minimum_body_tangent_projection": -0.0007324992461051026
+      },
+      "angle_trim": {
+        "node_count": 81,
+        "root_xi": 2.242465721177801,
+        "root_eta": 0.2799694944754318,
+        "first_panel_length": 0.01832851496067279,
+        "first_body_tangent_projection": 1.2674856875866114e-09,
+        "minimum_body_tangent_projection": -0.0007324992461051026
+      },
+      "smoothing": {
+        "node_count": 81,
+        "root_xi": 2.242465721177801,
+        "root_eta": 0.2799694944754318,
+        "first_panel_length": 0.01832851496067279,
+        "first_body_tangent_projection": 1.2674856875866114e-09,
+        "minimum_body_tangent_projection": -0.0007324992461051026
+      },
+      "status": "FAIL",
+      "failed_stage": "resample",
+      "reason": "Coupled pseudo-time reversed the first bulk free-surface panel."
+    },
+    {
+      "attempt": 12,
+      "time_step": 2.8192737885564706e-07,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.242465077599318,
+        "root_eta": 0.2799690449661748,
+        "first_panel_length": 0.01832905983926141,
+        "first_body_tangent_projection": 9.10033232624785e-09,
+        "minimum_body_tangent_projection": -0.0007322747661083493
+      },
+      "nonoutward_trim": {
+        "node_count": 81,
+        "root_xi": 2.242465077599318,
+        "root_eta": 0.2799690449661748,
+        "first_panel_length": 0.01832905983926141,
+        "first_body_tangent_projection": 9.10033232624785e-09,
+        "minimum_body_tangent_projection": -0.0007322747661083493
+      },
+      "angle_trim": {
+        "node_count": 81,
+        "root_xi": 2.242465077599318,
+        "root_eta": 0.2799690449661748,
+        "first_panel_length": 0.01832905983926141,
+        "first_body_tangent_projection": 9.10033232624785e-09,
+        "minimum_body_tangent_projection": -0.0007322747661083493
+      },
+      "smoothing": {
+        "node_count": 81,
+        "root_xi": 2.242465077599318,
+        "root_eta": 0.2799690449661748,
+        "first_panel_length": 0.01832905983926141,
+        "first_body_tangent_projection": 9.10033232624785e-09,
+        "minimum_body_tangent_projection": -0.0007322747661083493
+      },
+      "status": "FAIL",
+      "failed_stage": "resample",
+      "reason": "Coupled pseudo-time reversed the first bulk free-surface panel."
+    },
+    {
+      "attempt": 13,
+      "time_step": 1.4096368942782353e-07,
+      "raw": {
+        "node_count": 81,
+        "root_xi": 2.242464755810076,
+        "root_eta": 0.2799688202115463,
+        "first_panel_length": 0.0183293322785572,
+        "first_body_tangent_projection": 1.3016756030687082e-08,
+        "minimum_body_tangent_projection": -0.000732162526110542
+      },
+      "nonoutward_trim": {
+        "node_count": 81,
+        "root_xi": 2.242464755810076,
+        "root_eta": 0.2799688202115463,
+        "first_panel_length": 0.0183293322785572,
+        "first_body_tangent_projection": 1.3016756030687082e-08,
+        "minimum_body_tangent_projection": -0.000732162526110542
+      },
+      "angle_trim": {
+        "node_count": 81,
+        "root_xi": 2.242464755810076,
+        "root_eta": 0.2799688202115463,
+        "first_panel_length": 0.0183293322785572,
+        "first_body_tangent_projection": 1.3016756030687082e-08,
+        "minimum_body_tangent_projection": -0.000732162526110542
+      },
+      "smoothing": {
+        "node_count": 81,
+        "root_xi": 2.242464755810076,
+        "root_eta": 0.2799688202115463,
+        "first_panel_length": 0.0183293322785572,
+        "first_body_tangent_projection": 1.3016756030687082e-08,
+        "minimum_body_tangent_projection": -0.000732162526110542
+      },
+      "status": "FAIL",
+      "failed_stage": "resample",
+      "reason": "Coupled pseudo-time reversed the first bulk free-surface panel."
+    }
+  ]
+}

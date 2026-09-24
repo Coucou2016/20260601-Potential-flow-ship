@@ -1,0 +1,19 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "used_for_acceptance": false,
+  "benchmark_role": "independent_EFD_digitization_not_acceptance_calibration",
+  "frequency_tolerance": 0.035,
+  "near_zero_floor": 0.1,
+  "computed_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_troesch_five_frequency_body12_sub16_acceptance_diagnostic_v6\\combined_identified_coefficients.csv",
+  "computed_csv_sha256": "4b3ee83ac705ad851171862ffde8f4733fc57e43126680e96296647e0b1df2ee",
+  "experiment_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\troesch1992_experimental_forced_motion_coefficients.csv",
+  "experiment_csv_sha256": "74284843c6cf16103908ed7b7a92eef132b09f26054d14e970aad116f62447de",
+  "comparison_csv_sha256": "52927dc556686be34ce035a18de67471f42d1305fd739ad5b7873f0b66a4f13f",
+  "metrics_csv_sha256": "e56ca7bd402ba628bf0c77c9dde2e95aabeb811a914012cd0526fa9801d75213",
+  "response_calibration_used": false,
+  "limitations": [
+    "Only isolated visible EXP markers are compared.",
+    "No response or coefficient multiplier is fitted.",
+    "Missing or near-zero points cannot pass or fail an acceptance threshold."
+  ]
+}

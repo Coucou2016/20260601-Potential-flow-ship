@@ -1,0 +1,34 @@
+{
+  "source_sha256": "32469402d6c945088c7e955118d0f72e324478c506e1f9918af740bfc409c3dc",
+  "driver_sha256": "b31a01f3b579115677a0153192c9865b6848166934978ee0f6e8387d5e30d342",
+  "arc_self_normal_correction": false,
+  "arc_order": 32,
+  "control_panels": 384,
+  "kernel_hashes": {
+    "formulation.py": "3246693b4e5978b3390c83173fb05bdecdcfaf90ec8680743544322737bbc6e7",
+    "panel_integrals.py": "c57315fcc70aed2d42ab005ec83fd09ac367631dd9a9f54f0e901708babf093e",
+    "arc_integrals.py": "756c54124a767b3759be59237a5c3bd0402ec908f0077a1a68c67fcc7f29e9bb"
+  },
+  "station_indices": [
+    12,
+    42,
+    80
+  ],
+  "free_counts": [
+    48,
+    72,
+    96
+  ],
+  "grading_exponents": [
+    1.0,
+    1.5
+  ],
+  "potentials": [
+    "linear_z",
+    "quadratic"
+  ],
+  "route": "analytic_straight_midpoint_curved",
+  "normalized_rms_limit": 0.02,
+  "normalization": "phi/R^degree, q/R^(degree-1)",
+  "scope": "Static Laplace mixed problem with exact outer Dirichlet data; not transient diffraction validation"
+}

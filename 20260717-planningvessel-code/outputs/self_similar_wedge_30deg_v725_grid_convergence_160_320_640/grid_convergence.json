@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "spatial_grid_convergence_only",
+  "physical_validation_status": "FAIL",
+  "grid_level_count": 3,
+  "three_level_trend_established": true,
+  "same_frozen_source_checkpoint": true,
+  "same_pseudo_cfl": true,
+  "same_root_state_recovery": true,
+  "same_linear_algorithm": true,
+  "pseudo_time_relative_spread": 0.0,
+  "pseudo_time_limit": 1e-10,
+  "variation_limit": 0.05,
+  "geometry_limit": 0.05,
+  "regrid_qualification_pass": true,
+  "finest_pair": {
+    "coarse_panel_count": 320,
+    "fine_panel_count": 640,
+    "variations": {
+      "solved_dipole_coefficient_relative_change": 0.0007243721918308706,
+      "body_vertical_force_coefficient_relative_change": 0.00026197049595836204,
+      "computed_pressure_peak_relative_change": 3.4347882576974904e-05,
+      "computed_peak_eta_relative_change": 0.0001722295083225112,
+      "free_surface_eta_relative_l2": 3.2790259568842165e-05,
+      "body_pressure_curve_relative_l2": 0.00014424545022625345,
+      "full_body_pressure_curve_relative_l2": 0.0008166163090763988
+    },
+    "root_mismatch_values": [
+      1.504931344700143e-08,
+      2.6279342846785706e-08
+    ],
+    "diagnostic_kinematic_convergence_integral_relative_change": 0.08294059998336678
+  },
+  "interpretation": "PASS proves spatial stability and a three-level trend for the frozen state and matched continuation only; the wedge pressure benchmark remains failed."
+}

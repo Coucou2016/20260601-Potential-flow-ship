@@ -1,0 +1,32 @@
+{
+  "classification": "MIXED_OR_INSUFFICIENT_PHASE_TREND",
+  "kinematic_metric": "kinematic_integral",
+  "kinematic_metric_source": "Iafrati 2013 Eq. (52), K = integral(S_nu^2 ds)",
+  "physical_validation_status": "FAIL",
+  "event_definition": "root_thickness and root_resolution_ratio simultaneously increase by at least 5.0%",
+  "reset_count": 492,
+  "modal_cycle_length_steps": 4,
+  "complete_modal_cycle_count": 426,
+  "recent_cycle_count": 40,
+  "final_cycle_phase_index": 1,
+  "final_kinematic_metric": 0.0043168222651161,
+  "final_kinematic_rms": 0.0139494794460795,
+  "kinematic_tolerance": 0.001,
+  "recent_envelope_trend": {
+    "exponential_rate_per_pseudo_time": -0.12650520930449363,
+    "log_linear_r_squared": 0.024458385417205353,
+    "relative_change_over_window": -0.020051147950044923
+  },
+  "recent_reset_residual_jump": {
+    "mean_ratio": 0.9516863537520569,
+    "minimum_ratio": 0.7657547879678825,
+    "maximum_ratio": 1.069007550185049
+  },
+  "zero_asymptote_exponential_projection": {
+    "estimated_additional_pseudo_time_to_tolerance": 11.560943243692082,
+    "estimated_additional_steps_to_tolerance": 12072.982035788842,
+    "assumption": "Diagnostic only: recent phase-aligned exponential decay continues unchanged toward zero. This projection is not an acceptance result."
+  },
+  "reference_used": false,
+  "interpretation": "Phase-aligned decay distinguishes slow convergence from the sawtooth introduced by discrete matching-surface resets. Only the original kinematic tolerance passes the physical prerequisite."
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "status": "self_similar_coupled_checkpoint_unvalidated",
+  "config": {
+    "deadrise_deg": 12.5,
+    "far_radius": 20.0,
+    "free_surface_panels": 320,
+    "body_panels": 48,
+    "far_field_panels": 24,
+    "symmetry_panels": 16,
+    "free_surface_control_points": 9,
+    "jet_closure": "truncated_control",
+    "jet_control_panels": 1,
+    "gauss_order": 12,
+    "max_nfev": 60,
+    "optimizer_ftol": 1e-08,
+    "optimizer_xtol": 1e-08,
+    "optimizer_gtol": 1e-08,
+    "root_y_initial": null,
+    "root_z_initial": 0.36,
+    "maximum_free_surface_eta": 1.5,
+    "initial_dipole_coefficient": 4.0,
+    "preliminary_iterations": 8,
+    "preliminary_relative_tolerance": 0.0001,
+    "pseudo_cfl": 0.25,
+    "pseudo_max_iterations": 20,
+    "pseudo_kinematic_tolerance": 0.001,
+    "coupled_kinematic_integral_tolerance": 0.001,
+    "free_surface_panel_growth": 1.0122722344290394,
+    "coupled_outer_grid_mode": "double_ended",
+    "coupled_outer_root_spacing_ratio": 0.015,
+    "coupled_outer_far_spacing_ratio": 0.08,
+    "coupled_outer_endpoint_decay": 3.0,
+    "coupled_outer_monitor_fractions": null,
+    "body_panel_growth": 1.0,
+    "jet_angle_threshold_deg": 10.0,
+    "jet_interface_min_thickness_panel_ratio": 0.5,
+    "jet_interface_target_thickness_panel_ratio": 1.0,
+    "coupled_root_predictor_relaxation": 0.1,
+    "coupled_root_inner_relaxation": 0.5,
+    "coupled_root_inner_tolerance": 1e-06,
+    "coupled_matching_surface_bisection_iterations": 8,
+    "coupled_jet_bie_panel_count": 256,
+    "shallow_jet_maximum_points": 20000,
+    "coupled_jet_terminal_closure": "legacy_parity",
+    "coupled_root_reconstruction_enabled": false,
+    "coupled_root_reconstruction_panels": 12,
+    "coupled_root_reconstruction_added_panels": 24,
+    "coupled_element_interpolation": "linear_node",
+    "coupled_linear_gradient_recovery": "element",
+    "coupled_linear_corner_treatment": "displaced_double_node",
+    "coupled_linear_far_corner_treatment": "shared_node",
+    "coupled_linear_cusp_velocity_recovery": "connected_average",
+    "coupled_free_surface_update": "full_gradient",
+    "coupled_pseudo_time_preconditioner": "uniform",
+    "coupled_pseudo_time_preconditioner_max_ratio": 16.0,
+    "coupled_root_state_recovery": "quadratic_root_extrapolation",
+    "coupled_smoothing_enabled": false,
+    "coupled_smoothing_root_panels": 12,
+    "coupled_smoothing_turn_threshold_deg": 10.0,
+    "coupled_smoothing_max_local_displacement": 1.0
+  },
+  "completed_iterations": 0,
+  "cumulative_pseudo_time": 0.0,
+  "outer_shape_dipole_coefficient": 7.888725471938828,
+  "expected_state": {
+    "kinematic_rms": 0.02373035055374895,
+    "kinematic_integral": 0.00415017965038662,
+    "kinematic_length_weighted_rms": 0.016256704758671067,
+    "solved_dipole_coefficient": 7.888790389630762,
+    "bem_condition_number": 253410.72854288312,
+    "body_pressure_min": -0.00950702115086699,
+    "body_pressure_max": 19.072063851305987,
+    "body_vertical_force_coefficient": 48.28214539402988,
+    "interface_s_lambda": 3.723089507464266,
+    "measured_s_lambda": 3.7194044648573032,
+    "root_thickness": 0.0695777892434968,
+    "root_xi": 4.55744399143619,
+    "root_eta": -0.0609060959778666,
+    "kinematic_integral_linear_exact": 0.00495004094680027
+  },
+  "files": {
+    "outer_nodes": {
+      "name": "coupled_checkpoint_outer_nodes.csv",
+      "sha256": "2d701569f985a57992219836365257a66029c4cde826d7dd6e47d8af80c0bdf1"
+    },
+    "history": {
+      "name": "coupled_pseudo_time_history.csv",
+      "sha256": "8fe798856d0bb38ea53520ae72c0f0f439d3967a5b808f6930f21b84ea76db98"
+    }
+  },
+  "reference_used_during_solve": false,
+  "parent_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_strictroot_seedcontinuity_bounded_dct64_lead16w2_windowgate_reuse4_v788",
+    "kind": "formal_v1",
+    "completed_iterations": 0,
+    "source_hashes": {
+      "coupled_checkpoint.json": "a7609aad0e84125bd5f4e4a058912e6b3a41f31c4706f36fe4adc8e4b9c41b52",
+      "coupled_checkpoint_outer_nodes.csv": "8cc02017576721176019008fb8f1480175f6658343b3cf75da0d5594b5e24c87",
+      "coupled_pseudo_time_history.csv": "279f57ca75b414e37455d92647ef401cf4675a425b1c0c2f39af1cf77888a494"
+    },
+    "continuation_config_overrides": {}
+  },
+  "state_transformation": {
+    "type": "reference_isolated_multigrid_trust_region",
+    "basis": "dct",
+    "global_mode_count": 2,
+    "local_support_fraction": 0.15,
+    "fixed_root_node_count": 0,
+    "fixed_far_node_count": 2,
+    "mode_count": 64,
+    "objective_panel_counts": [
+      320
+    ],
+    "objective_panel_weights": [
+      1.0
+    ],
+    "objective_validation_panel_counts": [
+      320
+    ],
+    "objective_normalization": "relative_to_frozen_source_grid_objective",
+    "leading_panel_objective_count": 0,
+    "leading_panel_objective_weight": 1.0,
+    "leading_panel_objective_ratio_limit": null,
+    "direction_objective_preconditioner": "leading_panel_rows_only",
+    "acceptance_objective_preconditioned": false,
+    "candidate_root_seed_policy": "inherit_source",
+    "root_constraint": "bounded",
+    "root_constraint_panel_counts": [
+      320
+    ],
+    "root_validation_panel_counts": [
+      320
+    ],
+    "linearization_panel_counts": [
+      320
+    ],
+    "root_target_defects": null,
+    "root_bound_safety_factor": 0.99,
+    "linearized_root_bound": 0.00099,
+    "root_constraint_active_bounds": [
+      "lower"
+    ],
+    "linearized_predicted_root_defects": [
+      -0.000990000000000002
+    ],
+    "reused_jacobian_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_strictroot_seedcontinuity_bounded_dct64_lead16w2_windowgate_v791",
+    "matching_surface_policy": "fixed_branch",
+    "root_inner_iterations": 0,
+    "maximum_grid_objective_ratio": 1.001,
+    "grid_objective_limit": 0.001,
+    "allow_feasibility_repair": false,
+    "curvature_energy_ratio_limit": 1.1,
+    "outer_shape_dipole_coefficient": 7.888725471938828,
+    "reference_used_during_solve": false
+  }
+}

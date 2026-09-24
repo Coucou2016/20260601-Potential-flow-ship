@@ -1,0 +1,137 @@
+{
+  "status": "self_similar_vector_aitken_rejected",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_transformation": false,
+  "qualification": {
+    "result": "REJECTED",
+    "reason": "Aitken vector convergence factor is outside the qualified interval: q=-1.31904.",
+    "limits": {
+      "maximum_convergence_factor": 0.9,
+      "maximum_interval_ratio": 1.25,
+      "maximum_node_displacement_ratio": 4.0,
+      "maximum_candidate_residual_ratio": 0.9,
+      "candidate_residual_metric": "Iafrati 2013 Eq. (52) integral K",
+      "maximum_condition_number_ratio": 5.0,
+      "matching_surface_minimum_relative_jump": 0.05,
+      "matching_surface_periods_must_match": true,
+      "matching_surface_phases_must_match": true
+    }
+  },
+  "sources": [
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus8_v211",
+      "completed_iterations": 9,
+      "cumulative_pseudo_time": 0.002887299673963,
+      "source_hashes": {
+        "coupled_checkpoint.json": "aa797a2b8e4543f19a5aefb8dc94ef78c9dce277042e8362619272c5dee71b10",
+        "coupled_checkpoint_outer_nodes.csv": "fd33458240a4a51128a07d750f265068581c83132309136fde12340afe3bcbc5",
+        "coupled_pseudo_time_history.csv": "2c298772dca152127f7f46f377573543db9d87c68c0ea9cd4a3d118273dfabd7"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 1.2242602764889199e-12,
+        "kinematic_integral": 1.9657539485073983e-13,
+        "kinematic_length_weighted_rms": 5.450050133415374e-13,
+        "solved_dipole_coefficient": 1.9021793055796118e-11,
+        "bem_condition_number": 6.753587307237032e-12,
+        "body_pressure_min": 1.4054535313334782e-11,
+        "body_pressure_max": 3.025322959378493e-14,
+        "body_vertical_force_coefficient": 3.300431334586044e-13,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 4.5041384657370506e-13,
+        "root_thickness": 5.551115123125783e-17,
+        "root_xi": 0.0,
+        "root_eta": 5.551115123125783e-17,
+        "kinematic_integral_linear_exact": 2.188431727501161e-13,
+        "history_kinematic_rms": 1.224320991810579e-12,
+        "history_solved_dipole": 1.9021793056157948e-11,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "AVAILABLE",
+        "phase_index": 0,
+        "modal_cycle_length": 1,
+        "reset_count": 0,
+        "reset_iterations": [],
+        "minimum_relative_jump": 0.05,
+        "period_interval_count": 9
+      }
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus16_v212",
+      "completed_iterations": 17,
+      "cumulative_pseudo_time": 0.0052972215598872,
+      "source_hashes": {
+        "coupled_checkpoint.json": "03b4d71a37965bf596ae0b2f452e1b68570c6fd0000a309a43acd17207de16ff",
+        "coupled_checkpoint_outer_nodes.csv": "88c9c269084097f9b5e23df23676f7b5d3d7e49628b03032332743f1600af4c7",
+        "coupled_pseudo_time_history.csv": "9b6e2557ec6399ec80be59b154b4ba242aaffc90055cf702188a0e4b61edcd1f"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 4.3621876943955584e-13,
+        "kinematic_integral": 7.224386019966111e-14,
+        "kinematic_length_weighted_rms": 2.056653458648583e-13,
+        "solved_dipole_coefficient": 3.66004317761783e-12,
+        "bem_condition_number": 6.12256028875245e-12,
+        "body_pressure_min": 3.282707439211663e-12,
+        "body_pressure_max": 8.214980662428155e-15,
+        "body_vertical_force_coefficient": 6.606503190822269e-14,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 1.5539926066982467e-12,
+        "root_thickness": 0.0,
+        "root_xi": 0.0,
+        "root_eta": 0.0,
+        "kinematic_integral_linear_exact": 7.027625009703442e-14,
+        "history_kinematic_rms": 4.362135652691279e-13,
+        "history_solved_dipole": 3.660043177604434e-12,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "AVAILABLE",
+        "phase_index": 0,
+        "modal_cycle_length": 1,
+        "reset_count": 0,
+        "reset_iterations": [],
+        "minimum_relative_jump": 0.05,
+        "period_interval_count": 17
+      }
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus24_v216",
+      "completed_iterations": 25,
+      "cumulative_pseudo_time": 0.0077040150483764,
+      "source_hashes": {
+        "coupled_checkpoint.json": "da210ad14fbaee77be855b70de609ed24e07f6d0db48d3d4ae37cd4b78b3d1b8",
+        "coupled_checkpoint_outer_nodes.csv": "4a8959cd9108a673e9336720dcf8b2f29e0f71b2c2f3a170d14a7f17b9ccb4d8",
+        "coupled_pseudo_time_history.csv": "b267c7ae57b050eaf45d539403459c38a9adf86822598335b2dc5cd0f9f2ba60"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 2.4552755661932935e-13,
+        "kinematic_integral": 3.2003913408296114e-14,
+        "kinematic_length_weighted_rms": 8.698423925590504e-14,
+        "solved_dipole_coefficient": 2.9408982386767936e-12,
+        "bem_condition_number": 4.254982165257564e-13,
+        "body_pressure_min": 4.888534022029489e-12,
+        "body_pressure_max": 4.20709480369019e-15,
+        "body_vertical_force_coefficient": 6.131009140868778e-14,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 1.3841438716683807e-12,
+        "root_thickness": 5.551115123125783e-17,
+        "root_xi": 0.0,
+        "root_eta": 5.551115123125783e-17,
+        "kinematic_integral_linear_exact": 2.8905697280201537e-14,
+        "history_kinematic_rms": 2.4546163712724223e-13,
+        "history_solved_dipole": 2.9408982386681445e-12,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "AVAILABLE",
+        "phase_index": 0,
+        "modal_cycle_length": 1,
+        "reset_count": 0,
+        "reset_iterations": [],
+        "minimum_relative_jump": 0.05,
+        "period_interval_count": 25
+      }
+    }
+  ]
+}

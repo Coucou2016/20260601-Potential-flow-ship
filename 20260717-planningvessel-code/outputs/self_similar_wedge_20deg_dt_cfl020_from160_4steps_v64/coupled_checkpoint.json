@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "status": "self_similar_coupled_checkpoint_unvalidated",
+  "config": {
+    "deadrise_deg": 20.0,
+    "far_radius": 20.0,
+    "free_surface_panels": 80,
+    "body_panels": 48,
+    "far_field_panels": 24,
+    "symmetry_panels": 16,
+    "free_surface_control_points": 9,
+    "jet_closure": "truncated_control",
+    "jet_control_panels": 1,
+    "gauss_order": 12,
+    "max_nfev": 60,
+    "optimizer_ftol": 1e-08,
+    "optimizer_xtol": 1e-08,
+    "optimizer_gtol": 1e-08,
+    "root_y_initial": null,
+    "root_z_initial": 0.36,
+    "maximum_free_surface_eta": 1.5,
+    "initial_dipole_coefficient": 4.0,
+    "preliminary_iterations": 8,
+    "preliminary_relative_tolerance": 0.0001,
+    "pseudo_cfl": 0.2,
+    "pseudo_max_iterations": 20,
+    "pseudo_kinematic_tolerance": 0.001,
+    "free_surface_panel_growth": 1.05,
+    "body_panel_growth": 1.0,
+    "jet_angle_threshold_deg": 10.0,
+    "jet_interface_min_thickness_panel_ratio": 0.5,
+    "jet_interface_target_thickness_panel_ratio": 1.0,
+    "coupled_root_predictor_relaxation": 0.1,
+    "coupled_root_inner_relaxation": 0.5,
+    "coupled_root_inner_tolerance": 0.001,
+    "coupled_root_reconstruction_enabled": false,
+    "coupled_root_reconstruction_panels": 12,
+    "coupled_root_reconstruction_added_panels": 24,
+    "coupled_element_interpolation": "linear_node",
+    "coupled_linear_gradient_recovery": "element",
+    "coupled_smoothing_enabled": false,
+    "coupled_smoothing_root_panels": 12,
+    "coupled_smoothing_turn_threshold_deg": 10.0,
+    "coupled_smoothing_max_local_displacement": 1.0
+  },
+  "completed_iterations": 164,
+  "cumulative_pseudo_time": 0.11732624512876652,
+  "outer_shape_dipole_coefficient": 6.754258380555073,
+  "expected_state": {
+    "kinematic_rms": 0.34474497723395653,
+    "solved_dipole_coefficient": 6.758320736224427,
+    "bem_condition_number": 64399.549082908605,
+    "body_pressure_min": -0.004757787350683884,
+    "body_pressure_max": 13.96556682451261,
+    "body_vertical_force_coefficient": 32.051463215271575,
+    "interface_s_lambda": 2.7279173626845044,
+    "measured_s_lambda": 2.735848452865681,
+    "root_thickness": 0.06661501883281824,
+    "root_xi": 3.759101952929795,
+    "root_eta": 0.2973109960834468
+  },
+  "files": {
+    "outer_nodes": {
+      "name": "coupled_checkpoint_outer_nodes.csv",
+      "sha256": "49dc8c724ab5f93eb0c3d51476f70c2ac0205e8500db1dc855baba0fca168c79"
+    },
+    "history": {
+      "name": "coupled_pseudo_time_history.csv",
+      "sha256": "6c95a226ac095f8e82597f2b42bce833684f4ba4e675c454abb6308650abf0cb"
+    }
+  },
+  "reference_used_during_solve": false,
+  "parent_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_coupled160_v61_checkpoint",
+    "kind": "formal_v1",
+    "completed_iterations": 160,
+    "source_hashes": {
+      "coupled_checkpoint.json": "4dd4cbb28ffa4c02997eace9995092ceda120f6a1555f4c6aa40ce93012c6087",
+      "coupled_checkpoint_outer_nodes.csv": "7a4ef473e2e857a74888b205a553a3893f5265fb5196501170e4123c8f2b7a47",
+      "coupled_pseudo_time_history.csv": "8282d8f4428feaa28210877fb83831120fde03e2eb9e53719560800de5d52e55"
+    },
+    "continuation_config_overrides": {
+      "pseudo_cfl": 0.2
+    }
+  }
+}

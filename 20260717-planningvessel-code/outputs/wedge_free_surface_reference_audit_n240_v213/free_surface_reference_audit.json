@@ -1,0 +1,92 @@
+{
+  "status": "REFERENCE_DISCREPANCY_REQUIRES_DUAL_REPORTING",
+  "acceptance_effect": "The independent Iafrati curve is a cross-audit, not a replacement chosen to improve acceptance. Gate 2 remains unchanged until the declared Zhao-Faltinsen and convergence gates are resolved.",
+  "reference_used_during_solve": false,
+  "inputs": {
+    "zhao": {
+      "path": "benchmarks\\sun2007_fig2_6_wedge_similarity\\fig2_6_zhao_faltinsen_similarity_curves.csv",
+      "sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46"
+    },
+    "zhao_legacy": {
+      "path": "benchmarks\\sun2007_fig2_6_wedge_similarity\\legacy_column_median_v1\\fig2_6_zhao_faltinsen_similarity_curves.csv",
+      "sha256": "27501c457dbe61fa2ad9c2bea020ed66780cb7ab6214f3c3f7317d045eb8c994"
+    },
+    "iafrati": {
+      "path": "benchmarks\\iafrati2013_self_similar_wedge\\iafrati2013_20deg_outer_free_surface.csv",
+      "sha256": "54a53cfdc09f771826f4542d9cb186140cf6ff8cdf0200883789c111dfd419ae"
+    },
+    "candidate": {
+      "path": "outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus16_v212\\coupled_checkpoint_outer_nodes.csv",
+      "sha256": "88c9c269084097f9b5e23df23676f7b5d3d7e49628b03032332743f1600af4c7"
+    }
+  },
+  "legacy_digitization_changes": [
+    {
+      "beta_deg": 10.0,
+      "legacy_point_count": 33,
+      "current_point_count": 32,
+      "removed_legacy_columns": [
+        272
+      ],
+      "changed_shared_columns": [
+        273,
+        274,
+        281,
+        289
+      ],
+      "maximum_absolute_pixel_row_change": 15.0
+    },
+    {
+      "beta_deg": 20.0,
+      "legacy_point_count": 84,
+      "current_point_count": 84,
+      "removed_legacy_columns": [],
+      "changed_shared_columns": [],
+      "maximum_absolute_pixel_row_change": 0.0
+    },
+    {
+      "beta_deg": 30.0,
+      "legacy_point_count": 38,
+      "current_point_count": 38,
+      "removed_legacy_columns": [],
+      "changed_shared_columns": [],
+      "maximum_absolute_pixel_row_change": 0.0
+    }
+  ],
+  "zhao_vs_iafrati_same_abscissae": {
+    "point_count": 84,
+    "x_min": 4.589041095890411,
+    "x_max": 10.068493150684931,
+    "rmse": 0.038261238841200265,
+    "nrmse_by_reference_range": 0.17331556080723612,
+    "mean_bias_predicted_minus_reference": 0.03176709421379269,
+    "maximum_absolute_error": 0.12836821579270336,
+    "reference_range": 0.22076055181078014
+  },
+  "candidate_metrics": {
+    "same_abscissae_zhao": {
+      "rmse": 0.03447898173030032,
+      "nrmse_by_reference_range": 0.11102232117156689,
+      "mean_bias_predicted_minus_reference": -0.02647701307816871,
+      "maximum_absolute_error": 0.12419861433076484,
+      "reference_range": 0.3105590062111805
+    },
+    "same_abscissae_iafrati": {
+      "rmse": 0.005928510726729063,
+      "nrmse_by_reference_range": 0.026854937071413693,
+      "mean_bias_predicted_minus_reference": 0.005290081135623979,
+      "maximum_absolute_error": 0.010605533514745392,
+      "reference_range": 0.22076055181078014
+    },
+    "full_iafrati_overlap": {
+      "point_count": 55,
+      "rmse": 0.007549672903421324,
+      "nrmse_by_reference_range": 0.01871328759011974,
+      "mean_bias_predicted_minus_reference": 0.005736116637021493,
+      "maximum_absolute_error": 0.025627553674036657,
+      "reference_range": 0.4034391534391535
+    }
+  },
+  "pointwise_csv": "free_surface_reference_pointwise.csv",
+  "pointwise_csv_sha256": "67f2467f5f1708b682e2eac5ff97db7ad10b38e393610dc36e11900a38423dba"
+}

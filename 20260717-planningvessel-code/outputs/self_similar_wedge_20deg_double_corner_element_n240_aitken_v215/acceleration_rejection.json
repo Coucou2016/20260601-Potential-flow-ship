@@ -1,0 +1,122 @@
+{
+  "status": "self_similar_vector_aitken_rejected",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_transformation": false,
+  "qualification": {
+    "result": "REJECTED",
+    "reason": "At least three matching-surface resets are required to infer a phase.",
+    "limits": {
+      "maximum_convergence_factor": 0.9,
+      "maximum_interval_ratio": 1.25,
+      "maximum_node_displacement_ratio": 4.0,
+      "maximum_candidate_residual_ratio": 0.9,
+      "candidate_residual_metric": "Iafrati 2013 Eq. (52) integral K",
+      "maximum_condition_number_ratio": 5.0,
+      "matching_surface_minimum_relative_jump": 0.05,
+      "matching_surface_periods_must_match": true,
+      "matching_surface_phases_must_match": true
+    }
+  },
+  "sources": [
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_1step_v207",
+      "completed_iterations": 1,
+      "cumulative_pseudo_time": 0.0003208786826535,
+      "source_hashes": {
+        "coupled_checkpoint.json": "6b3b28c548cc3775edb71cc9ae4be5f4ac7f0c6fb0deb97ff64c2b9781ad1287",
+        "coupled_checkpoint_outer_nodes.csv": "873c585f4b8981fc0bb1cf89c62166bb13ec85a171fb2ddbe9e4863ea4fb9d25",
+        "coupled_pseudo_time_history.csv": "8144bc2c6ff91772bc212247cac6d878e3feb37c3aae93f8928e61913f61ca32"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 4.744919734900321e-13,
+        "kinematic_integral": 7.298025031521327e-14,
+        "kinematic_length_weighted_rms": 1.9049865851439307e-13,
+        "solved_dipole_coefficient": 2.533005830427963e-12,
+        "bem_condition_number": 2.4370741474580455e-12,
+        "body_pressure_min": 1.1183942660863977e-11,
+        "body_pressure_max": 3.2051868352757705e-15,
+        "body_vertical_force_coefficient": 4.957695604401435e-14,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 6.676228811423484e-13,
+        "root_thickness": 4.996003610813204e-16,
+        "root_xi": 2.0554387183304845e-16,
+        "root_eta": 5.551115123125783e-17,
+        "kinematic_integral_linear_exact": 4.377314483106076e-14,
+        "history_kinematic_rms": 4.744069720397093e-13,
+        "history_solved_dipole": 2.533005830421547e-12,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "UNAVAILABLE",
+        "reason": "At least three matching-surface resets are required to infer a phase."
+      }
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus8_v211",
+      "completed_iterations": 9,
+      "cumulative_pseudo_time": 0.002887299673963,
+      "source_hashes": {
+        "coupled_checkpoint.json": "aa797a2b8e4543f19a5aefb8dc94ef78c9dce277042e8362619272c5dee71b10",
+        "coupled_checkpoint_outer_nodes.csv": "fd33458240a4a51128a07d750f265068581c83132309136fde12340afe3bcbc5",
+        "coupled_pseudo_time_history.csv": "2c298772dca152127f7f46f377573543db9d87c68c0ea9cd4a3d118273dfabd7"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 1.2242602764889199e-12,
+        "kinematic_integral": 1.9657539485073983e-13,
+        "kinematic_length_weighted_rms": 5.450050133415374e-13,
+        "solved_dipole_coefficient": 1.9021793055796118e-11,
+        "bem_condition_number": 6.753587307237032e-12,
+        "body_pressure_min": 1.4054535313334782e-11,
+        "body_pressure_max": 3.025322959378493e-14,
+        "body_vertical_force_coefficient": 3.300431334586044e-13,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 4.5041384657370506e-13,
+        "root_thickness": 5.551115123125783e-17,
+        "root_xi": 0.0,
+        "root_eta": 5.551115123125783e-17,
+        "kinematic_integral_linear_exact": 2.188431727501161e-13,
+        "history_kinematic_rms": 1.224320991810579e-12,
+        "history_solved_dipole": 1.9021793056157948e-11,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "UNAVAILABLE",
+        "reason": "At least three matching-surface resets are required to infer a phase."
+      }
+    },
+    {
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus16_v212",
+      "completed_iterations": 17,
+      "cumulative_pseudo_time": 0.0052972215598872,
+      "source_hashes": {
+        "coupled_checkpoint.json": "03b4d71a37965bf596ae0b2f452e1b68570c6fd0000a309a43acd17207de16ff",
+        "coupled_checkpoint_outer_nodes.csv": "88c9c269084097f9b5e23df23676f7b5d3d7e49628b03032332743f1600af4c7",
+        "coupled_pseudo_time_history.csv": "9b6e2557ec6399ec80be59b154b4ba242aaffc90055cf702188a0e4b61edcd1f"
+      },
+      "reconstruction_relative_errors": {
+        "kinematic_rms": 4.3621876943955584e-13,
+        "kinematic_integral": 7.224386019966111e-14,
+        "kinematic_length_weighted_rms": 2.056653458648583e-13,
+        "solved_dipole_coefficient": 3.66004317761783e-12,
+        "bem_condition_number": 6.12256028875245e-12,
+        "body_pressure_min": 3.282707439211663e-12,
+        "body_pressure_max": 8.214980662428155e-15,
+        "body_vertical_force_coefficient": 6.606503190822269e-14,
+        "interface_s_lambda": 0.0,
+        "measured_s_lambda": 1.5539926066982467e-12,
+        "root_thickness": 0.0,
+        "root_xi": 0.0,
+        "root_eta": 0.0,
+        "kinematic_integral_linear_exact": 7.027625009703442e-14,
+        "history_kinematic_rms": 4.362135652691279e-13,
+        "history_solved_dipole": 3.660043177604434e-12,
+        "history_interface_s_lambda": 0.0
+      },
+      "matching_surface_phase": {
+        "status": "UNAVAILABLE",
+        "reason": "At least three matching-surface resets are required to infer a phase."
+      }
+    }
+  ]
+}

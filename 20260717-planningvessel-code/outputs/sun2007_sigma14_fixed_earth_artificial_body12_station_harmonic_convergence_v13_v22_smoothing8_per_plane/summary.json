@@ -1,0 +1,58 @@
+{
+  "schema": "sun2007_station_harmonic_convergence_v1",
+  "method": "difference cumulative fitted sectional harmonics over fixed longitudinal intervals; A53 change follows Sun 2007 Eq. 7.46",
+  "coordinate_contract": "x_from_transom_positive_forward; force_up; moment_bow_up_about_cg; forced_heave=-amplitude*sin(omega*t)",
+  "edges_m": [
+    0.0,
+    0.2332,
+    0.4664,
+    0.6996,
+    1.0985454545454545
+  ],
+  "pair_summaries": [
+    {
+      "coarse_case": "sub8",
+      "fine_case": "sub16",
+      "total_sine_pitch_moment_change_nm": -0.16725018945343667,
+      "total_a53_nondimensional_change": 0.023636267192543633,
+      "dominant_interval_index": 2,
+      "dominant_interval_lower_x_m": 0.4664,
+      "dominant_interval_upper_x_m": 0.6996,
+      "dominant_interval_sine_pitch_moment_change_nm": -0.1707613062146306,
+      "dominant_interval_fraction_of_sum_abs_changes": 0.569114165244159
+    },
+    {
+      "coarse_case": "sub16",
+      "fine_case": "sub32",
+      "total_sine_pitch_moment_change_nm": 0.17715173087050506,
+      "total_a53_nondimensional_change": -0.025035580875336336,
+      "dominant_interval_index": 3,
+      "dominant_interval_lower_x_m": 0.6996,
+      "dominant_interval_upper_x_m": 1.0985454545454545,
+      "dominant_interval_sine_pitch_moment_change_nm": 0.39708316376792663,
+      "dominant_interval_fraction_of_sum_abs_changes": 0.6435555429546729
+    }
+  ],
+  "response_calibration_used": false,
+  "inputs": [
+    {
+      "label": "sub8",
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub8_heave_v13_station_harmonics\\station_first_harmonic_distribution.csv",
+      "sha256": "fd24bcc1601b9a8734e048f4640050ed607d5ad5f2e99cf5f51426778523598f"
+    },
+    {
+      "label": "sub16",
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub16_heave_v21_smoothing8_per_plane_station_harmonics\\station_first_harmonic_distribution.csv",
+      "sha256": "33b513d83798aeea1e82b803dd1df9aca1989170621787d74d06add7454f7db9"
+    },
+    {
+      "label": "sub32",
+      "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_fixed_earth_artificial_body12_sub32_heave_v22_smoothing8_per_plane_station_harmonics\\station_first_harmonic_distribution.csv",
+      "sha256": "92bd2ad6e322a7fc7d087cf7aea1ca4969abec5588ddefa10b347c963b5a9601"
+    }
+  ],
+  "outputs": {
+    "interval_contributions": "interval_contributions.csv",
+    "adjacent_interval_changes": "adjacent_interval_changes.csv"
+  }
+}

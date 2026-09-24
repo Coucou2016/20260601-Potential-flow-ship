@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "time_step_convergence_only",
+  "physical_validation_status": "FAIL",
+  "same_frozen_source_checkpoint": true,
+  "pseudo_time_relative_spread": 0.00031512610137431133,
+  "pseudo_time_limit": 0.005,
+  "variation_limit": 0.05,
+  "finest_pair": {
+    "coarse_cfl": 0.125,
+    "fine_cfl": 0.0625,
+    "variations": {
+      "kinematic_rms_relative_change": 1.2679567050175761e-05,
+      "kinematic_convergence_integral_relative_change": 4.207030331110656e-06,
+      "root_body_eta_relative_change": 7.469626328890701e-08,
+      "interface_s_lambda_relative_change": 1.8285230907244812e-07,
+      "measured_s_lambda_relative_change": 7.892276702472612e-07,
+      "solved_dipole_coefficient_relative_change": 5.1808890861416085e-08,
+      "body_vertical_force_coefficient_relative_change": 9.975699546362298e-09,
+      "computed_pressure_peak_relative_change": 4.8860188966765464e-08,
+      "computed_peak_eta_relative_change": 5.400602263388526e-08,
+      "free_surface_nrmse_relative_change": 2.9196140116561745e-06,
+      "pressure_nrmse_relative_change": 1.8527346560435654e-06,
+      "kinematic_rms_trajectory_relative_l2": 0.0001549948229970675,
+      "kinematic_convergence_integral_trajectory_relative_l2": 8.868172096975002e-05,
+      "root_body_eta_trajectory_relative_l2": 7.685446454589127e-07,
+      "free_surface_eta_relative_l2": 5.405600353004194e-07,
+      "pressure_curve_relative_l2": 1.294751741095931e-07
+    },
+    "root_mismatch_values": [
+      8.296086945984941e-07,
+      2.232333579097585e-07
+    ]
+  },
+  "interpretation": "PASS proves time-step stability at the frozen grid and state only. It does not pass the wedge pressure benchmark or Gate 2."
+}

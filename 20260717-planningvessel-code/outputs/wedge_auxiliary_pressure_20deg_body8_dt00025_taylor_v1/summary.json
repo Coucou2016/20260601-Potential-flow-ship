@@ -1,0 +1,17 @@
+{
+  "deadrise_deg": 20.0,
+  "entry_speed_mps": 1.0,
+  "target_draft_m": 0.020000000000000007,
+  "time_step_s": 0.00025,
+  "body_panels_per_side": 8,
+  "free_surface_panels_per_side": 16,
+  "contact_potential_projection": "body_normal_taylor",
+  "contact_y_over_Vt": 6.6136590270157045,
+  "comparison_point_count": 7,
+  "material_derivative_scale_m2_s2": 15.42559117722396,
+  "normalized_rmse": 0.44816864570361037,
+  "normalized_max_abs_error": 0.7722083986479045,
+  "potential_bvp_relative_residual": 5.241805862269577e-16,
+  "auxiliary_bvp_relative_residual": 9.998509231433385e-16,
+  "interpretation": "This is an independent diagnostic, not a Gate-2 pass criterion. Large disagreement means the pressure auxiliary BVP and the time-marched potential are not mutually consistent."
+}

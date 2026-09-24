@@ -1,0 +1,38 @@
+{
+  "mode": "external",
+  "response_calibration_used": false,
+  "numerical_configuration": {
+    "body_panels_per_side": 12,
+    "free_surface_panels_per_side": 15,
+    "bem_substeps_per_plane": 16,
+    "parallel_workers": 4,
+    "element_interpolation": "linear_node",
+    "pressure_interpolation": "match_potential",
+    "knuckle_separation_model": "artificial_surface",
+    "jet_cut_enabled": true,
+    "jet_cut_distance_fraction": 0.25,
+    "jet_cut_threshold_over_beam": null,
+    "jet_cut_threshold_m": null,
+    "free_surface_remesh_updates_per_ground_plane_interval": 8,
+    "free_surface_remesh_interval_s": 0.0027011237483419892,
+    "free_surface_smoothing_enabled": true,
+    "free_surface_smoothing_node_count": 7,
+    "free_surface_smoothing_updates_per_ground_plane_interval": 8,
+    "free_surface_smoothing_interval_s": 0.0027011237483419892,
+    "uniform_near_body_panels": 6
+  },
+  "source": "external_response_independent_restoring_matrix",
+  "source_path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_fig7_4_restoring\\restoring_matrices.csv",
+  "source_sha256": "fc96853a3951c4958584c63e6aa5539a89d63fe1fd35a81681a8189612503fbd",
+  "restoring_matrix": [
+    [
+      3264.24057609,
+      -1104.10363389
+    ],
+    [
+      804.223787552,
+      305.024500046
+    ]
+  ],
+  "step_convergence_evaluated": false
+}

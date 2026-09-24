@@ -1,0 +1,11 @@
+benchmark,candidate_name,candidate_order,row_count,pass_count,fail_count,pass_fraction,median_gate_error_ratio,max_gate_error_ratio,median_gate_ratio_delta_vs_current,max_gate_ratio_delta_vs_current,improved_row_count,worsened_row_count,median_forward_gradient_component_value,max_abs_forward_gradient_component_value,candidate_gate_status,gate_role,path_diagnostic_status
+ma2005_wigley_iii_coefficients,current_default,0,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,scheme_central,1,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,scheme_forward,2,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,scheme_backward,3,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,phase_aligned_central,4,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,phase_aligned_forward,5,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,phase_aligned_backward,6,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,startup_aft_gradient_zero,7,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,startup_aft_gradient_copy_second,8,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,startup_first_pair_gradient_average,9,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,PASS,diagnostic_startup_pressure_gradient_candidate_not_hard_gate,INFO

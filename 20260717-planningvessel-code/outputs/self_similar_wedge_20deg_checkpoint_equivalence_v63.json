@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "direct_directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_coupled162_direct2_v63",
+  "chained_directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_coupled162_chained_v63",
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 1e-09,
+  "completed_iteration": {
+    "direct": 162,
+    "chained": 162,
+    "passed": true
+  },
+  "outer_nodes": {
+    "maximum_absolute_difference": 3.552713678800501e-15,
+    "maximum_scaled_error": 1.2914113476944578e-06,
+    "passed": true
+  },
+  "history": {
+    "iteration": {
+      "maximum_absolute_difference": 0.0,
+      "maximum_scaled_error": 0.0,
+      "passed": true
+    },
+    "pseudo_time": {
+      "maximum_absolute_difference": 9.71445146547012e-17,
+      "maximum_scaled_error": 8.707130627485774e-08,
+      "passed": true
+    },
+    "kinematic_rms": {
+      "maximum_absolute_difference": 4.1522341120980855e-14,
+      "maximum_scaled_error": 3.074826976823574e-05,
+      "passed": true
+    },
+    "dipole_coefficient": {
+      "maximum_absolute_difference": 1.8768098186683346e-11,
+      "maximum_scaled_error": 0.002421615660126634,
+      "passed": true
+    },
+    "root_thickness": {
+      "maximum_absolute_difference": 4.0245584642661925e-16,
+      "maximum_scaled_error": 3.757470538648543e-07,
+      "passed": true
+    },
+    "root_s_lambda": {
+      "maximum_absolute_difference": 1.318944953254686e-13,
+      "maximum_scaled_error": 3.5219267102894215e-05,
+      "passed": true
+    },
+    "root_measured_s_lambda": {
+      "maximum_absolute_difference": 2.970956813896919e-13,
+      "maximum_scaled_error": 8.145715763965261e-05,
+      "passed": true
+    },
+    "root_relative_mismatch": {
+      "maximum_absolute_difference": 1.5459855617905305e-13,
+      "maximum_scaled_error": 0.00014928564629731366,
+      "passed": true
+    },
+    "root_body_eta": {
+      "maximum_absolute_difference": 4.996003610813204e-16,
+      "maximum_scaled_error": 3.677569188280131e-07,
+      "passed": true
+    },
+    "root_resolution_ratio": {
+      "maximum_absolute_difference": 1.7763568394002505e-15,
+      "maximum_scaled_error": 3.3886433567547903e-07,
+      "passed": true
+    },
+    "bem_condition_number": {
+      "maximum_absolute_difference": 1.2772215995937586e-07,
+      "maximum_scaled_error": 0.0019830614217600556,
+      "passed": true
+    },
+    "accepted_time_step": {
+      "maximum_absolute_difference": 0.0,
+      "maximum_scaled_error": 0.0,
+      "passed": true
+    },
+    "maximum_displacement_ratio": {
+      "maximum_absolute_difference": 2.4896751327219135e-14,
+      "maximum_scaled_error": 2.0765003810069368e-05,
+      "passed": true
+    }
+  },
+  "final_state": {
+    "kinematic_rms": {
+      "absolute_difference": 4.1466829969749597e-14,
+      "scaled_error": 3.070716245571136e-05,
+      "passed": true
+    },
+    "solved_dipole_coefficient": {
+      "absolute_difference": 1.8768098186683346e-11,
+      "scaled_error": 0.002421615660126634,
+      "passed": true
+    },
+    "bem_condition_number": {
+      "absolute_difference": 1.2772215995937586e-07,
+      "scaled_error": 0.0019830614217600556,
+      "passed": true
+    },
+    "body_pressure_min": {
+      "absolute_difference": 6.721734280290548e-12,
+      "scaled_error": 0.006696286072705627,
+      "passed": true
+    },
+    "body_pressure_max": {
+      "absolute_difference": 3.197442310920451e-14,
+      "scaled_error": 2.1382906678704984e-06,
+      "passed": true
+    },
+    "body_vertical_force_coefficient": {
+      "absolute_difference": 7.034373084024992e-13,
+      "scaled_error": 2.1286636656917858e-05,
+      "passed": true
+    },
+    "interface_s_lambda": {
+      "absolute_difference": 1.318944953254686e-13,
+      "scaled_error": 3.5219267102894215e-05,
+      "passed": true
+    },
+    "measured_s_lambda": {
+      "absolute_difference": 2.970956813896919e-13,
+      "scaled_error": 8.145715763965261e-05,
+      "passed": true
+    },
+    "relative_s_lambda_mismatch": {
+      "absolute_difference": 1.5457773949734133e-13,
+      "scaled_error": 0.0001492655449984406,
+      "passed": true
+    }
+  },
+  "checkpoint_sha256": {
+    "direct": "8df998588950a862c1d7c64f0fc4e911b2295ce33dc75ee1b25e4901081e089f",
+    "chained": "5d77ea902296fed6ae5ad819b57db0890d4e4b092f8c25c55a21fef78a0ad632"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "status": "self_similar_coupled_checkpoint_unvalidated",
+  "config": {
+    "deadrise_deg": 12.75,
+    "far_radius": 20.0,
+    "free_surface_panels": 320,
+    "body_panels": 48,
+    "far_field_panels": 24,
+    "symmetry_panels": 16,
+    "free_surface_control_points": 9,
+    "jet_closure": "truncated_control",
+    "jet_control_panels": 1,
+    "gauss_order": 12,
+    "max_nfev": 60,
+    "optimizer_ftol": 1e-08,
+    "optimizer_xtol": 1e-08,
+    "optimizer_gtol": 1e-08,
+    "root_y_initial": null,
+    "root_z_initial": 0.36,
+    "maximum_free_surface_eta": 1.5,
+    "initial_dipole_coefficient": 4.0,
+    "preliminary_iterations": 8,
+    "preliminary_relative_tolerance": 0.0001,
+    "pseudo_cfl": 0.25,
+    "pseudo_max_iterations": 20,
+    "pseudo_kinematic_tolerance": 0.001,
+    "coupled_kinematic_integral_tolerance": 0.001,
+    "free_surface_panel_growth": 1.0122722344290394,
+    "coupled_outer_grid_mode": "double_ended",
+    "coupled_outer_root_spacing_ratio": 0.015,
+    "coupled_outer_far_spacing_ratio": 0.08,
+    "coupled_outer_endpoint_decay": 3.0,
+    "coupled_outer_monitor_fractions": null,
+    "body_panel_growth": 1.0,
+    "jet_angle_threshold_deg": 10.0,
+    "jet_interface_min_thickness_panel_ratio": 0.5,
+    "jet_interface_target_thickness_panel_ratio": 1.0,
+    "coupled_root_predictor_relaxation": 0.1,
+    "coupled_root_inner_relaxation": 0.5,
+    "coupled_root_inner_tolerance": 1e-06,
+    "coupled_matching_surface_bisection_iterations": 8,
+    "coupled_jet_bie_panel_count": 256,
+    "shallow_jet_maximum_points": 20000,
+    "coupled_jet_terminal_closure": "legacy_parity",
+    "coupled_root_reconstruction_enabled": false,
+    "coupled_root_reconstruction_panels": 12,
+    "coupled_root_reconstruction_added_panels": 24,
+    "coupled_element_interpolation": "linear_node",
+    "coupled_linear_gradient_recovery": "element",
+    "coupled_linear_corner_treatment": "displaced_double_node",
+    "coupled_linear_far_corner_treatment": "shared_node",
+    "coupled_linear_cusp_velocity_recovery": "connected_average",
+    "coupled_free_surface_update": "full_gradient",
+    "coupled_pseudo_time_preconditioner": "uniform",
+    "coupled_pseudo_time_preconditioner_max_ratio": 16.0,
+    "coupled_root_state_recovery": "quadratic_root_extrapolation",
+    "coupled_smoothing_enabled": false,
+    "coupled_smoothing_root_panels": 12,
+    "coupled_smoothing_turn_threshold_deg": 10.0,
+    "coupled_smoothing_max_local_displacement": 1.0
+  },
+  "completed_iterations": 0,
+  "cumulative_pseudo_time": 0.0,
+  "outer_shape_dipole_coefficient": 7.6757328270547625,
+  "expected_state": {
+    "kinematic_rms": 0.015309820821981802,
+    "kinematic_integral": 0.0030374269841032453,
+    "kinematic_length_weighted_rms": 0.013860730073555325,
+    "solved_dipole_coefficient": 7.6755291690071505,
+    "bem_condition_number": 252982.00757653802,
+    "body_pressure_min": -0.012574985023491081,
+    "body_pressure_max": 18.555275442553487,
+    "body_vertical_force_coefficient": 46.96552092216189,
+    "interface_s_lambda": 4.006656032495408,
+    "measured_s_lambda": 4.006656039983959,
+    "root_thickness": 0.06441005667745987,
+    "root_xi": 4.551592509626321,
+    "root_eta": -0.03611817544223858,
+    "kinematic_integral_linear_exact": 0.0037797501734421132
+  },
+  "files": {
+    "outer_nodes": {
+      "name": "coupled_checkpoint_outer_nodes.csv",
+      "sha256": "9bc6750d82802bb4d2585699b19be86fa63b16b0c6cb73739a87c8d0d6b5a9ea"
+    },
+    "history": {
+      "name": "coupled_pseudo_time_history.csv",
+      "sha256": "f723501c422f0cb9cdd1bd500faf8a1e36a6c8d0bc2ae8aa0670ec44533df1dc"
+    }
+  },
+  "reference_used_during_solve": false,
+  "parent_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p75deg_n320_rootclosed_inner8_rootcos16_support20_reuse6_v811",
+    "kind": "formal_v1",
+    "completed_iterations": 0,
+    "source_hashes": {
+      "coupled_checkpoint.json": "7fff97a0fd5dacd42a06c85d79846ddc4cf902460ad3924105a225931fcf7952",
+      "coupled_checkpoint_outer_nodes.csv": "904755309e8714dfb2bd961e50fda451eaa8ec9063c06728945240e61687f404",
+      "coupled_pseudo_time_history.csv": "4d1133340c0d47a6d6d8a4362c8c5bac5a0026cb483868faa1daae9436079642"
+    },
+    "continuation_config_overrides": {}
+  },
+  "state_transformation": {
+    "type": "reference_isolated_multigrid_trust_region",
+    "basis": "root_cosine_local",
+    "global_mode_count": 2,
+    "local_support_fraction": 0.2,
+    "fixed_root_node_count": 0,
+    "fixed_far_node_count": 2,
+    "mode_count": 16,
+    "objective_panel_counts": [
+      320
+    ],
+    "objective_panel_weights": [
+      1.0
+    ],
+    "objective_validation_panel_counts": [
+      320
+    ],
+    "objective_normalization": "relative_to_frozen_source_grid_objective",
+    "leading_panel_objective_count": 0,
+    "leading_panel_objective_weight": 1.0,
+    "leading_panel_objective_ratio_limit": null,
+    "direction_objective_preconditioner": "leading_panel_rows_only",
+    "acceptance_objective_preconditioned": false,
+    "candidate_root_seed_policy": "inherit_source",
+    "root_constraint": "bounded",
+    "root_constraint_panel_counts": [
+      320
+    ],
+    "root_validation_panel_counts": [
+      320
+    ],
+    "linearization_panel_counts": [
+      320
+    ],
+    "root_target_defects": null,
+    "root_bound_safety_factor": 0.95,
+    "linearized_root_bound": 0.00095,
+    "root_constraint_active_bounds": [
+      "free"
+    ],
+    "linearized_predicted_root_defects": [
+      1.0128241838688497e-07
+    ],
+    "reused_jacobian_run": null,
+    "matching_surface_policy": "fixed_branch",
+    "root_inner_iterations": 8,
+    "maximum_grid_objective_ratio": 1.001,
+    "grid_objective_limit": 0.001,
+    "allow_feasibility_repair": false,
+    "curvature_energy_ratio_limit": 1.1,
+    "outer_shape_dipole_coefficient": 7.6757328270547625,
+    "reference_used_during_solve": false
+  }
+}

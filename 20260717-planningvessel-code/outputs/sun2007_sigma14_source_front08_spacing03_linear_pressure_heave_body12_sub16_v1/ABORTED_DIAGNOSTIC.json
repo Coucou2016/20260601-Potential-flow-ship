@@ -1,0 +1,12 @@
+{
+  "status": "ABORTED_DIAGNOSTIC_NOT_A_RESULT",
+  "aborted_at": "2026-08-23T07:15:38.3280699+08:00",
+  "exit_code": 1,
+  "last_reported_progress_percent": 10,
+  "completed_coefficients_available": false,
+  "reason": "The source-faithful linear-element pressure candidate had no independent pressure-field validation and projected to require about one hour for a single forced-heave frequency. The exploratory whole-vessel run was stopped before coefficient identification so that Sun 2007 Fig. 2.6 wedge-entry pressure and free-surface verification can be completed first.",
+  "input_snapshot": "run_input_snapshot.json",
+  "input_snapshot_sha256": "7FA9067FDFE201B6E8A243AC9B33E5B598491FA421F133A21CFDC855904CE1A9",
+  "response_calibration_used": false,
+  "gate2_credit": false
+}

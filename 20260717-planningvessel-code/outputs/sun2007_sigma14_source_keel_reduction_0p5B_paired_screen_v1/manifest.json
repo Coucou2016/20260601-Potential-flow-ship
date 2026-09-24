@@ -1,0 +1,35 @@
+{
+  "schema": "sun2007_paired_forced_motion_column_screen_v1",
+  "status": "FAIL",
+  "single_frequency_screen_only": true,
+  "used_for_five_frequency_acceptance": false,
+  "sigma": 1.4,
+  "model_variant": "sun_2dt_with_stern_3d_correction",
+  "transom_correction_mode": "source_keel_wetted_length_reduction_0p5B",
+  "coefficient_pass_count": 0,
+  "coefficient_count": 8,
+  "maximum_harmonic_residual_nrmse": 0.061568258886648054,
+  "harmonic_residual_limit": 0.05,
+  "maximum_bvp_relative_residual": 3.566283678142923e-15,
+  "bvp_residual_limit": 1e-08,
+  "response_calibration_used": false,
+  "source_runs": {
+    "heave": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_source_keel_reduction_0p5B_heave_body12_sub16_v1",
+      "input_snapshot_sha256": "eca22f73ae7dab51e0dc3ea7fc8f1e1e5f9559001a9c1930dc8f6d13aaf6aa9e",
+      "identified_coefficients_sha256": "918395aee31dd1da0a7f07279fd6da2ff682b4a2f362af94201dd1e296c57fad",
+      "run_diagnostics_sha256": "18f2b27ed1d4b52e8abe7fac921c15667aaaed170d9ddf852fff447b1e028068"
+    },
+    "pitch": {
+      "directory": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\sun2007_sigma14_source_keel_reduction_0p5B_pitch_body12_sub16_v1",
+      "input_snapshot_sha256": "fc193e7a73c090ba3d1750c0ef7549255985fdb9a820011a29cbbbdf0feaffe9",
+      "identified_coefficients_sha256": "b0c081e56bf2382cb9f1b8b8194f6587962280cc6f14c0a268a2f825f22e5e29",
+      "run_diagnostics_sha256": "4dd57d711f13a3aa99f330f8dece6e7499a539f258abd41345c66e5bc3436345"
+    }
+  },
+  "benchmark": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+    "sha256": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02",
+    "role": "same_model_NUM_reproduction_not_independent_EFD"
+  }
+}

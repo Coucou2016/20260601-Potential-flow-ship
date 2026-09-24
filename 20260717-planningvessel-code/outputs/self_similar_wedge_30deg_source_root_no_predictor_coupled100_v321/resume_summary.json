@@ -1,0 +1,90 @@
+{
+  "status": "self_similar_coupled_resume_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": {
+    "path": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_source_root_no_predictor_coupled20_v320",
+    "kind": "formal_v1",
+    "completed_iterations": 20,
+    "cumulative_pseudo_time": 0.0201711956855055,
+    "source_hashes": {
+      "coupled_checkpoint.json": "fe4e71e1b58b1d1ba7608d54c09607509c44fa39c56d1fc900c6a11e04d06a42",
+      "coupled_checkpoint_outer_nodes.csv": "6a18af4c649e0291a6e6b93af9a1005bd56be698f508cca7d207474de93d69d7",
+      "coupled_pseudo_time_history.csv": "9a6cf6e9cfa01d99a1f5f17e500a9abe07b117bf25f9f77bd07ec7a1740c7f7e"
+    },
+    "reconstruction_relative_errors": {
+      "kinematic_rms": 0.0,
+      "kinematic_integral": 0.0,
+      "kinematic_length_weighted_rms": 0.0,
+      "solved_dipole_coefficient": 0.0,
+      "bem_condition_number": 0.0,
+      "body_pressure_min": 0.0,
+      "body_pressure_max": 0.0,
+      "body_vertical_force_coefficient": 0.0,
+      "interface_s_lambda": 0.0,
+      "measured_s_lambda": 0.0,
+      "root_thickness": 0.0,
+      "root_xi": 0.0,
+      "root_eta": 0.0,
+      "kinematic_integral_linear_exact": 0.0,
+      "history_kinematic_rms": 0.0,
+      "history_solved_dipole": 1.8208901413681136e-16,
+      "history_interface_s_lambda": 1.6370139506261324e-16
+    },
+    "continuation_config_overrides": {}
+  },
+  "continuation": {
+    "requested_iterations": 80,
+    "accepted_iterations": 33,
+    "forced_fixed_steps": false,
+    "termination_reason": "NUMERICAL_FAILURE",
+    "failure_message": "Coupled pseudo-time RK2 could not construct a valid jet stage. Last stage error: Coupled pseudo-time reversed the first bulk free-surface panel.",
+    "completed_iterations": 53,
+    "cumulative_pseudo_time": 0.05033493172193354
+  },
+  "final_state": {
+    "kinematic_rms": 0.4514567055484416,
+    "kinematic_integral": 0.7611372262489243,
+    "kinematic_integral_linear_exact": 0.7686205684918267,
+    "kinematic_integral_endpoint_gradient": 0.007483342242902369,
+    "kinematic_convergence_integral": 0.7686205684918267,
+    "kinematic_length_weighted_rms": 0.2067731934200613,
+    "spray_root_corner_angle_deg": 81.6723400886265,
+    "spray_root_normal_derivative_sides": [
+      5.933806024122632,
+      5.933806024122632
+    ],
+    "solved_dipole_coefficient": 2.533546312128639,
+    "bem_condition_number": 28501.24729241409,
+    "body_pressure_min": -1.8987227236691524,
+    "body_pressure_max": 5.323879091982205,
+    "body_vertical_force_coefficient": 9.669809961142137,
+    "interface_s_lambda": 1.7505433242499593,
+    "measured_s_lambda": 2.587419428726557,
+    "relative_s_lambda_mismatch": 0.4780664910622347,
+    "jet_reached_tip": true,
+    "jet_point_count": 240,
+    "jet_tip_thickness": 3.2572018579713633e-05,
+    "jet_tip_s_lambda": 0.0070571380045114825
+  },
+  "post_solve_reference_metrics": {
+    "deadrise_deg": 30.0,
+    "free_surface_point_count": 38,
+    "free_surface_nrmse": 0.2674504151616893,
+    "pressure_point_count": 236,
+    "pressure_nrmse": 0.40877254674667773,
+    "pressure_peak_relative_error": 0.21517791913919618,
+    "pressure_peak_location_relative_error": 0.5697674418604654
+  },
+  "post_solve_scalar_reference_metrics": {
+    "deadrise_deg": 30.0,
+    "computed_pressure_peak": 5.323879091982205,
+    "reference_pressure_peak": 6.927,
+    "pressure_peak_relative_error": 0.23143076483583008,
+    "computed_peak_eta": 0.1699757574302223,
+    "reference_peak_eta": 0.4243,
+    "pressure_peak_location_relative_error": 0.5993972250053682
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_30deg_source_root_no_predictor_coupled100_v321\\coupled_checkpoint.json"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "self_similar_low_mode_trust_region_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_double_corner_element_n240_plus16_v212",
+  "initial_state_dir": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_20deg_n240_trust2_4step_v236",
+  "mode_count": 6,
+  "basis": "root_local",
+  "global_mode_count": 2,
+  "root_support_fraction": 0.15,
+  "requested_iterations": 3,
+  "accepted_iterations": 1,
+  "finite_difference_ratio": 0.005,
+  "trust_radius": 0.1,
+  "trust_radius_safety_factor": 0.99,
+  "damping": 0.01,
+  "initial_objective": 0.0015771069217204526,
+  "final_objective": 0.0015315416153369862,
+  "final_condition_number": 147806.6482784735,
+  "final_dipole_coefficient": 8.239426992174035,
+  "conclusion": "accepted_reference_isolated_trust_region_steps"
+}

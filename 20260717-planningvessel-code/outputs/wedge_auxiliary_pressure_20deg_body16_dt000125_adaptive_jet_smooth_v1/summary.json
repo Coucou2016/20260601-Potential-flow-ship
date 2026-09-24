@@ -1,0 +1,41 @@
+{
+  "deadrise_deg": 20.0,
+  "entry_speed_mps": 1.0,
+  "target_draft_m": 0.020000000000000007,
+  "time_step_s": 0.000125,
+  "body_panels_per_side": 16,
+  "free_surface_panels_per_side": 32,
+  "free_surface_smoothing_enabled": true,
+  "contact_potential_projection": "none",
+  "contact_y_over_Vt": 4.448403090024299,
+  "jet_cut_count": 30,
+  "minimum_jet_normal_distance_ratio": 3.0798269122042004,
+  "comparison_point_count": 14,
+  "material_derivative_scale_m2_s2": 5.967436145251387,
+  "normalized_rmse": 0.2338203100649058,
+  "normalized_max_abs_error": 0.5669327703631044,
+  "auxiliary_vs_similarity_nrmse": 0.03161373195732834,
+  "finite_difference_vs_similarity_nrmse": 0.17139475971660473,
+  "auxiliary_cp_max_on_interior_nodes": 14.48083344394009,
+  "finite_difference_cp_max_on_interior_nodes": 7.714563232355504,
+  "similarity_cp_max_on_interior_nodes": 14.646590331792604,
+  "free_supplied_psi_vs_similarity_nrmse": 0.13600084054563782,
+  "pressure_reference_overlap_point_count": 242,
+  "auxiliary_pressure_reference_nrmse": 0.043871728904230016,
+  "similarity_pressure_reference_nrmse": 0.35462464998120957,
+  "auxiliary_pressure_peak": {
+    "z_over_Vt": 0.5178934201124774,
+    "cp": 16.727304806525986
+  },
+  "similarity_pressure_peak": {
+    "z_over_Vt": 0.5178934201124774,
+    "cp": 18.720892264380684
+  },
+  "reference_pressure_peak": {
+    "z_over_Vt": 0.5102974828375286,
+    "cp": 17.757009345794394
+  },
+  "potential_bvp_relative_residual": 1.193111658875308e-15,
+  "auxiliary_bvp_relative_residual": 1.3397721351419296e-15,
+  "interpretation": "This is an independent diagnostic, not a Gate-2 pass criterion. Large disagreement means the pressure auxiliary BVP and the time-marched potential are not mutually consistent."
+}

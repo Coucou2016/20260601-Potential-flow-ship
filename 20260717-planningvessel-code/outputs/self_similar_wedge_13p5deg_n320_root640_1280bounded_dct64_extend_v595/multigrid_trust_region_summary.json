@@ -1,0 +1,98 @@
+{
+  "status": "self_similar_multigrid_trust_region_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_13p5deg_n320_root320target_m5e4_dct32_reuse_v592",
+  "objective_panel_counts": [
+    640,
+    1280
+  ],
+  "objective_panel_weights": [
+    1.0,
+    1.0
+  ],
+  "objective_normalization": "relative_to_frozen_source_grid_objective",
+  "root_constraint": "bounded",
+  "root_constraint_panel_counts": [
+    640,
+    1280
+  ],
+  "root_validation_panel_counts": [
+    320,
+    640,
+    1280
+  ],
+  "root_target_defects": null,
+  "root_bound_safety_factor": 0.95,
+  "linearized_root_bound": 0.00095,
+  "root_constraint_active_bounds": [
+    "lower",
+    "free"
+  ],
+  "linearized_predicted_root_defects": [
+    -0.000949999999999999,
+    -0.0009158875313591815
+  ],
+  "grid_objective_limit": 0.001,
+  "allow_feasibility_repair": false,
+  "reused_jacobian_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_13p5deg_n320_third_multigrid640_1280_dct32_rootbounded_v593",
+  "mode_count": 64,
+  "accepted_iterations": 1,
+  "initial_normalized_objective": 1.0000000000000002,
+  "final_normalized_objective": 0.9947150239019524,
+  "source_grid_states": {
+    "320": {
+      "panel_count": 320,
+      "exact_objective": 0.0019507216503597221,
+      "signed_root_defect": -0.000501624366778857,
+      "root_relative_mismatch": 0.000501624366778857,
+      "condition_number": 190617.20658345587,
+      "dipole_coefficient": 7.616374546804146
+    },
+    "640": {
+      "panel_count": 640,
+      "exact_objective": 0.001432253419430945,
+      "signed_root_defect": -0.00042479534078114153,
+      "root_relative_mismatch": 0.00042479534078114153,
+      "condition_number": 426592.8491779277,
+      "dipole_coefficient": 7.613604897092261
+    },
+    "1280": {
+      "panel_count": 1280,
+      "exact_objective": 0.0013547042052124293,
+      "signed_root_defect": -0.0003899673250952831,
+      "root_relative_mismatch": 0.0003899673250952831,
+      "condition_number": 1024948.8970464296,
+      "dipole_coefficient": 7.611949394591045
+    }
+  },
+  "final_grid_states": {
+    "320": {
+      "panel_count": 320,
+      "exact_objective": 0.0019458302249541009,
+      "signed_root_defect": -0.000893899002313954,
+      "root_relative_mismatch": 0.000893899002313954,
+      "condition_number": 190608.91005546311,
+      "dipole_coefficient": 7.614774148109367
+    },
+    "640": {
+      "panel_count": 640,
+      "exact_objective": 0.001425728408915142,
+      "signed_root_defect": -0.0008177693066917032,
+      "root_relative_mismatch": 0.0008177693066917032,
+      "condition_number": 426572.12429079966,
+      "dipole_coefficient": 7.61243613555424
+    },
+    "1280": {
+      "panel_count": 1280,
+      "exact_objective": 0.0013465567610154111,
+      "signed_root_defect": -0.000783553309178973,
+      "root_relative_mismatch": 0.000783553309178973,
+      "condition_number": 1024896.8712552084,
+      "dipole_coefficient": 7.610781233077708
+    }
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_13p5deg_n320_root640_1280bounded_dct64_extend_v595\\coupled_checkpoint.json",
+  "conclusion": "accepted_reference_isolated_multigrid_step"
+}

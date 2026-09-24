@@ -1,0 +1,14 @@
+{
+  "classification": "INSUFFICIENT_OR_NONMONOTONE",
+  "physical_validation_status": "FAIL",
+  "metric_name": "kinematic_convergence_integral",
+  "metric_source": "discretization-consistent Iafrati Eq. (52) integral",
+  "kinematic_tolerance": 0.001,
+  "final_kinematic_metric": 0.005298318248847,
+  "minimum_kinematic_metric": 0.0052308164987546,
+  "detected_topology_events": 5,
+  "complete_cycle_count": 4,
+  "recent_cycle_normalized_slope": -0.0037288295225783477,
+  "recent_cycle_relative_range": 0.0324282382013928,
+  "interpretation": "Only KINEMATIC_CONVERGED satisfies the residual prerequisite. DESCENDING_NOT_CONVERGED authorizes checkpoint continuation; a limit cycle requires event-model diagnosis rather than more steps."
+}

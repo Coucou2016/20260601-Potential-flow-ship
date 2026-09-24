@@ -1,0 +1,63 @@
+{
+  "benchmark": "Sun_2007_Table7.1_Fig7.4_eta3_zero_steady_base_flow",
+  "purpose": "numerical_diagnostic_not_a_Troesch_coefficient_acceptance",
+  "rows": [
+    {
+      "smoothing_enabled": true,
+      "substeps_per_plane_interval": 8,
+      "time_step_s": 0.0031103849223331993,
+      "body_panels_per_side": 12,
+      "free_surface_panels_per_side": 15,
+      "uniform_near_body_panel_count": 6,
+      "knuckle_separation_model": "artificial_surface",
+      "raw_vertical_force_coefficient": 0.07104818471013166,
+      "stern_corrected_vertical_force_coefficient": 0.05458826248613425,
+      "max_potential_bvp_relative_residual": 2.1017880816517057e-15,
+      "max_pressure_bvp_relative_residual": 2.0149337198818826e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "maximum_jet_cut_count": 40,
+      "runtime_s": 13.8719496,
+      "response_calibration_used": false,
+      "raw_vertical_force_coefficient_change_from_previous_percent": null,
+      "stern_corrected_vertical_force_coefficient_change_from_previous_percent": null
+    },
+    {
+      "smoothing_enabled": true,
+      "substeps_per_plane_interval": 16,
+      "time_step_s": 0.0015551924611665996,
+      "body_panels_per_side": 12,
+      "free_surface_panels_per_side": 15,
+      "uniform_near_body_panel_count": 6,
+      "knuckle_separation_model": "artificial_surface",
+      "raw_vertical_force_coefficient": 0.07047442342006349,
+      "stern_corrected_vertical_force_coefficient": 0.05414577586972945,
+      "max_potential_bvp_relative_residual": 1.8887040342919963e-15,
+      "max_pressure_bvp_relative_residual": 1.6575082165859044e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "maximum_jet_cut_count": 44,
+      "runtime_s": 26.5702005,
+      "response_calibration_used": false,
+      "raw_vertical_force_coefficient_change_from_previous_percent": 0.8075664317238355,
+      "stern_corrected_vertical_force_coefficient_change_from_previous_percent": 0.8105893029974994
+    },
+    {
+      "smoothing_enabled": true,
+      "substeps_per_plane_interval": 32,
+      "time_step_s": 0.0007775962305832998,
+      "body_panels_per_side": 12,
+      "free_surface_panels_per_side": 15,
+      "uniform_near_body_panel_count": 6,
+      "knuckle_separation_model": "artificial_surface",
+      "raw_vertical_force_coefficient": 0.07087690150990389,
+      "stern_corrected_vertical_force_coefficient": 0.05448619908183874,
+      "max_potential_bvp_relative_residual": 2.04242577313629e-15,
+      "max_pressure_bvp_relative_residual": 2.3201542672228724e-15,
+      "max_contact_constraint_abs_m": 0.0,
+      "maximum_jet_cut_count": 46,
+      "runtime_s": 51.212076499999995,
+      "response_calibration_used": false,
+      "raw_vertical_force_coefficient_change_from_previous_percent": 0.5710980953209396,
+      "stern_corrected_vertical_force_coefficient_change_from_previous_percent": 0.62871610322535
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "physical_acceptance": "NOT_PASSED",
+  "counts": {
+    "COMPARED": 322
+  },
+  "scope": "Common-domain surface comparison only; excluded contact zones and unmatched states are not validated",
+  "metrics": "RMS uses 101 equally spaced horizontal samples per side; no potential gauge alignment fitted",
+  "hashes": {
+    "outputs\\steady_surface_history_20260924\\surface_smoothing_True_substeps_16.npz": "561c79d00c4ed7143de75cfd37dc884e917dc1c46a0632b29f26096835c057f2",
+    "outputs\\steady_surface_history_20260924\\surface_smoothing_True_substeps_32.npz": "46a848dd162b92fce58dced85d17fbc81f6209d065ac46cd9d5f06ef43077584",
+    "outputs\\steady_surface_history_20260924\\surface_smoothing_True_substeps_16.json": "0136cbbb044bdbb5f1df4ffb7035e653b79e28019a0be0ed5940c770f3edae92",
+    "outputs\\steady_surface_history_20260924\\surface_smoothing_True_substeps_32.json": "79eb70af5acaa7e9b6790edb6f051bbd1f5dd197bd7587afb387a771121249c2",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\compare_steady_surface_history.py": "22d93692ee11e0a738e3b5e425853ca3ccc077ecaa192a027a108f0795e65853"
+  }
+}

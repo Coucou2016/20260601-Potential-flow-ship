@@ -1,0 +1,50 @@
+{
+  "mode": "quasistatic",
+  "response_calibration_used": false,
+  "restoring_matrix": [
+    [
+      3137.427426356062,
+      -1087.9112030387585
+    ],
+    [
+      592.537714536749,
+      328.2497527388336
+    ]
+  ],
+  "coarse_matrix": [
+    [
+      3137.427426356062,
+      -1087.9112030387585
+    ],
+    [
+      592.537714536749,
+      328.2497527388336
+    ]
+  ],
+  "refined_matrix": [
+    [
+      3137.427426356062,
+      -1087.9112030387585
+    ],
+    [
+      592.537714536749,
+      328.2497527388336
+    ]
+  ],
+  "relative_step_change": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "heave_step_m": 0.00318,
+  "pitch_step_rad": 0.0017453292519943296,
+  "richardson_extrapolation": false,
+  "max_potential_bvp_relative_residual": 1.57837467292947e-15,
+  "max_pressure_bvp_relative_residual": 2.4285153974318983e-15,
+  "source": "Sun_2007_Eq7.17_and_Eq7.18"
+}

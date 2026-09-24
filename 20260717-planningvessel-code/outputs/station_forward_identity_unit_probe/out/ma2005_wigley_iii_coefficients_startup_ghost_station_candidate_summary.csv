@@ -1,0 +1,8 @@
+benchmark,candidate_name,candidate_order,row_count,pass_count,fail_count,pass_fraction,median_gate_error_ratio,max_gate_error_ratio,median_gate_ratio_delta_vs_current,max_gate_ratio_delta_vs_current,improved_row_count,worsened_row_count,candidate_gate_status,gate_role,path_diagnostic_status
+ma2005_wigley_iii_coefficients,current_default,0,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,PASS,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,ghost_aft_forward_only_removed_keep_time_end,3,1,1,0,1.0,0.0,0.0,0.0,0.0,0,0,PASS,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,bow_pressure_excluded_plus_end,5,1,0,1,0.0,1.1539139243143701,1.1539139243143701,1.1539139243143701,1.1539139243143701,0,1,FAIL,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,ghost_aft_pressure_plus_end,1,1,0,1,0.0,5.512752742352297,5.512752742352297,5.512752742352297,5.512752742352297,0,1,FAIL,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,ghost_aft_pressure_no_end,2,1,0,1,0.0,5.512752742352297,5.512752742352297,5.512752742352297,5.512752742352297,0,1,FAIL,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,ghost_aft_time_only_removed_keep_forward_end,4,1,0,1,0.0,5.512752742352297,5.512752742352297,5.512752742352297,5.512752742352297,0,1,FAIL,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,both_end_pressure_excluded_plus_end,6,1,0,1,0.0,6.666666666666667,6.666666666666667,6.666666666666667,6.666666666666667,0,1,FAIL,diagnostic_startup_ghost_station_candidate_not_hard_gate,INFO

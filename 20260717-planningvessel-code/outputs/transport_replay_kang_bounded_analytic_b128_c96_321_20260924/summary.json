@@ -1,0 +1,44 @@
+{
+  "stage_acceptance": false,
+  "algebra_replay": {
+    "phase": 1.3341156958939432e-16,
+    "pressure": 0.0,
+    "force": 0.0
+  },
+  "corrected_total_amplitude": [
+    10.160258113346002,
+    2.8349831415148627
+  ],
+  "original_total_amplitude": [
+    10.277651750882244,
+    2.8255265414122737
+  ],
+  "diffraction_complex_change": [
+    0.05753710728977696,
+    0.020660871375639427
+  ],
+  "total_complex_change": [
+    0.011521068636806612,
+    0.0033576844028524212
+  ],
+  "integrated_total_amplitude": [
+    10.160990140452387,
+    2.8350310361196254
+  ],
+  "integrated_vs_chain_diffraction_change": [
+    0.00038531651618669904,
+    0.00022039366487944093
+  ],
+  "modes": [
+    "heave",
+    "geometric_midship_pitch"
+  ],
+  "production_changed": false,
+  "limitations": [
+    "Midpoint curved tangent differentiation",
+    "One-sided derivatives at tip and keel",
+    "Not a new solved potential",
+    "No independent complex reference",
+    "Integrated transport uses extrapolated waterline potentials and discrete geometry derivatives"
+  ]
+}
