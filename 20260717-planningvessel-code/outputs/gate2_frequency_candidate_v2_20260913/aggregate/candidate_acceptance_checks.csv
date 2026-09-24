@@ -1,0 +1,8 @@
+check,passed,evidence,status
+frozen_configuration_across_three_speeds,True,All theory and discretization choices are identical.,PASS
+no_empirical_response_scaling,True,No measured motion amplitude enters the hydrodynamic coefficients.,PASS
+provider_kernel_benchmark_validated,False,a1_station_hull_matched_sweep_free_surface_marching_not_benchmark_validated,FAIL
+begovic_heave_global_accuracy,False,Median relative error <=15% and NRMSE <=20%.,FAIL
+begovic_pitch_global_accuracy,False,Median relative error <=15% and NRMSE <=20%.,FAIL
+begovic_peak_coverage,True,"Resolved peaks=4; require >=4, >=2 speeds and both motions.",PASS
+begovic_peak_frequency_accuracy,False,Every resolved peak frequency error must be <=10%.,FAIL

@@ -1,0 +1,19 @@
+check,status,evidence
+gate1_regression,PASS,Ma 2005 10/10 and double-grid Gate 1 must remain PASS.
+nonzero_physical_excitation,PASS,Faltinsen Eq. 9.110-9.117 excitation norm must be non-zero at every coverage point.
+equation_relative_residual,PASS,"max=1.663e-15, limit=1.0e-08"
+finite_outputs,PASS,All numeric coverage outputs must be finite.
+three_speed_twenty_frequency_coverage,PASS,"speed_count=3, min_points_per_speed=25"
+frequency_time_amplitude_consistency,PASS,"max=1.863e-15, limit=0.050"
+frequency_time_phase_consistency,PASS,"max=1.705e-13 deg, limit=5 deg"
+wave_amplitude_linearity,PASS,"max |ratio-2|=0.000e+00, limit=0.050"
+point_acceleration_kinematics,PASS,"max=0.000e+00, limit=1.0e-08"
+independent_experiment_coverage,PASS,"speed_count=2, heave/pitch/acceleration points=11"
+heave_experiment_accuracy,PASS,median relative error <=15% and NRMSE <=20% in declared linear long-wave scope.
+pitch_experiment_accuracy,PASS,median relative error <=15% and NRMSE <=20% in declared linear long-wave scope.
+phase_experiment_accuracy,PASS,"median=13.970 deg, limit=15 deg"
+cg_acceleration_experiment_accuracy,PASS,"NRMSE=0.23620, limit=0.25; bow peaks remain diagnostic."
+linear_scope_peak_frequency_resolved,FAIL,Each experimental peak must be bracketed by at least three eligible points and lie inside the predeclared linear scope.
+linear_scope_peak_frequency_accuracy,FAIL,"max=0.00000, limit=0.10; evaluated only when every peak is resolved."
+approved_source_hashes,PASS,"{""source_manifest_sha256"": ""e9fadb755d9c813037870ad6026981af9cfc2dfe706c3cc47b31ab0b1219bd9c"", ""table1_sha256"": ""e7566c993bda7778d5d2a44296215891a90a72b5071db96d3904a5d5463fbb97"", ""table2_sha256"": ""ac0b21feb5641bfd0423c8219947373ff88448bdc995382714d99b5e7898b84c""}"
+no_empirical_response_scaling,PASS,No response multiplier or reference-derived coefficient is used.

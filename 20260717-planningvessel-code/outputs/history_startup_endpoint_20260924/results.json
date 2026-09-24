@@ -1,0 +1,66 @@
+{
+  "stage_acceptance": false,
+  "rows": [
+    {
+      "n": 8,
+      "zero_initial": false,
+      "exact": 0.5,
+      "original": 0.5625,
+      "corrected": 0.5,
+      "original_error": 0.0625,
+      "corrected_error": 0.0
+    },
+    {
+      "n": 16,
+      "zero_initial": false,
+      "exact": 0.5,
+      "original": 0.53125,
+      "corrected": 0.5,
+      "original_error": 0.03125,
+      "corrected_error": 0.0
+    },
+    {
+      "n": 32,
+      "zero_initial": false,
+      "exact": 0.5,
+      "original": 0.515625,
+      "corrected": 0.5,
+      "original_error": 0.015625,
+      "corrected_error": 0.0
+    },
+    {
+      "n": 8,
+      "zero_initial": true,
+      "exact": 0.16666666666666666,
+      "original": 0.1640625,
+      "corrected": 0.1640625,
+      "original_error": 0.0026041666666666574,
+      "corrected_error": 0.0026041666666666574
+    },
+    {
+      "n": 16,
+      "zero_initial": true,
+      "exact": 0.16666666666666666,
+      "original": 0.166015625,
+      "corrected": 0.166015625,
+      "original_error": 0.0006510416666666574,
+      "corrected_error": 0.0006510416666666574
+    },
+    {
+      "n": 32,
+      "zero_initial": true,
+      "exact": 0.16666666666666666,
+      "original": 0.16650390625,
+      "corrected": 0.16650390625,
+      "original_error": 0.00016276041666665741,
+      "corrected_error": 0.00016276041666665741
+    }
+  ],
+  "exact_problem": "Integral_0^1 (1-t)*phi(t) dt; memory length 2; phi=1 or t on [0,1], zero before start",
+  "scope": "Manufactured temporal quadrature, not a physical Green-function solution",
+  "production_changed": false,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_history_startup_endpoint.py": "6331912565e02b28dcc2cea9544042b20bd34f8d9cf197414a3741ba4bf123c8",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\formulation.py": "7fd318a3c96e837a9451250931144c881b2244bc002ed418b57217e529b913e7"
+  }
+}

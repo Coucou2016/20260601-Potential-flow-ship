@@ -1,0 +1,13 @@
+configuration,model,scope,metric,eligible_point_count,median_relative_error,nrmse,median_limit,nrmse_limit,status
+FnB=1.67,locked baseline,locked baseline FnB=1.67,heave_motion,7,0.20332559127127875,0.2953155726064824,0.15,0.2,FAIL
+FnB=1.67,locked baseline,locked baseline FnB=1.67,pitch_motion,7,0.07196166322125504,0.21258455873778195,0.15,0.2,FAIL
+FnB=2.26,locked baseline,locked baseline FnB=2.26,heave_motion,7,0.39321890094996,0.5920810279592426,0.15,0.2,FAIL
+FnB=2.26,locked baseline,locked baseline FnB=2.26,pitch_motion,7,0.4615569265651021,0.5118401844073611,0.15,0.2,FAIL
+FnB=2.82,locked baseline,locked baseline FnB=2.82,heave_motion,7,0.29789405542909536,1.2580977254738237,0.15,0.2,FAIL
+FnB=2.82,locked baseline,locked baseline FnB=2.82,pitch_motion,7,0.3646949712719868,1.2260643294351823,0.15,0.2,FAIL
+FnB=1.67,frequency-dependent candidate,frequency-dependent candidate FnB=1.67,heave_motion,7,0.44323996854798736,0.40052947386618143,0.15,0.2,FAIL
+FnB=1.67,frequency-dependent candidate,frequency-dependent candidate FnB=1.67,pitch_motion,7,0.5226407271176213,0.7027907537680196,0.15,0.2,FAIL
+FnB=2.26,frequency-dependent candidate,frequency-dependent candidate FnB=2.26,heave_motion,7,0.08690137960631993,0.09888295870313443,0.15,0.2,PASS
+FnB=2.26,frequency-dependent candidate,frequency-dependent candidate FnB=2.26,pitch_motion,7,0.22049945548015396,0.19070099823358785,0.15,0.2,FAIL
+FnB=2.82,frequency-dependent candidate,frequency-dependent candidate FnB=2.82,heave_motion,7,0.0953588711176531,0.09972779317254303,0.15,0.2,PASS
+FnB=2.82,frequency-dependent candidate,frequency-dependent candidate FnB=2.82,pitch_motion,7,0.0646545799958067,0.1036070554359201,0.15,0.2,PASS

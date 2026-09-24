@@ -1,0 +1,17 @@
+scope,metric,eligible_point_count,median_relative_error,nrmse,median_limit,nrmse_limit,status
+faltinsen_ch9,heave_motion,7,0.6280985236340985,1.9660301206932087,0.15,0.2,FAIL
+faltinsen_ch9,pitch_motion,7,0.48843366413894485,2.0212620384526665,0.15,0.2,FAIL
+matched_delta_added_only,heave_motion,7,0.1423512245857029,0.16282250689371502,0.15,0.2,PASS
+matched_delta_added_only,pitch_motion,7,0.29302950442396053,0.19562007089643574,0.15,0.2,FAIL
+matched_delta_damping_only,heave_motion,7,0.4112144100085882,2.6129480367324756,0.15,0.2,FAIL
+matched_delta_damping_only,pitch_motion,7,0.49685778808461556,3.163583999854601,0.15,0.2,FAIL
+matched_delta_added_and_damping,heave_motion,7,0.17019123423757557,0.11191629106543241,0.15,0.2,FAIL
+matched_delta_added_and_damping,pitch_motion,7,0.3804316072937236,0.24345587429786594,0.15,0.2,FAIL
+matched_raw_added_only,heave_motion,7,0.25298134571717223,0.164064176448288,0.15,0.2,FAIL
+matched_raw_added_only,pitch_motion,7,0.4340187938267692,0.25061962884249833,0.15,0.2,FAIL
+matched_raw_damping_only,heave_motion,7,0.6753418978111818,6.994708956475672,0.15,0.2,FAIL
+matched_raw_damping_only,pitch_motion,7,0.5040750881195488,5.635390721372877,0.15,0.2,FAIL
+matched_raw_added_and_damping,heave_motion,7,0.19020064731616676,0.318483202080154,0.15,0.2,FAIL
+matched_raw_added_and_damping,pitch_motion,7,0.2709997266400045,0.23228220472277658,0.15,0.2,FAIL
+planing_base_plus_matched_radiation,heave_motion,7,0.10768295434437346,0.12322679506475857,0.15,0.2,PASS
+planing_base_plus_matched_radiation,pitch_motion,7,0.5415111470822778,0.46824626305787087,0.15,0.2,FAIL

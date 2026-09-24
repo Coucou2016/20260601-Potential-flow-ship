@@ -1,0 +1,5 @@
+configuration,metric,scope,eligible_point_count,reference_peak_is_interior,peak_is_resolved,computed_peak_lambda_over_l,reference_peak_lambda_over_l,computed_peak_omega_e_rad_s,reference_peak_omega_e_rad_s,peak_frequency_relative_error,limit,status,reason
+A,heave,predeclared_linear_scope,2,False,False,4.0,4.0,9.147414581544645,9.147414581544645,0.0,0.1,UNRESOLVED,2 eligible points; reference maximum is at the scope boundary
+A,pitch,predeclared_linear_scope,2,False,False,4.0,4.0,9.147414581544645,9.147414581544645,0.0,0.1,UNRESOLVED,2 eligible points; reference maximum is at the scope boundary
+B,heave,predeclared_linear_scope,2,False,False,4.0,4.0,11.885567872556283,11.885567872556283,0.0,0.1,UNRESOLVED,2 eligible points; reference maximum is at the scope boundary
+B,pitch,predeclared_linear_scope,2,False,False,4.0,4.0,11.885567872556283,11.885567872556283,0.0,0.1,UNRESOLVED,2 eligible points; reference maximum is at the scope boundary

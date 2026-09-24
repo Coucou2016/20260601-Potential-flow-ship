@@ -1,0 +1,88 @@
+{
+  "status": "FAIL",
+  "interpretation": "The candidate is a fixed, response-independent physics route. A FAIL result is retained and does not replace the locked Gate 2 baseline. Passing individual high-speed cases is diagnostic evidence only.",
+  "candidate_route": "matched_raw_station_phase_excitation",
+  "frozen_configuration": {
+    "base_route": "faltinsen_ch9",
+    "phase_length_route": "mean",
+    "frequency_coordinate_route": "source_encounter",
+    "restoring_route": "savitsky_dynamic_lift",
+    "force_component_route": "total_eq32_stokes_body_plus_end",
+    "hydrodynamic_correction_source": "matched_bie",
+    "excitation_route": "matched_bie_station_phase",
+    "phase_resolved_matrix_application": "replace_with_matched_bie",
+    "wagner_pileup_factor": 1.0,
+    "transom_force_cutoff_length_beams": 0.5,
+    "transom_force_recovery_profile": "hard_zero",
+    "momentum_rate_formulation": "relative_velocity_squared"
+  },
+  "validity_status_values": [
+    "a1_station_hull_matched_sweep_free_surface_marching_not_benchmark_validated"
+  ],
+  "global_motion_metrics": [
+    {
+      "scope": "three-speed frozen frequency-dependent candidate",
+      "metric": "heave_motion",
+      "eligible_point_count": 21,
+      "median_relative_error": 0.1540440820506023,
+      "nrmse": 0.23834559818218307,
+      "median_limit": 0.15,
+      "nrmse_limit": 0.2,
+      "status": "FAIL"
+    },
+    {
+      "scope": "three-speed frozen frequency-dependent candidate",
+      "metric": "pitch_motion",
+      "eligible_point_count": 21,
+      "median_relative_error": 0.22049945548015396,
+      "nrmse": 0.404039683168448,
+      "median_limit": 0.15,
+      "nrmse_limit": 0.2,
+      "status": "FAIL"
+    }
+  ],
+  "resolved_peak_count": 4,
+  "resolved_peak_max_relative_error": 0.11595891307950888,
+  "checks": [
+    {
+      "check": "frozen_configuration_across_three_speeds",
+      "status": "PASS",
+      "evidence": "All theory and discretization choices are identical."
+    },
+    {
+      "check": "no_empirical_response_scaling",
+      "status": "PASS",
+      "evidence": "No measured motion amplitude enters the hydrodynamic coefficients."
+    },
+    {
+      "check": "provider_kernel_benchmark_validated",
+      "status": "FAIL",
+      "evidence": "a1_station_hull_matched_sweep_free_surface_marching_not_benchmark_validated"
+    },
+    {
+      "check": "begovic_heave_global_accuracy",
+      "status": "FAIL",
+      "evidence": "Median relative error <=15% and NRMSE <=20%."
+    },
+    {
+      "check": "begovic_pitch_global_accuracy",
+      "status": "FAIL",
+      "evidence": "Median relative error <=15% and NRMSE <=20%."
+    },
+    {
+      "check": "begovic_peak_coverage",
+      "status": "PASS",
+      "evidence": "Resolved peaks=4; require >=4, >=2 speeds and both motions."
+    },
+    {
+      "check": "begovic_peak_frequency_accuracy",
+      "status": "FAIL",
+      "evidence": "Every resolved peak frequency error must be <=10%."
+    }
+  ],
+  "outputs": {
+    "figure": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\gate2_frequency_candidate_v2_20260913\\aggregate\\gate2_frequency_candidate_vs_baseline.png",
+    "speed_motion_metrics": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\gate2_frequency_candidate_v2_20260913\\aggregate\\baseline_candidate_speed_motion_metrics.csv",
+    "peak_metrics": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\gate2_frequency_candidate_v2_20260913\\aggregate\\candidate_peak_metrics.csv"
+  }
+}

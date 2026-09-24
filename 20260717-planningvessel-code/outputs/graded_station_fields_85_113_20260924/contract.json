@@ -1,0 +1,15 @@
+{
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_free_surface_fields.py": "99dfec14a9e84fd93179662ed2d940fe10b98e1b5a6d1840c2cc940cc4cf7317",
+    "outputs\\graded_station_steps_20260924\\stations_85\\free_surface_fn167.npz": "784a02f08f90b34d47d01288cf9dd960d92a072cad0dfbfb4512f86480d28f04",
+    "outputs\\graded_station_steps_20260924\\stations_85\\free_surface_fn226.npz": "9a4bdd56b164129ae3752b91ed2bde3b3f1300ef8db0cbf2b1598ce2bdec0ed1",
+    "outputs\\graded_station_steps_20260924\\stations_85\\free_surface_fn282.npz": "4c3903fbefa8751ee21c772394e29716f76d1253c7a9c7ba5cb13cf976fd430f",
+    "outputs\\graded_station_steps_20260924\\stations_113\\free_surface_fn167.npz": "bbd60f47cd66ac413dfde8ede8eadca5e510909cc243c1a9e7b008879dee5d6b",
+    "outputs\\graded_station_steps_20260924\\stations_113\\free_surface_fn226.npz": "df8d9696afb1f51ef3ac02e1b7b86603593e72fd125e2fd66887cbd374421bce",
+    "outputs\\graded_station_steps_20260924\\stations_113\\free_surface_fn282.npz": "24878629bda4f10f99c9073b4220614ebf0d0027096bc3249ff0f79fb65fed97"
+  },
+  "comparison": "Same x and time; separate sides; fine to mid interpolation; no extrapolation",
+  "common_station_subset": true,
+  "time_comparison": "Local time and pre-solve state time; after-step time differs in station refinement",
+  "scope": "Field diagnostic only, no new acceptance threshold"
+}

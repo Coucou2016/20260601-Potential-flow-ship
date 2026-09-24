@@ -1,0 +1,20 @@
+{
+  "fn_b": 2.26,
+  "speed_mps": 4.6,
+  "running_trim_deg": 4.174,
+  "mean_wetted_length_over_b": 2.3921433109895345,
+  "keel_wetted_length_m": 1.3,
+  "base_route": "zarnick_full",
+  "phase_length_route": "mean",
+  "phase_length_m": 1.0142687638595627,
+  "force_component_route": "time_derivative_only",
+  "hydrodynamic_correction_source": "none",
+  "forced_motion_csv": [],
+  "excitation_route": "faltinsen_global",
+  "wagner_pileup_factor": 1.5707963267948966,
+  "momentum_rate_formulation": "relative_velocity_squared",
+  "sample_omega_rad_s": [],
+  "high_frequency_reference_rad_s": null,
+  "correction_metadata": null,
+  "response_calibration_used": false
+}

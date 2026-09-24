@@ -1,0 +1,21 @@
+check,status,evidence
+gate1_regression,PASS,Ma 2005 10/10 and double-grid Gate 1 must remain PASS.
+nonzero_physical_excitation,PASS,Faltinsen Eq. 9.110-9.117 excitation norm must be non-zero at every coverage point.
+equation_relative_residual,PASS,"max=4.719e-15, limit=1.0e-08"
+finite_outputs,PASS,"All computed coverage, Fridsma and Begovic response fields must be finite."
+three_speed_twenty_frequency_coverage,PASS,"speed_count=3, min_points_per_speed=25"
+frequency_time_amplitude_consistency,PASS,"max=1.863e-15, limit=0.050"
+frequency_time_phase_consistency,PASS,"max=1.705e-13 deg, limit=5 deg"
+wave_amplitude_linearity,PASS,"max |ratio-2|=0.000e+00, limit=0.050"
+point_acceleration_kinematics,PASS,"max=0.000e+00, limit=1.0e-08"
+independent_experiment_coverage,PASS,"Fridsma: speeds=2, rows=11; Begovic: speeds=3, rows=24."
+fridsma_heave_experiment_accuracy,PASS,Fridsma linear long-wave median relative error <=15% and NRMSE <=20%.
+fridsma_pitch_experiment_accuracy,PASS,Fridsma linear long-wave median relative error <=15% and NRMSE <=20%.
+begovic_heave_experiment_accuracy,FAIL,Begovic kA<=0.055: median relative error <=15% and NRMSE <=20%.
+begovic_pitch_experiment_accuracy,FAIL,Begovic kA<=0.055: median relative error <=15% and NRMSE <=20%.
+phase_experiment_accuracy,PASS,"median=13.970 deg, limit=15 deg"
+cg_acceleration_experiment_accuracy,PASS,"NRMSE=0.23620, limit=0.25; bow peaks remain diagnostic."
+begovic_peak_frequency_resolved,PASS,"resolved=4, speeds=3, metrics=2; require >=4, >=2 speeds and both motions."
+begovic_peak_frequency_accuracy,FAIL,"max resolved-peak error=0.13552, limit=0.10; every hard resolved peak must pass."
+approved_source_hashes,PASS,"{""begovic"": {""audit_sha256"": ""3c04800be89fcf60bb3cd31dd1a2098b12d5c68a8925b0b60130c6061053e910"", ""conditions_sha256"": ""e6daa532857aff230b27144cbf2c28cd80122defd2ac05f02e84aed3cfbac672"", ""hull_sha256"": ""12f1e7d707afe74804d696dadc24a29b6dd360facd5f2cab6094de4435cc9f9a"", ""manifest_sha256"": ""32c100eec9db65efdb67b80e01ebc50ef4e69decfd03957b45ece5fab711105a"", ""motion_sha256"": ""13df2dd6346f4930d101211b9bf839a0f891e2b418b4f1ec909a9d8b15c91a33"", ""pdf_sha256"": ""6dc44decbf2df3f1f561d187d76cd0c30d58ab0bacdf7ee9e8097758b0ca6826"", ""running_state_sha256"": ""8d227da59a3a85ede058d860833dab2c3f25128470d0f9ada724be03dbbb5061"", ""running_state_source_sha256"": ""d089ae54458bc9b38bf9f38c05ede1ab1047779a062d1f4015ef7e39e2748eaa""}, ""fridsma"": {""source_manifest_sha256"": ""e9fadb755d9c813037870ad6026981af9cfc2dfe706c3cc47b31ab0b1219bd9c"", ""table1_sha256"": ""e7566c993bda7778d5d2a44296215891a90a72b5071db96d3904a5d5463fbb97"", ""table2_sha256"": ""ac0b21feb5641bfd0423c8219947373ff88448bdc995382714d99b5e7898b84c""}}"
+no_empirical_response_scaling,PASS,No response multiplier or reference-derived coefficient is used.

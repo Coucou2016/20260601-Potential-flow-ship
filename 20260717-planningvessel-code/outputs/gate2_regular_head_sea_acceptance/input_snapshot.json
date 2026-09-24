@@ -1,0 +1,61 @@
+{
+  "acceptance_profile": "regular_head_sea_gate2_locked_v1",
+  "source_hashes": {
+    "table1_sha256": "e7566c993bda7778d5d2a44296215891a90a72b5071db96d3904a5d5463fbb97",
+    "table2_sha256": "ac0b21feb5641bfd0423c8219947373ff88448bdc995382714d99b5e7898b84c",
+    "source_manifest_sha256": "e9fadb755d9c813037870ad6026981af9cfc2dfe706c3cc47b31ab0b1219bd9c"
+  },
+  "source_manifest": {
+    "benchmark": "fridsma_1969_table1_table2_regular_head_waves",
+    "primary_source": {
+      "title": "A Systematic Study of the Rough-Water Performance of Planing Boats",
+      "report": "Davidson Laboratory Report 1275",
+      "year": 1969,
+      "pdf_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/A5_Fridsma_1969_Rough_Water_Performance_Planing_Boats.pdf",
+      "pdf_sha256": "8ade7fe671e75f85bc4d575935d9455091dc95eca037be18e8a570c7cfecf853",
+      "markdown_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/md/A5.md",
+      "markdown_sha256": "34a58d19ea0436912c6cb1ced5592f05e13853adab11aa81fb16f5ecf1ae1567",
+      "source_locations": [
+        "Table 1, report page 33",
+        "Table 2, report pages 34-37"
+      ]
+    },
+    "secondary_source": {
+      "title": "Dynamic motions of planing vessels in head seas",
+      "role": "Measured mean wetted length ratios for configurations A and B",
+      "pdf_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/A4_3_Dynamic motions of planing vessels in head seas.pdf",
+      "pdf_sha256": "e0b4b5691c72377bdc03df558a84d312ecb7a7bce349cae28f71fe72537d448e",
+      "markdown_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/md/A4_3.md",
+      "markdown_sha256": "f2fcff134c372811581a2c9f1e7fdb56aa1228e775d55d40bbb1c3ac6b0dc1d1",
+      "source_locations": [
+        "Section 6, Table 1"
+      ]
+    },
+    "transcription": {
+      "kind": "direct_table_transcription",
+      "not_graph_digitization": true,
+      "wave_height_definition": "crest-to-trough H/B",
+      "heave_definition": "double-amplitude heave divided by crest-to-trough wave height, equal to heave amplitude / wave amplitude",
+      "pitch_definition": "double-amplitude pitch divided by 2*pi*H/lambda, equal to pitch amplitude / incident wave-slope amplitude",
+      "heave_phase_definition": "lag positive, degrees",
+      "pitch_phase_definition": "lead positive, degrees",
+      "acceleration_definition": "reported positive peak above still-water zero-g baseline"
+    }
+  },
+  "matrix_contract": "heave_pitch_2x2_v1",
+  "provider_route": "faltinsen_ch9_reduced_order_planing",
+  "equation": "[-omega_e^2(M+A)+i*omega_e*B+C]xi=F_exc",
+  "coverage_fn_b": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "coverage_frequency_points_per_speed": 25,
+  "fridsma_configurations": [
+    "A",
+    "B"
+  ],
+  "linear_gate_definition": "lambda/L >= 4, non-resonant long-wave subset predeclared in benchmark CSV",
+  "bow_acceleration_role": "retained nonlinear impact diagnostic; CG acceleration is the linear hard metric",
+  "empirical_response_scaling": false
+}

@@ -1,0 +1,174 @@
+{
+  "acceptance_profile": "regular_head_sea_gate2_locked_v2_begovic_peak_gate",
+  "source_hashes": {
+    "fridsma": {
+      "table1_sha256": "e7566c993bda7778d5d2a44296215891a90a72b5071db96d3904a5d5463fbb97",
+      "table2_sha256": "ac0b21feb5641bfd0423c8219947373ff88448bdc995382714d99b5e7898b84c",
+      "source_manifest_sha256": "e9fadb755d9c813037870ad6026981af9cfc2dfe706c3cc47b31ab0b1219bd9c"
+    },
+    "begovic": {
+      "pdf_sha256": "6dc44decbf2df3f1f561d187d76cd0c30d58ab0bacdf7ee9e8097758b0ca6826",
+      "manifest_sha256": "576032a8b10822c0eb6f73a61a816014d710602557af0e4bfcba216094d52c59",
+      "hull_sha256": "12f1e7d707afe74804d696dadc24a29b6dd360facd5f2cab6094de4435cc9f9a",
+      "conditions_sha256": "e6daa532857aff230b27144cbf2c28cd80122defd2ac05f02e84aed3cfbac672",
+      "motion_sha256": "7fe59c27bd15e10fd71792a97069a3668ab77a30f0e2eecd77f147b9d2e80a85",
+      "audit_sha256": "3c04800be89fcf60bb3cd31dd1a2098b12d5c68a8925b0b60130c6061053e910"
+    }
+  },
+  "source_manifests": {
+    "fridsma": {
+      "benchmark": "fridsma_1969_table1_table2_regular_head_waves",
+      "primary_source": {
+        "title": "A Systematic Study of the Rough-Water Performance of Planing Boats",
+        "report": "Davidson Laboratory Report 1275",
+        "year": 1969,
+        "pdf_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/A5_Fridsma_1969_Rough_Water_Performance_Planing_Boats.pdf",
+        "pdf_sha256": "8ade7fe671e75f85bc4d575935d9455091dc95eca037be18e8a570c7cfecf853",
+        "markdown_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/md/A5.md",
+        "markdown_sha256": "34a58d19ea0436912c6cb1ced5592f05e13853adab11aa81fb16f5ecf1ae1567",
+        "source_locations": [
+          "Table 1, report page 33",
+          "Table 2, report pages 34-37"
+        ]
+      },
+      "secondary_source": {
+        "title": "Dynamic motions of planing vessels in head seas",
+        "role": "Measured mean wetted length ratios for configurations A and B",
+        "pdf_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/A4_3_Dynamic motions of planing vessels in head seas.pdf",
+        "pdf_sha256": "e0b4b5691c72377bdc03df558a84d312ecb7a7bce349cae28f71fe72537d448e",
+        "markdown_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/md/A4_3.md",
+        "markdown_sha256": "f2fcff134c372811581a2c9f1e7fdb56aa1228e775d55d40bbb1c3ac6b0dc1d1",
+        "source_locations": [
+          "Section 6, Table 1"
+        ]
+      },
+      "transcription": {
+        "kind": "direct_table_transcription",
+        "not_graph_digitization": true,
+        "wave_height_definition": "crest-to-trough H/B",
+        "heave_definition": "double-amplitude heave divided by crest-to-trough wave height, equal to heave amplitude / wave amplitude",
+        "pitch_definition": "double-amplitude pitch divided by 2*pi*H/lambda, equal to pitch amplitude / incident wave-slope amplitude",
+        "heave_phase_definition": "lag positive, degrees",
+        "pitch_phase_definition": "lead positive, degrees",
+        "acceleration_definition": "reported positive peak above still-water zero-g baseline"
+      }
+    },
+    "begovic": {
+      "benchmark": "begovic_2014_mono_efd_republished_2020",
+      "republication_source": {
+        "authors": [
+          "Kahramanoglu, E.",
+          "Cakici, F.",
+          "Dogrul, A."
+        ],
+        "title": "Numerical Prediction of the Vertical Responses of Planing Hulls in Regular Head Waves",
+        "journal": "Journal of Marine Science and Engineering",
+        "year": 2020,
+        "volume": 8,
+        "article": 455,
+        "doi": "10.3390/jmse8060455",
+        "official_url": "https://www.mdpi.com/2077-1312/8/6/455",
+        "pdf_path": "source/jmse-08-00455-v2.pdf",
+        "pdf_sha256": "6dc44decbf2df3f1f561d187d76cd0c30d58ab0bacdf7ee9e8097758b0ca6826",
+        "source_locations": [
+          "Table 1, PDF page 3: monohedral hull particulars",
+          "Table 4, PDF page 7: regular-wave conditions",
+          "Equations 14-15, PDF page 8: heave and pitch RAO definitions",
+          "Figures 6-8, PDF pages 9-10: monohedral EFD heave and pitch RAOs"
+        ]
+      },
+      "original_experiment": {
+        "authors": [
+          "Begovic, E.",
+          "Bertorello, C.",
+          "Pennino, S."
+        ],
+        "title": "Experimental seakeeping assessment of a warped planing hull model series",
+        "journal": "Ocean Engineering",
+        "year": 2014,
+        "volume": 83,
+        "pages": "1-15",
+        "role": "Original EFD data republished as red-triangle markers in the 2020 source"
+      },
+      "transcription": {
+        "direct_tables": [
+          "Table 1",
+          "Table 4"
+        ],
+        "graph_digitization": [
+          "Figure 6a",
+          "Figure 6b",
+          "Figure 7a",
+          "Figure 7b",
+          "Figure 8a",
+          "Figure 8b"
+        ],
+        "experimental_marker": "red filled triangle labelled EFD",
+        "heave_definition": "eta_3/A",
+        "pitch_definition": "eta_5/(A*k)",
+        "digitizer": "scripts/digitize_begovic2020_regular_wave.py",
+        "coordinate_calibration": {
+          "x_data_lambda_over_l": [
+            0.5,
+            4.5
+          ],
+          "x_pixels": [
+            79.0,
+            533.0
+          ],
+          "y_pixels_zero_to_top": [
+            479.0,
+            63.0
+          ],
+          "image_size_pixels": [
+            607,
+            540
+          ]
+        },
+        "uncertainty": "Absolute RAO uncertainty is max(0.01, four vertical pixels converted with the figure ordinate scale)."
+      },
+      "acceptance_use": {
+        "hard_gate": [
+          "heave RAO amplitude",
+          "pitch RAO amplitude",
+          "resolved peak frequency"
+        ],
+        "not_available": [
+          "independent EFD phase series"
+        ],
+        "diagnostic_only": [
+          "trough-to-peak bow acceleration with possible nonlinear impact contribution"
+        ]
+      },
+      "generated_files": {
+        "begovic2020_mono_hull.csv": "12f1e7d707afe74804d696dadc24a29b6dd360facd5f2cab6094de4435cc9f9a",
+        "begovic2020_regular_wave_conditions.csv": "e6daa532857aff230b27144cbf2c28cd80122defd2ac05f02e84aed3cfbac672",
+        "begovic2020_mono_efd_motion_digitized.csv": "7fe59c27bd15e10fd71792a97069a3668ab77a30f0e2eecd77f147b9d2e80a85",
+        "begovic2020_digitization_audit.csv": "3c04800be89fcf60bb3cd31dd1a2098b12d5c68a8925b0b60130c6061053e910"
+      }
+    }
+  },
+  "matrix_contract": "heave_pitch_2x2_v1",
+  "provider_route": "faltinsen_ch9_reduced_order_planing",
+  "equation": "[-omega_e^2(M+A)+i*omega_e*B+C]xi=F_exc",
+  "coverage_fn_b": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "coverage_frequency_points_per_speed": 25,
+  "fridsma_configurations": [
+    "A",
+    "B"
+  ],
+  "fridsma_linear_gate_definition": "lambda/L >= 4, non-resonant long-wave subset predeclared in benchmark CSV",
+  "begovic_configurations_fn_b": [
+    1.67,
+    2.26,
+    2.82
+  ],
+  "begovic_linear_gate_definition": "wave steepness kA <= 0.055",
+  "begovic_peak_definition": "three-point quadratic experimental peak plus 241-point model scan; experimental prominence must exceed digitization uncertainty",
+  "bow_acceleration_role": "retained nonlinear impact diagnostic; CG acceleration is the linear hard metric",
+  "empirical_response_scaling": false
+}
