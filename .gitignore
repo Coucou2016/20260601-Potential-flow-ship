@@ -8,8 +8,17 @@ early_stage_materials/.mineru_token
 # Duplicate archive of already-tracked folder (>100MB GitHub hard limit)
 20260717-planningvessel-code.zip
 
-# Browser profile artifacts from local report viewing
+# Browser / Edge / Chrome local profile caches (not research content)
 **/report_browser_profile/
+**/chrome-report-profile*/
+**/mobile-qa-profile/
+**/visual-progress-*/
+**/visual_progress_report*/
+**/edge-pdf-*/
+**/edge-report-*/
+
+# Regenerable local pip wheel caches
+**/openplaning-deps/
 
 # Nested repo metadata kept locally only (working trees are still committed)
 **/.git_local_backup/
