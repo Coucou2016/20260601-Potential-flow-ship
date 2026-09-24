@@ -1,0 +1,58 @@
+{
+  "software_run": "COMPLETE",
+  "stage_acceptance": "NOT_PASSED",
+  "production": false,
+  "reference_response_read": false,
+  "cases": [
+    {
+      "id": "fn167",
+      "status": "NOT_VALIDATED",
+      "equilibrium": "prescribed_not_predicted",
+      "keel_wetted_length_m": 1.7902623815836316,
+      "max_equation_residual": 4.559457095559232e-16,
+      "frequency_time_check": "PASS",
+      "large_motion_screen": true,
+      "stability": "NOT_EVALUATED_for_frequency_dependent_system"
+    },
+    {
+      "id": "fn226",
+      "status": "NOT_VALIDATED",
+      "equilibrium": "prescribed_not_predicted",
+      "keel_wetted_length_m": 1.5857312361404374,
+      "max_equation_residual": 2.8399376555430876e-16,
+      "frequency_time_check": "PASS",
+      "large_motion_screen": true,
+      "stability": "NOT_EVALUATED_for_frequency_dependent_system"
+    },
+    {
+      "id": "fn282",
+      "status": "NOT_VALIDATED",
+      "equilibrium": "prescribed_not_predicted",
+      "keel_wetted_length_m": 1.4563822514041216,
+      "max_equation_residual": 3.2685322612892887e-16,
+      "frequency_time_check": "PASS",
+      "large_motion_screen": true,
+      "stability": "NOT_EVALUATED_for_frequency_dependent_system"
+    }
+  ],
+  "pending": [
+    "full_band_grid_and_excitation_validation",
+    "independent_experimental_accuracy",
+    "frequency_dependent_stability"
+  ],
+  "time_method": "linear_steady_harmonic_reconstruction_not_transient",
+  "time_check_method": "single_frequency_frozen_matrices_IVP_with_exact_steady_initial_state_not_memory_model",
+  "geometry": "parameterized_mean_wetted_contour_not_complete_measured_offsets",
+  "dof_status": {
+    "heave": "solved",
+    "pitch": "solved",
+    "surge": "prescribed_speed_constraint",
+    "sway": "head_sea_symmetry_constraint",
+    "roll": "head_sea_symmetry_constraint",
+    "yaw": "head_sea_symmetry_constraint"
+  },
+  "excitation_route": "matched_domain_incident_diffraction",
+  "cutoff_quadrature": "clipped_linear",
+  "wave_reference": "eta_CG=amplitude*sin(omega_e*time); real(qhat*exp(i*omega_e*time))",
+  "empirical_load_treatment": "0.5B hard transom cutoff; inherited recovery length; excitation=matched_domain_incident_diffraction"
+}

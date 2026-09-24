@@ -1,0 +1,43 @@
+{
+  "stage_acceptance": false,
+  "physical_model_validated": false,
+  "results": [
+    {
+      "stations": 161,
+      "inner_count": 20,
+      "outer_count": 44,
+      "status": "DIAGNOSTIC_COMPLETED",
+      "maximum_gain": 19.159957760070384,
+      "maximum_constant_error": 4.440892098500626e-14,
+      "maximum_affine_error": 7.404667157207001e-15,
+      "maximum_cosine_error": 0.11214009011981518
+    },
+    {
+      "stations": 321,
+      "inner_count": 20,
+      "outer_count": 44,
+      "status": "DIAGNOSTIC_COMPLETED",
+      "maximum_gain": 19.15995776007039,
+      "maximum_constant_error": 1.021405182655144e-14,
+      "maximum_affine_error": 1.949829186997931e-15,
+      "maximum_cosine_error": 0.11214009011977122
+    },
+    {
+      "stations": 321,
+      "inner_count": 40,
+      "outer_count": 88,
+      "status": "EXPOSURE_POLICY_REJECTED",
+      "reason": "New exposure exceeds frozen continuation distance; refine or supply a physical model; x_m=0.046877906250000004; completed_stations=315"
+    },
+    {
+      "stations": 641,
+      "inner_count": 40,
+      "outer_count": 88,
+      "status": "DIAGNOSTIC_COMPLETED",
+      "maximum_gain": 36.759915520140595,
+      "maximum_constant_error": 1.2434497875801753e-13,
+      "maximum_affine_error": 1.9447117527437996e-14,
+      "maximum_cosine_error": 0.10413005347387949
+    }
+  ]
+}

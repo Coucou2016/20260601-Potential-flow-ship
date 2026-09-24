@@ -1,0 +1,5 @@
+coefficient,omega_e_sqrt_l_over_g,reference_value_base,computed_value_base,body_panel_count_base,free_surface_panel_count_per_side_base,computed_value_refined,body_panel_count_refined,free_surface_panel_count_per_side_refined,relative_change_refined_vs_base,convergence_limit,convergence_status,source_reproduction_status_base,source_reproduction_status_refined,provider_route_base,force_assembly_route_base,empirical_output_scaling_used_base,empirical_output_scaling_used_refined
+A33,2.0,1.07,1.0761869561327575,30,20,1.0740384011307125,40,30,0.0020004452352756653,0.05,PASS,PASS,PASS,matched_bie_station_sweep,eq32_stokes_body_plus_end,False,False
+A33,2.23,0.941,0.9473493664544732,30,20,0.945060616557168,40,30,0.0024218022179816013,0.05,PASS,PASS,PASS,matched_bie_station_sweep,eq32_stokes_body_plus_end,False,False
+A53,2.0,0.19,0.1864620683366371,30,20,0.1867974240652427,40,30,0.00179529096979663,0.05,PASS,PASS,PASS,matched_bie_station_sweep,eq32_stokes_body_plus_end,False,False
+A53,2.23,0.145,0.1445375701852367,30,20,0.1447060681057685,40,30,0.0011644150292899169,0.05,PASS,PASS,PASS,matched_bie_station_sweep,eq32_stokes_body_plus_end,False,False

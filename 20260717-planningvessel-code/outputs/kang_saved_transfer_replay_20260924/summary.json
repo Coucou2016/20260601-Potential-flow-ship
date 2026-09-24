@@ -1,0 +1,35 @@
+{
+  "stage_acceptance": false,
+  "rows": [
+    {
+      "frequency": 2,
+      "transfers": 320,
+      "transfers_with_new_exposure": 87,
+      "exposed_point_visits": 174,
+      "total_point_visits": 40960,
+      "max_new_points_per_transfer": 2,
+      "transfers_with_edge_extrapolation": 233
+    },
+    {
+      "frequency": 3,
+      "transfers": 320,
+      "transfers_with_new_exposure": 87,
+      "exposed_point_visits": 174,
+      "total_point_visits": 40960,
+      "max_new_points_per_transfer": 2,
+      "transfers_with_edge_extrapolation": 233
+    },
+    {
+      "frequency": 4,
+      "transfers": 320,
+      "transfers_with_new_exposure": 87,
+      "exposed_point_visits": 174,
+      "total_point_visits": 40960,
+      "max_new_points_per_transfer": 2,
+      "transfers_with_edge_extrapolation": 233
+    }
+  ],
+  "max_state_replay_error": 0.0,
+  "production_changed": false,
+  "new_contact_state_model_implemented": false
+}

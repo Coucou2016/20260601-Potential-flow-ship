@@ -1,0 +1,112 @@
+{
+  "model": "matched_bie_longitudinal_research",
+  "boat": {
+    "length_m": 1.9,
+    "beam_m": 0.424,
+    "deadrise_deg": 16.7,
+    "mass_kg": 32.60032733,
+    "lcg_m": 0.697,
+    "vcg_m": 0.143,
+    "pitch_radius_gyration_m": 0.583,
+    "rho_water_kg_m3": 1000.0,
+    "gravity_m_s2": 9.80665
+  },
+  "mesh": {
+    "station_count": 15,
+    "body_panels_per_section": 24,
+    "free_surface_inner_panels": 12,
+    "free_surface_outer_panels": 24,
+    "frequency_samples": 9
+  },
+  "provenance": {
+    "source_hashes": {
+      "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\begovic2020\\begovic2020_mono_hull.csv": "12f1e7d707afe74804d696dadc24a29b6dd360facd5f2cab6094de4435cc9f9a",
+      "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\begovic2020\\begovic2014_mono_calm_water_running_state.csv": "078195aed68123a29e3bf135cb4dfebd7118f194ca6ecb2e0c5dd517d646626f",
+      "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\begovic2020\\begovic2020_regular_wave_conditions.csv": "e6daa532857aff230b27144cbf2c28cd80122defd2ac05f02e84aed3cfbac672"
+    },
+    "geometry": "parameterized monohedral mean wetted hull, not measured offsets",
+    "attitude": "prescribed measured trim and transcribed mean wetted length; towing moment not predicted",
+    "coordinate": "heave_up_pitch_bow_up_about_CG; speed_through_water; head_sea_180deg; SI",
+    "frequency": "source omega0 + U*k; dispersion-consistent wavelength derived by solver"
+  },
+  "cases": [
+    {
+      "id": "fn167",
+      "speed_mps": 3.4,
+      "trim_deg": 3.972,
+      "lambda_w": 3.5141509433962264,
+      "encounter_omega_rad_s": [
+        16.734,
+        13.7884,
+        11.104800000000001,
+        9.86,
+        8.6966,
+        7.5978,
+        6.5604,
+        5.601
+      ],
+      "wave_amplitude_m": [
+        0.02,
+        0.02,
+        0.02,
+        0.032,
+        0.032,
+        0.035,
+        0.035,
+        0.045
+      ]
+    },
+    {
+      "id": "fn226",
+      "speed_mps": 4.6,
+      "trim_deg": 4.174,
+      "lambda_w": 3.066037735849057,
+      "encounter_omega_rad_s": [
+        20.646,
+        16.8796,
+        13.4712,
+        11.899999999999999,
+        10.4354,
+        9.0582,
+        7.7676,
+        6.579
+      ],
+      "wave_amplitude_m": [
+        0.02,
+        0.02,
+        0.02,
+        0.032,
+        0.032,
+        0.035,
+        0.035,
+        0.045
+      ]
+    },
+    {
+      "id": "fn282",
+      "speed_mps": 5.75,
+      "trim_deg": 4.024,
+      "lambda_w": 2.7358490566037736,
+      "encounter_omega_rad_s": [
+        24.394999999999996,
+        19.842000000000002,
+        15.739,
+        13.855,
+        12.10175,
+        10.45775,
+        8.9245,
+        7.516249999999999
+      ],
+      "wave_amplitude_m": [
+        0.02,
+        0.02,
+        0.02,
+        0.032,
+        0.032,
+        0.035,
+        0.035,
+        0.045
+      ]
+    }
+  ]
+}

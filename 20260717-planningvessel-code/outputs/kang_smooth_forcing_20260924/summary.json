@@ -1,0 +1,11 @@
+{
+  "stage_acceptance": false,
+  "diagnostic_screening_pass": true,
+  "production_changed": false,
+  "limitations": [
+    "One fixed section and prescribed frequency",
+    "Transient, not steady RAO",
+    "Time-grid comparison, not physical validation",
+    "Moving geometry not implemented"
+  ]
+}

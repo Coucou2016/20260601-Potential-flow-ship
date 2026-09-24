@@ -1,0 +1,2 @@
+a1_closed_cylinder_added_mass_status,reference,expected_added_mass_per_m,checked_path,is_hard_gate
+diagnostic_a1_closed_cylinder_added_mass_not_hard_gate,two-dimensional circular cylinder in infinite fluid,rho*pi*r^2,inner source Neumann solve -> body potential -> Eq.30 time pressure -> heave force,False

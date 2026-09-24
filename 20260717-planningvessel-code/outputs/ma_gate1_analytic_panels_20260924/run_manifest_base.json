@@ -1,0 +1,39 @@
+{
+  "schema": "ma2005_gate1_run_manifest_v1",
+  "benchmark": "ma2005_wigley_iii",
+  "grid": {
+    "grid_label": "base",
+    "body_panels_per_section": 30,
+    "free_surface_inner_panels_per_side": 20,
+    "control_surface_panels": 40
+  },
+  "reference_file": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\ma2005\\wigley_iii_coefficients_digitized.csv",
+  "reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+  "provider_route": "matched_bie_station_sweep",
+  "force_assembly_route": "eq32_stokes_body_plus_end",
+  "formula_version": "ma2005_a1_eq4_eq6_eq30_eq34_matched_bie_v1",
+  "relative_tolerance": 0.15,
+  "invariant_solver_config": {
+    "panel_integration_route": "analytic_straight_midpoint_curved",
+    "benchmark": "ma2005_wigley_iii",
+    "provider_route": "matched_bie_station_sweep",
+    "force_assembly_route": "eq32_stokes_body_plus_end",
+    "formula_version": "ma2005_a1_eq4_eq6_eq30_eq34_matched_bie_v1",
+    "reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+    "relative_tolerance": 0.15,
+    "max_grid_change": 0.02,
+    "matrix_residual_tolerance": 1e-08,
+    "empirical_output_scaling_used": false
+  },
+  "invariant_solver_config_sha256": "597eb6c3b1e2149a97a955e59360604665c4b31f40fb8155f111971fe25ab654",
+  "empirical_output_scaling_used": false,
+  "runtime_s": 3.9424662003293633,
+  "source_hashes": {
+    "planing_seakeeping/kernels/linear_2p5d/panel_integrals.py": "c57315fcc70aed2d42ab005ec83fd09ac367631dd9a9f54f0e901708babf093e",
+    "planing_seakeeping/kernels/linear_2p5d/formulation.py": "9f79d461db2fe4791fd84b495d2cd0112ab9e014d2a659b5001cc042ccc725f0",
+    "planing_seakeeping/types.py": "35453c1bfe0f2f0c375b598109aaa7bf54fe58549bceed2cc431be545d85cedf",
+    "planing_seakeeping/validation.py": "7b8fd4bfdd355080ba2c6401fc6282353a78e39e33701ceddd07a21709d9746b",
+    "scripts/run_ma2005_gate1_acceptance.py": "eec3ac7ca8b9b97e1f637c1a971e3f202dc3e7dcd616518bbd3914a66abd8936",
+    "combined_source_sha256": "cc483814d67524df4206779300fb731e8395b4dbd195124e9c2d578771a71d95"
+  }
+}

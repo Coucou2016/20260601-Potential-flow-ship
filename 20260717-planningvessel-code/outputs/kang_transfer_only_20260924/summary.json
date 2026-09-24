@@ -1,0 +1,20 @@
+{
+  "stage_acceptance": false,
+  "physical_model_validated": false,
+  "results": [
+    {
+      "stations": 161,
+      "maximum_gain": 19.159957760070384,
+      "maximum_constant_error": 4.440892098500626e-14,
+      "maximum_affine_error": 7.404667157207001e-15,
+      "maximum_cosine_error": 0.11214009011981518
+    },
+    {
+      "stations": 321,
+      "maximum_gain": 19.15995776007039,
+      "maximum_constant_error": 1.021405182655144e-14,
+      "maximum_affine_error": 1.949829186997931e-15,
+      "maximum_cosine_error": 0.11214009011977122
+    }
+  ]
+}

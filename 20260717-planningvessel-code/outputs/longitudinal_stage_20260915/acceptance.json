@@ -1,0 +1,51 @@
+{
+  "software_run": "COMPLETE",
+  "stage_acceptance": "NOT_PASSED",
+  "production": false,
+  "reference_response_read": false,
+  "cases": [
+    {
+      "id": "fn167",
+      "status": "NOT_VALIDATED",
+      "equilibrium": "prescribed_not_predicted",
+      "keel_wetted_length_m": 1.7902623815836316,
+      "max_equation_residual": 4.579603038528349e-16,
+      "large_motion_screen": true,
+      "stability": "NOT_EVALUATED_for_frequency_dependent_system"
+    },
+    {
+      "id": "fn226",
+      "status": "NOT_VALIDATED",
+      "equilibrium": "prescribed_not_predicted",
+      "keel_wetted_length_m": 1.5857312361404374,
+      "max_equation_residual": 5.945992465662288e-16,
+      "large_motion_screen": true,
+      "stability": "NOT_EVALUATED_for_frequency_dependent_system"
+    },
+    {
+      "id": "fn282",
+      "status": "NOT_VALIDATED",
+      "equilibrium": "prescribed_not_predicted",
+      "keel_wetted_length_m": 1.4563822514041216,
+      "max_equation_residual": 2.508699907934022e-16,
+      "large_motion_screen": true,
+      "stability": "NOT_EVALUATED_for_frequency_dependent_system"
+    }
+  ],
+  "pending": [
+    "full_band_grid_and_excitation_validation",
+    "independent_experimental_accuracy",
+    "frequency_dependent_stability"
+  ],
+  "time_method": "linear_steady_harmonic_reconstruction_not_transient",
+  "geometry": "parameterized_mean_wetted_contour_not_complete_measured_offsets",
+  "dof_status": {
+    "heave": "solved",
+    "pitch": "solved",
+    "surge": "prescribed_speed_constraint",
+    "sway": "head_sea_symmetry_constraint",
+    "roll": "head_sea_symmetry_constraint",
+    "yaw": "head_sea_symmetry_constraint"
+  },
+  "empirical_load_treatment": "0.5B hard transom cutoff; equivalent radiation diffraction; inherited frozen candidate"
+}

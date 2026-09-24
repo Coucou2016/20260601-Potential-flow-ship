@@ -1,0 +1,14 @@
+{
+  "stage_acceptance": "NOT_PASSED",
+  "per_speed_motion_pass": false,
+  "reference_sha256": "13df2dd6346f4930d101211b9bf839a0f891e2b418b4f1ec909a9d8b15c91a33",
+  "reference_role": "experimental_regression_set_not_blind_holdout",
+  "missing_gates": [
+    "full_band_three_grid",
+    "independent_excitation_reference",
+    "dense_peak_scan",
+    "Fridsma_phase_acceleration",
+    "independent_time_integration",
+    "stability"
+  ]
+}

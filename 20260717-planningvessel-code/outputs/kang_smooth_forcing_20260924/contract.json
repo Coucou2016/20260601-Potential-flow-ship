@@ -1,0 +1,38 @@
+{
+  "stage_acceptance": false,
+  "scope": "Fixed midship section prescribed normal velocity, not whole-ship diffraction",
+  "stations_for_dt": [
+    81,
+    161,
+    321
+  ],
+  "radius_beams": 3,
+  "free_panels": 128,
+  "control_panels": 192,
+  "omega_rad_s": 5.424016039799293,
+  "velocity_amplitude_m_s": 0.001,
+  "ramp_duration_s": 0.5530946033321483,
+  "duration_s": 2.2123784133285933,
+  "history_duration_s": 4.424756826657187,
+  "reference": "Finer time grid only; no experimental reference",
+  "relative_screening_limit": 0.05,
+  "force": "-rho time derivative of integrated body potential times raw A1 heave measure; fixed-section N/m",
+  "comparison": "Common times after ramp, excluding endpoints; complex L2 and maximum differences",
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_smooth_forcing.py": "978c1fd480cbad9aaccd64e658b5c4485ec69cec4c83cf7c60fe5f82b85b0f95",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_local_marching_spectrum.py": "bf24d62458c0ae52410549e648d6769b3d845e9f8a03a3e8f56e513b1b00abc9",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\__init__.py": "e136ccd28a6eb679b85c134aaa1dbf8d029993e24802386f573d2f219c896c16",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\arc_integrals.py": "1a94390f6dd77d650eb811931d6c7570584e19cc6bca3ddec4878296e690bbf2",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\baseflow_linearization.py": "c55111628f1146ddbf30ab386e200175c98cb4e2a39c1169708bbd6fa1aec011",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\boundary_reconstruction.py": "c62de582c4b7d09ec479d4a43b62d08c03f74bd6694801d9b46e583e9a1d9d9c",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\formulation.py": "7fd318a3c96e837a9451250931144c881b2244bc002ed418b57217e529b913e7",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\implicit_free_surface.py": "b9a2cc690eeb1357ddbefa8687280e97f143dfeb5c246ac12c565c5887999b78",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\panel_integrals.py": "ed0a39ff83b76840b71f8ff15b4717a5638ed7a0e0d3e959ec2f9212829c21ce",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\pressure_gradient.py": "7d6727e0df8203456939efe8609a8e27fc096b44b28cf09d80da59d42193fd0d",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\reconstructed_history.py": "1899a4f1ff91c67214a80deae9207209c9ec29d7b14f4e0f0246bf53430e6857",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\reconstructed_operators.py": "f395c5553125d4dd6f16c813b737348e28c3d65e07a1eb7a394d4bd4bd01d79d",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\sensitivity.py": "5397973ca70863905f3c6e8e55cd64cad49a4355e1a0bfa142f313a8aeb65c33",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\trace_transport.py": "87f081313d169bc87883c97ad04f5d91f96922127c9461a7ed3d4bc4a235d6a8",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\planing_seakeeping\\kernels\\linear_2p5d\\weighted_transport.py": "4751cf922413e095a395d5668ad46d05759dc70bae94fc5ff75f7ce116e00597"
+  }
+}

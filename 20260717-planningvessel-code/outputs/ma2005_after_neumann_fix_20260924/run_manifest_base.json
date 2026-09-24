@@ -1,0 +1,42 @@
+{
+  "schema": "ma2005_gate1_run_manifest_v1",
+  "benchmark": "ma2005_wigley_iii",
+  "grid": {
+    "grid_label": "base",
+    "body_panels_per_section": 30,
+    "free_surface_inner_panels_per_side": 20,
+    "control_surface_panels": 40
+  },
+  "reference_file": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\ma2005\\wigley_iii_coefficients_digitized.csv",
+  "reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+  "provider_route": "matched_bie_station_sweep",
+  "force_assembly_route": "eq32_stokes_body_plus_end",
+  "formula_version": "ma2005_a1_eq4_eq6_eq30_eq34_matched_bie_v1",
+  "relative_tolerance": 0.15,
+  "invariant_solver_config": {
+    "panel_integration_route": "midpoint",
+    "benchmark": "ma2005_wigley_iii",
+    "provider_route": "matched_bie_station_sweep",
+    "force_assembly_route": "eq32_stokes_body_plus_end",
+    "formula_version": "ma2005_a1_eq4_eq6_eq30_eq34_matched_bie_v1",
+    "reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+    "relative_tolerance": 0.15,
+    "max_grid_change": 0.02,
+    "matrix_residual_tolerance": 1e-08,
+    "empirical_output_scaling_used": false
+  },
+  "invariant_solver_config_sha256": "1da79f4c2e2243de2824600ecd946a16ff67e859193afa969a0fd2625de4fcc4",
+  "empirical_output_scaling_used": false,
+  "runtime_s": 2.1932485001161695,
+  "source_hashes": {
+    "planing_seakeeping/kernels/linear_2p5d/panel_integrals.py": "ed0a39ff83b76840b71f8ff15b4717a5638ed7a0e0d3e959ec2f9212829c21ce",
+    "planing_seakeeping/kernels/linear_2p5d/reconstructed_operators.py": "f395c5553125d4dd6f16c813b737348e28c3d65e07a1eb7a394d4bd4bd01d79d",
+    "planing_seakeeping/kernels/linear_2p5d/reconstructed_history.py": "1899a4f1ff91c67214a80deae9207209c9ec29d7b14f4e0f0246bf53430e6857",
+    "planing_seakeeping/kernels/linear_2p5d/arc_integrals.py": "1a94390f6dd77d650eb811931d6c7570584e19cc6bca3ddec4878296e690bbf2",
+    "planing_seakeeping/kernels/linear_2p5d/formulation.py": "93cd695efe940af5ecbe50da8a20f6d0804052ad2723e241f375d9c5760d0b35",
+    "planing_seakeeping/types.py": "35453c1bfe0f2f0c375b598109aaa7bf54fe58549bceed2cc431be545d85cedf",
+    "planing_seakeeping/validation.py": "7b8fd4bfdd355080ba2c6401fc6282353a78e39e33701ceddd07a21709d9746b",
+    "scripts/run_ma2005_gate1_acceptance.py": "b1375a736144413124c8d9b1edd69bfd34984f2456259fbbac84a85a80825c23",
+    "combined_source_sha256": "38402e0fb80e0fe34c9d35ab2e0f1f46ae63e5bb5cea3e4b1344051efd913bf7"
+  }
+}
