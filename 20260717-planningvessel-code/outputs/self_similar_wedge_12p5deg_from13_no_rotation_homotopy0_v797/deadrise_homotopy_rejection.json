@@ -1,0 +1,31 @@
+{
+  "status": "self_similar_deadrise_homotopy_rejected",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_transformation": false,
+  "source_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_13deg_n320_doubleended_r0p015_f0p08_d3_v651",
+  "source_deadrise_deg": 13.0,
+  "target_deadrise_deg": 12.5,
+  "trials": [
+    {
+      "root_xi_scale": 1.0,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "No shallow-water-compatible outer/jet matching surface remains. Last root error: The shallow-water root state has no physical first-step solution: f=0.0258681831177, S_lambda=4.67448221645, S_tau=-4.18183713299, delta_lambda=0.00151566936452."
+    },
+    {
+      "root_xi_scale": 0.98,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The truncated spray-jet control surface projects below eta=0."
+    },
+    {
+      "root_xi_scale": 0.95,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The truncated spray-jet control surface projects below eta=0."
+    },
+    {
+      "root_xi_scale": 0.9,
+      "status": "REJECTED_PHYSICAL",
+      "reason": "The truncated spray-jet control surface projects below eta=0."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "self_similar_newton_direction_reuse_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "newton_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p425deg_n320_rootcos32_continuousmap_v911",
+  "initial_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p425deg_n320_rootcos32_continuousmap_v911",
+  "direction_outer_iteration": 1,
+  "direction_mapping": "normalized_arc",
+  "direction_source_node_count": 321,
+  "direction_target_node_count": 321,
+  "requested_steps": 8,
+  "accepted_steps": 0,
+  "initial_formal_exact_objective": 0.0010108149535807314,
+  "final_formal_exact_objective": 0.001010814831084842,
+  "formal_objective_limit": 0.001,
+  "formal_numerical_gate_pass": false,
+  "final_root_relative_mismatch": 4.683003209481718e-08,
+  "root_mismatch_limit": 0.001,
+  "final_condition_number": 252956.02196646325,
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p425deg_n320_reuse_v911_direction_v912\\coupled_checkpoint.json",
+  "conclusion": "no_admissible_frozen_newton_direction_step"
+}

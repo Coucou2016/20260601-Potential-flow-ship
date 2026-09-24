@@ -1,0 +1,40 @@
+{
+  "status": "self_similar_frozen_multigrid_direction_reuse_diagnostic_unvalidated",
+  "validated": false,
+  "production_enabled": false,
+  "reference_used_during_solve": false,
+  "trust_run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_dct16_multigrid_relinearized_inner8_v852",
+  "initial_checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_dct16_multigrid_relinearized_inner8_v852",
+  "requested_steps": 8,
+  "accepted_steps": 1,
+  "saved_step_factor": 1.0,
+  "direction_reconstruction_relative_error": 1.974895486313326e-14,
+  "direction_reconstruction_dipole_relative_error": 1.5619745677800135e-11,
+  "objective_panel_counts": [
+    320
+  ],
+  "objective_validation_panel_counts": [
+    320
+  ],
+  "leading_panel_objective_count": 0,
+  "leading_panel_objective_weight": 1.0,
+  "leading_panel_objective_ratio_limit": null,
+  "direction_objective_preconditioner": "leading_panel_rows_only",
+  "acceptance_objective_preconditioned": false,
+  "candidate_root_seed_policy": "inherit_source",
+  "root_inner_iterations": 8,
+  "matching_surface_policy": "fixed_branch",
+  "root_validation_panel_counts": [
+    320
+  ],
+  "final_grid_states": {
+    "320": {
+      "exact_objective": 0.005289308941880592,
+      "signed_root_defect": 3.035190152716551e-09,
+      "root_relative_mismatch": 3.035190152716551e-09,
+      "condition_number": 253423.30921856282
+    }
+  },
+  "checkpoint": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p5deg_n320_dct16_multigrid_relinearized_reuse8_v853\\coupled_checkpoint.json",
+  "conclusion": "accepted_frozen_multigrid_direction_steps"
+}

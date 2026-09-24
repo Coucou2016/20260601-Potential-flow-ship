@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "gate": "reference_isolated_self_similar_320_panel_bridge_series",
+  "reference_used_during_solve": false,
+  "limits": {
+    "objective": 0.001,
+    "root_mismatch": 0.001,
+    "maximum_deadrise_step_deg": 0.25,
+    "continuity_relative": 0.05,
+    "condition_number_ratio": 1.1,
+    "reconstruction_relative": 1e-12
+  },
+  "point_pass": [
+    true,
+    true,
+    true
+  ],
+  "transition_pass": [
+    true,
+    true
+  ],
+  "points": [
+    {
+      "run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p425deg_n320_continuousmap_newton64_relinearized_v917",
+      "deadrise_deg": 12.425,
+      "formal_exact_objective": 0.00096560030283271,
+      "root_relative_mismatch": 7.557047744696684e-12,
+      "condition_number": 252992.82759689598,
+      "dipole_coefficient": 8.069360740489385,
+      "root_thickness": 0.08617514313319435,
+      "interface_s_lambda": 3.1302890797393794,
+      "measured_s_lambda": 3.130289079763035,
+      "root_xi": 4.573998272823512,
+      "reconstruction_relative_error": 4.597017211338539e-17,
+      "reference_used_during_solve": false,
+      "summary_file": "newton_krylov_summary.json",
+      "checkpoint_sha256": "60ab6b7a3fe363ea93514e5200de7b93837224486902f9417b6f85d27348e9b2",
+      "outer_nodes_sha256": "e4dab81b3aa73f537cd4283ad2d30b40d212d9c732d79e2ad657d3615bb1264b"
+    },
+    {
+      "run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p4125deg_n320_continuousmap_krylov16_relinearized_v920",
+      "deadrise_deg": 12.4125,
+      "formal_exact_objective": 0.0009996071548649178,
+      "root_relative_mismatch": 8.338412934529818e-07,
+      "condition_number": 253031.92797220979,
+      "dipole_coefficient": 8.06940485132356,
+      "root_thickness": 0.0850081547919178,
+      "interface_s_lambda": 3.1488098694421347,
+      "measured_s_lambda": 3.1488072438344403,
+      "root_xi": 4.573168207031927,
+      "reconstruction_relative_error": 4.7704895589362195e-17,
+      "reference_used_during_solve": false,
+      "summary_file": "newton_krylov_summary.json",
+      "checkpoint_sha256": "3b11fd544b51640a52a53ecb104216abc74993b6f135ae32b0959a84a19b15da",
+      "outer_nodes_sha256": "96b913070b3fad019150ecd76436ae1d45a8065424f0a90cb3d88b25206c3cfb"
+    },
+    {
+      "run": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\self_similar_wedge_12p40deg_n320_continuousmap_newton64_relinearized_v924",
+      "deadrise_deg": 12.4,
+      "formal_exact_objective": 0.0009977301375848201,
+      "root_relative_mismatch": 6.625220034090781e-12,
+      "condition_number": 253052.56011354204,
+      "dipole_coefficient": 8.088108699202436,
+      "root_thickness": 0.08583218074835056,
+      "interface_s_lambda": 3.1396231963821393,
+      "measured_s_lambda": 3.13962319640294,
+      "root_xi": 4.578730237870485,
+      "reconstruction_relative_error": 1.4144665842760906e-16,
+      "reference_used_during_solve": false,
+      "summary_file": "newton_krylov_summary.json",
+      "checkpoint_sha256": "774892b77c0cfaee72d9310e54ebe098beea4e8aaacc54ae7a78637872ac1c4c",
+      "outer_nodes_sha256": "7409656e9c7f89d1c4d2e43a019ed888a0947ea5fdc5c0cc0d376dbb06f169c7"
+    }
+  ],
+  "transitions": [
+    {
+      "from_deadrise_deg": 12.425,
+      "to_deadrise_deg": 12.4125,
+      "deadrise_step_deg": 0.012500000000001066,
+      "root_thickness_relative_change": 0.013542052833876137,
+      "interface_s_lambda_relative_change": 0.005916638761138725,
+      "dipole_relative_change": 5.46645956145278e-06,
+      "root_xi_relative_change": 0.00018147488085359088,
+      "condition_number_ratio": 1.0001545513194394
+    },
+    {
+      "from_deadrise_deg": 12.4125,
+      "to_deadrise_deg": 12.4,
+      "deadrise_step_deg": 0.01249999999999929,
+      "root_thickness_relative_change": 0.009693493035459973,
+      "interface_s_lambda_relative_change": 0.0029175064360500774,
+      "dipole_relative_change": 0.002317872039325051,
+      "root_xi_relative_change": 0.0012162314148004031,
+      "condition_number_ratio": 1.0000815396756355
+    }
+  ]
+}
