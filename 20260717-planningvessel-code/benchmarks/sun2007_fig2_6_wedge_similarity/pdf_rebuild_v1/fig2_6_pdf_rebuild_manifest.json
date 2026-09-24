@@ -1,0 +1,162 @@
+{
+  "artifact": "Sun 2007 Fig. 2.6 source-PDF panel crops",
+  "crop_coordinate_space": "PDF points and rendered-page pixels use an upper-left origin; crop boxes are [left, upper, right, lower] with right and lower bounds exclusive.",
+  "outputs": [
+    {
+      "crop_pixels": [
+        200,
+        312,
+        1008,
+        920
+      ],
+      "crop_points": [
+        50,
+        78,
+        252,
+        230
+      ],
+      "filename": "fig2_6_beta10_free_surface.png",
+      "panel": "beta10_free_surface",
+      "sha256": "aa050bd98c8ed093dad313973da8028d85522e175d459074d4128e5f57c75e07",
+      "size_px": [
+        808,
+        608
+      ]
+    },
+    {
+      "crop_pixels": [
+        992,
+        312,
+        1840,
+        920
+      ],
+      "crop_points": [
+        248,
+        78,
+        460,
+        230
+      ],
+      "filename": "fig2_6_beta10_pressure.png",
+      "panel": "beta10_pressure",
+      "sha256": "61979ccbb5209522b2cd28a6e81ef37ab9d64fb39a0d439378a60fbc5f65f6d6",
+      "size_px": [
+        848,
+        608
+      ]
+    },
+    {
+      "crop_pixels": [
+        200,
+        976,
+        1008,
+        1584
+      ],
+      "crop_points": [
+        50,
+        244,
+        252,
+        396
+      ],
+      "filename": "fig2_6_beta20_free_surface.png",
+      "panel": "beta20_free_surface",
+      "sha256": "8e8b781632e9895713573b1c62c0e8bd8477d4d50738ac99ed2dd182170c7cf2",
+      "size_px": [
+        808,
+        608
+      ]
+    },
+    {
+      "crop_pixels": [
+        992,
+        976,
+        1840,
+        1584
+      ],
+      "crop_points": [
+        248,
+        244,
+        460,
+        396
+      ],
+      "filename": "fig2_6_beta20_pressure.png",
+      "panel": "beta20_pressure",
+      "sha256": "6d039cadf77a8c371fc73c73a2bf1b3ea73cfe646e97d2a540ec4c4943347eb8",
+      "size_px": [
+        848,
+        608
+      ]
+    },
+    {
+      "crop_pixels": [
+        200,
+        1636,
+        1008,
+        2244
+      ],
+      "crop_points": [
+        50,
+        409,
+        252,
+        561
+      ],
+      "filename": "fig2_6_beta30_free_surface.png",
+      "panel": "beta30_free_surface",
+      "sha256": "a64594c2a9043a607ea2b6aa9da45245f27e15a974822123b0a3b7a039443743",
+      "size_px": [
+        808,
+        608
+      ]
+    },
+    {
+      "crop_pixels": [
+        992,
+        1636,
+        1840,
+        2244
+      ],
+      "crop_points": [
+        248,
+        409,
+        460,
+        561
+      ],
+      "filename": "fig2_6_beta30_pressure.png",
+      "panel": "beta30_pressure",
+      "sha256": "e00e93782c725729ad5784ebe86f41ac83a6c8f99e8046769b6e081e8cdbc311",
+      "size_px": [
+        848,
+        608
+      ]
+    }
+  ],
+  "render": {
+    "backend": "pypdfium2",
+    "dpi": 288.0,
+    "image_mode": "RGB",
+    "may_draw_forms": false,
+    "pdfium_version": "153.0.7999.0",
+    "pillow_version": "12.2.0",
+    "png": {
+      "compress_level": 9,
+      "optimize": false
+    },
+    "pypdfium2_version": "5.13.0",
+    "rendered_page_size_px": [
+      1996,
+      2836
+    ],
+    "rotation_degrees": 0,
+    "scale_pixels_per_point": 4.0
+  },
+  "scope": "Source-PDF rasterization only; no curve digitization, historical JPEG hash comparison, or digitization-uncertainty closure is asserted.",
+  "source_pdf": {
+    "page_count": 190,
+    "page_index_zero_based": 39,
+    "page_size_points": [
+      499.0,
+      709.0
+    ],
+    "path": "benchmarks\\sun2007_fig2_6_wedge_similarity\\sun2007_boundary_element_method.pdf",
+    "sha256": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d"
+  }
+}

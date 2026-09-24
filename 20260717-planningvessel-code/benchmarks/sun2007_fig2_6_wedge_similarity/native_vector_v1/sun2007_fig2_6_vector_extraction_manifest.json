@@ -1,0 +1,1233 @@
+{
+  "artifact": "Sun 2007 Fig. 2.6 native-PDF blue SIM vector extraction",
+  "artifacts": {
+    "legacy_audit_csv": {
+      "filename": "sun2007_fig2_6_vector_vs_legacy_audit.csv",
+      "row_count": 6,
+      "sha256": "07a93c30f58d7f5e566cf277605ad8a72f20c9e4912495c9e1018370b88f475c"
+    },
+    "raster_audit_csv": {
+      "filename": "sun2007_fig2_6_vector_vs_pdf_redigitization_audit.csv",
+      "row_count": 6,
+      "sha256": "6f7fd3e1c7b5371366cee70a61f6fcc64f461fcd739f8c715ef60f6a1e5f7f5e"
+    },
+    "vector_csv": {
+      "filename": "sun2007_fig2_6_vector_similarity_curves.csv",
+      "row_count": 763,
+      "sha256": "78a3df4c5aa97a12361a26cdbd4d048d207c0ea47ad8f87f0bc3ccea897b63e6"
+    }
+  },
+  "blue_stroke_evidence": {
+    "blue_stroke_count_on_page": 30,
+    "color_operator_sequence": [
+      "CS /Cs6",
+      "SCN 0 0 1",
+      "m/l",
+      "S"
+    ],
+    "color_space": {
+      "alternate": "/DeviceRGB",
+      "blue_stroke_components": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "component_count": 3,
+      "kind": "/ICCBased",
+      "resource_name": "/Cs6"
+    },
+    "dash_representation": "manual disconnected m/l subpaths; the page-level d operator is [] 0",
+    "global_dash_operator": {
+      "array": [],
+      "operation_index": 19,
+      "phase": 0.0
+    }
+  },
+  "curves": [
+    {
+      "beta_deg": 10.0,
+      "branch_policy": "content_stream_fold_to_outward_branch",
+      "calibration_source": "labelled vector tick centres on Fig. 2.6; no raster or legacy input",
+      "fold": {
+        "fold_pdf_x": 152.1,
+        "fold_pdf_y": 580.899,
+        "fold_source_subpath_index": 22,
+        "fold_stroke_operation_index": 903,
+        "fold_vertex_index": 0,
+        "fold_visible_piece_index": 0,
+        "selection": "content_stream_global_minimum_pdf_x_fold_then_follow_render_order"
+      },
+      "panel": "beta10_free_surface",
+      "plot_box_pdf_user_space": [
+        81.42,
+        508.719,
+        239.46,
+        625.299
+      ],
+      "point_count": 62,
+      "quantity": "free_surface",
+      "selected_blue_strokes": [
+        {
+          "clip_box_pdf_user_space": [
+            215.7,
+            624.699,
+            217.61999999999998,
+            625.23898
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 787,
+          "point_count": 2,
+          "stroke_operator_index": 789,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": null,
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 794,
+          "point_count": 109,
+          "stroke_operator_index": 903,
+          "subpath_count": 48
+        }
+      ],
+      "vector_row_sha256": "2e9b34345f55b47e0ca4e51c584921a5cd6d1bd184113926e048e94a170e0f3a",
+      "x_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -10.306802500446377,
+        "labelled_ticks": [
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 81.42
+          },
+          {
+            "axis_value": 5.0,
+            "pdf_page_user_space": 120.96
+          },
+          {
+            "axis_value": 10.0,
+            "pdf_page_user_space": 160.44
+          },
+          {
+            "axis_value": 15.0,
+            "pdf_page_user_space": 199.92
+          },
+          {
+            "axis_value": 20.0,
+            "pdf_page_user_space": 239.46
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.0030381281624123346,
+        "name": "y_over_Vt",
+        "slope": 0.12656944964127634
+      },
+      "y_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -19.452137501733034,
+        "labelled_ticks": [
+          {
+            "axis_value": -2.0,
+            "pdf_page_user_space": 508.719
+          },
+          {
+            "axis_value": -1.0,
+            "pdf_page_user_space": 537.819
+          },
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 566.979
+          },
+          {
+            "axis_value": 1.0,
+            "pdf_page_user_space": 596.139
+          },
+          {
+            "axis_value": 2.0,
+            "pdf_page_user_space": 625.299
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.0008237229497716214,
+        "name": "z_over_Vt",
+        "slope": 0.03430766538046113
+      }
+    },
+    {
+      "beta_deg": 10.0,
+      "branch_policy": "all_visible_content_stream_dashed_segments",
+      "calibration_source": "labelled vector tick centres on Fig. 2.6; no raster or legacy input",
+      "fold": null,
+      "panel": "beta10_pressure",
+      "plot_box_pdf_user_space": [
+        281.88,
+        506.979,
+        440.46,
+        624.279
+      ],
+      "point_count": 192,
+      "quantity": "pressure",
+      "selected_blue_strokes": [
+        {
+          "clip_box_pdf_user_space": null,
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.308,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 1244,
+          "point_count": 192,
+          "stroke_operator_index": 1436,
+          "subpath_count": 90
+        }
+      ],
+      "vector_row_sha256": "2aa3d841026f28c159314935f86222f58d8ca480ad958abb7f398c0a491bc023",
+      "x_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -4.555471156580163,
+        "labelled_ticks": [
+          {
+            "axis_value": -1.0,
+            "pdf_page_user_space": 281.88
+          },
+          {
+            "axis_value": -0.5,
+            "pdf_page_user_space": 321.54
+          },
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 361.2
+          },
+          {
+            "axis_value": 0.5,
+            "pdf_page_user_space": 400.8
+          },
+          {
+            "axis_value": 1.0,
+            "pdf_page_user_space": 440.46
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.0003027092269638487,
+        "name": "z_over_Vt",
+        "slope": 0.012612884456830361
+      },
+      "y_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -432.20716112531954,
+        "labelled_ticks": [
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 506.979
+          },
+          {
+            "axis_value": 20.0,
+            "pdf_page_user_space": 530.439
+          },
+          {
+            "axis_value": 40.0,
+            "pdf_page_user_space": 553.899
+          },
+          {
+            "axis_value": 60.0,
+            "pdf_page_user_space": 577.359
+          },
+          {
+            "axis_value": 80.0,
+            "pdf_page_user_space": 600.819
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 5.684341886080802e-14,
+        "name": "p_over_half_rho_V2",
+        "slope": 0.8525149190110825
+      }
+    },
+    {
+      "beta_deg": 20.0,
+      "branch_policy": "content_stream_fold_to_outward_branch",
+      "calibration_source": "labelled vector tick centres on Fig. 2.6; no raster or legacy input",
+      "fold": {
+        "fold_pdf_x": 154.56,
+        "fold_pdf_y": 406.599,
+        "fold_source_subpath_index": 21,
+        "fold_stroke_operation_index": 1994,
+        "fold_vertex_index": 0,
+        "fold_visible_piece_index": 0,
+        "selection": "content_stream_global_minimum_pdf_x_fold_then_follow_render_order"
+      },
+      "panel": "beta20_free_surface",
+      "plot_box_pdf_user_space": [
+        86.64,
+        343.839,
+        241.74,
+        457.839
+      ],
+      "point_count": 64,
+      "quantity": "free_surface",
+      "selected_blue_strokes": [
+        {
+          "clip_box_pdf_user_space": null,
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.301,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 1887,
+          "point_count": 107,
+          "stroke_operator_index": 1994,
+          "subpath_count": 52
+        }
+      ],
+      "vector_row_sha256": "9d507d3a4d04210ab38f9218b70645e005d9fb0ba4c501171fc6fbe5102d016d",
+      "x_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -5.585640582755641,
+        "labelled_ticks": [
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 86.64
+          },
+          {
+            "axis_value": 2.5,
+            "pdf_page_user_space": 125.4
+          },
+          {
+            "axis_value": 5.0,
+            "pdf_page_user_space": 164.22
+          },
+          {
+            "axis_value": 7.5,
+            "pdf_page_user_space": 202.98
+          },
+          {
+            "axis_value": 10.0,
+            "pdf_page_user_space": 241.74
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.0015472689589657307,
+        "name": "y_over_Vt",
+        "slope": 0.06446953995685425
+      },
+      "y_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -35.16131578947368,
+        "labelled_ticks": [
+          {
+            "axis_value": -5.0,
+            "pdf_page_user_space": 343.839
+          },
+          {
+            "axis_value": -2.5,
+            "pdf_page_user_space": 372.339
+          },
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 400.839
+          },
+          {
+            "axis_value": 2.5,
+            "pdf_page_user_space": 429.339
+          },
+          {
+            "axis_value": 5.0,
+            "pdf_page_user_space": 457.839
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.0,
+        "name": "z_over_Vt",
+        "slope": 0.08771929824561403
+      }
+    },
+    {
+      "beta_deg": 20.0,
+      "branch_policy": "all_visible_content_stream_dashed_segments",
+      "calibration_source": "labelled vector tick centres on Fig. 2.6; no raster or legacy input",
+      "fold": null,
+      "panel": "beta20_pressure",
+      "plot_box_pdf_user_space": [
+        283.5,
+        344.139,
+        439.5,
+        459.399
+      ],
+      "point_count": 193,
+      "quantity": "pressure",
+      "selected_blue_strokes": [
+        {
+          "clip_box_pdf_user_space": null,
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.302,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2217,
+          "point_count": 183,
+          "stroke_operator_index": 2400,
+          "subpath_count": 82
+        },
+        {
+          "clip_box_pdf_user_space": [
+            412.5,
+            344.079,
+            413.21997,
+            344.55898
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.302,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2405,
+          "point_count": 2,
+          "stroke_operator_index": 2407,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            412.74,
+            344.079,
+            414.42,
+            344.49898
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.302,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2413,
+          "point_count": 2,
+          "stroke_operator_index": 2415,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            415.38,
+            344.079,
+            417.24,
+            344.43899
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.302,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2421,
+          "point_count": 2,
+          "stroke_operator_index": 2423,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            418.26,
+            344.079,
+            420.12,
+            344.43899
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.302,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2429,
+          "point_count": 2,
+          "stroke_operator_index": 2431,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            421.14,
+            344.079,
+            423.0,
+            344.49898
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.302,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2437,
+          "point_count": 2,
+          "stroke_operator_index": 2439,
+          "subpath_count": 1
+        }
+      ],
+      "vector_row_sha256": "1030896d79136dcda4c1c67bba9c4caf8742891503ce2d482f932c4514efefbb",
+      "x_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -4.634615384615384,
+        "labelled_ticks": [
+          {
+            "axis_value": -1.0,
+            "pdf_page_user_space": 283.5
+          },
+          {
+            "axis_value": -0.5,
+            "pdf_page_user_space": 322.5
+          },
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 361.5
+          },
+          {
+            "axis_value": 0.5,
+            "pdf_page_user_space": 400.5
+          },
+          {
+            "axis_value": 1.0,
+            "pdf_page_user_space": 439.5
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 4.440892098500626e-16,
+        "name": "z_over_Vt",
+        "slope": 0.01282051282051282
+      },
+      "y_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -59.719375661124204,
+        "labelled_ticks": [
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 344.139
+          },
+          {
+            "axis_value": 5.0,
+            "pdf_page_user_space": 372.939
+          },
+          {
+            "axis_value": 10.0,
+            "pdf_page_user_space": 401.739
+          },
+          {
+            "axis_value": 15.0,
+            "pdf_page_user_space": 430.539
+          },
+          {
+            "axis_value": 20.0,
+            "pdf_page_user_space": 459.399
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.004165797888646239,
+        "name": "p_over_half_rho_V2",
+        "slope": 0.17353877317324462
+      }
+    },
+    {
+      "beta_deg": 30.0,
+      "branch_policy": "content_stream_fold_to_outward_branch",
+      "calibration_source": "labelled vector tick centres on Fig. 2.6; no raster or legacy input",
+      "fold": {
+        "fold_pdf_x": 154.32,
+        "fold_pdf_y": 241.119,
+        "fold_source_subpath_index": 20,
+        "fold_stroke_operation_index": 3049,
+        "fold_vertex_index": 1,
+        "fold_visible_piece_index": 0,
+        "selection": "content_stream_global_minimum_pdf_x_fold_then_follow_render_order"
+      },
+      "panel": "beta30_free_surface",
+      "plot_box_pdf_user_space": [
+        81.72,
+        174.219,
+        241.2,
+        293.439
+      ],
+      "point_count": 68,
+      "quantity": "free_surface",
+      "selected_blue_strokes": [
+        {
+          "clip_box_pdf_user_space": null,
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.311,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 2940,
+          "point_count": 109,
+          "stroke_operator_index": 3049,
+          "subpath_count": 50
+        },
+        {
+          "clip_box_pdf_user_space": [
+            240.9,
+            234.219,
+            241.26000000000002,
+            234.75898999999998
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.311,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3054,
+          "point_count": 2,
+          "stroke_operator_index": 3056,
+          "subpath_count": 1
+        }
+      ],
+      "vector_row_sha256": "768d8bfc180cfd4bbe1dcd808af5112cd0891030c221a52144d64af9b53077a7",
+      "x_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -3.0744920993227973,
+        "labelled_ticks": [
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 81.72
+          },
+          {
+            "axis_value": 2.0,
+            "pdf_page_user_space": 134.88
+          },
+          {
+            "axis_value": 4.0,
+            "pdf_page_user_space": 188.04
+          },
+          {
+            "axis_value": 6.0,
+            "pdf_page_user_space": 241.2
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 1.3322676295501878e-15,
+        "name": "y_over_Vt",
+        "slope": 0.037622272385252065
+      },
+      "y_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -11.77110508398269,
+        "labelled_ticks": [
+          {
+            "axis_value": -3.0,
+            "pdf_page_user_space": 174.219
+          },
+          {
+            "axis_value": -2.0,
+            "pdf_page_user_space": 194.139
+          },
+          {
+            "axis_value": -1.0,
+            "pdf_page_user_space": 213.939
+          },
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 233.799
+          },
+          {
+            "axis_value": 1.0,
+            "pdf_page_user_space": 253.719
+          },
+          {
+            "axis_value": 2.0,
+            "pdf_page_user_space": 273.519
+          },
+          {
+            "axis_value": 3.0,
+            "pdf_page_user_space": 293.439
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.00215852025272234,
+        "name": "z_over_Vt",
+        "slope": 0.05034157796339433
+      }
+    },
+    {
+      "beta_deg": 30.0,
+      "branch_policy": "all_visible_content_stream_dashed_segments",
+      "calibration_source": "labelled vector tick centres on Fig. 2.6; no raster or legacy input",
+      "fold": null,
+      "panel": "beta30_pressure",
+      "plot_box_pdf_user_space": [
+        279.84,
+        176.859,
+        437.58,
+        293.439
+      ],
+      "point_count": 184,
+      "quantity": "pressure",
+      "selected_blue_strokes": [
+        {
+          "clip_box_pdf_user_space": [
+            279.84,
+            244.299,
+            281.4,
+            244.89901
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3324,
+          "point_count": 2,
+          "stroke_operator_index": 3326,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": null,
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3331,
+          "point_count": 162,
+          "stroke_operator_index": 3493,
+          "subpath_count": 74
+        },
+        {
+          "clip_box_pdf_user_space": [
+            414.0,
+            176.799,
+            415.8,
+            177.15899000000002
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3498,
+          "point_count": 2,
+          "stroke_operator_index": 3500,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            415.26,
+            176.799,
+            415.85998,
+            177.03899
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3506,
+          "point_count": 2,
+          "stroke_operator_index": 3508,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            416.88,
+            176.799,
+            418.8,
+            177.09899000000001
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3514,
+          "point_count": 2,
+          "stroke_operator_index": 3516,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            419.76,
+            176.799,
+            421.68,
+            177.09899000000001
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3522,
+          "point_count": 2,
+          "stroke_operator_index": 3524,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            422.7,
+            176.799,
+            424.56,
+            177.09899000000001
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3530,
+          "point_count": 2,
+          "stroke_operator_index": 3532,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            425.58,
+            176.799,
+            427.5,
+            177.09899000000001
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3538,
+          "point_count": 2,
+          "stroke_operator_index": 3540,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            428.46,
+            176.799,
+            430.38,
+            177.09899000000001
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3546,
+          "point_count": 2,
+          "stroke_operator_index": 3548,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            431.4,
+            176.799,
+            433.26,
+            177.09899000000001
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3554,
+          "point_count": 2,
+          "stroke_operator_index": 3556,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            434.28,
+            176.799,
+            436.2,
+            177.03899
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3562,
+          "point_count": 2,
+          "stroke_operator_index": 3564,
+          "subpath_count": 1
+        },
+        {
+          "clip_box_pdf_user_space": [
+            437.16,
+            176.799,
+            437.64001,
+            177.03899
+          ],
+          "ctm_at_paint": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dash": {
+            "array": [],
+            "phase": 0.0
+          },
+          "line_width": 0.306,
+          "path_operators": [
+            "l",
+            "m"
+          ],
+          "path_start_operator_index": 3570,
+          "point_count": 2,
+          "stroke_operator_index": 3572,
+          "subpath_count": 1
+        }
+      ],
+      "vector_row_sha256": "55ef2eb453272692f26dbcc23b287c3ef8220ae866c30130f07ca957869df364",
+      "x_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -4.5482345148737275,
+        "labelled_ticks": [
+          {
+            "axis_value": -1.0,
+            "pdf_page_user_space": 279.84
+          },
+          {
+            "axis_value": -0.5,
+            "pdf_page_user_space": 319.26
+          },
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 358.68
+          },
+          {
+            "axis_value": 0.5,
+            "pdf_page_user_space": 398.1
+          },
+          {
+            "axis_value": 1.0,
+            "pdf_page_user_space": 437.58
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.00030436764091756885,
+        "name": "z_over_Vt",
+        "slope": 0.012680055632335619
+      },
+      "y_axis": {
+        "coordinate_definition": "value = slope * pdf_page_user_space + intercept",
+        "intercept": -12.133591337146413,
+        "labelled_ticks": [
+          {
+            "axis_value": 0.0,
+            "pdf_page_user_space": 176.859
+          },
+          {
+            "axis_value": 2.0,
+            "pdf_page_user_space": 205.959
+          },
+          {
+            "axis_value": 4.0,
+            "pdf_page_user_space": 235.119
+          },
+          {
+            "axis_value": 6.0,
+            "pdf_page_user_space": 264.279
+          },
+          {
+            "axis_value": 8.0,
+            "pdf_page_user_space": 293.439
+          }
+        ],
+        "max_abs_residual_at_labelled_ticks": 0.0016474458995396901,
+        "name": "p_over_half_rho_V2",
+        "slope": 0.06861533076092227
+      }
+    }
+  ],
+  "extraction_order": [
+    "parse source PDF paths, transformations, and clipping",
+    "select blue curve paths and calibrate from labelled PDF ticks",
+    "write vector curve rows",
+    "read raster and legacy CSVs only for separate post-extraction audits"
+  ],
+  "post_extraction_audits": {
+    "frozen_legacy_jpeg_digitization": {
+      "audit_filename": "sun2007_fig2_6_vector_vs_legacy_audit.csv",
+      "audit_sha256": "07a93c30f58d7f5e566cf277605ad8a72f20c9e4912495c9e1018370b88f475c",
+      "row_count": 902,
+      "source_csv_filename": "fig2_6_zhao_faltinsen_similarity_curves.csv",
+      "source_csv_sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46"
+    },
+    "pdf_redigitization": {
+      "audit_filename": "sun2007_fig2_6_vector_vs_pdf_redigitization_audit.csv",
+      "audit_sha256": "6f7fd3e1c7b5371366cee70a61f6fcc64f461fcd739f8c715ef60f6a1e5f7f5e",
+      "row_count": 1700,
+      "source_csv_filename": "fig2_6_pdf_rebuild_similarity_curves.csv",
+      "source_csv_sha256": "6d02a167ec4a475f9f369e34122fe9b4c698735d02dab42a3e37b5e69cce6015"
+    }
+  },
+  "reference_use": {
+    "legacy_used_for_axis_calibration": false,
+    "legacy_used_for_path_selection": false,
+    "raster_used_for_axis_calibration": false,
+    "raster_used_for_path_selection": false
+  },
+  "source": {
+    "page_content_stream_sha256": "ba016faafd99e0806bef30d0e260393c4eb8dfc7af81c0e5185a5a204793a836",
+    "page_index_zero_based": 39,
+    "pdf_filename": "sun2007_boundary_element_method.pdf",
+    "pdf_sha256": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d",
+    "xobject_count": 0
+  }
+}

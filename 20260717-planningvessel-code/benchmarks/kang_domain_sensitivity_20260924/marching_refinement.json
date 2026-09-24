@@ -1,0 +1,14 @@
+{
+  "status": "DIAGNOSTIC_NOT_STAGE_ACCEPTANCE",
+  "purpose": "Test actual coupled station marching refinement after boundary-density blow-up",
+  "baseline": "outputs/kang_boundary_dense_r3_20260924",
+  "out": "outputs/kang_boundary_dense_half_dt_r3_20260924",
+  "preset": "boundary_dense_half_dt",
+  "radius_beams": 3,
+  "frequencies": [2, 3, 4],
+  "stations_before_after": [81, 161],
+  "history_steps_before_after": [128, 256],
+  "invariants": ["same endpoint interval", "same physical history duration", "same boundary and body panel counts", "same analytic shape and physics"],
+  "interpretation": "Reduction of explosive growth supports timestep hypothesis but does not prove stability or physical accuracy. Do not use the unstable baseline as a convergence reference.",
+  "stage_acceptance": false
+}

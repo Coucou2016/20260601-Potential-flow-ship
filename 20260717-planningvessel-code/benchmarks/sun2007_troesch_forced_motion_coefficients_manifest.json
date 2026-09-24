@@ -1,0 +1,66 @@
+{
+  "title": "Sun 2007 forced-motion numerical-reproduction coefficient benchmark",
+  "benchmark_role": "same_model_NUM_reproduction_not_independent_EFD",
+  "source_pdf": "D:\\Projects\\20260601-Potential-flow-ship\\20260729-文献收集\\A3_A Boundary Element Method.pdf",
+  "source_pdf_sha256": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d",
+  "source_location": "Sun thesis, printed page 141, PDF page 153, Figs. 7.13-7.14",
+  "test_condition": {
+    "beam_m": 0.318,
+    "fn_b": 2.5,
+    "deadrise_deg": 20.0,
+    "trim_deg": 4.0,
+    "mean_wetted_length_over_beam": 3.0,
+    "lcg_over_beam": 1.47,
+    "vcg_over_beam": 0.65,
+    "forced_heave_amplitude_over_beam": 0.036,
+    "forced_pitch_amplitude_deg": 0.43
+  },
+  "digitization": {
+    "series": "NUM open-marker curves only",
+    "render_resolution_dpi": 300,
+    "marker_half_height_px_used_for_uncertainty": 6.0,
+    "response_calibration_used": false,
+    "note": "This benchmark validates a forced-motion hydrodynamic-coefficient solver. It is not used to tune Begovic motion responses or to replace independent EFD validation."
+  },
+  "coordinate_evidence": {
+    "image": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_evidence\\A3_pdf_page_153_300dpi.png",
+    "sha256": "19b2d277ad1e37659df62a40fbe3a4445ca7219b37358b17fe46f43fe1cd1de5",
+    "pixel_size": [
+      2080,
+      2955
+    ],
+    "render_contract": "A3 PDF page 153 rendered at 300 dpi with MuPDF 1.28.2"
+  },
+  "source_images": {
+    "e259a1bbe7f7df704bad5c18905faa162bd4da7f30acdc510f6f18ca24a654de.jpg": {
+      "sha256": "d43fd6187fe1f87a11a8ba1db45630d0f10742ac1263a32f237bfeff5769b5ec",
+      "pixel_size": [
+        523,
+        396
+      ]
+    },
+    "9ac0599f902e944a0540a6424a54a6389b487ae215737a375a85273d0809c324.jpg": {
+      "sha256": "238b1ed9ca2e7df3d3cea16eca3e8ee4147dfcc4651e52800f75a02f19ec1c8c",
+      "pixel_size": [
+        525,
+        390
+      ]
+    },
+    "4ec8d928be8c720e258d5cbcd40aee421aab3e0e0a06a173f37be9c645b40cdc.jpg": {
+      "sha256": "eccdb1d7f8b924b157845dff0f327718a9469a5d1cb691a2d4939d35430ca3d4",
+      "pixel_size": [
+        529,
+        407
+      ]
+    },
+    "0cb472e12d93f40ba4ee4fff460989dc6be23e9113b762bcb8b759de08960dba.jpg": {
+      "sha256": "163a2f221b2dd100a2b8c9785519e5a9959b178e9a84959f3a5bcdfc745036a7",
+      "pixel_size": [
+        526,
+        404
+      ]
+    }
+  },
+  "output_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_coefficients.csv",
+  "output_csv_sha256": "e0bd686e84665c28b9c365c84d30e7745841850b3c412c2beed212f820efca02"
+}

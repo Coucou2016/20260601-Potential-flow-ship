@@ -1,0 +1,26 @@
+{
+  "model": "synthetic_float_zero_speed_longitudinal",
+  "base_parameters": "edo106k_synthetic_aircraft.json",
+  "offsets_sha256": "b410098e912316868f7aabcfd7958a512bfc9a97c34b73e92da7bbe8561c606f",
+  "speed_mps": 0.0,
+  "geometry_closure": "vertical_sides_flat_deck_assumed",
+  "subdivisions_per_interval": 8,
+  "added_mass_factor": 1.0,
+  "modal_damping_ratio": 0.12,
+  "regular_wave_height_m": 0.04,
+  "regular_wave_period_s": 3.0,
+  "irregular_hs_m": 0.025,
+  "irregular_tp_s": 3.0,
+  "irregular_seed": 20260916,
+  "duration_s": 120.0,
+  "output_step_s": 0.05,
+  "assumptions": [
+    "Real EDO106K tabulated bottom with piecewise linear interpolation; vertical sides, flat deck and end/step faces assumed.",
+    "Synthetic component masses, not the historical aircraft; constrained surge/sway/roll/yaw.",
+    "Zero speed, still mean water and zero mean air flow; no propulsion or flight integration.",
+    "Added mass per length = pi*rho*waterline_halfwidth^2/2, an assumed strip proxy, not a 2.5D BEM result.",
+    "Modal damping ratio 0.12 is a declared assumption, not fitted to experiment.",
+    "Wave excitation is hydrostatic elevation forcing with deep-water phase, without diffraction/radiation memory.",
+    "Linear small-amplitude heave/pitch about solved nonlinear hydrostatic equilibrium; no step ventilation or impact."
+  ]
+}

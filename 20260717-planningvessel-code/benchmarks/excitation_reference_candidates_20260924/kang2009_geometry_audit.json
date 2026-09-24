@@ -1,0 +1,28 @@
+{
+  "status": "GEOMETRY_TRANSCRIPTION_CHECK_ONLY",
+  "ready_for_complex_excitation_acceptance": false,
+  "source": "sources/Kang2009.pdf",
+  "sha256": "82c16b2b268679b86dfb0b6ec1fc4e7e24dd4e7e5dd517d3596fdc63eecc29e5",
+  "equation": "7.65",
+  "equation_pdf_page_one_based": 176,
+  "dimensions_table": "7.2",
+  "dimensions_pdf_page_one_based": 185,
+  "length_m": 120.0,
+  "beam_m": 12.0,
+  "draft_m": 7.5,
+  "pitch_radius_of_gyration_m": 30.0,
+  "table_displacement_m3": 6055.9,
+  "table_block_coefficient": 0.5607,
+  "coordinate": "X=2*x/L in [-1,1]; Z=z/T in [-1,0]; y is positive half breadth",
+  "half_breadth_equation": "y/(B/2)=(1-Z^2)*(1-X^2)*(1+0.2*X^2)+Z^2*(1-Z^8)*(1-X^2)^4",
+  "integrated_block_coefficient_exact": "29144/51975",
+  "integrated_block_coefficient": 0.5607311207311207,
+  "integrated_displacement_m3": 6055.896103896104,
+  "integration_provenance": "Analytic polynomial integration, not fitted to the table",
+  "limitations": [
+    "Identity with Le Guen 1993 figure 5 experimental hull has not been established",
+    "Not the simpler parabolic Wigley III geometry used by existing Ma benchmark",
+    "Main-text excitation figure 7.14 shows amplitudes, not complex components",
+    "Phase convention and original Gerritsma report remain pending"
+  ]
+}

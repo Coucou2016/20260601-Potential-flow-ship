@@ -1,0 +1,1516 @@
+{
+  "artifact": "Sun 2007 Fig. 2.6 independent digitization from source-PDF panel crops",
+  "axis_calibration_uncertainty_px": 2.0,
+  "blue_pixel_selection": {
+    "legend_handling": "fixed panel-specific legend rectangles are excluded",
+    "rule": "blue >= 115 and blue-red >= 25 and blue-green >= 12"
+  },
+  "curve_csv": {
+    "filename": "fig2_6_pdf_rebuild_similarity_curves.csv",
+    "row_count": 1700,
+    "sha256": "6d02a167ec4a475f9f369e34122fe9b4c698735d02dab42a3e37b5e69cce6015"
+  },
+  "curves": [
+    {
+      "beta_deg": 10.0,
+      "calibration": {
+        "axis_value_source": "labelled tick centres visible in this source-PDF crop",
+        "x_axis": {
+          "axis_name": "y_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": -3.9556962025316458,
+          "max_abs_residual_at_other_labelled_ticks": 3.552713678800501e-15,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 125.0,
+              "figure_label": "0"
+            },
+            {
+              "axis_value": 20.0,
+              "crop_pixel": 757.0,
+              "figure_label": "20"
+            }
+          ],
+          "slope": 0.03164556962025317,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 125.0,
+              "figure_label": "0"
+            },
+            {
+              "axis_value": 5.0,
+              "crop_pixel": 283.0,
+              "figure_label": "5"
+            },
+            {
+              "axis_value": 10.0,
+              "crop_pixel": 441.0,
+              "figure_label": "10"
+            },
+            {
+              "axis_value": 15.0,
+              "crop_pixel": 599.0,
+              "figure_label": "15"
+            },
+            {
+              "axis_value": 20.0,
+              "crop_pixel": 757.0,
+              "figure_label": "20"
+            }
+          ]
+        },
+        "y_axis": {
+          "axis_name": "z_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": 2.1884368308351183,
+          "max_abs_residual_at_other_labelled_ticks": 0.004282655246252265,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": -2.0,
+              "crop_pixel": 489.0,
+              "figure_label": "-2"
+            },
+            {
+              "axis_value": 2.0,
+              "crop_pixel": 22.0,
+              "figure_label": "2"
+            }
+          ],
+          "slope": -0.008565310492505354,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": -2.0,
+              "crop_pixel": 489.0,
+              "figure_label": "-2"
+            },
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 372.0,
+              "figure_label": "-1"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 256.0,
+              "figure_label": "0"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 139.0,
+              "figure_label": "1"
+            },
+            {
+              "axis_value": 2.0,
+              "crop_pixel": 22.0,
+              "figure_label": "2"
+            }
+          ]
+        }
+      },
+      "excluded_rectangles": [
+        [
+          148,
+          45,
+          330,
+          190
+        ]
+      ],
+      "panel": "beta10_free_surface",
+      "plot_roi": [
+        125,
+        22,
+        757,
+        489
+      ],
+      "point_count": 176,
+      "quantity": "free_surface",
+      "source_image": {
+        "filename": "fig2_6_beta10_free_surface.png",
+        "panel": "beta10_free_surface",
+        "sha256": "aa050bd98c8ed093dad313973da8028d85522e175d459074d4128e5f57c75e07",
+        "size_px": [
+          808,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      "uncertainty_sensitivity": {
+        "method": "Hold the observed selected blue pixels fixed; perturb each of the two labelled axis-anchor centres independently by plus or minus 2 crop pixels. No pixel selection, branch selection, or gap interpolation is changed.",
+        "x_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.06329113924050667,
+              "rms_coordinate_change": 0.06329113924050626
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.05035427115675972,
+              "rms_coordinate_change": 0.027228771439162677
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.0509957268402772,
+              "rms_coordinate_change": 0.027575634769594733
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.06329113924050844,
+              "rms_coordinate_change": 0.06329113924050675
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "y_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.06329113924050844,
+          "max_rms_coordinate_change_over_variants": 0.06329113924050675
+        },
+        "y_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.017130620985010836,
+              "rms_coordinate_change": 0.01713062098501084
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.003958912409062876,
+              "rms_coordinate_change": 0.0012461440938743697
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.003891669735448744,
+              "rms_coordinate_change": 0.0012249781644672491
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.017130620985010836,
+              "rms_coordinate_change": 0.01713062098501084
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "z_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.017130620985010836,
+          "max_rms_coordinate_change_over_variants": 0.01713062098501084
+        }
+      }
+    },
+    {
+      "beta_deg": 10.0,
+      "calibration": {
+        "axis_value_source": "labelled tick centres visible in this source-PDF crop",
+        "x_axis": {
+          "axis_name": "z_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": -1.4258675078864353,
+          "max_abs_residual_at_other_labelled_ticks": 0.001577287066246047,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 135.0,
+              "figure_label": "-1,0"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 769.0,
+              "figure_label": "1,0"
+            }
+          ],
+          "slope": 0.0031545741324921135,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 135.0,
+              "figure_label": "-1,0"
+            },
+            {
+              "axis_value": -0.5,
+              "crop_pixel": 294.0,
+              "figure_label": "-0,5"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 452.0,
+              "figure_label": "0,0"
+            },
+            {
+              "axis_value": 0.5,
+              "crop_pixel": 611.0,
+              "figure_label": "0,5"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 769.0,
+              "figure_label": "1,0"
+            }
+          ]
+        },
+        "y_axis": {
+          "axis_name": "p_over_half_rho_V2",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": 95.53191489361703,
+          "max_abs_residual_at_other_labelled_ticks": 7.105427357601002e-15,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": 80.0,
+              "crop_pixel": 73.0,
+              "figure_label": "80"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 449.0,
+              "figure_label": "0"
+            }
+          ],
+          "slope": -0.2127659574468085,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": 80.0,
+              "crop_pixel": 73.0,
+              "figure_label": "80"
+            },
+            {
+              "axis_value": 60.0,
+              "crop_pixel": 167.0,
+              "figure_label": "60"
+            },
+            {
+              "axis_value": 40.0,
+              "crop_pixel": 261.0,
+              "figure_label": "40"
+            },
+            {
+              "axis_value": 20.0,
+              "crop_pixel": 355.0,
+              "figure_label": "20"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 449.0,
+              "figure_label": "0"
+            }
+          ]
+        }
+      },
+      "excluded_rectangles": [
+        [
+          172,
+          98,
+          356,
+          244
+        ]
+      ],
+      "panel": "beta10_pressure",
+      "plot_roi": [
+        135,
+        26,
+        769,
+        496
+      ],
+      "point_count": 343,
+      "quantity": "pressure",
+      "source_image": {
+        "filename": "fig2_6_beta10_pressure.png",
+        "panel": "beta10_pressure",
+        "sha256": "61979ccbb5209522b2cd28a6e81ef37ab9d64fb39a0d439378a60fbc5f65f6d6",
+        "size_px": [
+          848,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      "uncertainty_sensitivity": {
+        "method": "Hold the observed selected blue pixels fixed; perturb each of the two labelled axis-anchor centres independently by plus or minus 2 crop pixels. No pixel selection, branch selection, or gap interpolation is changed.",
+        "x_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.006309148264984188,
+              "rms_coordinate_change": 0.006309148264984187
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.006249814582241386,
+              "rms_coordinate_change": 0.0032117262725818285
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.006329177307095257,
+              "rms_coordinate_change": 0.0032525100982654246
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.006309148264984188,
+              "rms_coordinate_change": 0.006309148264984187
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "z_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.006329177307095257,
+          "max_rms_coordinate_change_over_variants": 0.006309148264984187
+        },
+        "y_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.4255319148936252,
+              "rms_coordinate_change": 0.42553191489362524
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.419932810750268,
+              "rms_coordinate_change": 0.22528900607234478
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.4289636238847123,
+              "rms_coordinate_change": 0.23013393093412646
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.425531914893611,
+              "rms_coordinate_change": 0.4255319148936109
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "p_over_half_rho_V2",
+          "max_abs_coordinate_change_over_variants": 0.4289636238847123,
+          "max_rms_coordinate_change_over_variants": 0.42553191489362524
+        }
+      }
+    },
+    {
+      "beta_deg": 20.0,
+      "calibration": {
+        "axis_value_source": "labelled tick centres visible in this source-PDF crop",
+        "x_axis": {
+          "axis_name": "y_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": -2.3548387096774195,
+          "max_abs_residual_at_other_labelled_ticks": 1.7763568394002505e-15,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 146.0,
+              "figure_label": "0,0"
+            },
+            {
+              "axis_value": 10.0,
+              "crop_pixel": 766.0,
+              "figure_label": "10,0"
+            }
+          ],
+          "slope": 0.016129032258064516,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 146.0,
+              "figure_label": "0,0"
+            },
+            {
+              "axis_value": 2.5,
+              "crop_pixel": 301.0,
+              "figure_label": "2,5"
+            },
+            {
+              "axis_value": 5.0,
+              "crop_pixel": 456.0,
+              "figure_label": "5,0"
+            },
+            {
+              "axis_value": 7.5,
+              "crop_pixel": 611.0,
+              "figure_label": "7,5"
+            },
+            {
+              "axis_value": 10.0,
+              "crop_pixel": 766.0,
+              "figure_label": "10,0"
+            }
+          ]
+        },
+        "y_axis": {
+          "axis_name": "z_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": 5.614035087719298,
+          "max_abs_residual_at_other_labelled_ticks": 0.0,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": -5.0,
+              "crop_pixel": 484.0,
+              "figure_label": "-5,0"
+            },
+            {
+              "axis_value": 5.0,
+              "crop_pixel": 28.0,
+              "figure_label": "5,0"
+            }
+          ],
+          "slope": -0.021929824561403508,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": -5.0,
+              "crop_pixel": 484.0,
+              "figure_label": "-5,0"
+            },
+            {
+              "axis_value": -2.5,
+              "crop_pixel": 370.0,
+              "figure_label": "-2,5"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 256.0,
+              "figure_label": "0,0"
+            },
+            {
+              "axis_value": 2.5,
+              "crop_pixel": 142.0,
+              "figure_label": "2,5"
+            },
+            {
+              "axis_value": 5.0,
+              "crop_pixel": 28.0,
+              "figure_label": "5,0"
+            }
+          ]
+        }
+      },
+      "excluded_rectangles": [
+        [
+          188,
+          54,
+          368,
+          196
+        ]
+      ],
+      "panel": "beta20_free_surface",
+      "plot_roi": [
+        146,
+        28,
+        766,
+        484
+      ],
+      "point_count": 217,
+      "quantity": "free_surface",
+      "source_image": {
+        "filename": "fig2_6_beta20_free_surface.png",
+        "panel": "beta20_free_surface",
+        "sha256": "8e8b781632e9895713573b1c62c0e8bd8477d4d50738ac99ed2dd182170c7cf2",
+        "size_px": [
+          808,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      "uncertainty_sensitivity": {
+        "method": "Hold the observed selected blue pixels fixed; perturb each of the two labelled axis-anchor centres independently by plus or minus 2 crop pixels. No pixel selection, branch selection, or gap interpolation is changed.",
+        "x_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.03225806451612989,
+              "rms_coordinate_change": 0.032258064516129795
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.031947890818857516,
+              "rms_coordinate_change": 0.017488896270584083
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.03236279849182999,
+              "rms_coordinate_change": 0.017716024793578655
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.03225806451612989,
+              "rms_coordinate_change": 0.032258064516128324
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "y_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.03236279849182999,
+          "max_rms_coordinate_change_over_variants": 0.032258064516129795
+        },
+        "y_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.04385964912280649,
+              "rms_coordinate_change": 0.04385964912280649
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.004269523365936223,
+              "rms_coordinate_change": 0.0015078651184307042
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.004195270785659844,
+              "rms_coordinate_change": 0.001481641377240503
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.04385964912280649,
+              "rms_coordinate_change": 0.04385964912280649
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "z_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.04385964912280649,
+          "max_rms_coordinate_change_over_variants": 0.04385964912280649
+        }
+      }
+    },
+    {
+      "beta_deg": 20.0,
+      "calibration": {
+        "axis_value_source": "labelled tick centres visible in this source-PDF crop",
+        "x_axis": {
+          "axis_name": "z_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": -1.453525641025641,
+          "max_abs_residual_at_other_labelled_ticks": 0.0,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 141.5,
+              "figure_label": "-1,0"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 765.5,
+              "figure_label": "1,0"
+            }
+          ],
+          "slope": 0.003205128205128205,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 141.5,
+              "figure_label": "-1,0"
+            },
+            {
+              "axis_value": -0.5,
+              "crop_pixel": 297.5,
+              "figure_label": "-0,5"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 453.5,
+              "figure_label": "0,0"
+            },
+            {
+              "axis_value": 0.5,
+              "crop_pixel": 609.5,
+              "figure_label": "0,5"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 765.5,
+              "figure_label": "1,0"
+            }
+          ]
+        },
+        "y_axis": {
+          "axis_name": "p_over_half_rho_V2",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": 20.954446854663775,
+          "max_abs_residual_at_other_labelled_ticks": 0.02169197396963085,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": 20.0,
+              "crop_pixel": 22.0,
+              "figure_label": "20"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 483.0,
+              "figure_label": "0"
+            }
+          ],
+          "slope": -0.04338394793926247,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": 20.0,
+              "crop_pixel": 22.0,
+              "figure_label": "20"
+            },
+            {
+              "axis_value": 15.0,
+              "crop_pixel": 137.0,
+              "figure_label": "15"
+            },
+            {
+              "axis_value": 10.0,
+              "crop_pixel": 253.0,
+              "figure_label": "10"
+            },
+            {
+              "axis_value": 5.0,
+              "crop_pixel": 368.0,
+              "figure_label": "5"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 483.0,
+              "figure_label": "0"
+            }
+          ]
+        }
+      },
+      "excluded_rectangles": [
+        [
+          206,
+          54,
+          387,
+          198
+        ]
+      ],
+      "panel": "beta20_pressure",
+      "plot_roi": [
+        141,
+        22,
+        766,
+        483
+      ],
+      "point_count": 365,
+      "quantity": "pressure",
+      "source_image": {
+        "filename": "fig2_6_beta20_pressure.png",
+        "panel": "beta20_pressure",
+        "sha256": "6d039cadf77a8c371fc73c73a2bf1b3ea73cfe646e97d2a540ec4c4943347eb8",
+        "size_px": [
+          848,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      "uncertainty_sensitivity": {
+        "method": "Hold the observed selected blue pixels fixed; perturb each of the two labelled axis-anchor centres independently by plus or minus 2 crop pixels. No pixel selection, branch selection, or gap interpolation is changed.",
+        "x_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.0064102564102563875,
+              "rms_coordinate_change": 0.0064102564102563875
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.0063183896782622595,
+              "rms_coordinate_change": 0.0033759181018165364
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.006399917287013945,
+              "rms_coordinate_change": 0.0034194783353884324
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.0064102564102563875,
+              "rms_coordinate_change": 0.0064102564102563875
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "z_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.0064102564102563875,
+          "max_rms_coordinate_change_over_variants": 0.0064102564102563875
+        },
+        "y_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.08676789587853051,
+              "rms_coordinate_change": 0.08676789587852697
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.08583490775079738,
+              "rms_coordinate_change": 0.03685893200172373
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.08733748819282638,
+              "rms_coordinate_change": 0.037504164947050576
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.0867678958785234,
+              "rms_coordinate_change": 0.08676789587852339
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "p_over_half_rho_V2",
+          "max_abs_coordinate_change_over_variants": 0.08733748819282638,
+          "max_rms_coordinate_change_over_variants": 0.08676789587852697
+        }
+      }
+    },
+    {
+      "beta_deg": 30.0,
+      "calibration": {
+        "axis_value_source": "labelled tick centres visible in this source-PDF crop",
+        "x_axis": {
+          "axis_name": "y_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": -1.1849529780564263,
+          "max_abs_residual_at_other_labelled_ticks": 0.006269592476489727,
+          "selected_anchor_tick_indices": [
+            0,
+            3
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 126.0,
+              "figure_label": "0"
+            },
+            {
+              "axis_value": 6.0,
+              "crop_pixel": 764.0,
+              "figure_label": "6"
+            }
+          ],
+          "slope": 0.009404388714733543,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 126.0,
+              "figure_label": "0"
+            },
+            {
+              "axis_value": 2.0,
+              "crop_pixel": 339.0,
+              "figure_label": "2"
+            },
+            {
+              "axis_value": 4.0,
+              "crop_pixel": 552.0,
+              "figure_label": "4"
+            },
+            {
+              "axis_value": 6.0,
+              "crop_pixel": 764.0,
+              "figure_label": "6"
+            }
+          ]
+        },
+        "y_axis": {
+          "axis_name": "z_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": 3.3270440251572326,
+          "max_abs_residual_at_other_labelled_ticks": 0.0062893081761004055,
+          "selected_anchor_tick_indices": [
+            0,
+            6
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": -3.0,
+              "crop_pixel": 503.0,
+              "figure_label": "-3"
+            },
+            {
+              "axis_value": 3.0,
+              "crop_pixel": 26.0,
+              "figure_label": "3"
+            }
+          ],
+          "slope": -0.012578616352201259,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": -3.0,
+              "crop_pixel": 503.0,
+              "figure_label": "-3"
+            },
+            {
+              "axis_value": -2.0,
+              "crop_pixel": 423.0,
+              "figure_label": "-2"
+            },
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 344.0,
+              "figure_label": "-1"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 264.0,
+              "figure_label": "0"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 185.0,
+              "figure_label": "1"
+            },
+            {
+              "axis_value": 2.0,
+              "crop_pixel": 105.0,
+              "figure_label": "2"
+            },
+            {
+              "axis_value": 3.0,
+              "crop_pixel": 26.0,
+              "figure_label": "3"
+            }
+          ]
+        }
+      },
+      "excluded_rectangles": [
+        [
+          193,
+          54,
+          377,
+          203
+        ]
+      ],
+      "panel": "beta30_free_surface",
+      "plot_roi": [
+        126,
+        26,
+        764,
+        503
+      ],
+      "point_count": 193,
+      "quantity": "free_surface",
+      "source_image": {
+        "filename": "fig2_6_beta30_free_surface.png",
+        "panel": "beta30_free_surface",
+        "sha256": "a64594c2a9043a607ea2b6aa9da45245f27e15a974822123b0a3b7a039443743",
+        "size_px": [
+          808,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      "uncertainty_sensitivity": {
+        "method": "Hold the observed selected blue pixels fixed; perturb each of the two labelled axis-anchor centres independently by plus or minus 2 crop pixels. No pixel selection, branch selection, or gap interpolation is changed.",
+        "x_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.018808777429467405,
+              "rms_coordinate_change": 0.01880877742946652
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.01869158878504784,
+              "rms_coordinate_change": 0.010125771654386958
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.018927444794951676,
+              "rms_coordinate_change": 0.010253541643715721
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.018808777429467405,
+              "rms_coordinate_change": 0.0188087774294674
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "y_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.018927444794951676,
+          "max_rms_coordinate_change_over_variants": 0.0188087774294674
+        },
+        "y_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.02515723270440251,
+              "rms_coordinate_change": 0.025157232704402514
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.0032443788477136692,
+              "rms_coordinate_change": 0.0010476043416919325
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.0031904182847579676,
+              "rms_coordinate_change": 0.0010301805688571893
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.02515723270440251,
+              "rms_coordinate_change": 0.025157232704402514
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "z_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.02515723270440251,
+          "max_rms_coordinate_change_over_variants": 0.025157232704402514
+        }
+      }
+    },
+    {
+      "beta_deg": 30.0,
+      "calibration": {
+        "axis_value_source": "labelled tick centres visible in this source-PDF crop",
+        "x_axis": {
+          "axis_name": "z_over_Vt",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": -1.4025356576862125,
+          "max_abs_residual_at_other_labelled_ticks": 0.0015847860538826808,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 127.0,
+              "figure_label": "-1,0"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 758.0,
+              "figure_label": "1,0"
+            }
+          ],
+          "slope": 0.003169572107765452,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": -1.0,
+              "crop_pixel": 127.0,
+              "figure_label": "-1,0"
+            },
+            {
+              "axis_value": -0.5,
+              "crop_pixel": 284.5,
+              "figure_label": "-0,5"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 442.0,
+              "figure_label": "0,0"
+            },
+            {
+              "axis_value": 0.5,
+              "crop_pixel": 600.0,
+              "figure_label": "0,5"
+            },
+            {
+              "axis_value": 1.0,
+              "crop_pixel": 758.0,
+              "figure_label": "1,0"
+            }
+          ]
+        },
+        "y_axis": {
+          "axis_name": "p_over_half_rho_V2",
+          "coordinate_definition": "value = slope * crop_pixel + intercept",
+          "intercept": 8.446351931330472,
+          "max_abs_residual_at_other_labelled_ticks": 0.008583690987125081,
+          "selected_anchor_tick_indices": [
+            0,
+            4
+          ],
+          "selected_anchor_ticks": [
+            {
+              "axis_value": 8.0,
+              "crop_pixel": 26.0,
+              "figure_label": "8"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 492.0,
+              "figure_label": "0"
+            }
+          ],
+          "slope": -0.017167381974248927,
+          "tick_centres_from_figure": [
+            {
+              "axis_value": 8.0,
+              "crop_pixel": 26.0,
+              "figure_label": "8"
+            },
+            {
+              "axis_value": 6.0,
+              "crop_pixel": 142.0,
+              "figure_label": "6"
+            },
+            {
+              "axis_value": 4.0,
+              "crop_pixel": 259.0,
+              "figure_label": "4"
+            },
+            {
+              "axis_value": 2.0,
+              "crop_pixel": 376.0,
+              "figure_label": "2"
+            },
+            {
+              "axis_value": 0.0,
+              "crop_pixel": 492.0,
+              "figure_label": "0"
+            }
+          ]
+        }
+      },
+      "excluded_rectangles": [
+        [
+          187,
+          38,
+          369,
+          184
+        ]
+      ],
+      "panel": "beta30_pressure",
+      "plot_roi": [
+        127,
+        26,
+        758,
+        492
+      ],
+      "point_count": 406,
+      "quantity": "pressure",
+      "source_image": {
+        "filename": "fig2_6_beta30_pressure.png",
+        "panel": "beta30_pressure",
+        "sha256": "e00e93782c725729ad5784ebe86f41ac83a6c8f99e8046769b6e081e8cdbc311",
+        "size_px": [
+          848,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      "uncertainty_sensitivity": {
+        "method": "Hold the observed selected blue pixels fixed; perturb each of the two labelled axis-anchor centres independently by plus or minus 2 crop pixels. No pixel selection, branch selection, or gap interpolation is changed.",
+        "x_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.006339144215530945,
+              "rms_coordinate_change": 0.006339144215530944
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.006299212598425252,
+              "rms_coordinate_change": 0.003599283051405315
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.006379585326953707,
+              "rms_coordinate_change": 0.003645206918089867
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.006339144215530723,
+              "rms_coordinate_change": 0.006339144215530723
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "z_over_Vt",
+          "max_abs_coordinate_change_over_variants": 0.006379585326953707,
+          "max_rms_coordinate_change_over_variants": 0.006339144215530944
+        },
+        "y_axis": {
+          "anchor_perturbation_variants": [
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.03433476394849855,
+              "rms_coordinate_change": 0.03433476394849854
+            },
+            {
+              "anchor_pixel_shifts": [
+                -2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.0340425531914903,
+              "rms_coordinate_change": 0.018468688507603116
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                -2.0
+              ],
+              "max_abs_coordinate_change": 0.03463203463203435,
+              "rms_coordinate_change": 0.018788492637604636
+            },
+            {
+              "anchor_pixel_shifts": [
+                2.0,
+                2.0
+              ],
+              "max_abs_coordinate_change": 0.03433476394849855,
+              "rms_coordinate_change": 0.03433476394849854
+            }
+          ],
+          "anchor_uncertainty_px": 2.0,
+          "axis_name": "p_over_half_rho_V2",
+          "max_abs_coordinate_change_over_variants": 0.03463203463203435,
+          "max_rms_coordinate_change_over_variants": 0.03433476394849854
+        }
+      }
+    }
+  ],
+  "free_surface_branch_policy": {
+    "gap_handling": "upper-only dashed-gap columns are omitted; no curve points are interpolated",
+    "meaning": "lower outward-decaying branch after the spray-root fold",
+    "rule": "bottommost contiguous cluster with 1 px monotonic-backtrack tolerance"
+  },
+  "old_csv_audit": {
+    "audit_filename": "fig2_6_pdf_rebuild_old_csv_audit.csv",
+    "audit_sha256": "79a1444c8ebef1e5d7b5be73bfd84904b77ea4fead27858c985f9914aaf3a16a",
+    "matching_policy": "Within the overlapping x domain, pair only one-to-one nearest observed x locations; the audit does not interpolate a curve across dashed gaps.",
+    "old_csv_filename": "fig2_6_zhao_faltinsen_similarity_curves.csv",
+    "old_csv_sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46",
+    "rows": [
+      {
+        "beta_deg": 10.0,
+        "common_x_max": 17.50566893424036,
+        "common_x_min": 8.934240362811792,
+        "matched_observed_point_count": 31,
+        "matching_method": "one_to_one_nearest_observed_x_no_interpolation_across_dashed_gaps",
+        "matching_x_tolerance": 0.06802721088435426,
+        "max_abs_difference": 0.06386909137396479,
+        "new_point_count": 176,
+        "new_points_in_common_domain": 164,
+        "normalization_y_span": 0.39402985074626873,
+        "nrmse": 0.14044984450362066,
+        "old_point_count": 32,
+        "old_points_in_common_domain": 32,
+        "quantity": "free_surface",
+        "x_uncertainty_max_abs": 0.06329113924050844,
+        "y_uncertainty_max_abs": 0.017130620985010836
+      },
+      {
+        "beta_deg": 10.0,
+        "common_x_max": 0.6689342403628118,
+        "common_x_min": -0.9968454258675079,
+        "matched_observed_point_count": 200,
+        "matching_method": "one_to_one_nearest_observed_x_no_interpolation_across_dashed_gaps",
+        "matching_x_tolerance": 0.006802721088435493,
+        "max_abs_difference": 37.486551585708554,
+        "new_point_count": 343,
+        "new_points_in_common_domain": 341,
+        "normalization_y_span": 76.22641509433963,
+        "nrmse": 0.04950504992364819,
+        "old_point_count": 247,
+        "old_points_in_common_domain": 245,
+        "quantity": "pressure",
+        "x_uncertainty_max_abs": 0.006329177307095257,
+        "y_uncertainty_max_abs": 0.4289636238847123
+      },
+      {
+        "beta_deg": 20.0,
+        "common_x_max": 9.983870967741934,
+        "common_x_min": 4.589041095890411,
+        "matched_observed_point_count": 60,
+        "matching_method": "one_to_one_nearest_observed_x_no_interpolation_across_dashed_gaps",
+        "matching_x_tolerance": 0.03424657534246567,
+        "max_abs_difference": 0.06858178053830155,
+        "new_point_count": 217,
+        "new_points_in_common_domain": 209,
+        "normalization_y_span": 0.3105590062111805,
+        "nrmse": 0.133914071615874,
+        "old_point_count": 84,
+        "old_points_in_common_domain": 82,
+        "quantity": "free_surface",
+        "x_uncertainty_max_abs": 0.03236279849182999,
+        "y_uncertainty_max_abs": 0.04385964912280649
+      },
+      {
+        "beta_deg": 20.0,
+        "common_x_max": 0.7868589743589745,
+        "common_x_min": -0.9816933638443935,
+        "matched_observed_point_count": 195,
+        "matching_method": "one_to_one_nearest_observed_x_no_interpolation_across_dashed_gaps",
+        "matching_x_tolerance": 0.006864988558352381,
+        "max_abs_difference": 1.9373433075867839,
+        "new_point_count": 365,
+        "new_points_in_common_domain": 361,
+        "normalization_y_span": 17.757009345794394,
+        "nrmse": 0.018242137083582577,
+        "old_point_count": 261,
+        "old_points_in_common_domain": 260,
+        "quantity": "pressure",
+        "x_uncertainty_max_abs": 0.0064102564102563875,
+        "y_uncertainty_max_abs": 0.08733748819282638
+      },
+      {
+        "beta_deg": 30.0,
+        "common_x_max": 5.876993166287016,
+        "common_x_min": 2.7471526195899774,
+        "matched_observed_point_count": 36,
+        "matching_method": "one_to_one_nearest_observed_x_no_interpolation_across_dashed_gaps",
+        "matching_x_tolerance": 0.10250569476081961,
+        "max_abs_difference": 0.02675814751286465,
+        "new_point_count": 193,
+        "new_points_in_common_domain": 182,
+        "normalization_y_span": 0.3272727272727276,
+        "nrmse": 0.03329857146789839,
+        "old_point_count": 38,
+        "old_points_in_common_domain": 38,
+        "quantity": "free_surface",
+        "x_uncertainty_max_abs": 0.018927444794951676,
+        "y_uncertainty_max_abs": 0.02515723270440251
+      },
+      {
+        "beta_deg": 30.0,
+        "common_x_max": 0.9816513761467891,
+        "common_x_min": -1.0,
+        "matched_observed_point_count": 180,
+        "matching_method": "one_to_one_nearest_observed_x_no_interpolation_across_dashed_gaps",
+        "matching_x_tolerance": 0.006880733944954254,
+        "max_abs_difference": 0.4165675577847878,
+        "new_point_count": 406,
+        "new_points_in_common_domain": 404,
+        "normalization_y_span": 6.783132530120482,
+        "nrmse": 0.018315049171759985,
+        "old_point_count": 240,
+        "old_points_in_common_domain": 238,
+        "quantity": "pressure",
+        "x_uncertainty_max_abs": 0.006379585326953707,
+        "y_uncertainty_max_abs": 0.03463203463203435
+      }
+    ]
+  },
+  "old_csv_role": "post_digitization_audit_only",
+  "old_csv_used_for_branch_selection": false,
+  "old_csv_used_for_calibration": false,
+  "old_csv_used_for_pixel_selection": false,
+  "pixel_coordinate_convention": "PNG crop coordinates use an upper-left origin; x increases rightward and y increases downward. ROIs and exclusions are inclusive [left, upper, right, lower] pixel rectangles.",
+  "reference_curve_used_for_digitization": false,
+  "reference_curve_used_for_solution": false,
+  "reference_data_participates_in_solution": false,
+  "response_calibration_used": false,
+  "scope": "Blue dashed SIM. curves are re-digitized from the six supplied source-PDF PNG crops. The historical CSV is retained solely for a post-digitization difference audit.",
+  "source_input": {
+    "crop_manifest_filename": "fig2_6_pdf_rebuild_manifest.json",
+    "crop_manifest_sha256": "8f39a7513461d9c230c0de2268712dc5e0eabe0422a0e67a17aecec7c0cac91f",
+    "images": [
+      {
+        "filename": "fig2_6_beta10_free_surface.png",
+        "panel": "beta10_free_surface",
+        "sha256": "aa050bd98c8ed093dad313973da8028d85522e175d459074d4128e5f57c75e07",
+        "size_px": [
+          808,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      {
+        "filename": "fig2_6_beta10_pressure.png",
+        "panel": "beta10_pressure",
+        "sha256": "61979ccbb5209522b2cd28a6e81ef37ab9d64fb39a0d439378a60fbc5f65f6d6",
+        "size_px": [
+          848,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      {
+        "filename": "fig2_6_beta20_free_surface.png",
+        "panel": "beta20_free_surface",
+        "sha256": "8e8b781632e9895713573b1c62c0e8bd8477d4d50738ac99ed2dd182170c7cf2",
+        "size_px": [
+          808,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      {
+        "filename": "fig2_6_beta20_pressure.png",
+        "panel": "beta20_pressure",
+        "sha256": "6d039cadf77a8c371fc73c73a2bf1b3ea73cfe646e97d2a540ec4c4943347eb8",
+        "size_px": [
+          848,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      {
+        "filename": "fig2_6_beta30_free_surface.png",
+        "panel": "beta30_free_surface",
+        "sha256": "a64594c2a9043a607ea2b6aa9da45245f27e15a974822123b0a3b7a039443743",
+        "size_px": [
+          808,
+          608
+        ],
+        "verified_against_source_manifest": true
+      },
+      {
+        "filename": "fig2_6_beta30_pressure.png",
+        "panel": "beta30_pressure",
+        "sha256": "e00e93782c725729ad5784ebe86f41ac83a6c8f99e8046769b6e081e8cdbc311",
+        "size_px": [
+          848,
+          608
+        ],
+        "verified_against_source_manifest": true
+      }
+    ],
+    "source_directory_name": "pdf_rebuild_v1",
+    "source_pdf_sha256_as_recorded_by_crop_manifest": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d"
+  }
+}

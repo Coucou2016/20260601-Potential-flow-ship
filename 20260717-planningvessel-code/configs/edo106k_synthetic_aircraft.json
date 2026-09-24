@@ -1,0 +1,24 @@
+{
+  "case_id": "edo106k_synthetic_research_aircraft_v1",
+  "status": "assumed_inputs_not_a_validated_aircraft",
+  "geometry": {
+    "offsets": "benchmarks/seaplane_edo/106k_offsets_inches.csv",
+    "identity": "EDO 106-K bottom only, not a full SB2U-3 reconstruction",
+    "coordinate_frame": "x_aft_y_starboard_z_up_from_original_float_datum",
+    "limitations": ["open bottom", "no complete side or deck", "no step ventilation model"]
+  },
+  "mass_components": [
+    {"name":"main_float","mass_kg":180,"center_m":[4.0,0,0.5],"dimensions_m":[7.5,1.0,0.6],"assumption":"equivalent uniform cuboid, not measured float mass"},
+    {"name":"fuselage","mass_kg":600,"center_m":[4.3,0,1.8],"dimensions_m":[7.0,1.2,1.2],"assumption":"synthetic airframe mass distribution"},
+    {"name":"wing","mass_kg":360,"center_m":[4.0,0,2.0],"dimensions_m":[1.6,12.0,0.18],"assumption":"synthetic rectangular wing, no historical identification"},
+    {"name":"powerplant","mass_kg":260,"center_m":[1.8,0,1.8],"dimensions_m":[1.2,0.8,0.8],"assumption":"synthetic engine equivalent box"},
+    {"name":"payload_fuel","mass_kg":240,"center_m":[4.4,0,1.6],"dimensions_m":[1.4,0.8,0.6],"assumption":"symmetric load, not actual fuel tanks"},
+    {"name":"tail","mass_kg":160,"center_m":[7.7,0,2.1],"dimensions_m":[1.4,3.4,0.5],"assumption":"synthetic tail equivalent box"}
+  ],
+  "environment_assumed": {"water_density_kg_m3":1025,"air_density_kg_m3":1.225,"gravity_m_s2":9.81,"water_surface":"flat z=0 in separate earth frame","wind_mps":[0,0,0],"current_mps":[0,0,0]},
+  "prescribed_entry_assumed": {"forward_speed_mps":15,"downward_speed_mps":0.5,"pitch_bow_up_deg":4,"roll_deg":0,"yaw_deg":0,"initial_contact":"determine vertical translation from minimum transformed bottom height; do not equate source datum to waterline","free_running":false},
+  "aerodynamics_assumed": {"area_m2":19.2,"span_m":12,"chord_m":1.6,"oswald_efficiency":0.8,"cl_zero":0.2,"cd_zero":0.035,"cm_zero":0,"cm_per_rad":-0.5,"alpha_limit_deg":5,"model":"small-angle finite-wing estimate; no stall or ground-effect prediction"},
+  "propulsion_assumed": {"shaft_power_W":250000,"efficiency":0.75,"static_thrust_cap_N":4500,"model":"T=min(T_static,efficiency*power/airspeed), use cap at zero speed; numerical research law, not a propeller map"},
+  "sensitivity_assumed": {"all_component_mass_factors":[0.8,1.0,1.2],"payload_longitudinal_shift_m":[-0.3,0,0.3]},
+  "not_supported": ["automatic takeoff or landing", "roll equilibrium without stabilizing floats", "step cavity or ventilation", "WIG aerodynamics", "experimental validation with assumed parameters"]
+}

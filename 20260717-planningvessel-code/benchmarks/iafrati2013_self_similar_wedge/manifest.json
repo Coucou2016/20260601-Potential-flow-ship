@@ -1,0 +1,72 @@
+{
+  "benchmark": "Iafrati 2013 self-similar wedge-entry scalar and vector references",
+  "paper": "A fully nonlinear iterative solution method for self-similar potential flows with a free boundary",
+  "source_url": "https://arxiv.org/abs/1212.6699",
+  "source_version": "arXiv:1212.6699v2",
+  "source_archive_sha256": "b883724cd4b5d168f59a332d64783c4c127132b1363293cc32804a9e97391905",
+  "source_pdf": "iafrati2013_arxiv1212.6699v2.pdf",
+  "source_pdf_sha256": "5b13b09118ac32a2a7257ddbdd55f14561c886d2f87a3a58b706e6e51c887559",
+  "solver_reads_this_file": false,
+  "post_solve_only": true,
+  "scalar_reference": {
+    "source_location": "Iafrati 2013 Table 1, Zhao-Faltinsen columns",
+    "csv": "table1_pressure_peak.csv",
+    "csv_sha256": "e1e3441db748733a95c691d6029b5cb1791556bc2c0e033a4baf0575b34fb8f6",
+    "quantities": {
+      "pressure_coefficient_peak": "max of 2p/(rho*V^2)",
+      "peak_eta": "vertical similarity coordinate z/(Vt) at the pressure peak"
+    }
+  },
+  "vector_free_surface_reference": {
+    "source_figure": "cfg_5-20.pdf; comparison of 5, 7.5, 10 and 20 degree free-surface profiles",
+    "source_figure_pdf": "cfg_5-20_arxiv1212.6699v2.pdf",
+    "source_figure_pdf_sha256": "da9adba37a1991bd206154265bebdf8878e1b81eceea8a581cd1afc2b3f11122",
+    "axis_calibration": {
+      "xi": {
+        "pixel_0": 441.0,
+        "value_0": 0.0,
+        "pixel_1": 3465.0,
+        "value_1": 40.0
+      },
+      "eta": {
+        "pixel_0": 1161.0,
+        "value_0": -2.0,
+        "pixel_1": 1539.0,
+        "value_1": 3.0
+      }
+    },
+    "extraction_policy": "Parse vector move/line/stroke operations, stitch only consecutive segments sharing an exact endpoint, retain the five complete profiles, select the 20-degree profile by its uniquely smallest spray-root xi, then retain the strictly outward branch after the post-root xi minimum.",
+    "candidate_profiles": [
+      {
+        "root_xi": 17.936507936507937,
+        "root_eta": 0.5727513227513228,
+        "point_count": 192.0
+      },
+      {
+        "root_xi": 11.924603174603174,
+        "root_eta": 0.5727513227513228,
+        "point_count": 180.0
+      },
+      {
+        "root_xi": 8.948412698412698,
+        "root_eta": 0.5793650793650795,
+        "point_count": 154.0
+      },
+      {
+        "root_xi": 8.941798941798941,
+        "root_eta": 0.5793650793650795,
+        "point_count": 178.0
+      },
+      {
+        "root_xi": 4.371693121693122,
+        "root_eta": 0.5925925925925926,
+        "point_count": 123.0
+      }
+    ],
+    "point_count": 59,
+    "csv": "iafrati2013_20deg_outer_free_surface.csv",
+    "csv_sha256": "54a53cfdc09f771826f4542d9cb186140cf6ff8cdf0200883789c111dfd419ae",
+    "role": "independent_cross_audit_not_acceptance_replacement"
+  },
+  "response_calibration_used": false
+}

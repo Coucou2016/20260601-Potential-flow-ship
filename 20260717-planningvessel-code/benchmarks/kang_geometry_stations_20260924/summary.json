@@ -1,0 +1,41 @@
+{
+  "source_sha256": "82c16b2b268679b86dfb0b6ec1fc4e7e24dd4e7e5dd517d3596fdc63eecc29e5",
+  "script_sha256": "05a9d1195e8feaf18a1fdbb2c3fb20cb9d551604d92ee4d802f2f1e83ec5f8e7",
+  "status": "GEOMETRY_ONLY_NOT_HYDRODYNAMIC_ACCEPTANCE",
+  "exact_volume_m3": 0.09462337662337664,
+  "exact_waterplane_m2": 0.624,
+  "rows": [
+    {
+      "stations": 41,
+      "points_per_side": 41,
+      "volume_m3": 0.0945264084327081,
+      "volume_relative_error": 0.001024780494301103,
+      "waterplane_m2": 0.6235500407952954,
+      "waterplane_relative_error": 0.000721088469077813,
+      "buoyancy_x_m": 1.5000000000000002
+    },
+    {
+      "stations": 81,
+      "points_per_side": 81,
+      "volume_m3": 0.09459912701121534,
+      "volume_relative_error": 0.0002562750667608471,
+      "waterplane_m2": 0.6238875031644042,
+      "waterplane_relative_error": 0.00018028339037789998,
+      "buoyancy_x_m": 1.5000000000000002
+    },
+    {
+      "stations": 161,
+      "points_per_side": 161,
+      "volume_m3": 0.09461731374787279,
+      "volume_relative_error": 6.40737597854546e-05,
+      "waterplane_m2": 0.6239718753484123,
+      "waterplane_relative_error": 4.5071557031595155e-05,
+      "buoyancy_x_m": 1.5
+    }
+  ],
+  "contour": "Open wetted body contour; closure at waterline only for area integration",
+  "limitations": [
+    "Finite tip exclusion and polygon discretization",
+    "No experimental CG or phase assumed"
+  ]
+}

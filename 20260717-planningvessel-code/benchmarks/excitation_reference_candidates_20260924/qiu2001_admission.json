@@ -1,0 +1,32 @@
+{
+  "title": "A Panel-Free Method for Time-Domain Analysis of Floating Bodies in Waves",
+  "author": "Wei Qiu",
+  "year": 2001,
+  "institution": "Dalhousie University",
+  "source_url": "https://central.bac-lac.gc.ca/.item?app=Library&id=NQ63483&oclc_number=1006712046&op=pdf",
+  "local_pdf": "sources/Qiu2001_panel_free.pdf",
+  "sha256": "8ae9e59b7012088ec40557b0d43eb17c2d28e8167f22274e1628bcefc0415b36",
+  "pdf_page_count": 102,
+  "stage_acceptance": false,
+  "forward_speed_reference_admitted": false,
+  "status": "ZERO_SPEED_CANDIDATE_ONLY",
+  "verified_froude_number": 0.0,
+  "evidence": [
+    {"pdf_page": 74, "section": "4.2.2", "finding": "Wigley wave exciting forces determined at zero speed"},
+    {"pdf_page": 75, "finding": "Frequency coordinate kL; force normalization rho*g*volume/L, moment rho*g*volume"},
+    {"pdf_page": 80, "printed_page": 64, "figures": ["4.24", "4.25"], "finding": "Heave excitation amplitude and phase, Fn=0, visually inspected"},
+    {"pdf_page": 81, "figures": ["4.26", "4.27"], "finding": "Pitch amplitude and phase indicated by text extraction; visual audit pending"},
+    {"pdf_page": 83, "finding": "Author states present work applied to zero-speed floating bodies; forward-speed validation recommended"}
+  ],
+  "remaining_zero_speed_admission_requirements": [
+    "Exact geometry and reference point transcription",
+    "Phase sign and wave phase origin verification",
+    "Amplitude and phase paired digitization with uncertainty",
+    "Source equation and plotted normalization visual audit"
+  ],
+  "prohibitions": [
+    "Do not substitute for nonzero-speed diffraction acceptance",
+    "Do not infer a tiny-speed approximation to zero-speed data",
+    "Do not label numerical comparison curves as experimental observations"
+  ]
+}

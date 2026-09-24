@@ -1,0 +1,19 @@
+{
+  "status": "DIAGNOSTIC_NOT_STAGE_ACCEPTANCE",
+  "purpose": "Control-domain and history spectral cutoff sensitivity, no response fitting",
+  "frequencies": [2, 3, 4],
+  "comparison": "Complex incident, diffraction and total heave forces; retain all variants",
+  "baseline": "outputs/kang_heave_history_only_20260924",
+  "runs": [
+    {"preset": "history_only", "radius_beams": 4.5, "k_max": 25, "out": "outputs/kang_domain_radius45_20260924"},
+    {"preset": "history_only", "radius_beams": 3, "k_max": 50, "out": "outputs/kang_domain_k50_20260924"}
+  ],
+  "screening_relative_change": 0.05,
+  "limitations": [
+    "Three frequencies only, not full delivery band",
+    "Radius variation at fixed panel count changes panel spacing as well",
+    "Spectral cutoff variation at fixed quadrature count changes spectral resolution as well",
+    "Sensitivity below 5 percent is not independent physical validation"
+  ],
+  "stage_acceptance": false
+}

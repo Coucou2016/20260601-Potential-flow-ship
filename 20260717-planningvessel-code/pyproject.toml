@@ -1,0 +1,20 @@
+[project]
+name = "planing-seakeeping"
+version = "0.1.0"
+description = "2.5D/Savitsky-Faltinsen planing craft seakeeping predictor"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=2.0",
+  "scipy",
+  "pandas",
+  "matplotlib",
+  "PyYAML",
+  "pypdf",
+  "Pillow",
+]
+
+[tool.setuptools.packages.find]
+include = ["planing_seakeeping*"]
+
+[project.scripts]
+planing-seakeeping = "planing_seakeeping.cli:main"

@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "self_similar_wedge_10_20_30_reference_contract_20260901",
+  "acceptance_condition_id": "stage_20260831_condition_1_and_5",
+  "contract_status": "INCOMPLETE_BLOCKED_DIGITIZATION_UNCERTAINTY_AND_REFERENCE_CONFLICT",
+  "used_during_solve": false,
+  "response_calibration_used": false,
+  "problem_definition": {
+    "dimension": "2D",
+    "body": "infinite_symmetric_wedge",
+    "entry_motion": "constant_vertical_speed_V",
+    "fluid": "ideal_incompressible_irrotational",
+    "gravity": "neglected",
+    "surface_tension": "neglected",
+    "canonical_coordinates": {
+      "xi": "y_horizontal/(V*t)",
+      "eta": "z_vertical_up/(V*t)"
+    },
+    "coordinate_mapping_evidence": {
+      "sun2007": "Section 2.8 and Fig. 2.6 label the free-surface axes y/(Vt), z/(Vt) and the pressure axes z/(Vt), p/(0.5*rho*V^2) on zero-based PDF pages 38-40.",
+      "iafrati2013": "The frozen vector-extraction convention is xi=y/(Vt), eta=z/(Vt), recorded by scripts/extract_iafrati2013_wedge_vector_reference.py.",
+      "solver": "SelfSimilarWedgeConfig uses node_xi as horizontal similarity coordinate and node_eta as vertical-up similarity coordinate, with calm free surface eta=0 and wedge apex (0,-1).",
+      "mapping": "Sun free-surface x_nondimensional=y/(Vt)=xi and y_nondimensional=z/(Vt)=eta; Sun pressure x_nondimensional=z/(Vt)=eta and y_nondimensional=p/(0.5*rho*V^2)=Cp."
+    }
+  },
+  "acceptance_metrics": {
+    "outer_free_surface_nrmse_limit": 0.05,
+    "pressure_curve_nrmse_limit": 0.10,
+    "pressure_peak_relative_error_limit": 0.05,
+    "pressure_peak_location_relative_error_limit": 0.05,
+    "integrated_vertical_force_relative_error_limit": 0.05,
+    "comparison_domain_policy": "pre_registered_common_dimensionless_domain",
+    "interpolation_policy": "linear_interpolation_without_extrapolation",
+    "aggregation_policy": "every_required_observable_at_every_angle_must_pass"
+  },
+  "reference_catalog": {
+    "sun2007_zhao_faltinsen_fig2_6": {
+      "role": "source_native_vector_primary_frozen_before_physical_rescore",
+      "source_location": "A3 Section 2.8 Fig. 2.6, zero-based PDF page 39, viewer page 40, printed page 28; caption on printed page 29",
+      "source_pdf": "sun2007_fig2_6_wedge_similarity/sun2007_boundary_element_method.pdf",
+      "source_pdf_sha256": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d",
+      "artifact": "sun2007_fig2_6_wedge_similarity/native_vector_v1/sun2007_fig2_6_vector_similarity_curves.csv",
+      "artifact_sha256": "78a3df4c5aa97a12361a26cdbd4d048d207c0ea47ad8f87f0bc3ccea897b63e6",
+      "manifest": "sun2007_fig2_6_wedge_similarity/native_vector_v1/sun2007_fig2_6_vector_extraction_manifest.json",
+      "manifest_sha256": "c7dfdb842039efd0f581a9f6fe7c011bdcade5edde7bcfaa9156e5707049e211",
+      "provenance_bundle_manifest": "sun2007_fig2_6_wedge_similarity/manifest.json",
+      "provenance_bundle_manifest_sha256": "86d6fc3a4c6b7f9c76b655adb8b2bbb25fb033a616f76faa6d9225a902460d0c",
+      "superseded_legacy_artifact": "sun2007_fig2_6_wedge_similarity/fig2_6_zhao_faltinsen_similarity_curves.csv",
+      "superseded_legacy_artifact_sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46",
+      "pdf_panel_rebuild_manifest": "sun2007_fig2_6_wedge_similarity/pdf_rebuild_v1/fig2_6_pdf_rebuild_manifest.json",
+      "pdf_panel_rebuild_manifest_sha256": "8f39a7513461d9c230c0de2268712dc5e0eabe0422a0e67a17aecec7c0cac91f",
+      "pdf_redigitization_manifest": "sun2007_fig2_6_wedge_similarity/pdf_redigitization_v1/fig2_6_pdf_rebuild_digitization_manifest.json",
+      "pdf_redigitization_manifest_sha256": "94b2661ec79a5eae088fd2103c5a16eb95412aa5f766f68d0c2d1709bca4811b",
+      "pdf_redigitization_csv": "sun2007_fig2_6_wedge_similarity/pdf_redigitization_v1/fig2_6_pdf_rebuild_similarity_curves.csv",
+      "pdf_redigitization_csv_sha256": "6d02a167ec4a475f9f369e34122fe9b4c698735d02dab42a3e37b5e69cce6015",
+      "pdf_redigitization_legacy_audit": "sun2007_fig2_6_wedge_similarity/pdf_redigitization_v1/fig2_6_pdf_rebuild_old_csv_audit.csv",
+      "pdf_redigitization_legacy_audit_sha256": "79a1444c8ebef1e5d7b5be73bfd84904b77ea4fead27858c985f9914aaf3a16a",
+      "native_vector_reference_audit": "sun2007_fig2_6_wedge_similarity/native_vector_reference_audit_v1/free_surface_reference_audit.json",
+      "native_vector_reference_audit_sha256": "29352b2574742714363cde16b0c7be928b6f6573ffeb755c5f8050fcb21e39a9",
+      "digitization": "native PDF blue dashed Zhao-Faltinsen vector path extraction with labelled vector-axis calibration",
+      "axis_calibration_uncertainty_px": 2.0,
+      "numeric_uncertainty_status": "NOT_PROPAGATED",
+      "source_pdf_status": "VERIFIED_SHA256_AND_FIGURE_PAGE",
+      "declared_source_images_status": "MISSING_LEGACY_JPEG_BYTES_NOT_REQUIRED_FOR_PRIMARY",
+      "deterministic_pdf_panel_crops_status": "SUPPORTING_RASTER_AUDIT_ONLY",
+      "source_representation_resolution": {
+        "hierarchy": "native PDF vectors > deterministic PDF rasterization > unavailable historical JPEG bytes",
+        "solver_result_consulted": false,
+        "legacy_csv_role": "superseded provenance audit only",
+        "policy": "never average references or select the curve closer to the solver"
+      },
+      "acceptance_eligibility": "BLOCKED_PENDING_VECTOR_COORDINATE_UNCERTAINTY"
+    },
+    "iafrati2013_table1_zhao_faltinsen": {
+      "role": "primary_scalar_reference",
+      "source_location": "Iafrati 2013 Table 1, PDF and printed page 17; definitions page 18",
+      "source_pdf": "iafrati2013_self_similar_wedge/iafrati2013_arxiv1212.6699v2.pdf",
+      "source_pdf_sha256": "5b13b09118ac32a2a7257ddbdd55f14561c886d2f87a3a58b706e6e51c887559",
+      "artifact": "iafrati2013_self_similar_wedge/table1_pressure_peak.csv",
+      "artifact_sha256": "e1e3441db748733a95c691d6029b5cb1791556bc2c0e033a4baf0575b34fb8f6",
+      "quantities": [
+        "pressure_peak_2p_over_rho_V2",
+        "pressure_peak_eta"
+      ],
+      "numeric_uncertainty_status": "NOT_DECLARED",
+      "acceptance_eligibility": "PENDING_UNCERTAINTY_RULE"
+    },
+    "iafrati2013_20deg_outer_free_surface": {
+      "role": "independent_cross_audit_only",
+      "source_location": "Iafrati 2013 Fig. 7 upper panel, PDF and printed page 32",
+      "source_pdf": "iafrati2013_self_similar_wedge/iafrati2013_arxiv1212.6699v2.pdf",
+      "source_pdf_sha256": "5b13b09118ac32a2a7257ddbdd55f14561c886d2f87a3a58b706e6e51c887559",
+      "artifact": "iafrati2013_self_similar_wedge/iafrati2013_20deg_outer_free_surface.csv",
+      "artifact_sha256": "54a53cfdc09f771826f4542d9cb186140cf6ff8cdf0200883789c111dfd419ae",
+      "point_count": 59,
+      "acceptance_eligibility": "CROSS_AUDIT_ONLY_NOT_PRIMARY_REPLACEMENT",
+      "known_conflict": {
+        "with_reference": "sun2007_zhao_faltinsen_fig2_6",
+        "common_point_count": 64,
+        "nrmse": 0.23247451431562477,
+        "status": "REFERENCE_CONFLICT"
+      }
+    }
+  },
+  "cases": [
+    {
+      "deadrise_deg": 10.0,
+      "distributed_primary": "sun2007_zhao_faltinsen_fig2_6",
+      "free_surface_point_count": 62,
+      "pressure_point_count": 192,
+      "scalar_primary": "iafrati2013_table1_zhao_faltinsen",
+      "pressure_peak": 77.85,
+      "pressure_peak_eta": 0.5556,
+      "independent_free_surface_auxiliary": null,
+      "case_status": "PENDING_UNCERTAINTY_RULE"
+    },
+    {
+      "deadrise_deg": 20.0,
+      "distributed_primary": "sun2007_zhao_faltinsen_fig2_6",
+      "free_surface_point_count": 64,
+      "pressure_point_count": 193,
+      "scalar_primary": "iafrati2013_table1_zhao_faltinsen",
+      "pressure_peak": 17.77,
+      "pressure_peak_eta": 0.5087,
+      "independent_free_surface_auxiliary": "iafrati2013_20deg_outer_free_surface",
+      "case_status": "REFERENCE_CONFLICT"
+    },
+    {
+      "deadrise_deg": 30.0,
+      "distributed_primary": "sun2007_zhao_faltinsen_fig2_6",
+      "free_surface_point_count": 68,
+      "pressure_point_count": 184,
+      "scalar_primary": "iafrati2013_table1_zhao_faltinsen",
+      "pressure_peak": 6.927,
+      "pressure_peak_eta": 0.4243,
+      "independent_free_surface_auxiliary": null,
+      "case_status": "PENDING_UNCERTAINTY_RULE"
+    }
+  ],
+  "reference_conflict_rules": {
+    "triggers": [
+      "required source artifact is missing or its verified SHA-256 differs",
+      "problem definition, deadrise, normalization or coordinate mapping is inconsistent",
+      "primary and applicable auxiliary differ beyond combined declared uncertainty",
+      "a superseded or cross-audit-only reference is substituted for the primary",
+      "a result changes under reference substitution without a pre-registered resolution rule"
+    ],
+    "required_action": [
+      "do_not_average_or_select_the_nearer_reference",
+      "report_each_reference_separately",
+      "preserve_the_pre_registered_primary_result",
+      "set_status_to_REFERENCE_CONFLICT_until_provenance_and_uncertainty_are_resolved"
+    ]
+  },
+  "pending_fields": [
+    "propagated dimensionless uncertainty for Sun native-vector coordinate extraction",
+    "numeric uncertainty for Iafrati Table 1 and vector extraction",
+    "independent auxiliary free-surface references for 10 and 30 degrees",
+    "direct or frozen derived integrated vertical-force reference at every angle"
+  ]
+}

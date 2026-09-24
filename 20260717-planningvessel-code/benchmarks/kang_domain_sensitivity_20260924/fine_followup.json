@@ -1,0 +1,13 @@
+{
+  "status": "DIAGNOSTIC_NOT_STAGE_ACCEPTANCE",
+  "reason": "Coarse control-radius change produced 23-40 percent complex diffraction changes; repeat with fine discretization",
+  "baseline": "outputs/kang_heave_fine_20260924",
+  "runs": [
+    {"preset": "fine", "radius_beams": 4.5, "k_max": 25, "out": "outputs/kang_domain_fine_radius45_20260924"},
+    {"preset": "fine", "radius_beams": 6, "k_max": 25, "out": "outputs/kang_domain_fine_radius6_20260924"}
+  ],
+  "frequencies": [2, 3, 4],
+  "screening_relative_change": 0.05,
+  "selection": "Keep every result; no best-response selection; compare complex forces",
+  "stage_acceptance": false
+}

@@ -1,0 +1,71 @@
+{
+  "benchmark": "Sun_2007_Fig7.4_Troesch_experimental_square_marker_zero_offset_slopes",
+  "source": {
+    "title": "A Boundary Element Method Applied to Strongly Nonlinear Wave-Body Interaction Problems",
+    "chapter": 7,
+    "figure": "7.4(a-d)",
+    "equation": "7.18",
+    "figure_pdf_page_1_based": 140,
+    "figure_printed_page": 128,
+    "equation_pdf_page_1_based": 142,
+    "equation_printed_page": 130,
+    "pdf": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\..\\20260729-\u6587\u732e\u6536\u96c6\\A3_A Boundary Element Method.pdf",
+    "pdf_sha256": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d"
+  },
+  "rho_water_kg_m3": 1000.0,
+  "gravity_m_s2": 9.80665,
+  "beam_m": 0.318,
+  "beam_froude_number": 2.5,
+  "speed_mps": 4.414829201112994,
+  "pixel_uncertainty": 2.0,
+  "sources": [
+    {
+      "panel": "7.4a",
+      "image": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\..\\20260729-\u6587\u732e\u6536\u96c6\\md\\A3_images\\ec25dedb22831e74e285696ff8b33566c33cfe25be1e3029d0e78e31c9ca0110.jpg",
+      "sha256": "8c3a97420e48808ff0591513a1a62cbbf67bc63d03a81d7bc0c3bd3e552e1939",
+      "pixel_dimensions": [
+        504,
+        384
+      ]
+    },
+    {
+      "panel": "7.4b",
+      "image": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\..\\20260729-\u6587\u732e\u6536\u96c6\\md\\A3_images\\21b62106a197f81013fba6634ef4036a547f3857294fb359bfc353ca72ada1b3.jpg",
+      "sha256": "33e28d8e08e65f305d4a2b540274315e9e0f38a24d5aa7df30d1bbbc4e48df7a",
+      "pixel_dimensions": [
+        515,
+        382
+      ]
+    },
+    {
+      "panel": "7.4c",
+      "image": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\..\\20260729-\u6587\u732e\u6536\u96c6\\md\\A3_images\\5ac17c094bb26a53b984418b351e0fce09bbbd65cafb72e45114f198a7300366.jpg",
+      "sha256": "13b5b1a99639e832bc69825994bbbfdd37222df6af9834df12f4827472485863",
+      "pixel_dimensions": [
+        506,
+        387
+      ]
+    },
+    {
+      "panel": "7.4d",
+      "image": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\..\\20260729-\u6587\u732e\u6536\u96c6\\md\\A3_images\\2b8cb600563c160aa85af6638633ccd52ea3cb2ac1d63cd4dd096f53de02ce02.jpg",
+      "sha256": "15651f74fcf656e66385669ac9f02264952140d273df782cdab5af601223daf8",
+      "pixel_dimensions": [
+        509,
+        384
+      ]
+    }
+  ],
+  "generated_files": {
+    "digitized_points.csv": "e70fc9ca0b61f90d2b52a818702ec5305f1dc11646b6744565ba251ba6b35523",
+    "restoring_matrix.csv": "d23a1fa8f0e4a68e45b50e35b83155c2285c6fb41fe173d90f175d5831ca2607",
+    "restoring_matrices.csv": "aaf16245eeacba4acfa7c0db2370c44209c3546374e46edf253a33ed8da62e8b"
+  },
+  "limitations": [
+    "Pixel envelope covers digitization-center uncertainty only.",
+    "It is not the Troesch experimental uncertainty.",
+    "Overlapping markers can add systematic error beyond the pixel envelope.",
+    "The Troesch_experimental_square_marker series is used; no dynamic-response data are fitted."
+  ],
+  "response_calibration_used": false
+}

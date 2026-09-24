@@ -1,0 +1,266 @@
+{
+  "benchmark": "Sun 2007 Fig. 2.6 Zhao-Faltinsen wedge-entry similarity curves",
+  "source": "A3, Section 2.8, Fig. 2.6, PDF page 41 / printed page 29",
+  "source_pdf": "sun2007_boundary_element_method.pdf",
+  "source_pdf_sha256": "0da387d3296a291e66efa080e1110eb00cad88af45bf9a3cdec642530c5f502d",
+  "source_pdf_page_index_zero_based": 39,
+  "source_pdf_render_note": "The six-panel Fig. 2.6 is present on zero-based PDF page 39 (viewer page 40, printed page 28); its caption points to printed page 29.",
+  "coordinate_mapping": {
+    "free_surface": "Sun y/(Vt) -> solver xi; Sun z/(Vt) -> solver eta",
+    "pressure": "Sun z/(Vt) -> solver eta; Sun p/(0.5*rho*V^2) -> solver pressure coefficient",
+    "source_evidence": "Sun 2007 Section 2.8 and Fig. 2.6 axis labels on zero-based PDF pages 38-40",
+    "solver_evidence": "SelfSimilarWedgeConfig uses horizontal node_xi and vertical-up node_eta, with calm free surface eta=0 and wedge apex (0,-1)."
+  },
+  "deterministic_pdf_panel_rebuild": {
+    "script": "../../scripts/rebuild_sun2007_fig2_6_from_pdf.py",
+    "artifact_manifest": "pdf_rebuild_v1/fig2_6_pdf_rebuild_manifest.json",
+    "artifact_manifest_sha256": "8f39a7513461d9c230c0de2268712dc5e0eabe0422a0e67a17aecec7c0cac91f",
+    "panel_count": 6,
+    "status": "AVAILABLE_SOURCE_RASTERIZATION_ONLY",
+    "scope": "The six PNG panels are deterministic crops of the verified source PDF. They do not reproduce the missing historical JPEG bytes; their separate redigitization and legacy-CSV audit are declared below."
+  },
+  "independent_pdf_redigitization": {
+    "script": "../../scripts/digitize_sun2007_pdf_rebuild.py",
+    "artifact_manifest": "pdf_redigitization_v1/fig2_6_pdf_rebuild_digitization_manifest.json",
+    "artifact_manifest_sha256": "94b2661ec79a5eae088fd2103c5a16eb95412aa5f766f68d0c2d1709bca4811b",
+    "curve_csv": "pdf_redigitization_v1/fig2_6_pdf_rebuild_similarity_curves.csv",
+    "curve_csv_sha256": "6d02a167ec4a475f9f369e34122fe9b4c698735d02dab42a3e37b5e69cce6015",
+    "legacy_audit_csv": "pdf_redigitization_v1/fig2_6_pdf_rebuild_old_csv_audit.csv",
+    "legacy_audit_csv_sha256": "79a1444c8ebef1e5d7b5be73bfd84904b77ea4fead27858c985f9914aaf3a16a",
+    "status": "COMPLETED_WITH_LEGACY_DIGITIZATION_DISAGREEMENT",
+    "scope": "Axes are fixed from labelled ticks and the legacy CSV is read only after extraction. The 10 and 20 degree free-surface NRMSE values against the legacy CSV are 0.140450 and 0.133914, so reference selection and uncertainty remain unresolved."
+  },
+  "native_pdf_vector_extraction": {
+    "script": "../../scripts/extract_sun2007_fig2_6_vector.py",
+    "artifact_manifest": "native_vector_v1/sun2007_fig2_6_vector_extraction_manifest.json",
+    "artifact_manifest_sha256": "c7dfdb842039efd0f581a9f6fe7c011bdcade5edde7bcfaa9156e5707049e211",
+    "curve_csv": "native_vector_v1/sun2007_fig2_6_vector_similarity_curves.csv",
+    "curve_csv_sha256": "78a3df4c5aa97a12361a26cdbd4d048d207c0ea47ad8f87f0bc3ccea897b63e6",
+    "raster_audit_csv": "native_vector_v1/sun2007_fig2_6_vector_vs_pdf_redigitization_audit.csv",
+    "raster_audit_csv_sha256": "6f7fd3e1c7b5371366cee70a61f6fcc64f461fcd739f8c715ef60f6a1e5f7f5e",
+    "legacy_audit_csv": "native_vector_v1/sun2007_fig2_6_vector_vs_legacy_audit.csv",
+    "legacy_audit_csv_sha256": "07a93c30f58d7f5e566cf277605ad8a72f20c9e4912495c9e1018370b88f475c",
+    "status": "SOURCE_NATIVE_VECTOR_PRIMARY_CANDIDATE",
+    "source_evidence": "The PDF page contains native /Cs6 blue strokes with SCN 0 0 1 and m/l/S operators, no XObjects, and manually disconnected dashed subpaths.",
+    "scope": "The native vector geometry and labelled vector tick coordinates are extracted before any raster or legacy CSV is opened. Vector-coordinate uncertainty still requires a frozen propagation rule."
+  },
+  "reference_resolution_policy": {
+    "selected_primary": "native_pdf_vector_extraction",
+    "basis": "source-representation hierarchy fixed independently of solver results: native PDF vectors outrank deterministic rasterization, which outranks unavailable historical JPEG bytes",
+    "solver_result_consulted": false,
+    "legacy_csv_role": "superseded provenance audit only; never averaged with or substituted for the vector primary",
+    "effective_before_next_physical_rescore": true
+  },
+  "curve_policy": "Only the blue dashed SIM curve is a reference; Sun's BEM curve is not a target.",
+  "digitization_policy": "Blue JPEG pixels are thresholded inside frozen plot ROIs and legend rectangles are excluded. Pressure uses the all-pixel column median. Free-surface columns are split into contiguous row clusters; the bottommost cluster is traced with a frozen 1 px monotonic-backtrack tolerance so the outward-decaying branch is never blended with the upward spray branch. Dashed-gap columns exposing only the spray branch are omitted rather than interpolated.",
+  "free_surface_branch": "lower outward-decaying branch after the spray-root fold",
+  "free_surface_backtrack_tolerance_px": 1.0,
+  "supersedes": {
+    "artifact": "legacy_column_median_v1/fig2_6_zhao_faltinsen_similarity_curves.csv",
+    "csv_sha256": "27501c457dbe61fa2ad9c2bea020ed66780cb7ab6214f3c3f7317d045eb8c994",
+    "reason": "The legacy all-pixel median can lie between separated spray and outer-free-surface pixel clusters."
+  },
+  "axis_calibration_uncertainty_px": 2.0,
+  "source_directory": ".",
+  "sources": [
+    {
+      "beta_deg": 10.0,
+      "quantity": "free_surface",
+      "image_name": "87cd7258419cf88d1169caeb3f1eeb31a9eafaa4b1295eb31f1e0b5f8c29c820.jpg",
+      "sha256": "ec341bfd961587e6f6e2ebab57e07349db6c8c4eadcf6a009dbc91c24202f6a4",
+      "point_count": 32,
+      "calibration": {
+        "beta_deg": 10.0,
+        "quantity": "free_surface",
+        "image_name": "87cd7258419cf88d1169caeb3f1eeb31a9eafaa4b1295eb31f1e0b5f8c29c820.jpg",
+        "x_name": "y_over_Vt",
+        "y_name": "z_over_Vt",
+        "x_pixel_at_value_0": 73.0,
+        "x_value_0": 0.0,
+        "x_pixel_at_value_1": 514.0,
+        "x_value_1": 20.0,
+        "y_pixel_at_value_0": 354.0,
+        "y_value_0": -2.0,
+        "y_pixel_at_value_1": 19.0,
+        "y_value_1": 2.0,
+        "roi": [
+          250,
+          125,
+          520,
+          220
+        ],
+        "excluded_rectangles": []
+      }
+    },
+    {
+      "beta_deg": 10.0,
+      "quantity": "pressure",
+      "image_name": "ea1a88cc8edd35ff7aaf7cdfae1aed568fd0a2894c397b169a38df7fc891c9fc.jpg",
+      "sha256": "bc3600dceed5c2413b43e19b73feace9691a1feb386dd1b86d857f5c242c1913",
+      "point_count": 247,
+      "calibration": {
+        "beta_deg": 10.0,
+        "quantity": "pressure",
+        "image_name": "ea1a88cc8edd35ff7aaf7cdfae1aed568fd0a2894c397b169a38df7fc891c9fc.jpg",
+        "x_name": "z_over_Vt",
+        "y_name": "p_over_half_rho_V2",
+        "x_pixel_at_value_0": 84.0,
+        "x_value_0": -1.0,
+        "x_pixel_at_value_1": 525.0,
+        "x_value_1": 1.0,
+        "y_pixel_at_value_0": 307.0,
+        "y_value_0": 0.0,
+        "y_pixel_at_value_1": 42.0,
+        "y_value_1": 80.0,
+        "roi": [
+          75,
+          15,
+          530,
+          345
+        ],
+        "excluded_rectangles": [
+          [
+            95,
+            45,
+            255,
+            155
+          ]
+        ]
+      }
+    },
+    {
+      "beta_deg": 20.0,
+      "quantity": "free_surface",
+      "image_name": "f0fe6b08afe9bd3b39c3799011c2fcd9bc711e3ab0870b5be0ecaec81c0a7fd6.jpg",
+      "sha256": "1c659e066f24b335cbe162f021bca513bcd4955434c30ae52199ae10465001c8",
+      "point_count": 84,
+      "calibration": {
+        "beta_deg": 20.0,
+        "quantity": "free_surface",
+        "image_name": "f0fe6b08afe9bd3b39c3799011c2fcd9bc711e3ab0870b5be0ecaec81c0a7fd6.jpg",
+        "x_name": "y_over_Vt",
+        "y_name": "z_over_Vt",
+        "x_pixel_at_value_0": 78.0,
+        "x_value_0": 0.0,
+        "x_pixel_at_value_1": 516.0,
+        "x_value_1": 10.0,
+        "y_pixel_at_value_0": 340.0,
+        "y_value_0": -5.0,
+        "y_pixel_at_value_1": 18.0,
+        "y_value_1": 5.0,
+        "roi": [
+          250,
+          165,
+          522,
+          230
+        ],
+        "excluded_rectangles": []
+      }
+    },
+    {
+      "beta_deg": 20.0,
+      "quantity": "pressure",
+      "image_name": "7f3140e6b370455490b99886c15efbca5fd5569e6879072976d19f13a395c304.jpg",
+      "sha256": "2d5fb86113e737b8948bf3c429b3f32a6f32fb6e0ba6a109eea745297021a161",
+      "point_count": 261,
+      "calibration": {
+        "beta_deg": 20.0,
+        "quantity": "pressure",
+        "image_name": "7f3140e6b370455490b99886c15efbca5fd5569e6879072976d19f13a395c304.jpg",
+        "x_name": "z_over_Vt",
+        "y_name": "p_over_half_rho_V2",
+        "x_pixel_at_value_0": 79.0,
+        "x_value_0": -1.0,
+        "x_pixel_at_value_1": 516.0,
+        "x_value_1": 1.0,
+        "y_pixel_at_value_0": 342.0,
+        "y_value_0": 0.0,
+        "y_pixel_at_value_1": 21.0,
+        "y_value_1": 20.0,
+        "roi": [
+          72,
+          15,
+          522,
+          347
+        ],
+        "excluded_rectangles": [
+          [
+            95,
+            45,
+            270,
+            155
+          ]
+        ]
+      }
+    },
+    {
+      "beta_deg": 30.0,
+      "quantity": "free_surface",
+      "image_name": "bffa4507d635a13274c955b90abe92d7685a16895ebbddc1fa6029bf2a34552e.jpg",
+      "sha256": "75e38f903719f94f142e6c9be850471836e3ccfb93ab4525fe9f4203e451115f",
+      "point_count": 38,
+      "calibration": {
+        "beta_deg": 30.0,
+        "quantity": "free_surface",
+        "image_name": "bffa4507d635a13274c955b90abe92d7685a16895ebbddc1fa6029bf2a34552e.jpg",
+        "x_name": "y_over_Vt",
+        "y_name": "z_over_Vt",
+        "x_pixel_at_value_0": 77.0,
+        "x_value_0": 0.0,
+        "x_pixel_at_value_1": 516.0,
+        "x_value_1": 6.0,
+        "y_pixel_at_value_0": 349.0,
+        "y_value_0": -3.0,
+        "y_pixel_at_value_1": 19.0,
+        "y_value_1": 3.0,
+        "roi": [
+          250,
+          145,
+          522,
+          230
+        ],
+        "excluded_rectangles": []
+      }
+    },
+    {
+      "beta_deg": 30.0,
+      "quantity": "pressure",
+      "image_name": "b84b1bbf81acc517f7170824b0e7c59eaf5586219d72312ab56ce608295bbe65.jpg",
+      "sha256": "0c3bb0721a7f0c06ce9761b94aae3fc80b1ffaead6e3bc3442cb7b403ed58310",
+      "point_count": 240,
+      "calibration": {
+        "beta_deg": 30.0,
+        "quantity": "pressure",
+        "image_name": "b84b1bbf81acc517f7170824b0e7c59eaf5586219d72312ab56ce608295bbe65.jpg",
+        "x_name": "z_over_Vt",
+        "y_name": "p_over_half_rho_V2",
+        "x_pixel_at_value_0": 78.0,
+        "x_value_0": -1.0,
+        "x_pixel_at_value_1": 514.0,
+        "x_value_1": 1.0,
+        "y_pixel_at_value_0": 343.0,
+        "y_value_0": 0.0,
+        "y_pixel_at_value_1": 11.0,
+        "y_value_1": 8.0,
+        "roi": [
+          72,
+          8,
+          520,
+          348
+        ],
+        "excluded_rectangles": [
+          [
+            95,
+            45,
+            260,
+            155
+          ]
+        ]
+      }
+    }
+  ],
+  "row_count": 902,
+  "csv": "fig2_6_zhao_faltinsen_similarity_curves.csv",
+  "csv_sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46",
+  "response_calibration_used": false
+}

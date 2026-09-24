@@ -1,0 +1,3 @@
+coefficient,row,column,value,lower_pixel_envelope,upper_pixel_envelope,units,normalized_zero_slope,fit,pixel_center_uncertainty,response_calibration_used
+C33,heave_force,heave,3221.334061771609,3097.212130329595,3345.455993213624,N/m,-0.5197336450625455,quadratic_central_five_points_derivative_at_zero,2.0,False
+C53,pitch_moment,heave,661.5515529976267,622.0657807306112,701.0373252646415,N,-0.33564612712229364,quadratic_central_five_points_derivative_at_zero,2.0,False

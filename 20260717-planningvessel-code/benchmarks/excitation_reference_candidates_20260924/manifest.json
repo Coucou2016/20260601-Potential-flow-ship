@@ -1,0 +1,89 @@
+{
+  "status": "REFERENCE_ADMISSION_INCOMPLETE",
+  "not_an_acceptance_contract": true,
+  "purpose": "Independent verification of direct wave excitation, including diffraction",
+  "references": [
+    {
+      "id": "kang2009_wigley_geometry",
+      "title": "Time Domain Mathematical Model for Six-Degree-of-Freedom Motion in a Wave",
+      "author": "Joonyun Kang",
+      "year": 2009,
+      "url": "https://stax.strath.ac.uk/downloads/6t053g28n?locale=en",
+      "local_pdf": "sources/Kang2009.pdf",
+      "sha256": "82c16b2b268679b86dfb0b6ec1fc4e7e24dd4e7e5dd517d3596fdc63eecc29e5",
+      "verified_now": ["411-page thesis acquired", "Equation 7.65 visually checked", "Table 7.2 geometry volume reproduced by analytic integration", "Figure 7.14 is excitation amplitude only"],
+      "geometry_audit": "kang2009_geometry_audit.json",
+      "ready_for_solver_comparison": false,
+      "unknown": ["Identity with Le Guen figure 5 original hull", "Complex excitation conventions and data"]
+    },
+    {
+      "id": "leguen_magee_royal1993_wigley1_complex_excitation",
+      "title": "Validation mutuelle de differents codes de tenue a la mer",
+      "authors": ["J. F. Le Guen", "A. R. Magee", "C. Royal"],
+      "year": 1993,
+      "url": "https://actesjh.ec-nantes.fr/images/4JH/Annexe/4_Journee_Hydro_S6P5.pdf",
+      "local_pdf": "sources/LeGuen_Magee_Royal_1993.pdf",
+      "sha256": "67140ff06bbc993e1f6234d1af4f44c8aec04324d3c174bae78dbe0823204a21",
+      "kind": "independent_numerical_comparison_with_reproduced_experimental_markers",
+      "verified_now": [
+        "Original scanned PDF acquired from conference host, 14 pages",
+        "Figure 5, printed page 369 / PDF page 13: Wigley I head seas Fn=0.3, vertical excitation and pitch moment amplitudes and phases",
+        "Printed page 361 / PDF page 5: phase origin is wave elevation at model centre of gravity",
+        "Printed page 362 / PDF page 6: authors flag atypical experimental pitch-excitation phase trend",
+        "Printed page 364 / PDF page 8: experiment citation is Gerritsma 1988 report 804"
+      ],
+      "unknown": [
+        "Exact hull dimensions and offsets/formula matched to the original experimental model",
+        "Moment reference, rotation signs and positive/negative harmonic convention",
+        "Wave-number axis definition and complete normalization verified against original report",
+        "Digitized complex data and uncertainty",
+        "Resolution of flagged experimental pitch-phase anomaly"
+      ],
+      "ready_for_solver_comparison": false,
+      "not_an_acceptance_contract": true
+    },
+    {
+      "id": "gerritsma1988_report804",
+      "title": "Motions, Wave Loads and Added Resistance in Waves of Two Wigley Hull Forms",
+      "author": "J. Gerritsma",
+      "year": 1988,
+      "url": "https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB90157595.xhtml",
+      "identifier": "PB90157595",
+      "verified_now": ["NTIS catalogue identifies author, year, title and 31 pages"],
+      "availability": "Catalogue verified; full original report not acquired in this run",
+      "ready_for_solver_comparison": false
+    },
+    {
+      "id": "journee1992_original",
+      "title": "Experiments and Calculations on Four Wigley Hullforms",
+      "url": "https://repository.tudelft.nl/islandora/object/uuid:52a76d0b-5db1-4902-a254-a81491b9cf99",
+      "kind": "experimental_report",
+      "verified_now": ["repository identifier traced through a TU Delft thesis bibliography"],
+      "availability": "official record returned Forbidden; current numerical wave-load tables not inspected",
+      "ready_for_solver_comparison": false
+    },
+    {
+      "id": "liu2011_wigley_excitation",
+      "title": "Numerical Simulation of Large Amplitude Ship Motions and Applications to Ship Design and Safe Operation",
+      "author": "Shukui Liu",
+      "year": 2011,
+      "url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/4970/lius_shipmotions.pdf",
+      "kind": "independent_numerical_method_comparison_not_experimental_truth",
+      "locations": ["section 2.6.5", "printed pages 18-20", "PDF pages 38-40, one-based", "figures 2.8 and 2.9"],
+      "verified_now": ["Wigley wave-load comparison", "Fn=0.0 and 0.2 head seas", "comparison with NEWDRIFT", "F3 normalized by C33*wave_amplitude; F5 by k*C55*wave_amplitude"],
+      "unknown": ["curve values", "phase information and convention", "exact force decomposition", "full matching geometry parameters", "digitization uncertainty"],
+      "availability": "repository PDF text inspected through web tool; screenshot cache miss; local download timed out after 60 seconds",
+      "ready_for_solver_comparison": false
+    }
+  ],
+  "admission_requirements": [
+    "Inspect original figure/table, distinguish total excitation from pure diffraction and from incident pressure",
+    "Confirm exact geometry, draft, origin, moment reference, speed, depth and wave heading",
+    "Confirm incident versus encounter frequency, amplitude and phase conventions",
+    "Extract finite numerical data with page anchors and uncertainty; never fill gaps with invented values",
+    "Freeze numerical references, source hashes, cases and tolerances before candidate runs",
+    "An amplitude-only comparison cannot satisfy the complex-excitation phase requirement",
+    "Fn=0 is outside the current forward-speed station-marching route; do not silently replace zero speed by a small positive speed",
+    "A numerical cross-check is not experimental acceptance and does not replace Begovic or Fridsma gates"
+  ]
+}

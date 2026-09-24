@@ -1,0 +1,2 @@
+case_id,fn_l,wave_height_over_draft,lambda_over_loa,heave_rao_m_per_m,pitch_rao_rad_per_wave_slope,cg_accel_g,bow_accel_g,length_m,beam_m,draft_m,mass_kg,lcg_from_transom_m,kg_above_keel_m,deadrise_deg,pitch_radius_gyration_m,source_note
+no_jump,1.21,0.68,1.60,,,,,,,,,,,,,"Fill response values only from digitized Katayama figure/table data; geometry can be omitted when case_id matches jumping_classification_digitized.csv. Pitch can also be supplied as pitch_rao_rad_per_m if already converted."

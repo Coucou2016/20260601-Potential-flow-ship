@@ -1,0 +1,32 @@
+{
+  "benchmark": "fridsma_1969_table1_table2_regular_head_waves",
+  "primary_source": {
+    "title": "A Systematic Study of the Rough-Water Performance of Planing Boats",
+    "report": "Davidson Laboratory Report 1275",
+    "year": 1969,
+    "pdf_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/A5_Fridsma_1969_Rough_Water_Performance_Planing_Boats.pdf",
+    "pdf_sha256": "8ade7fe671e75f85bc4d575935d9455091dc95eca037be18e8a570c7cfecf853",
+    "markdown_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/md/A5.md",
+    "markdown_sha256": "34a58d19ea0436912c6cb1ced5592f05e13853adab11aa81fb16f5ecf1ae1567",
+    "source_locations": ["Table 1, report page 33", "Table 2, report pages 34-37"]
+  },
+  "secondary_source": {
+    "title": "Dynamic motions of planing vessels in head seas",
+    "role": "Measured mean wetted length ratios for configurations A and B",
+    "pdf_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/A4_3_Dynamic motions of planing vessels in head seas.pdf",
+    "pdf_sha256": "e0b4b5691c72377bdc03df558a84d312ecb7a7bce349cae28f71fe72537d448e",
+    "markdown_path": "D:/Projects/20260601-Potential-flow-ship/20260729-文献收集/md/A4_3.md",
+    "markdown_sha256": "f2fcff134c372811581a2c9f1e7fdb56aa1228e775d55d40bbb1c3ac6b0dc1d1",
+    "source_locations": ["Section 6, Table 1"]
+  },
+  "transcription": {
+    "kind": "direct_table_transcription",
+    "not_graph_digitization": true,
+    "wave_height_definition": "crest-to-trough H/B",
+    "heave_definition": "double-amplitude heave divided by crest-to-trough wave height, equal to heave amplitude / wave amplitude",
+    "pitch_definition": "double-amplitude pitch divided by 2*pi*H/lambda, equal to pitch amplitude / incident wave-slope amplitude",
+    "heave_phase_definition": "lag positive, degrees",
+    "pitch_phase_definition": "lead positive, degrees",
+    "acceleration_definition": "reported positive peak above still-water zero-g baseline"
+  }
+}

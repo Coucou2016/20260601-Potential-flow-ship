@@ -1,0 +1,12 @@
+configuration,wave_height_over_b,lambda_over_l,heave_rao_m_per_m,pitch_rao_rad_per_wave_slope,cg_accel_g,bow_accel_g,heave_phase_lag_deg,pitch_phase_lead_deg,linear_gate_eligible,linear_gate_reason,source_table,source_report_pages
+A,0.111,1.0,0.18,0.11,0.25,1.05,11,46,false,"Retained diagnostic: Faltinsen long-wave excitation is outside its quantified lambda/L >= 4 range.",Table 2,34-37
+A,0.111,2.0,0.84,0.79,0.25,0.90,55,9,false,"Retained diagnostic: Fridsma reports wave-height nonlinearity near lambda/L=2 at speed-length ratio 4.",Table 2,34-37
+A,0.111,3.0,1.18,1.29,0.20,0.45,36,42,false,"Retained diagnostic: Fridsma reports wave-height nonlinearity near lambda/L=3 at speed-length ratio 4.",Table 2,34-37
+A,0.111,4.0,1.23,1.21,0.15,0.25,9,65,true,"Non-resonant long-wave gate: Faltinsen Fig. 9.32 bounds the long-wave excitation error below about 10 percent at lambda/L >= 4.",Table 2,34-37
+A,0.111,6.0,1.04,1.13,0.10,0.15,-3,68,true,"Non-resonant long-wave gate: Faltinsen Fig. 9.32 bounds the long-wave excitation error below about 10 percent at lambda/L >= 4.",Table 2,34-37
+B,0.111,1.0,0.16,0.06,0.50,1.45,,,false,"Retained diagnostic: Faltinsen long-wave excitation is outside its quantified lambda/L >= 4 range.",Table 2,34-37
+B,0.111,1.5,0.37,0.21,0.70,2.00,,,false,"Retained diagnostic: Faltinsen long-wave excitation is outside its quantified lambda/L >= 4 range.",Table 2,34-37
+B,0.111,2.0,0.64,0.54,0.80,2.55,,,false,"Retained diagnostic: Fridsma reports strong wave-height nonlinearity near lambda/L=2 at speed-length ratio 6.",Table 2,34-37
+B,0.111,3.0,1.45,1.68,0.90,2.85,,,false,"Retained diagnostic: high-speed resonance and sharp acceleration peaks require nonlinear treatment.",Table 2,34-37
+B,0.111,4.0,1.75,2.39,0.35,1.25,0,48,true,"Long-wave motion gate; bow acceleration is retained as nonlinear impact diagnostic and is not used for the linear acceleration hard metric.",Table 2,34-37
+B,0.111,6.0,1.08,1.51,0.15,0.25,-7,95,true,"Non-resonant long-wave gate: Faltinsen Fig. 9.32 bounds the long-wave excitation error below about 10 percent at lambda/L >= 4.",Table 2,34-37

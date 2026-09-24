@@ -1,0 +1,16 @@
+{
+  "status": "DIAGNOSTIC_NOT_STAGE_ACCEPTANCE",
+  "purpose": "Separate boundary panel refinement from control radius at fixed body and stations",
+  "frequencies": [2, 3, 4],
+  "preset": "boundary_dense",
+  "baseline_preset": "fine",
+  "changed_fields": ["free_surface_inner_panels", "free_surface_outer_panels"],
+  "runs": [
+    {"radius_beams": 3, "baseline": "outputs/kang_heave_fine_20260924", "out": "outputs/kang_boundary_dense_r3_20260924"},
+    {"radius_beams": 4.5, "baseline": "outputs/kang_domain_fine_radius45_20260924", "out": "outputs/kang_boundary_dense_r45_20260924"},
+    {"radius_beams": 6, "baseline": "outputs/kang_domain_fine_radius6_20260924", "out": "outputs/kang_boundary_dense_r6_20260924"}
+  ],
+  "screening_relative_change": 0.05,
+  "comparison": "All complex incident, diffraction, total heave and geometric pitch forces; no winner selection",
+  "stage_acceptance": false
+}

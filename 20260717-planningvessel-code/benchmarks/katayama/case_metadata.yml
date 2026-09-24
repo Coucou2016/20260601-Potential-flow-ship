@@ -1,0 +1,34 @@
+source:
+  title: "Longitudinal Motion of a Super High-Speed Planing Craft in Regular Head Waves"
+  authors: "T. Katayama, T. Hinami, Y. Ikeda"
+  venue: "Proceedings of the 4th Osaka Colloquium on Seakeeping Performance of Ships, 2000"
+  url: "https://www.researchgate.net/publication/238103035_LONGITUDINAL_MOTION_OF_A_SUPER_HIGH-SPEED_PLANING_CRAFT_IN_REGULAR_HEAD_WAVES"
+model:
+  length_m: 0.625
+  beam_m: 0.25
+  draft_m: 0.059
+  mass_kg: 4.28
+  lcg_from_transom_m: 0.285
+  kg_above_keel_m: 0.111
+  deadrise_deg: 22.0
+  pitch_radius_gyration_m: 0.15625
+  pitch_radius_note: "Not visible in the accessible page text; validation uses 0.25 LOA as a documented screening assumption until the full paper/table is digitized."
+classification_cases:
+  - case_id: no_jump
+    source_figure: "Fig. 7(a)"
+    fn_l: 1.21
+    wave_height_over_draft: 0.68
+    lambda_over_loa: 1.60
+    expected_jumping: false
+  - case_id: regular_jump
+    source_figure: "Fig. 7(b)"
+    fn_l: 3.63
+    wave_height_over_draft: 0.51
+    lambda_over_loa: 3.59
+    expected_jumping: true
+  - case_id: irregular_jump
+    source_figure: "Fig. 7(c)"
+    fn_l: 4.04
+    wave_height_over_draft: 1.02
+    lambda_over_loa: 3.59
+    expected_jumping: true

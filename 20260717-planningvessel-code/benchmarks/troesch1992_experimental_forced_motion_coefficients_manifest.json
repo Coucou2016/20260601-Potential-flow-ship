@@ -1,0 +1,40 @@
+{
+  "title": "Troesch 1992 experimental forced-motion coefficients digitized from Sun 2007",
+  "benchmark_role": "independent_EFD_digitization_not_acceptance_calibration",
+  "source_location": "Sun thesis, printed page 141, PDF page 153, Figs. 7.13-7.14",
+  "coordinate_evidence": {
+    "image": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\sun2007_troesch_forced_motion_evidence\\A3_pdf_page_153_300dpi.png",
+    "sha256": "19b2d277ad1e37659df62a40fbe3a4445ca7219b37358b17fe46f43fe1cd1de5",
+    "pixel_size": [
+      2080,
+      2955
+    ],
+    "render_contract": "A3 PDF page 153 rendered at 300 dpi with MuPDF 1.28.2"
+  },
+  "digitization": {
+    "series": "EXP filled markers only",
+    "visible_marker_count": 46,
+    "marker_half_height_px_used_for_uncertainty": 6.0,
+    "marker_half_width_px_used_for_uncertainty": 6.0,
+    "response_calibration_used": false,
+    "omission_policy": "Overlapped or merged markers are omitted rather than inferred.",
+    "known_omissions": [
+      "A35 and A55 markers hidden by another marker or a NUM curve near sigma=1.4",
+      "Lowest-frequency B33 filled markers merge with one another",
+      "B35 filled marker near sigma=1.4 is not separable",
+      "No omitted marker value is interpolated or copied from the NUM curve"
+    ]
+  },
+  "coefficient_point_counts": {
+    "A33": 9,
+    "A35": 4,
+    "A53": 8,
+    "A55": 4,
+    "B33": 7,
+    "B35": 4,
+    "B53": 5,
+    "B55": 5
+  },
+  "output_csv": "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\troesch1992_experimental_forced_motion_coefficients.csv",
+  "output_csv_sha256": "74284843c6cf16103908ed7b7a92eef132b09f26054d14e970aad116f62447de"
+}

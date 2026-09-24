@@ -1,0 +1,38 @@
+{
+  "source": "benchmarks\\excitation_reference_candidates_20260924\\sources\\Kang2009.pdf",
+  "sha256": "82c16b2b268679b86dfb0b6ec1fc4e7e24dd4e7e5dd517d3596fdc63eecc29e5",
+  "pdf_page_one_based": 194,
+  "figure": "7.14",
+  "source_curve": "HOPM numerical calculation, NOT experimental data",
+  "axes": {
+    "heave": {
+      "x0": 344.0,
+      "x10": 1054.0,
+      "y0": 2402.0,
+      "y10": 2396.0,
+      "ytop": 1552.0,
+      "top": 20.0
+    },
+    "pitch": {
+      "x0": 1210.0,
+      "x10": 1920.0,
+      "y0": 2397.0,
+      "y10": 2397.0,
+      "ytop": 1547.0,
+      "top": 3.0
+    }
+  },
+  "omega_encounter_nondimensional": [
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0
+  ],
+  "pixel_reading_bound": 4,
+  "status": "DIGITIZATION_CANDIDATE_NOT_PHYSICAL_ACCEPTANCE",
+  "frequency_definition": "omega_e*sqrt(L/g)",
+  "force_definition": "abs(F3)/(rho*g*volume*wave_amplitude/L)",
+  "moment_definition": "abs(F5)/(rho*g*volume*wave_amplitude)",
+  "force_scope": "Total excitation amplitude, not pure diffraction; no phase recovered"
+}

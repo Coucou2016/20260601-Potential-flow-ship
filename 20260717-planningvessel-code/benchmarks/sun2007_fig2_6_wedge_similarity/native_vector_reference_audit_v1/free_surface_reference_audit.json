@@ -1,0 +1,77 @@
+{
+  "status": "REFERENCE_DISCREPANCY_REQUIRES_DUAL_REPORTING",
+  "acceptance_effect": "The independent Iafrati curve is a cross-audit, not a replacement chosen to improve acceptance. Gate 2 remains unchanged until the declared Zhao-Faltinsen and convergence gates are resolved.",
+  "reference_used_during_solve": false,
+  "inputs": {
+    "zhao": {
+      "path": "benchmarks\\sun2007_fig2_6_wedge_similarity\\native_vector_v1\\sun2007_fig2_6_vector_similarity_curves.csv",
+      "sha256": "78a3df4c5aa97a12361a26cdbd4d048d207c0ea47ad8f87f0bc3ccea897b63e6"
+    },
+    "zhao_legacy": {
+      "path": "benchmarks\\sun2007_fig2_6_wedge_similarity\\fig2_6_zhao_faltinsen_similarity_curves.csv",
+      "sha256": "b9dbce70803126a27e000307b65a7b1f5f9c7eb947b626bbcf7f6495f3132c46"
+    },
+    "iafrati": {
+      "path": "benchmarks\\iafrati2013_self_similar_wedge\\iafrati2013_20deg_outer_free_surface.csv",
+      "sha256": "54a53cfdc09f771826f4542d9cb186140cf6ff8cdf0200883789c111dfd419ae"
+    },
+    "candidate": null
+  },
+  "legacy_digitization_changes": [
+    {
+      "beta_deg": 10.0,
+      "comparison_mode": "dimensionless_curve_interpolation",
+      "legacy_point_count": 32,
+      "current_point_count": 62,
+      "compared_point_count": 59,
+      "x_min": 8.94441078999175,
+      "x_max": 17.4498778058855,
+      "rmse": 0.055454007932496066,
+      "nrmse_by_reference_range": 0.14300309627090826,
+      "mean_bias_predicted_minus_reference": -0.05495017362534674,
+      "maximum_absolute_error": 0.06304978280994034,
+      "reference_range": 0.3877818689145216
+    },
+    {
+      "beta_deg": 20.0,
+      "comparison_mode": "dimensionless_curve_interpolation",
+      "legacy_point_count": 84,
+      "current_point_count": 64,
+      "compared_point_count": 60,
+      "x_min": 4.59925733962819,
+      "x_max": 9.96441245483761,
+      "rmse": 0.042876849039805945,
+      "nrmse_by_reference_range": 0.13806345390817498,
+      "mean_bias_predicted_minus_reference": 0.03752026474573622,
+      "maximum_absolute_error": 0.058940830336712074,
+      "reference_range": 0.3105590062111805
+    },
+    {
+      "beta_deg": 30.0,
+      "comparison_mode": "dimensionless_curve_interpolation",
+      "legacy_point_count": 38,
+      "current_point_count": 68,
+      "compared_point_count": 63,
+      "x_min": 2.74717832957111,
+      "x_max": 5.82844243792325,
+      "rmse": 0.013118735678060553,
+      "nrmse_by_reference_range": 0.03797904764195294,
+      "mean_bias_predicted_minus_reference": -0.009369270311933632,
+      "maximum_absolute_error": 0.05082406291302827,
+      "reference_range": 0.3454203433887361
+    }
+  ],
+  "zhao_vs_iafrati_same_abscissae": {
+    "point_count": 64,
+    "x_min": 4.37877151297575,
+    "x_max": 9.96441245483761,
+    "rmse": 0.07220989539999638,
+    "nrmse_by_reference_range": 0.23247451431562477,
+    "mean_bias_predicted_minus_reference": 0.07040152670996241,
+    "maximum_absolute_error": 0.16422563395933287,
+    "reference_range": 0.31061424351212463
+  },
+  "candidate_metrics": null,
+  "pointwise_csv": "free_surface_reference_pointwise.csv",
+  "pointwise_csv_sha256": "296bc4cd0b6614f83fe45a58fa00fb855e776d30685a34f306e87db83fae9e28"
+}

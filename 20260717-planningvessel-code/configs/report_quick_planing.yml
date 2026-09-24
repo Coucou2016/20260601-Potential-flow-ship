@@ -1,0 +1,41 @@
+boat:
+  length_m: 11.0
+  beam_m: 2.2
+  deadrise_deg: 20.0
+  mass_kg: 13964.2112
+  lcg_m: 4.686
+  vcg_m: 0.55
+  pitch_radius_gyration_m: 2.86
+  rho_water_kg_m3: 1025.0
+  gravity_m_s2: 9.80665
+  wetted_lengths_type: 1
+  initial_trim_deg: 4.0
+  initial_z_wl_m: 0.0
+  trim_bounds_deg: [0.5, 16.0]
+
+simulation:
+  speeds_fn_b: [2.0, 3.0, 4.0]
+  time_step_s: 0.08
+  duration_s: 12.0
+  discard_initial_s: 4.0
+  use_irregular_wave: true
+
+waves:
+  heading_deg: 180.0
+  regular_height_m: 0.5
+  regular_period_s: 4.0
+  period_min_s: 2.0
+  period_max_s: 8.0
+  period_count: 32
+  spectrum: jonswap
+  significant_height_m: 0.6
+  peak_period_s: 4.0
+  gamma: 3.3
+  component_count: 18
+  seed: 20260717
+
+environment:
+  current_speed_mps: 0.5
+  current_heading_deg: 180.0
+  wind_speed_mps: 0.0
+  wind_heading_deg: 180.0

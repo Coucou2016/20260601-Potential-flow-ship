@@ -1,0 +1,21 @@
+{
+  "status": "CANDIDATE_ONLY_NOT_ADMITTED",
+  "visually_checked_extracted_points": 7,
+  "unresolved_points": 3,
+  "visual_check": "Magnified original PDF patches at each recorded pixel position show the blue HOPM trace; pitch omega'=6 overlaps the red CPM curve",
+  "not_experimental_data": true,
+  "not_pure_diffraction": true,
+  "phase_available": false,
+  "uncertainty_type": "Estimated raster reading bounds in both axes, not statistical confidence intervals or numerical-method error",
+  "remaining": [
+    "Independent axis calibration audit",
+    "Exact moment reference and matching solver interface",
+    "Freeze comparison tolerances before any candidate solve",
+    "Do not silently fill the three unresolved rows or treat them as passing"
+  ],
+  "supersedes": [
+    "../kang_excitation_digitization_20260924 (ambiguous pixel failure)",
+    "../kang_excitation_digitization_v2_20260924 (unresolved pixel failure)",
+    "../kang_excitation_digitization_v3_20260924 (isolated pixel at heave omega'=5 rejected)"
+  ]
+}

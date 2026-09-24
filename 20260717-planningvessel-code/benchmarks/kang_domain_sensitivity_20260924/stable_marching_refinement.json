@@ -1,0 +1,15 @@
+{
+  "status": "DIAGNOSTIC_NOT_STAGE_ACCEPTANCE",
+  "baseline": "outputs/kang_boundary_dense_half_dt_r3_20260924",
+  "out": "outputs/kang_boundary_dense_quarter_dt_r3_20260924",
+  "preset": "boundary_dense_quarter_dt",
+  "frequencies": [2, 3, 4],
+  "radius_beams": 3,
+  "stations": [161, 321],
+  "history_steps": [256, 512],
+  "screening_relative_change": 0.05,
+  "near_zero_policy": "Reject denominator magnitude below 1e-10 in raw SI forces; no implicit pass",
+  "comparison": "Complex incident, diffraction, total heave and geometric pitch. Two nonexplosive runs only. Not full-band three-grid acceptance.",
+  "save_boundary": true,
+  "stage_acceptance": false
+}

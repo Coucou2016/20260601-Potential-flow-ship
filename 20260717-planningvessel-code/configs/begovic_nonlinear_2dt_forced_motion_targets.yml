@@ -1,0 +1,103 @@
+schema_version: 1
+purpose: target-specific nonlinear 2D+t forced-motion matrices for Gate 2 Begovic validation
+status: ready_for_diagnostic_runs_with_traceable_savitsky_wetted_geometry
+
+shared:
+  target_identifier: begovic2014_monohedral_efd_model
+  beam_m: 0.424
+  length_overall_m: 1.9
+  deadrise_deg: 16.7
+  lcg_over_beam: 1.6438679245283
+  vcg_over_beam: 0.337264150943396
+  rho_water_kg_m3: 1000.0
+  gravity_m_s2: 9.80665
+  pitch_radius_gyration_m: 0.583
+  source:
+    hull: benchmarks/begovic2020/begovic2020_mono_hull.csv
+    running_state: benchmarks/begovic2020/begovic2014_mono_calm_water_running_state.csv
+    response: benchmarks/begovic2020/begovic2020_mono_efd_motion_digitized.csv
+    wetted_geometry_method:
+      document: early_stage_materials/parsed_markdown/_import_literature_zip/文献/Hydrodynamic_Design_of_Planing_Hulls/hybrid_auto/Hydrodynamic_Design_of_Planing_Hulls.md
+      equations:
+        - "Eq. (3): (Lk-Lc)/B = tan(beta)/(pi*tan(trim))"
+        - "Eq. (4): d = Lk*sin(trim)"
+        - "Eq. (5): mean wetted length/B = (Lk+Lc)/(2B)"
+      limitation: Eq. (3) is experimentally supported for beam speed coefficient above 2.0; the Fn_B=1.67 target requires a declared sensitivity study.
+
+targets:
+  - fn_b: 1.67
+    speed_m_s: 3.4
+    trim_deg: 3.972
+    reported_mean_wetted_length_m: 1.49
+    keel_wetted_length_m: 1.78157141533466
+    keel_wetted_length_over_beam: 4.20181937578930
+    sigma_samples:
+      - 1.164630510
+      - 1.364121049
+      - 1.579830332
+      - 1.808306676
+      - 2.050215467
+      - 2.309049971
+      - 2.867057905
+      - 3.479544180
+    mean_wetted_length_over_beam: 3.514150943396
+    chine_wetting_offset_over_beam: 1.375336864786
+    chine_wetted_length_over_beam: 2.826482511003
+    mean_draft_over_beam: 0.291055673702
+    wetted_geometry_status: savitsky_eq3_extrapolated_below_cv_2_requires_sensitivity
+
+  - fn_b: 2.26
+    speed_m_s: 4.6
+    trim_deg: 4.174
+    reported_mean_wetted_length_m: 1.30
+    keel_wetted_length_m: 1.5774144032744
+    keel_wetted_length_over_beam: 3.720316988855
+    sigma_samples:
+      - 1.367988596
+      - 1.615137288
+      - 1.883495105
+      - 2.169859886
+      - 2.474397977
+      - 2.801101683
+      - 3.509819167
+      - 4.292976524
+    mean_wetted_length_over_beam: 3.066037735849
+    chine_wetting_offset_over_beam: 1.308558506011
+    chine_wetted_length_over_beam: 2.411758482843
+    mean_draft_over_beam: 0.270785588484
+    wetted_geometry_status: savitsky_eq3_within_stated_cv_range
+
+  - fn_b: 2.82
+    speed_m_s: 5.75
+    trim_deg: 4.024
+    reported_mean_wetted_length_m: 1.16
+    keel_wetted_length_m: 1.44779141562810
+    keel_wetted_length_over_beam: 3.41460239534929
+    sigma_samples:
+      - 1.562873428
+      - 1.855694516
+      - 2.174507180
+      - 2.516348380
+      - 2.880906216
+      - 3.272651240
+      - 4.125798711
+      - 5.072515853
+    mean_wetted_length_over_beam: 2.735849056604
+    chine_wetting_offset_over_beam: 1.357506677491
+    chine_wetted_length_over_beam: 2.057095717858
+    mean_draft_over_beam: 0.239617422555
+    wetted_geometry_status: savitsky_eq3_within_stated_cv_range
+
+required_before_run:
+  - Verify every derived value satisfies the cited Savitsky equations to numerical tolerance.
+  - Run a predeclared wetted-geometry sensitivity band for Fn_B=1.67 because it is below the stated Cv > 2 applicability range.
+  - Keep the Savitsky-derived wetted geometry labelled as model input, not as measured Begovic data.
+  - Freeze every completed target input and source hash before forced-motion calculation.
+
+acceptance_constraints:
+  response_calibration_used: false
+  complete_matrix_replacement_only: true
+  frequency_extrapolation_allowed: false
+  required_coefficients: [A33, B33, A35, B35, A53, B53, A55, B55]
+  maximum_harmonic_fit_residual: 0.05
+  maximum_grid_change: 0.05
