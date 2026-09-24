@@ -1,0 +1,34 @@
+{
+  "stage_acceptance": false,
+  "complete_spatial_refinement": false,
+  "reference_admitted": false,
+  "frequencies": [
+    2,
+    3,
+    4
+  ],
+  "max_diffraction_complex_change": 0.01996029146630825,
+  "max_total_complex_change": 0.00642163222392617,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\kang_excitation_digitization_v4_20260924\\amplitudes.csv": "6ad487aa42054ac0d4c8e6f0f3797f4b5b49583bd283ed9223e965681bf8a492",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w2_161_20260924\\contract.json": "baa6109bddd461705472987ff9457ed9fe09671e321e01e17fa8e55361191f1d",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w2_161_20260924\\fields.npz": "e24cddea021735eaeeb86d88181d9b78474efac328f06c0fb0eb90eadcc7e804",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w2_321_20260924\\contract.json": "aeb0d63af091ede47c4920bc634995ef58f3f631b97ccdd25c4808d9c461091b",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w2_321_20260924\\fields.npz": "13e78d002b5eefd141ac506ff9cc6d943be5eab9c5425c7c58f44ff405595d80",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_161_20260924\\contract.json": "cff182be6eefec240b1a2932430aeca6c9e3dcdcb42bdf2299e1f0b65d6a255a",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_161_20260924\\fields.npz": "8f3a8f7cce21be45e64f5e44dcedf5f99b2f063804a4e01125afb0affb63ff46",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_321_20260924\\contract.json": "e3cb38d6379c692e6f7df43fc5865fd0a74f46ce72d8dd6734092812ee0c7ceb",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_321_20260924\\fields.npz": "a0aac4ffdd30b22b77ede0e99fdfbc2935d36032904ee62e82612958ae69e373",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w4_161_20260924\\contract.json": "70d1871f88c1afb13b575b6d129ec75b533e80b828078bb5295ac6a7315b42fa",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w4_161_20260924\\fields.npz": "133585f97aa8c6f9c0deadceb7370db3425a2fe6dd367ac64116584961435853",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w4_321_20260924\\contract.json": "5e728914c00426872fd8e578ce14f2976f1425c48220fe59b7473fccfe5b1c3d",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_bounded_transfer_w4_321_20260924\\fields.npz": "0ff756923d6db28ce4cec745d3348233baf6e04be0c1045ff291927da8efdacb"
+  },
+  "limitations": [
+    "No phase reference",
+    "Figure amplitudes pending visual audit",
+    "No transverse/body/control refinement",
+    "Contact-state closure unvalidated",
+    "Raw midship moment not verified experimental CG moment"
+  ]
+}

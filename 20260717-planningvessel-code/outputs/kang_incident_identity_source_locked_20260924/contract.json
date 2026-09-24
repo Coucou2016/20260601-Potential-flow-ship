@@ -1,0 +1,21 @@
+{
+  "scope": "Incident pressure only; geometric midship moment; not experimental validation",
+  "normalization": "Unit wave elevation amplitude, raw A1 generalized-force signs",
+  "orders": [
+    24,
+    48
+  ],
+  "frozen_relative_tolerance": 0.005,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_incident_force.py": "d9006fb4bb24451d53913c36f7f464d69eb12231ff37cbe3c6cc2c1736622787",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\benchmarks\\excitation_reference_candidates_20260924\\sources\\Kang2009.pdf": "82c16b2b268679b86dfb0b6ec1fc4e7e24dd4e7e5dd517d3596fdc63eecc29e5",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\contract.json": "9c1156897ba37ff929f7f273e65a5c8b76108dfa0da8529c9d2a6189900ff16a",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\fields_2.npz": "70ed70b96a489a07cda3efd2167150b979f3cff1f5947f462d7b0db8f95aa086",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\fields_3.npz": "2cfc8ea224aaabdce2105d1276896f2e787541a51ac8d0e04282c4bfe2d747d7",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\fields_4.npz": "d97e6fc2483795b962d34441db5543f25e0bf505fc4c7e7bee6ca1e0bb9349ae",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\contract.json": "445cfee6d5843f4780dd2ed563fe30cede633bbabdc07d59c3af85f28ded9771",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\fields_2.npz": "b511e0938ce857b29819b863d28b4d98d7008deaf5608da8e2ba6c9bef50d4d3",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\fields_3.npz": "48bb404ac8d4e0ebc36dc51d4bb4a9687d130c2f06e6050603855e4238c5a12a",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\fields_4.npz": "0e96c444bb6315dd18b671f041b69138733d8a294d409c8431e12d0a103a5fd6"
+  }
+}

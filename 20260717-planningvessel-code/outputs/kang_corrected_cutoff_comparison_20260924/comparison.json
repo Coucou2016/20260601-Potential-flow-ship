@@ -1,0 +1,73 @@
+{
+  "stage_acceptance": false,
+  "rows": [
+    {
+      "coarse": 25.0,
+      "fine": 50.0,
+      "component": "diffraction",
+      "absolute_complex_change": [
+        0.6323467975798694,
+        0.5799088866611996
+      ],
+      "relative_complex_change": [
+        0.0009937119848036778,
+        0.0013611241966065466
+      ]
+    },
+    {
+      "coarse": 25.0,
+      "fine": 50.0,
+      "component": "total",
+      "absolute_complex_change": [
+        0.6323467975796989,
+        0.5799088866611571
+      ],
+      "relative_complex_change": [
+        0.00026532681669627455,
+        0.0002637337367099325
+      ]
+    },
+    {
+      "coarse": 50.0,
+      "fine": 100.0,
+      "component": "diffraction",
+      "absolute_complex_change": [
+        0.12577693756053013,
+        0.11413644740003775
+      ],
+      "relative_complex_change": [
+        0.0001976885450310824,
+        0.0002678589186948024
+      ]
+    },
+    {
+      "coarse": 50.0,
+      "fine": 100.0,
+      "component": "total",
+      "absolute_complex_change": [
+        0.12577693756053013,
+        0.11413644740005237
+      ],
+      "relative_complex_change": [
+        5.277251323167239e-05,
+        5.190576636920593e-05
+      ]
+    }
+  ],
+  "modes": [
+    "heave",
+    "geometric_midship_pitch"
+  ],
+  "refinement": "cutoff",
+  "scope": "Single-frequency spectral diagnostic; not full-band mesh validation",
+  "denominator": "Fine complex modulus; absolute changes retained for near-zero inspection",
+  "hashes": {
+    "outputs\\kang_corrected_cutoff25_q512_w3_321_20260924\\contract.json": "280e9931f02527918c1e054aba563162a7316a317f9f36756fe2a3ff97524460",
+    "outputs\\kang_corrected_cutoff25_q512_w3_321_20260924\\fields.npz": "17e11402edf30e450dbb79087028d025b3c30a591d3f7639daf552673364067a",
+    "outputs\\kang_corrected_cutoff50_q512_w3_321_20260924\\contract.json": "4efe87e3e7c2c61dcba6d265a2535ba96ad2ff2579ceb1dd7d13b0b0d9d88dba",
+    "outputs\\kang_corrected_cutoff50_q512_w3_321_20260924\\fields.npz": "3e1a76c660b1e0e22a302a124501e50a9df22aac4c578779eeece546b0090538",
+    "outputs\\kang_corrected_cutoff100_q512_w3_321_20260924\\contract.json": "63aabb013c7ddd40df47b38a51ca02ad36934837474427bc513c0e82e9e0f2e6",
+    "outputs\\kang_corrected_cutoff100_q512_w3_321_20260924\\fields.npz": "6eac15a5849ff253d4f309ef02788eba6855ac85a7a5cbaccc18a3f339e7e6f3",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\compare_kang_history_quadrature.py": "f6cf73ebd0d7aad825411362176c584c5601e5232647bc7ffdbf325d6e3810f1"
+  }
+}

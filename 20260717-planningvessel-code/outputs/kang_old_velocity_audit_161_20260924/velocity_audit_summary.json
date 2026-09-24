@@ -1,0 +1,32 @@
+{
+  "stage_acceptance": false,
+  "baseline_arrays_identical": true,
+  "auxiliary_equation_residual_max": 3.823554367786412e-15,
+  "groups": [
+    {
+      "region": "fore",
+      "point_visits": 8092,
+      "relative_l2_gap": 0.9553462805740595,
+      "squared_gap_fraction": 2.615578514693897e-10
+    },
+    {
+      "region": "aft",
+      "point_visits": 8132,
+      "relative_l2_gap": 1.047504661581507,
+      "squared_gap_fraction": 0.9999999997384423
+    },
+    {
+      "region": "exposed",
+      "point_visits": 82,
+      "relative_l2_gap": 1.401180272466612,
+      "squared_gap_fraction": 0.956665993202297
+    },
+    {
+      "region": "supported",
+      "point_visits": 16142,
+      "relative_l2_gap": 0.31966048479606035,
+      "squared_gap_fraction": 0.043334006797702794
+    }
+  ],
+  "interpretation": "Frozen-new-geometry old-time BVP discrepancy; not an error against physical truth. Groups overlap."
+}

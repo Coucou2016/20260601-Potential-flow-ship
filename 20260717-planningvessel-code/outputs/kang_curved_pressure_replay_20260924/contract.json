@@ -1,0 +1,19 @@
+{
+  "stage_acceptance": false,
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_saved_curved_pressure.py": "de537a544bdeaa8d50281d9d8b0da49ae75c0ee0425793157f854cfd2432960d",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\curved_trace_pressure_diagnostic.py": "0211f5229f227c5c7dcd976b1792a40328f078dbd49e542c0ee636434c36fd51",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\contract.json": "f90720d610663ec6c417742461acddfa47f320e5d13f1e37c495532e086a7316",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\boundary_2.npz": "fb27f01d30d21beefd2a11a53d2547453f0da1c131d80429d919b1795a5eaf80",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\boundary_3.npz": "32e163119e4284c67cf4bf3e7cadabd7b2bd11d3dd3fa3e3d648210f9ab3140a",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\boundary_4.npz": "296b5f6cac2c145cb87d02d9596a4639f4ae764b0c9ac146e3e0ab92fd198cb7",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\fields_2.npz": "35074487ce81d138b1e3d35340f109c1a5c65011dd62d25d503de720f0b7bf57",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\fields_3.npz": "40f93478e60ab46d705c2aaf34913cc2cae90b9afdca9980a6140b988dfc425a",
+    "outputs\\kang_boundary_dense_quarter_dt_r3_20260924\\fields_4.npz": "7eeea874c7a1119ec454976bc6fc91ad69c81d2695d10a2aff8acd1cff8de1e1"
+  },
+  "scope": "Saved-field algebra replay and nonconservative curved-trace diagnostic, no production edits",
+  "derivative_policy": "Keep production local-phase differentiation, subtract only moving-trace chain term; direct physical differentiation difference exported separately",
+  "algebra_tolerance": 1e-10,
+  "experimental_response_read": false,
+  "phase": "Physical harmonic potential after inverse local-time phase; raw geometric Neumann normal"
+}

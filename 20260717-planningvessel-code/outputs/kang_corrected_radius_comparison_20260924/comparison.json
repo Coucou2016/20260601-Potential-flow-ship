@@ -1,0 +1,85 @@
+{
+  "stage_acceptance": false,
+  "scope": "Single-frequency domain sensitivity, not full convergence",
+  "normalization": "Relative differences use base complex modulus, not amplitude difference",
+  "near_zero_warning": "No acceptance decision; inspect absolute differences near zero",
+  "dimensions": [
+    {
+      "radius_m": 0.8999999999999999,
+      "control_panels": 96,
+      "mean_control_arc_spacing_m": 0.02945243112740431,
+      "outer_free_spacing_m": 0.017045454545454544
+    },
+    {
+      "radius_m": 1.2,
+      "control_panels": 128,
+      "mean_control_arc_spacing_m": 0.02945243112740431,
+      "outer_free_spacing_m": 0.016935483870967744
+    }
+  ],
+  "modes": [
+    "heave",
+    "geometric_midship_pitch"
+  ],
+  "results": {
+    "diffraction": {
+      "base_real": [
+        404.5920266568615,
+        -368.2291683031076
+      ],
+      "base_imag": [
+        -491.65873117587654,
+        -214.16529364463275
+      ],
+      "expanded_real": [
+        399.3764971160044,
+        -372.853239366496
+      ],
+      "expanded_imag": [
+        -492.1975254086396,
+        -211.0396989771903
+      ],
+      "absolute_complex_change": [
+        5.243285956040544,
+        5.581341704680911
+      ],
+      "relative_complex_change": [
+        0.00823472961274948,
+        0.013102336982462416
+      ]
+    },
+    "total": {
+      "base_real": [
+        -2331.821945522375,
+        -368.22916830310766
+      ],
+      "base_imag": [
+        -491.6587311758763,
+        2167.6515182914964
+      ],
+      "expanded_real": [
+        -2337.037475063232,
+        -372.85323936649604
+      ],
+      "expanded_imag": [
+        -492.19752540863936,
+        2170.7771129589387
+      ],
+      "absolute_complex_change": [
+        5.24328595604043,
+        5.581341704680847
+      ],
+      "relative_complex_change": [
+        0.00220020399343031,
+        0.0025384671725633186
+      ]
+    }
+  },
+  "hashes": {
+    "outputs\\kang_corrected_neumann_w3_321_20260924\\contract.json": "a2d42cef080ddca508dfb6850a92b737d3fbb031cc531f8bbf1b02f57426382e",
+    "outputs\\kang_corrected_neumann_w3_321_20260924\\fields.npz": "acbefde34f9969b8d1cfbbe28f9c3aeefbd142cf32867b038becda9ce0cd4d02",
+    "outputs\\kang_corrected_radius4_w3_321_20260924\\contract.json": "d29b09eff9400a26c5f3ab592429a1ae4afd6eb2c9e70bcdc5e2187a07790d13",
+    "outputs\\kang_corrected_radius4_w3_321_20260924\\fields.npz": "ccce13d15f69dcbe94769137fec28211c7fde8771a49e6387cd0c40fc1e43e63",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\compare_kang_control_radius.py": "698a3290e1fe6975892219a8fc3e6aca883060f5f382e9cd9e8d79b2e0109daa"
+  }
+}

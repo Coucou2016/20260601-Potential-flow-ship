@@ -1,0 +1,72 @@
+{
+  "stage_acceptance": false,
+  "rows": [
+    {
+      "coarse": 64,
+      "fine": 128,
+      "component": "diffraction",
+      "absolute_complex_change": [
+        0.36303504448814844,
+        0.32307970990391216
+      ],
+      "relative_complex_change": [
+        0.0005701373537061957,
+        0.0007589389156685059
+      ]
+    },
+    {
+      "coarse": 64,
+      "fine": 128,
+      "component": "total",
+      "absolute_complex_change": [
+        0.3630350444881944,
+        0.3230797099039133
+      ],
+      "relative_complex_change": [
+        0.0001523590797479419,
+        0.00014694420505417338
+      ]
+    },
+    {
+      "coarse": 128,
+      "fine": 256,
+      "component": "diffraction",
+      "absolute_complex_change": [
+        0.08887298815154902,
+        0.07917329190821955
+      ],
+      "relative_complex_change": [
+        0.0001395715794895057,
+        0.00018601421408777398
+      ]
+    },
+    {
+      "coarse": 128,
+      "fine": 256,
+      "component": "total",
+      "absolute_complex_change": [
+        0.08887298815182511,
+        0.07917329190821887
+      ],
+      "relative_complex_change": [
+        3.7299616380554124e-05,
+        3.6010065745004685e-05
+      ]
+    }
+  ],
+  "modes": [
+    "heave",
+    "geometric_midship_pitch"
+  ],
+  "scope": "Single-frequency quadrature count only, fixed finite cutoff; not full-band mesh validation",
+  "denominator": "Fine complex modulus; absolute changes retained for near-zero inspection",
+  "hashes": {
+    "outputs\\kang_corrected_history64_w3_321_20260924\\contract.json": "e1584506ab69b33d73145115edce1648ec0d9ff90570829a7e12079bc65c8f2d",
+    "outputs\\kang_corrected_history64_w3_321_20260924\\fields.npz": "58bdb18d79c832ba4de1aaa618b3681181662dd140e8115ce0f0b848c79a7271",
+    "outputs\\kang_corrected_history128_w3_321_20260924\\contract.json": "41da618fa4c50bc1c66d75e5ee27b89445d690254161a0cbc32d21524479cc11",
+    "outputs\\kang_corrected_history128_w3_321_20260924\\fields.npz": "d3c6aeff809759f85632dd86040e1b40f75c1e73e310fa7010f6341ddf6034ad",
+    "outputs\\kang_corrected_history256_w3_321_20260924\\contract.json": "26f35f2deb54b50f371b8d2f64aae24b1733ed6f22da03685ecf352b055a0216",
+    "outputs\\kang_corrected_history256_w3_321_20260924\\fields.npz": "2707bae522ab1b233bd17158b0f7aed4fb7ee934aaffb2f0ede85b7fc25022db",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\compare_kang_history_quadrature.py": "ea3cdf9eacb7d4944e7c08ca86fc58b6cc04d07b51a689c638df068d373802da"
+  }
+}

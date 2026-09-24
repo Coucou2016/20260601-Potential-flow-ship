@@ -1,0 +1,50 @@
+{
+  "stage_acceptance": false,
+  "scope": "One initial perturbation, fixed section; growth evidence only, no general stability pass",
+  "rows": [
+    {
+      "radius": 3.0,
+      "stations": 81,
+      "dt_s": 0.03456841270825927,
+      "duration_s": 2.2123784133285933,
+      "history_duration_s": 4.424756826657187,
+      "max_norm": 3.5414631129852457e+62,
+      "final_norm": 3.5414631129852457e+62,
+      "max_solve_residual": 1.7868447280274778e-14,
+      "max_rhs_replay_error": 0.0
+    },
+    {
+      "radius": 3.0,
+      "stations": 161,
+      "dt_s": 0.017284206354129635,
+      "duration_s": 2.2123784133285933,
+      "history_duration_s": 4.424756826657187,
+      "max_norm": 6.951553141444705,
+      "final_norm": 5.768104168023537,
+      "max_solve_residual": 1.5033173748659402e-14,
+      "max_rhs_replay_error": 0.0
+    },
+    {
+      "radius": 6.0,
+      "stations": 81,
+      "dt_s": 0.03456841270825927,
+      "duration_s": 2.2123784133285933,
+      "history_duration_s": 4.424756826657187,
+      "max_norm": 4.6956445054685266e+30,
+      "final_norm": 4.6956445054685266e+30,
+      "max_solve_residual": 1.5959283224494755e-14,
+      "max_rhs_replay_error": 0.0
+    },
+    {
+      "radius": 6.0,
+      "stations": 161,
+      "dt_s": 0.017284206354129635,
+      "duration_s": 2.2123784133285933,
+      "history_duration_s": 4.424756826657187,
+      "max_norm": 4.335344212116231,
+      "final_norm": 3.625170485111187,
+      "max_solve_residual": 1.4024634792441548e-14,
+      "max_rhs_replay_error": 0.0
+    }
+  ]
+}

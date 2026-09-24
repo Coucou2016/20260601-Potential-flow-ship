@@ -1,0 +1,71 @@
+{
+  "stage_acceptance": false,
+  "scope": "Three diagnostic heave points only, not full-band complex validation",
+  "source_hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_excitation_diagnostic_20260924\\contract.json": "9631537a75b6db32db76f8d78f040a2c06439451f2f4b800cf59d3dd623d5c05",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_excitation_diagnostic_20260924\\computed.csv": "d738f48c1a6615d262091fce590fd03d3f8bb163442ff2ec2476b2278e637dab",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_excitation_diagnostic_20260924\\comparison.csv": "5b4793ecc6753112c006d1838db9a2d239a8ade8785d2900da276fd42b62e51c",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\contract.json": "9c1156897ba37ff929f7f273e65a5c8b76108dfa0da8529c9d2a6189900ff16a",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\computed.csv": "76878626f1418261e6b43f2b0f3cdd07d42460a2723dae9026f0fbdfa144ff04",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\comparison.csv": "8b94bf62cb711943e7ca62b64a3f3a838c8663fcf693c264792d43a45bbcca95",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\contract.json": "445cfee6d5843f4780dd2ed563fe30cede633bbabdc07d59c3af85f28ded9771",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\computed.csv": "37a534610a876b04a880ce8ecaff78f0b33340e021791e05569a6ee1b118ebdd",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\comparison.csv": "7b665cebaa0ab7a74ce608b0bbf4a5c5a62520ea052b3906f79d1c5da7538d1b",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_history_only_20260924\\contract.json": "651c7207c5f220710546167e73440f62d924c852d888afa9ff98c8beb62ef0d9",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_history_only_20260924\\computed.csv": "2ba2762d6a26f23358ee1fa296d55ae33b13c2426d33129c44339d3109415054",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_history_only_20260924\\comparison.csv": "43bc91ef26834383d97ef65f1658dedd58af3db728c69b4da426afc30af8e169",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_endpoint_only_20260924\\contract.json": "fc1eeb9b144db39dd2efcc74c1d125812abb574e0b18ca316f81d84807a9597f",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_endpoint_only_20260924\\computed.csv": "1f0577fe51c86cd319570dca3894d2368741cd2ed6802de6bebdf566eeaaaba8",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_endpoint_only_20260924\\comparison.csv": "c7e16c26342cfb7724f49084bb15801e460c9fa6ebd480f6800610e24eed7303",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\fields_2.npz": "70ed70b96a489a07cda3efd2167150b979f3cff1f5947f462d7b0db8f95aa086",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\fields_2.npz": "b511e0938ce857b29819b863d28b4d98d7008deaf5608da8e2ba6c9bef50d4d3",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\fields_3.npz": "2cfc8ea224aaabdce2105d1276896f2e787541a51ac8d0e04282c4bfe2d747d7",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\fields_3.npz": "48bb404ac8d4e0ebc36dc51d4bb4a9687d130c2f06e6050603855e4238c5a12a",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_medium_20260924\\fields_4.npz": "d97e6fc2483795b962d34441db5543f25e0bf505fc4c7e7bee6ca1e0bb9349ae",
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\outputs\\kang_heave_fine_20260924\\fields_4.npz": "0e96c444bb6315dd18b671f041b69138733d8a294d409c8431e12d0a103a5fd6"
+  },
+  "rows": [
+    {
+      "frequency": 2.0,
+      "baseline_amplitude": 16.827888544988337,
+      "medium_amplitude": 16.727570082208402,
+      "fine_amplitude": 16.73916090281516,
+      "history_amplitude": 16.8231014323401,
+      "endpoint_amplitude": 16.825788303625696,
+      "fine_medium_amplitude_change": 0.0006929171750467145,
+      "history_baseline_amplitude_change": 0.0002844749438076777,
+      "endpoint_baseline_amplitude_change": 0.00012480718285157177,
+      "incident_fine_medium_complex_change": 2.7459521351719045e-05,
+      "diffraction_fine_medium_complex_change": 0.00515111369916079,
+      "total_fine_medium_complex_change": 0.0007678574041338586
+    },
+    {
+      "frequency": 3.0,
+      "baseline_amplitude": 10.025466244217302,
+      "medium_amplitude": 10.333667437269412,
+      "fine_amplitude": 10.361840101678458,
+      "history_amplitude": 10.028868870061984,
+      "endpoint_amplitude": 10.031636764396366,
+      "fine_medium_amplitude_change": 0.0027262987298621866,
+      "history_baseline_amplitude_change": 0.0003393982645589766,
+      "endpoint_baseline_amplitude_change": 0.0006154846097679023,
+      "incident_fine_medium_complex_change": 0.0002382641226696422,
+      "diffraction_fine_medium_complex_change": 0.017357700209194818,
+      "total_fine_medium_complex_change": 0.0034703198892092773
+    },
+    {
+      "frequency": 4.0,
+      "baseline_amplitude": 4.055185193354799,
+      "medium_amplitude": 3.444671456951097,
+      "fine_amplitude": 3.4657057493009256,
+      "history_amplitude": 4.056508519587116,
+      "endpoint_amplitude": 4.040913501872172,
+      "fine_medium_amplitude_change": 0.0061063275881891865,
+      "history_baseline_amplitude_change": 0.00032632942004351406,
+      "endpoint_baseline_amplitude_change": 0.003519368611330842,
+      "incident_fine_medium_complex_change": 0.0010370408919348764,
+      "diffraction_fine_medium_complex_change": 0.03327516480055264,
+      "total_fine_medium_complex_change": 0.01085664965884689
+    }
+  ]
+}

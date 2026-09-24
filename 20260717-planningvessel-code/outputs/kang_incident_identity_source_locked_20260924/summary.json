@@ -1,0 +1,12 @@
+{
+  "incident_only_pass": true,
+  "stage_acceptance": false,
+  "max_relative_error": 0.0023732371223341513,
+  "max_identity_error": 2.8449543749099894e-14,
+  "max_quadrature_error": 5.382063901628617e-15,
+  "limitations": [
+    "No diffraction validation",
+    "No experimental pitch origin assumed",
+    "Same analytic geometry, independent integration, not independent experiment"
+  ]
+}

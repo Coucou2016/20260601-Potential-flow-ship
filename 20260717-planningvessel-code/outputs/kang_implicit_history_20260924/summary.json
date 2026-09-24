@@ -1,0 +1,32 @@
+{
+  "stage_acceptance": false,
+  "production_changed": false,
+  "physical_reference_read": false,
+  "full_ship_verified": false,
+  "final_state_changes": [
+    {
+      "coarse": 81,
+      "fine": 161,
+      "field": "phi",
+      "relative_final_state_difference": 1.4283599987422013
+    },
+    {
+      "coarse": 81,
+      "fine": 161,
+      "field": "eta",
+      "relative_final_state_difference": 1.4441041394271752
+    },
+    {
+      "coarse": 161,
+      "fine": 321,
+      "field": "phi",
+      "relative_final_state_difference": 1.4984711079221424
+    },
+    {
+      "coarse": 161,
+      "fine": 321,
+      "field": "eta",
+      "relative_final_state_difference": 1.5391287718883342
+    }
+  ]
+}

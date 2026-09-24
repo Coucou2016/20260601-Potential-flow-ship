@@ -1,0 +1,16 @@
+{
+  "stage_acceptance": false,
+  "exact_contact_values_available": false,
+  "max_gap_over_incident_potential": 0.3793608691833669,
+  "median_gap_over_incident_potential": 0.039792777467366744,
+  "limitations": [
+    "Two-point extrapolation from constant-panel midpoint potentials",
+    "Body distances are chord distances, not exact curved arclength",
+    "Not a physical acceptance threshold or residual of collocation equations"
+  ],
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_kang_contact_trace.py": "bf8d5adb004ba81c8d64005a73d1fbfe6b3f00bed492ad17b8d165a8ac254763",
+    "outputs\\kang_bounded_spatial_r1_641_20260924\\contract.json": "3f8de1cf984304d128938f1d31d4617a2dfb203a4a756d0308f703c227c24e49",
+    "outputs\\kang_bounded_spatial_r1_641_20260924\\fields.npz": "624db490665b7f8b34450f9d170941366781cd61a0e366a60e0b21646de9af22"
+  }
+}

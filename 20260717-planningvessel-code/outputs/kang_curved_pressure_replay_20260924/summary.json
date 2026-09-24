@@ -1,0 +1,11 @@
+{
+  "stage_acceptance": false,
+  "pressure_replay_pass": true,
+  "diagnostic_validated_on_experiment": false,
+  "production_changed": false,
+  "limitations": [
+    "Midpoint tangential differentiation and tip errors remain",
+    "Not a conservative flux formulation",
+    "Same potential solution, not an independent diffraction solution"
+  ]
+}
