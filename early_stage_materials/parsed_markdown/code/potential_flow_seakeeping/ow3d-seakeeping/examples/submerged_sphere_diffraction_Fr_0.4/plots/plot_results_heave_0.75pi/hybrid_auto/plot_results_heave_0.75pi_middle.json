@@ -1,0 +1,150 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        16,
+                        0,
+                        559,
+                        206
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                16,
+                                0,
+                                559,
+                                206
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        16,
+                                        0,
+                                        559,
+                                        206
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                16,
+                                                0,
+                                                559,
+                                                206
+                                            ],
+                                            "type": "image",
+                                            "image_path": "9f3105bb2fcd550e79c295e5aa880ce41758f3da3c2e73262ebbd9485bf37157.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0,
+                    "sub_images": [
+                        {
+                            "type": "image",
+                            "bbox": [
+                                0.0,
+                                0.0,
+                                0.486,
+                                1.0
+                            ]
+                        },
+                        {
+                            "type": "image",
+                            "bbox": [
+                                0.525,
+                                0.0,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                560,
+                207
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        16,
+                        0,
+                        559,
+                        206
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                16,
+                                0,
+                                559,
+                                206
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        16,
+                                        0,
+                                        559,
+                                        206
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                16,
+                                                0,
+                                                559,
+                                                206
+                                            ],
+                                            "type": "image",
+                                            "image_path": "9f3105bb2fcd550e79c295e5aa880ce41758f3da3c2e73262ebbd9485bf37157.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0,
+                    "sub_images": [
+                        {
+                            "type": "image",
+                            "bbox": [
+                                0.0,
+                                0.0,
+                                0.486,
+                                1.0
+                            ]
+                        },
+                        {
+                            "type": "image",
+                            "bbox": [
+                                0.525,
+                                0.0,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_ocr_enable": false,
+    "_vlm_ocr_enable": false,
+    "_version_name": "3.2.2"
+}

@@ -1,0 +1,5202 @@
+[
+    {
+        "type": "text",
+        "text": "Hydrodynamic Design of Planing Hulls",
+        "text_level": 1,
+        "bbox": [
+            86,
+            98,
+            696,
+            132
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By Daniel Savitsky $^{1}$",
+        "bbox": [
+            84,
+            147,
+            253,
+            166
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The elemental hydrodynamic characteristics of prismatic planing surfaces are discussed and empirical planing equations are given which describe the lift, drag, wetted area, center of pressure, and porpoising stability limits of planing surfaces as a function of speed, trim angle, deadrise angle, and loading. These results are combined to formulate simple computational procedures to predict the horsepower requirements, running trim, draft, and porpoising stability of prismatic planing hulls. Illustrative examples are included to demonstrate the application of the computational procedures.",
+        "bbox": [
+            194,
+            196,
+            799,
+            301
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "FUNDAMENTAL research on the hydrodynamics of planing surfaces has been actively pursued in both this country and abroad for well over 40 years. The original impetus for this planing research was primarily motivated by the hydrodynamic design requirements of water-based aircraft and to a somewhat lesser extent by the development of planing boats. In recent years, however, the research emphasis has been on planing forms with application to planing boats and hydrofoil craft.",
+        "bbox": [
+            73,
+            325,
+            486,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$^{1}$ Associate Professor, Head of Applied Mechanics Group, Davidson Laboratory, Stevens Institute of Technology, Hoboken, N.J.",
+        "bbox": [
+            71,
+            465,
+            482,
+            489
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Presented at the January 1964 Meeting of the New York Metropolitan Section of THE SOCIETY OF NAVAL ARCHITECTS AND MARINE ENGINEERS.",
+        "bbox": [
+            71,
+            489,
+            480,
+            518
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$^{2}$ Numbers in brackets designate References at end of paper.",
+        "bbox": [
+            84,
+            520,
+            477,
+            537
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Some of the earliest experimental studies on prismatic planing surfaces were made by Baker [1]² in 1910 but the first comprehensive experiments which received wide attention were those of Sottorf [2]. These were followed by investigations of Shoemaker [3], Sambraus [4], Sedov [5], and Locke [6]. The efforts of these researchers resulted in a large accumulation of test data describing the hydrodynamic characteristics of constant-deadrise prismatic planing surfaces operating at fixed trim, fixed mean wetted length, and constant speed. To make these data suitable for practical use it was desirable to establish empirical equations which would express the relations between the many planing variables and the hydrodynamic lift, drag, pitching moment, and wetted area. Under sponsorship of the Office of Naval",
+        "bbox": [
+            496,
+            332,
+            913,
+            544
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\_Nomenclature.",
+        "text_level": 2,
+        "bbox": [
+            429,
+            566,
+            544,
+            582
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} C _ {f} = \\text {friction - drag coefficient} = D _ {f} \\cos \\\\ \\beta / \\frac {\\rho}{2} V _ {1} ^ {2} \\lambda b ^ {2} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            91,
+            589,
+            339,
+            623
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} C _ {L _ {0}} = \\text {lift coefficient, zero deadrise,} = \\\\ \\Delta / \\frac {\\rho}{2} V ^ {2} b ^ {2} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            88,
+            623,
+            336,
+            655
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{r l} C _ {L \\beta} & = \\text {lift coefficient, deadrise surface,} \\\\ & = \\Delta / \\frac {\\rho}{2} V ^ {2} b ^ {2} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            86,
+            655,
+            336,
+            688
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {d}} = \\underset {\\text {cient}} {\\text {dynamic component of lift coeffi-}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            86,
+            688,
+            336,
+            708
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {b}} = \\underset {\\text {cient}} {\\text {buoyant}} \\text {component of lift coeffi-}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            86,
+            708,
+            336,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{r l} C _ {p} & = \\text {distance of center of pressure} \\\\ & \\quad \\text {(hydrodynamic force) measured} \\\\ & \\quad \\text {along keel forward of transom} \\\\ & \\quad = l _ {p} / \\lambda b \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            729,
+            334,
+            770
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {v} = \\text {speed coefficient} = V / (g b) ^ {1 / 2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            91,
+            770,
+            303,
+            782
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR _ {e} = \\text {Reynolds number,} = V _ {1} \\lambda b / \\nu\n$$",
+        "text_format": "latex",
+        "bbox": [
+            91,
+            781,
+            303,
+            792
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\lambda = \\underset {\\frac {(L _ {k} + L _ {c})}{2 b}} {\\text {mean wetted length - beam ratio}} =\n$$",
+        "text_format": "latex",
+        "bbox": [
+            94,
+            792,
+            331,
+            823
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} \\lambda_ {1} = \\text {mean wetted length - beam ratio} \\\\ \\text {based on area below undisturbed water surface} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            91,
+            823,
+            333,
+            854
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            65,
+            859,
+            101,
+            869
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} b = \\text {beam of planing surface, ft} \\\\ \\begin{array}{c} D _ {f} = \\text {frictional drag - force component} \\\\ \\text {along bottom surface, lb, = D} \\\\ \\cos \\tau - \\Delta \\sin \\tau \\end{array} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            84,
+            869,
+            331,
+            914
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{r l} g & = \\text {acceleration due to gravity,} \\\\ & \\quad 3 2. 2 \\mathrm{ft/sec} ^ {2} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            375,
+            595,
+            620,
+            617
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} L _ {c} = \\text {wetted chine length, ft} \\\\ L _ {k} = \\text {wetted keel length, ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            375,
+            617,
+            553,
+            638
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{r l} l _ {p} & = \\text {distance from transom to point} \\\\ & \\text {of intersection of hydrody-} \\\\ & \\text {namic - force vector with keel} \\\\ & \\text {(measured along keel), ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            377,
+            638,
+            620,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} V = \\text {horizontal velocity of planing surface, fps} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            377,
+            676,
+            620,
+            698
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} V _ {1} = \\text {mean velocity over bottom of} \\\\ \\text {planing surface,} f (\\tau , \\lambda), \\text {fps} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            375,
+            696,
+            620,
+            719
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\beta = \\begin{array}{c} \\text {angle of deadrise of planing surface, deg} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            377,
+            718,
+            619,
+            738
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta = \\text {load on water, lb}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            377,
+            737,
+            514,
+            748
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\nu = \\underset {\\text {sec}} {\\text {kinematic}} \\text {viscosity of fluid, ft} ^ {2} /\n$$",
+        "text_format": "latex",
+        "bbox": [
+            377,
+            748,
+            617,
+            767
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\rho = \\text {mass density of water,} w / g\n$$",
+        "text_format": "latex",
+        "bbox": [
+            372,
+            768,
+            575,
+            780
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {b} = \\text {hydrostatic lift component, lb}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            372,
+            780,
+            588,
+            791
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "also",
+        "bbox": [
+            346,
+            792,
+            370,
+            804
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD = \\begin{array}{c} \\text {total horizontal hydrodynamic} \\\\ \\text {drag component, lb} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            372,
+            804,
+            616,
+            827
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} D _ {p} = \\text {resistance component due to} \\\\ \\text {pressure force, lb} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            367,
+            825,
+            614,
+            847
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} d = \\text {vertical depth of trailing edge of} \\\\ \\text {boat (at keel) below level water} \\\\ \\text {surface, ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            375,
+            845,
+            614,
+            877
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nN = \\begin{array}{c} \\text {component of resistance force} \\\\ \\text {normal to bottom, lb} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            370,
+            876,
+            612,
+            898
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} a = \\text {distance between} D _ {f} \\text {and CG} \\\\ \\text {(measured normal to} D _ {f}), \\text {ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            374,
+            897,
+            612,
+            921
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} f = \\text {distance between} T \\text {and CG} \\\\ \\text {(measured normal to} T), \\text {ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            663,
+            599,
+            903,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT = \\text {propeller thrust, lb}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            661,
+            623,
+            812,
+            635
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} \\epsilon = \\text {inclination of thrust line relative} \\\\ \\text {to keel line, deg} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            666,
+            635,
+            903,
+            656
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} c = \\text {distance between} N \\text {and CG} \\\\ \\text {(measured normal to} N \\text {), ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            665,
+            656,
+            901,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} L _ {1} = \\text {difference between wetted keel} \\\\ \\text {and chine lengths, ft} = (L _ {k} - \\\\ L _ {c}) \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            656,
+            676,
+            901,
+            708
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} L _ {2} = \\text {difference between keel and chine} \\\\ \\text {lengths wetted by level water} \\\\ \\text {surface, ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            656,
+            708,
+            901,
+            739
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {m} = \\underset {L _ {c}) / 2} {\\text {mean wetted length, ft}} = (L _ {k} +\n$$",
+        "text_format": "latex",
+        "bbox": [
+            651,
+            739,
+            898,
+            762
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nw = \\text {specific weight of water, pcf}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            658,
+            762,
+            857,
+            775
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} \\gamma = \\text {angle between spray root line and} \\\\ \\text {keel line measured in plane} \\\\ \\text {parallel to keel, deg} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            658,
+            773,
+            898,
+            806
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tau = \\text {trim angle of planing area, deg}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            635,
+            806,
+            872,
+            816
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} \\text {LCG} = \\text {longitudinal distance of center of} \\\\ \\text {gravity from transom (measured along keel), ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            635,
+            816,
+            898,
+            849
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} \\Phi = \\text {angle between the keel and spray} \\\\ \\text {edge measured in plane of bottom, deg} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            656,
+            848,
+            895,
+            880
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA _ {s} = \\text {total wetted spray area, sq ft}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            633,
+            880,
+            867,
+            892
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{r l} \\text {VCG} & = \\text {distance of center of gravity above} \\\\ & \\quad \\text {keel line, measured normal to} \\\\ & \\quad \\text {keel, ft} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            633,
+            891,
+            895,
+            922
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            60,
+            926,
+            171,
+            941
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Reprinted from MARINE TECHNOLOGY, Vol. 1, No. 1, pp. 71–95",
+        "bbox": [
+            295,
+            952,
+            655,
+            968
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "71",
+        "bbox": [
+            872,
+            941,
+            892,
+            952
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e3d947f703d629770654dc95618963885de8c07e055ff46c12475d9c49135c88.jpg",
+        "image_caption": [
+            "Fig. 1 Wave rise on a flat planing surface"
+        ],
+        "image_footnote": [],
+        "content": "WAVE RISE\n-λb\n-λ'b\nτ\nd\nSPRAY\nLEVEL WATER\nSURFACE",
+        "sub_type": "text_image",
+        "bbox": [
+            130,
+            93,
+            529,
+            181
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Research, U.S. Navy, the Davidson Laboratory of Stevens Institute of Technology, in 1947, undertook a theoretical study and empirical-data analysis of the phenomenon of planing. This study produced 16 technical reports (listed in the Appendix), which consider planing-surface lift, drag, wetted area, pressure distributions, impact forces, wake shape, spray formation, dynamic stability, and parallel planing surfaces. Where possible the ONR sponsored research utilized existing planing data and theoretical results but in many areas additional experimental results and new theoretical analysis were provided by the Davidson Laboratory.",
+        "bbox": [
+            119,
+            246,
+            531,
+            414
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In 1949, Korvin-Kroukovsky and Savitsky [7] published a summary report on the then completed studies of planing lift, drag, and wetted area and, in 1950, Murray [8] utilized these results in developing a computational procedure for predicting planing performance. In 1954, Savitsky and Neidinger [9], continuing the ONR study, developed an extensive set of empirical planing equations which increased the range of applicability to parametric planing variables well beyond those developed in [7].",
+        "bbox": [
+            116,
+            414,
+            529,
+            551
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The purpose of the present paper is to utilize the results of the studies of [9] to describe the elemental hydrodynamic characteristics of prismatic planing surfaces and then to combine these results to formulate simple computational procedures to predict the horsepower requirements and porpoising stability of prismatic planing hulls. Some of the material of [9] is repeated in this paper since [9] had a limited distribution and is currently out of print.",
+        "bbox": [
+            114,
+            551,
+            527,
+            676
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Hydrodynamics of Prismatic Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            116,
+            685,
+            449,
+            700
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A knowledge of the elemental hydrodynamic characteristics of simple planing surfaces is necessary prior to undertaking the design of specific geometric planing boats. In this section of the paper attention will be given to the development of equations for wetted area, lift, drag, center of pressure and stability limits of hard-chine prismatic surfaces in terms of deadrise angle, trim angle, and forward speed. The prismatic planing surface is assumed to have constant deadrise, constant beam and a constant running trim for the entire wetted planing area. Variations from these conditions will be discussed in the section on design procedure. Only hard-chine planing forms are considered in this paper since, at present there is a scarcity of basic planing data on round-bottom forms.",
+        "bbox": [
+            114,
+            703,
+            527,
+            912
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/db66176e49bbab5233d86390fb77768b11ce80dff3f783b93bc697f6aab449fa.jpg",
+        "image_caption": [
+            "Fig. 2 Typical pressure distribution on flat planing surface"
+        ],
+        "image_footnote": [],
+        "content": "Pressure Distribution\n½ ρv²\nτ\nSTAGNATION LINE\nSPRAY ROOT\nLEVEL WATER\nSURFACE\nδ=SPRAY THICKNESS",
+        "sub_type": "text_image",
+        "bbox": [
+            550,
+            98,
+            954,
+            262
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The planing coefficients and symbols used in the subsequent analysis are based on Froude's law of similitude and are the same as those used in the analysis of water-based aircraft and hydroskis. Each symbol is specifically defined in the section on nomenclature. It will be noted that the beam is the prime nondimensionalizing dimension rather than the length of the boat which is usually considered by the naval architect. The justification for this is that for planing hulls, the wetted length of the boat varies with trim, loading, and speed while the wetted beam is essentially constant. Moreover, it is possible to change the overall length of a planing boat without changing its hydrodynamic characteristics at high speed.",
+        "bbox": [
+            540,
+            320,
+            955,
+            513
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Shape of Wetted Area of Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            599,
+            522,
+            892,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A separate analysis is given of the shape of the wetted area for flat-bottom and deadrise planing surfaces.",
+        "bbox": [
+            540,
+            540,
+            952,
+            569
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Wave Rise for Flat Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            540,
+            577,
+            781,
+            590
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In the case of planing surfaces with no deadrise (flat-bottom planing surfaces), water rises in front of the surface, thereby causing the running wetted length $l$ to be larger than the length defined by the undisturbed water-level intersection with the bottom $l_1$ , Fig. 1. Wagner [10] had made a mathematical study of the flow at the leading edge of a planing surface of infinite length and found that the rising water surface, mentioned in the foregoing, blends into a thin sheet of water flowing forward along the planing surface. This sheet is the source of spray in a planing surface and the region of its origin has been designated by Wagner as the “spray-root” region. Fig. 2 shows the spray root and the pressure distribution resulting from it. The term wetted area, as used in this paper, designates that portion of the wetted area over which water pressure is exerted and excludes the forward thrown spray sheet. The wetted area used in this sense is often designated in the literature as the “pressure area” and geometrically, includes all the wetted bottom area, aft of a line drawn normal to the planing bottom and tangent to the curve of the spray root. This line is clearly discernible from underwater photographs. As seen in Fig. 2, the stagnation pressure is developed at a short distance aft of the spray-root line. At very small values of trim angle the stagnation line and spray-root line are nearly coincident. As the trim angle increases, the stagnation line moves farther aft of the spray-root line.",
+        "bbox": [
+            537,
+            595,
+            952,
+            917
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "72",
+        "bbox": [
+            116,
+            929,
+            135,
+            941
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            792,
+            931,
+            950,
+            944
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/aaa5175bf340d9816920989983e59fe8da8c7d3997846ade0ec20d33c89b703f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "WAVE RISE\nSPRAY ROOT\nV\nLEVEL WATER\nSURFACE\nλ\nλ₁\nτ\nd",
+        "sub_type": "text_image",
+        "bbox": [
+            282,
+            79,
+            799,
+            181
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "chart",
+        "img_path": "images/8bc74283ed432cb4396841c24c3029623c4a462f127cd7c10d485d0f8250c074.jpg",
+        "content": "| Wetted Length-beam ratio based on wave rise, \\(\\lambda\\) | Wetted Length-beam ratio based on level water surface, \\(\\lambda_{1}\\) (Solid Line) | Wetted Length-beam ratio based on level water surface, \\(\\lambda_{1}\\) (Dashed Line) |\n| --- | --- | --- |\n| 0 | 0 | 0 |\n| 1 | ~0.7 | 1 |\n| 2 | ~1.6 | 2 |\n| 3 | ~2.6 | 3 |\n| 4 | ~3.6 | 4 |",
+        "chart_caption": [
+            "Fig. 3 Wave-rise variation for flat planing surfaces"
+        ],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            197,
+            229,
+            795,
+            700
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            73,
+            746,
+            483,
+            815
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Flat-plate, wetted-length data from all available sources are shown plotted in the form of $\\lambda$ versus $\\lambda_{1}$ in Fig. 3. Here $\\lambda$ represents the running mean wetted length-beam ratio $(l/b)$ and $\\lambda_{1}$ represents the calm-water length-beam ratio obtained from the relation $\\lambda_{1} = d/b \\sin\\tau$ , where d is the depth of the trailing edge of the planing surface below the level water surface during a planing run. It is seen, from Fig. 3, that, for the range of test parameters considered, the wave rise on a flat-bottom planing surface is only a function of the running wetted length. The mean curve fitted through the test data is defined by the following empirical equations:",
+        "bbox": [
+            73,
+            816,
+            483,
+            904
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            496,
+            750,
+            908,
+            840
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\lambda = 1. 6 0 \\lambda_ {1} - 0. 3 0 \\lambda_ {1} ^ {2} \\quad (0 \\leq \\lambda_ {1} \\leq 1)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            552,
+            842,
+            849,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "and\n(1)",
+        "bbox": [
+            498,
+            856,
+            906,
+            873
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\lambda = \\lambda_ {1} + 0. 3 0 \\quad (1 \\leq \\lambda_ {1} \\leq 4)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            552,
+            869,
+            849,
+            888
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The empirical wave-rise relation is given in the form of",
+        "bbox": [
+            496,
+            890,
+            908,
+            907
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            75,
+            912,
+            186,
+            926
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "73",
+        "bbox": [
+            887,
+            924,
+            906,
+            936
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a9ab2f319d717be51298246b73c0ebc6ac2293830bcc6bba5d078cab9bd07743.jpg",
+        "image_caption": [
+            "Fig. 4 Waterline intersection for constant deadrise surface"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            107,
+            94,
+            934,
+            512
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tan \\gamma = \\frac {5 \\gamma_ {2}}{\\frac {b \\tan \\beta}{1 1 + \\tan \\beta}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            753,
+            478,
+            939,
+            545
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\pi \\tan^ {2} \\tau}{2 \\cdot \\tan^ {3} \\beta}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            870,
+            556,
+            936,
+            592
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/517b0af1867394b246863daf78fc4ccbb349b6d63eb38b472f83c11835c0b04f.jpg",
+        "image_caption": [
+            "Fig. 5 Underwater photograph showing arrangement of tufts over bottom illustrating direction of fluid flow"
+        ],
+        "image_footnote": [],
+        "content": "CHINE LINE\nSTAGNATION LINE\nSTEP\nKEEL LINE",
+        "sub_type": "text_image",
+        "bbox": [
+            227,
+            561,
+            784,
+            857
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "7A",
+        "bbox": [
+            83,
+            925,
+            102,
+            936
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            756,
+            936,
+            913,
+            950
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "chart",
+        "img_path": "images/92854b6e1d3ad8d84c900d6d31d366c84e303765810e4cbd90aea5ba2166b756.jpg",
+        "content": "| Trim Angle (Degrees) | \\(\\beta=5{}^{\\circ}\\) | \\(\\beta=10{}^{\\circ}\\) | \\(\\beta=15{}^{\\circ}\\) | \\(\\beta=20{}^{\\circ}\\) | \\(\\beta=25{}^{\\circ}\\) | \\(\\beta=30{}^{\\circ}\\) | \\(\\beta=40{}^{\\circ}\\) |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 4 | ~0.45 | ~0.65 | ~0.85 | ~1.05 | ~1.25 | ~1.45 | ~1.65 |\n| 8 | ~0.25 | ~0.40 | ~0.55 | ~0.70 | ~0.85 | ~1.05 | ~1.25 |\n| 12 | ~0.15 | ~0.25 | ~0.35 | ~0.45 | ~0.55 | ~0.65 | ~0.80 |\n| 16 | ~0.10 | ~0.15 | ~0.20 | ~0.25 | ~0.30 | ~0.35 | ~0.45 |\n| 20 | ~0.05 | ~0.10 | ~0.15 | ~0.18 | ~0.20 | ~0.22 | ~0.25 |",
+        "chart_caption": [
+            "Fig. 6 $L_{k} - L_{c}$ versus trim and deadrise"
+        ],
+        "chart_footnote": [],
+        "sub_type": "contour",
+        "bbox": [
+            228,
+            84,
+            781,
+            669
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "two equations since, for the average planing case, $\\lambda_{1}$ is usually larger than unity and thus the equations are reduced to the very simple form of $\\lambda = \\lambda_{1} + 0.30$ . An empirical wave-rise equation similar in form to (1) was also developed by Smiley [11].",
+        "bbox": [
+            78,
+            705,
+            491,
+            776
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "As with all empirically developed equations, some bound must be placed on the parametric range of applicability of the results. The discussions in [9] conclude that (1) is applicable in the trim range from 2 to 24 deg; $\\lambda \\leq 4.0$ ; and $0.60 \\leq C_{v} \\leq 25.00$ .",
+        "bbox": [
+            78,
+            776,
+            488,
+            848
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Wetted Pressure Area of Deadrise Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            80,
+            856,
+            416,
+            875
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In the case of Vee-shaped planing surfaces, the intersection of the bottom surface with the undisturbed water surface is along two oblique lines (O-C) between the keel and chines, Fig. 4. Up to a trim angle of approximately 15 deg there appears to be no noticeable pile-up of water at the keel line. For larger trim angles Chambliss and Boyd [12] indicate a slight pile-up of water at the keel. Aft of the initial point of contact, O, there is a rise of the water surface along the spray root line (O-B) located ahead of the line of calm water intersection. The location of the spray-root line is easily seen from underwater photographs such as that shown in Fig. 5. It is generally found that the spray-root line is slightly convex, but since the curvature is small, it is neglected. Thus the mean wetted length of a deadrise surface is defined as the average of the keel and chine lengths measured from the transom to the intersection with the spray-root line.",
+        "bbox": [
+            78,
+            875,
+            486,
+            907
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            501,
+            710,
+            913,
+            914
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            80,
+            917,
+            191,
+            933
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "75",
+        "bbox": [
+            890,
+            931,
+            910,
+            941
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/cbd0ae2786afbaddff6d92f6522febfe45d3689fb498726f3279247c0a64f67a.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "$C_{v} = 4.00$"
+        ],
+        "content": "Cross-sectional view of a mechanical component with a tapered body and internal grid lines (no text or symbols visible)",
+        "sub_type": "natural_image",
+        "bbox": [
+            263,
+            85,
+            710,
+            189
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/a72143a05252d89378be85fca49641d98fca480b7dcbbc2718656097154fcc85.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "$C_{v} = 3.02$"
+        ],
+        "content": "Close-up of a metallic ruler with measurement markings (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            258,
+            233,
+            705,
+            335
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a0ba6e458f5d9b29cd1f134654ecce327b282c8c0524e8a8bed8a7b32409697.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "$C_{v} = 2.01$"
+        ],
+        "content": "Cross-sectional view of a mechanical component or tool, possibly a finned or layered structure, with no visible text or symbols.",
+        "sub_type": "natural_image",
+        "bbox": [
+            254,
+            381,
+            699,
+            483
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7b855ace6492aca76d802972983b2727bef3e01bb69fbaf61066a3a054ee5d6f.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "$C_{v} = 1.00$"
+        ],
+        "content": "Close-up of a rectangular object with evenly spaced vertical lines, resembling a ruler or scale (no text or symbols visible)",
+        "sub_type": "natural_image",
+        "bbox": [
+            251,
+            531,
+            694,
+            633
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d1f8ebf2805905ea2206e8f34c86a4b46157baf89f807ccafa5c6668a3cdcdd.jpg",
+        "image_caption": [
+            "Fig. 7 Variation of shape of leading edge of wetted area with speed coefficient. $\\beta = 20^{\\circ}, b = 9$ in., $\\tau = 4^{\\circ}$"
+        ],
+        "image_footnote": [
+            "$C_{v} = .61$"
+        ],
+        "content": "Cross-sectional view of a tapered mechanical component with internal slots and a linear guide line (no text or symbols visible)",
+        "sub_type": "natural_image",
+        "bbox": [
+            248,
+            681,
+            686,
+            781
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            99,
+            849,
+            506,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The difference between the wetted keel length and the chine length measured to the calm-water intersection with the chine ( $L_{2}$ ) is a function of trim and deadrise and",
+        "bbox": [
+            99,
+            866,
+            506,
+            909
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "is defined by",
+        "bbox": [
+            522,
+            856,
+            617,
+            871
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {2} = \\frac {b}{2} \\frac {\\tan \\beta}{\\tan \\tau} \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            676,
+            883,
+            928,
+            914
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "76",
+        "bbox": [
+            98,
+            922,
+            119,
+            934
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            769,
+            934,
+            929,
+            946
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The wave rise in the spray-root area is accounted for by the following consideration. Wagner computed the wave rise for a two-dimensional wedge penetrating a fluid surface vertically, and found that the actual wetted width of the wedge was $\\pi/2$ times the wetted width defined by the calm-water intersection with the bottom. The motion of a deadrise planing surface can be represented as a two-dimensional problem by considering the water flow between two vertical planes normal to the plane of symmetry of the planing surface. To an observer located between these two planes, the passage of the prismatic Vee planing surface will appear identical to the vertical immersion of a wedge. This being the case, the $\\pi/2$ wave-rise factor computed by Wagner is applicable, and the difference between actual wetted keel length and chine length for a prismatic planing surface is given by",
+        "bbox": [
+            81,
+            90,
+            491,
+            329
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {k} - L _ {c} = \\frac {b}{\\pi} \\frac {\\tan \\beta}{\\tan \\tau} \\tag {3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            209,
+            330,
+            486,
+            361
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "It is seen that this length is a factor $2/\\pi$ times the corresponding length defined by the level-water intersection with the Vee planing surface. A plot of this relationship is given in Fig. 6. Since the wetted keel length can be defined in terms of the draft of the aft end of the keel as",
+        "bbox": [
+            76,
+            364,
+            486,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {k} = d / \\sin \\tau \\tag {4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            230,
+            436,
+            483,
+            453
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "then the mean wetted length-beam ratio, $\\lambda$ , which defines the pressure area is given as",
+        "bbox": [
+            75,
+            454,
+            483,
+            483
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\lambda = \\frac {\\left[ \\frac {d}{\\sin \\tau} - \\frac {b}{2 \\pi} \\frac {\\tan \\beta}{\\tan \\tau} \\right]}{b} = \\frac {L _ {k} + L _ {c}}{2 b} \\tag {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            148,
+            484,
+            483,
+            532
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Experimental evidence indicates that (3) is applicable for all deadrise and trim combinations when the speed coefficient is greater than $C_v = 2.0$ . This indicates a full development of the spray-root and water pile-up as predicted by Wagner. For deadrise surfaces of 10 deg or less, (3) continues to be applicable at $C_v = 1.0$ . For the 20-deg deadrise surface, at $C_v = 1.0$ and $\\tau \\leq 4^\\circ$ , experimental values of $L_k - L_c$ are larger than those predicted by (3), indicating a partial breakdown of the spray-root formation. Experimental evidence for 30-deg deadrise surfaces showed similar effects except that, at $C_v = 1.0$ , the spray-root formation breaks down when $\\tau \\leq 6^\\circ$ . It appears that, for $C_v = 1.0$ , the spray-root formation will begin to break down when, for a given deadrise, the trim is reduced to a value such that the theoretical value of $L_k - L_c$ is approximately equal to 1.66b. This quantity $(L_k - L_c)/b$ can actually be considered to be a measure of the angle $(\\gamma)$ between the spray-root line and the keel line measured in a plane along the keel. Hence, it may be generalized that the spray-root formation at $C_v = 1.0$ will begin to breakdown when the theoretical value of $\\gamma$ is less than approximately 17 deg for a given trim-deadrise combination. It is easily shown that $\\gamma = \\tan^{-1}(\\tan\\tau/2\\tan\\beta)$ .",
+        "bbox": [
+            71,
+            535,
+            482,
+            868
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A series of photographs illustrating the breakdown in the spray-root line is given in Fig. 7 where bottom areas are shown for a 20-deg-deadrise surface planing at a trim angle of 4 deg and at five values of $C_{v}$ . The calculated angle $\\gamma = 17^{\\circ}$ . It is seen that, at $C_{v} = 2.01$ , 3.02 and 4.00, the spray-root line is one continuous line and the value of $L_{k} - L_{c}$ is in agreement with that computed by equation (3). At $C_{v} = 1.0$ , the leading edge of the wetted area is now defined by a broken line made up of two straight segments. The forward segment is the usual spray-root line formation and makes an angle of approximately 17 deg with the keel. The after segment of the leading-edge line makes an angle with the keel which would correspond to the calm-water intersection with the bottom. At $C_{v} = 0.6$ , the same phenomenon is in evidence except that the length of the spray-root portion of the line is reduced.",
+        "bbox": [
+            71,
+            869,
+            480,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            501,
+            94,
+            916,
+            292
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Wetted-Spray Area of Deadrise Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            501,
+            300,
+            826,
+            315
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The total wetted bottom area of a planing surface is actually divided into two regions. One is aft of the spray-root line, commonly referred to as the pressure area and the other is forward of the spray-root line, referred to as the spray area. The pressure area, which has been defined in the preceding sections of this paper, is the load-carrying area of the planing bottom. The forward spray area contributes to the total drag but is not considered to support any portion of the load.",
+        "bbox": [
+            498,
+            318,
+            911,
+            444
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The flow directions in both wetted areas have been determined by underwater photographs of tufts such as shown by Pierson and Leshnover in Figs. 4 and 5 of reference [13]. An enlarged sketch of the flow directions on a deadrise surface is given in Fig. 8 of this paper. It is found that the flow in the pressure-area is predominantly aft with some transverse flow along the chines. The flow along the spray-root line is primarily along the direction of the stagnation line. In the spray wetted area the directions of the fluid flow are such that the space angle between the oncoming fluid particles and the stagnation line is equal to the angle between the direction of the spray jets and the stagnation line; i.e., any line of motion in the spray area is nearly a reflection about the stagnation line of the incident velocity direction. Since the pressure in the spray area is nearly atmospheric, then, by Bernoulli, the spray velocity can be assumed to be equal to the planing speed.",
+        "bbox": [
+            496,
+            443,
+            910,
+            691
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Equations defining the spray direction in terms of trim and deadrise angle are given by Pierson and Leshnover [13]. The actual spray area extends from the spray-root line forward to the spray edge. The angle $\\Phi$ between the keel and spray edge measured in the plane of the bottom is",
+        "bbox": [
+            493,
+            693,
+            908,
+            775
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tan \\Phi = \\frac {A + k _ {1}}{1 - A k _ {1}} \\tag {6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            638,
+            780,
+            906,
+            811
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "where:",
+        "bbox": [
+            496,
+            813,
+            547,
+            825
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA =\n$$",
+        "text_format": "latex",
+        "bbox": [
+            496,
+            832,
+            532,
+            844
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\left\\{\\sin^ {2} \\tau (1 - 2 K) + K ^ {2} \\tan^ {2} \\tau \\left[ \\left(1 / \\sin^ {2} \\beta\\right) - \\sin^ {2} \\tau \\right] \\right\\} ^ {1 / 2}}{\\cos \\tau + K \\tan \\tau \\sin \\tau .}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            514,
+            845,
+            903,
+            878
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nk _ {1} = \\frac {K \\tan \\tau}{\\sin \\beta}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            650,
+            883,
+            751,
+            915
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            71,
+            924,
+            184,
+            939
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "77",
+        "bbox": [
+            885,
+            931,
+            903,
+            944
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/04631f6e9a655cd77abbb981082b5de1cd7b4e6a656921a494c2e730dd53e202.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            248,
+            97,
+            803,
+            529
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{TAN} \\theta = \\mathrm{TAN} \\Phi \\cos \\beta\n$$",
+        "text_format": "latex",
+        "bbox": [
+            609,
+            238,
+            751,
+            253
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{TAN} \\alpha = \\frac {\\pi}{2} \\frac {\\mathrm{TAN} \\tau}{\\mathrm{TAN} \\beta}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            612,
+            263,
+            725,
+            289
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "and",
+        "bbox": [
+            99,
+            585,
+            133,
+            599
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK \\approx \\frac {\\pi}{2} \\left(1 - \\frac {3 \\tan^ {2} \\beta \\cos \\beta}{1 . 7 \\pi^ {2}} - \\frac {\\tan \\beta \\sin^ {2} \\beta}{3 . 3 \\pi}\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            148,
+            614,
+            460,
+            648
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The total spray area, both sides, projected on a plane along the keel line is given by",
+        "bbox": [
+            96,
+            654,
+            506,
+            686
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA _ {s} = \\frac {b ^ {2}}{2} \\left(\\frac {\\tan \\beta}{\\pi \\tan \\tau} - \\frac {1}{4 \\tan \\Phi \\cos \\beta}\\right) \\tag {7}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            695,
+            503,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In making visual observations of the wetted chine length during a planing run, it is important to distinguish between the spray-root intersection and the spray-edge intersection with the chine. Fig. 9 illustrates the two intersection points. It is seen that the spray edge is always ahead of the spray-root intersection with the bottom.",
+        "bbox": [
+            91,
+            739,
+            504,
+            837
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Lift of Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            218,
+            853,
+            377,
+            869
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The following discussions will first develop the lift equations for flat planing surfaces and then show how these results are modified to account for finite deadrise.",
+        "bbox": [
+            89,
+            869,
+            501,
+            917
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Lift of Flat Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            521,
+            595,
+            709,
+            609
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The lift on a planing surface (at fixed draft and trim) can be attributed to two separate effects; i.e., one is the dynamic reaction of the fluid against the moving surface, and the second is the so-called buoyant contribution to lift which is associated with the static pressures corresponding to a given draft and hull trim. In effect, the buoyant contribution represents the influence of gravity. At very low-speed coefficients, the buoyant lift component predominates. As speeds are increased, the dynamic-lift effects begin to develop. At first the dynamic effects tend to decrease the load which a given prismatic surface can support and then, as the speed is further increased, the load on a given surface will increase. At very high-speed coefficients the dynamic contribution to lift predominates and the static-pressure effects can be neglected. The formulation of an empirical planing lift equation was based on a combination of the dynamic and static effects.",
+        "bbox": [
+            514,
+            613,
+            931,
+            864
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "It will be recalled that the fluid-flow directions over the pressure area of a planing surface were a combination of longitudinal flow and some transverse flow across both chine lines. From aerodynamic theory it is known that lifting surfaces of high aspect ratio (small $\\lambda$ ) have a predominantly longitudinal (chordwise) flow and that the lift is directly proportional to $\\tau$ . For surfaces of very small span and infinite length, i.e., $\\lambda = \\infty$ , the flow is in a transverse direction and lift is proportional to $\\tau^{2}$ . Hence for a normal low aspect-ratio planing surface, the lift can be expressed in the form",
+        "bbox": [
+            511,
+            864,
+            926,
+            925
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "78",
+        "bbox": [
+            89,
+            929,
+            109,
+            940
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            764,
+            940,
+            923,
+            954
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/6dec64498fd45022b81ae140f3c9021324b7e98c263939af33e5e1831be739b9.jpg",
+        "image_caption": [
+            "Fig. 9 Characteristic features of vee-bottom planing surface. A—model of planing wedge; B—transom; C—keel; D—chine; E—whisker spray; F—reflection of spray edge; G—spray-root region"
+        ],
+        "image_footnote": [],
+        "content": "A\nB\nE\nG\nD\nC\nF",
+        "sub_type": "text_image",
+        "bbox": [
+            225,
+            90,
+            785,
+            407
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            73,
+            479,
+            486,
+            578
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L} = A \\tau + B \\tau^ {2} \\tag {8}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            215,
+            585,
+            483,
+            601
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For the range of $\\lambda$ -values applicable to planing surfaces, the second term takes the form of a small correction to the first term and it is found that equation (8) can be approximated by using $\\tau$ to the 1.1 power. Hence",
+        "bbox": [
+            73,
+            603,
+            483,
+            662
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L} / \\tau^ {1. 1} = f (\\lambda , C _ {v}) \\tag {9}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            210,
+            667,
+            482,
+            685
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Sottorf's analysis of high-speed planing data, where the hydrostatic term is negligible, showed that, for a given trim angle, the dynamic component of the lift coefficient varied as $\\lambda^{1/2}$ . Hence we can consider this component to be of the form:",
+        "bbox": [
+            71,
+            686,
+            482,
+            756
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {d}} = c \\lambda^ {1 / 2} \\tau^ {1. 1} \\tag {10}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            222,
+            762,
+            480,
+            779
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where c is a constant to be determined.",
+        "bbox": [
+            71,
+            784,
+            356,
+            799
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The hydrostatic component of lift for a flat plate of beam, b, mean wetted length-bcam ratio, $\\lambda$ , and angle of trim $\\tau$ can be written as follows:",
+        "bbox": [
+            70,
+            799,
+            480,
+            840
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {b} = \\frac {1}{2} \\rho g b ^ {3} (\\lambda - 0. 3 0) ^ {2} \\tan \\tau \\tag {11}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            169,
+            845,
+            478,
+            864
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Dividing both sides by $\\frac{1}{2}\\rho V^{2}b^{2}$ and assuming that $(\\lambda - 0.30)^{2}$ can be replaced by $K\\lambda^{n}$ where D and n are constants to be determined, results in",
+        "bbox": [
+            70,
+            864,
+            480,
+            909
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {b}} = \\frac {D \\lambda^ {n}}{C _ {v} ^ {2}} \\tan \\tau \\tag {12}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            643,
+            486,
+            911,
+            517
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If the difference between $\\tan\\tau$ and $\\tau^{1.1}$ is neglected $C_{L_{b}}$ can be written",
+        "bbox": [
+            498,
+            521,
+            911,
+            547
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {b}} = \\frac {D \\lambda^ {n}}{C _ {v} ^ {2}} \\tau^ {1. 1} \\tag {13}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            648,
+            556,
+            908,
+            588
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Combining equations (10) and (13) gives a form of an empirical equation for the lift coefficient of a planing surface, i.e.",
+        "bbox": [
+            496,
+            592,
+            910,
+            633
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L} = \\tau^ {1. 1} \\left(c \\lambda^ {1 / 2} + \\frac {D \\lambda^ {n}}{C _ {v} ^ {2}}\\right) \\tag {14}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            612,
+            638,
+            906,
+            672
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "As with any empirical equation there are several ways to formulate the equation for planing lift. The form of relation given in (14) has the advantage of readily illustrating the effect of the prime variables on planing lift and also is easily applied in design of planing hulls.",
+        "bbox": [
+            495,
+            675,
+            908,
+            747
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The constants C, D, and n are evaluated by applying the foregoing formula to the large collection of planing data contained in the existing literature. The mechanics of this evaluation are described in [9]. As a result of this analysis the empirical planing lift equation for a zero-deadrise surface takes the following final form:",
+        "bbox": [
+            493,
+            746,
+            906,
+            830
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L} = \\tau^ {1. 1} \\left[ 0. 0 1 2 0 \\lambda^ {1 / 2} + \\frac {0 . 0 0 5 5 \\lambda^ {5 / 2}}{C _ {v} ^ {2}} \\right] \\tag {15}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            568,
+            834,
+            903,
+            868
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where $\\tau$ is in degrees.",
+        "bbox": [
+            493,
+            869,
+            651,
+            883
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "This empirical equation is applicable for $0.60 \\leq C_{v} \\leq 13.00$ ; $2^{\\circ} \\leq \\tau \\leq 15^{\\circ}$ ; and $\\lambda \\leq 4$ .",
+        "bbox": [
+            495,
+            885,
+            903,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER; 1964",
+        "bbox": [
+            71,
+            924,
+            181,
+            936
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "79",
+        "bbox": [
+            885,
+            931,
+            903,
+            944
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "chart",
+        "img_path": "images/f60037a2b64a2ee0c6db9a13c9400d7d4a804c1ec132f82247e16ddd8b64f4f3.jpg",
+        "content": "| \\(\\lambda\\) | \\(\\tau^1.1=2.0\\) | \\(\\tau^1.1=3.0\\) | \\(\\tau^1.1=4.0\\) | \\(\\tau^1.1=5.0\\) | \\(\\tau^1.1=6.0\\) | \\(\\tau^1.1=7.0\\) | \\(\\tau^1.1=8.0\\) | \\(\\tau^1.1=13.0\\) |\n|---|---|---|---|---|---|---|---|---|\n| 0.5 | ~0.008 | ~0.008 | ~0.008 | ~0.008 | ~0.008 | ~0.008 | ~0.008 | ~0.008 |\n| 1.0 | ~0.018 | ~0.017 | ~0.016 | ~0.015 | ~0.014 | ~0.013 | ~0.012 | ~0.011 |\n| 2.0 | ~0.035 | ~0.030 | ~0.026 | ~0.023 | ~0.021 | ~0.019 | ~0.017 | ~0.015 |\n| 3.0 | ~0.048 | ~0.042 | ~0.036 | ~0.031 | ~0.027 | ~0.024 | ~0.021 | ~0.018 |\n| 4.0 | >0.05 | ~0.048 | ~0.042 | ~0.036 | ~0.031 | ~0.027 | ~0.023 | ~0.020 |",
+        "chart_caption": [
+            "Fig. 10 Lift coefficient of a flat planing surface; $\\beta = 0^{0}$"
+        ],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            212,
+            89,
+            805,
+            715
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For convenience in use, equation (15) is plotted in Fig. 10 in the form $C_{L}/\\tau^{1.1}$ versus $\\lambda$ for a wide range of $C_{v}$ -values. Examining this plot at a fixed value of $\\lambda$ it is clear that the buoyant contribution to lift is significant up to speed coefficients as high as approximately 10. At $C_{v} > 10$ , the dynamic lift is predominant and the lift coefficient is then independent of speed. In fact, for $C_{v} > 10.0$ the flat-plate lift coefficient can be simply expressed as $C_{L} = 0.0120 \\lambda^{1/2} \\tau^{1.1}$ .",
+        "bbox": [
+            81,
+            755,
+            491,
+            882
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "To illustrate the loss in lift experienced by a planing surface at very low speeds ( $C_{v} \\leq 1.0$ ), Fig. 12 presents a comparison between the resultant lift and that corresponding to the purely static lift (buoyancy) for a given draft and trim of the planing surface. A form of load coefficient is plotted against speed coefficient for three wetted lengths at three trim angles. The solid curves are the planing loads as predicted by (15) and are seen to vary with $C_{v}$ . The dotted curves are the buoyant loads computed by (11). This hypothetical load is independent of $C_{v}$ . The comparison between the planing load and calculated buoyant load is limited to $C_{v} \\geq 0.60$ since this is the range of applicability of (15). As $C_{v}$ approaches zero, it is naturally expected that the calculated load should approach the buoyant load. It is interesting to note from Fig. 12 that in the range $0.60 \\leq C_{v} \\leq 1.00$ , the motion of the planing surface reduces the lift below the value which would be expected on a purely displacement basis. This effect is somewhat similar to the sinkage experienced by displacement vessels at low speeds. At $C_{v} \\approx 1.0$ , the total planing load is approximately equal to the hypothetical buoyant load. At $C_{v} > 1.0$ the positive dynamic reaction of the fluid on the planing bottom increases rapidly as the speed increases.",
+        "bbox": [
+            80,
+            882,
+            490,
+            914
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            503,
+            762,
+            916,
+            921
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "80",
+        "bbox": [
+            81,
+            926,
+            101,
+            936
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            754,
+            936,
+            913,
+            948
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "chart",
+        "img_path": "images/cff5a4d7c5fb131916029969311d0f6235456c82be4d4beb2709016dd19b34a8.jpg",
+        "content": "| CL0 | \\(\\beta=10{}^{\\circ}\\) | \\(\\beta=15{}^{\\circ}\\) | \\(\\beta=20{}^{\\circ}\\) | \\(\\beta=25{}^{\\circ}\\) | \\(\\beta=30{}^{\\circ}\\) |\n| --- | --- | --- | --- | --- | --- |\n| 0.00 | 0 | 0 | 0 | 0 | 0 |\n| 0.02 | ~0.012 | ~0.009 | ~0.007 | ~0.005 | ~0.003 |\n| 0.04 | ~0.025 | ~0.019 | ~0.015 | ~0.011 | ~0.007 |\n| 0.06 | ~0.038 | ~0.031 | ~0.025 | ~0.020 | ~0.015 |\n| 0.08 | ~0.052 | ~0.044 | ~0.037 | ~0.031 | ~0.023 |\n| 0.10 | ~0.066 | ~0.058 | ~0.050 | ~0.043 | ~0.035 |",
+        "chart_caption": [
+            "Fig.11 Lift coefficient of a deadrise planing surface"
+        ],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            218,
+            80,
+            803,
+            672
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            89,
+            732,
+            501,
+            900
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Lift of Deadrise Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            513,
+            734,
+            733,
+            750
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For a given trim and mean wetted length-beam ratio, the effect of increasing the deadrise angle is to reduce the planing lift. This lift reduction is caused primarily from a reduction in the stagnation pressure at the leading edge of the wetted area. It will be recalled from the discussion of wetted areas that the angle between the stagnation line and keel is given by the equation $\\gamma = \\tan^{-1} (\\tan \\tau / 2 \\tan \\beta)$ . When $\\beta = 0$ the stagnation line is normal to the keel and normal to the free-stream velocity so that full stagnation pressure $\\frac{1}{2}\\rho V^{2}$ is developed. For increasing values of $\\beta$ , the angle $\\gamma$ de-",
+        "bbox": [
+            511,
+            751,
+            924,
+            906
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            91,
+            917,
+            202,
+            929
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "81",
+        "bbox": [
+            903,
+            922,
+            919,
+            934
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {TOTAL PLANING LOAD} = \\Delta / 1 / 2 \\rho g b ^ {3} = \\tau^ {1. 1} \\left[ 0. 0 1 2 0 \\lambda^ {1 / 2} C _ {V} ^ {2} + 0. 0 0 5 5 \\lambda^ {5 / 2} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            241,
+            94,
+            870,
+            132
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {---- EQUIVALENT DISPLACEMENT LOAD} = \\Delta / 1 / 2 \\rho g b ^ {3} = (\\lambda - 0. 3 0) ^ {2} \\tan \\tau\n$$",
+        "text_format": "latex",
+        "bbox": [
+            241,
+            137,
+            816,
+            161
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/984522d88906a38dc95c458e0f88449c5ec1a5abf0e837041d9c6fc39a64a0e5.jpg",
+        "image_caption": [
+            "Fig. 12 Planing load versus calculated displacement load for a flat planing surface at various velocity coefficients"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            101,
+            171,
+            929,
+            616
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "creases so that full stagnation pressures are no longer developed; hence the planing lift is reduced. In effect then, the presence of deadrisé causes the stagnation line to be “swept” aft and leads to a lift reduction not unlike that on a swept-back wing.",
+        "bbox": [
+            84,
+            665,
+            495,
+            734
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "To formulate an empirical equation for the planing lift of a deadrise surface, the lift coefficient of a Vee surface was compared with that of a flat plate at identical values of $\\tau$ , $\\lambda$ , and $C_{v}$ . It was found in [7] and [9] that the lift of a deadrise surface can be represented by the following equation:",
+        "bbox": [
+            84,
+            734,
+            493,
+            818
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {\\beta}} = C _ {L _ {0}} - 0. 0 0 6 5 \\beta C _ {L _ {0}} ^ {0. 6 0} \\tag {16}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            184,
+            827,
+            491,
+            847
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            84,
+            849,
+            130,
+            862
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {\\beta}} = \\text {lift coefficient for a deadrise surface}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            875,
+            392,
+            893
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\beta = \\text {deadrise angle, deg}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            106,
+            893,
+            281,
+            910
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$C_{L_{0}} = \\text{lift coefficient of a flat plate operating at the same } \\tau, \\lambda, \\text{ and } C_{v} \\text{ as deadrise surface}$",
+        "bbox": [
+            519,
+            669,
+            921,
+            700
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For convenience in use, equation (16) is plotted in Fig. 11.",
+        "bbox": [
+            509,
+            704,
+            919,
+            731
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Drag of Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            627,
+            742,
+            800,
+            758
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The total hydrodynamic drag of a planing surface is composed of pressure drag developed by pressures acting normal to the inclined bottom and viscous drag acting tangential to the bottom in both the pressure area and spray area. If there is side wetting then, of course, this additional component of viscous drag must be added to the hydrodynamic drag acting on the bottom of the planing surface. For the present analysis, it will be assumed that there is no side wetting of the hull.",
+        "bbox": [
+            506,
+            758,
+            919,
+            887
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For a frictionless fluid, the tangential force is zero. Hence for a trim angle $\\tau$ , a load $\\Delta$ , and a force N normal to the bottom the resistance component $D_{p}$ due to pressure forces is shown in Fig. 13 to be",
+        "bbox": [
+            504,
+            887,
+            916,
+            917
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "82",
+        "bbox": [
+            84,
+            922,
+            102,
+            934
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            756,
+            934,
+            915,
+            946
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            98,
+            84,
+            506,
+            113
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD _ {p} = \\Delta \\tan \\tau \\tag {17}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            250,
+            119,
+            504,
+            136
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "When the viscous drag $D_{f}$ acting tangential to the bottom is added, the total drag, D, is shown in Fig. 13 to be",
+        "bbox": [
+            96,
+            140,
+            504,
+            170
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD = \\Delta \\tan \\tau + \\frac {D _ {f}}{\\cos \\tau} \\tag {18}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            223,
+            172,
+            503,
+            203
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The friction component $D_{f}$ is shown in [9] to be computed by the following equation:",
+        "bbox": [
+            94,
+            209,
+            504,
+            239
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD _ {f} = \\frac {C _ {f} \\rho V _ {1} ^ {2} (\\lambda b ^ {2})}{2 \\cos \\beta^ {4}} \\tag {19}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            230,
+            242,
+            503,
+            276
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            94,
+            279,
+            140,
+            292
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "$C_{f}=\\mathrm{Schoenherr[14]turbulentfrictioncoefficient}$",
+        "bbox": [
+            99,
+            300,
+            460,
+            315
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "$V_{1}$ = average bottom velocity",
+        "bbox": [
+            102,
+            315,
+            321,
+            330
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The average bottom velocity ( $V_{1}$ ) is less than the forward planing velocity (V) owing to the fact that the planing bottom pressure is larger than the free-stream pressure. Sottorf, Parkinson [15] and Locke [16] have presented data and analytical expressions for defining the average bottom velocity at very high-speed coefficients where the buoyant contribution to lift is negligible. Savitsky and Ross [17] developed an expression for the mean bottom velocity which is applicable over a speed range from $C_{v} = 1.0$ to $C_{v} = 13.0$ . This development was based on the following considerations: Taking first, the case of a zero deadrise hull, the dynamic contribution to planing lift is given by the first term in (15) to be",
+        "bbox": [
+            88,
+            334,
+            500,
+            527
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {d}} = 0. 0 1 2 0 \\lambda^ {1 / 2} \\tau^ {1. 1} \\tag {20}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            217,
+            535,
+            493,
+            551
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The dynamic load on the bottom is",
+        "bbox": [
+            86,
+            556,
+            346,
+            571
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta_ {d} = \\frac {1}{2} \\rho V ^ {2} b ^ {2} (0. 0 1 2 0 \\lambda^ {1 / 2} \\tau^ {1. 1}) \\tag {21}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            187,
+            578,
+            493,
+            595
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The average dynamic pressure is",
+        "bbox": [
+            86,
+            599,
+            325,
+            614
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\np _ {d} = \\frac {\\Delta}{\\lambda b ^ {2} \\cos \\tau} = \\frac {0 . 0 1 2 0 \\tau^ {1 . 1} V ^ {2} \\rho}{2 \\lambda^ {1 / 2} \\cos \\tau} \\tag {22}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            169,
+            621,
+            493,
+            651
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Applying Bernoulli's equation between the free-stream conditions and the average pressure and velocity conditions on the bottom of the planing surface:",
+        "bbox": [
+            84,
+            657,
+            493,
+            702
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV _ {1} = V \\left(1 - \\frac {2 p _ {d}}{\\rho V ^ {2}}\\right) ^ {1 / 2} \\tag {23}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            210,
+            705,
+            491,
+            739
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "substituting (22) into (23) gives",
+        "bbox": [
+            84,
+            744,
+            313,
+            761
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV _ {1} = V \\left(1 - \\frac {0 . 0 1 2 0 \\tau^ {1 . 1}}{\\lambda^ {1 / 2} \\cos \\tau}\\right) ^ {1 / 2} \\text {for} \\beta = 0 ^ {\\circ} \\tag {24}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            148,
+            766,
+            491,
+            800
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The average bottom velocity for specific deadrise angles is computed in an analogous manner using the lift coefficient for deadrise surfaces given by (16). The ratios $V_{1}/V$ have been computed for four deadrise angles and the results are plotted in Fig. 14 in a convenient form for use by the designer.",
+        "bbox": [
+            84,
+            805,
+            491,
+            888
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "It will be noted that the wetted area used in (19) is the bottom pressure area, $\\lambda b^{2}$ . In previously published Davidson Laboratory reports [9, 17] consideration was given to the friction drag developed by the spray area, equation (7), ahead of the spray-root line. The analysis of [9] and [17], which were based on certain assumptions as to the spray thickness and the friction drag coefficient in the spray area, resulted in a simple formulation for an additional increment, $\\Delta\\lambda b^{2}$ , in wetted areas to be added to the pressure area $\\lambda b^{2}$ . These results were based mainly on data obtained at planing trim angles greater than 4 deg. Recent studies at the Davidson Laboratory have indicated that at trim angles less than 4 deg (usual for planing boats) the spray thickness is considerably less than had been assumed previously. In fact, the spray sheet appears to be much thinner than the displacement thickness of a normal boundary layer at the same Reynolds number. Hence, until this effect is more fully studied, it is recommended that at trim angles less than 4 deg, the area used for computing the viscous drag be $\\lambda b^{2}$ . For larger trim angles the results of [9] and [17] should be used.",
+        "bbox": [
+            99,
+            888,
+            491,
+            905
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/006d79daa4af2b734cf3e8def31ed7f54e2bbf104a57e24462523c1e8bc8e47f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Δ\nN\nDp\nτ\nV\nDp = Δ TAN τ\na) FRICTIONLESS FLUID",
+        "sub_type": "text_image",
+        "bbox": [
+            521,
+            85,
+            916,
+            256
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ac5083c8cc08cdf3220b24a03f3422313ee06d17c9f21a4c0b131d9f4637fc9.jpg",
+        "image_caption": [
+            "Fig. 13 Drag components on a planing surface"
+        ],
+        "image_footnote": [],
+        "content": "D=ΔTANτ + Df/COS τ\nΔTAN τ\nN\nDf/COS τ\nτ\nDf\nb) VISCOUS FLUID",
+        "sub_type": "text_image",
+        "bbox": [
+            517,
+            333,
+            921,
+            508
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            506,
+            550,
+            919,
+            843
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "In summary then, the hydrodynamic drag of a planing surface is given by the following equation:",
+        "bbox": [
+            504,
+            843,
+            916,
+            872
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD = \\Delta \\tan \\tau + \\frac {\\rho V _ {1} ^ {2} C _ {f} \\lambda b ^ {2}}{2 \\cos \\beta \\cos \\tau} \\tag {25}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            609,
+            876,
+            915,
+            907
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            86,
+            919,
+            196,
+            931
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "83",
+        "bbox": [
+            897,
+            925,
+            915,
+            936
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "where $V_{1}$ is plotted in Fig. 12, and $C_{f}$ is the Schoenherr turbulent-friction coefficient. The Reynolds number is defined, $R_{e} = V_{1} \\lambda b/\\nu$ , where $\\nu$ is the kinematic viscosity.",
+        "bbox": [
+            122,
+            84,
+            532,
+            131
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Drag-Lift Ratio of Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            207,
+            148,
+            444,
+            165
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Prior to computing the drag-lift ratio of planing surfaces it would be advantageous to examine the typical variations in drag-lift ratio as a function of speed, wetted length, and trim angle. For this purpose the experimental data for a 9-in. beam, 20 deg deadrise surface (given in reference [9]) are plotted in Fig. 15 for separate values of trim angle. The abscissa for these plots is a form of speed coefficient based on wetted length, defined as $C_{v}/\\lambda^{1/2}$ , which will be recognized as being the well-known Froude number $V/(gl)^{1/2}$ . Other forms of Froude number representation could have been used (e.g., based on load), but the ratio $C_{v}/\\lambda^{1/2}$ is used since it is identical in form and equal to 0.296 times the speed-length ratio. It is emphasized that the drag-lift ratios given in Fig. 15 apply only to the 9-in. test model and are not to be directly applied to full-scale boats. The plots are given merely to indicate typical variations in the drag-lift ratio of planing surfaces.",
+        "bbox": [
+            114,
+            167,
+            527,
+            420
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "It is seen from Fig. 15 that the ratio $D / \\Delta$ plotted against $C_v / \\lambda^{1/2}$ generally collapse onto a single curve for each test trim over the test ranges of $\\lambda$ and $C_v$ . It is also seen that, up to a ratio of $C_v / \\lambda^{1/2} \\approx 1$ there is a very rapid increase in the ratio $D / \\Delta$ for all test trims. At $\\tau > 2^\\circ$ and at $C_v / \\lambda^{1/2} > 1$ , the ratio $D / \\Delta$ is nearly constant for any combination of speed and wetted length. For $\\tau = 2^\\circ$ , the curve of $D / \\Delta$ appears to approach a constant value for ratios of $C_v / \\lambda^{1/2} > 2$ .",
+        "bbox": [
+            109,
+            420,
+            519,
+            545
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The above variations of $D/\\Delta$ can be associated with observed changes of the flow conditions around the planing surface. It was found that, at $C_{v} \\geq 2.0$ there was a clean separation of the fluid from the chines and the transom. Further, at $C_{v} \\leq 1.00$ the degree of flow separation from the transom was, at a given trim angle, a function of the wetted length, the shorter the wetted length, the greater the flow separation. With increasing degree of flow separation from the transom, the drag force is increased and hence the ratio $D/\\Delta$ is increased until complete flow separation has occurred along the chines and transom.",
+        "bbox": [
+            106,
+            545,
+            517,
+            710
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "If planing is defined to exist when the fluid breaks away from the transom and chines, then, using Fig. 15, the inception of planing can be defined to occur when $C_{v}/\\lambda^{1/2}=1$ for $\\tau\\geq4^{\\circ}$ and at $C_{v}/\\lambda^{1/2}=2$ for $\\tau=2^{\\circ}$ . In essence then, planing occurs when the drag-lift ratio at a given trim angle is essentially constant. Other definitions of planing can be found in the literature. For example, Locke [6] defines the inception of planing to occur when, at a given $\\lambda$ and $\\tau$ , the load carried by the planing surface varies as the square of the speed. This implies that the buoyant component of the lift is negligible. In both definitions only the bottom of the planing surface is wetted. The use of the ratio $C_{v}/\\lambda^{1/2}=1$ defines the point at which this phenomenon first occurs.",
+        "bbox": [
+            101,
+            710,
+            513,
+            909
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "An exact definition of the inception of planing is, of course, not important. The foregoing criterion appear to be a convenient guide in classifying boats. It is clear from Fig. 15 that when a boat does start to “plane” it has the largest resistance for a fixed trim angle. The resistance decreases sharply when the ratio $C_{v}/\\lambda^{1/2}$ is reduced to values less than 1.0.",
+        "bbox": [
+            540,
+            90,
+            957,
+            188
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "From equation (25) the drag-lift ratio of a planing surface can be calculated as follows:",
+        "bbox": [
+            540,
+            189,
+            954,
+            218
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {D}{\\Delta} = \\tan \\tau + \\frac {\\rho V _ {1} ^ {2} C _ {f} \\lambda b ^ {2}}{2 \\Delta \\cos \\beta \\cos \\tau} \\tag {26}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            640,
+            222,
+            952,
+            255
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Multiplying and dividing the second term of the right-hand side by $V^{2}$ and substituting $C_{L}$ for $2\\Delta/\\rho V^{2}b^{2}$ results in",
+        "bbox": [
+            537,
+            257,
+            952,
+            299
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {D}{\\Delta} = \\tan \\tau + \\frac {\\left(\\frac {V _ {1}}{V}\\right) ^ {2} C _ {f} \\lambda}{C _ {L} \\cos \\tau \\cos \\beta} \\tag {27}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            637,
+            306,
+            947,
+            354
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "In the foregoing expression $C_L = C_{L_0}$ if $\\beta = 0$ and $C_L = C_{L\\beta}$ if $\\beta \\neq 0$ . The ratio $V_1 / V$ is given in Fig. 14. The friction coefficient $C_f$ is a function of Reynolds number which in turn increases with increasing size of the planing boat. Since, as shown by Schoenherr, the turbulent friction coefficient decreases with increasing Reynolds number, the ratio $D / \\Delta$ will decrease slightly with increasing boat size for a given combination of $\\lambda$ , $\\tau$ , $\\beta$ , and $C_v$ .",
+        "bbox": [
+            532,
+            354,
+            947,
+            478
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Equation (27) has been used to compute the ratio $D / \\Delta$ for $0^{\\circ}$ , $10^{\\circ}$ and $20^{\\circ}$ deadrise surfaces at trim angles of $2^{\\circ}$ , $4^{\\circ}$ , $6^{\\circ}$ and $8^{\\circ}$ . Mean wetted length-beam ratios, $\\lambda$ , were varied from 1 to 4, and speed coefficients up to $C_v = 10$ were used in various combinations. The computations were made for a beam, $b$ , of 5 ft and 10 ft. As expected, for $\\tau = 4^{\\circ}$ , the $D / \\Delta$ ratio was essentially constant when $C_v / \\lambda^{1/2} > 1.0$ . For $\\tau = 2^{\\circ}$ , the $D / \\Delta$ ratio was essentially constant when $C_v / \\lambda^{1/2} > 2.0$ . The results of this computation are given in Fig. 16 to illustrate the effect of trim, deadrise, and size of boat on the drag-lift ratio. Each computed point represents the average of five different combinations of $C_v / \\lambda^{1/2}$ . On the average, there was approximately a 5 percent spread in the computed values for any trim-deadrise combination. For more exact values of $D / \\Delta$ it is recommended that detailed evaluations of equation (27) be carried out for specific cases.",
+        "bbox": [
+            529,
+            479,
+            942,
+            728
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "It is evident from Fig. 16 that for any given deadrise, there is an optimum trim angle for lowest ratios of $D/\\Delta$ . Small decreases in trim angle below the optimum cause large increases in resistance. Small increases in trim angle above the optimum result in moderate increases in resistance. Increasing deadrise angle increases the resistance for a given trim angle. For a deadrise of $0^{\\circ}$ , the lowest resistance that can be expected is approximately 12 percent of the load at a trim angle of approximately $4.5^{\\circ}$ . It will be noted that the optimum trim angle increases slightly with increasing deadrise angle. The effect of increasing the size of the boat beam from 5 to 10 ft is to reduce the $D/\\Delta$ ratios by nearly 4 percent.",
+        "bbox": [
+            521,
+            729,
+            936,
+            915
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "84",
+        "bbox": [
+            101,
+            921,
+            120,
+            933
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            772,
+            931,
+            931,
+            944
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "$V_{1}$ AVERAGE BOTTOM VELOCITY\nV FORWARD PLANING VELOCITY",
+        "bbox": [
+            212,
+            80,
+            470,
+            118
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV _ {1} / V = \\sqrt {1 - \\frac {0 . 0 1 2 0 \\tau^ {1 . 1}}{\\lambda^ {\\frac {1}{2}} \\cos \\tau} f (\\beta)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            633,
+            84,
+            872,
+            125
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "chart",
+        "img_path": "images/563e68232176121efef5f6d0862cb3e7423e3cbf933a2960807e3fb528d3cd08.jpg",
+        "content": "| T | X | V1/V |\n| --- | --- | --- |\n| \\(2{}^{\\circ}\\) | ~0.25 | ~0.98 |\n| \\(2{}^{\\circ}\\) | ~0.75 | ~0.98 |\n| \\(4{}^{\\circ}\\) | ~0.25 | ~0.96 |\n| \\(4{}^{\\circ}\\) | ~0.75 | ~0.97 |\n| \\(6{}^{\\circ}\\) | ~0.25 | ~0.94 |\n| \\(6{}^{\\circ}\\) | ~0.75 | ~0.96 |\n| \\(8{}^{\\circ}\\) | ~0.25 | ~0.92 |\n| \\(8{}^{\\circ}\\) | ~0.75 | ~0.94 |\n| \\(10{}^{\\circ}\\) | ~0.25 | ~0.89 |\n| \\(10{}^{\\circ}\\) | ~0.75 | ~0.93 |\n| \\(12{}^{\\circ}\\) | ~0.25 | ~0.86 |\n| \\(12{}^{\\circ}\\) | ~0.75 | ~0.92 |\n| \\(14{}^{\\circ}\\) | ~0.25 | ~0.82 |\n| \\(14{}^{\\circ}\\) | ~0.75 | ~0.91 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            98,
+            151,
+            516,
+            297
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "chart",
+        "img_path": "images/bbe74b5d4c89cddd8df822589af06b3f9b9472f420eb6eb3b0844486114ba422.jpg",
+        "content": "| T | X (approximate) |\n| --- | --- |\n| \\(2{}^{\\circ}\\) | ~0.1 ~0.9 |\n| \\(4{}^{\\circ}\\) | ~0.1 ~0.9 |\n| \\(6{}^{\\circ}\\) | ~0.1 ~0.9 |\n| \\(10{}^{\\circ}\\) | ~0.1 ~0.9 |\n| \\(12{}^{\\circ}\\) | ~0.1 ~0.9 |\n| \\(15{}^{\\circ}\\) | ~0.1 ~0.9 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            584,
+            161,
+            929,
+            300
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "chart",
+        "img_path": "images/b788903d85cfcd13734c0ca9432c4dab903caff008df0baf1707d8c6c6e32940.jpg",
+        "content": "| \\(\\lambda\\) | \\(V1/V (\\tau=2{}^{\\circ})\\) | \\(V1/V (\\tau=4{}^{\\circ})\\) | \\(V1/V (\\tau=6{}^{\\circ})\\) | \\(V1/V (\\tau=10{}^{\\circ})\\) | \\(V1/V (\\tau=12{}^{\\circ})\\) | \\(V1/V (\\tau=15{}^{\\circ})\\) |\n|---|---|---|---|---|---|---|\n| 0.5 | ~0.99 | ~0.98 | ~0.97 | ~0.93 | ~0.91 | ~0.86 |\n| 1.0 | ~0.99 | ~0.98 | ~0.97 | ~0.94 | ~0.92 | ~0.90 |\n| 2.0 | ~0.99 | ~0.98 | ~0.97 | ~0.95 | ~0.93 | ~0.92 |\n| 3.0 | ~0.99 | ~0.98 | ~0.97 | ~0.95 | ~0.94 | ~0.93 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            94,
+            313,
+            509,
+            484
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "chart",
+        "img_path": "images/1be350e479642e6ea897a32bce1c87c7d29c2dbd367e2900b9960b260a6bd301.jpg",
+        "content": "| \\(\\lambda\\) | \\(T=4{}^{\\circ}\\) | \\(T=6{}^{\\circ}\\) | \\(T=10{}^{\\circ}\\) | \\(T=12{}^{\\circ}\\) | \\(T=15{}^{\\circ}\\) |\n|---|---|---|---|---|---|\n| 0.5 | ~0.95 | ~0.85 | ~0.75 | ~0.65 | ~0.55 |\n| 1.0 | ~0.98 | ~0.92 | ~0.85 | ~0.75 | ~0.65 |\n| 2.0 | ~0.99 | ~0.96 | ~0.92 | ~0.85 | ~0.78 |\n| 3.0 | ~1.00 | ~0.98 | ~0.95 | ~0.90 | ~0.82 |",
+        "chart_caption": [
+            "Fig. 14 Magnitude of average botton velocity for a planing surface"
+        ],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            578,
+            321,
+            924,
+            488
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Included in Fig. 16 is a plot of $\\tan\\tau$ which is the pressure component of the total drag. The difference between $\\tan\\tau$ and the curves $D/\\Delta$ represents the drag component due to viscous (friction) drag. It is seen that at low trim angles the total drag is predominantly friction drag while at high trim angles it is predominantly pressure drag. At $\\tau = 4^{\\circ}$ the total drag for $\\beta = 0$ is nearly one half pressure drag and one half friction drag.",
+        "bbox": [
+            84,
+            525,
+            496,
+            637
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The foregoing trends in resistance variation with trim and deadrise have been shown by many experimenters in cross plots of their specific test data. Fig. 16 presents the results of computations and includes a recognition of the fact that $D/\\Delta$ ratios for a given trim angle, are essentially independent of various combinations of $C_{v}$ and $\\lambda$ providing that $C_{v}/\\lambda^{1/2} \\geq 2$ for $\\tau = 2^{\\circ}$ , and $C_{v}/\\lambda^{1/2} \\geq 1$ for $\\tau \\geq 4^{\\circ}$ .",
+        "bbox": [
+            84,
+            637,
+            495,
+            748
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Center of Pressure of Planing Surfaces",
+        "text_level": 2,
+        "bbox": [
+            158,
+            757,
+            418,
+            772
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "It has been shown in [9] that the resultant center of pressure of planing surfaces can be fairly accurately evaluated by separate considerations of the buoyant and dynamic force components of the lift. The center of pressure of the dynamic component is taken to be at 75 percent of the mean wetted length forward of the transom, while the center of pressure of the buoyant force is assumed to be 33 percent forward of the transom. These distances are, of course, approximations but are acceptable in the empirical development of this paper. Adding the moments taken about the transom for each of the two components of the total load and then dividing by the total load gives an expression for the distance of the center of pressure forward of the transom. By using the values of the buoyant and dynamic force components given in (15), the center of pressure, $C_{p}$ , is found to be a distance forward of the transom equal to",
+        "bbox": [
+            81,
+            773,
+            493,
+            902
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            508,
+            529,
+            923,
+            643
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {p} = \\frac {l _ {p}}{\\lambda b} = 0. 7 5 - \\frac {1}{5 . 2 1 \\frac {C _ {v} {} ^ {2}}{\\lambda^ {2}} + 2 . 3 9} \\tag {28}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            583,
+            646,
+            919,
+            691
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "where $C_{p}$ is the ratio of the longitudinal distance from the transom to the center of pressure divided by the mean wetted length.",
+        "bbox": [
+            506,
+            695,
+            919,
+            738
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A comparison between (28) and actual test data is given in Fig. 17 of reference [9]. Excellent agreement exists between the formula and data. It is seen that $C_{p}$ is essentially independent of trim angle and/or dead-rise angle. A working plot of equation (28) is given in Fig. 17 of this paper. When the wetted length and speed coefficient are known, the value of $C_{p}$ can be quickly determined from this chart.",
+        "bbox": [
+            504,
+            738,
+            919,
+            849
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Porpoising Stability Limits",
+        "text_level": 2,
+        "bbox": [
+            624,
+            859,
+            799,
+            875
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Porpoising is defined as the combined oscillations of a boat in pitch and in heave, of sustained or increasing",
+        "bbox": [
+            504,
+            876,
+            918,
+            907
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            83,
+            917,
+            194,
+            929
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "85",
+        "bbox": [
+            897,
+            925,
+            915,
+            935
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/24cab701f0b909af3244e37d00f36f67c1ad05c764d33b9ff6f12c30ff02de78.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            223,
+            85,
+            821,
+            589
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\beta = 2 0 ^ {\\circ} \\\\ b = 9 ^ {\\prime \\prime} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            676,
+            474,
+            725,
+            501
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Fig. 15 Variation of drag-lift ratio with speed coefficient",
+        "bbox": [
+            328,
+            595,
+            705,
+            611
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "amplitude, occurring while planing on smooth water. It is peculiar to high-speed planing hulls and will lead to structural damage when the motions become so severe that the hull is thrown entirely out of the water. It may also result in diving (tripping over the bow) when the low trim angles, reached in the lower part of the porpoising cycle cause the bow to dig in. This longitudinal instability has been responsible for many serious boating accidents, and at one time, was considered to be a rather mysterious unknown phenomenon. With the constantly increasing speed of modern planing boats, porpoising is becoming a major problem in planing-boat design.",
+        "bbox": [
+            98,
+            652,
+            506,
+            821
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Designers of water-based aircraft were faced with the problem of porpoising instability early in 1930. Perring and Glauert [18] in England developed a theory of porpoising instability in 1933. The practical application of this theory to seaplane design problems was not successful since the theory required an accurate knowledge of certain hydrodynamic derivatives which could only be obtained experimentally. In fact, the experimental determination of these derivatives were more time-consuming and more involved than a direct measure of the actual porpoising limits. In 1942, Sottorf [19], in Germany, conducted a systematic model study on the stability limits of a series of float designs suitable for float seaplanes. Sottorf's experimental work showed that porpoising limits for seaplane floats could be easily predicted in terms of the basic planing coefficients $C_v$ , $C_L$ , and $\\tau$ . In the United States, Davidson, and Locke [20], Benson [21], Parkinson [22] also conducted systematic experimental studies of porpoising limits for water-based aircraft and also showed that the inception of porpoising could be predicted in terms of the basic planing coefficients.",
+        "bbox": [
+            96,
+            821,
+            504,
+            909
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            659,
+            931,
+            882
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "With the water-based aircraft experience as a guide,\nDay and Haag [23] in 1952 undertook a systematic series of tests of constant deadrise prismatic planing surfaces to determine porpoising limits for planing-hull forms. The purpose of their study was to provide the boat designer with useful data on the inception of porpoising in terms of the boat trim, speed, weight, and deadrise. The results of the research by Day and Haag are presented in this paper in a graphical form which can be easily used by the designer of planing boats. These results are constantly used by the Davidson Laboratory as a guide in estimating the porpoising limits of planing hulls.",
+        "bbox": [
+            517,
+            883,
+            929,
+            915
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "86",
+        "bbox": [
+            98,
+            920,
+            116,
+            931
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            769,
+            931,
+            926,
+            945
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/5489132719541a7ada231601106662c99951cdc6c4b32184f5f4717b15f7e640.jpg",
+        "image_caption": [
+            "Fig. 16 Variation of drag-lift ratio for prismatic planing surfaces"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            207,
+            87,
+            803,
+            388
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            78,
+            431,
+            491,
+            584
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Briefly the results of the porpoising study showed that for a given deadrise angle, there was a specific relationship between trim angle, $\\tau$ , and lift coefficient, $C_{L}$ , which defined the inception of porpoising. These relations are shown graphically in Fig. 18 for $0^{\\circ}$ , $10^{\\circ}$ and $20^{\\circ}$ deadrise prismatic planing surfaces. The combinations of $\\tau$ and $C_{L}$ which fall below the limit curves indicate stable operation while those above the line indicate the existence of porpoising.",
+        "bbox": [
+            76,
+            584,
+            488,
+            709
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "It is seen that, as the lift coefficient is decreased, indicating a lightly loaded hull and/or a high planing speed, the trim limit for stability is decreased. Further, the effect of increasing deadrise is to increase the trim angle before the inception of porpoising. In any case, if a boat is porpoising at a given speed and load, the rule is to lower the trim angle to avoid porpoising. The lower trim angle can be achieved in several ways. One method is to move the longitudinal center of gravity forward. If this cannot be done and if the boat dimensions are fixed, the addition of a small transverse wedge across the bottom at the transom will lower the running trim at only a small cost in added resistance.",
+        "bbox": [
+            73,
+            709,
+            486,
+            891
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "It may be of interest at this point to compare the trim requirements to avoid porpoising with the trim angle which results in minimum resistance. It was shown in Fig. 16 that a trim angle of approximately $4^{\\circ}$ to $5^{\\circ}$ resulted in minimum drag-lift ratio. The porpoising limits in Fig. 18 require a trim angle as low as $1^{\\circ}$ to $2^{\\circ}$ to achieve stable operation of a high-speed boat. Hence, because of porpoising considerations it is necessary to operate the boat at an unfavorably low trim angle where the resistance is high. Increasing the hull deadrise alleviates this situation since as shown in Fig. 18 the trim angle required to avoid porpoising increases with increasing deadrise angle. Hence, increasing the deadrise will enable a planing surface to operate at trim angles more closely approaching those required for minimum drag-lift ratios. Methods for computing the running trim angle for planing surfaces will be discussed in a subsequent section of this paper.",
+        "bbox": [
+            89,
+            891,
+            483,
+            907
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            501,
+            436,
+            916,
+            674
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "It will be noted that the porpoising limits are not dependent upon the pitch moment of inertia of the boat. Experimental studies by Locke [24] wherein the moment of inertia was increased and decreased by significant amounts showed a negligible effect on the porpoising inception boundary. What was observed was a change in frequency of oscillatory motion; increasing frequency for small values of pitch inertia and lower frequency for large inertias.",
+        "bbox": [
+            500,
+            674,
+            913,
+            797
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Method for Evaluating Performance of Prismatic Planing Forms",
+        "text_level": 2,
+        "bbox": [
+            498,
+            816,
+            759,
+            844
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "The preceding sections of this paper have presented the results of elemental studies of the fundamentals of planing and have summarized the results in terms of equations and design charts. To be of use to the designer, it is important that these data be combined to formulate simple computational procedures to predict the horsepower requirements and porpoising stability of prismatic planing hulls. This section of the paper presents a method for computing the running trim, wetted length, resistance, power requirements and stability of a given planing hull over wide speed ranges and for arbitrary locations and inclinations of the propeller shaft line relative to the center of gravity of the hull.",
+        "bbox": [
+            496,
+            853,
+            908,
+            912
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            73,
+            920,
+            184,
+            934
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "page_number",
+        "text": "87",
+        "bbox": [
+            887,
+            929,
+            905,
+            940
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            107,
+            95,
+            517,
+            222
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "In 1950, Murray [8] presented a computational procedure for predicting resistance which was based on the elemental planing data available at that time, reference [7]. No consideration was given to the effect of propeller thrust on the hull lift and pitching moment and, since porpoising information was not, at that time available, porpoising stability limits were not defined. The new planing equations presented in this paper (based on [9]) are applicable for much lower speed coefficients than those used in Murray's paper and, in addition, the new expression for center of pressure is much simpler in form than that used by Murray. DuCane [25] presents a computational procedure which is based on the early planing equations and which is essentially similar to that presented by Murray. In 1959, Clement and Pope [26] presented a series of graphs for predicting the resistance of planing hulls at high speeds. The lift and moment equations used by these authors were those developed by Shuford [27] and are applicable only at $C_v > 10$ where the buoyant forces are negligible. Most planing surfaces operate at lower speed coefficients wherein the buoyant contribution to lift is important. In 1963, Koelbel [28] used the new Davidson Laboratory planing relations, reference [9], to develop a simple graphical procedure for predicting the powering requirements of planing hulls when the effect of propeller thrust on lift and pitching moment is neglected and when it can be assumed that the viscous component of drag passes through the center of gravity. The relative simplicity of Koebel's design charts are so attractive that they are included in this paper.",
+        "bbox": [
+            101,
+            222,
+            514,
+            651
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "There are in the literature test results on related series of planing boats which provide excellent design information on families of specific hull designs. Davidson and Suarez [29] present the results for EMB Series 50, a family of planing boats designed by DTMB. Clement and Blount [30] have developed a new hull series designated TMB Series 62 and their results are presented in [30]. These series data can be used to predict the performance of projected new designs which are similar in geometry, loading, and operating conditions to those hull forms investigated in the series.",
+        "bbox": [
+            98,
+            651,
+            509,
+            805
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Performance Prediction Methods—Analysis",
+        "text_level": 2,
+        "bbox": [
+            99,
+            813,
+            385,
+            828
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "In the present paper the object is to utilize basic planing equations to formulate methods for predicting the performance of a prismatic planing hull whether or not it be a member of a tested series. The computational method involves the determination of the running trim and resistance which will provide for equilibrium conditions of the hull at a given running speed, load, and center of gravity location. The accompanying sketch shows the forces and moments acting on a planing hull.",
+        "bbox": [
+            98,
+            830,
+            508,
+            917
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            529,
+            97,
+            944,
+            143
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8c7d0e013a992154ed4a956e5c6d404c9b952a23c1c852aaa14a80ed28aac59.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "b/2 TANβ\na\nLc\nLCG\nDf\ne\nT\nN\nC\nLk\nb/4 TANβ\nd\nr\nV",
+        "sub_type": "text_image",
+        "bbox": [
+            535,
+            162,
+            936,
+            294
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            527,
+            314,
+            576,
+            327
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "T = propeller thrust, lb",
+        "bbox": [
+            550,
+            334,
+            730,
+            349
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\Delta_{\\Delta}=$ weight of boat, lb",
+        "bbox": [
+            550,
+            349,
+            723,
+            364
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$D_{f} = \\text{viscous component of drag, (assumed as acting parallel to keel line, midway between keel and chine lines), lb}$",
+        "bbox": [
+            545,
+            364,
+            939,
+            405
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\tau = \\text{trim angle of keel, deg}$",
+        "bbox": [
+            555,
+            405,
+            756,
+            420
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "LCG = longitudinal distance of center of gravity from transom, measured along keel, ft",
+        "bbox": [
+            527,
+            419,
+            937,
+            446
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "CG = center of gravity",
+        "bbox": [
+            537,
+            446,
+            714,
+            460
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\epsilon =$ inclination of thrust line relative to keel, deg",
+        "bbox": [
+            557,
+            460,
+            910,
+            474
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "N = resultant of pressure forces acting normal to bottom, lb",
+        "bbox": [
+            547,
+            474,
+            937,
+            501
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$a = \\text{distance between } D_{f} \\text{ and CG (measured normal to } D_{f}), \\text{ ft}$",
+        "bbox": [
+            552,
+            502,
+            937,
+            529
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$f = \\begin{array}{c}\\text{distance between } T \\text{ and CG (measured normal}\\\\ \\text{to shaft line), ft} \\end{array}$",
+        "bbox": [
+            553,
+            529,
+            937,
+            556
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "c = distance between N and CG (measured normal to N), ft",
+        "bbox": [
+            553,
+            556,
+            937,
+            584
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\beta = \\text{deadrise angle, deg}$",
+        "bbox": [
+            552,
+            585,
+            728,
+            599
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$b = \\mathrm{beam, ft}$",
+        "bbox": [
+            553,
+            599,
+            653,
+            612
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$L_{k} =$ wetted keel length, ft",
+        "bbox": [
+            545,
+            612,
+            746,
+            626
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$L_{c}$ = wetted chine length (from transom to spray root intersection with chine), ft",
+        "bbox": [
+            545,
+            627,
+            936,
+            654
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$V = \\text{planing speed, fps}$",
+        "bbox": [
+            549,
+            654,
+            720,
+            667
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$d =$ draft of keel at transom, ft",
+        "bbox": [
+            550,
+            667,
+            785,
+            681
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "For Vertical Equilibrium of Forces:",
+        "bbox": [
+            522,
+            686,
+            774,
+            703
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta_ {0} = N \\cos \\tau + T \\sin (\\tau + \\epsilon) - D _ {f} \\sin \\tau \\tag {29}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            580,
+            708,
+            933,
+            726
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "For Horizontal Equilibrium of Forces:",
+        "bbox": [
+            521,
+            729,
+            794,
+            744
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT \\cos (\\tau + \\epsilon) = D _ {f} \\cos \\tau + N \\sin \\tau \\tag {30}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            599,
+            750,
+            933,
+            767
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "For Equilibrium of Pitching Moments:",
+        "bbox": [
+            521,
+            771,
+            799,
+            787
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "equation",
+        "text": "$$\nN c + D _ {f} a - T f = 0 \\tag {31}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            643,
+            794,
+            933,
+            811
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "For a given boat design the quantities $\\Delta_{\\Delta}$ , a, b, $\\epsilon$ , LCG, f, and $\\beta$ are specified. The unknowns in the foregoing equations of equilibrium are evaluated by a solution of these simultaneous equations together with the planing formulas for lift, drag, and center of pressure. An analytical solution of these equations is extremely tedious and cumbersome and hence a numerical computational",
+        "bbox": [
+            517,
+            819,
+            934,
+            920
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "page_number",
+        "text": "88",
+        "bbox": [
+            101,
+            931,
+            119,
+            941
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            772,
+            935,
+            931,
+            948
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/1a8e06247d2057d62d31aaf8ca516c8d489fce4411ae317aba6271d4031abc70.jpg",
+        "image_caption": [
+            "Table 1 Computational Procedure Hydrodynamic Performance of Prismatic Planing Hull (General Case)"
+        ],
+        "image_footnote": [],
+        "content": "Lc\nLCG\nΔ\nL\nf\nV\nb/2 TANβ\na\nDf\nε\nG\nT\nd\nc\nN\nb/4 TANβ\nLx",
+        "sub_type": "text_image",
+        "bbox": [
+            380,
+            74,
+            883,
+            256
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "EQUILIBRIUM TRIM ( $\\tau_{e}$ )",
+        "bbox": [
+            88,
+            258,
+            215,
+            270
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Trim at which (30) = 0",
+        "bbox": [
+            89,
+            271,
+            238,
+            282
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Assume line AR interpolation between",
+        "bbox": [
+            89,
+            282,
+            326,
+            292
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tau = 2 ^ {\\circ} \\text {and} \\tau = 3 ^ {\\circ}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            292,
+            209,
+            303
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tau_ {e} = 2 ^ {\\circ} + \\frac {1 4 9 , 9 6 0}{1 4 9 , 9 6 0 + 3 3 6 , 6 0 0} \\sim 2. 3 ^ {\\circ}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            88,
+            309,
+            320,
+            335
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Horizontal Drag Force",
+        "bbox": [
+            86,
+            340,
+            207,
+            352
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD = 9 4 2 4 - (9 4 3 4 - 8 3 0 4) \\frac {3}{1 0}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            86,
+            354,
+            281,
+            376
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD = 9 0 9 5 \\mathrm{lb}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            86,
+            375,
+            166,
+            386
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Effective Horsepower",
+        "bbox": [
+            86,
+            393,
+            199,
+            404
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{EHP} = \\frac {D \\times V}{5 5 0} = \\frac {9 0 9 5 \\times 6 7 . 5}{5 5 0} = 1 1 1 5 \\mathrm{hp}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            84,
+            405,
+            352,
+            430
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Equilibrium Mean Wetted Length-Beam Ratio",
+        "bbox": [
+            84,
+            436,
+            326,
+            448
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\lambda_ {e} = 3. 8 5 - (3. 8 5 - 2. 6 0) \\frac {3}{1 0} = 3. 2 9\n$$",
+        "text_format": "latex",
+        "bbox": [
+            83,
+            449,
+            316,
+            472
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Wetted Keel Length",
+        "bbox": [
+            83,
+            478,
+            192,
+            489
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {k} = \\lambda_ {e} b + \\frac {b \\tan \\beta}{2 \\pi \\tan \\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            81,
+            491,
+            212,
+            513
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {k} = 4 6 + \\frac {1 4}{2 \\pi} \\frac {\\tan 1 0 ^ {\\circ}}{\\tan 2 . 3 ^ {\\circ}} = 5 5. 9 \\mathrm{ft}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            81,
+            521,
+            285,
+            545
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Wetted Chine Length",
+        "bbox": [
+            81,
+            550,
+            196,
+            561
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {\\mathrm{c}} = \\lambda_ {c} b - \\frac {b}{2 \\pi} \\frac {\\tan \\beta}{\\tan \\tau} = 3 6. 1 \\mathrm{ft}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            80,
+            563,
+            271,
+            588
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Draft of Keel at Transom",
+        "bbox": [
+            80,
+            594,
+            215,
+            604
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nd = L _ {k} \\sin \\tau_ {e} = 5 5. 9 \\times \\tan 2. 3 ^ {\\circ}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            80,
+            604,
+            279,
+            618
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\nd = 2. 2 4 \\mathrm{ft}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            80,
+            618,
+            153,
+            628
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Porpoising Stability",
+        "bbox": [
+            80,
+            637,
+            184,
+            648
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left(C _ {L _ {\\beta}} / 2\\right) ^ {1 / 2} = \\left(\\frac {0 . 0 6 9}{2}\\right) ^ {1 / 2} =\n$$",
+        "text_format": "latex",
+        "bbox": [
+            80,
+            648,
+            250,
+            674
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n0. 0 3 4 5 ^ {1 / 2} = 0. 1 8 6\n$$",
+        "text_format": "latex",
+        "bbox": [
+            245,
+            675,
+            349,
+            686
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "From Fig. 18, porpoising will occur if $\\tau_{e}74.5^{0}$ ; hence, present planing boat is stable.",
+        "bbox": [
+            76,
+            691,
+            349,
+            715
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/ded900bf71a030f8e0ec287d7739484a1d2c15c88e52d3d6702ce30fe149d6e8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            58,
+            743,
+            220,
+            781
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "GIVEN:",
+        "bbox": [
+            426,
+            258,
+            472,
+            271
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l l} \\Delta = 6 0, 0 0 0 \\mathrm{LB} & a = 1. 3 9 \\mathrm{FT} \\\\ \\mathrm{LCG} = 2 9. 0 \\mathrm{FT} & f = 0. 5 0 \\mathrm{FT} \\\\ \\mathrm{VCG} = 2. 0 \\mathrm{FT} & \\varepsilon = 4 ^ {\\circ} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            460,
+            273,
+            687,
+            316
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{r l} b & = 1 4 \\text {FT (AVERAGE)} \\\\ \\beta & = 1 0 ^ {\\circ} \\quad \\text {(AVERAGE)} \\\\ V & = 4 0 \\text {KNOTS (67.5 FT / SEC)} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            460,
+            320,
+            651,
+            362
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "REQUIRED:",
+        "bbox": [
+            727,
+            260,
+            799,
+            272
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\text {POWER REQUIREMENT} \\\\ \\text {PORPOISING LIMIT} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            738,
+            276,
+            875,
+            303
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\text { POWER   REQUIREMENT }}{V = 4 0 \\text { KNOTS }}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            727,
+            321,
+            867,
+            348
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "PLANING COEFFICIENTS:",
+        "bbox": [
+            424,
+            364,
+            586,
+            377
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} C _ {V} = V / \\sqrt {g b} = 4 0 \\times 1. 6 9 / \\sqrt {3 2 . 2 \\times 1 4} = 3. 1 8 \\\\ C _ {L _ {\\beta}} = \\Delta / \\frac {1}{2} \\rho V ^ {2} b ^ {2} = 6 0, 0 0 0 / 0. 9 7 \\times 6 7. 5 ^ {2} \\times 1 4 ^ {2} = 0. 0 6 9 \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            459,
+            378,
+            792,
+            420
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "table",
+        "img_path": "images/a560a9e05bd9c4f67c7b2efe587dd58aed9c64bb69d40ecb17723ddce715bcd2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Row</td><td>Quantity</td><td>Source</td><td> $\\tau = 2^{\\circ}$ </td><td> $\\tau = 3^{\\circ}$ </td><td> $\\tau = 4^{\\circ}$ </td></tr><tr><td>1</td><td> $\\tau^{1.1}$ </td><td>Figure 10</td><td>2.14</td><td>3.35</td><td>4.59</td></tr><tr><td>2</td><td> $C_{LQ}$ </td><td>Figure 11</td><td>.085</td><td>.085</td><td>.085</td></tr><tr><td>3</td><td> $C_{LQ}/\\tau^{1.1}$ </td><td>(2)/(1)</td><td>.0397</td><td>.0254</td><td>.0185</td></tr><tr><td>4</td><td> $\\lambda$ </td><td>Figure 10</td><td>3.85</td><td>2.60</td><td>1.86</td></tr><tr><td>5</td><td> $V_{m}$ </td><td>Figure 14</td><td>67.0</td><td>66.6</td><td>66.2</td></tr><tr><td>6</td><td> $R_{e}$ </td><td> $V_{m}\\lambda b/\\nu$ </td><td> $3.61 \\times 10^{8}$ </td><td> $2.42 \\times 10^{8}$ </td><td> $1.73 \\times 10^{8}$ </td></tr><tr><td>7</td><td> $C_{f}$ </td><td>Schoenherr</td><td>.00174</td><td>.00184</td><td>.00192</td></tr><tr><td>8</td><td> $\\Delta C_{f}$ </td><td>ATTC Standard Roughness</td><td>.0004</td><td>.0004</td><td>.0004</td></tr><tr><td>9</td><td> $C_{f} + \\Delta C_{f}$ </td><td>(7) + (8)</td><td>.00214</td><td>.00224</td><td>.00232</td></tr><tr><td>10</td><td> $D_{f}$ </td><td> $\\frac{\\rho V_{m}^{2}\\lambda b^{2}(C_{f} + \\Delta C_{f})}{2 \\cos \\beta}$ </td><td>7.340</td><td>5.160</td><td>3.760</td></tr><tr><td>11</td><td> $tan\\tau$ </td><td></td><td>.0349</td><td>.0524</td><td>.0698</td></tr><tr><td>12</td><td> $s\\ln\\tau$ </td><td></td><td>.0349</td><td>.0524</td><td>.0698</td></tr><tr><td>13</td><td> $cos\\tau$ </td><td></td><td>.9994</td><td>.9986</td><td>.9976</td></tr><tr><td>14</td><td> $\\Delta tan\\tau$ </td><td></td><td>2094</td><td>3144</td><td>4188</td></tr><tr><td>15</td><td> $D_{f}/cos\\tau$ </td><td>(10)/cosτ</td><td>7340</td><td>5160</td><td>3760</td></tr><tr><td>16</td><td>D</td><td>(14) + (15)</td><td>9434</td><td>8304</td><td>7948</td></tr><tr><td>17</td><td> $C_{p}$ </td><td>Figure 17</td><td>.59</td><td>.65</td><td>.70</td></tr><tr><td>18</td><td> $C_{p}\\lambda b$ </td><td></td><td>31.6</td><td>23.5</td><td>18.2</td></tr><tr><td>19</td><td>c</td><td>LCG - (18)</td><td>-2.6</td><td>5.5</td><td>10.8</td></tr><tr><td>20</td><td>(b/4)  $tan\\beta$ </td><td></td><td>.616</td><td>.616</td><td>.616</td></tr><tr><td>21</td><td>a</td><td>VCG - (20)</td><td>1.39</td><td>1.39</td><td>1.39</td></tr><tr><td>22</td><td> $s\\ln(\\tau + \\epsilon)$ </td><td></td><td>.1045</td><td>.1219</td><td>.1392</td></tr><tr><td>23</td><td>1 -  $s\\ln\\tau$   $s\\ln(\\tau + \\epsilon)$ </td><td>1 - (12) (22)</td><td>.9964</td><td>.9964</td><td>.9903</td></tr><tr><td>24</td><td>(23)  $\\left(\\frac{c}{cos\\tau}\\right)$ </td><td></td><td>-2.59</td><td>5.46</td><td>10.70</td></tr><tr><td>25</td><td> $f \\sin\\tau$ </td><td></td><td>.0174</td><td>.0262</td><td>.0349</td></tr><tr><td>26</td><td>(24) - (25)</td><td></td><td>-2.6</td><td>5.53</td><td>10.73</td></tr><tr><td>27</td><td> $\\Delta (26)$ </td><td></td><td>-156,500</td><td>332,000</td><td>645,000</td></tr><tr><td>28</td><td>(a - f)</td><td>(21) - f</td><td>.89</td><td>.89</td><td>.89</td></tr><tr><td>29</td><td> $D_{f}(a - f)$ </td><td>(10) (28)</td><td>6540</td><td>4600</td><td>3350</td></tr><tr><td>30</td><td>(27) + (29)</td><td>Eq 35</td><td>-149,960</td><td>336,600</td><td>648,350</td></tr></table>",
+        "bbox": [
+            357,
+            430,
+            905,
+            909
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            73,
+            919,
+            183,
+            931
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "page_number",
+        "text": "89",
+        "bbox": [
+            885,
+            930,
+            903,
+            940
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/48d2e023cec4826f273111ca411720b077907143cb94d222310965cd669d3c91.jpg",
+        "image_caption": [
+            "Table 2 Computational Procedure Hydrodynamic Performance of Prismatic Plan-\ning Hull (Case When all Forces Pass Through CG)"
+        ],
+        "image_footnote": [],
+        "content": "LCG\nΔ\nDf\nT\nτ\nN",
+        "sub_type": "text_image",
+        "bbox": [
+            276,
+            122,
+            709,
+            244
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "GIVEN:",
+        "text_level": 2,
+        "bbox": [
+            263,
+            248,
+            313,
+            261
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta = 6 0, 0 0 0 \\mathrm{LB}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            265,
+            423,
+            279
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{LCG} = 2 9. 0 \\mathrm{FT}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            281,
+            405,
+            292
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{VCG} = 2. 0 \\quad \\mathrm{FT}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            297,
+            405,
+            309
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\nb = 1 4 \\text {FT (AVERAGE)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            313,
+            468,
+            325
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\beta = 1 0 ^ {\\circ} \\quad (\\text {AVERAGE})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            328,
+            468,
+            343
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{V} = 4 0 \\text {KNOTS}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            345,
+            419,
+            357
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = c = f = \\epsilon = 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            359,
+            398,
+            371
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "REQUIRED:",
+        "text_level": 2,
+        "bbox": [
+            508,
+            251,
+            589,
+            263
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "POWER REQUIREMENT",
+        "bbox": [
+            531,
+            268,
+            692,
+            282
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "PORPOISING STABILITY",
+        "bbox": [
+            531,
+            284,
+            697,
+            297
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "POWER REQUIREMENT",
+        "text_level": 2,
+        "bbox": [
+            504,
+            347,
+            666,
+            361
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "V = 40 KNOTS (67.5 FT/SEC)",
+        "bbox": [
+            529,
+            364,
+            723,
+            378
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "PLANING COEFFICIENTS:",
+        "text_level": 2,
+        "bbox": [
+            258,
+            375,
+            437,
+            388
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {V} = V / \\sqrt {g b} = 4 0 \\times 1. 6 9 / \\sqrt {3 2 . 2 \\times 1 4} = 3. 1 8\n$$",
+        "text_format": "latex",
+        "bbox": [
+            303,
+            392,
+            581,
+            409
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC _ {L _ {\\beta}} = \\Delta / \\frac {1}{2} \\rho V ^ {2} b ^ {2} = 6 0, 0 0 0 / 0. 9 7 \\times 6 7. 5 ^ {2} \\times 1 4 ^ {2} = 0. 0 6 9\n$$",
+        "text_format": "latex",
+        "bbox": [
+            303,
+            410,
+            673,
+            436
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "table",
+        "img_path": "images/c391584d6b50a6c528345e31034cddfe1e3e5ddc7cb309c8232903607ebdaf51.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "Boat Is Stable"
+        ],
+        "table_body": "<table><tr><td>Row</td><td>Quantity</td><td>Source</td><td>Value</td></tr><tr><td>1</td><td> $C_{L0}$ </td><td>Figure 11</td><td>.085</td></tr><tr><td>2</td><td> $\\ell_{p}/b$ </td><td>LCG/b</td><td>2.07</td></tr><tr><td>3</td><td> $\\lambda$ </td><td>Figure 19</td><td>3.45</td></tr><tr><td>4</td><td> $C_{L0}/\\tau^{1.1}$ </td><td>Figure 19</td><td>.035</td></tr><tr><td>5</td><td> $\\tau^{1.1}$ </td><td>(1)/(4)</td><td>2.42</td></tr><tr><td>6</td><td> $\\tau$ </td><td></td><td>2.23°</td></tr><tr><td>7</td><td> $\\text{tant}$ </td><td></td><td>.039</td></tr><tr><td>8</td><td> $\\Delta \\text{tant}$ </td><td></td><td>2,340</td></tr><tr><td>9</td><td> $\\lambda b^{2}$ </td><td>(3) $b^{2}$ </td><td>675</td></tr><tr><td>10</td><td> $V_{m}'$ </td><td>Figure 14</td><td>66.9</td></tr><tr><td>11</td><td> $R_{e}$ </td><td> $V_{m}\\lambda b/v$ </td><td>3.22 × 108</td></tr><tr><td>12</td><td> $C_{f}$ </td><td>Schoenherr</td><td>.00177</td></tr><tr><td>13</td><td> $\\Delta C_{f}$ </td><td>ATTC Standard Roughness</td><td>.0004</td></tr><tr><td>14</td><td> $C_{f} + \\Delta C_{f}$ </td><td>(12) + (13)</td><td>.00217</td></tr><tr><td>15</td><td> $D_{f}$ </td><td> $\\frac{\\rho V_{m}^{2}\\lambda b^{2}(C_{f} + \\Delta C_{f})}{2\\cos\\beta}$ </td><td>6670</td></tr><tr><td>16</td><td> $D_{f}/\\cos\\tau$ </td><td></td><td>6670</td></tr><tr><td>17</td><td>D</td><td>(8) + (17)</td><td>9010</td></tr><tr><td>18</td><td>EHP</td><td>D × V/550</td><td>1100</td></tr><tr><td>19</td><td> $\\sqrt{CL_{\\beta}/\\beta}$ </td><td></td><td>.186</td></tr><tr><td>20</td><td> $\\tau$  porpoising</td><td>Figure 18</td><td> $\\leqslant 4.5^{\\circ}$ </td></tr></table>",
+        "bbox": [
+            256,
+            449,
+            691,
+            816
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "procedure is recommended. To simplify the computational procedure the equilibrium equations are rearranged as follows:",
+        "bbox": [
+            96,
+            849,
+            504,
+            888
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "It can be shown that",
+        "bbox": [
+            112,
+            891,
+            267,
+            905
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT ^ {\\prime} \\cos \\epsilon = \\Delta \\sin \\tau + D _ {f} \\tag {32}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            643,
+            856,
+            931,
+            875
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Substituting (32) into (29) and assuming that $\\cos \\epsilon \\approx 1$ results in",
+        "bbox": [
+            519,
+            883,
+            931,
+            910
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "page_number",
+        "text": "90",
+        "bbox": [
+            98,
+            922,
+            116,
+            933
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            771,
+            931,
+            931,
+            944
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "chart",
+        "img_path": "images/055450c7d7871ed7adc483e5f8f9a3b4dd4105122e3a7c27177be37f19c31cbb.jpg",
+        "content": "| Velocity Coefficient (Cv) | Center of Pressure (Cp) \\((\\lambda=1)\\) | Center of Pressure (Cp) \\((\\lambda=2)\\) | Center of Pressure (Cp) \\((\\lambda=3)\\) | Center of Pressure (Cp) \\((\\lambda=4)\\) | Center of Pressure (Cp) \\((\\lambda=5)\\) |\n| --- | --- | --- | --- | --- | --- |\n| 0 | 0.33 | 0.33 | 0.33 | 0.33 | 0.33 |\n| 1 | ~0.60 | ~0.48 | ~0.42 | ~0.38 | ~0.36 |\n| 2 | ~0.68 | ~0.58 | ~0.50 | ~0.44 | ~0.40 |\n| 3 | ~0.71 | ~0.64 | ~0.56 | ~0.50 | ~0.45 |\n| 4 | ~0.72 | ~0.67 | ~0.60 | ~0.54 | ~0.49 |\n| 5 | ~0.73 | ~0.69 | ~0.63 | ~0.57 | ~0.52 |\n| 6 | ~0.73 | ~0.70 | ~0.65 | ~0.59 | ~0.54 |\n| 7 | ~0.73 | ~0.71 | ~0.67 | ~0.61 | ~0.56 |\n| 8 | ~0.73 | ~0.71 | ~0.68 | ~0.62 | ~0.57 |\n| 9 | ~0.73 | ~0.71 | ~0.69 | ~0.63 | ~0.58 |",
+        "chart_caption": [
+            "Fig. 17. Center of pressure of planing surfaces"
+        ],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            84,
+            88,
+            915,
+            459
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta = N \\cos \\tau + \\Delta \\sin \\tau \\sin (\\tau + \\epsilon) \\tag {33}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            153,
+            503,
+            480,
+            522
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "so that",
+        "bbox": [
+            71,
+            523,
+            127,
+            537
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\nN = \\frac {\\Delta [ 1 - \\sin \\tau \\sin (\\tau + \\epsilon) ]}{\\cos \\tau} \\tag {34}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            160,
+            546,
+            478,
+            577
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Substituting (32) and (34) into (31)",
+        "bbox": [
+            68,
+            583,
+            331,
+            599
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\Delta \\left\\{\\frac {[ 1 - \\sin \\tau \\sin (\\tau + \\epsilon) ] c}{\\cos \\tau} - f \\sin \\tau \\right\\} \\\\ + D _ {f} (a - f) = 0 \\tag {35} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            68,
+            603,
+            475,
+            656
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "When $\\tau$ , c, and $D_{f}$ satisfy equation (35) the planing hull in equilibrium and the resistance, power, and stability are then easily evaluated.",
+        "bbox": [
+            66,
+            657,
+            475,
+            702
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Case When Thrust Axis is Parallel to Keel",
+        "bbox": [
+            66,
+            715,
+            370,
+            731
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "In many boat designs the shaft axis is nearly parallel to the keel line. If it is assumed that $\\epsilon = 0$ , equation (35) simplifies to",
+        "bbox": [
+            65,
+            734,
+            473,
+            777
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta (c \\cos \\tau - b \\sin \\tau ] + D _ {f} (a - f) = 0 \\tag {36}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            132,
+            786,
+            472,
+            804
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Case When Thrust Axis and Viscous Force Coincide and Pass Through Center of Gravity",
+        "bbox": [
+            63,
+            816,
+            460,
+            844
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "This case is the simplest to evaluate since, to achieve equilibrium in pitch, the hydrodynamic pressure force must pass through the center of gravity. It is assumed in this condition that the distances a and f and c are equal to zero and $\\epsilon = 0$ . This is the condition analyzed by Murray, Clement, and Koelbel in their respective computational procedures. The moment equation (31) is hence satisfied since a, f, and c are equal to zero. It is, of course, implicitly specified that $\\lambda C_{p}b = LCG$ . Hence combining (29) and (30)",
+        "bbox": [
+            60,
+            849,
+            472,
+            909
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            491,
+            508,
+            906,
+            593
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} N = \\Delta / \\cos \\tau \\\\ \\lambda C _ {p} b = \\mathrm{LCG} \\end{array} \\tag {37}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            637,
+            594,
+            901,
+            628
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "These two equations will satisfy the conditions of equilibrium for the case when $a = f = c = \\epsilon = 0$ . There are many practical planing-boat designs wherein these conditions are very nearly applicable.",
+        "bbox": [
+            488,
+            632,
+            901,
+            691
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Performance Prediction Methods—Computational Procedures",
+        "bbox": [
+            488,
+            696,
+            898,
+            714
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "The computational technique for the general case is developed in the form of tabulations which can be completed as a routine procedure. By setting $\\epsilon = 0$ the computations can be made applicable to Case 2; by setting $a = f = c = \\epsilon = 0$ and $\\lambda C_{p}b = LCG$ , the computations can be made applicable to Case 3. For the relatively simple Case 3, the detailed computations can be replaced by a design nomogram.",
+        "bbox": [
+            485,
+            715,
+            900,
+            830
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "General Case",
+        "bbox": [
+            485,
+            837,
+            576,
+            849
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "It is assumed that the hull geometry and loading conditions are known and that the trim angle, wetted length, power requirement, and measure of porpoising stability are required over a range of design speeds. Specifically the following initial information is required :",
+        "bbox": [
+            483,
+            854,
+            895,
+            915
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBEP. 1964",
+        "bbox": [
+            62,
+            921,
+            173,
+            934
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "page_number",
+        "text": "91",
+        "bbox": [
+            874,
+            931,
+            892,
+            943
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "chart",
+        "img_path": "images/f2a2dd9b8b0cce833398d8a7b72755cf41ae00ff0ae723cca8c5864dbf48f5fc.jpg",
+        "content": "| \\(\\sqrt{}\\)cL/2 | Trim Angle \\((\\beta=0{}^{\\circ})\\) | Trim Angle \\((\\beta=10{}^{\\circ})\\) | Trim Angle \\((\\beta=20{}^{\\circ})\\) |\n| --- | --- | --- | --- |\n| 0.13 | ~1.1 | ~2.7 | ~3.4 |\n| 0.20 | ~3.8 | ~4.9 | ~5.7 |\n| 0.25 | ~6.2 | ~7.1 | ~7.9 |\n| 0.30 | ~9.1 | ~9.5 | ~10.3 |",
+        "chart_caption": [
+            "Fig. 18 Porpoising limits for prismatic planing hulls"
+        ],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            254,
+            88,
+            803,
+            506
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            107,
+            559,
+            419,
+            575
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Given:",
+        "bbox": [
+            125,
+            574,
+            174,
+            585
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Dimensions and lines of boat (β, b)",
+        "bbox": [
+            140,
+            588,
+            393,
+            604
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Weight of boat, Δ",
+        "bbox": [
+            142,
+            603,
+            272,
+            616
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Propeller shaft line location (f, ε)",
+        "bbox": [
+            142,
+            617,
+            380,
+            631
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Center of gravity location (a, c, LCG)",
+        "bbox": [
+            142,
+            631,
+            416,
+            645
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Speed of boat, (V)",
+        "bbox": [
+            140,
+            645,
+            274,
+            657
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Required:",
+        "bbox": [
+            125,
+            657,
+            197,
+            670
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Running trim angle (τ)",
+        "bbox": [
+            140,
+            672,
+            308,
+            686
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Wetted length ( $L_{k}$ , $L_{c}$ )",
+        "bbox": [
+            140,
+            686,
+            303,
+            700
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Total resistance (D)",
+        "bbox": [
+            140,
+            699,
+            285,
+            714
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Draft of keel (d)",
+        "bbox": [
+            140,
+            713,
+            259,
+            727
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Power",
+        "bbox": [
+            140,
+            727,
+            187,
+            738
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Porpoising stability limit",
+        "bbox": [
+            140,
+            739,
+            321,
+            755
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The detailed computational procedure for determining the required values is given in Table 1 where a specific example is worked out. The procedure, at each speed, is to assume several values of trim angle and, for each trim, compute the quantities required to substitute into equation (35). It will be recalled that (35) contains all the conditions for force and moment equilibrium. The value of trim angle that makes equation (35) equal to zero is the required solution.",
+        "bbox": [
+            102,
+            755,
+            513,
+            880
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Column 1 in Table 1 is the quantity to be evaluated;\nColumn 2 is the source for evaluating this quantity (either by a mathematical formulation or by summary plots contained in this paper); and Columns 3, 4 and 5 are the computed value for each of three assumed trim angles. The last line of this tabulation contains the value of equation (35) for each of the assumed trim angles. By interpolating between the negative and positive values a trim angle is obtained which results in a zero value of this last quantity [equation (35) = 0]. This derived trim angle is then used to calculate the required values of wetted area, resistance and power requirements.",
+        "bbox": [
+            102,
+            880,
+            513,
+            912
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            529,
+            565,
+            941,
+            717
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Also included in Table 1 is the procedure for estimating the porpoising stability of the planing boat. The ratio $(C_{L}/2)^{1/2}$ is evaluated and substituted into the porpoising-stability curve appropriate for the given deadrise, Fig. 18. If the trim angle obtained from these curves is greater than the equilibrium trim angle computed in the foregoing, the planing boat is stable.",
+        "bbox": [
+            526,
+            718,
+            939,
+            816
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The foregoing procedures are carried out for the entire speed range of interest (with the restriction that $C_{v} \\geq 1.0$ ) and plots made of the resistance versus speed.",
+        "bbox": [
+            526,
+            816,
+            937,
+            859
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Case When Thrust Axis is Parallel to Keel",
+        "text_level": 2,
+        "bbox": [
+            527,
+            867,
+            802,
+            881
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The general procedure described in the foregoing is applied with the exception that $\\epsilon = 0$ .",
+        "bbox": [
+            526,
+            885,
+            937,
+            915
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "page_number",
+        "text": "92",
+        "bbox": [
+            104,
+            924,
+            122,
+            935
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            777,
+            931,
+            936,
+            945
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc59dcb7cc2a1d0baa9fb29e5b1deb642e22e3efd27502e4ccae4b1404a3ea62.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "LCG\nΔ\nDf\nT\nτ\nN",
+        "sub_type": "text_image",
+        "bbox": [
+            267,
+            90,
+            802,
+            244
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{LCG} = \\mathrm{C} _ {\\mathrm{p}} \\mathrm{b} \\lambda\n$$",
+        "text_format": "latex",
+        "bbox": [
+            640,
+            263,
+            730,
+            284
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "chart",
+        "img_path": "images/2819390710f8f4df8bcbd07857ee13bbf39221912a10ca2c198847bdb31ca7a5.jpg",
+        "content": "| p/b | \\(Cv (V/\\sqrt\\)gb) | \\(\\lambda (\\)Lm/b) |\n| --- | --- | --- |\n| 0.6 | ~0.5 | ~1.2 |\n| 0.6 | ~1.0 | ~1.5 |\n| 0.6 | ~2.0 | ~1.8 |\n| 0.6 | ~3.0 | ~2.0 |\n| 0.6 | ~4.0 | ~2.1 |\n| 0.6 | ~5.0 | ~2.2 |\n| 0.6 | ~6.0 | ~2.3 |\n| 0.6 | ~7.0 | ~2.4 |\n| 0.6 | ~8.0 | ~2.5 |\n| 0.6 | ~9.0 | ~2.6 |\n| 1.0 | ~0.5 | ~1.5 |\n| 1.0 | ~1.0 | ~1.8 |\n| 1.0 | ~2.0 | ~2.2 |\n| 1.0 | ~3.0 | ~2.6 |\n| 1.0 | ~4.0 | ~2.9 |\n| 1.0 | ~5.0 | ~3.2 |\n| 1.0 | ~6.0 | ~3.5 |\n| 1.0 | ~7.0 | ~3.8 |\n| 1.0 | ~8.0 | ~4.0 |\n| 1.0 | ~9.0 | ~4.2 |\n| 1.4 | ~0.5 | ~1.8 |\n| 1.4 | ~1.0 | ~2.2 |\n| 1.4 | ~2.0 | ~2.8 |\n| 1.4 | ~3.0 | ~3.4 |\n| 1.4 | ~4.0 | ~3.9 |\n| 1.4 | ~5.0 | ~4.3 |\n| 1.4 | ~6.0 | ~4.6 |\n| 1.4 | ~7.0 | ~4.9 |\n| 1.4 | ~8.0 | ~5.1 |\n| 1.4 | ~9.0 | ~5.3 |\n| 1.8 | ~0.5 | ~2.0 |\n| 1.8 | ~1.0 | ~2.6 |\n| 1.8 | ~2.0 | ~3.4 |\n| 1.8 | ~3.0 | ~4.2 |\n| 1.8 | ~4.0 | ~4.8 |\n| 1.8 | ~5.0 | ~5.2 |\n| 1.8 | ~6.0 | ~5.6 |\n| 1.8 | ~7.0 | ~5.9 |\n| 1.8 | ~8.0 | ~6.2 |\n| 1.8 | ~9.0 | ~6.5 |\n| 2.2 | ~0.5 | ~2.4 |\n| 2.2 | ~1.0 | ~3.2 |\n| 2.2 | ~2.0 | ~4.0 |\n| 2.2 | ~3.0 | ~4.8 |\n| 2.2 | ~4.0 | ~5.4 |\n| 2.2 | ~5.0 | ~5.9 |\n| 2.2 | ~6.0 | ~6.3 |\n| 2.2 | ~7.0 | ~6.7 |\n| 2.2 | ~8.0 | ~7.0 |\n| 2.2 | ~9.0 | ~7.3 |\n| 2.6 | ~0.5 | ~2.8 |\n| 2.6 | ~1.0 | ~3.6 |\n| 2.6 | ~2.0 | ~4.6 |\n| 2.6 | ~3.0 | ~5.4 |\n| 2.6 | ~4.0 | ~6.0 |\n| 2.6 | ~5.0 | ~6.5 |\n| 2.6 | ~6.0 | ~6.9 |\n| 2.6 | ~7.0 | ~7.3 |\n| 2.6 | ~8.0 | ~7.6 |\n| 2.6 | ~9.0 | ~7.9 |\n| 3.0 | ~0.5 | ~3.0 |\n| 3.0 | ~1.0 | ~3.8 |\n| 3.0 | ~2.0 | ~4.6 |\n| 3.0 | ~3.0 | ~5.4 |\n| 3.0 | ~4.0 | ~6.0 |\n| 3.0 | ~5.0 | ~6.5 |\n| 3.0 | ~6.0 | ~6.9 |\n| 3.0 | ~7.0 | ~7.3 |\n| 3.0 | ~8.0 | ~7.6 |\n| 3.0 | ~9.0 | ~7.9 |",
+        "chart_caption": [
+            "Fig. 19 Nomogram for equilibrium conditions when all forces act through CG"
+        ],
+        "chart_footnote": [],
+        "sub_type": "contour",
+        "bbox": [
+            81,
+            308,
+            913,
+            674
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Case When Thrust Axis and Viscous Force Coincide and Pass Through Center of Gravity",
+        "bbox": [
+            66,
+            733,
+            464,
+            762
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "For this relatively simple planing condition the empirical equations for planing lift, wetted area, and center of pressure can be combined into one summary plot. Koelbel has developed such a plot which is reproduced as Fig. 19 of this paper. From this plot, the equilibrium trim and wetted area are directly obtained without the necessity for interpolating between assumed values of trim (as for the general case). Table 2 presents the computational procedure which illustrates the use of Fig. 19 by a specific example.",
+        "bbox": [
+            63,
+            763,
+            473,
+            906
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The porpoising stability is determined in the manner previously described for the general planing case.",
+        "bbox": [
+            486,
+            742,
+            898,
+            776
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Representation of Specific Planing Form by Simple Prismatic Surface",
+        "bbox": [
+            486,
+            782,
+            756,
+            811
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The empirical planing equations developed herein are for a geometric form having constant deadrise, constant beam, and constant trim angle over the entire wetted planing area. Most practical planing-hull designs do have some longitudinal variation in these dimensions. It has been the experience at the Davidson Laboratory that, for a particular hull design, the deadrise angle and beam should be taken as the average in the stagnation line area of the hull. The trim angle should be taken as the average of the keel and chine buttock lines.",
+        "bbox": [
+            483,
+            814,
+            898,
+            919
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            63,
+            917,
+            174,
+            933
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "page_number",
+        "text": "93",
+        "bbox": [
+            874,
+            936,
+            893,
+            948
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            132,
+            82,
+            540,
+            125
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Care should be taken to assure that the calculated trim and wetted lengths do not result in wetted areas extending into the forward pulled-up bow sections of the hull. The empirical planing relations are not applicable for the bow wetted condition where there are extreme variations in deadrise angle and buttock lines. In fact, a necessary area of planing research is to define the forces on bow forms over a range of trim angles. These data will be of particular importance in the design of hulls for hydrofoil-boat application.",
+        "bbox": [
+            127,
+            125,
+            537,
+            265
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgment",
+        "text_level": 2,
+        "bbox": [
+            125,
+            284,
+            256,
+            299
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "The author is indebted to the Mechanics Branch, Office of Naval Research, Navy Department for their interest in and support of planing surface research at Stevens Institute of Technology. The many Stevens Institute of Technology staff members who contributed to this program are too numerous to mention individually. The author is particularly grateful to Prof. B. V. Korvin-Kroukovsky who initiated this research and guided it through its various stages of development.",
+        "bbox": [
+            122,
+            305,
+            532,
+            434
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "bbox": [
+            120,
+            450,
+            202,
+            463
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "1 G. S. Baker, “Some Experiments in Connection with the Design of Floats for Hydro-Aeroplanes,” ARC (British) R & M, no. 70, 1912.",
+            "2 W. Sottorf, \"Experiments With Planing Surfaces,\" NACA TM 661, 1932, and NACA TM 739, 1934.",
+            "3 J. M. Shoemaker, \"Tank Tests of Flat and Vee-Bottom Planing Surfaces,\" NACA TN 509, November 1934.",
+            "4 A. Sambraus, “Planing Surface Tests at Large Froude Numbers—Airfoil Comparison,” NACA TM No. 848, February 1938.",
+            "5 L. I. Sedov, \"Scale Effect and Optimum Relation for Sea Surface Planing,\" NACA TM No. 1097, February 1947.",
+            "6 F. W. S. Locke, Jr., “Tests of a Flat Bottom Planing Surface to Determine the Inception of Planing,” Navy Department, BuAer, Research Division Report No. 1096, December 1948.",
+            "7 B. V. Korvin-Kroukovsky, D. Savitsky and W. F. Lehman, \"Wetted Area and Center of Pressure of Planing Surfaces,\" Stevens Institute of Technology, Davidson Laboratory Report No. 360, August 1949.",
+            "8 A. B. Murray, \"The Hydrodynamics of Planing Hulls,\" Paper presented at the February 1950 Meeting of the New England Section of SNAME.",
+            "9 D. Savitsky and J. W. Neidinger, \"Wetted Area and Center of Pressure of Planing Surfaces at Very Low Speed Coefficients,\" Stevens Institute of Technology, Davidson Laboratory Report No. 493, July 1954.",
+            "10 H. Wagner, “The Phenomena of Impact and Planing on Water,” NACA translation 1366, ZAMM, August 1932.",
+            "11 R. F. Smiley, \"The Application of Planing Characteristics to the Calculation of the Water Landing Loads and Motions of Seaplanes of Arbitrary Cross Section,\" NACA TN 2814, November 1952.",
+            "12 D. B. Chambliss and G. M. Boyd, Jr., \"The Planing Characteristics of Two V-Shaped Prismatic Surfaces Having Angles of Deadrise of 20° and 40°,\" NACA TN No. 2876, January 1953.",
+            "13 J. D. Pierson and S. Leshnover, “A Study of the Flow, Pressures, and Loads Pertaining to Prismatic Vee-Planing Surfaces,” Stevens Institute of Technology, Davidson Laboratory Report 382, May 1950.",
+            "14 \"Uniform Procedure for the Calculation of Frictional Resistance and the Expansion of Model Test Data to Full Size,\" Bulletin No. 1-2 of SNAME, August 1948.",
+            "15 J. B. Parkinson, “Tank Tests to Show the Effect of Rivet Heads on the Water Performance of a Seaplane Float,” NACA TN 657, July 1938.",
+            "16 F. W. S. Locke, Jr., “Frictional Resistance of Planing Surfaces,” Stevens Institute of Technology, Davidson Laboratory TM No. 40, July 1939.",
+            "17 D. Savitsky and E. Ross, “Turbulence Stimulation in the Boundary Layer of Planing Surfaces,” Stevens Institute of Technology, Davidson Laboratory, Report 44, August 1952.",
+            "18 W. G. A. Perring and H. Glauert, “Stability on the Water of a Seaplane in the Planing Condition,” ARC, TR vol. 42, September 1933.",
+            "19 W. Sottorf, “Systematic Model Researches on the Stability Limits of the DVL Series of Float Designs,” NACA TM 1254, December 1949.",
+            "20 K. S. M. Davidson and F. W. S. Locke, Jr., \"Some Systematic Model Experiments on the Porpoising Characteristics of Flying Boat Hulls,\" NACA ARR, June 1943.",
+            "21. J. M. Benson, \"The Effect of Deadrise Upon the Low-Angle Type of Porpoising,\" NACA ARR, October 1942.",
+            "22 J. B. Parkinson and R. E. Olson, \"Tank Tests of an Army OA-9 Amphibian,\" NACA ARR, December 1941.",
+            "23 J. P. Day and R. J. Haag, “Planing Boat Porpoising,” a Thesis Submitted to Webb Institute of Naval Architecture, May 1952.",
+            "24 F. W. S. Locke, Jr., “General Porpoising Tests of Flying-Boat Hull Models,” NACA ARR, September 1943.",
+            "25 P. DuCane, High-Speed Small Craft, Temple Press Limited, Bowling Green Lane, London, E.C. 1, England. 1951.",
+            "26 E. P. Clement and J. D. Pope, “Graphs for Predicting the Resistance of Large Stepless Planing Hulls at High Speeds,” DTMB Report 1318, April 1959.",
+            "27 C. L. Shuford, Jr., \"A Theoretical and Experimental Study of Planing Surfaces Including Effects",
+            "of Cross Section and Plan Form,\" NACA Report 1355, 1958.",
+            "28 J. G. Koelbel, Jr., J. Stolz, and J. D. Beinert, \"How to Design Planing Hulls,\" vol. 49, Motor Boating Ideal Series.",
+            "29 K. S. M. Davidson and A. Suarez, \"Test of Twenty Related Models of V-Bottom Motor Boats—EMB Series 50,\" DTMB Report R-47, March 1949.",
+            "30 E. P. Clement and D. L. Blount, \"Resistance Tests of a Systematic Series of Planing Hull Forms,\" Paper No. 10, presented at the Annual Meeting, November 1963 of SNAME, TRANS. SNAME, vol. 71, 1963, pp."
+        ],
+        "bbox": [
+            112,
+            468,
+            532,
+            904
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [],
+        "bbox": [
+            537,
+            82,
+            968,
+            915
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "page_number",
+        "text": "94",
+        "bbox": [
+            114,
+            919,
+            133,
+            930
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "MARINE TECHNOLOGY",
+        "bbox": [
+            784,
+            928,
+            942,
+            941
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [],
+        "bbox": [
+            84,
+            83,
+            495,
+            265
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Appendix",
+        "text_level": 2,
+        "bbox": [
+            248,
+            290,
+            318,
+            311
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Reports and Papers on Planing Published by Stevens Institute of Technology Under ONR Contract",
+        "text_level": 2,
+        "bbox": [
+            80,
+            315,
+            455,
+            344
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "1 Korvin-Kroukovsky, B. V. and Chabrow, Faye R., \"The Discontinuous Fluid Flow Past an Immersed Wedge,\" Stevens Institute of Technology, Experimental Towing Tank Report No. 334, October 1948. Sherman M. Fairchild Publication Fund Paper No. 169, Institute of the Aeronautical Sciences, New York.",
+            "2 Pierson, John D. and Leshnover, Samuel, “An Analysis of the Fluid Flow in the Spray Root and Wake Regions of Flat Planing Surfaces,” Stevens Institute of Technology, Experimental Towing Tank Report No. 335, October 1948. Sherman M. Fairchild Publication Fund Paper No. 166, Institute of the Aeronautical Sciences, New York.",
+            "3 Pierson, John D., “On the Pressure Distribution for a Wedge Penetrating a Fluid Surface,” Stevens Institute of Technology, Experimental Towing Tank Report No. 336, September 1948. Sherman M. Fairchild Publication Fund Paper No. 167, Institute of the Aeronautical Sciences, New York.",
+            "4 Pierson, John D. and Leshnover, Samuel, “Study of Flow, Pressures, and Loads Pertaining to Prismatic Vee-Planing Surfaces,” Stevens Institute of Technology, Experimental Towing Tank Report No. 382, May 1950. Sherman M. Fairchild Publication Fund Paper No. FF-2, Institute of the Aeronautical Sciences, New York.",
+            "5 Pierson, John D., \"On the Penetration of a Fluid Surface by a Wedge,\" Stevens Institute of Technology, Experimental Towing Tank Report No. 381, July 1950. Sherman M. Fairchild Publication Fund Paper No. FF-3, Institute of the Aeronautical Sciences, New York.",
+            "6 Korvin-Kroukovsky, B. V., “Lift of Planing Surfaces,” Stevens Institute of Technology, Experimental Towing Tank Paper Published in Readers’ Forum Section of the Journal of Aeronautical Sciences, September 1950.",
+            "7 Pierson, John D., \"On the Virtual Mass of Water Associated With an Immersing Wedge,\" Stevens Institute of Technology, Experimental Towing Tank Paper Published in Readers' Forum Section of the Journal of Aeronautical Sciences, June 1951.",
+            "8 Pierson, John D.; Dingce, David A.; and Nei-",
+            "dinger, Joseph W., “A Hydrodynamic Study of the Chines-Dry Planing Body.” Stevens Institute of Technology, Experimental Towing Tank Report No. 492, May 1954. Sherman M. Fairchild Publication Fund Paper No. FF-9, Institute of the Aeronautical Sciences, New York.",
+            "9 Korvin-Kroukovsky, B. V.; Savitsky, Daniel; and Lehman, William F. “Wave Contours in the Wake of a 20° Deadrise Planing Surface.” Stevens Institute of Technology, Experimental Towing Tank Report No. 337, June 1948. Sherman M. Fairchild Publication Fund Paper No. 168, Institute of the Aeronautical Sciences, New York.",
+            "10 Korvin-Kroukovsky, B. V.; Savitsky, Daniel; and Lehman, William F., \"Wave Contours in the Wake of a 10° Deadrise Planing Surface,\" Stevens Institute of Technology, Experimental Towing Tank Report No. 344, November 1948. Sherman M. Fairchild Publication Fund Paper No. 170, Institute of the Aeronautical Sciences, New York.",
+            "11 Korvin-Kroukovsky, B. V.; Savitsky, Daniel; and Lehman, William F., \"Wave Profile of a Vee-Planing Surface, Including Test Data on a 30° Deadrise Surface,\" Stevens Institute of Technology, Experimental Towing Tank Report No. 339, April 1949. Sherman M. Fairchild Publication Fund Paper No. 229, Institute of the Aeronautical Sciences, New York.",
+            "12 Korvin-Kroukovsky, B. V.; Savitsky, Daniel; and Lehman, William F., \"Wetted Area and Center of Pressure of Planing Surfaces,\" Stevens Institute of Technology, Experimental Towing Tank Report No. 360, August 1949. Sherman M. Fairchild Publication Fund Paper No. 244, Institute of the Aeronautical Sciences, New York.",
+            "13 Savitsky, Daniel, “Wetted Area and Center of Pressure of Vee-Step Planing Surfaces,” Stevens Institute of Technology, Experimental Towing Tank Report No. 378, September 1951. Sherman M. Fairchild Publication Fund Paper FF-6, Institute of the Aeronautical Sciences, New York.",
+            "14 Savitsky, Daniel and Dingee, David A., “Some Interference Effects between Two Flat Surfaces Planing Parallel to Each Other at High Speed,” Stevens Institute of Technology, Experimental Towing Tank Paper Published in Readers’ Forum Section of the Journal of Aeronautical Sciences, June 1954.",
+            "15 Savitsky, Daniel and Neidinger, Joseph, “Wetted Area and Center of Pressure of Planing Surfaces at Very Low Speed Coefficients,” Stevens Institute of Technology, Experimental Towing Tank Report No. 493, September 1954. Sherman M. Fairchild Fund Paper No. FF-11, Institute of the Aeronautical Sciences, New York.",
+            "16 Savitsky, Daniel and Breslin, J. P., \"On the Main Spray Generated by Planing Surfaces.\" Stevens Institute of Technology, Experimental Towing Tank Report No. 678, January 1958. Sherman M. Fairchild Fund Paper No. FF-18. Institute of the Aeronautical Sciences, New York."
+        ],
+        "bbox": [
+            62,
+            347,
+            485,
+            907
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [],
+        "bbox": [
+            482,
+            88,
+            921,
+            911
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "OCTOBER, 1964",
+        "bbox": [
+            60,
+            916,
+            169,
+            931
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "page_number",
+        "text": "95",
+        "bbox": [
+            872,
+            934,
+            890,
+            944
+        ],
+        "page_idx": 24
+    }
+]

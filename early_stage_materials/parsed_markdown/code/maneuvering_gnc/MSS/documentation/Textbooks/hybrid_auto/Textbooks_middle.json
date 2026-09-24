@@ -1,0 +1,2094 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        82,
+                        88,
+                        123,
+                        96
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        82,
+                        98,
+                        188,
+                        133
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                82,
+                                98,
+                                152,
+                                109
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        82,
+                                        98,
+                                        152,
+                                        109
+                                    ],
+                                    "type": "text",
+                                    "content": "MARINECRAFT",
+                                    "score": 0.996
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                82,
+                                110,
+                                167,
+                                122
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        82,
+                                        110,
+                                        167,
+                                        122
+                                    ],
+                                    "type": "text",
+                                    "content": "HYDRODYNAMICS",
+                                    "score": 0.999
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                82,
+                                122,
+                                189,
+                                133
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        82,
+                                        122,
+                                        189,
+                                        133
+                                    ],
+                                    "type": "text",
+                                    "content": "AND MOTION CONTROL",
+                                    "score": 0.97
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        73,
+                        136,
+                        205,
+                        218
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                73,
+                                136,
+                                205,
+                                218
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        136,
+                                        205,
+                                        218
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                136,
+                                                205,
+                                                218
+                                            ],
+                                            "type": "image",
+                                            "content": "gettyimages\nMRCoa_Photographer",
+                                            "image_path": "6d4c996a26ecffa7c9948354e4d2f93c776e3aee22cc490201db0ac3795545ba.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                154,
+                                221,
+                                198,
+                                229
+                            ],
+                            "type": "image_caption",
+                            "angle": 0,
+                            "index": 3,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        154,
+                                        219,
+                                        199,
+                                        230
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                154,
+                                                219,
+                                                199,
+                                                230
+                                            ],
+                                            "type": "text",
+                                            "content": "Thor l. Fossen",
+                                            "score": 0.949
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "sub_type": "text_image"
+                },
+                {
+                    "bbox": [
+                        162,
+                        231,
+                        198,
+                        239
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 4,
+                    "lines": [],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        173,
+                        246,
+                        198,
+                        254
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 5,
+                    "lines": [
+                        {
+                            "bbox": [
+                                173,
+                                245,
+                                199,
+                                255
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        173,
+                                        245,
+                                        199,
+                                        255
+                                    ],
+                                    "type": "text",
+                                    "content": "WILEY",
+                                    "score": 0.996
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        75,
+                        496,
+                        115
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 6,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                74,
+                                421,
+                                94
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        74,
+                                        421,
+                                        94
+                                    ],
+                                    "type": "text",
+                                    "content": "Handbook of Marine Craft",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                206,
+                                91,
+                                498,
+                                116
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        91,
+                                        498,
+                                        116
+                                    ],
+                                    "type": "text",
+                                    "content": "Hydrodynamics and Motion Control",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        209,
+                        120,
+                        274,
+                        133
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 7,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                118,
+                                276,
+                                134
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        118,
+                                        276,
+                                        134
+                                    ],
+                                    "type": "text",
+                                    "content": "T.\tI.\tFossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        208,
+                        140,
+                        385,
+                        154
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 8,
+                    "lines": [
+                        {
+                            "bbox": [
+                                207,
+                                138,
+                                386,
+                                155
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        207,
+                                        138,
+                                        386,
+                                        155
+                                    ],
+                                    "type": "text",
+                                    "content": "ISBN\t978-1119575054\t(2nd\tEditi on)",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        155,
+                        367,
+                        167
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 9,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                154,
+                                368,
+                                168
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        154,
+                                        368,
+                                        168
+                                    ],
+                                    "type": "text",
+                                    "content": "John\tWiley\t&\tSons\tLtd,\tUK,\t2021",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        173,
+                        461,
+                        186
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 10,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                171,
+                                462,
+                                186
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        171,
+                                        462,
+                                        186
+                                    ],
+                                    "type": "text",
+                                    "content": "Electronic\torders:\twww.amazon.co.uk,\twww.wiley.com",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        186,
+                        490,
+                        199
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 11,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                186,
+                                491,
+                                200
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        186,
+                                        491,
+                                        200
+                                    ],
+                                    "type": "text",
+                                    "content": "Amazon\tauthor\tage:\thtt p://www.amazon.com/author/fossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        210,
+                        220,
+                        260,
+                        298
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                210,
+                                220,
+                                260,
+                                298
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        220,
+                                        260,
+                                        298
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                210,
+                                                220,
+                                                260,
+                                                298
+                                            ],
+                                            "type": "image",
+                                            "image_path": "95552c203ed4dc24cb2d2b40a1ae2368584abd3d18fa6ea0507cc2c5bb92c3b7.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 12
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        268,
+                        287,
+                        460,
+                        299
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 13,
+                    "lines": [
+                        {
+                            "bbox": [
+                                267,
+                                287,
+                                460,
+                                300
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        267,
+                                        287,
+                                        460,
+                                        300
+                                    ],
+                                    "type": "text",
+                                    "content": "The\t2nd\tediti on\treplaces\tthe\t2011\tversion.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        73,
+                        341,
+                        204,
+                        530
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                73,
+                                341,
+                                204,
+                                530
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        341,
+                                        204,
+                                        530
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                341,
+                                                204,
+                                                530
+                                            ],
+                                            "type": "image",
+                                            "content": "Guidance and Control of Ocean Vehicles\nTHOR I. FOSSEN",
+                                            "image_path": "35e7f8d70619371e49ee25aa53d225c596a4dc1e8d73fd382e1b2ca008dd6615.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 14
+                        }
+                    ],
+                    "index": 14,
+                    "sub_type": "text_image"
+                },
+                {
+                    "bbox": [
+                        210,
+                        346,
+                        463,
+                        383
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 15,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                344,
+                                464,
+                                365
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        344,
+                                        464,
+                                        365
+                                    ],
+                                    "type": "text",
+                                    "content": "Guidance and Control of Ocean",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                208,
+                                362,
+                                282,
+                                384
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        362,
+                                        282,
+                                        384
+                                    ],
+                                    "type": "text",
+                                    "content": "Vehicles",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        210,
+                        390,
+                        276,
+                        404
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 16,
+                    "lines": [
+                        {
+                            "bbox": [
+                                209,
+                                389,
+                                277,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        389,
+                                        277,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "T.\tI.\tFossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        410,
+                        305,
+                        422
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 17,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                410,
+                                305,
+                                423
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        410,
+                                        305,
+                                        423
+                                    ],
+                                    "type": "text",
+                                    "content": "ISBN\t0-471-94113-1.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        211,
+                        424,
+                        356,
+                        436
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 18,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                423,
+                                357,
+                                436
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        423,
+                                        357,
+                                        436
+                                    ],
+                                    "type": "text",
+                                    "content": "John\tWiley\t&\tSons\tLtd,\tUK,\t1994",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        442,
+                        462,
+                        454
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 19,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                442,
+                                463,
+                                455
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        442,
+                                        463,
+                                        455
+                                    ],
+                                    "type": "text",
+                                    "content": "Electronic\torders:\twww.amazon.co.uk,\twww.wiley.com",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        455,
+                        498,
+                        467
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 20,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                454,
+                                498,
+                                468
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        454,
+                                        498,
+                                        468
+                                    ],
+                                    "type": "text",
+                                    "content": "Amazon\tauthor\tpage:\thtt p://www.amazon.com/author/fossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        73,
+                        554,
+                        203,
+                        728
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                73,
+                                554,
+                                203,
+                                728
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        554,
+                                        203,
+                                        728
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                554,
+                                                203,
+                                                728
+                                            ],
+                                            "type": "image",
+                                            "content": "Ship Motion Control\nCOURSE KEEPING AND ROLL STABILISATION\nUSING RUDDER AND FINS\nTristan Perez\nShip Motion Control\nAIC\nAdvances in Industrial Control\nSpringer",
+                                            "image_path": "4136a38bd3c1e3b3ce7dabf4e737c8975d75eca1a360fcb4b9925e541aa17fbb.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 21
+                        }
+                    ],
+                    "index": 21,
+                    "sub_type": "text_image"
+                },
+                {
+                    "bbox": [
+                        210,
+                        557,
+                        515,
+                        614
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 22,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                555,
+                                376,
+                                575
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        555,
+                                        376,
+                                        575
+                                    ],
+                                    "type": "text",
+                                    "content": "Ship Motion Control",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                208,
+                                573,
+                                518,
+                                598
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        573,
+                                        518,
+                                        598
+                                    ],
+                                    "type": "text",
+                                    "content": "Course Keeping and Roll Stabilisation",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                209,
+                                595,
+                                403,
+                                613
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        595,
+                                        403,
+                                        613
+                                    ],
+                                    "type": "text",
+                                    "content": "using Rudders and Fins",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        210,
+                        620,
+                        258,
+                        634
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 23,
+                    "lines": [
+                        {
+                            "bbox": [
+                                209,
+                                618,
+                                260,
+                                635
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        618,
+                                        260,
+                                        635
+                                    ],
+                                    "type": "text",
+                                    "content": "T.\tPerez",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        640,
+                        406,
+                        654
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 24,
+                    "lines": [
+                        {
+                            "bbox": [
+                                209,
+                                639,
+                                407,
+                                655
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        639,
+                                        407,
+                                        655
+                                    ],
+                                    "type": "text",
+                                    "content": "ISBN\t1-85233-959-4.\tSpringer\tVerlag,\t\t2005",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        211,
+                        659,
+                        379,
+                        671
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 25,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                658,
+                                380,
+                                672
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        658,
+                                        380,
+                                        672
+                                    ],
+                                    "type": "text",
+                                    "content": "Electronic\torders:\twww.amazon.com",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                842
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        82,
+                        88,
+                        123,
+                        96
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        82,
+                        98,
+                        188,
+                        133
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                82,
+                                98,
+                                152,
+                                109
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        82,
+                                        98,
+                                        152,
+                                        109
+                                    ],
+                                    "type": "text",
+                                    "content": "MARINECRAFT",
+                                    "score": 0.996
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                82,
+                                110,
+                                167,
+                                122
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        82,
+                                        110,
+                                        167,
+                                        122
+                                    ],
+                                    "type": "text",
+                                    "content": "HYDRODYNAMICS",
+                                    "score": 0.999
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                82,
+                                122,
+                                189,
+                                133
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        82,
+                                        122,
+                                        189,
+                                        133
+                                    ],
+                                    "type": "text",
+                                    "content": "AND MOTION CONTROL",
+                                    "score": 0.97
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        73,
+                        136,
+                        205,
+                        218
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                73,
+                                136,
+                                205,
+                                218
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        136,
+                                        205,
+                                        218
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                136,
+                                                205,
+                                                218
+                                            ],
+                                            "type": "image",
+                                            "content": "gettyimages\nMRCoa_Photographer",
+                                            "image_path": "6d4c996a26ecffa7c9948354e4d2f93c776e3aee22cc490201db0ac3795545ba.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                154,
+                                221,
+                                198,
+                                229
+                            ],
+                            "type": "image_caption",
+                            "angle": 0,
+                            "index": 3,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        154,
+                                        219,
+                                        199,
+                                        230
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                154,
+                                                219,
+                                                199,
+                                                230
+                                            ],
+                                            "type": "text",
+                                            "content": "Thor l. Fossen",
+                                            "score": 0.949
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "sub_type": "text_image"
+                },
+                {
+                    "bbox": [
+                        162,
+                        231,
+                        198,
+                        239
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 4,
+                    "lines": [],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        173,
+                        246,
+                        198,
+                        254
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 5,
+                    "lines": [
+                        {
+                            "bbox": [
+                                173,
+                                245,
+                                199,
+                                255
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        173,
+                                        245,
+                                        199,
+                                        255
+                                    ],
+                                    "type": "text",
+                                    "content": "WILEY",
+                                    "score": 0.996
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        75,
+                        496,
+                        115
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 6,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                74,
+                                421,
+                                94
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        74,
+                                        421,
+                                        94
+                                    ],
+                                    "type": "text",
+                                    "content": "Handbook of Marine Craft",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                206,
+                                91,
+                                498,
+                                116
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        91,
+                                        498,
+                                        116
+                                    ],
+                                    "type": "text",
+                                    "content": "Hydrodynamics and Motion Control",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        209,
+                        120,
+                        274,
+                        133
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 7,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                118,
+                                276,
+                                134
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        118,
+                                        276,
+                                        134
+                                    ],
+                                    "type": "text",
+                                    "content": "T.\tI.\tFossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        208,
+                        140,
+                        385,
+                        154
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 8,
+                    "lines": [
+                        {
+                            "bbox": [
+                                207,
+                                138,
+                                386,
+                                155
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        207,
+                                        138,
+                                        386,
+                                        155
+                                    ],
+                                    "type": "text",
+                                    "content": "ISBN\t978-1119575054\t(2nd\tEditi on)",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        155,
+                        367,
+                        167
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 9,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                154,
+                                368,
+                                168
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        154,
+                                        368,
+                                        168
+                                    ],
+                                    "type": "text",
+                                    "content": "John\tWiley\t&\tSons\tLtd,\tUK,\t2021",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        173,
+                        461,
+                        186
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 10,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                171,
+                                462,
+                                186
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        171,
+                                        462,
+                                        186
+                                    ],
+                                    "type": "text",
+                                    "content": "Electronic\torders:\twww.amazon.co.uk,\twww.wiley.com",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        209,
+                        186,
+                        490,
+                        199
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 11,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                186,
+                                491,
+                                200
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        186,
+                                        491,
+                                        200
+                                    ],
+                                    "type": "text",
+                                    "content": "Amazon\tauthor\tage:\thtt p://www.amazon.com/author/fossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        210,
+                        220,
+                        260,
+                        298
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                210,
+                                220,
+                                260,
+                                298
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        220,
+                                        260,
+                                        298
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                210,
+                                                220,
+                                                260,
+                                                298
+                                            ],
+                                            "type": "image",
+                                            "image_path": "95552c203ed4dc24cb2d2b40a1ae2368584abd3d18fa6ea0507cc2c5bb92c3b7.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 12
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        268,
+                        287,
+                        460,
+                        299
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 13,
+                    "lines": [
+                        {
+                            "bbox": [
+                                267,
+                                287,
+                                460,
+                                300
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        267,
+                                        287,
+                                        460,
+                                        300
+                                    ],
+                                    "type": "text",
+                                    "content": "The\t2nd\tediti on\treplaces\tthe\t2011\tversion.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        73,
+                        341,
+                        204,
+                        530
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                73,
+                                341,
+                                204,
+                                530
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        341,
+                                        204,
+                                        530
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                341,
+                                                204,
+                                                530
+                                            ],
+                                            "type": "image",
+                                            "content": "Guidance and Control of Ocean Vehicles\nTHOR I. FOSSEN",
+                                            "image_path": "35e7f8d70619371e49ee25aa53d225c596a4dc1e8d73fd382e1b2ca008dd6615.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 14
+                        }
+                    ],
+                    "index": 14,
+                    "sub_type": "text_image"
+                },
+                {
+                    "bbox": [
+                        210,
+                        346,
+                        463,
+                        383
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 15,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                344,
+                                464,
+                                365
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        344,
+                                        464,
+                                        365
+                                    ],
+                                    "type": "text",
+                                    "content": "Guidance and Control of Ocean",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                208,
+                                362,
+                                282,
+                                384
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        362,
+                                        282,
+                                        384
+                                    ],
+                                    "type": "text",
+                                    "content": "Vehicles",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        210,
+                        390,
+                        276,
+                        404
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 16,
+                    "lines": [
+                        {
+                            "bbox": [
+                                209,
+                                389,
+                                277,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        389,
+                                        277,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "T.\tI.\tFossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        410,
+                        305,
+                        422
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 17,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                410,
+                                305,
+                                423
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        410,
+                                        305,
+                                        423
+                                    ],
+                                    "type": "text",
+                                    "content": "ISBN\t0-471-94113-1.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        211,
+                        424,
+                        356,
+                        436
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 18,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                423,
+                                357,
+                                436
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        423,
+                                        357,
+                                        436
+                                    ],
+                                    "type": "text",
+                                    "content": "John\tWiley\t&\tSons\tLtd,\tUK,\t1994",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        442,
+                        462,
+                        454
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 19,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                442,
+                                463,
+                                455
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        442,
+                                        463,
+                                        455
+                                    ],
+                                    "type": "text",
+                                    "content": "Electronic\torders:\twww.amazon.co.uk,\twww.wiley.com",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        455,
+                        498,
+                        467
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 20,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                454,
+                                498,
+                                468
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        454,
+                                        498,
+                                        468
+                                    ],
+                                    "type": "text",
+                                    "content": "Amazon\tauthor\tpage:\thtt p://www.amazon.com/author/fossen",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        73,
+                        554,
+                        203,
+                        728
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                73,
+                                554,
+                                203,
+                                728
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        554,
+                                        203,
+                                        728
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                554,
+                                                203,
+                                                728
+                                            ],
+                                            "type": "image",
+                                            "content": "Ship Motion Control\nCOURSE KEEPING AND ROLL STABILISATION\nUSING RUDDER AND FINS\nTristan Perez\nShip Motion Control\nAIC\nAdvances in Industrial Control\nSpringer",
+                                            "image_path": "4136a38bd3c1e3b3ce7dabf4e737c8975d75eca1a360fcb4b9925e541aa17fbb.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 21
+                        }
+                    ],
+                    "index": 21,
+                    "sub_type": "text_image"
+                },
+                {
+                    "bbox": [
+                        210,
+                        557,
+                        515,
+                        614
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 22,
+                    "lines": [
+                        {
+                            "bbox": [
+                                208,
+                                555,
+                                376,
+                                575
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        555,
+                                        376,
+                                        575
+                                    ],
+                                    "type": "text",
+                                    "content": "Ship Motion Control",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                208,
+                                573,
+                                518,
+                                598
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        208,
+                                        573,
+                                        518,
+                                        598
+                                    ],
+                                    "type": "text",
+                                    "content": "Course Keeping and Roll Stabilisation",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                209,
+                                595,
+                                403,
+                                613
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        595,
+                                        403,
+                                        613
+                                    ],
+                                    "type": "text",
+                                    "content": "using Rudders and Fins",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        210,
+                        620,
+                        258,
+                        634
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 23,
+                    "lines": [
+                        {
+                            "bbox": [
+                                209,
+                                618,
+                                260,
+                                635
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        618,
+                                        260,
+                                        635
+                                    ],
+                                    "type": "text",
+                                    "content": "T.\tPerez",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        210,
+                        640,
+                        406,
+                        654
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 24,
+                    "lines": [
+                        {
+                            "bbox": [
+                                209,
+                                639,
+                                407,
+                                655
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        209,
+                                        639,
+                                        407,
+                                        655
+                                    ],
+                                    "type": "text",
+                                    "content": "ISBN\t1-85233-959-4.\tSpringer\tVerlag,\t\t2005",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        211,
+                        659,
+                        379,
+                        671
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 25,
+                    "lines": [
+                        {
+                            "bbox": [
+                                210,
+                                658,
+                                380,
+                                672
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        210,
+                                        658,
+                                        380,
+                                        672
+                                    ],
+                                    "type": "text",
+                                    "content": "Electronic\torders:\twww.amazon.com",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_ocr_enable": false,
+    "_vlm_ocr_enable": false,
+    "_version_name": "3.2.2"
+}

@@ -1,0 +1,1703 @@
+AD-A174 827
+
+HIGH SPEED DISPLACEMENT VESSELS PARAMETRIC STUDIES AND CALM WATER RESISTA..(U) ASSOCIATION OF SCIENTISTS AND ENGINEERS OF THE NAVAL SEA SYST.. S C FUNG APR 06
+
+1/1
+
+UNCLASSIFIED
+
+F/8 13/10
+
+NL
+
+![](images/558125fb3282787eeb474db62247d20f924f43c157c7ffff70f3adf4e7806448.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Grid of black squares with no text, numbers, or symbols
+</details>
+
+![](images/b4d2eca9ba3bbddee0e630579c101e3f2bbc326a107b863ad95a6c3a34c704f1.jpg)
+
+<details>
+<summary>text_image</summary>
+
+1.0
+1.1
+1.25
+1.4
+1.6
+</details>
+
+MICROCOPY RESOLUTION TEST CHART
+
+NATIONAL BUREAU OF STANDARDS-1963-A
+
+# 23RD ANNUAL TECHNICAL SYMPOSIUM
+
+![](images/0ecaadae9d2feb7fdc08883ff4bb4a730d150794d6c34153ee7e3e1979f6a5d8.jpg)
+
+![](images/3cc4e5e606e2abd0a85411e4dc78d968781457e9a0b3bc8aa43c38b131b52d84.jpg)
+
+<details>
+<summary>seal</summary>
+
+ASSOCIATIONS OF SCIENTISTS AND SCIENTERS
+ASE
+NAVAIL SEA SYSTEMS COMMAND
+</details>
+
+## 1986
+
+"ASE's 40 YEARS OF ENGINEERING ADVANCEMENT"
+
+AD-A174 027
+
+![](images/c8df96ee084186418d62c96267dc3a59bdea43d9740d5e3d723953989f2d526f.jpg)
+
+<details>
+<summary>text_image</summary>
+
+AD-A174 C
+US NAVY
+LCAC
+US NAVY
+LCAC
+</details>
+
+## HIGH SPEED DISPLACEMENT VESSELS PARAMETRIC STUDIES AND CALM WATER RESISTANCE PREDICTIONS - STATE OF THE ART
+
+by: S. Fung
+
+Naval Architect
+
+![](images/96d5a1f10a5b6acc5446a761149b6192323992ac6e3b842195f114251d7612f9.jpg)
+
+<details>
+<summary>text_image</summary>
+
+The document has been approved
+</details>
+
+![](images/d0d4c6b5632c8d35b822e068c7e4da8c7db21d4b8ac224499b62018f7ede9614.jpg)
+
+## DISCLAIMER NOTICE
+
+THIS DOCUMENT IS BEST QUALITY
+PRACTICABLE. THE COPY FURNISHED
+TO DTIC CONTAINED A SIGNIFICANT
+NUMBER OF PAGES WHICH DO NOT
+REPRODUCE LEGIBLY.
+
+THE STATE OF THE ART OF RESISTANCE
+PREDICTIONS AND PARAMETRIC STUDIES
+FOR HIGH-SPEED DISPLACEMENT HULLS
+
+Siu C. Fung
+
+Naval Architect
+
+Preliminary Design Division
+
+(SEA 501)
+
+Naval Sea Systems Command
+
+Washington, D.C. 20362
+
+April 1986
+
+Approved for Public Release
+
+Distribution Unlimited
+
+The views expressed herein are the personal opinions
+
+of the author and are not necessarily the official
+
+views of the Department of Defense or of
+
+the Department of the Navy
+
+## ABSTRACT
+
+![](images/5a0972b0514f523293d61c1712a924e0cc50ce52175b868ab7801b1687fa8c5f.jpg)
+
+High-speed displacement vessels are widely used in most of the smaller navies because they provide low operating cost, combined with performance adequate for policing 200 nm Exclusive Economic Zones. Feasibility designs of this kind of vessel, such as corvettes and patrol boats, always require calm water resistance estimates. This paper is an attempt to use available data to analyze main hull form parameters that affect the resistance characteristics of the vessel. A few high-speed round bilge methodical series (such as the well known Series 64, NPL-HSRB, SSPA-SFDV, HSVA'C' Series and Canadian Fast Surface Ship Series) as well as some numerical formulas from regression analyses are available for the powering studies of this type of vessel. However, any attempt to design a good high-speed displacement hull by adopting the previously mentioned methodical series has to be carefully examined. The main hull form parameters must be appropriate to the speed range, due to some distinctive resistance characteristics at Froude numbers larger or smaller than 0.45-0.55. This paper covers some basic considerations of these aspects by utilizing several computer programs which were developed by the author based on some of the high-speed round bilge methodical series. Finally some other hull form parameters that may affect resistance are discussed.
+
+![](images/c8f6504a9cf5d326d66b97b8a08a2eedf7267ab22cdd5a3ce3e35e1da5f4a5e0.jpg)
+
+![](images/137b9d5d7a9c8ad294589bae14dfb1df9d5569dac33978ce69eecb5f8ddae4cb.jpg)
+
+TABLE OF CONTENTS
+
+<table><tr><td colspan="2">Subject</td><td>Page</td></tr><tr><td colspan="2">Abstract</td><td>1</td></tr><tr><td colspan="2">Table of Contents</td><td>iii</td></tr><tr><td colspan="2">List of Tables</td><td>iv</td></tr><tr><td colspan="2">List of Figures</td><td>v</td></tr><tr><td colspan="2">Notation</td><td>vii</td></tr><tr><td>1.0</td><td>Introduction</td><td>1</td></tr><tr><td>2.0</td><td>Survey of High-Speed Round Bilge Displacement Hull Forms</td><td>2</td></tr><tr><td>3.0</td><td>Powering Prediction--Application of Hull Form Series &amp; Regression Analyses</td><td>3</td></tr><tr><td></td><td>3.1 Canadian Fast Surface Ship Series (FSSS)</td><td>3</td></tr><tr><td></td><td>3.2 HSVA&#x27;C&#x27; Series</td><td>4</td></tr><tr><td></td><td>3.3 SSPA Small, Fast Displacement Vessels (SSPA-SFDV)</td><td>4</td></tr><tr><td></td><td>3.4 Series 64</td><td>5</td></tr><tr><td></td><td>3.5 Mercier &amp; Savitsky Numerical Method</td><td>6</td></tr><tr><td></td><td>3.6 Tang Round Bilge Displacement Hull Numerical Method (RBDH)</td><td>6</td></tr><tr><td></td><td>3.7 NPL High Speed Round Bilge Displacement Hull Series (NPL-HSRB)</td><td>7</td></tr><tr><td></td><td>3.8 Validation and Application of Methodical Series and Regression Analyses for Power-ing Predictions</td><td>8</td></tr></table>
+
+4.0 Hull Form Design of High-Speed Displacement
+Hulls.... 10
+
+4.1 Displacement-Length Ratio (Disp/(0.01L)^3). 11  
+4.2 Prismatic Coefficients (CP).... 11  
+4.3 Block Coefficient (CB) & Maximum Section Area Coefficient (CX).... 12  
+4.4 Beam-Draft Ratio (B/T).... 13  
+4.5 Length-Beam Ratio (L/B) & Half Entrance Angle (1/2 IE).... 13  
+4.6 Sectional Area Curve (A/AX) & Longitudinal Center of Buoyancy (LCB).... 14  
+4.7 Transom Area Ratio (AT/AX).... 15  
+4.8 Waterplane Area Coefficient (CW).... 15
+
+5.0 Conclusions.... 17  
+Acknowledgements.... 20  
+References.... 21  
+Appendix A 200-FT Corvette Hull Form & Resistance Characteristica.... A-1  
+Appendix B Curves of Residual-Resistance Coefficient versus Waterplane Area Coefficient for High-Speed Round Bilge Displacement Hulls (V/L^0.5=2.60, CP=0.64, B/T=3.30).... B-1
+
+LIST OF TABLES
+
+<table><tr><td>Table</td><td></td><td>Page</td></tr><tr><td>2.0-1</td><td>Range of High Speed Displacement Hull Form Characteristics</td><td>T-1</td></tr><tr><td>3.0-1</td><td>Hull Form Parameters of High-Speed Displacement Hull Series</td><td>T-2</td></tr><tr><td>3.0-1A</td><td>Hull Form Parameters of High-Speed Displacement Hull Series</td><td>T-3</td></tr><tr><td>3.8-1</td><td>Small Frigate Bare Hull EHP Predictions Compared to Model Tests</td><td>T-4</td></tr><tr><td>3.8-2</td><td>230-Ft Corvette Bare Hull EHP Predictions Compared to Model Tests</td><td>T-5</td></tr><tr><td>3.8-3</td><td>154-Ft PGM C Bare Hull EHP Predictions Compared to Model Tests</td><td>T-6</td></tr><tr><td>4.0-1</td><td>Basic Hull Form Parameters for Powering Predictions--High Speed Displacement Hull Series</td><td>T-7</td></tr><tr><td>5.0-1</td><td>Hull Form Series Applications</td><td>T-8</td></tr></table>
+
+LIST OF FIGURES
+
+<table><tr><td>Figure</td><td></td><td>Page</td></tr><tr><td>2.0-1</td><td>Displacement vs Length (LWL) for High-Speed Displacement Vessels</td><td>F-1</td></tr><tr><td>2.0-2</td><td>Beam (BX) vs Length (LWL) for High-Speed Displacement Vessels</td><td>F-2</td></tr><tr><td>2.0-3</td><td>Draft (TX) vs Beam (BX) for High-Speed Displacement Vessels</td><td>F-3</td></tr><tr><td>2.0-4</td><td>Displacement-Length Ratio vs Block Coefficient for High-Speed Displacement Vessels</td><td>F-4</td></tr><tr><td>2.0-5</td><td>Displacement-Length Ratio vs Speed-Length Ratio for High-Speed Displacement Vessels</td><td>F-5</td></tr><tr><td>2.0-6</td><td>Length-Displacement Ratio vs Froude Number for High-Speed Displacement Vessels</td><td>F-6</td></tr><tr><td>2.0-7</td><td>Length-Beam Ratio vs Speed-Length Ratio for High-Speed Displacement Vessels</td><td>F-7</td></tr><tr><td>2.0-8</td><td>Beam-Draft Ratio vs Speed-Length Ratio for High-Speed Displacement Vessels</td><td>F-8</td></tr><tr><td>2.0-9</td><td>Block Coefficient vs Speed-Length Ratio for High-Speed Displacement Vessels</td><td>F-9</td></tr><tr><td>3.1-1</td><td>FSSS Parent Hull Body Plan (Model 264)</td><td>F-11</td></tr><tr><td>3.1-2</td><td>Worm Curve Factor of FSSS Design No.6 Model 264</td><td>F-10</td></tr><tr><td>3.2-1</td><td>HSVA&#x27;C&#x27; Series Parent Hull Body Plan</td><td>F-11</td></tr><tr><td>3.3-1</td><td>SSPA-SFDV Parent Hull Body Plan (Model 1213-A)</td><td>F-12</td></tr><tr><td>3.4-1</td><td>Series 64 Parent Hull Body (Model 4783-1)</td><td>F-12</td></tr><tr><td>3.7-1</td><td>NPL-HSRB Parent Hull Body Plan</td><td>F-12</td></tr><tr><td>3.7-2</td><td>Bare Hull EHP Comparisons (SSPA vs NPL)</td><td>F-13</td></tr></table>
+
+3.8-1 Small Frigate Bare Hull EHP Predictions Comp- F-14
+ared to Model Tests
+
+3.8-2 230-FT Corvette Bare Hull EHP Predictions F-15
+Compared to Model Tests
+
+3.8-3 154-FT PGM Bare Hull EHP Predictions Compared F-16 to Model Tests
+
+4.1-1 Rr/Disp for a Series of 200-Ft Corvette with F-17 Different Displacement-Length Ratios
+
+4.1-2 Merit Curve Factor (MCF) of Rr/Disp for a Series of 200-Ft Corvette (Disp-Length Ratio Variations) to Baseline Ship F-18
+
+'.2-1 Merit Curve Factor (MCF) of Rr/Disp for a Series of 200-Ft Corvette (CP Variations) to Baseline Ship F-19
+
+4.3-1 Merit Curve Factor (MCF) of Rr/Disp for a Series of 200-Ft Corvette (B/T Variations) to Baseline Ship F-20
+
+## APPENDICES
+
+A.1 200-Ft Baseline Corvette Body Plan A-1
+
+B.1 Cr For V/L^0.5= 2.60, CP= 0.64, B/T=3.30 B-1
+
+NOTATION
+
+<table><tr><td>AEW</td><td>Admiralty Experiment Works</td></tr><tr><td>AT</td><td>Transom Area (sq-ft)</td></tr><tr><td>AX</td><td>Maximum Section Area (sq-ft)</td></tr><tr><td>Bpx</td><td>Maximum Chine Beam (ft)</td></tr><tr><td>BT</td><td>Transom Width (ft)</td></tr><tr><td>BX</td><td>Beam at Station of Maximum Section Area (ft)</td></tr><tr><td>B/T</td><td>Beam-Draft Ratio</td></tr><tr><td>CB</td><td>Block Coefficient</td></tr><tr><td>Cf</td><td>Frictional Resistance Coefficient</td></tr><tr><td>CP</td><td>Prismatic Coefficient</td></tr><tr><td>Cr</td><td>Residuary Resistance Coefficient</td></tr><tr><td>CT</td><td>Total Resistance Coefficient</td></tr><tr><td>CW</td><td>Waterplane Area Coefficient</td></tr><tr><td>CX</td><td>Maximum Section Area Coefficient</td></tr><tr><td>C</td><td>Static Beam-Loading Coefficient= V / Bpx^3</td></tr><tr><td>C</td><td>427.1 * EHP / (Diap^0.666 * ∇^3)</td></tr><tr><td>CA</td><td>Ship-Model Correlation Factor</td></tr><tr><td>Disp</td><td>Displacement (Long tons)</td></tr><tr><td>DL</td><td>Displacement-Length Ratio</td></tr><tr><td>DTMB</td><td>David Taylor Model Basin</td></tr><tr><td>FN, FNL</td><td>Froude Number based on Length= V * 1.689 / (32.174 * L)^0.5</td></tr><tr><td>FNV</td><td>Froude Number based on Volume= V * 1.689 / (32.174 * ∇^0.333)^0.5</td></tr><tr><td>FSSS</td><td>Canadian Fast Surface Ship Series</td></tr><tr><td>HSVA</td><td>Hamburgishe Schiffbau-Versuchsanstalt</td></tr><tr><td>HSRB</td><td>High-Speed Round Bilge Displacement Hull</td></tr><tr><td>IE</td><td>Entrance Angle (degree)</td></tr><tr><td>L</td><td>Length (ft)</td></tr><tr><td>LCB</td><td>Longitudinal Center of Buoyancy</td></tr><tr><td>LCF</td><td>Longitudinal Center of Flotation</td></tr><tr><td>L/B</td><td>Length-Beam Ratio</td></tr><tr><td>LR</td><td>Length of Run (ft)</td></tr><tr><td>LWL</td><td>Length of Design Waterline (ft)</td></tr><tr><td>M</td><td>Displacement-Length Ratio = ∇ / LWL^0.333</td></tr><tr><td>MCF</td><td>Merit Curve Factor</td></tr><tr><td>N</td><td>Number of Waves in the Ship Length</td></tr><tr><td>NPL</td><td>National Physical Laboratory</td></tr><tr><td>Rf</td><td>Frictional Resistance (lb)</td></tr><tr><td>Rr</td><td>Residuary Resistance (lb)</td></tr><tr><td>RT</td><td>Total Resistance (lb)</td></tr><tr><td>S</td><td>Wetted Surface Coefficient, = W.S./(Disp * LWL)^0.5</td></tr><tr><td>SFDV</td><td>Small, Fast Displacement Vessel</td></tr><tr><td>SSPA</td><td>Swedish State Shipbuilding Experimental Tank</td></tr><tr><td>TX</td><td>Draft, to DWL, at Station of Maximum Sectional Area (ft)</td></tr><tr><td>∇</td><td>Displaced Volume (cubic-ft)</td></tr><tr><td>V, VK</td><td>Speed (knot)</td></tr><tr><td>W.C.F.</td><td>Worm Curve Factor</td></tr><tr><td>W.S.</td><td>Wetted Surface (sq-ft)</td></tr></table>
+
+## 1.0 INTRODUCTION
+
+One of the most significant recent naval trends has been the widespread deployment of small surface combatants, such as small frigates, corvettes, and fast patrol boats. Their common mission requirements are patrolling 200 nm Exclusive Economic Zones, coastal defense, coastal convoys and recently offshore platform protection and support. Most of these surface naval combatants are designed to operate at top speeds that correspond to speed length ratios (V/L^0.5) up to about 3.0, and with seakeeping capabilities sufficient to cope with the prevalent sea state in the operating area. However, the cost of modern warships has risen greatly since the late 1960's, which prohibits the small navies from exploring some of the alternative hull forms, other than high-speed round bilge displacement hulls, to fulfill their coastal defense policies. This type of vessel demands less training, maintenance, and also provides relatively low acquisition and operating cost. High-speed round bilge displacement hulls (HSRB) possess some distinctive hydrodynamic characteristics, particularly in terms of resistance (up to speed-length ratio less than 3.3). The early stage design of such vessels can be greatly enhanced by an accurate, rapid means for predicting ship powering performance, with regard to designs performed by "hand" or carried out with the aid of some type of small-ship design synthesis model.
+
+## 2.0 SURVEY OF HIGH SPEED ROUND BILGE DISPLACEMENT HULL FORMS
+
+This section is an endeavor to investigate the recent practice to define suitable dimensions and form parameters that yield a minimum resistance while still satisfying the other essential design features for such high speed vessels as corvettes and fast patrol boats. These types of surface combatants always encounter the absolute limit of maximum utilization of power on minimum weight, and with very restricted internal volume available. On the other hand, the rise of topside weight due to increasing size of electronic gear and weapons has become a familiar design problem to naval architects. Long, narrow hulls for advancing ship speeds seem impractical for future designs.
+
+The principal factors which govern the design of such high speed vessels can be elaborated by using statistics for some of the existing designs. A survey of this type of small surface combatant with design Froude numbers above 0.6 was conducted by the author. Data on fifty-eight ships was collected and considered to be appropriate to this study. Among the fifty-eight ships, thirty-three of them are fast patrol boats with displacement less than 500 tons; nineteen of them are of displacement between 500-1,200 tons, and are considered as corvettes. The rest of the ships are small frigates with displacement between 1,200-1,800 tons. The hull form characteristics of these fifty-eight small surface combatants are divided into six basic categories. Of these six categories, L/B, B/T, CB, CP, CX, DL and V/L^0.5 are indicated in Figures 2.0-1 through -8. As can be seen, these figures showing one parameter plotted against another, appear to be reasonably free from any correlation. Some trends can be detected from displacement vs. LWL, BX vs. LWL, TX vs. BX, L/B vs. V/L^0.5 and B/T vs. V/L^0.5. Surprisingly, no trends can be found from Figures 2.0-5 and -9, where displacement-length ratio (DL) and CB are believed to be the most influential parameters for a given design speed. Some other interesting features from Figures 2.0-7 and -8 indicate L/B decreases and B/T increases as design speed-length ratio increases. These trends may result from the required transverse stability rather than for hydrodynamic reasons. All these trends probably arise from the fact that individual designs from different sources do not form a random population, but each of them, in their way, selected their own parameters to fulfill their top level requirements. However, the following equations from regression analyses of the fifty-eight hulls show some of the latest design trends, and they will be applied in Section 4 and Appendix A for further studies.
+
+$$
+\begin{array}{r l} \nabla & = 3 4. 9 7 6 9 * (4 8. 9 8 0 6 6 1 - 2. 1 6 6 0 1 1 * \mathrm{LWL} + 0. 0 2 4 1 8 8 \\ & * \mathrm{LWL} ^ {\wedge} 2) \end{array} \tag {2.0-1}
+$$
+
+$$
+\mathrm{BX} = 0. 0 8 5 * \mathrm{LWL} + 1 1. 9 5 3 \tag {2.0-2}
+$$
+
+$$
+\mathrm{TX} = 0. 3 2 3 * \mathrm{BX} - 1. 3 8 \tag {2.0-3}
+$$
+
+## 3.0 POWERING PREDICTIONS-APPLICATIONS OF HULL FORM SERIES AND REGRESSION ANALYSES
+
+One of the most essential elements of the powering prediction for early-stage design is the computation of bare hull resistance. The major problem with computation of bare hull resistance for high-speed round bilge displacement hulls is that the Taylor Standard Series (14), the destroyer worm curve data developed by NAVSEA, and several numerical forms from regression analyses based on the DTNSRDC and AEW destroyer hull form data (15), (3), are primarily applicable to ship speed corresponding to speed-length ratios of about 0.6-1.8. Additional data must be utilized if accurate predictions are to be made for speed-length ratios well beyond 2.0. Fortunately, several high speed round bilge methodical series such as FSSS, HSVA'C' series, SSPA-SFDV, Series 64 and some numerical forms from regression analyses are available for this kind of study. This section will first describe the characteristics of these hull form series, then determine their validity and applicability by comparing their predictions to experimental results. It is recognized that accurate means for predicting the resistance of the appendages as well as propulsive coefficients (16) for these types of vessels must also be developed in the future. The characteristics of some of the methodical series and regression methods are described in more detail in the following subsections.
+
+## 3.1 CANADIAN-FAST SURFACE SHIP SERIES (FSSS): (4), (12) and (13)
+
+In the 1970's The Marine Dynamics and Ship Laboratory of the National Research Council of Canada (NRC) conducted an extensive series of model tests on fast surface ships. The main objective was to explore hull forms suitable for future warship design of 1,000-5,000 tons. Another design objective of this series was to maintain "ship design speed in a seaway, even if some penalty in calm water has to be involved".(4) The parent form of the series is derived from the St. Laurent (DDE 205) class frigate. Four basic hull form parameters, including B/T, CB, CW, and alenderness parameter (L^2/BT), were investigated. The first group of 22 models was tested and bare hull resistance was expanded to ship sizes of 125-4,000 tons and lengths of 175-400 ft. Later, eight models were added; the B/T was extended to 5.2, which provided intermediate and high values of L^2/BT. Resistance data is available throughout the speed range FNL=0.2-1.0. Some interesting characteristics of this series include: (a) the parent model was developed from a conventional destroyer hull form and all models were tested to the upper limit of the preplaning range, (b) CX=0.784 for all models. The body plan and WCF (V/L^0.5=0.6-1.5) of the parent model (Design No.6 Model 264) are given in Figures 3.1-1 and -2. The range of model characteristics is given in Table 3.0-1. The wetted surface of this series can be estimated by the following equation.
+
+```javascript
+W.S. = ∇^.666 * (3.197989 + 0.4035 * M + 0.065808
+* L/B + 0.409014 * B/T - 4.811087 * CB + 1.691376
+* CW + 4.845561 * AT/AX - 0.03806 * BT/BX) (3.1-1)
+```
+
+## 3.2 HSVA'C' SERIES: (1)
+
+In the 1960's Kracht and Grim experimented with a series of sixteen models at the model basin of The Institut Fur Schiffbau der Universitat Hamburg. This series was particularly designed for ships operating at the slope (V/L^0.5=1.2-1.6) and over hump range (V/L^0.5=1.6-2.4). Each of the models was tested at three different loading conditions. Resistance data are presented as Rr/Disp (kg/tonne) from FNL=0.10-0.82. All models are designed with integrated skeg, knuckle from stem to midship and large water-plane area (CW=0.77-0.87). The body plan of the parent model is given in Figure 3.2-1 and the range of model characteristics is in Table 3.0-1. The wetted surface of this series can be estimated by equation (3.2-1).
+
+```txt
+W.S. = ∇^(0.666) * (-0.018826 * L/B + 0.339615 * B/T
+- 5.302388 * CP - 3.886859 * CX + 6.528535 * CW
+- 0.666906 * V/L^3 *1000 + 0.358538 * BT/BX
++ 9.115665) (3.2-1)
+```
+
+## 3.3 SSPA SMALL, FAST DISPLACEMENT VESSELS (SSPA-SFDV): (7)
+
+A series of small high speed displacement models suitable for fast naval vessels, such as fast patrol boats, and torpedo boats, was developed by SSPA in the 1960's. A total of nine models were built and the test results have been presented in non-dimensional as well as in dimensional form covering displments from 100-400 cubic meters. Some results have been expanded to a displacement of 800 cubic meters. The parent hull was derived from the 170-ton Plejad class fast attack craft-torpedo. Two two basic hull parameters (L/V^333 and B/T) were investigated Resistance tests have been carried out up to FNL=1.3 (V/L^0.5=4.5 All nine models consist of constant CB=0.40, CX=0.59, LCB and
+
+LCF = 4.15% and 9.09% aft midship, respectively. An additional model of CB=0.45, CX=0.66 was also built and tested. The results provide some information with regard to greater carrying capacity versus hydrodynamic performance. Resistance tests with spray strips and tests in waves were also conducted. The range of model characteristics can be found in Table 3.0-1. The parent model 1213-A body plan is illustrated in Figure 3.3-1. The wetted surface of the series can be represented by the following equation:
+
+$$
+\begin{array}{r l} \text {W.S.} & = (\nabla * L) ^ {\wedge} 0. 5 * 4 * (0. 7 7 - 0. 0 4 5 * B / T + 0. 0 1 \\ & * (B / T) ^ {\wedge} 2) \end{array} \tag {3.3-1}
+$$
+
+## 3.4 SERIES 64: (2)
+
+In 1959 DTMB under its Fundamental Hydrodynamics Research Program, initiated a series of studies on high speed, low wave resistance hull forms. A total of 27 models were built, and three basic parameters, B/T, DL, and CB, were investigated. This series embraces a range of very fine half entrance angles from 3.7 deg to 7.8 deg and low displacement-length ratios accompanied with low CB. The total range of displacement-length ratio is from 15 to 55 with the smallest values applicable to the lowest CB (0.35 < CB < 0.55). This hull form series also has the largest slenderness ratios (L/B) compared to the other methodical series. The common characteristics of Series 64 are as follows: The sectional area curves A/AX, design waterlines B/BX and centerline profile T/TX are kept the same for all models. Therefore, constant CP, LCB and LCF are also applied to all models. The forebody of this series has a straight sectional area curve and full waterline curve. The aftbody, on the other hand, consists of a fairly hollow (or "S") sectional area curve. Maximum sectional area and waterline occur at station 12 and 14, respectively. This series also has a broad flat transom BT/BX=0.8 and deep immersed area AT/AX=0.40 associated with straight buttock lines. Resistance for V/L^0.5=1.0- 5.0 was reduced to Rr/Displacement (lbs/tons) and Cr. The ATTC (Schoenherr line) is recommended for calculating frictional resistance. The body plan is shown on Figure 3.4-1 and the range of hull form characteristics is given in Table 3.0-1 The wetted surface of this series can be estimated from equation 3.4-1.
+
+$$
+\begin{array}{l} \mathrm{W.S.} = (\mathrm{V} / 3 4. 9 7 6 9 * \mathrm{LWL}) ^ {\wedge} 0. 5 * (3 8. 7 6 3 5 - 7. 2 4 8 1 2 5 * \mathrm{B/T} \\ \div 1. 2 7 8 0 6 2 5 * (B / T) ^ {2} - 9 1. 1 3 * C B + 2 6. 4 2 5 * B / T \\ \star \mathrm{CB} - 4. 1 0 5 \star (\mathrm{B/T}) ^ {\wedge} 2 \star \mathrm{CB} + 9 1. 1 \star \mathrm{CB} ^ {\wedge} 2 - 2 6. 7 7 5 \\ \star \mathrm{B} / \mathrm{T} \star \mathrm{CB} ^ {\wedge 2} + 3. 8 7 5 \star (\mathrm{B} / \mathrm{T}) ^ {\wedge 2} \star \mathrm{CB} ^ {\wedge 2}) \tag {3.4-1} \\ \end{array}
+$$
+
+## 3.5 Mercier & Savitsky Numerical Method: (17)
+
+In 1973 Mercier and Savitsky conducted a regression analysis of smooth water resistance data for seven transom stern series which included 118 models. With the exception of 17 models from Series 62, all of them are round bilge displacement hulls. The investigation included 23 models from NPL (9), 9 models from Nordstrom (29), 12 models from DeGoat (19), 9 models from SSPA (7), 27 models from Series 64 (2), 21 Models from Series 63 (20), and 17 models from Series 62. Through the study, Mercier and Savitsky attempted to predict the resistance of transom stern hulls in the non-planing range--specifically for FNV less than 2.0. Because the majority of data were derived from round bilge hull forms, the results of the study can be used to predict the resistance of displacement hulls (6). Four parameters (length-displacement ratio L/V^0.333, beam loading coefficient CΔ, entrance angle IE, and transom area) were considered. Total resistance and the values of the regression coefficients for a displacement of 100,000 lbs for the range of FNV from 1.0 to 2.0 can be found in reference (17). To use the Mercier and Savitsky equations, it is important to use hull form parameters within the range of values of the independent variables in the data base. The range of applicability can be found from Table 4 and Figure 11 in reference (17). The wetted surface for transom-stern ships can be estimated from equation (3.5-1) which was derived from the previous methodical series.
+
+$$
+\begin{array}{l} \mathrm{W.S.} = \nabla^ {\wedge} 0. 6 6 6 * (\mathrm{L} / \nabla^ {\wedge} 0. 3 3 3) ^ {\wedge} 0. 5 * (1 + 0. 0 4 6 * \mathrm{B} / \mathrm{T} \\ + 0. 0 0 2 8 7 * (B / T) ^ {2}) * 2. 2 6 2 \tag {3.5-1} \\ \end{array}
+$$
+
+The difference between measured and calculated resistance was less than 10% for 90% of the cases, and within +/- 9% for 95% of the cases for wetted surface.
+
+## 3.6 TANG ROUND BILGE DISPLACEMENT HULL (RBDH) NUMERICAL METHOD: (5)
+
+In 1978 Z.K. Tang from Shanghai Ship D&R Institute attempted to improve the resistance estimation of round bilge displacement hulls based on regression analyses, which first succeeded in reference (17). Residuary resistance coefficients of 87 round bottom type models have been analyzed by a regression method to derive a correlation equation. The 87 models embraced most of Mercier and Savitsky's parent data, but Series 62 (hard chine), Series 64, and SSPA-SFDV were excluded. Meanwhile, 43 Chinese built round bilge displacement hulls were added. Five basic parameters were considered in the regression analysis. The range of parameters can be found in
+
+Table 3.0-1. Residuary resistance coefficient Cr at eight differ-
+ent FNL between 0.4 and 1.0 can be determined based on the 53
+regression coefficients. The coefficients can be found from Table 2
+reference (5). Wetted surface for RBDH was also investigated based
+on 122 Chinese built round bottom craft.
+
+$$
+\begin{array}{l} \mathrm{W.S.} = (\nabla * L) ^ {\wedge} 0. 5 * (6. 6 9 1 2 - 6. 6 7 4 1 8 8 * (B / T) ^ {\wedge} 0. 5 \\ \star \mathrm{CP} ^ {\wedge} 0. 5 + 2. 8 9 0 9 \star \mathrm{B/T} \star \mathrm{CP} - 0. 1 1 5 5 9 7 7 \star \mathrm{CB} \\ \star (B / T) ^ {\wedge} 2. 5 \star C P ^ {\wedge} 2. 5 - 0. 1 5 9 0 8 0 8 \star C B) \tag {3.6-1} \\ \end{array}
+$$
+
+This equation is suitable for CB=0.36-0.58 and (B/T\*CP)^0.5=1.3-2.2. The difference between the measured and the calculated Cr and wetted surface is less than 8.25% for 90% of the cases and 2.84% for 95% of the cases respectively. The difference for total resistance based on the 1957 ITTC friction formulation plus a CA=0.0004 is less than 5.77% for 90% of the cases.
+
+## 3.7 NPL HIGH SPEED ROUND BILGE DISPLACEMENT HULL SERIES (NPL-HSRB): (9), (10)
+
+In 1969 NPL developed a series of high-speed displacement hulls, which was designed to operate at FNLs between 0.3 and 1.19. The characteristics of this series are fine straight lines forward, deep transom immersion (AT/AX= 40x), aftbodies with a round bilge section, straight buttock lines and smooth steady rise aft. In 1976, the L/B range of this series was extended from (3.33-6.25) to (3.33-7.5). The models of this series are arranged in five groups, each group containing models of constant L/B. A total of 32 models were treated. The hull form parameters of this series such as CP, CX, and AT/AX are very similar to SSPA-SFDV, except that the hull sections (bow and stern) of this series are more "V" than SSPA-SFDV. Regrettably, up to this moment the author is still in the process of digitizing this series. No computer program from the author for this series is available; therefore the author decided not to evaluate this series in the next section. However, he compared this series with SSPA-SFDV in 1983--using a 260-ft corvette as a sample ship. The bare hull PE(NPL)/PE(SSPA) ratio of the ship is presented in Figure 3.7-2. NPL-HSRB seems to give much higher resistance at low speeds and 4-5% higher resistance at high speeds in this sample calculation. This result cannot be explained for the present moment; nevertheless, the author's conjecture is that it may be due to more "V" shaped sections, larger transom areas (0.52 versus 0.42) or different tank test techniques employed by these two model basins.
+
+## 3.8 VALIDATION AND APPLICATION OF METHODICAL SERIES AND REGRESSION ANALYSES FOR POWERING PREDICTIONS
+
+Several powering prediction methods, including methodical series, graphical predictions, and numerical forms from regression analyses, are available for high-speed round bilge vessels. However, caution should be exercised in the use of series data or regression methods. Users have to avoid hulls with form parameters that are not within the limits of the data base. Otherwise, considerable inaccuracy may occur. This section presents the validation of the hull form series and regression methods, which were covered in Sections 3.1 to 3.6. Comparisons of each of the prescribed methods to three sets of experimental results are presented in Tables 3.8-1,-2,-3, and Figures 3.8-1,-2,-3. The experimental results are represented by a 300-ft small frigate, a 230-ft corvette, and a 154-ft fast patrol craft. The results derived from methodical series and regression analyses were computed by several computer programs (28), developed by the author. The programs have not yet been validated by other researchers, but the outputs should be acceptable for the analyses in this paper. The difference between the calculated and experimental results shows how far one can extrapolate beyond the limit of the data base before incurring significant error. Before further assessment can be made, one may consider the difference in technique, which involves the size of the models as well as the frictional formulations adopted by the model basins. The author has no intent to dwell on this topic, but he did make adjustment to compensate for the difference between the ITTC formulation and whatever friction line had been in use at the time the series or model test data were published. The standardized frictional formulation in this paper is the 1957 ITTC formulation plus a model-ship correlation factor (CA) of 0.0004.
+
+The small frigate is a conventional destroyer hull form, with moderate displacement-length ratio, and CW, and a broad transom with AT/AX=10% immersion. The hull form parameters are within the limit of FSSS (except for a slightly slack midship and deeper transom) and HSVA'C' Series. The major conflict between this hull and Series 64 and SSPA-SFDV is that these two methodical series consist of 40% transom area ratio. It is not surprising to see FSSC and HSVA'C' series with good correlation with the model tests. The much higher resistance predicted by Series 64 and SSPA-SFDV is likely due to their large transom areas, especially at the lower speed range. The lower resistance at low FNL predicted by FSSS also can be explained by the 6-7% AT/AX vs. 10% from the frigate. The two regression methods were originally derived from models significantly different from conventional destroyer forms. Poor correlations are expected.
+
+The 230-ft corvette with a very fine CP may not be the optimum CP for the design speed. This hull also has a relatively small CW for this type of vessel and a moderate 9x transom area. The 6-7x higher resistance predicted by FSSS may result from the much lower CB=0.426 of the 230-ft corvette, compared to the minimum CB=0.48 from FSSS. It can be explained why high speed vessels which have the same CP, smaller CB, are always desirable (result from smaller CX). On the other hand, HSVA'C' series consistently shows 4-5% lower predicted EHP than the model, especially at FNL=0.35-0.55. This can be explained by the beneficial effect of large waterplane area ships at high speeds (the smallest CW of HSVA'C' series is 0.77 versus 0.711 for the corvette). Naval architects should also be aware that this series was designed for ships operating in the over hump regime. Again, Series 64 and SSPA-SFDV show fairly large discrepancies from the experimental results. However, the absolute values of the errors are less than the discrepancies for the small frigate. One should be aware that the low resistance predictions from SSPA-SFDV and Mercier's regression method (17) are due to the fact that SSPA-SFDV is based on a much larger (CP=0.69) than that for the 230-ft corvette (CP=0.576). The Mercier's regression method (17) was also derived from a combination of hull form series with large CP (such as SSPA and NPL series). It seems that CP still affects the resistance characteristics at high speed to a certain extent. A further explanation will be discussed in Section 4.2, in which Tang's regression method gives a fairly good correlation.
+
+The 154-ft Fast Patrol Boat PGM-C bests represent contemporary vessels of this type having small CB, large B/T=4.38, broad transom (BT/BX=0.833), and deep transom immersion (AT/AX=0.40). From the comparison between FSSS and the experimental results, the significant advantage of small CB and large transom immersion at high speeds and penalty at low speeds is well illustrated. The larger AT/AX and smaller CX also let PGM-C gain certain advantages from HSVA'C' Series (the largest AT/AX of HSVA'C' Series is 0.298) at FNL>0.5. The similar transom immersion of SSPA-SFDV and Series 64 give these two series fairly good correlation with the model test data. Series 64 still shows much higher resistance than the experimental results at FNL<0.50. This may result from the linear extrapolation from the series itself, or perhaps this series is only good for high speeds. This time Mercier's regression method (17) gives very good correlation with the model test data from FNL= 0.45-0.70, but surprisingly poor correlation with Tang's regression method. The good correlation with Mercier's regression method can be explained by PGM-C hull form parameters which are within the limit of parent data. The poor correlation with Tang's regression method is not apparent but may be explained by the instability from regression.
+
+## 4.0 HULL FORM DESIGN OF HIGH-SPEED ROUND BILGE DISPLACEMENT HULLS
+
+The range of principal dimensions and hull form parameters for various high-speed round bilge displacement hulls are listed in Table 2.0-1. The general characteristics of these type of ships are as follows: broad transom, relatively large transom area, small CB, moderate to high CP, slack midship section, large deadrise, and straight center buttock line. Before further discussion of their hull form design, it is necessary to take a proper perspective on smooth water hydrodynamic phenomena. The total wave resistance is composed of the forebody (bow) divergent waves and the bow and stern tranverse wave systems. The primary cause of the bow wave system is the wave crest produced by the pressure peak at the bow; whereas the stern wave system is mainly caused by the pressure dip and hollow formed at the shoulder or the beginning of the run. The interference of the bow and stern wave systems will affect the magnitude of the stern wave system. At low speeds the divergent wave dominates the wave pattern; however, at high speeds the tranverse wave becomes more notable and primarily reasonable for the variation of wave-making resistance. The wave energy is proportional to wave length. The number of waves in the ship length is expressed by the equation:
+
+$$
+N = 1. 7 9 5 \quad (V / L ^ {\wedge} 0. 5) ^ {\wedge} 2 \tag {4.0-1}
+$$
+
+Wave resistance increases as the number of waves in the ship length decreases. This fact remains true until V/L^0.5 > 2.0. The first hump of the wave resistance curves of FSSS and HSVA'C' series is in the neighborhood of V/L^0.5=0.9-1.0. From equation 4.0-1, we know at V/L^0.5 < 1.0, the ship is riding on two or more waves. Minimum change of trim at this speed range is expected. When speed gradually increases to V/L^0.5=1.35 (N = 1.0), the bow of the ship will start to rise because the crest of the second wave will form beyond the stern. When ship speed reaches the neighborhood of V/L^0.5=1.5 (N=0.8), the change of trim will increase rapidly since only the wave crest at the bow is supporting the ship. Eventually the increase of wave-making in this speed range (V/L^0.5=1.3-1.5) will be extraordinarily large. At V/L^0.5=1.5-1.6 the sinkage of the hull will reach its maximum. The cause of the rapid bow rise in this speed range is the formation of a high and narrow divergent wave (thin sheet of water) at each side of the bow. When speed increases to V/L^0.5 > 2.0, the divergent wave from the bow will continue to grow in size. But the transverse wave will tend to cease its growth as speed increases. Also the hollow of the bow transverse waves will form farther and farther away from the stern so that no interference in or amplification of the stern waves from the bow waves is expected. Beyond this speed range, the slope of Rr/Disp
+
+will start to decline then flatten. The advantages of high-speed round bilge displacement hulls begin to cease at V/L^0.5=3.3. Beyond this speed, the thin divergent bow wave will become a sheet of spray. It causes not only severe spray drag but deck wetness also. The significant portion of total resistance then will shift from residuary to frictional and spray resistance.
+
+The principal dimensions and hull form parameters which affect the resistance characteristics of this type of vessel, based on the afore-mentioned hull form series and regression analyses do not reveal the same conclusions. This might be due to the limited number of models tested for each of the series, which constrains the available hull form parameters. Table 4.0-1 lists all the parameters that are considered significant by the originators of the hull form series in resistance predictions. Not all these series were designed to operate at the same speed-length ratio--that is also another factor in the selection of significant hull form parameters. The results from Section 3.7 indicate HSVA'C' series predictions provide the beat overall correlation with model test results with regard to ship size and length. The following sections will discuss the relative importance of hull parameters using this series and several resistance prediction computer codes developed from the other hull form series by the author (28).
+
+## 4.1 DISPLACEMENT-LENGTH RATIO (DISP/(0.01L)^3)
+
+This is the most influential factor for high-speed round bilge displacement hulls. Wave-making resistance is directly proportional to the displacement-length ratio. Figures 4.1-1 and -2 show the Rr/Disp and Rr comparisons of a series of 200-ft corvettes with various displacement-length ratios. The sharp increment of Rr from FNL=0.35-0.50 was explained in detail in Section 4.0. Significant advantages gained by increasing ship length for ships operating at FNL < 0.55 are obvious. It decreases not only the displacement-length ratio but also the Froude number, both of which help decreases the Rr/Disp significantly. However, when ships are required to operate at FNL > 0.55, the slope of Rr/Disp shown in Figure 4.1-1 starts to decline. For a given design speed the benefit from increasing ship length for lower FNL in order to obtain lower Rr/Disp is diminished, especially when FNL > 0.8, as 40-50% of the total resistance will become frictional. Solely increasing ship length at this high speed range will result in not only greater hull weight but wetted surface as well.
+
+## 4.2 PRISMATIC COEFFICIENT (CP)
+
+Prismatic coefficient is one of the most important parameters which affect the resistance characteristics of conventional ships. This parameter for high-speed round bilge displacement hulls cannot be discussed without paying attention to the other parameters such as AT/AX, CB, LCB, and sectional area shapes. In the past, several hydrodynamicists have investigated this issue up to speed-length ratio of 1.5. Most of their studies included ships with cruiser sterns or small transom immersion. However, for high-speed round bilge displacement hulls, large At/AX=10-40% seems to be a very common practice. Appropriate CP should be selected to combine with a large transom area to avoid negative pressures generated at the keel rise. Figure 4.2-1 shows the effect on Rr of variations in CP from the study of a series of 200-ft corvettes based on references (1) and (28). The penalty of a high CP at FNL < 0.45 is obvious. Although from FNL 0.5 to 0.8 the difference of Rr between the baseline ship (CP=0.64) and the alternate hulls (CP=0.62, 0.68) is less than 2%, one should not overlook these relative figures. The author suggests that appropriate selection of CP should be considered in conjunction with the speed-time profile and absolute saving in horsepower. The rationale from reference (22) can be used as a guideline for this tradeoff. For example, the significant savings of Rr for CP=0.62 compared to CP=0.68 at FNL=0.3 is more than 20%; yet the net savings in terms of horsepower is less than 77 EHP. On the other hand, the saving of Rr for CP=0.68 verses CP=0.62 at FNL=0.80 is less than 2%; yet the net saving in horsepower is as high as 232 EHP. Fuel saving for a hull with a high CP based on higher design speeds can still be achieved. CP less than 0.6 or larger than 0.69 seems unlikely to achieve a balanced design for high-speed round bilge displacement hull form naval ships. Equation (4.2-1) is the author's suggestion for CP selection versus Froude numbers. This relationship is based on a simple regression of data from reference (5) and data from some contemporary high-speed round bilge displacement vessels. The predicted CP from this equation does not necessarily result in least resistance.
+
+$$
+\begin{array}{r l} \mathrm{CP} & = 0. 5 6 8 6 7 + 0. 1 5 3 8 0 * \text {FNL} - 0. 0 7 0 0 6 * \text {FNL} ^ {\wedge} 2 \\ & (0. 2 <   \text {FNL} <   1. 0) \end{array} \tag {4.2-1}
+$$
+
+## 4.3 BLOCK COEFFICIENT (CB) AND MAXIMUM SECTION COEFFICIENT (CX)
+
+Fuller hulls (high CB) usually give higher residuary resistance at all speeds for conventional hulls. This is also applicable to high-speed round bilge displacement hulls. CB larger than 0.50 is unlikely for contemporary high-speed displacement naval vessels. However, this factor CB should not be analyzed without considering CP and CX. At high speeds, misleading guidelines can be found in SSPA-SFDV and Series 64--if the magnitude of Cr is the only concern.
+
+Cr usually decreases with decreasing CB. However, this may lead to higher CT due to the higher wetted surface for ships with smaller CB. For a given CB, smaller CX or AX^0.5/LR is more desirable at high speeds since C is increasing twice as fast as the ratio of AX^0.5/LR. However, this factor is less influential at the lower speed range. Small CX helps render the flow through the run straight and smooth due to smaller keel rise.
+
+## 4.4 BEAM-DRAFT RATIO (B/T)
+
+The effect of B/T, generally speaking, is less than the displacement-length ratios or CP, particularly at FNL < 0.45. Different methodological series also give different conclusions in their investigations of B/T. The NPL Series is the only series that does not consider B/T a significant factor in the resistance predictions. The effect of B/T from the study (Figure 4.4-1) of a series of 200-ft corvettes indicates that at FNL < 0.4 the difference of Rr for B/T=3.0 and 4.2 compared to the baseline ship (B/T=3.63) is less than 5%. The difference is almost diminished to zero from FNL=0.4-0.6. Then 2-3% variations are expected at the higher speed range. The degradation in performance at high speeds of increased B/T should not be overlooked. For example the Cr of SSPA-SFDV starts to rise at FNL > 0.85. This is because only calm water wetted surface was considered, while additional wetted surface caused by spray was not taken into consideration. Spray drag, a coherent relation with B/T, cannot be dismissed. The beam-draft ratio should be considered more in the aspect of stability than resistance. This also explains the tendency of slight increases of B/T versus FNL in Figure 2.0-8. (For a given design speed, larger B/T is preferable due to the relatively heavy top weight so common in shorter and smaller ships.)
+
+## 4.5 LENGTH-BEAM RATIO (L/B) AND HALF ENTRANCE ANGLE (1/2 IE)
+
+Among all the high-speed methodical series, NPL is the only series that considers L/B as one of the more important parameters for powering predictions. (For given displacement-length ratio and CB, it is almost impossible to alter L/B without affecting B/T.) Most of the high-speed methodical series including the recent studies (24) for ships with much lower speed-length ratio=1.3 also failed to define the precise relations between residuary resistance and L/B. L/B affects the other hull form parameters such as IE rather than resistance characteristics. For example, the IE of the slender Series 64 ranges from 3.7-7.8 degrees compared to 9.5-14.4 degrees from the shorter SSPA-SFDV. However, the smaller IE from Series 64 does not show any significant advantages compared to SSPA-SFDV for the entire speed range. Reference (23) conducted a series of tests with two slender high-speed destroyer models. The conclusion was that the increase of © is approximately 1% for each 2-deg. increment of IE from 9.3 degrees to 13.6 degrees. The advantage of small IE is believed to be less significant at higher speeds. The selection of IE should consider its individual relations to CP and CW. On the other hand, as speed goes up, the crest of the bow wave system tends to move farther and farther away from the FP. The smoothness of the forebody other than IE should be considered, e.g., a fine entrance angle with large CP or CW may result in a shoulder on the design waterline, producing adverse effects on resistance.
+
+## 4.6 SECTIONAL AREA CURVE (A/AX) AND LONGITUDINAL CENTER OF BUOYANCY (LCB)
+
+The effect of sectional area curve and LCB on resistance cannot be discussed individually without considering their interaction. The effect on resistance from these two parameters is very difficult to quantify. However, certain guidelines can be found from (5) and (10). For given CP and transom immersion, the longitudinal distribution of the sectional area curve is very important to its resistance characteristics. Hollow forebody sectional area curve should be avoided due to the bow wave systems, which tend to move farther aft at the higher speeds with the development of a shoulder wave. The station of maximum area should be at station eleven or even farther aft, its location mainly dependent on design speeds. This provides the ship with a longer entrance and eases flow through the midship to the run. It is just as important to allow smooth and easy flow along the run. A straight aftbody sectional area curve is always desirable. Hooked buttocks and "flattening-off" sectional area at the AP postulated in reference (5) may improve running trim at high speed and depress wave-making at the AP. However, this kind of design may result in a convex section-area curve at station 13-15. Excessive convex surface may generate negative pressure and flow problems. The shape of the sectional area curve is heavily governed by the LCB. NPL is the only methodical series that analyzes on the effect of LCB on resistance. The LCB of the NPL parent hull is 6.4% aft station 10. From reference (10), the effect of LCB is less significant on slender hulls (large L/B and low displacement-length ratio). The LCB also should be located farther aft for higher speed ships. But it does not seem preferable to have LCB located more than 5-6% aft midship for FNL=1.0. For ships with lower FNL=0.5-0.8, 3-5% is acceptable. Equation (4.6-1) sheds some light on how to select LCB in terms of speed. This relationship is based on a simple regression of data from reference (5) and data from some contemporary high-speed round bilge displacement vessels. The LCB location predicted from this equation does not
+
+necessarily result in least resistance.
+
+$$
+\begin{array}{r l} \text {LCB (aft midship \%)} & = - 2. 2 1 8 9 + 1 2. 3 5 0 5 * \text {FNL} - 5. 4 0 4 8 * \text {FNL} ^ {\wedge} 2 \\ & (0. 4 <   \text {FNL} <   1. 0) \end{array} \tag {4.6-1}
+$$
+
+## 4.7 TRANSOM AREA RATIO (AT/AX)
+
+The function of transom sterns is to generate a low pressure region just aft of the AP. The hollow of the stern wave (tranverse) system usually commences slightly before the transom. Obviously, its exact location varies with speed. The effect of the transom stern on the hollow of the stern wave system is very similar to the effect of a bulbous bow on the bow wave system. Only a few systematic tests on transom sterns are available (26). Most of them are applicable to speed-length ratios less than 2.0. Nine models were tested as reported in reference (26), design guidelines were developed for V/L^0.5=1.34-2.0. Transom area and buttock configuration were the two parameters considered. At low speed the resistance decreased considerably as the size of the transoms were decreased. But conversely, as the speed increased, the optimum transom area also increased. An 8-10% AT/AX seems to be the optimum value for V/L^0.5=1.4 to 1.7, but 20-40% transom area ratio is more desirable for V/L^0.5 > 3.0. One should be aware that the parent model from (26) was a Farragut Class destroyer (DD 348), with BT/BX=0.56. Care should exercised when these kinds of design charts are used. For example, one must try to avoid a broad transom with zero or very small transom area (or vice versa) at high speed. The significant advantage from broad and large transom is documented in reference (27) based on a series of four models tested at speed-length ratios larger than 3.0. More than 7% savings in EHP was achieved by the model with AT/AX=0.22, compared to the model with zero transom immersion. Reference (26) also suggested that buttock lines immediately forward of the transom should be hollow (which was explained in the previous section) when the design requirements emphasize high speeds. In equation (4.7-1) the recommended AT/AX vs. FNL is presented. The predicted AT/AX from this equation is based on a simple regression of data from reference (5) and some data from contemporary high-speed round bilge displacement vessels. The predicted value does not necessarily result in least resistance.
+
+$$
+\begin{array}{l} \text {AT/AX} = - 0. 0 8 5 7 3 + 0. 3 9 6 7 2 7 * \text {FNL} + 0. 1 0 6 0 6 * \text {FNL} ^ {\wedge} 2 \\ \quad (0. 4 <   \text {FNL} <   1. 0) \end{array} \tag {4.7-1}
+$$
+
+## 4.8 WATERPLANE AREA COEFFICIENT (CW)
+
+Among all the hull form series and numerical formulas from regression analyses, FSSS is the only hull form series that considered CW an important parameter for powering predictions. In the past, naval architects have always tried to minimize the wetted surface. One of their means of achieving this is to reduce the waterplane area. They had positive results in slow speed situations; the same was not true for FNV > 1.0. A similar phenomenon for ships designed for speed-length ratios much below 1.3 (i.e., poor WCF usually can be found on large waterplane area ships at low speeds) was also found from reference (24). The magnitude of this effect usually is greater in ships with higher displacement-length ratio. This relation is well illustrated in Appendix B, Figure B.1.
+
+## 5.0 CONCLUSIONS
+
+One of the main objectives of this paper is to assess existing resistance prediction tools for high-speed round bilge displacement vessels. Several standard series and numerical formulas from regression analyses (Sections 3.1-3.7) are available for this investigation. Both the hull form series and the regression analyses are applicable to FNL=0.3-1.0. However, the design speed range of these hull form series is not exactly the same. Because the significant parametric features for high-speed round bilge displacement hulls are determined by their required operating speeds, none of the existing series or regression analysis method is applicable to different designs at all speeds. When using hull form series or regression analyses for resistance predictions, hull form parameters have to be within the range of the database, because accurate results can only be expected within the strict confines of the boundary conditions. On the other hand, the distinct wave-making phenomena at different speed ranges will also dictate the selection of hull form parameters. Proper selection of hull form series or regression analyses for resistance predictions based on ship size and operating speeds are just as important as the afore-mentioned requirement. Unfortunately, there is no exact speed boundary as guideline for hull form series selection. The following suggestions may shed some light in this aspect:
+
+For ships operating at FNL=0.4-0.5, CP is one of the most important parameters, but its influence becomes negligible when FNL is greater than 0.45. As given in Figure 4.2-1, CP=0.62 seems preferable at this speed range. On the other hand, the importance of displacement-length ratio tends to increase as speed increases. The other parameters such as CX, B/T, and AT/AX remain as secondary with little or no significant effect on resistance. Conventional destroyer type surface combatants including some of the moderate-speed frigates are generally designed to operate in this speed range. As presented in Section 3.8 and Figure 3.8-1, FSSS and HSVA'C' Series seem to be the beat candidates for these types of ships.  
+For ships required to operate at FNL=0.5-0.7, displacement-length ratio becomes the most sensitive parameter, but the overall design objective should not be overlooked (per Section 4.0). At the upper end of this speed range for a given displacement, increasing ship length does not provide the beneficial interference effect from the bow and stern wave systems. The main design objective in this speed range should reduce the bow wave amplitude. Slender hull form series (such as Series 64) seems to be preferable at this speed range. However, the poor resistance characteristics (Figures 3.8-1 to -3) at low speeds and some other unsatisfactory features such as space, volume and arrangement may render this series
+
+almost impractical in contemporary warship design. At this speed range, HSVA'C' Series still provides the best resistance characteristics up to FNL=0.55; beyond this, SSPA-SFDV becomes more preferable.
+
+The hull becomes semi-planing when FNL is greater than 0.7. Residuary resistance still remains as a major component of the total resistance, but wetted surface and frictional resistance start to become significant. Displacement-length ratio is still the most influential factor in terms of resistance, but dynamic stability becomes a more and more important factor. This also explains why the smaller and faster high-speed displacement hulls (Fast Patrol Boat) tend to increase their displacement-length ratio and B/T compared to the longer and slower hulls (corvettes and small frigates). High CP and small CX are preferable at this speed range FNL=0.7-1.0, because these features provide a long and straight run. For ships less than 500-tons, SSPA-SFDV and NPL-HSRB seem to be the best design tools.  
+The author decided not to dwell on the topic of resistance prediction based on regression analyses, because of his limited understanding of statistical analysis. The only comment he would like to make it that to obtain improved hull form design through the application of regression analysis is an extremely dangerous technique. Resistance prediction equations from regression analyses generally can fit the original data within a couple of percent, but the accuracy normally expected from surface ship EHP model tests also fall into the same order of magnitude (+/- 1.5%). The same degree of prediction accuracy may not apply to the proposed designs, especially when the parent data are from various sources (model basin). Resistance predictions based on regression analysis can be still considered as a tool for early stage design. One should not abandon this technique for resistance predictions because of a lack of proper appreciation of this technique or a lack of confidence in its results without having a real comprehension of statistics. Table 5.0-1 is the author's suggestion for hull form series and regression analysis--resistance prediction method selection based on ship size and operating speeds.
+
+Today's high-speed round bilge displacement hull has asserted itself as an excellent high performance vessel for naval applications. Yet the existing resistance prediction methods are not sufficient for the early stage design for this type of vessel. This does not imply the inadequacy of data but rather the significance of the hull form parameters postulated by some of the hull form series and statistical analyses. The author has already started to reanalyze the data of FSSS and HSVA'C' Series. Residuary resistance curves based on these two series are currently under regression analysis and fairing. Design charts plus residuary resistance correction factors due to transom immersion similar to Appendix B will be applicable to V/L=1.0-2.8, CP=0.60-0.66, B/T=3.0-4.2, CW=0.72-0.82, and AT/AX=0.06-0.40.
+
+The author hopes to stimulate further discussions and design efforts, particularly in powering predictions on high-speed round
+bilge displacement hulls.
+
+## ACKNOWLEDGEMENTS
+
+The author wants to thank a number of people who have made this paper possible. Mr. John Slager, of Designers & Planners, Messrs Edward Comatock, Chris McKesson, Steven Toby, and Lt Cdr Alan Gideon of NAVSEA, who kindly reviewed the second draft of this paper, and whose expert views have been very important in assessing the value of the information presented. Thanks are also due Messrs Jay Howell and Mark Bebar, of NAVSEA for their support and suggestions. Last, but not least, Miss Linda Chung and Mina Chung helped to review the first draft of this paper with great patience and suggested improvements.
+
+## REFERENCES
+
+1. Kracht, A. & Grim, O., "Widerstand, Propulsion, Bewegung und Beanspruchung schneller Verdrangungsfahrzeuge in glattem Wasser und in refelmabigem Seegang," Ifa-Bericht Nr. 167, Juli 1966.  
+2. Yeh, Hugh Y.H., "Series 64 Resistance Experiments on High-Speed Displacement Forms," Marine Technology, Volume 2, No. 3, July 1965.  
+3. Bromfield, N. & Foster, J., "Statistical Analysis of Available Data on the Resistance of Destroyers and Frigates," Portsmouth College of Technology, Dept. of Mechanical Engineering & Naval Architecture, November 1966.  
+4. Schmitke, R.T., Glen, I.F., and Murdey, D.C., "Development of A Frigate Hull Form for Superior Seakeeping," Eastern Canadian Section, SNAME, April 1979.  
+5. Jin, Ping-zhong, Su, Ba-ying and Tang, Zhong-kai, "A Parametric Study on High-Speed Round Bilge Displacement Hulla," High-Speed Surface Craft, September 1980.  
+6. Oossanen, P. van, "Resistance Predictions of Small High-Speed Displacement Vessels," ISP  
+7. Lindgren, H. & Williams, A., "Systematic Tests with Small Displacement Vessels, Including a Study of the Influence of Spray Strips," Diamond Jubilee International Meeting, SNAME, June 1968.  
+8. Hoekzema, D.K., "Powering Characteristics for A 154-Foot High Speed PGM from test of Models 4932, 4942, and 4950 (U)," DTMB Hydrodynamics Laboratory R & D Report C-1652, April 1964. (Declassified)  
+9. Marwood, W.J. & Bailey, D., "Design Data For High-Speed Displacement Hulls of Round-Bilge Form," NPL Ship Report No. 99, February 1969.  
+10. Bailey, D., "The NPL High Speed Round Bilge Displacement Hull Series," Marine Technology Monograph No.4, RINA, 1976.  
+11. Slager, J.J. & Fung, S., "Hull Form Definition and Area/Volume Subroutines for the U.S. Navy Destroyer Synthesis Model," NAVSEA Report 55W3-82-16, December 1982.  
+12. Schmitke, R.T., Murdey, D.C., "Seakeeping and Resistance Trade-Offs in Frigate Hull Form Design," 13th Symposium on Naval Hydrodynamica, October 1980.  
+13. Schmitke, R.T., "The Influence of Displacement, Hull Form, Appendages, Metacentric Height and Stabilization on Frigate Rolling in Irregular Seas," SNAME Spring Meeting/STAR Symposium, June 1980.  
+14. Gertler, M., "A Reanalysis of The Orginal Test Data for The Taylor Standard Series," DTMB Report 806, 1954.  
+15. HFDS--DDCR, and SER64.  
+16. Bailey, D., "High Speed Displacement Ships; Trends in Hull Form Design," Second Symposium on Small Fast Warships & Security Vessels, RINA, May 1982.  
+17 Marcier, J.A. & Savitsky, D., "Resistance of Transom-Sern Craft in the Pre-planing Regime," Report SIT-DL-73-1667, June 1973.  
+18 Savitsky, D. & Brown, P.W., "Procedures for Hydrodynamic Evaluation of Planing Hulls in Smooth and Rough Water," Marine Technology, Volume 13, No.4, October 1976.  
+19. De Groot, D., "Resistance & Propulsion of Motorboats," DTMB Translation 244, January 1956.  
+20. Beys, P.M., "Series 63 Round Bottom Boats," Davidson Lab Report 949, April 1963.  
+21. Clement, E.P. & Blount, D.L., "Resistance Tests of a Systematics Series of Planing Hull Forms," SNAME Transactions, Volume 71, 1963.  
+22. Slager, J, J, & Fung, S., "A Study of the Benefits and Costs of Retrofitting Bow Bulbs on USN Auxiliary and Amphibious Warfare Ships," NAVSEA Report 3213-82-04, April 1982.  
+23. Baker, G.S., "Ship Design, Resistance & Screw Propulsion, Volume 1.--The Design of Ship Forms & Their Resistance," 1933.  
+24. Slager, J, J. Hagen, G. Saunders, D. & Fung, S., "Revised Resistance and Powering Performance Equations for use in the NAVSEA Aircraft Carrier Design Synthesis Model," (will be published).  
+25. Holtrop, J. & Mannen, G.G.J., "An Approximate Power Prediction Method," ISP Volume 29, No. 335, July 1982.  
+26. "Test of Transom Sterns on Destroyers," U.S. Experimental Model Basin Report No. 339, November 1932.  
+27. Yeh, H., "Bare Hull Resistance of Four Designs for the Seshawk Program Represented by Models 4978, 4979, 4980, and 4981," DTMB C-040-H-01, December 1964. (Declassified)  
+28. Fung, S.C., "Powering Prediction Programs: (a) HSVA'C', (b) SSPA-SFDV, (c) PREPLAN, (d) HSRB, and (e) FSSS," May 1984. (Unpublished)  
+29. Nordstrom, H.F., "Some Tests with Models of Small Vessels," SSPA Nr 19, 1951.
+
+APPENDIX-A
+
+200-FT Baseline Corvette Hull Form
+
+&
+
+Resistance Characteristics
+
+![](images/466a55264c22bf01e75434f54e47ce26df1e0e9615a1972bdc1cd8ba3f5f8840.jpg)
+
+<details>
+<summary>contour</summary>
+
+| DWL | c (Curve 1) | c (Curve 2) | c (Curve 3) | c (Curve 4) | c (Curve 5) | c (Curve 6) | c (Curve 7) | c (Curve 8) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| ~0.1 | ~0.8 | ~0.6 | ~0.4 | ~0.2 | ~0.1 | ~0.05 | ~0.02 | ~0.01 |
+| ~0.2 | ~1.2 | ~0.9 | ~0.6 | ~0.3 | ~0.15 | ~0.08 | ~0.04 | ~0.02 |
+| ~0.3 | ~1.5 | ~1.1 | ~0.8 | ~0.5 | ~0.25 | ~0.12 | ~0.06 | ~0.03 |
+| ~0.4 | ~1.7 | ~1.3 | ~1.0 | ~0.7 | ~0.4 | ~0.2 | ~0.1 | ~0.05 |
+| ~0.5 | ~1.8 | ~1.5 | ~1.2 | ~0.9 | ~0.55 | ~0.3 | ~0.15 | ~0.08 |
+| ~0.6 | ~1.9 | ~1.6 | ~1.4 | ~1.1 | ~0.7 | ~0.45 | ~0.25 | ~0.12 |
+| ~0.7 | ~2.0 | ~1.7 | ~1.6 | ~1.3 | ~0.85 | ~0.6 | ~0.35 | ~0.18 |
+| ~0.8 | ~2.1 | ~1.8 | ~1.8 | ~1.5 | ~1.0 | ~0.75 | ~0.5 | ~0.25 |
+| ~0.9 | ~2.2 | ~1.9 | ~1.9 | ~1.7 | ~1.2 | ~0.9 | ~0.65 | ~0.35 |
+| ~1.0 | ~2.3 | ~2.0 | ~2.0 | ~1.9 | ~1.4 | ~1.1 | ~0.8 | ~0.45 |
+</details>
+
+<table><tr><td></td><td>AREA CURVE</td><td>DWL CURVE</td></tr><tr><td>STATION</td><td>A/AX</td><td>B/BA</td></tr><tr><td>0.000</td><td>0.0000</td><td>0.0050</td></tr><tr><td>1.000</td><td>0.1027</td><td>0.1450</td></tr><tr><td>2.000</td><td>0.2202</td><td>0.2765</td></tr><tr><td>3.000</td><td>0.3422</td><td>0.4069</td></tr><tr><td>4.000</td><td>0.4633</td><td>0.5351</td></tr><tr><td>5.000</td><td>0.5004</td><td>0.6559</td></tr><tr><td>6.000</td><td>0.6905</td><td>0.7630</td></tr><tr><td>7.000</td><td>0.7904</td><td>0.8513</td></tr><tr><td>8.000</td><td>0.8760</td><td>0.9180</td></tr><tr><td>9.000</td><td>0.9425</td><td>0.9630</td></tr><tr><td>10.000</td><td>0.9851</td><td>0.9886</td></tr><tr><td>11.000</td><td>1.0000</td><td>0.9989</td></tr><tr><td>12.000</td><td>0.9847</td><td>0.9992</td></tr><tr><td>13.000</td><td>0.9392</td><td>0.9942</td></tr><tr><td>14.000</td><td>0.8604</td><td>0.9870</td></tr><tr><td>15.000</td><td>0.7726</td><td>0.9822</td></tr><tr><td>16.000</td><td>0.6666</td><td>0.9774</td></tr><tr><td>17.000</td><td>0.5593</td><td>0.9714</td></tr><tr><td>18.000</td><td>0.4610</td><td>0.9613</td></tr><tr><td>19.000</td><td>0.3826</td><td>0.9452</td></tr><tr><td>20.000</td><td>0.3240</td><td>0.9250</td></tr></table>
+
+FIGURE A.1 200-Ft Baseline Corvette Body Plan
+A-1
+
+TABLE A.1 200-Ft Baseline Corvette Bare Hull EHP Predictions  
+200-Ft Corvette Hull Form Characteristics:
+
+<table><tr><td>LWL (ft)</td><td>200.0</td></tr><tr><td>BX (ft)</td><td>28.953</td></tr><tr><td>TX (ft)</td><td>7.972</td></tr><tr><td>Disp. (tons)</td><td>584.03</td></tr><tr><td>W.S. (ft^2)</td><td>5879.7</td></tr><tr><td>LWL / BX</td><td>6.908</td></tr><tr><td>BX / TX</td><td>3.632</td></tr><tr><td>DL</td><td>73.0</td></tr><tr><td>S</td><td>17.20</td></tr></table>
+
+<table><tr><td>CB</td><td>0.443</td><td>LCB/LWL</td><td>0.544</td></tr><tr><td>CP</td><td>0.640</td><td>LCF</td><td>0.584</td></tr><tr><td>CX</td><td>0.691</td><td>AT/AX</td><td>0.324</td></tr><tr><td>CW</td><td>0.790</td><td>BT/BX</td><td>0.925</td></tr></table>
+
+Bare Hull EHP from HSVA'C' Series: CA=0.0004
+
+<table><tr><td>FN</td><td>VK (Kt)</td><td>Rr (lb)</td><td>Rf (lb)</td><td>Cr 10^-3</td><td>Rr/ Disp.</td><td>RT (lb)</td><td>Rr/RT (%)</td><td>EHP (HP)</td></tr><tr><td>0.20</td><td>9.50</td><td>----</td><td>----</td><td>----</td><td>----</td><td>----</td><td>----</td><td>----</td></tr><tr><td>0.25</td><td>11.87</td><td>2925</td><td>5124</td><td>1.243</td><td>5.0</td><td>8049</td><td>36.34</td><td>294</td></tr><tr><td>0.30</td><td>14.25</td><td>5577</td><td>7234</td><td>1.646</td><td>9.5</td><td>12811</td><td>43.53</td><td>561</td></tr><tr><td>0.35</td><td>16.62</td><td>8746</td><td>9686</td><td>1.896</td><td>15.0</td><td>18432</td><td>47.45</td><td>941</td></tr><tr><td>0.40</td><td>19.00</td><td>16736</td><td>12475</td><td>2.778</td><td>28.7</td><td>29211</td><td>57.29</td><td>1704</td></tr><tr><td>0.45</td><td>21.37</td><td>30412</td><td>15596</td><td>3.988</td><td>52.1</td><td>46008</td><td>66.10</td><td>3020</td></tr><tr><td>0.50</td><td>23.75</td><td>40232</td><td>19046</td><td>4.203</td><td>68.9</td><td>59278</td><td>67.87</td><td>4323</td></tr><tr><td>0.55</td><td>26.12</td><td>45588</td><td>22823</td><td>4.002</td><td>78.1</td><td>68411</td><td>66.64</td><td>5488</td></tr><tr><td>0.60</td><td>28.50</td><td>51947</td><td>26923</td><td>3.832</td><td>88.9</td><td>78870</td><td>65.86</td><td>6902</td></tr><tr><td>0.65</td><td>30.87</td><td>56208</td><td>31344</td><td>3.553</td><td>96.2</td><td>87552</td><td>64.20</td><td>8300</td></tr><tr><td>0.70</td><td>33.25</td><td>60930</td><td>36083</td><td>3.302</td><td>104.3</td><td>97013</td><td>62.81</td><td>9905</td></tr><tr><td>0.75</td><td>35.62</td><td>65496</td><td>41139</td><td>3.092</td><td>112.1</td><td>106635</td><td>61.42</td><td>11665</td></tr><tr><td>0.80</td><td>38.00</td><td>70258</td><td>46511</td><td>2.915</td><td>120.3</td><td>116769</td><td>60.17</td><td>13624</td></tr></table>
+
+APPENDIX-B
+
+Curves of Residual-Resistance Coefficient versus Waterplane Area Coefficient for High-Speed Round Bilge Displacement Hulls
+
+(V/L^0.5=2.60, CP=0.64, B/T=3.30)
+
+Crl x 10^3  
+![](images/a0b18acb4290bc3e4ffe81cd05f1a3dd80e4f7a237dc734ae50a2aaf560feff1.jpg)
+
+<details>
+<summary>line</summary>
+
+| CW | Series 50 | Series 60 | Series 70 | Series 80 | Series 90 | Series 100 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.70 | ~1.8 | ~2.8 | ~3.6 | ~4.2 | ~4.8 | ~5.2 |
+| 0.74 | ~1.9 | ~2.8 | ~3.5 | ~4.0 | ~4.6 | ~5.0 |
+| 0.78 | ~1.9 | ~2.7 | ~3.3 | ~3.7 | ~4.3 | ~4.7 |
+| 0.82 | ~1.7 | ~2.4 | ~3.0 | ~3.4 | ~4.0 | ~4.4 |
+</details>
+
+FIGURE B-1 Cr FOR V/√L =2.60, CP=0.64, B/T=3.30
+B-1
+
+TABLE (2.0-1 to 5.0-1)
+
+TABLE 2.0-1 Range of High Speed Displacement Hull Form Characteristics
+
+<table><tr><td></td><td>Small Frigate</td><td>Corvette</td><td>Fast Patrol Boat</td></tr><tr><td>LWL (ft)</td><td>261.0--321.5</td><td>185.0--262.5</td><td>100.0--192.6</td></tr><tr><td>BX (ft)</td><td>34.5---39.4</td><td>25.6---34.5</td><td>20.0---28.9</td></tr><tr><td>TX (ft)</td><td>10.5---11.2</td><td>5.9---10.5</td><td>5.0----8.4</td></tr><tr><td>Disp (tons)</td><td>1385.7-1787.1</td><td>538.4-1299.1(449.8)</td><td>180.0--480.3</td></tr><tr><td>VK (kt)</td><td>26.0---39.0</td><td>27.0---42.0</td><td>24.0---41.0</td></tr><tr><td>V/L^0.5</td><td>1.86--2.29</td><td>1.85--2.38</td><td>1.87--3.49</td></tr><tr><td>L/B</td><td>7.62--8.35</td><td>5.94--8.03(8.97)</td><td>5.00--7.23</td></tr><tr><td>B/T</td><td>3.18--3.90</td><td>2.89--4.03</td><td>2.57--4.91</td></tr><tr><td>CB</td><td>0.44--0.50</td><td>0.35--0.51</td><td>0.33--0.51</td></tr><tr><td>CP</td><td>0.61--0.66</td><td>0.58--0.64</td><td>0.61--0.70</td></tr><tr><td>CX</td><td>0.67--0.80</td><td>0.60--0.74</td><td>0.54--0.78</td></tr><tr><td>DL</td><td>53.1--80.3</td><td>53.6--96.8</td><td>58.5-135.2</td></tr></table>
+
+\* value inside the ( ) is considered extraordinary.
+
+TABLE 3.0-1 Hull Form Parameters of High-Speed Displacement Hull Series
+
+<table><tr><td>Series</td><td>FSSS</td><td>HSVA&#x27;C&#x27;</td><td>SSPA-SFDV</td></tr><tr><td>No. of Models</td><td>30</td><td>16</td><td>9</td></tr><tr><td>Model Length (ft)</td><td>11.14</td><td>19.69</td><td>10.8-14.5</td></tr><tr><td>DL</td><td>57.3-98.6</td><td>41.3-82.1</td><td>55.8-132.3</td></tr><tr><td>L/B</td><td>5.98-8.51</td><td>7.49-10.1</td><td>4.62-8.21</td></tr><tr><td>B/T</td><td>3.29-5.20</td><td>2.74-4.97</td><td>3.00-4.00</td></tr><tr><td>CB</td><td>0.48-0.52</td><td>0.40-0.57</td><td>0.40</td></tr><tr><td>CP</td><td>0.61-0.66</td><td>0.60-0.72</td><td>0.68</td></tr><tr><td>CX</td><td>0.784</td><td>0.54-0.83</td><td>0.59</td></tr><tr><td>CW</td><td>0.74-0.80</td><td>0.75-0.87</td><td>0.73</td></tr><tr><td>1/2 IE</td><td>----</td><td>----</td><td>8.24-14.4</td></tr><tr><td>LCB (%) aft</td><td>0.28-2.76</td><td>-0.90-3.46</td><td>4.15</td></tr><tr><td>LCF (%) aft</td><td>4.25-7.11</td><td>4.68-10.9</td><td>9.09</td></tr><tr><td>AT/AX</td><td>0.07-0.09</td><td>0.03-0.30</td><td>0.42</td></tr><tr><td>BT/BX</td><td>0.42-0.74</td><td>0.47-0.95</td><td>0.77</td></tr></table>
+
+TABLE 3.0-1A Hull Form Parameters of High-Speed Displacement Hull Series
+
+<table><tr><td>Series</td><td>SERIES 64</td><td>TANG</td><td>NPL-HSRB</td></tr><tr><td>No. of Models</td><td>27</td><td>87/122</td><td>32</td></tr><tr><td>Model Length (ft)</td><td>10.00</td><td>----</td><td>8.33</td></tr><tr><td>DL</td><td>15.0-55.0</td><td>42.9-314.3</td><td>50.0-319.9</td></tr><tr><td>L/B</td><td>8.45-18.3</td><td>----</td><td>3.33-7.50</td></tr><tr><td>B/T</td><td>2.00-4.00</td><td>----</td><td>1.72-10.21</td></tr><tr><td>CB</td><td>0.35-0.55</td><td>----</td><td>0.397</td></tr><tr><td>CP</td><td>0.630</td><td>0.57-0.76</td><td>0.693</td></tr><tr><td>CX</td><td>0.56-0.87</td><td>----</td><td>0.573</td></tr><tr><td>CW</td><td>0.761</td><td>----</td><td>0.753</td></tr><tr><td>1/2 IE</td><td>3.70-7.80</td><td>----</td><td>11.0-20.5</td></tr><tr><td>LCB (%) aft</td><td>6.560</td><td>0.00-6.40</td><td>2.00-6.40</td></tr><tr><td>LCF (%) aft</td><td>10.10</td><td>----</td><td>----</td></tr><tr><td>AT/AX</td><td>0.410</td><td>0.00-0.74</td><td>0.520</td></tr><tr><td>BT/BX</td><td>0.860</td><td>----</td><td>0.815</td></tr></table>
+
+TABLE 3.8-1 Small Frigate Bare Hull EHP Predictions Compared to Model Tests  
+Small Frigate Hull Form Characteristics:
+
+<table><tr><td>LWL (ft)</td><td>300.0</td></tr><tr><td>LWL / Bx</td><td>7.938</td></tr><tr><td>Bx / Tx</td><td>3.365</td></tr></table>
+
+<table><tr><td>CB</td><td>0.469</td><td>LCB/LWL</td><td>0.522</td></tr><tr><td>CP</td><td>0.616</td><td>DL</td><td>57.1</td></tr><tr><td>CX</td><td>0.760</td><td>AT/AX</td><td>0.108</td></tr><tr><td>CW</td><td>0.750</td><td>BT/BX</td><td>0.747</td></tr></table>
+
+EHP/EHP (model tests)  
+CA=0.0004
+
+<table><tr><td>FN</td><td>FSSS</td><td>HSVA&#x27;C&#x27;</td><td>SSPA</td><td>SER64</td><td>TANG</td><td>MERCIER</td></tr><tr><td>0.25</td><td>0.884</td><td>0.962</td><td>----</td><td>1.757</td><td>----</td><td>----</td></tr><tr><td>0.30</td><td>0.934</td><td>0.944</td><td>----</td><td>1.742</td><td>----</td><td>----</td></tr><tr><td>0.35</td><td>0.947</td><td>0.977</td><td>----</td><td>1.735</td><td>----</td><td>----</td></tr><tr><td>0.40</td><td>1.001</td><td>0.953</td><td>1.219</td><td>1.458</td><td>1.090</td><td>0.936</td></tr><tr><td>0.45</td><td>0.989</td><td>0.955</td><td>1.043</td><td>1.195</td><td>1.050</td><td>0.876</td></tr><tr><td>0.50</td><td>1.001</td><td>0.954</td><td>0.973</td><td>1.096</td><td>1.034</td><td>0.860</td></tr><tr><td>0.55</td><td>1.024</td><td>0.945</td><td>0.957</td><td>1.059</td><td>1.048</td><td>0.857</td></tr><tr><td>0.60</td><td>1.024</td><td>0.983</td><td>0.956</td><td>1.031</td><td>1.089</td><td>0.901</td></tr><tr><td>0.65</td><td>1.021</td><td>0.959</td><td>0.942</td><td>1.017</td><td>----</td><td>----</td></tr></table>
+
+TABLE 3.8-2 230-Ft Corvette Bare Hull EHP
+Predictions Compared to Model Tests  
+230-Ft Corvette Hull Form Characteristics:
+
+<table><tr><td>LWL (ft)</td><td>230.0</td></tr><tr><td>LWL / BX</td><td>7.348</td></tr><tr><td>BX / TX</td><td>3.913</td></tr></table>
+
+<table><tr><td>CB</td><td>0.426</td><td>LCB/LWL</td><td>0.532</td></tr><tr><td>CP</td><td>0.576</td><td>DL</td><td>57.6</td></tr><tr><td>CX</td><td>0.739</td><td>AT/AX</td><td>0.096</td></tr><tr><td>CW</td><td>0.711</td><td>BT/BX</td><td>0.682</td></tr></table>
+
+EHP/EHP (model tests)  
+CA=0.0004
+
+<table><tr><td>FN</td><td>FSSS</td><td>HSVA&#x27;C&#x27;</td><td>SSPA</td><td>SER64</td><td>TANG</td><td>MERCIER</td></tr><tr><td>0.25</td><td>0.862</td><td>0.988</td><td>----</td><td>1.619</td><td>----</td><td>----</td></tr><tr><td>0.30</td><td>0.781</td><td>0.974</td><td>----</td><td>1.485</td><td>----</td><td>----</td></tr><tr><td>0.35</td><td>0.798</td><td>0.939</td><td>----</td><td>1.547</td><td>----</td><td>----</td></tr><tr><td>0.40</td><td>0.966</td><td>0.919</td><td>1.165</td><td>1.334</td><td>1.001</td><td>1.001</td></tr><tr><td>0.45</td><td>1.042</td><td>0.947</td><td>1.032</td><td>1.120</td><td>1.038</td><td>1.002</td></tr><tr><td>0.50</td><td>1.036</td><td>0.951</td><td>0.961</td><td>1.012</td><td>0.969</td><td>0.936</td></tr><tr><td>0.55</td><td>1.063</td><td>0.941</td><td>0.939</td><td>0.973</td><td>1.013</td><td>0.926</td></tr><tr><td>0.60</td><td>1.073</td><td>0.988</td><td>0.938</td><td>0.963</td><td>1.012</td><td>0.954</td></tr><tr><td>0.65</td><td>1.071</td><td>0.961</td><td>0.929</td><td>0.962</td><td>----</td><td>0.955</td></tr><tr><td>0.70</td><td>1.079</td><td>0.969</td><td>0.925</td><td>0.969</td><td>1.043</td><td>0.928</td></tr></table>
+
+TABLE 3.8-3 154-Ft PGM-C Bare Hull EHP Predictions Compared to Model Tests  
+154-ft PGM-C Hull Form Characteristics:
+
+<table><tr><td>LWL (ft)</td><td>154.0</td></tr><tr><td>LWL / BX</td><td>7.032</td></tr><tr><td>BX / TX</td><td>4.380</td></tr></table>
+
+<table><tr><td>CB</td><td>0.443</td><td>LCB/LWL</td><td>0.565</td></tr><tr><td>CP</td><td>0.630</td><td>DL</td><td>58.5</td></tr><tr><td>CX</td><td>0.697</td><td>AT/AX</td><td>0.400</td></tr><tr><td>CW</td><td>0.760</td><td>BT/BX</td><td>0.827</td></tr></table>
+
+EHP/EHP (model tests) CA=0.0004
+
+<table><tr><td>FN</td><td>FSSS</td><td>HSVA&#x27;C&#x27;</td><td>SSPA</td><td>SER64</td><td>TANG</td><td>MERCIER</td></tr><tr><td>0.25</td><td>----</td><td>----</td><td>----</td><td>----</td><td>----</td><td>----</td></tr><tr><td>0.30</td><td>0.777</td><td>1.015</td><td>----</td><td>1.239</td><td>----</td><td>----</td></tr><tr><td>0.35</td><td>0.826</td><td>1.015</td><td>----</td><td>1.441</td><td>----</td><td>1.202</td></tr><tr><td>0.40</td><td>0.870</td><td>0.889</td><td>1.043</td><td>1.211</td><td>0.884</td><td>1.084</td></tr><tr><td>0.45</td><td>0.945</td><td>0.939</td><td>0.996</td><td>1.062</td><td>0.909</td><td>1.016</td></tr><tr><td>0.50</td><td>0.987</td><td>0.975</td><td>0.982</td><td>0.992</td><td>0.809</td><td>0.994</td></tr><tr><td>0.55</td><td>1.041</td><td>0.960</td><td>0.956</td><td>0.950</td><td>0.864</td><td>0.966</td></tr><tr><td>0.60</td><td>1.053</td><td>1.021</td><td>0.967</td><td>0.954</td><td>0.793</td><td>0.980</td></tr><tr><td>0.65</td><td>1.062</td><td>1.013</td><td>0.988</td><td>0.980</td><td>----</td><td>0.987</td></tr><tr><td>0.70</td><td>1.106</td><td>1.051</td><td>1.020</td><td>1.032</td><td>0.884</td><td>1.002</td></tr><tr><td>0.75</td><td>1.077</td><td>1.048</td><td>1.007</td><td>1.039</td><td>----</td><td>----</td></tr><tr><td>0.80</td><td>1.034</td><td>1.058</td><td>1.017</td><td>1.050</td><td>----</td><td>----</td></tr><tr><td>0.85</td><td>----</td><td>----</td><td>0.998</td><td>1.052</td><td>----</td><td>----</td></tr><tr><td>0.90</td><td>----</td><td>----</td><td>0.988</td><td>1.052</td><td>----</td><td>----</td></tr><tr><td>0.95</td><td>----</td><td>----</td><td>----</td><td>1.051</td><td>----</td><td>----</td></tr><tr><td>1.00</td><td>----</td><td>----</td><td>----</td><td>1.049</td><td>----</td><td>----</td></tr></table>
+
+TABLE 4.0-1 Basic Hull Form Parameters for
+Powering Predictions--High Speed
+Displacement Hull Series
+
+<table><tr><td colspan="3">Series</td><td colspan="6">Parameters</td></tr><tr><td>FSSS</td><td>M</td><td>CW</td><td>CB</td><td>B/T</td><td>LCB</td><td>LCF</td><td></td><td></td></tr><tr><td>HSVA&#x27;C&#x27;</td><td>M</td><td></td><td>CP</td><td>B/T</td><td></td><td></td><td></td><td></td></tr><tr><td>SSPA-SFDV</td><td>M</td><td></td><td></td><td>B/T</td><td></td><td></td><td></td><td></td></tr><tr><td>SERIES 64</td><td>DL</td><td></td><td>CB</td><td>B/T</td><td></td><td></td><td></td><td></td></tr><tr><td>TANG</td><td>M</td><td></td><td>CP</td><td></td><td>LCB</td><td></td><td>IE</td><td>AT/AX</td></tr><tr><td>MERCIER</td><td>M</td><td></td><td></td><td></td><td></td><td></td><td>IE</td><td>AT/AX</td></tr><tr><td></td><td>CΔ</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>NPL-HSRB</td><td>M</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>L/B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+
+TABLE 5.0-1 Hull Form Series Applications
+
+<table><tr><td>Series</td><td>Displacement (Tons)</td><td>FNL</td><td>V/L^0.5</td></tr><tr><td>FSSS</td><td>1500-5000</td><td>0.4-0.5</td><td>1.3-1.7</td></tr><tr><td>HSVA&#x27;C&#x27;</td><td>400-2000</td><td>0.4-0.65</td><td>1.3-2.2</td></tr><tr><td>SSPA-SFDV</td><td>100-400</td><td>0.6-0.8</td><td>2.0-2.7</td></tr><tr><td>Series 64</td><td>----</td><td>0.6-0.8</td><td>2.0-2.7</td></tr><tr><td>NPL-HSRB</td><td>100-400</td><td>0.6-0.8</td><td>2.0-2.7</td></tr><tr><td>TANG</td><td>100-500</td><td>0.4-1.0</td><td>1.3-3.4</td></tr><tr><td>MERCIER</td><td>100-200</td><td>0.4-0.7</td><td>1.3-2.4</td></tr><tr><td>Appendix-B</td><td>500-3000</td><td>0.4-0.8</td><td>1.3-2.8</td></tr></table>
+
+FIGURE (2.0-1 to 4.3-1)
+
+![](images/99df1f57dd4fc04586436a33a01aa1310f029cdb5295836e09f61a2a30ae95e7.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | LWL | Displacement |
+| --- | --- | --- |
+| Corvette | ~105 | ~150 |
+| Corvette | ~115 | ~200 |
+| Corvette | ~135 | ~200 |
+| Corvette | ~140 | ~250 |
+| Corvette | ~145 | ~250 |
+| Corvette | ~150 | ~300 |
+| Corvette | ~155 | ~350 |
+| Corvette | ~160 | ~400 |
+| Corvette | ~165 | ~400 |
+| Corvette | ~170 | ~450 |
+| Corvette | ~180 | ~500 |
+| Corvette | ~190 | ~600 |
+| Corvette | ~200 | ~650 |
+| Corvette | ~210 | ~800 |
+| Corvette | ~215 | ~800 |
+| Corvette | ~220 | ~700 |
+| Corvette | ~230 | ~650 |
+| Corvette | ~240 | ~1050 |
+| Corvette | ~260 | ~1300 |
+| Corvette | ~265 | ~1450 |
+| Corvette | ~265 | ~1000 |
+| Frigate | ~265 | ~1200 |
+| Frigate | ~265 | ~1450 |
+| Frigate | ~290 | ~1400 |
+| Frigate | ~315 | ~1600 |
+| Frigate | ~320 | ~1800 |
+| Patrol Boat | ~105 | ~150 |
+| Patrol Boat | ~115 | ~200 |
+| Patrol Boat | ~135 | ~200 |
+| Patrol Boat | ~140 | ~250 |
+| Patrol Boat | ~145 | ~250 |
+| Patrol Boat | ~150 | ~300 |
+| Patrol Boat | ~155 | ~350 |
+| Patrol Boat | ~160 | ~400 |
+| Patrol Boat | ~165 | ~400 |
+| Patrol Boat | ~170 | ~450 |
+| Patrol Boat | ~180 | ~500 |
+| Patrol Boat | ~190 | ~550 |
+| Patrol Boat | ~200 | ~600 |
+| Patrol Boat | ~210 | ~750 |
+| Patrol Boat | ~215 | ~800 |
+| Patrol Boat | ~220 | ~700 |
+| Patrol Boat | ~230 | ~650 |
+</details>
+
+F-1
+
+![](images/a52498c103a2dba2b8b8e554d434f8a48ce9e93114b2590f79529b5c044ef279.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | X | Y |
+| --- | --- | --- |
+| Corvette | ~115 | ~22.5 |
+| Corvette | ~118 | ~22.8 |
+| Corvette | ~135 | ~23.5 |
+| Corvette | ~140 | ~23.8 |
+| Corvette | ~142 | ~24.0 |
+| Corvette | ~155 | ~24.8 |
+| Corvette | ~158 | ~25.0 |
+| Corvette | ~160 | ~25.2 |
+| Corvette | ~162 | ~26.8 |
+| Corvette | ~165 | ~27.0 |
+| Corvette | ~170 | ~26.5 |
+| Corvette | ~175 | ~26.8 |
+| Corvette | ~185 | ~25.2 |
+| Corvette | ~190 | ~29.0 |
+| Corvette | ~195 | ~31.5 |
+| Corvette | ~200 | ~30.8 |
+| Corvette | ~205 | ~33.0 |
+| Corvette | ~210 | ~32.2 |
+| Corvette | ~215 | ~33.0 |
+| Corvette | ~220 | ~31.8 |
+| Corvette | ~225 | ~32.0 |
+| Corvette | ~230 | ~27.5 |
+| Corvette | ~235 | ~33.0 |
+| Corvette | ~235 | ~25.8 |
+| Corvette | ~265 | ~34.0 |
+| Corvette | ~265 | ~36.8 |
+| Corvette | ~295 | ~36.8 |
+| Corvette | ~315 | ~38.8 |
+| Corvette | ~325 | ~39.5 |
+</details>
+
+FIGURE 2.0-2 Beam (BX) vs Length (LWL) for High-Speed Displacement Vessels
+
+![](images/20342341bae3eed17d2d25cae3c5b0d19e41eba4b0ecf36d359a718a893d5b0a.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | BX | TX |
+| --- | --- | --- |
+| Corvette | ~22.2 | ~5.1 |
+| Corvette | ~22.2 | ~4.8 |
+| Corvette | ~22.2 | ~4.7 |
+| Corvette | ~22.2 | ~6.4 |
+| Corvette | ~22.3 | ~6.5 |
+| Corvette | ~22.3 | ~6.4 |
+| Corvette | ~22.3 | ~5.9 |
+| Corvette | ~22.3 | ~5.6 |
+| Corvette | ~22.3 | ~5.1 |
+| Corvette | ~22.3 | ~4.8 |
+| Corvette | ~22.3 | ~4.7 |
+| Corvette | ~22.3 | ~4.6 |
+| Corvette | ~22.3 | ~4.5 |
+| Corvette | ~22.3 | ~4.4 |
+| Corvette | ~22.3 | ~4.3 |
+| Corvette | ~22.3 | ~4.2 |
+| Corvette | ~22.3 | ~4.1 |
+| Corvette | ~22.3 | ~4.0 |
+| Corvette | ~22.3 | ~3.9 |
+| Corvette | ~22.3 | ~3.8 |
+| Corvette | ~22.3 | ~3.7 |
+| Corvette | ~22.3 | ~3.6 |
+| Corvette | ~22.3 | ~3.5 |
+| Corvette | ~22.3 | ~3.4 |
+| Corvette | ~22.3 | ~3.3 |
+| Corvette | ~22.3 | ~3.2 |
+| Corvette | ~22.3 | ~3.1 |
+| Corvette | ~22.3 | ~3.0 |
+| Corvette | ~22.3 | ~2.9 |
+| Corvette | ~22.3 | ~2.8 |
+| Corvette | ~22.3 | ~2.7 |
+| Corvette | ~22.3 | ~2.6 |
+| Corvette | ~22.3 | ~2.5 |
+| Corvette | ~22.3 | ~2.4 |
+| Corvette | ~22.3 | ~2.3 |
+| Corvette | ~22.3 | ~2.2 |
+| Corvette | ~22.3 | ~2.1 |
+| Corvette | ~22.3 | ~2.0 |
+| Corvette | ~22.3 | ~1.9 |
+| Corvette | ~22.3 | ~1.8 |
+| Corvette | ~22.3 | ~1.7 |
+| Corvette | ~22.3 | ~1.6 |
+| Corvette | ~22.3 | ~1.5 |
+| Corvette | ~22.3 | ~1.4 |
+| Corvette | ~22.3 | ~1.3 |
+| Corvette | ~22.3 | ~1.2 |
+| Corvette | ~22.3 | ~1.1 |
+| Corvette | ~22.3 | ~1.0 |
+| Corvette | ~22.3 | ~0.9 |
+| Corvette | ~22.3 | ~0.8 |
+| Corvette | ~22.3 | ~0.7 |
+| Corvette | ~22.3 | ~0.6 |
+| Corvette | ~22.3 | ~0.5 |
+| Corvette | ~22.3 | ~0.4 |
+| Corvette | ~22.3 | ~0.3 |
+| Corvette | ~22.3 | ~0.2 |
+| Corvette | ~22.3 | ~0.1 |
+| Corvette | ~22.3 | ~0.0 |
+| Corvette | ~22.3 | ~-0.1 |
+| Corvette | ~22.3 | ~-0.2 |
+| Corvette | ~22.3 | ~-0.3 |
+| Corvette | ~22.3 | ~-0.4 |
+| Corvette | ~22.3 | ~-0.5 |
+| Corvette | ~22.3 | ~-0.6 |
+| Corvette | ~22.3 | ~-0.7 |
+| Corvette | ~22.3 | ~-0.8 |
+| Corvette | ~22.3 | ~-0.9 |
+| Corvette | ~22.3 | ~-1.0 |
+| Corvette | ~22.3 | ~-1.1 |
+| Corvette | ~22.3 | ~-1.2 |
+| Corvette | ~22.3 | ~-1.3 |
+| Corvette | ~22.3 | ~-1.4 |
+| Corvette | ~22.3 | ~-1.5 |
+| Corvette | ~22.3 | ~-1.6 |
+| Corvette | ~22.3 | ~-1.7 |
+| Corvette | ~22.3 | ~-1.8 |
+| Corvette | ~22.3 | ~-1.9 |
+| Corvette | ~22.3 | ~-2.0 |
+| Corvette | ~22.3 | ~-2.1 |
+| Corvette | ~22.3 | ~-2.2 |
+| Corvette | ~22.3 | ~-2.3 |
+| Corvette | ~22.3 | ~-2.4 |
+| Corvette | ~22.3 | ~-2.5 |
+| Corvette | ~22.3 | ~-2.6 |
+| Corvette | ~22.3 | ~-2.7 |
+| Corvette | ~22.3 | ~-2.8 |
+| Corvette | ~22.3 | ~-2.9 |
+| Corvette | ~22.3 | ~-3.0 |
+| Corvette | ~22.3 | ~-3.1 |
+| Corvette | ~22.3 | ~-3.2 |
+| Corvette | ~22.3 | ~-3.3 |
+| Corvette | ~22.3 | ~-3.4 |
+| Corvette | ~22.3 | ~-3.5 |
+| Corvette | ~22.3 | ~-3.6 |
+| Corvette | ~22.3 | ~-3.7 |
+| Corvette | ~22.3 | ~-3.8 |
+| Corvette | ~22.3 | ~-3.9 |
+| Corvette | ~22.3 | ~-4.0 |
+| Corvette | ~22.3 | ~-4.1 |
+| Corvette | ~22.3 | ~-4.2 |
+| Corvette | ~22.3 | ~-4.3 |
+| Corvette | ~22.3 | ~-4.4 |
+| Corvette | ~22.3 | ~-4.5 |
+| Corvette | ~22.3 | ~-4.6 |
+| Corvette | ~22.3 | ~-4.7 |
+| Corvette | ~22.3 | ~-4.8 |
+| Corvette | ~22.3 | ~-4.9 |
+| Corvette | ~22.3 | ~-5.0 |
+| Corvette | ~22.3 | ~-5.1 |
+| Corvette | ~22.3 | ~-5.2 |
+| Corvette | ~22.3 | ~-5.3 |
+| Corvette | ~22.3 | ~-5.4 |
+| Corvette | ~22.3 | ~-5.5 |
+| Corvette | ~22.3 | ~-5.6 |
+| Corvette | ~22.3 | ~-5.7 |
+| Corvette | ~22.3 | ~-5.8 |
+| Corvette | ~22.3 | ~-5.9 |
+| Corvette | ~22.3 | ~-6.0 |
+| Corvette | ~22.3 | ~-6.1 |
+| Corvette | ~22.3 | ~-6.2 |
+| Corvette | ~22.3 | ~-6.3 |
+| Corvette | ~22.3 | ~-6.4 |
+| Corvette | ~22.3 | ~-6.5 |
+| Corvette | ~22.3 | ~-6.6 |
+| Corvette | ~22.3 | ~-6.7 |
+| Corvette | ~22.3 | ~-6.8 |
+| Corvette | ~22.3 | ~-6.9 |
+| Corvette | ~22.3 | ~-7.0 |
+| Corvette | ~22.3 | ~-7.1 |
+| Corvette | ~22.3 | ~-7.2 |
+| Corvette | ~22.3 | ~-7.3 |
+| Corvette | ~22.3 | ~-7.4 |
+| Corvette | ~22.3 | ~-7.5 |
+| Corvette | ~22.3 | ~-7.6 |
+| Corvette | ~22.3 | ~-7.7 |
+| Corvette | ~22.3 | ~-7.8 |
+| Corvette | ~22.3 | ~-7.9 |
+| Corvette | ~22.3 | ~-8.0 |
+| Corvette | ~22.3 | ~-8.1 |
+| Corvette | ~22.3 | ~-8.2 |
+| Corvette | ~22.3 | ~-8.3 |
+| Corvette | ~22.3 | ~-8.4 |
+| Corvette | ~22.3 | ~-8.5 |
+| Corvette | ~22.3 | ~-8.6 |
+| Corvette | ~22.3 | ~-8.7 |
+| Corvette | ~22.3 | ~-8.8 |
+| Corvette | ~22.3 | ~-8.9 |
+| Corvette | ~22.3 | ~-9.0 |
+| Corvette | ~22.3 | ~-9.1 |
+| Corvette | ~22.3 | ~-9.2 |
+| Corvette | ~22.3 | ~-9.3 |
+| Corvette | ~22.3 | ~-9.4 |
+| Corvette | ~22.3 | ~-9.5 |
+| Corvette | ~22.3 | ~-9.6 |
+| Corvette | ~22.3 | ~-9.7 |
+| Corvette | ~22.3 | ~-9.8 |
+| Corvette | ~22.3 | ~-9.9 |
+| Corvette | ~22.3 | ~-10.0 |
+| Corvette | ~22.3 | ~-10.1 |
+| Corvette | ~22.3 | ~-10.2 |
+| Corvette | ~22.3 | ~-10.3 |
+| Corvette | ~22.3 | ~-10.4 |
+| Corvette | ~22.3 | ~-10.5 |
+| Corvette | ~22.3 | ~-10.6 |
+| Corvette | ~22.3 | ~-10.7 |
+| Corvette | ~22.3 | ~-10.8 |
+| Corvette | ~22.3 | ~-10.9 |
+| Corvette | ~22.3 | ~-11.0 |
+| Corvette | ~22.3 | ~-11.1 |
+| Corvette | ~22.3 | ~-11.2 |
+| Corvette | ~22.3 | ~-11.3 |
+| Corvette | ~22.3 | ~-11.4 |
+| Corvette | ~22.3 | ~-11.5 |
+| Corvette | ~22.3 | ~-11.6 |
+| Corvette | ~22.3 | ~-11.7 |
+| Corvette | ~22.3 | ~-11.8 |
+| Corvette | ~22.3 | ~-11.9 |
+| Corvette | ~22.3 | ~-12.0 |
+| Corvette | ~22.3 | ~-12.1 |
+| Corvette | ~22.3 | ~-12.2 |
+| Corvette | ~22.3 | ~-12.3 |
+| Corvette | ~22.3 | ~-12.4 |
+| Corvette | ~22.3 | ~-12.5 |
+| Corvette | ~22.3 | ~-12.6 |
+| Corvette | ~22.3 | ~-12.7 |
+| Corvette | ~22.3 | ~-12.8 |
+| Corvette | ~22.3 | ~-12.9 |
+| Corvette | ~22.3 | ~-13.0 |
+| Corvette | ~22.3 | ~-13.1 |
+| Corvette | ~22.3 | ~-13.2 |
+| Corvette | ~22.3 | ~-13.3 |
+| Corvette | ~22.3 | ~-13.4 |
+| Corvette | ~22.3 | ~-13.5 |
+| Corvette | ~22.3 | ~-13.6 |
+| Corvette | ~22.3 | ~-13.7 |
+| Corvette | ~22.3 | ~-13.8 |
+| Corvette | ~22.3 | ~-13.9 |
+| Corvette | ~22.3 | ~-14.0 |
+| Corvette | ~22.3 | ~-14.1 |
+| Corvette | ~22.3 | ~-14.2 |
+| Corvette | ~22.3 | ~-14.3 |
+| Corvette | ~22.3 | ~-14.4 |
+| Corvette | ~22.3 | ~-14.5 |
+| Corvette | ~22.3 | ~-14.6 |
+| Corvette | ~22.3 | ~-14.7 |
+| Corvette | ~22.3 | ~-14.8 |
+| Corvette | ~22.3 | ~-14.9 |
+| Corvette | ~22.3 | ~-15.0 |
+| Corvette | ~22.3 | ~-15.1 |
+| Corvette | ~22.3 | ~-15.2 |
+| Corvette | ~22.3 | ~-15.3 |
+| Corvette | ~22.3 | ~-15.4 |
+| Corvette | ~22.3 | ~-15.5 |
+| Corvette | ~22.3 | ~-15.6 |
+| Corvette | ~22.3 | ~-15.7 |
+| Corvette | ~22.3 | ~-15.8 |
+| Corvette | ~22.3 | ~-15.9 |
+| Corvette | ~22.3 | ~-16.0 |
+| Corvette | ~22.3 | ~-16.1 |
+| Corvette | ~22.3 | ~-16.2 |
+| Corvette | ~22.3 | ~-16.3 |
+| Corvette | ~22.3 | ~-16.4 |
+| Corvette | ~22.3 | ~-16.5 |
+| Corvette | ~22.3 | ~-16.6 |
+| Corvette | ~22.3 | ~-16.7 |
+| Corvette | ~22.3 | ~-16.8 |
+| Corvette | ~22.3 | ~-16.9 |
+| Corvette | ~22.3 | ~-17.0 |
+| Corvette | ~22.3 | ~-17.1 |
+| Corvette | ~22.3 | ~-17.2 |
+| Corvette | ~22.3 | ~-17.3 |
+| Corvette | ~22.3 | ~-17.4 |
+| Corvette | ~22.3 | ~-17.5 |
+| Corvette | ~22.3 | ~-17.6 |
+| Corvette | ~22.3 | ~-17.7 |
+| Corvette | ~22.3 | ~-17.8 |
+| Corvette | ~22.3 | ~-17.9 |
+| Corvette | ~22.3 | ~-18.0 |
+| Corvette | ~22.3 | ~-18.1 |
+| Corvette | ~22.3 | ~-18.2 |
+| Corvette | ~22.3 | ~-18.3 |
+| Corvette | ~22.3 | ~-18.4 |
+| Corvette | ~22.3 | ~-18.5 |
+| Corvette | ~22.3 | ~-18.6 |
+| Corvette | ~22.3 | ~-18.7 |
+| Corvette | ~22.3 | ~-18.8 |
+| Corvette | ~22.3 | ~-18.9 |
+| Corvette | ~22.3 | ~-19.0 |
+| Corvette | ~22.3 | ~-19.1 |
+| Corvette | ~22.3 | ~-19.2 |
+| Corvette | ~22.3 | ~-19.3 |
+| Corvette | ~22.3 | ~-19.4 |
+| Corvette | ~22.3 | ~-19.5 |
+| Corvette | ~22.3 | ~-19.6 |
+| Corvette | ~22.3 | ~-19.7 |
+| Corvette | ~22.3 | ~-19.8 |
+| Corvette | ~22.3 | ~-19.9 |
+| Corvette | ~22.3 | ~-20.0 |
+| Corvette | ~22.3 | ~-20.1 |
+| Corvette | ~22.3 | ~-20.2 |
+| Corvette | ~22.3 | ~-20.3 |
+| Corvette | ~22.3 | ~-20.4 |
+| Corvette | ~22.3 | ~-20.5 |
+| Corvette | ~22.3 | ~-20.6 |
+| Corvette | ~22.3 | ~-20.7 |
+| Corvette | ~22.3 | ~-20.8 |
+| Corvette | ~22.3 | ~-20.9 |
+| Corvette | ~22.3 | ~-21.0 |
+| Corvette | ~22.3 | ~-21.1 |
+| Corvette | ~22.3 | ~-21.2 |
+| Corvette | ~22.3 | ~-21.3 |
+| Corvette | ~22.3 | ~-21.4 |
+| Corvette | ~22.3 | ~-21.5 |
+| Corvette | ~22.3 | ~-21.6 |
+| Corvette | ~22.3 | ~-21.7 |
+| Corvette | ~22.3 | ~-21.8 |
+| Corvette | ~22.3 | ~-21.9 |
+| Corvette | ~22.3 | ~-22.0 |
+| Corvette | ~22.3 | ~-22.1 |
+| Corvette | ~22.3 | ~-22.2 |
+| Corvette | ~22.3 | ~-22.3 |
+| Corvette | ~22.3 | ~-22.4 |
+| Corvette | ~22.3 | ~-22.5 |
+| Corvette | ~22.3 | ~-22.6 |
+| Corvette | ~22.3 | ~-22.7 |
+| Corvette | ~22.3 | ~-22.8 |
+| Corvette | ~22.3 | ~-22.9 |
+| Corvette | ~22.3 | ~-23.0 |
+| Corvette | ~22.3 | ~-23.1 |
+| Corvette | ~22.3 | ~-23.2 |
+| Corvette | ~22.3 | ~-23.3 |
+| Corvette | ~22.3 | ~-23.4 |
+| Corvette | ~22.3 | ~-23.5 |
+| Corvette | ~22.3 | ~-23.6 |
+| Corvette | ~22.3 | ~-23.7 |
+| Corvette | ~22.3 | ~-23.8 |
+| Corvette | ~22.3 | ~-23.9 |
+| Corvette | ~22.3 | ~-24.0 |
+| Corvette | ~22.3 | ~-24.1 |
+| Corvette | ~22.3 | ~-24.2 |
+| Corvette | ~22.3 | ~-24.3 |
+| Corvette | ~22.3 | ~-24.4 |
+| Corvette | ~22.3 | ~-24.5 |
+| Corvette | ~22.3 | ~-24.6 |
+| Corvette | ~22.3 | ~-24.7 |
+| Corvette | ~22.3 | ~-24.8 |
+| Corvette | ~22.3 | ~-24.9 |
+| Corvette | ~22.3 | ~-25.0 |
+| Corvette | ~22.3 | ~-25.1 |
+| Corvette | ~22.3 | ~-25.2 |
+| Corvette | ~22.3 | ~-25.3 |
+| Corvette | ~22.3 | ~-25.4 |
+| Corvette | ~22.3 | ~-25.5 |
+| Corvette | ~22.3 | ~-25.6 |
+| Corvette | ~22.3 | ~-25.7 |
+| Corvette | ~22.3 | ~-25.8 |
+| Corvette | ~22.3 | ~-25.9 |
+| Corvette | ~22.3 | ~-26.0 |
+| Corvette | ~22.3 | ~-26.1 |
+| Corvette | ~22.3 | ~-26.2 |
+| Corvette | ~22.3 | ~-26.3 |
+| Corvette | ~22.3 | ~-26.4 |
+| Corvette | ~22.3 | ~-26.5 |
+| Corvette | ~22.3 | ~-26.6 |
+| Corvette | ~22.3 | ~-26.7 |
+| Corvette | ~22.3 | ~-26.8 |
+| Corvette | ~22.3 | ~-26.9 |
+| Corvette | ~22.3 | ~-27.0 |
+| Corvette | ~22.3 | ~-27.1 |
+| Corvette | ~22.3 | ~-27.2 |
+| Corvette | ~22.3 | ~-27.3 |
+| Corvette | ~22.3 | ~-27.4 |
+| Corvette | ~22.3 | ~-27.5 |
+| Corvette | ~22.3 | ~-27.6 |
+| Corvette | ~22.3 | ~-27.7 |
+| Corvette | ~22.3 | ~-27.8 |
+| Corvette | ~22.3 | ~-27.9 |
+| Corvette | ~22.3 | ~-28.0 |
+| Corvette | ~22.3 | ~-28.1 |
+| Corvette | ~22.3 | ~-28.2 |
+| Corvette | ~22.3 | ~-28.3 |
+| Corvette | ~22.3 | ~-28.4 |
+| Corvette | ~22.3 | ~-28.5 |
+| Corvette | ~22.3 | ~-28.6 |
+| Corvette | ~22.3 | ~-28.7 |
+| Corvette | ~22.3 | ~-28.8 |
+| Corvette | ~22.3 | ~-28.9 |
+| Corvette | ~22.3 | ~-29.0 |
+| Corvette | ~22.3 | ~-29.1 |
+| Corvette | ~22.3 | ~-29.2 |
+| Corvette | ~22.3 | ~-29.3 |
+| Corvette | ~22.3 | ~-29.4 |
+| Corvette | ~22.3 | ~-29.5 |
+| Corvette | ~22.3 | ~-29.6 |
+| Corvette | ~22.3 | ~-29.7 |
+| Corvette | ~22.3 | ~-29.8 |
+| Corvette | ~22.3 | ~-29.9 |
+| Corvette | ~22.3 | ~-30.0 |
+| Corvette | ~22.3 | ~-30.1 |
+| Corvette | ~22.3 | ~-30.2 |
+| Corvette | ~22.3 | ~-30.3 |
+| Corvette | ~22.3 | ~-30.4 |
+| Corvette | ~22.3 | ~-30.5 |
+| Corvette | ~22.3 | ~-30.6 |
+| Corvette | ~22.3 | ~-30.7 |
+| Corvette | ~22.3 | ~-30.8 |
+| Corvette | ~22.3 | ~-30.9 |
+| Corvette | ~22.3 | ~-
+</details>
+
+![](images/b6bab2f09589f0c930191e14ce784715f48b214eefb2b280aaa9afdc0f4e6595.jpg)
+
+![](images/1f38f93d9940020d8c3fa2ed56e88a529f1f474c2fff9fcba1b850c4f4aaf722.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| V/L-0.5 | D/L | Vessel Type |
+| --- | --- | --- |
+| ~1.85 | ~98 | Corvette |
+| ~1.85 | ~92 | Corvette |
+| ~1.85 | ~81 | Corvette |
+| ~1.85 | ~80 | Corvette |
+| ~1.85 | ~74 | Corvette |
+| ~1.85 | ~66 | Corvette |
+| ~1.9 | ~86 | Corvette |
+| ~1.9 | ~81 | Corvette |
+| ~1.9 | ~58 | Corvette |
+| ~1.9 | ~54 | Corvette |
+| ~2.0 | ~83 | Corvette |
+| ~2.0 | ~72 | Corvette |
+| ~2.0 | ~67 | Corvette |
+| ~2.0 | ~59 | Corvette |
+| ~2.1 | ~70 | Corvette |
+| ~2.1 | ~66 | Corvette |
+| ~2.1 | ~54 | Corvette |
+| ~2.2 | ~69 | Corvette |
+| ~2.2 | ~60 | Corvette |
+| ~2.3 | ~73 | Corvette |
+| ~2.3 | ~66 | Corvette |
+| ~2.3 | ~58 | Corvette |
+| ~2.3 | ~55 | Corvette |
+| ~2.4 | ~86 | Corvette |
+| ~2.4 | ~77 | Corvette |
+| ~2.4 | ~56 | Corvette |
+| ~2.5 | ~92 | Corvette |
+| ~2.5 | ~89 | Corvette |
+| ~2.5 | ~88 | Corvette |
+| ~2.6 | ~136 | Corvette |
+| ~2.6 | ~89 | Corvette |
+| ~2.6 | ~88 | Corvette |
+| ~2.7 | ~78 | Corvette |
+| ~2.7 | ~72 | Corvette |
+| ~2.7 | ~63 | Corvette |
+| ~2.8 | ~81 | Corvette |
+| ~2.8 | ~75 | Corvette |
+| ~2.8 | ~71 | Corvette |
+| ~2.8 | ~65 | Corvette |
+| ~2.9 | ~114 | Corvette |
+| ~2.9 | ~87 | Corvette |
+| ~2.9 | ~86 | Corvette |
+| ~2.9 | ~81 | Corvette |
+| ~3.0 | ~81 | Corvette |
+| ~3.0 | ~72 | Corvette |
+| ~3.0 | ~64 | Corvette |
+| ~3.1 | ~81 | Corvette |
+| ~3.1 | ~68 | Corvette |
+| ~3.2 | ~97 | Corvette |
+| ~3.2 | ~66 | Corvette |
+| ~3.2 | ~60 | Corvette |
+| ~3.3 | ~84 | Corvette |
+| ~3.3 | ~71 | Corvette |
+| ~3.4 | ~93 | Corvette |
+| ~3.4 | ~88 | Corvette |
+| ~3.5 | ~78 | Corvette |
+</details>
+
+![](images/d7d8ac5c2710020d3ab57ef5bec6528c170773b24ce6b5a53245380874006161.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Vessel Type | Froude No. | M |
+| --- | --- | --- |
+| Corvette | ~0.55 | ~7.6 |
+| Corvette | ~0.55 | ~7.35 |
+| Corvette | ~0.55 | ~6.65 |
+| Corvette | ~0.58 | ~7.95 |
+| Corvette | ~0.58 | ~7.95 |
+| Corvette | ~0.60 | ~7.6 |
+| Corvette | ~0.60 | ~7.15 |
+| Corvette | ~0.60 | ~6.95 |
+| Corvette | ~0.62 | ~7.4 |
+| Corvette | ~0.62 | ~7.05 |
+| Corvette | ~0.65 | ~7.65 |
+| Corvette | ~0.65 | ~7.45 |
+| Corvette | ~0.68 | ~7.95 |
+| Corvette | ~0.68 | ~7.65 |
+| Corvette | ~0.70 | ~8.1 |
+| Corvette | ~0.70 | ~8.05 |
+| Corvette | ~0.72 | ~7.25 |
+| Corvette | ~0.75 | ~6.95 |
+| Corvette | ~0.75 | ~6.8 |
+| Corvette | ~0.78 | ~7.2 |
+| Corvette | ~0.80 | ~7.8 |
+| Corvette | ~0.82 | ~7.3 |
+| Corvette | ~0.85 | ~7.15 |
+| Corvette | ~0.85 | ~7.0 |
+| Corvette | ~0.85 | ~6.95 |
+| Corvette | ~0.85 | ~6.95 |
+| Corvette | ~0.88 | ~7.75 |
+| Corvette | ~0.90 | ~7.4 |
+| Corvette | ~0.95 | ~7.65 |
+| Corvette | ~0.95 | ~7.9 |
+| Corvette | ~0.98 | ~7.05 |
+| Corvette | ~1.00 | ~6.7 |
+| Corvette | ~1.00 | ~6.95 |
+| Corvette | ~1.00 | ~6.8 |
+| Corvette | ~1.02 | ~7.2 |
+| Frigate | ~0.48 | ~7.2 |
+| Frigate | ~0.55 | ~7.15 |
+| Frigate | ~0.55 | ~6.85 |
+| Patrol Boat | ~0.72 | ~6.15 |
+| Patrol Boat | ~0.75 | ~6.9 |
+| Patrol Boat | ~0.75 | ~6.9 |
+| Patrol Boat | ~0.80 | ~6.0 |
+| Patrol Boat | ~0.85 | ~6.35 |
+</details>
+
+![](images/2c6c6e8161e290feea1b0171da608e19a82399c1a6d98183d5d19488bc4b0f24.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| V/L | L/B | Vessel Type | Color |
+| --- | --- | --- | --- |
+| ~1.65 | ~7.7 | Corvette | White |
+| ~1.65 | ~7.7 | Corvette | Black |
+| ~1.9 | ~8.2 | Corvette | White |
+| ~1.9 | ~7.8 | Corvette | Black |
+| ~1.9 | ~7.7 | Corvette | Black |
+| ~1.9 | ~7.2 | Corvette | White |
+| ~1.9 | ~6.7 | Corvette | Black |
+| ~1.9 | ~6.3 | Corvette | White |
+| ~1.9 | ~6.0 | Corvette | Black |
+| ~1.95 | ~6.1 | Corvette | Black |
+| ~2.0 | ~8.1 | Corvette | Black |
+| ~2.0 | ~7.4 | Corvette | Black |
+| ~2.0 | ~6.8 | Corvette | Black |
+| ~2.0 | ~6.8 | Corvette | Black |
+| ~2.1 | ~8.1 | Corvette | White |
+| ~2.1 | ~7.2 | Corvette | Black |
+| ~2.1 | ~6.8 | Corvette | Black |
+| ~2.1 | ~6.5 | Corvette | Black |
+| ~2.2 | ~7.8 | Corvette | White |
+| ~2.2 | ~6.6 | Corvette | White |
+| ~2.2 | ~6.4 | Corvette | Black |
+| ~2.3 | ~8.0 | Corvette | White |
+| ~2.3 | ~7.3 | Corvette | White |
+| ~2.3 | ~6.4 | Corvette | Black |
+| ~2.3 | ~6.0 | Corvette | White |
+| ~2.4 | ~9.0 | Corvette | White |
+| ~2.4 | ~7.3 | Corvette | White |
+| ~2.4 | ~6.4 | Corvette | Black |
+| ~2.4 | ~6.4 | Corvette | Black |
+| ~2.4 | ~5.1 | Corvette | White |
+| ~2.6 | ~6.9 | Corvette | White |
+| ~2.6 | ~6.5 | Corvette | Black |
+| ~2.6 | ~5.9 | Corvette | White |
+| ~2.6 | ~5.2 | Corvette | White |
+| ~2.7 | ~6.6 | Corvette | White |
+| ~2.7 | ~6.6 | Corvette | Black |
+| ~2.8 | ~7.3 | Corvette | White |
+| ~2.8 | ~6.6 | Corvette | White |
+| ~2.8 | ~6.2 | Corvette | White |
+| ~2.8 | ~6.1 | Corvette | White |
+| ~2.9 | ~6.8 | Corvette | White |
+| ~2.9 | ~6.4 | Corvette | White |
+| ~2.9 | ~6.4 | Corvette | White |
+| ~2.9 | ~5.1 | Corvette | White |
+| ~3.0 | ~6.8 | Corvette | White |
+| ~3.0 | ~6.4 | Corvette | White |
+| ~3.0 | ~5.5 | Corvette | White |
+| ~3.1 | ~6.4 | Corvette | White |
+| ~3.1 | ~6.3 | Corvette | White |
+| ~3.2 | ~7.1 | Corvette | Black |
+| ~3.2 | ~6.3 | Corvette | White |
+| ~3.2 | ~5.4 | Corvette | White |
+| ~3.3 | ~6.1 | Corvette | White |
+| ~3.3 | ~6.1 | Corvette | White |
+| ~3.4 | ~6.1 | Corvette | White |
+| ~3.4 | ~6.0 | Corvette | White |
+| ~3.4 | ~5.7 | Corvette | White |
+| ~3.5 | ~5.8 | Corvette | White |
+</details>
+
+![](images/ef87f830adb88c7388c697ebde1822fa9ce5f59c2fea91b4cd4ca9a6fa79cf91.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | X | Y |
+| --- | --- | --- |
+| Corvette | ~1.7 | ~3.55 |
+| Corvette | ~1.7 | ~3.45 |
+| Corvette | ~1.7 | ~3.35 |
+| Corvette | ~1.7 | ~3.2 |
+| Corvette | ~1.9 | ~3.7 |
+| Corvette | ~1.9 | ~3.6 |
+| Corvette | ~2.0 | ~3.95 |
+| Corvette | ~2.0 | ~3.6 |
+| Corvette | ~2.0 | ~3.25 |
+| Corvette | ~2.1 | ~3.6 |
+| Corvette | ~2.1 | ~3.45 |
+| Corvette | ~2.2 | ~3.9 |
+| Corvette | ~2.2 | ~3.9 |
+| Corvette | ~2.3 | ~3.85 |
+| Corvette | ~2.3 | ~3.25 |
+| Corvette | ~2.4 | ~4.05 |
+| Corvette | ~2.4 | ~3.45 |
+| Corvette | ~2.4 | ~3.2 |
+| Corvette | ~2.5 | ~3.45 |
+| Corvette | ~2.6 | ~3.65 |
+| Corvette | ~2.7 | ~3.95 |
+| Corvette | ~2.8 | ~3.35 |
+| Corvette | ~2.8 | ~2.9 |
+| Corvette | ~2.9 | ~3.05 |
+| Corvette | ~2.9 | ~3.0 |
+| Corvette | ~3.0 | ~3.9 |
+| Corvette | ~3.0 | ~3.85 |
+| Corvette | ~3.0 | ~3.8 |
+| Corvette | ~3.0 | ~4.5 |
+| Corvette | ~3.2 | ~4.0 |
+| Corvette | ~3.2 | ~4.95 |
+| Corvette | ~3.2 | ~4.6 |
+| Corvette | ~3.2 | ~4.4 |
+| Corvette | ~3.3 | ~4.45 |
+| Corvette | ~3.4 | ~4.0 |
+| Corvette | ~3.5 | ~4.45 |
+| Frigate | ~1.7 | ~3.2 |
+| Frigate | ~1.9 | ~3.4 |
+| Frigate | ~1.9 | ~3.55 |
+| Frigate | ~2.0 | ~3.4 |
+| Frigate | ~2.1 | ~3.95 |
+| Frigate | ~2.2 | ~3.9 |
+| Frigate | ~2.3 | ~3.5 |
+| Frigate | ~2.4 | ~3.4 |
+| Frigate | ~2.6 | ~3.55 |
+| Frigate | ~2.7 | ~3.95 |
+| Frigate | ~2.8 | ~4.1 |
+| Frigate | ~2.8 | ~4.2 |
+| Frigate | ~2.9 | ~3.9 |
+| Frigate | ~3.0 | ~3.85 |
+| Frigate | ~3.0 | ~3.8 |
+| Frigate | ~3.1 | ~3.95 |
+| Patrol Boat | ~1.7 | ~3.2 |
+| Patrol Boat | ~1.9 | ~3.15 |
+| Patrol Boat | ~2.0 | ~3.4 |
+| Patrol Boat | ~2.1 | ~3.95 |
+| Patrol Boat | ~2.2 | ~3.9 |
+| Patrol Boat | ~2.3 | ~3.05 |
+| Patrol Boat | ~2.4 | ~3.2 |
+| Patrol Boat | ~2.4 | ~3.4 |
+| Patrol Boat | ~2.6 | ~3.45 |
+| Patrol Boat | ~2.7 | ~3.35 |
+| Patrol Boat | ~2.8 | ~3.0 |
+| Patrol Boat | ~2.9 | ~3.05 |
+| Patrol Boat | ~3.0 | ~3.9 |
+| Patrol Boat | ~3.2 | ~4.4 |
+| Patrol Boat | ~3.2 | ~4.65 |
+| Patrol Boat | ~3.3 | ~4.75 |
+| Patrol Boat | ~3.4 | ~3.95 |
+| Patrol Boat | ~3.5 | ~4.45 |
+</details>
+
+VAL-0.5  
+FIGURE 2.0-8 Beam-Draft Ratio vs Speed-Length Ratio for High-Speed Displacement Vessels
+
+![](images/891383d0377c141307eeb376ed6888e61013a26ad5985e7999dd98f81b383c47.jpg)
+
+<details>
+<summary>bubble</summary>
+
+| Series | X | Y |
+| --- | --- | --- |
+| Corvette | ~1.9 | ~0.51 |
+| Corvette | ~2.0 | ~0.48 |
+| Corvette | ~2.0 | ~0.46 |
+| Corvette | ~2.1 | ~0.48 |
+| Corvette | ~2.1 | ~0.48 |
+| Corvette | ~2.2 | ~0.51 |
+| Corvette | ~2.3 | ~0.49 |
+| Corvette | ~2.4 | ~0.43 |
+| Corvette | ~2.4 | ~0.42 |
+| Corvette | ~2.4 | ~0.42 |
+| Corvette | ~2.5 | ~0.42 |
+| Corvette | ~2.6 | ~0.41 |
+| Corvette | ~2.7 | ~0.41 |
+| Corvette | ~2.8 | ~0.37 |
+| Corvette | ~2.9 | ~0.38 |
+| Corvette | ~3.0 | ~0.38 |
+| Corvette | ~3.2 | ~0.44 |
+| Corvette | ~3.2 | ~0.48 |
+| Corvette | ~3.3 | ~0.48 |
+| Corvette | ~3.4 | ~0.43 |
+| Corvette | ~3.5 | ~0.40 |
+| Frigate | ~1.9 | ~0.49 |
+| Frigate | ~2.0 | ~0.44 |
+| Frigate | ~2.1 | ~0.43 |
+| Frigate | ~2.2 | ~0.40 |
+| Frigate | ~2.3 | ~0.44 |
+| Frigate | ~2.4 | ~0.38 |
+| Frigate | ~2.5 | ~0.34 |
+| Frigate | ~2.6 | ~0.33 |
+| Frigate | ~2.7 | ~0.39 |
+| Frigate | ~2.8 | ~0.36 |
+| Frigate | ~2.9 | ~0.38 |
+| Frigate | ~3.0 | ~0.38 |
+| Frigate | ~3.1 | ~0.37 |
+| Patrol Boat | ~1.6 | ~0.50 |
+| Patrol Boat | ~1.9 | ~0.42 |
+| Patrol Boat | ~2.0 | ~0.43 |
+| Patrol Boat | ~2.1 | ~0.41 |
+| Patrol Boat | ~2.2 | ~0.40 |
+| Patrol Boat | ~2.3 | ~0.33 |
+| Patrol Boat | ~2.4 | ~0.34 |
+| Patrol Boat | ~2.5 | ~0.42 |
+| Patrol Boat | ~2.6 | ~0.41 |
+| Patrol Boat | ~2.7 | ~0.39 |
+| Patrol Boat | ~2.8 | ~0.36 |
+| Patrol Boat | ~2.9 | ~0.34 |
+| Patrol Boat | ~3.0 | ~0.33 |
+| Patrol Boat | ~3.1 | ~0.37 |
+| Patrol Boat | ~3.2 | ~0.44 |
+| Patrol Boat | ~3.3 | ~0.42 |
+| Patrol Boat | ~3.4 | ~0.40 |
+</details>
+
+v/L\~0.S  
+FIGURE 2.0-9 Block Coefficient vs Speed-Length Ratio for High-Speed Displacement Vessels  
+F-9
+
+![](images/5725a2b076678d088be023bd198014ad3df66850f35bc4e3b1833ff00ff21e10.jpg)
+
+<details>
+<summary>line</summary>
+
+| \(v/\pi\) | WCF (Rr) |
+| --- | --- |
+| ~0.7 | ~0.14 |
+| ~0.8 | ~0.13 |
+| ~0.9 | ~0.11 |
+| ~1.0 | ~0.09 |
+| ~1.1 | ~0.08 |
+| ~1.2 | ~0.07 |
+| ~1.3 | ~0.07 |
+| ~1.4 | ~0.06 |
+| ~1.5 | ~0.05 |
+</details>
+
+F-10
+
+BASIC HULL FORM WITH $C_{B} = 0.48$ AND $C_{W} = 0.74$
+
+DESIGN NO. 6
+
+MODEL - 264
+
+![](images/98fa946837943335ac79ac7560f2cd622715ace781ba1e759e96afeda1005175.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Abstract 3D geometric shape with curved surfaces and a vertical axis, no text or symbols present
+</details>
+
+FIGURE 3.1-1 FSSS Parent Hull Body Plan (Model 264)
+
+![](images/d2c02afeb639acbd682c75309f354a79cf505f6b87879f8123e2955164ce00b5.jpg)
+
+<details>
+<summary>contour</summary>
+
+| y/a2 | z/Tcm (Series 1) | z/Tcm (Series 2) | z/Tcm (Series 3) | z/Tcm (Series 4) | z/Tcm (Series 5) | z/Tcm (Series 6) | z/Tcm (Series 7) | z/Tcm (Series 8) | z/Tcm (Series 9) | z/Tcm (Series 10) | z/Tcm (Series 11) | z/Tcm (Series 12) | z/Tcm (Series 13) | z/Tcm (Series 14) | z/Tcm (Series 15) | z/Tcm (Series 16) | z/Tcm (Series 17) | z/Tcm (Series 18) | z/Tcm (Series 19) | z/Tcm (Series 20) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1.0 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 | ~0.4 |
+| 0.5 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 | ~0.3 |
+| 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+</details>
+
+FIGURE 3.2-1 HSVA'C' Series Parent Hull Body Plan
+
+![](images/bfb0b394888a968827a0d21e2e55ac63c4ff9f03874ded7b72977606d787ecbf.jpg)
+
+<details>
+<summary>contour</summary>
+
+| Level | Value |
+| --- | --- |
+| 1 | ~0.5 |
+| 2 | ~0.5 |
+| 3 | ~0.5 |
+| 4 | ~0.5 |
+| 5 | ~0.5 |
+| 6 | ~0.5 |
+| 7 | ~0.5 |
+| 8 | ~0.5 |
+| 9 | ~0.5 |
+| 10 | ~0.5 |
+| 11 | ~0.5 |
+| 12 | ~0.5 |
+| 13 | ~0.5 |
+| 14 | ~0.5 |
+| 15 | ~0.5 |
+| 16 | ~0.5 |
+| 17 | ~0.5 |
+| 18 | ~0.5 |
+| 19 | ~0.5 |
+| 20 | ~0.5 |
+| 21 | ~0.5 |
+| 22 | ~0.5 |
+| 23 | ~0.5 |
+| 24 | ~0.5 |
+| 25 | ~0.5 |
+| 26 | ~0.5 |
+| 27 | ~0.5 |
+| 28 | ~0.5 |
+| 29 | ~0.5 |
+| 30 | ~0.5 |
+| 31 | ~0.5 |
+| 32 | ~0.5 |
+| 33 | ~0.5 |
+| 34 | ~0.5 |
+| 35 | ~0.5 |
+| 36 | ~0.5 |
+| 37 | ~0.5 |
+| 38 | ~0.5 |
+| 39 | ~0.5 |
+| 40 | ~0.5 |
+| 41 | ~0.5 |
+| 42 | ~0.5 |
+| 43 | ~0.5 |
+| 44 | ~0.5 |
+| 45 | ~0.5 |
+| 46 | ~0.5 |
+| 47 | ~0.5 |
+| 48 | ~0.5 |
+| 49 | ~0.5 |
+| 50 | ~0.5 |
+| 51 | ~0.5 |
+| 52 | ~0.5 |
+| 53 | ~0.5 |
+| 54 | ~0.5 |
+| 55 | ~0.5 |
+| 56 | ~0.5 |
+| 57 | ~0.5 |
+| 58 | ~0.5 |
+| 59 | ~0.5 |
+| 60 | ~0.5 |
+| 61 | ~0.5 |
+| 62 | ~0.5 |
+| 63 | ~0.5 |
+| 64 | ~0.5 |
+| 65 | ~0.5 |
+| 66 | ~0.5 |
+| 67 | ~0.5 |
+| 68 | ~0.5 |
+| 69 | ~0.5 |
+| 70 | ~0.5 |
+| 71 | ~0.5 |
+| 72 | ~0.5 |
+| 73 | ~0.5 |
+| 74 | ~0.5 |
+| 75 | ~0.5 |
+| 76 | ~0.5 |
+| 77 | ~0.5 |
+| 78 | ~0.5 |
+| 79 | ~0.5 |
+| 80 | ~0.5 |
+| 81 | ~0.5 |
+| 82 | ~0.5 |
+| 83 | ~0.5 |
+| 84 | ~0.5 |
+| 85 | ~0.5 |
+| 86 | ~0.5 |
+| 87 | ~0.5 |
+| 88 | ~0.5 |
+| 89 | ~0.5 |
+| 90 | ~0.5 |
+| 91 | ~0.5 |
+| 92 | ~0.5 |
+| 93 | ~0.5 |
+| 94 | ~0.5 |
+| 95 | ~0.5 |
+| 96 | ~0.5 |
+| 97 | ~0.5 |
+| 98 | ~0.5 |
+| 99 | ~0.5 |
+| 100 | ~0.5 |
+</details>
+
+Parent hull form, $C_{B} = 0.40$ . Ship model 1213-A.  
+FIGURE 3.3-1 SSPA-SFDV Parent Hull Body Plan (Model 1213-A)
+
+![](images/eea5215640e5aee3ab537f62563e1e1be81c7f7ae5fa41e9bfc1d796c2e7aa74.jpg)
+
+<details>
+<summary>text_image</summary>
+
+0
+1
+20 18
+17
+15
+13
+3
+5
+8 11
+</details>
+
+2'B.1'B.4 1'B.2'B.  
+FIGURE 3.4-1 Series 64 Parent Hull Body Plan (Model 4783-1)
+
+![](images/7dafba09e7edba89db8c826556def1d09a383e67ae535d5aedbcb344e9c2591f.jpg)
+
+<details>
+<summary>contour</summary>
+
+| Parameter | Description |
+| --- | --- |
+| 0 | Curve with a downward slope |
+| 10 | Curve with a downward slope |
+</details>
+
+FIGURE 3.7-1 NPL-HSRB Parent Hull Body Plan
+
+![](images/ec8b420a06d74a8f12b602aee8c39f9dec8a6a501d4c62e75cf418dc1b3db55d.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| X | PE ratio |
+| --- | --- |
+| ~1 | ~1.078 |
+| ~2 | ~1.113 |
+| ~3 | ~1.093 |
+| ~4 | ~1.060 |
+| ~5 | ~1.046 |
+| ~6 | ~1.039 |
+| ~7 | ~1.043 |
+| ~8 | ~1.042 |
+| ~9 | ~1.033 |
+</details>
+
+0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750 0.800  
+0.425 0.475 0.525 0.575 0.625 0.675 0.725 0.775  
+FMR  
+FIGURE 3.7-2 Bare Hull EHP Comparisons (SSPA vs. NPL)
+
+![](images/1ae9f52a47a8496c9e89f5dc71043c6381d0108230278fd5c7c2c3c57d692a37.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| FN | FSSS | HSUA'C' | SSPA-SFDU | SERIES 64 | Mercier | Tang |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.39 | — | — | — | — | ~0.94 | ~1.09 |
+| 0.44 | — | — | — | — | ~0.88 | ~1.05 |
+| 0.49 | — | — | — | — | ~0.87 | ~1.03 |
+| 0.54 | — | — | — | — | ~0.86 | ~1.05 |
+| 0.59 | — | — | — | — | ~0.91 | ~1.09 |
+</details>
+
+FIGURE 3.8-1 Small Frigate Bare Hull EHP Predictions
+Compared to Model Tests
+
+![](images/3d8e71a7450d9f398e0e3a9b3dc7a3b0a7ea2f5a760bc74008210a53e726688a.jpg)
+
+<details>
+<summary>line</summary>
+
+| FN | FSSS | HSUA'C' | SSPA-SFDV | SERIES 64 | Mercier | Tang |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.25 | ~0.62 | ~0.62 | ~0.62 | ~0.62 | — | — |
+| 0.30 | ~0.48 | ~0.48 | ~0.48 | ~0.48 | — | — |
+| 0.35 | ~0.55 | ~0.55 | ~0.55 | ~0.55 | — | — |
+| 0.40 | ~0.35 | ~0.35 | ~0.35 | ~0.35 | ~1.00 | ~1.00 |
+| 0.45 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~1.05 | ~1.05 |
+| 0.50 | ~0.10 | ~0.10 | ~0.10 | ~0.10 | ~0.95 | ~0.95 |
+| 0.55 | ~0.12 | ~0.12 | ~0.12 | ~0.12 | ~0.92 | ~1.02 |
+| 0.60 | ~0.13 | ~0.13 | ~0.13 | ~0.13 | ~0.95 | ~1.02 |
+| 0.65 | ~0.14 | ~0.14 | ~0.14 | ~0.14 | ~0.95 | — |
+| 0.70 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.93 | ~1.05 |
+</details>
+
+FIGURE 3.8-2 230-Ft Corvette Bare Hull EHP Predictions Compared to Model Tests
+
+![](images/7a07ad0124d0e04bd9364f59585a13ddabf36c18444984a46bd045c50cfa119f.jpg)
+
+<details>
+<summary>line</summary>
+
+| FN | FSSS | HSVA'C' | SSPA-SFDV | SERIES 64 | Mercier | Tang |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.3 | ~0.78 | ~0.25 | ~0.25 | ~0.25 | ~0.20 | — |
+| 0.4 | ~0.88 | ~0.43 | ~0.43 | ~0.43 | ~0.10 | ~0.89 |
+| 0.5 | ~0.98 | ~0.10 | ~0.10 | ~0.10 | ~0.10 | ~0.91 |
+| 0.6 | ~1.05 | ~0.95 | ~0.95 | ~0.95 | ~0.95 | ~0.81 |
+| 0.7 | ~1.10 | ~0.95 | ~0.95 | ~0.95 | ~0.98 | ~0.86 |
+| 0.8 | ~1.05 | ~1.00 | ~1.00 | ~1.00 | ~1.00 | ~0.79 |
+| 0.9 | ~1.00 | ~1.05 | ~1.05 | ~1.05 | ~1.00 | ~0.88 |
+</details>
+
+FIGURE 3.8-3 154-FT PGM-C Bare Hull EHP Predictions Compared to Model Tests
+
+![](images/e09a7dab79fb0fc020c85ea2ab91799af399d4111d49548a4f519294c3f2bbfe.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| FN | Solid Circle (Rr/Displacement) | Open Circle (Rr/Displacement) |
+| --- | --- | --- |
+| ~0.24 | ~5 | — |
+| ~0.29 | ~10 | — |
+| ~0.34 | ~15 | ~14 |
+| ~0.39 | ~30 | ~25 |
+| ~0.44 | ~55 | ~45 |
+| ~0.49 | ~73 | ~59 |
+| ~0.54 | ~83 | ~67 |
+| ~0.59 | ~94 | — |
+| ~0.64 | ~103 | ~82 |
+| ~0.69 | ~110 | ~90 |
+| ~0.74 | ~118 | ~97 |
+| ~0.79 | ~126 | ~105 |
+</details>
+
+FIGURE 4.1-1 Rr/Disp for A Series of 200-Ft Corvettes with Different Displacement-Length Ratios
+
+![](images/84018832085d878d51b47af751bbeb4a79b918e99b108e659072fdd345ea3255.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| FN | Disp/(0.01L)^3::60 | Disp/(0.01L)^3::80 | Disp/(0.01L)^3::90 |
+| --- | --- | --- | --- |
+| 0.3 | ~0.76 | ~1.04 | ~1.34 |
+| 0.35 | ~0.74 | ~1.05 | ~1.36 |
+| 0.4 | ~0.73 | ~1.06 | ~1.39 |
+| 0.45 | ~0.71 | ~1.06 | ~1.39 |
+| 0.5 | ~0.71 | ~1.08 | ~1.43 |
+| 0.55 | ~0.71 | ~1.09 | ~1.44 |
+| 0.6 | ~0.74 | ~1.07 | ~1.41 |
+| 0.65 | ~0.70 | ~1.09 | ~1.44 |
+| 0.7 | ~0.70 | ~1.09 | ~1.43 |
+| 0.75 | ~0.71 | ~1.08 | ~1.42 |
+| 0.8 | ~0.71 | ~1.08 | ~1.41 |
+</details>
+
+FIGURE 4.1-2 Merit Curve Factor (MCF) of Rr/Disp for a Series of 200-FT Corvettes (Displacement-Length Ratio Variations) to Baseline Ship
+
+![](images/3c3a18beb7d166b60f79a4a910b16692db43542c08be7cfce78a3380c5bc5731.jpg)
+
+<details>
+<summary>line</summary>
+
+| FN | Cp=6.8 | Cp=6.6 | Cp=6.2 | Cp=6.4 |
+| --- | --- | --- | --- | --- |
+| 0.3 | ~0.24 | ~0.12 | ~0.92 | ~0.92 |
+| 0.4 | ~0.12 | ~0.10 | ~0.98 | ~0.98 |
+| 0.5 | ~0.10 | ~0.10 | ~1.00 | ~1.00 |
+| 0.6 | ~0.10 | ~0.10 | ~1.00 | ~1.00 |
+| 0.7 | ~0.10 | ~0.10 | ~1.00 | ~1.00 |
+| 0.8 | ~0.10 | ~0.10 | ~1.00 | ~1.00 |
+</details>
+
+FIGURE 4.2-1 Merit Curve Factor (MCF) of Rr/Disp for a Series of 200-FT Corvettes (CP Variations) to Baseline Ship
+
+![](images/30d5394a50ef07e82f94ff0ceb0f6e36085c7d538a797ea497a4ac0a850aa9b6.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| FN | MCF (Rr)::B&T=3 | MCF (Rr)::B&T=6 |
+| --- | --- | --- |
+| 0.25 | ~0.94 | ~1.05 |
+| 0.30 | ~0.95 | ~1.04 |
+| 0.35 | ~0.96 | ~1.03 |
+| 0.40 | ~0.98 | ~1.02 |
+| 0.45 | ~0.99 | ~1.00 |
+| 0.50 | ~0.99 | ~1.00 |
+| 0.55 | ~0.98 | ~1.01 |
+| 0.60 | ~0.98 | ~1.02 |
+| 0.65 | ~0.98 | ~1.02 |
+| 0.70 | ~0.97 | ~1.02 |
+| 0.75 | ~0.97 | ~1.02 |
+| 0.80 | ~0.97 | ~1.02 |
+</details>
+
+FIGURE 4.4-1 Merit Curve Factor (MCF) of Rr/Disp for a Series of 200-FT Corvettes (B/T Variations) to Baseline Ship
+
+![](images/d69fa0043ad101c165a81ef93b4c9ce704569e2dc57446ebb953ce1c99d61ef6.jpg)
+
+![](images/d313f23dc5142a7d5816c1a4b41086f2837ac9becfd3ea879b58ad959ba5791e.jpg)

@@ -1,0 +1,4424 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Design Analysis of a Lightweight Solar Powered System for Recreational Marine Craft "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                90,
+                162,
+                899,
+                225
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Daniel Tamunodukobipi, Nitonye Samson, Adumene Sidum "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                261,
+                596,
+                278
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Department of Marine Engineering, Rivers State University, Port Harcourt, Nigeria Email: tamunodan@yahoo.com "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                292,
+                613,
+                324
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "How to cite this paper: Tamunodukobipi, D., Samson, N. and Sidum, A. (2018) Design Analysis of a Lightweight Solar Powered System for Recreational Marine Craft. Journal of Engineering and Technology, 6, 441-456. https://doi.org/10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                363,
+                342,
+                460
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received: April 3, 2018 "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                472,
+                231,
+                486
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted: May 28, 2018 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                486,
+                233,
+                499
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Published: May 31, 2018 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                500,
+                235,
+                511
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Copyright © 2018 by authors and Scientific Research Publishing Inc. This work is licensed under the Creative Commons Attribution International License (CC BY 4.0). http://creativecommons.org/licenses/by/4.0/ "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                527,
+                342,
+                608
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/01d53de6a43a99c2628f04b5c20d453bf871bce55ebdeae8524ff1f1cab987a9.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                95,
+                608,
+                171,
+                629
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Open Access "
+                    }
+                ]
+            },
+            "bbox": [
+                181,
+                610,
+                260,
+                623
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                359,
+                361,
+                445,
+                377
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The design of a lightweight solar powered marine craft is considered in this report. Various design concepts were considered with respect to the hull type, resistance, aesthetics and the operating environment of the vessel. The planning hull-form catamaran was considered for the boat design. The resistance and other hydrodynamic characterization of boat were analyzed using the CAHI and Savitsky method. Detailed algorithm is developed for the sizing of the various components of the solar PV system for the boat. The hull resistance was found to be 740 N corresponding to the boat speed of 5 knot using the above stated methods. The motor power was obtained to be 2.239 kW (3 HP). Torqeedo outboard electric motor of 3 HP was selected for the boat propulsion. The battery bank was seized accordingly and four batteries of 235 AH and 12 V were selected for the storage of electric power for the boat propulsion. Hence, the solar PV module was sized. It was concluded that, due to the limited space for the installation of the PV module, additional source of power (land base) should be made available to completely charge the battery. "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                387,
+                907,
+                643
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                359,
+                657,
+                460,
+                672
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Solar Powered, Marine Craft, Vessel, Propulsion, Savitsky, CAHI and Energy "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                681,
+                897,
+                698
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                739,
+                487,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Environmental awareness has been developed worldwide so progressively and turns into the crying needs over the last few decades. It is the obligation of engineering researchers to ensure environmental friendliness and sustainable development of the environment. The current trend of energy researchers is to find out about alternate source of energy because the primary source of fuel is becoming limited in stock. Renewable energy, such as solar, wind, water, tidal flow, geothermal and biomass are all clean energy with tremendous amounts of resources for electricity generation. It is therefore becoming increasingly necessary to find and apply more environmentally and eco-friendly technologies that would utilize alternative, renewable sources of energy. Of them solar energy is the primary source of renewable energy as it can get easily from nature. Using this solar energy we can design the hardware and install the solar boat for tourism purpose in marine vessel [1]. Figure 1 shows the schematic representation of the solar power system implemented for both propulsion and auxiliary services onboard the vessel. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                765,
+                905,
+                894
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Seie "
+                    }
+                ]
+            },
+            "bbox": [
+                95,
+                50,
+                164,
+                107
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Scientific Resarch Publihing "
+                    }
+                ]
+            },
+            "bbox": [
+                168,
+                61,
+                253,
+                100
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology, 2018, 6, 441-456 "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                53,
+                905,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "http://www.scirp.org/journal/wjet "
+                    }
+                ]
+            },
+            "bbox": [
+                687,
+                68,
+                905,
+                81
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ISSN Online: 2331-4249 "
+                    }
+                ]
+            },
+            "bbox": [
+                757,
+                83,
+                905,
+                96
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ISSN Print: 2331-4222 "
+                    }
+                ]
+            },
+            "bbox": [
+                766,
+                97,
+                905,
+                110
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 May 31, 2018 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                386,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "441 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                339,
+                90,
+                905,
+                235
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Solar energy is a prodigious renewable energy source which has enormous energy existing as heat and light can convert it into electricity. Besides the domestic uses, solar power can be utilized as the alternative of the oil in boat’s fuel and capable of minimizing the water pollution and fuel cost as well. Solar electric powered boats may promote zero-emission in aquatic transportation system and recreation for world waters [2]. Solar powered boats basically consist of battery, solar panel, electric motor and the propeller. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                239,
+                905,
+                366
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The present day use of fossil fuels as a primary source of energy is noticed to be a dangerous impact on both the environment and our waterways system. It has led to serious environmental problems and believed to be one of the critical factors contributing to global warming. Hence the concept of using a solar power to sail marine vessels is a matter of importance in the design of boat. It was centuries ago when the technology of wind energy made its first step. As one of the most developed renewable energy technologies, wind power has become the primary consideration with accelerated growth during the past few decades [3]. This work studies the possibility of fitting photovoltaic solar panels on board of a vessel to reduce dependability on fuel. The electric demand of the vessel is calculated and the power produced by the panels is calculated as well. A solar boat design process is completely something different from a conventional boat so much that it can be termed as “solar boat design”. The design condition is critical because the available energy from the sun varies with the months of year. It also varies between a sunny day and cloudy day. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                368,
+                907,
+                639
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The first vessel known to use lead acid batteries was the  built in 1881 by Gustave Trouvé in France, but the vessel’s development was hampered by energy storage constraints and the resulting limited range [4]. Water pollution, noise, vibration, environmental regulations and the idea of “being green” are all motivators for implementing electric options in marine propulsion. It is important to understand the factors that currently keep all-electric and hybrid-electric systems from being widely adopted and how changes in those factors could see broad acceptance of the technologies [5]. The economics are driven by a range of considerations such as fuel costs, environmental regulations, quality of life, noise, and access to environmentally sensitive locales. Those working in vessel design, construction and operation want to know where the technology currently stands and when to consider investing in all-electric or hybrid-electric options [3]. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                641,
+                907,
+                677
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/968c97f4d033e0fb17b662376135ad4d600d953d027ce210c7b3202fb775e897.jpg"
+                },
+                "content": "```mermaid\ngraph TD\n    A[\"Flexible solar panel\"] --> B[\"Charge controller\"]\n    B --> C[\"Inverter\"]\n    C --> D[\"AC Appliance\"]\n    B --> E[\"Solar battery\"]\n    E --> F[\"DC Appliance\"]\n```",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Solar power system. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "flowchart",
+            "bbox": [
+                398,
+                693,
+                836,
+                872
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "442 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                339,
+                90,
+                907,
+                271
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Electric technology for small vessels has also been hampered by the lack of appropriate battery technology. A lightweight, large-capacity battery with fast recharge capability is needed to give the development of electric small vessels a major push. Sailboats offer an option for battery charging because the propeller can be left to spin freely when under sail allowing the batteries to charge. This “free” energy source significantly impacts the attractiveness of the electric power option long term. In this case batteries become the cost driver. This research therefore seeks to apply one of the green technology that have great potential in providing an alternative to fuel a recreational boat by the implementation of solar powered system on boats that is fully electrical powered converted from sunlight. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                275,
+                907,
+                475
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.1. Marine Propulsion System Drives "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                491,
+                665,
+                506
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Marine propulsion is the mechanism or system used to generate thrust to move a boat or ship across water. While paddles and sails are still used on some smaller boats, most modern ships are propelled by mechanical systems consisting of an electric motor or engine turning a propeller, or less frequently, in pump-jets, an impeller [6] [7]. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                517,
+                907,
+                605
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Marine steam engines were the first mechanical engines used in marine propulsion; however, they have mostly been replaced by two-stroke or four-stroke diesel engines, outboard motors, and gas turbine engines on faster ships [8] [9]. Electric motors using electric battery storage have been used for propulsion on submarines and electric boats and have been proposed for energy-efficient propulsion [10]. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                610,
+                905,
+                719
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.1.1. Inboard Propulsion System "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                734,
+                603,
+                750
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Inboard motor is a marine propulsion system for boats. Inboard motor is an engine enclosed within the hull of the boat, usually connected to a propulsion screw by a driveshaft. Inboard motors may be of several types, suitable for the size of craft they are fitted to. Boats can use one cylinder to V12 engines, depending if they are used for racing or trolling. For pleasure craft, such as sailboats and speedboats, diesel, gasoline and electric engines are used [11]. Many inboard motors are derivatives of automobile engines, known as marine automobile engines. The advent of the stern drive propulsion leg improved design so that auto engines could easily power boats. And for larger craft, including ships (where outboard propulsion would in any case not be suitable) the propulsion system may include many types, such as diesel, gas turbine, or even fossil-fuel or nuclear-generated steam [12]. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                753,
+                905,
+                899
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                904,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "443 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                902,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                341,
+                90,
+                907,
+                161
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.1.2. Outboard Propulsion System "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                175,
+                616,
+                190
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Marine outboard engines range in size from small electric driven units to large V8, 300 horsepower units. These engines are specifically designed and manufactured for use on vessels, although they still require a level of maintenance and care to remain in good working condition. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                194,
+                905,
+                266
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Outboard engines have the benefit that the one unit comprises the engine, gearbox and propeller. Unfortunately, outboard engines cannot provide the power or the economy required by many large commercial vessels [13]. Outboard engines are generally used on smaller commercial vessels such as water taxis, water authorities, water police or small charter vessels (fishing or scuba diving). They are also used as auxiliary engines on some larger vessels, particularly those under sail. On larger sporting vessels and some commercial vessels, twin outboard engines of the same power rating are used on one vessel. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                268,
+                907,
+                416
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Outboard motor is a propulsion system for boats, consisting of a self-contained unit that includes engine, gearbox and propeller or jet-drive, designed to be affixed to the outside of the transom. They are most common motorized method of propelling small watercraft. As well as providing propulsion, outboards provide steering control, as they are designed to pivot over their mountings and thus control the direction of thrust [14]. The skeg also acts as a rudder when the engine is not running. Outboard motors can be easily removed for storage or repairs. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                418,
+                907,
+                565
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to eliminate the chances of hitting bottom with an outboard motor, the motor can be tilted up to an elevated position either electronically or manually. This helps when travelling through shallow waters where there may be debris that could potentially damage the motor as well the propeller. If the electric motor required to move the pistons which raise or lower the engine is malfunctioning, every outboard motor is equipped with manual piston release which will allow the operator to drop the motor down to its lowest setting [15]. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                568,
+                907,
+                698
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The outboard cooling system is the direct, raw water type. Sea water is drawn up by an impeller pump, made of plastic or rubber, which is located in the lower leg. It then passes through the galleries in the engine and out through the exhaust. A small stream of water is also bled off somewhere in the system as a tell-tale sign, indicating to the operator that water is circulating throughout the cooling system. A thermostat maintains a minimum operating temperature. An audio alarm and a “hot light” are also sometimes fitted. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                701,
+                907,
+                830
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.1.3. Hybrid Propulsion System "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                845,
+                596,
+                859
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "New generations of ships must meet new challenges, particularly in terms of energy efficiency, reliability and environmental impacts. One of the future goals of shipbuilding is to reduce the impact of ship emissions to respond to existent and future regulations of the International Maritime Organization (IMO) on greenhouse gas and pollutants emissions [16]. In this context, hybrid propulsion systems (HPS) are promising solutions to meet these requirements. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                863,
+                907,
+                897
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "444 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                621,
+                916,
+                904,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                339,
+                90,
+                905,
+                161
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Marine hybrid propulsion systems include an internal combustion engine (ICE), a generator, an electric storage unit, and an electric motor. Diesel electric propulsion systems are different from hybrids because they produce power using a diesel generator that is directly connected to an electric motor. In a hybrid system there is an electric storage element in the system [4]. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                164,
+                905,
+                252
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The performance of a given hybrid propulsion system is heavily affected by its specific configuration. The three general arrangements of hybrid propulsion system are briefly discussed below and they include series, parallel, and a combination of both serial and parallel configurations [3]. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                255,
+                905,
+                325
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Design Methodology "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                340,
+                559,
+                358
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A detailed survey was carried out on the location where the designed boat is meant to operate. The depth of the water was considered which is one of the factors used to determine the draft of the boat. Basically, the solar data for the considered location is obtained from NIMET. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                368,
+                905,
+                439
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1. Hull Resistance Estimation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                454,
+                610,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This design considers three design concepts; it will not be economically viable to construct three different models for the purpose of resistance estimation. Therefore, a different method of estimating hull resistance was considered. The method of estimating hull resistance adopted in this work is the Savitsky and CAHI methods. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                480,
+                905,
+                567
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1.1. Algorithm for Savitsky Method of Estimating Hull Resistance "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                583,
+                858,
+                598
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Savitsky in 1964 developed a method of analyzing the hydrodynamic characterization of planning hull vessels. The method is based on the hydrodynamic and hydrostatic forces that act on the hull. Both the drag and lift components of the forces were taken into consideration in his formulations. Figure 2 presents a schematic of a planning craft showing the force parameters and dimensions. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                600,
+                905,
+                688
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The mean wetted length-beam ratio "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\lambda _ { _ m } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which defines the pressure area is expressed a "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                691,
+                905,
+                724
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\lambda_ {m} = \\frac {\\left[ \\frac {d}{\\sin \\tau} + \\frac {b}{2 \\pi} \\frac {\\tan \\beta}{\\tan \\tau} \\right]}{b} = \\frac {L _ {k} + L _ {c}}{2 b} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9002ae78e6ccf25a1232e2ae7866b3e040a5e95ef5284e5ca2444500c7508dd6.jpg"
+                }
+            },
+            "bbox": [
+                504,
+                727,
+                905,
+                778
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "By Savitsky’s method, the relation for wetted keel length ratio is given by the expression "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                785,
+                905,
+                819
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\lambda_ {k} = \\lambda_ {m} - 0. 0 3 + 0. 5 \\left(0. 5 7 + \\frac {\\beta}{1 0 0 0}\\right) \\left(\\frac {\\tan \\beta}{2 \\tan \\tau} - \\frac {\\beta}{1 6 7}\\right) \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/46024fe17484d4f3875068affd66f9100c1d5f72ff7f7864590a1b144fc88374.jpg"
+                }
+            },
+            "bbox": [
+                458,
+                822,
+                905,
+                856
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where:  = angle of deadrise of planing surface "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                863,
+                668,
+                879
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "= trim angle of planing area "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                882,
+                569,
+                897
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                904,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "445 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                902,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9a581970209b34a87998a7fd623e9037f9ec314dcf453d0448b892e475363d95.jpg"
+                },
+                "content": "Lc\nLg\nW\nB/2 tanβ\nα\nDf\nT\nC\nN\nh\nV\nf\nτ\nHg\nB/4 tanβ\nε\nLK",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Forces experienced by planning hull vessels. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "text_image",
+            "bbox": [
+                346,
+                85,
+                907,
+                252
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The lift coefficient for finite Deadrise "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { L \\beta }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "can be calculated from: "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                296,
+                828,
+                313
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {L \\beta} = C _ {L 0} - 0. 0 0 6 5 \\beta C _ {L 0} ^ {0. 6} \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e06caa0d37b168d0b2252af3649d70195a0694fa87c86f5af42b53f8279bd7ed.jpg"
+                }
+            },
+            "bbox": [
+                544,
+                315,
+                905,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Following flat plate tests, a relation is developed for the total lift (buoyancy and dynamic lift) acting on a flat surface. Savitsky obtained the empirical planning lift equation for a zero Deadrise as "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                343,
+                905,
+                395
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {L 0} = \\frac {\\tau^ {1 . 1}}{1 0 0 0 0} \\left[ 1 2 0 \\lambda^ {1 / 2} + \\frac {5 5 \\lambda^ {5 / 2}}{C _ {v} ^ {2}} \\right] \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a9d0d5a0cec78917b4ddf8b5ab019013f653dd1243f248398dda3bb6bf1193f6.jpg"
+                }
+            },
+            "bbox": [
+                497,
+                399,
+                905,
+                438
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  vC "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { \\nu } = \\frac { V } { \\sqrt { g b } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "= speed coefficient "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                444,
+                610,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "= vessel speed "
+                    }
+                ]
+            },
+            "bbox": [
+                361,
+                484,
+                478,
+                498
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "= acceleration due to gravity "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                503,
+                574,
+                517
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "= beam of planning surface "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                521,
+                566,
+                536
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Equation (5) presents Savitsky’s total resistance of a planning hull. The first quantity on the right-hand side is the gravity drag component; while the second is due to hydrodynamics. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                539,
+                905,
+                592
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "R _ {T} = W \\tan \\tau + \\frac {\\rho V ^ {2} \\lambda b ^ {2} C _ {F}}{2 \\cos \\tau \\cos \\beta} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/8a01362914c1a0a5c8b93934b1a4971a7930f8cc0c4094ba7fffe4dd3e67fa65.jpg"
+                }
+            },
+            "bbox": [
+                524,
+                596,
+                905,
+                631
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where C = "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { L O } = \\frac { \\rho g \\nabla } { 0 . 5 \\rho V ^ { 2 } b ^ { 2 } } = \\frac { W } { 0 . 5 \\rho V ^ { 2 } b ^ { 2 } }"
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                636,
+                596,
+                670
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "W = 0. 5 \\rho V ^ {2} b ^ {2} C _ {L O}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0a3c56be3bfc6464261f9b10c93f5fc6c5327c179f47e7588d50389e8b0d61a0.jpg"
+                }
+            },
+            "bbox": [
+                561,
+                676,
+                687,
+                693
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {F} = \\frac {0 . 0 7 5}{(\\log R - 2) ^ {2}} + \\Delta C _ {F}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6890dff44e7d00c9a468590a3c5186b8d193e2bbf48f42efeb16997db6dc0403.jpg"
+                }
+            },
+            "bbox": [
+                539,
+                700,
+                707,
+                736
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta C _ { F } = 0 . 0 0 0 4"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which obtained from ATTC Standard Roughness and "
+                    }
+                ]
+            },
+            "bbox": [
+                344,
+                744,
+                823,
+                760
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Further details on the Savitsky method are presented [17] [18] [19]. In this work, a detailed algorithm of the method developed is presented in a flow chart. The diagram in Figure 3 shows the flow chart developed for the implementation of the Savitsky method. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                762,
+                905,
+                833
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1.2. CAHI Method for Planning Craft Hydrodynamic Characterization "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                341,
+                846,
+                885,
+                861
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The Central Aero-Hydrodynamic Institute (CAHI) method is similar to the Savitsky method. Using CAHI method, the lift coefficient for finite Deadrise "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { L \\beta }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                864,
+                905,
+                900
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "446 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f756d06dcfc4503c9d993e4f4185631fa2d154200ea05c5675d904d2db860ab6.jpg"
+                },
+                "content": "```mermaid\ngraph TD\n    A[\"Start\"] --> B[\"Read in V,Δ, LCG, LOA, LWL, B and β\"]\n    B --> C[\"Compute C_V = (V/√gb) and C_Lβ = (gΔ/1/2ρV²b²)\"]\n    C --> D[\"For i = 1\"]\n    D --> E[\"C_LO1 = 0.1\"]\n    E --> F[\"Compute f = C_LOi - 0.0065βC_LOi^0.6 - C_Lβ; f̂ = 1 - 0.0039βC_LOi^-0.4; C_LOi+1 = C_LOi - f/f'\"]\n    F --> G{If C_LOi+1 - C_LOi ≤ 0.0001}\n    G -->|NO| H[\"I=i+1\"]\n    H --> I[\"I=i+1\"]\n    I --> J{If λ_i+1 - λ_i ≤ 0.0001}\n    J -->|Yes| K[\"C_LO = C_LOi+1\"]\n    K -->|λ_i+1=4.0| L[\"Compute g = 0.7925Bλ_i³ - 2.39LCGλ_i² + 3.9075BC_v²λ_i - 5.21 LCGC_v²; g' = 2.3775Bλ_i² - 4.78 LCGλ_i + 3.9075 BC_v²; and λ_i + 1 = λ_i - g/j'\"]\n    L --> M{If λ_i+1 - λ_i ≤ 0.0001}\n    M -->|No| N[\"I=i+1\"]\n    N --> O[\"I=i+1\"]\n    O --> P{If λ_i+1 - λ_i ≤ 0.0001}\n    P -->|Yes| Q[\"C_LO = C_LOi+1\"]\n    Q --> R[\"Compute T = 1.1√(C_LO/0.012λ^(1/2) + 0.0055λ^(5/2)/C_V^2); λ_K = λ - 0.03 + ½(0.57 + β/1000)(tan β/2 tan τ - β/67)); R_n = Vλb/ø; CF = 0.075/(log R_n - 2) + 0.0004; V_1/V = √(1 - 0.0120τ^(1.1)/λ^(1/2) cos τ; R_T/W = tan τ + (V_1/V)^2 C_F / C_Lβ cos τ cos β)<br>END\"]\n```",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. Savitsky method flow chart. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "flowchart",
+            "bbox": [
+                347,
+                87,
+                899,
+                779
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {L \\beta} = \\tau \\left(\\frac {0 . 7 \\pi \\lambda}{1 + 1 . 4 \\lambda} + \\frac {\\lambda - 0 . 4}{\\lambda + 0 . 4} \\times \\frac {\\lambda^ {2}}{C v ^ {2}}\\right) \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f6ba293a7b9061ac4c85ac3d9675070beda2cddf087f4e1801d97df4f0eb3c2f.jpg"
+                }
+            },
+            "bbox": [
+                490,
+                815,
+                905,
+                853
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The wetted keel length to beam ratio for a hull with Deadrise ( ) is given by Equation (7). The expressions for the mean hull speed, trim and total resistance are given by Equations (8), (9) and (10), respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                861,
+                907,
+                897
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                905,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "447 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                512,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                905,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                341,
+                91,
+                712,
+                106
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\lambda_ {k \\beta} = \\frac {\\lambda^ {0 . 8}}{\\cos \\beta} (1 - 0. 2 9 (\\sin \\beta) ^ {0. 2 8}) \\times \\left(1 - 1. 3 5 (\\sin \\beta) ^ {0. 4 4} \\frac {m _ {\\Delta}}{\\sqrt {C v}}\\right) \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1b1713ce37127a0abb39e49f3e2b58720bfe2c89fbfb3aabd46222793aaeebf9.jpg"
+                }
+            },
+            "bbox": [
+                423,
+                111,
+                905,
+                146
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "V _ {m} = V \\left(1 - \\frac {\\tau}{1 + \\lambda}\\right) \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b9d0274df78f574f29ad1358d97c6f150a0e75ebd83d2db22942870010929242.jpg"
+                }
+            },
+            "bbox": [
+                557,
+                153,
+                905,
+                187
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\tau_ {\\beta} = \\tau + \\frac {0 . 1 5 (\\sin) ^ {0 . 8}}{C v ^ {0 . 3}} + \\left(\\frac {1 - 0 . 1 7 \\sqrt {\\lambda_ {\\beta} \\cos \\beta}}{\\sqrt {\\lambda_ {\\beta} \\cos \\beta}}\\right) \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c795a12c806b51f845289719a26684c6222ac6fbba6134f34878db431e8b0106.jpg"
+                }
+            },
+            "bbox": [
+                475,
+                194,
+                905,
+                237
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "R _ {T} = W \\tan \\tau_ {\\beta} + \\frac {\\rho V _ {m} ^ {2} \\lambda_ {\\beta} b ^ {2} C _ {F}}{2 \\cos \\tau_ {\\beta} \\cos \\beta} \\tag {10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/faac802f6a37704c5ad6f116a99a63f54f1b82666f1e494ea4ea3075768639d2.jpg"
+                }
+            },
+            "bbox": [
+                524,
+                245,
+                905,
+                283
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { \\Delta } = \\frac { \\displaystyle \\frac { 0 . 7 \\pi \\lambda } { 1 + 1 . 4 \\lambda } \\left( 0 . 7 5 + 0 . 0 8 \\frac { \\lambda ^ { 0 . 2 8 } } { \\sqrt { C \\nu } } \\right) + \\frac { \\lambda - 0 . 8 } { 3 \\lambda + 1 . 2 C \\nu ^ { 2 } } } { \\displaystyle \\frac { 0 . 7 \\pi \\lambda } { 1 + 1 . 4 \\lambda } + \\frac { \\lambda - 0 . 4 } { \\lambda + 0 . 4 } \\left( \\frac { \\lambda } { { C \\nu } ^ { 2 } } \\right) }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "0.28   "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                292,
+                722,
+                361
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The hydrodynamic moment factor "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( ) m _ { \\Delta }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a necessary correction for the wetted length ratio which is absent in Savitsky model. Details about CAHI method are presented [19], however, for dimensional total resistance variables such as: the speed , displacement "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "chine beam , Deadrise angle "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "longitudinal center of gravity LCG, mean wetted length ratio , and the trim τ are identified "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                366,
+                905,
+                456
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1.3. Algorithm for CAHI Method of Estimating Hull Resistance "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                341,
+                470,
+                831,
+                485
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The CAHI method is similar to that of the Savitsky method. The flow chart for the implementation of the CAHI method is depicted in Figure 4. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                488,
+                905,
+                522
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2. Solar System Design Models "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                537,
+                618,
+                553
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to have a solar PV system operate properly and meet the power requirements of the designed boat, time must be spent in the design phase to evaluate the individual components of the system and their interaction with all the other pieces. Solar system design involves the sizing of the various components that make up the solar system (solar panel, charge controller, battery bank and inverter) required to meet up the energy demand of the system. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                563,
+                905,
+                669
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to properly size the battery bank, one most first of all obtain the average energy demand and the day of autonomy of the storage. Hence, the estimated energy storage of the bank is obtained using the following expression: "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                672,
+                905,
+                724
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E _ {e s t} = E _ {d} \\times D _ {a u t} \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0baadf8b263546933f561fa5477c6b52c035716eba7e872ceaabe1dc9da3350b.jpg"
+                }
+            },
+            "bbox": [
+                557,
+                727,
+                904,
+                744
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E _ { e s t } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "Estimated energy storage, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E _ { d } = \\mathrm { A v e r a g e }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "energy demand, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E _ { a u t } = \\mathrm { D a y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "r of autonomy "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                750,
+                905,
+                785
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "After obtaining the estimated energy storage, the next step is to determine the safe energy storage. The safe energy storage can be computed by dividing the obtained estimated energy storage by maximum allowable depth of discharge as given by Equation (12). "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                788,
+                905,
+                858
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E _ {s a f e} = \\frac {E _ {e s t}}{D O D} \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6ffabc83e03ce68c7295d09876c58af181020f9bfa6433533481a4023e076faf.jpg"
+                }
+            },
+            "bbox": [
+                554,
+                862,
+                904,
+                893
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "448 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                512,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3ca74395c2a2b15c2f35dde3c03d514c8c5fb806103b46fe9885bd37844421d6.jpg"
+                },
+                "content": "```mermaid\ngraph TD\n    A[\"Start\"] --> B[\"Read in V,Δ, LCG, LOA, LWL, B, b and β\"]\n    B --> C[\"Compute C_V = V/√gb; mΔ = LCG/b and C_Lβ = gΔ/1/2ρV²b²\"]\n    C --> D[\"For i=1\"]\n    D --> E[\"K = (0.7πλ_i/1+1.4λ_i(0.75+0.08λ_i^0.865/√C_V)+λ_i-0.08λ_i^2/3λ_i+1.2C_V^2)/(0.7πλ_i/1+1.4λ_i+λ_i-0.4λ_i/λ_i+0.4C_V^2)\"]\n    E --> F{C= K-mJΔ: -0.01≤C≥0.001}\n    F -->|c>0.01| G[\"λ_1=λ_1-0.0001\"]\n    F -->|c<0.01| H[\"λ_i=λ_i+0.0001\"]\n    G --> I[\"λ_1=λ_1-0.0001\"]\n    H --> J[\"End\"]\n    I --> K[\"Compute T = CL/(0.7πλ_i/1+1.4λ_i + λ_i-0.4λ_i)/λ_i+0.4C_V^2\"]\n    K --> L[\"λ_β = λ / cos β 0.8 [1 - 0.29(sin β)^0.28\"]X[\"1 + 1.35(sin β)^0.44 X/mΔ/√C_V\"]; R_n = Vλb/σ; τ_β = T + 0.15(sin β)^0.8/C_v X(1 - 0.17√λβ cos β)/√λβ cos β; C_f = 0.075/(log R_n - 2)^2 + 0.0004; V_m = V[\"1 - τ/1-λ\"]; S = b^2λβ/cos β and R_T = Δ tan τ + 0.5C_fSρV_m^2/cos τβ]\n    J --> M[\"END\"]\n```",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. CAHI method flow chart. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "flowchart",
+            "bbox": [
+                347,
+                87,
+                897,
+                556
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                600,
+                391,
+                613
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "E _ { s a f e } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "Safe energy storage,  = Depth of Discharge "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                619,
+                739,
+                635
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The next step in the storage battery sizing is to determine the total capacity of the battery bank in ampere-hours. This is determined by dividing the safe energy storage by the rated dc voltage of one battery as in Equation (13) [20]. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                638,
+                907,
+                691
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {t b} = \\frac {E _ {\\text { safe }}}{V _ {b}} \\tag {13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/73d4d7c71f6327a2a6a8aecb4be1bfc1c360a47e80a7c6ed225fa11eecf67bc5.jpg"
+                }
+            },
+            "bbox": [
+                554,
+                696,
+                905,
+                729
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { t b } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "the total capacity of the battery bank in ampere-hours, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { b } = \\mathrm { B a t t e r y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "rated dc voltage "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                739,
+                905,
+                774
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At this point, the total number of batteries can then be obtained by dividing the total capacity of the battery bank in ampere-hours by the capacity of one of the selected batteries in ampere-hours as given by Equation (14) [20]. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                776,
+                907,
+                831
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "N _ {t b} = \\frac {C _ {t b}}{C _ {b}} \\tag {14}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/41aeb9855564a96d3c4cdb178d69ce29eaa92afee0cd1fe67f50b8537c702fde.jpg"
+                }
+            },
+            "bbox": [
+                561,
+                836,
+                905,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N _ { t b } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "the total number battery in the bank, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { b } { = } \\mathrm { C a p a c i t y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of selected battery "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                879,
+                897,
+                895
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                905,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "449 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The number of batteries in series can also be determined by dividing the system dc voltage by the rated dc voltage of one battery as in Equation (15). "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                90,
+                905,
+                125
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "N _ {b s} = \\frac {V _ {d c}}{V _ {b}} \\tag {15}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2f95b01715ae402b780f251f47b4d5ee0d434781b9180608c182ffbff9db96b2.jpg"
+                }
+            },
+            "bbox": [
+                586,
+                131,
+                905,
+                163
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Likewise, we can then determine the number of parallel battery strings by dividing the total number of batteries by the number of batteries in series as in Equation (15). Sizing the array begins by first determining the required daily average energy demand which is obtained by dividing the daily average energy demand by the product of the efficiencies of all system components as given in Equation (16). "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                173,
+                905,
+                282
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E _ {r d} = \\frac {E _ {d}}{\\eta_ {b} \\eta_ {i} \\eta_ {c}} \\tag {16}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a10306f4e07dae79ec4c6fb2446fd2b9b4c5d54dccb3dc6512c4dde31708760a.jpg"
+                }
+            },
+            "bbox": [
+                583,
+                288,
+                905,
+                322
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E _ { r d } = \\mathrm { R e q u i r e d }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "daily average energy demand, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta _ { b } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "Battery efficiency "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                330,
+                858,
+                346
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta _ { i } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "Inverter efficiency, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta _ { c } = \\mathrm { C h a r g e }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "controller efficiency "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                349,
+                752,
+                365
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The average peak power is then obtained by dividing the required daily average energy demand by the average sun hours of the site per day as in Equation (17). "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                368,
+                905,
+                421
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "P _ {\\text { ave,peak }} = \\frac {E _ {r d}}{T _ {s h}} \\tag {17}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e38f5b76c81e650de526534f4ae35bef51b437426361ff0a0b9e34856b926a7c.jpg"
+                }
+            },
+            "bbox": [
+                566,
+                426,
+                905,
+                460
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "P _ { a v e , p e a k } = \\mathrm { A v e r a g e }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "peak power, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r } { T _ { s h } = \\mathrm { A v e r a g e } } \\end{array}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "sun hours "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                470,
+                773,
+                486
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The total dc current of the system is then obtained by dividing the average peak power by the dc voltage of the system as in Equation (18). "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                488,
+                905,
+                522
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "I _ {d c} = \\frac {P _ {\\text { a   v   e } , \\text { p   e   a   k }}}{V _ {d c}} \\tag {18}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/29ac83a2b23f9101dacb08bdb8e17d7a59b65e7744082945620902fd684db74c.jpg"
+                }
+            },
+            "bbox": [
+                563,
+                527,
+                905,
+                563
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I _ { d c } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "Total dc current of the system, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { d c } ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "dc voltage of the PV Array "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                572,
+                867,
+                588
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The number of modules in series is then obtained by dividing the system dc voltage by the rated voltage of each module as expressed in Equation (19). "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                591,
+                905,
+                625
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "N _ {s m} = \\frac {V _ {d c}}{V _ {r m}} \\tag {19}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b18778cca026837291ff8709d03fefcb62cd311d3f6b6a69961db21557fb448b.jpg"
+                }
+            },
+            "bbox": [
+                574,
+                631,
+                905,
+                665
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N _ { s m } = ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Number of module in series, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { r m } = 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Rated dc voltage of the module "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                674,
+                894,
+                691
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Next, we obtain the number of parallel number of module strings by dividing the total dc current of the system by the rated current of one module as in Equation (20). "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                693,
+                905,
+                745
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "N _ {p m} = \\frac {I _ {d c}}{I _ {r m}} \\tag {20}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/86b58d582b824bb4fa01d81e6a697006545e2716fd6d5b57450d51b7dde6f924.jpg"
+                }
+            },
+            "bbox": [
+                591,
+                753,
+                904,
+                786
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N _ { p m } = \\mathrm { N u m b e r }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of module in parallel, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I _ { r m } =  { \\mathrm { R a t e d } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "current of the module "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                796,
+                884,
+                812
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The total number of modules that form the array is then finally determined by multiplying the number of modules in series by the number of parallel modules as in Equation (21), thus giving the required array size. "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                815,
+                905,
+                868
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "N _ {t m} = N _ {s m} \\times N _ {p m} \\tag {21}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/30a95cc17db7863f31718366a5fa28cf07502d55c9e724e165e94343b550074f.jpg"
+                }
+            },
+            "bbox": [
+                566,
+                873,
+                904,
+                890
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "450 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                512,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Results Analysis and Discussion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                87,
+                665,
+                106
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1. Results Analysis and Discussion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                112,
+                653,
+                128
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "After considering several design factors such as resistance/powering, aesthetics, hydrodynamic characteristics etc, it was decided to design a twin hull boat (Catamaran) for the Pleasure Park. The following data were considered for the design as shown in Table 1. This data was obtained from survey and estimations. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                138,
+                905,
+                228
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The boat displacement is computed as the some of the hull weight and every other weight onboard the boat. This data was used for the various analysis of the boat for the programs developed in this work and other manual calculations. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                232,
+                905,
+                287
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2. Hydrodynamics Analysis of the Design Concepts "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                299,
+                789,
+                318
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Hydrodynamic analysis is very important in the design of planing hull vessels. It takes into considerations the behavior of the vessel in terms of resistance, wetted length, trim and stability of the vessel at different speed. The methods adopted for the hydrodynamic characterization of the designed Catamaran boat are the CAHI and Savitsky methods. These methods were chosen because the catamaran boat is designed to be of the planing hull form. The two methods mentioned adopted are well established method for analyzing planing hull form analytically without conducting model test. The simulation results for the boat hydrodynamic characterization are shown in Figures 5, 6 and 7. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                327,
+                907,
+                495
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.3. Hydrodynamics Analysis of the Design Concepts "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                509,
+                789,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From the hydrodynamic characterization simulation in the previous section, the resistance of the boat can be determined at different speeds. Considering a "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                536,
+                907,
+                572
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/fc839cacca0b6cbf1fa33df206bd6b4d50c7169b5cfd08e9769476f34e5dc26b.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. Boat Specifications. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>S/n</td><td>Description</td><td>Value</td><td>Unit</td></tr><tr><td>1</td><td>Weight of boat hull</td><td>200</td><td>Kg</td></tr><tr><td>2</td><td>Number of persons</td><td>4</td><td>Kg</td></tr><tr><td>3</td><td>Weight of persons</td><td>300</td><td>Kg</td></tr><tr><td>4</td><td>Battery weight</td><td>50</td><td>Kg</td></tr><tr><td>5</td><td>Solar PV weight</td><td>50</td><td>Kg</td></tr><tr><td>6</td><td>Motor</td><td>50</td><td>Kg</td></tr><tr><td>7</td><td>Boat Displacement</td><td>650</td><td>Kg</td></tr><tr><td>8</td><td>Length overall (LOA)</td><td>3</td><td>M</td></tr><tr><td>9</td><td>Beam (B)</td><td>1.8</td><td>M</td></tr><tr><td>10</td><td>Maximum Speed</td><td>5</td><td>Knot</td></tr><tr><td>11</td><td>Depth</td><td>0.7</td><td>M</td></tr><tr><td>12</td><td>Deadrise</td><td>50</td><td>Degree</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                344,
+                610,
+                905,
+                893
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                905,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "451 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                929
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                904,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/f00a370fce62075bfcf20c6c9c78a52ca5d59222e248e7ee090ba815dc750b27.jpg"
+                },
+                "content": "Boat Resistance\n| Speed of vessel [knot] | CAHI (N) | Savitsky (N) |\n|---|---|---|\n| 1 | 480 | 400 |\n| 2 | 510 | 460 |\n| 3 | 550 | 550 |\n| 4 | 600 | 650 |\n| 5 | 650 | 750 |\n| 6 | 720 | 860 |\n| 7 | 810 | 970 |\n| 8 | 900 | 1080 |\n| 9 | 990 | 1140 |\n| 10 | 1040 | 1180 |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5. Plot of resistance against speed of the boat. "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                383,
+                85,
+                867,
+                296
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/fc68eba9f14d46e012b932bcafc3464c516ac517cfe8ebe5b3e996b5357a5df4.jpg"
+                },
+                "content": "| speed of vessel [knot] | CAHI  | Savitsky |\n| ---------------------- | ----- | -------- |\n| 1                      | 16.5  | 12.0     |\n| 2                      | 12.5  | 11.5     |\n| 3                      | 10.5  | 10.8     |\n| 4                      | 9.5   | 10.0     |\n| 5                      | 8.5   | 9.5      |\n| 6                      | 7.5   | 9.0      |\n| 7                      | 6.8   | 8.5      |\n| 8                      | 6.0   | 8.0      |\n| 9                      | 5.5   | 7.5      |\n| 10                     | 5.0   | 7.0      |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6. Plot of wetted length ratio at different speed of the boat. "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                381,
+                337,
+                868,
+                579
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/698291f41ec7466215bc1abde8028d4d19789bd43df65bd1d90137f1d18cc051.jpg"
+                },
+                "content": "Boat Trim\n| Speed of vessel [knot] | CAHI (Degree) | Savitsky (Degree) |\n|---|---|---|\n| 1 | 6.5 | 5.3 |\n| 2 | 6.9 | 6.2 |\n| 3 | 7.2 | 7.3 |\n| 4 | 7.7 | 8.6 |\n| 5 | 8.3 | 9.9 |\n| 6 | 9.1 | 11.0 |\n| 7 | 10.1 | 12.4 |\n| 8 | 11.1 | 13.7 |\n| 9 | 12.2 | 14.5 |\n| 10 | 12.8 | 14.8 |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7. Plot of the boat trim against speed. "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                384,
+                620,
+                867,
+                874
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                53,
+                248,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                916,
+                287,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "452 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                621,
+                916,
+                902,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "maximum design speed of 5 knot, it can be read from Figure 4 that, the corresponding resistance of the boat hull is about 740 N as predicted by the CAHI method. It is safer to use the maximum predicted resistance in order to avoid an under-designed system. Therefore, the power requirement was estimated as the product of the boat resistance and its designed allowable speed (power = "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7 4 0 ^ { * } 5 ^ { * } 0 . 5 1 4 4 = 1 . 9 0 3 \\mathrm { k W } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                90,
+                905,
+                198
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The estimated power is the effective power which does not take into account propulsive losses. Assuming a propulsive efficiency of 0.85 since the boat will be propelled at a very slow speed of 5 knot therefore, the power of the motor is determined as the effective power divided by the propulsive efficiency which can be computed as 2.239 kW (3 HP). "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                201,
+                905,
+                289
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.4. Calculation of Load and Power of the Battery "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                304,
+                759,
+                322
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The battery bank is sized based on the estimated motor power, day of autonomy and the battery’s depth of discharge. As estimated above, the motor power is 2.239 kW, the day of autonomy is assumed to be a day, and a typical value of depth of discharge is 80%. The battery is expected to service the boat for 4 hours per day therefore; the average energy demand per day is computed as "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                330,
+                905,
+                418
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E _ {d} = 2. 2 3 9 \\times 4 = 8. 9 5 6 \\mathrm{kW} \\cdot \\mathrm{h}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/45db9e94d8040e37a268d17d8d46d3b223d42f8eb88bbc3ce8d8fc4f09eb01ed.jpg"
+                }
+            },
+            "bbox": [
+                522,
+                422,
+                724,
+                438
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The estimated energy storage, "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                447,
+                569,
+                462
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E _ {e s t} = E _ {d} \\times D _ {a u t} = 8. 9 5 6 \\mathrm{kW} \\cdot \\mathrm{h} \\times 1 = 8. 9 5 6 \\mathrm{kW} \\cdot \\mathrm{h}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/71bf8d4b6f9886592f4f863dd4bc9b0f1bef14c2cb1e960485726ee809594229.jpg"
+                }
+            },
+            "bbox": [
+                460,
+                464,
+                784,
+                482
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The safe energy storage, safeE "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E _ { s a f e } = { \\frac { E _ { e s t } } { D O D } } = { \\frac { 8 . 9 5 6 { \\mathrm { k W } } \\cdot { \\mathrm { h } } } { 0 . 8 } } = 1 1 . 1 9 5 { \\mathrm { k W } } \\cdot { \\mathrm { h } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "estE "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                486,
+                836,
+                520
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The next step in the storage battery sizing is to determine the total capacity of the battery. The battery bank is assumed to have a dc voltage of 12 V. Therefore, "
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                525,
+                905,
+                558
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {t b} = \\frac {E _ {\\text { safe }}}{V _ {b}} = \\frac {1 1 . 1 9 5 \\times 1 0 0 0}{1 2} = 9 3 2. 9 1 \\mathrm{A} \\cdot \\mathrm{h}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c513f71764a52df8192ae777c23922d82604a9df998ab858296c1f6f4120cb6b.jpg"
+                }
+            },
+            "bbox": [
+                482,
+                563,
+                764,
+                598
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Considering the calculated total battery capacity in ampere-hour, one can select a battery of 235 Ah. Therefore, the number of batteries for the bank to be connected in series is 4 ( , 4 235 Ah Batteries). "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                605,
+                905,
+                657
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.5. Solar Panel Sizing/Selection "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                671,
+                620,
+                688
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The sizing of the solar panels includes the determination of the average sun hour of the location where the installation is required. In this work, data for the average sun hour were collected from NIMET. The average sun hour for Rivers State is estimated as 4.5 hours. The battery efficiency is assumed to be 90% as well as the efficiency of the charge controller. Consider Sun module SW345XL PV module for the designed boat. The PV module specifications are depicted in Table 2. The module size is 800 mm by 420 mm. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                696,
+                905,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From Equation (16), the required daily average energy demand can be calculated as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                824,
+                905,
+                856
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E _ {r d} = \\frac {E _ {d}}{\\eta_ {b} \\eta_ {i} \\eta_ {c}} = \\frac {8 . 9 5 6 \\mathrm{kW} \\cdot \\mathrm{h}}{0 . 9 \\times 0 . 9} = 1 1. 0 5 7 \\mathrm{kW} \\cdot \\mathrm{h} / \\text {day}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ce2f6260b9326f008c6d766b6dcbfb97a43f9ba42ad29b21cf5301cfe195f65f.jpg"
+                }
+            },
+            "bbox": [
+                457,
+                861,
+                789,
+                895
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                904,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                930
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "453 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                902,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/1abc69d379babcc23f4ecbc21cbf53e3058b941e71e6de2acca7a9e228850ac8.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2. PV module specifications. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameter</td><td>Symbol</td><td>Value</td></tr><tr><td>Maximum Power</td><td> $P_{\\text{max}}$ </td><td>345 W</td></tr><tr><td>Open circuit voltage</td><td> $V_{oc}$ </td><td>47.8 V</td></tr><tr><td>Maximum power point voltage</td><td> $V_{mpp}$ </td><td>38.2 V</td></tr><tr><td>Short circuit current</td><td> $I_{sc}$ </td><td>9.75 A</td></tr><tr><td>Maximum power point current</td><td> $I_{mpp}$ </td><td>9.10 A</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                344,
+                107,
+                905,
+                239
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The average peak power can be obtained from Equation (17) as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                258,
+                855,
+                273
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "P _ {a v e, p e a k} = \\frac {E _ {r d}}{T _ {s h}} = \\frac {1 1 . 0 5 7}{4 . 5} = 2 4 5 7. 0 6 4 \\mathrm{W}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6d7827fafbec1b4cf04b6b6c8793e46c4cf03eb9cf6743673dfd4b17282de569.jpg"
+                }
+            },
+            "bbox": [
+                492,
+                280,
+                754,
+                314
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The total dc current of the system is then obtained from Equation (18) as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                323,
+                904,
+                356
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "I _ {d c} = \\frac {P _ {\\text { ave,peak }}}{V _ {d c}} = \\frac {2 4 5 7 . 0 6 4}{2 4} = 1 0 2. 3 7 8 \\mathrm{A}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/aa952562274b9f66b9b8357ad4e711e9a9a89f74b68c470807acf538cf8f5454.jpg"
+                }
+            },
+            "bbox": [
+                492,
+                363,
+                754,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The number of modules in series is 1 since the value of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { r m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is greater than "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { d c }"
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                407,
+                902,
+                423
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Next, we obtain the number of parallel number of module strings using equation (20). This yielded a total of 10 modules in parallel. Therefore, the total number of solar module for the boat to fully charge the batteries is 10 modules. The sizing of the solar panel for boat design is limited to the available space for installation on the boat. As a result of the limited space available, the panels installed may not be able to fully recharge the battery. As such, the need for additional power source (Land base) is required for charging the batteries. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                426,
+                905,
+                553
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                568,
+                480,
+                584
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This research work considered the design of lightweight solar powered marine craft pliable in the Rivers State Peace Park and Nigerian inland waterways where the waters are considered to be calm "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( i . e . ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "negligible wave effect). Different design concepts were considered in this work of which the chosen one is presented. Different hull forms were considered with respect to hull resistance and aesthetics. The chosen hull form for the boat is the planning hull catamaran. It was chosen because of its low resistance and stability as well as aesthetics as compared to the mono-hull vessels. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                596,
+                905,
+                743
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Two different methods were used for the hydrodynamic analysis of the hull. Since the hull form is planning, the CAHI and Savitsky method was employed for the hydrodynamic characterization of the hull. These methods were used to analyze the trim of the boat with respect to the boat speed in order to determine the dynamic stability of the vessel. Also, the boat resistance was determined using the same methods. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                747,
+                905,
+                857
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A detailed approach and algorithm of determining the solar PV module for boat is also presented in this work. The developed algorithm was used to determine the various solar PV components capacity required for the powering of the boat. From the boat resistance, the battery bank was sized and hence, the solar PV module. It was obtained that, the space available for the installation of the panel that will power the boat is limited. This problem can be mitigated by using land base electricity to aid the recharging of the battery or increase the breadth and length of the boat hull. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                861,
+                905,
+                895
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                66
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "454 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                902,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                339,
+                90,
+                905,
+                198
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                214,
+                532,
+                231
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors are sincerely grateful to David Akpan Udo and Hope Ikue for their contributions in making this work a success, May God reward their labor and immense contributions. "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                241,
+                907,
+                293
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                309,
+                452,
+                325
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] Mahmud, K., Morsalin, S. and Khan, M.I. (2014) Design and Fabrication of an Automated Solar Boat. , 64, 31-42. https://doi.org/10.14257/ijast.2014.64.04 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] Pecen, R. and Hay, M.E. (2005) Design and Implementation of Solar Electric Boats for Cleaner U.S. Waters. 2005 , American Society for Engineering Education, 10.403.1-10.403.12. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] Calder, N. (2014) Workshop on Hybrid Marine Systems. IORE, Dalhousie University, Nova Scotia. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] NSBA (2015) Review of All-Electric and Hybrid-Electric Propulsion Technology for Small Vessels. Nova Scotia Boatbuilders Association, Nova Scotia. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Brewer, T. (1994) Understanding Boat Design. International Marine Camden, Maine, 80-102. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] Garrison, E.G. (2009) A History of Engineering and Technology: Artful Methods. 2nd Edition, CRC Press, London. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] Nitonye, S., Adumene, S. and Howells, U.U. (2017) Numerical Design and Performance Analysis of a Tug Boat Propulsion System. , 5, 80-98. https://doi.org/10.4236/jpee.2017.511007 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] Stodola, A. (1997) Steam and Gas Tubines. McGraw-Hill, New York. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] Ogar, O.B., Nitonye, S. and John-Hope, I. (2018) Design Analysis and Optimal Matching of a Controllable Pitch Propeller to the Hull and Diesel Engine of a CODOG System. , 6, 53-74. https://doi.org/10.4236/jpee.2018.63005 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] Pansini, A.J. (1997) Basic of Electric Motors. Penwell Publishing Company, Tulsa, Oklahoma, 45. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] Shamsuddin, M.Z. (2003) A Conceptual Design of a Fibre Reinforced Plastic Fishing Boat for Traditional Fisheries in Malaysia. Fisheries Industry Development Division Fisheries Development Authority of Malaysia (LKIM), Kuala Lumpur, MALAYSIA, 1-53. http://www.unuftp.is "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] Samson, N. (2017) Numerical Analysis for the Design of the Fuel System of a Sea Going Tug Boat in the Niger Delta. , 3, 161-177. http://www.wjert.org "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] Wells, T. (2010) Electric Outboard Drive for Small Boats (A Do-It-Yourself Hand-"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                329,
+                910,
+                894
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                746,
+                52,
+                904,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                289,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "455 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                510,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                916,
+                902,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "book). https://www.scribd.com/document/36750318/Electric-Outboard-Drive-for-Small-B oats "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14] Munir, A. (2006) Electric Propulsion. Helsinki University of Technology, Finland. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15] Wordford, C. (2012) Outboard Motors. http://www.explainthatstuff.com/outboardmotors.html "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16] Iduk, U. and Samson, N. (2015) Effects and Solutions of Marine Pollution from Ships in Nigerian Waterways. , , 6, 782-792. http://www.ijser.org "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[17] Savitsky, D. and Brown, P. (1976) Procedure of Hydrodynamic Evaluation of Planing Hull in Smooth and Rough Water. , 13, 381-400. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[18] Daniel, T., Ibelema, F., Samson, N. and Ezenwa, O. (2017) Design, Fabrication and Rotodynamic Performance Analysis of Airboat Propulsion System for Application in Amphibious Planing Crafts. ( ) , 1, 41-48. http://www.ncdmb.gov.ng "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[19] Tamunodukobipi, D. and Akharele, A. (2018) Comparative Analysis of High Speed Craft Hydrodynamic Characterization Algorithms. , 3, 42-51. http://www.ijmret.org/ "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[20] Pradhan, A., Ali, S.M. and Behera, P. (2012) Utilization of Battery Bank in case of Solar PV System and Classification of Various Storage Batteries. , 2, 21-31. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                86,
+                910,
+                439
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Tamunodukobipi et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                52,
+                250,
+                65
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.4236/wjet.2018.62027 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                916,
+                287,
+                929
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "456 "
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                916,
+                512,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "World Journal of Engineering and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                621,
+                916,
+                902,
+                930
+            ]
+        }
+    ]
+]

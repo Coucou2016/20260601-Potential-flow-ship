@@ -1,0 +1,26 @@
+{
+  "pdf": "literature/textbooks_surveys/Molland_Ship_Resistance_Propulsion_BOOK.pdf",
+  "chunks": {
+    "part_01": {
+      "batch_id": "4bad97b5-2066-40d1-9b5a-284fd8d9d326",
+      "page_range": "1-200",
+      "status": "ok"
+    },
+    "part_02": {
+      "batch_id": "26a4d56a-e28e-42bc-ae32-5b791ca20f4f",
+      "page_range": "201-400",
+      "status": "ok"
+    },
+    "part_03": {
+      "batch_id": "7bc5a509-c424-4813-a99d-671625773902",
+      "page_range": "401-563",
+      "status": "ok"
+    }
+  },
+  "merge": {
+    "status": "ok",
+    "output": "parsed_markdown/literature/textbooks_surveys/Molland_Ship_Resistance_Propulsion_BOOK/cloud_vlm/Molland_Ship_Resistance_Propulsion_BOOK_cloud_vlm.md",
+    "lines": 22035,
+    "bytes": 1507245
+  }
+}

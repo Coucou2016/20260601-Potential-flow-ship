@@ -1,0 +1,553 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Installation note for OceanWave3D-seakeeping"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                169,
+                131,
+                836,
+                156
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Mostafa Amini Afshar and Harry B. Bingham"
+                    }
+                ]
+            },
+            "bbox": [
+                300,
+                172,
+                702,
+                189
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Section of Fluid Mechanics, Coastal and Maritime Engineering"
+                    }
+                ]
+            },
+            "bbox": [
+                228,
+                189,
+                774,
+                206
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Department of Mechanical Engineering"
+                    }
+                ]
+            },
+            "bbox": [
+                332,
+                206,
+                673,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Technical University of Denmark"
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                223,
+                647,
+                237
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "February 1, 2017"
+                    }
+                ]
+            },
+            "bbox": [
+                426,
+                250,
+                578,
+                267
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1 Introduction"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                304,
+                315,
+                322
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this document the required process for installation of the seakeeping solver is described. Please note that OceanWave3D-Seakeeping code is making use of several external libraries. These libraries must be built and installed before the seakeeping code is compiled and used. The main library is called Overture (Brown et al., 1999). It is assumed here that the Overture library has already been installed. For Overture installation procedure, please refer to the relevant document in this folder. It is also recommended to install the PETSc library as it has been explained in the Overture installation guide. The seakeeping code is also using the GNU Scientific Library (gsl) (Gough, 2009) whose installation will be described described in this note. For all other required libraries please refer to the documentation for the Overture installation in this folder."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                336,
+                887,
+                495
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2 Building the gsl library"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                519,
+                443,
+                539
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This library is a collection of routines for the numerical calculation in C and C++. In the seakeeping code it is used for instance to perform the fft, least-square fitting, complex number operations and so on. The gsl library can be downloaded from https://ftp.gnu.org/gnu/gsl/. Note that he seakeeping code is written based on gsl version 1.16. For installation:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                551,
+                885,
+                615
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "tar xzf gsl-1.16.tar.gz"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                627,
+                307,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "cd gsl-1.16"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                649,
+                221,
+                664
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "./configure"
+                    }
+                ]
+            },
+            "bbox": [
+                121,
+                671,
+                213,
+                687
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "make"
+                    }
+                ]
+            },
+            "bbox": [
+                121,
+                694,
+                168,
+                707
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "make check"
+                    }
+                ]
+            },
+            "bbox": [
+                121,
+                715,
+                221,
+                728
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "make install"
+                    }
+                ]
+            },
+            "bbox": [
+                121,
+                737,
+                226,
+                751
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For more information regarding the installation process for gsl refer to the INSTALL file in the gsl library folder."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                765,
+                885,
+                797
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3 Building the seakeeping code"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                819,
+                512,
+                839
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The whole seakeeping code is arranged in the following folders:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                851,
+                631,
+                866
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [],
+                "level": 2
+            },
+            "bbox": [
+                124,
+                87,
+                159,
+                101
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This folder contains the whole implementation files of the code."
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                110,
+                633,
+                124
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "include"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                124,
+                143,
+                196,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Is the place for the header files. All implementation files in cpp folder are declared in the files located in include folder."
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                168,
+                880,
+                199
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "bin"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                124,
+                219,
+                156,
+                234
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "All the binary and object files resulting from the compilation will be located in this folder. Note that two executables RUN.exe and POST.exe are built in the parent folder."
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                244,
+                880,
+                275
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The compilation of the code is simple and can be done just by typing:"
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                294,
+                687,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "make"
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                323,
+                166,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "in the parent folder. If successful, this would make the two executables RUN.exe and POST.exe in the parent folder. Finally you can also add the paths of these executables to your existing path, by adding the following line in to the .bashrc file in the home directory:"
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                350,
+                892,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "export=$PATH:[the path to the executables (RUN.exe and POST.exe)]."
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                409,
+                702,
+                426
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                121,
+                82,
+                253,
+                99
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Brown, D. L., W. D. Henshaw, and D. J. Quinlan. Overture: An object-oriented framework for solving partial differential equations on overlapping grids. Object Oriented Methods for Interoperable Scientific and Engineering Computing, SIAM, pages 245–255, 1999."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Gough, B. GNU scientific library reference manual. Network Theory Ltd., 2009."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                121,
+                112,
+                887,
+                191
+            ]
+        }
+    ]
+]

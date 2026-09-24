@@ -1,0 +1,901 @@
+[
+    {
+        "type": "text",
+        "text": "Manoeuvring in a Seaway  (Module 8)",
+        "text_level": 2,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr Tristan Perez",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Complex Dynamic Systems and Control (CDSC)",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8962ba0bc872ad077847583e2841494ce51a6476cb145d28b6251702cc8e12a0.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prof. Thor I Fossen",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e29b613ed08a3f4363bdbd18f84ff9baef4b407f0950166ce6b405c5c0a30cbe.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "State of the art",
+        "text_level": 2,
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Manoeuvres are generally performed in calm waters close to ports, but some times are also performed at sea in higher sea states."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This requires models which can handle manoeuvring and seakeeping."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The hydrodynamic problem is very complex, and we may still be a long time away from a solution."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The state of the art uses a combination of manoeuvring and seakeeping models via either"
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Motion superposition",
+            "- Force superposition"
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain seakeeping models",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "These models can be used to simulate wave-induced ship motion time series:",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Motion superposition model",
+        "text_level": 2,
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f9ca280f07042b6ff08fc0260a6f691a425a15a368e830b635ecf2f576c77e5.jpg",
+        "image_caption": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Motion superposition model",
+        "text_level": 2,
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Commonly used in control applications: autopilot, manoeuvring, formation control, rudder roll stabilisation."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The rationale behind this is that a wave filter rejects the 1st order wave induced motion, and no memory effects are then considered."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- It can be a good assumption in lower sea states."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Force superposition model",
+        "text_level": 2,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Time-domain SK model + nonlinearities.",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Force superposition model",
+        "text_level": 2,
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This is an attempt to obtain a unified model for manoeuvring in a seaway."
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Fluid memory effects are incorporated, together with other non-linear effects characteristic of manoeuvring: lift-drag, cross-flow drag."
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- These models are based on the Cummins Equation expressed in terms of body-fixed coordinates, and the nonlinear effects are added."
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The Centripetal-Coriollis terms still remain an issue."
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This model is valid provided that the vessel manoeuvres slowly—because part of the model is based on a seakeeping model."
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Following Perez & Fossen (2007)",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In {n},",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Taking the time-derivative",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Taking it to {b},",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Then",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The angular velocities are related by",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\Leftrightarrow$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In {b}",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Combining results",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Taking small angle approximations",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\Rightarrow$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Hence, we obtain the sought transformation:",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "To relate the accelerations",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/801af0349b0aff4e5515bf3b2c63f0c9deadac39ad5098b2ffad6848b59a73e4.jpg",
+        "image_caption": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Taking small angle approximations and considering only linear terms",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/1fd2d9d82e57f6511e1a691f853d20cf865d2a7ac79950e786d5ea6602ff873a.jpg",
+        "image_caption": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Which is consistent with",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Kinematic transformations {s}-{b}",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Velocities:",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Accelerations:",
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/37363954bf1975efe1b97c187f32cb979b54980d9ac1616ee5d3971edd7c8b63.jpg",
+        "image_caption": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Generalised Positions:",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Now we can transform the Cummins Equation to {b}.",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "RB seakeeping Eq. of motion in {s}",
+        "text_level": 2,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Using the body-fixed perturbation coordinates we have",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "linear",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Non-linear",
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/56fc4151c8dd2b9e3749e372e5a60009e37fb48dba964cf019e95c4b217dda88.jpg",
+        "image_caption": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "RB seakeeping Eq. of motion in {s}",
+        "text_level": 2,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "We can think the linear-seakeeping equations of motion",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "as obtained from the body-fixed perturbation equations considering",
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/f9b09c3ce1132e5d96b3a8056a4424f98ab9db9621b13fce7724a5f336ff45dc.jpg",
+        "image_caption": [],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "NOTE: In the literature, it is commonly said that the seakeeping eq of motion is formulated in {s}, but this would imply that the inertias are time varying.",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "In our derivation, we formulate them in body-fixed coordinated and then ignore the nonlinear terms; this way, the inertias are constant because we are in body-fixed coordinates.",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Cummins Equation in {b}",
+        "text_level": 2,
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/4be09e444f53f961847ccb1a0e7219e7275605b4fba8f7dac36ed4badc855aa0.jpg",
+        "image_caption": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$\\Updownarrow$",
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/f9b09c3ce1132e5d96b3a8056a4424f98ab9db9621b13fce7724a5f336ff45dc.jpg",
+        "image_caption": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "This model describes deviations from the equilibrium state in {b} within a linear framework and small angles.",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Cummins Equation in {b}",
+        "text_level": 2,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Expressed in terms of absolute (instead of incremental) variables:",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "NOTE: This equation valid provided the manoeuvring is very slow—because of the seakeeping assumptions under which the Cummins eq. was derived.",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Summary",
+        "text_level": 2,
+        "page_idx": 18
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The problem of manoeuvring in a seaway is still an open problem in ship theory."
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- A step towards a unified model for manoeuvring in a sea way consists of expressing Cummins Equation in {b}."
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This is still a seakeeping model, which assumes a state of equilibrium from which the vessel is disturbed; and therefore, it may be use it for slow manoeuvring."
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- For slow manoeuvring, we can add Lift-Drag effects as a first approximation."
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Perez, T. and T. I. Fossen (2006) “Time-domain Models of Marine Surface Vessels  Based on Seakeeping Computations.” 7th IFAC Conference on Manoeuvring and Control of Marine Vessels MCMC, Portugal, September."
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Perez T., and T. I. Fossen (2007) “Kinematic Models for Seakeeping and Manoeuvring of Marine Vessels at Zero and Forward Speed.” To appear in Modeling Identification and Control (MIC), Norwegian Research Bulletin, Trondheim. MIC Vol 28, 2007, No 1."
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 19
+    }
+]

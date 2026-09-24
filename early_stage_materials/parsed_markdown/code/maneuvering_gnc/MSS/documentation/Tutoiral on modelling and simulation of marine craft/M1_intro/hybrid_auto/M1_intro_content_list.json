@@ -1,0 +1,2701 @@
+[
+    {
+        "type": "text",
+        "text": "Model l i ng a nd Si m u lation of Ma ri ne Su rface Vessel Dyna m ics",
+        "text_level": 1,
+        "bbox": [
+            94,
+            211,
+            926,
+            392
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "( Mod u le 1 : Motivation a nd Overview)",
+        "bbox": [
+            255,
+            427,
+            759,
+            477
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D r Tri sta n Pe rez",
+        "text_level": 2,
+        "bbox": [
+            125,
+            596,
+            409,
+            646
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Com plex Dynam ic Systems a nd Control (C DSC)",
+        "bbox": [
+            123,
+            662,
+            454,
+            740
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d7eb408041e886ed2a0dc989e5c3e70cd80f244fb8d17c0ae13ed5077c06318.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            156,
+            783,
+            236,
+            888
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            241,
+            807,
+            375,
+            825
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "NEWCASTLE",
+        "bbox": [
+            241,
+            827,
+            375,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AUSTRALIA",
+        "bbox": [
+            241,
+            859,
+            313,
+            875
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "P rofessor Thor I Fosse n",
+        "text_level": 2,
+        "bbox": [
+            506,
+            596,
+            926,
+            646
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "De pa rtme nt of E ng i n ee ri ng Cybernetics",
+        "bbox": [
+            506,
+            662,
+            808,
+            740
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/67614e6ddc8a8ec3847053c14161d1b922ba599880e109a3ee6df3ceacea486f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            547,
+            794,
+            594,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "NTNU",
+        "bbox": [
+            605,
+            792,
+            777,
+            857
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Det skapende universitet",
+        "bbox": [
+            604,
+            864,
+            806,
+            894
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            363,
+            944,
+            633,
+            970
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Tutoria l Goa ls",
+        "text_level": 2,
+        "bbox": [
+            55,
+            59,
+            416,
+            129
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " M od el vessels a nd envi ron mental loads i n 6 DO F .",
+            " U se state-of-the-art hyd rodyna m ic cod es to com pute model parameters : added mass , potential dam pi ng , 1 st a nd 2 nd-ord er wave loads .",
+            " Derive control pla nt mod els by postprocessi ng d ata from hyd rodynam ic codes (Matlab G N C tool box) .",
+            " U se syste m id e ntifi cation to fit hyd rodyn a m i c d ata to state-space mod els .",
+            " Add viscous effects/ma noeuvri ng terms .",
+            "Ti me-doma i n si m u l ation i n M atl a b S i m u l i n k."
+        ],
+        "bbox": [
+            34,
+            242,
+            922,
+            872
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            911,
+            218,
+            975
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            927,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Appl ications",
+        "text_level": 2,
+        "bbox": [
+            68,
+            59,
+            381,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c2c84123fff40c5fee6dc27e027d86eff76dcab1a94a0062d04a16c7ef4052ca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            36,
+            131,
+            950,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            966
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Model l i ng a nd Control",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            619,
+            140
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " Syste m d esig ners ma ke d ecisions to satisfy confl i cti ng req u i re me nts based on some knowl edge of the syste m they i nte nd to d esig n : th is knowl edge is re p rese nted i n a math e mati ca l model .",
+            " M od e l l i ng is a n esse ntia l pa rt of control d es ig n a nd p re l i m i n a ry testi ng , wh i ch ca n consu me u p to 6 0 % of effo rt i n th es e tas ks ."
+        ],
+        "bbox": [
+            55,
+            244,
+            929,
+            818
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            138,
+            966
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            968
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            927,
+            946,
+            940,
+            964
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Model l i ng of Ma ri ne Structu res",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            845,
+            140
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " M od els of ma ri n e stru ctu res a re com pl ex.",
+            " Control e ng i n ee rs ofte n base th e i r mod e ls on mod els used by nava l a rch itects , wh i ch someti mes a re not control-d es ig n ori e nted .",
+            " I n t h i s t u to ri a l we w i l l l o o k at t h e m o d e l s com mon ly used i n n ava l a rch itectu re a nd s h i p theory from the control syste m ’s perspective ."
+        ],
+        "bbox": [
+            56,
+            218,
+            888,
+            824
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            138,
+            966
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f6a951ab131741f497c427bb9353193c15c0eb388d7c2d20349eec1288f316ba.jpg",
+        "image_caption": [
+            "Obta i n i ng Models"
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"Data-base\"] --> B[\"Scaling\"]\n  C[\"Model testing\"] --> D[\"System Identification\"]\n  E[\"System Identification\"] --> F[\"System Identification\"]\n  G[\"Numerical Hydrodynamics\"] --> F\n  H[\"Full-scale Experiments\"] --> F\n  B --> F\n  D --> F\n  F --> G\n  G --> A\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            30,
+            127,
+            959,
+            901
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            966
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            225,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Ma noeuvri ng a nd Sea keepi ng",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            816,
+            146
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "S h i p theory has trad itiona l ly bee n se pa rated i nto two ma i n a reas",
+        "text_level": 2,
+        "bbox": [
+            56,
+            164,
+            902,
+            272
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/cfd3962e9d341b1b99037525c436d074a1033c216433a8a55d34974a42dac5d9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Manoeuvring</td><td>Sea-keeping</td></tr><tr><td>The aim is to study steering characteristics of vessels with forward speed and the response to the command of propulsion systems and control surfaces. This is done in calm water.</td><td>The aim is to study the behavior of the vessel in waves while keeping a constant speed and course.</td></tr></table>",
+        "bbox": [
+            63,
+            285,
+            927,
+            701
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Althoug h both a reas a re con ce rn ed with the stu dy of motion , stability a nd control, the se pa ration a l lows on e ma ki ng assu m ptions that si m pl ify the study i n each case .",
+        "bbox": [
+            50,
+            750,
+            952,
+            881
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Ma noeuvri ng Models",
+        "text_level": 2,
+        "bbox": [
+            56,
+            59,
+            591,
+            144
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "N on l i nea r pa ra metri c mod els (cl assi ca l a nd Lag ra ng ia n ) :",
+        "bbox": [
+            44,
+            201,
+            481,
+            296
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\mathbf {x}} = \\mathbf {f} (\\mathbf {x}, \\mathbf {u})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            231,
+            305,
+            366,
+            350
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\mathbf {v}} + \\mathbf {C} (\\mathbf {v}) \\mathbf {v} + \\mathbf {D} (\\mathbf {v}) \\mathbf {v} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            97,
+            364,
+            501,
+            412
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "O bta i n ed by fitti ng d ata from sca l ed model experi ments .",
+            " Cal m water mod els .",
+            "H orizontal motion mod els (su rgesway-yaw) .",
+            " N ot com mon ly avai lable .",
+            "Restricted to a few speeds/load i ng cond itions of th e expe ri me nt."
+        ],
+        "bbox": [
+            44,
+            427,
+            568,
+            853
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/e12d34468d2ebdb8a55073d8f4a9475ccfcef92146ab3471d438e24ffa74316e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Green boat with mechanical arms operating near industrial machinery in a storage facility (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            577,
+            161,
+            980,
+            440
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "chart",
+        "img_path": "images/e1ab8631014d326ba80b077e51255b9a3e6fb45007c6745a787b7ebb14974c9a.jpg",
+        "content": "| Sway speed (m/s) | Measured points (Nm) | Fitted curve: Nv*v + Nw*lv*v (Nm) | Fitted curve for DP: Nv*v (Nm) |\n| --- | --- | --- | --- |\n| ~-0.27 | ~-0.26 | ~-0.32 | ~-0.04 |\n| ~-0.23 | ~-0.34 | ~-0.25 | ~-0.03 |\n| ~-0.19 | ~-0.14 | ~-0.18 | ~-0.02 |\n| ~-0.15 | ~-0.10 | ~-0.12 | ~-0.01 |\n| ~-0.11 | ~-0.06 | ~-0.07 | ~0.00 |\n| ~-0.08 | ~-0.03 | ~-0.04 | ~0.00 |\n| ~-0.04 | ~0.00 | ~-0.01 | ~0.01 |\n| ~0.00 | ~0.00 | ~0.00 | ~0.01 |\n| ~0.03 | ~0.00 | ~0.01 | ~0.02 |\n| ~0.07 | ~0.00 | ~0.03 | ~0.02 |\n| ~0.14 | ~0.04 | ~0.08 | ~0.03 |\n| ~0.17 | ~0.14 | ~0.13 | ~0.03 |\n| ~0.19 | ~0.20 | ~0.17 | ~0.04 |\n| ~0.23 | ~0.18 | ~0.20 | ~0.04 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            579,
+            472,
+            977,
+            855
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            929,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Sea keepi ng Models",
+        "text_level": 2,
+        "bbox": [
+            56,
+            59,
+            556,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Li nea r non-pa ra metri c mod els",
+        "bbox": [
+            50,
+            175,
+            459,
+            218
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "H jω)(",
+        "bbox": [
+            201,
+            262,
+            305,
+            312
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Obtai ned from hyd rodynam ic cal cu lations based on s i m pl ifyi ng assu m ptions :",
+        "bbox": [
+            50,
+            350,
+            450,
+            494
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Consta nt cou rse a nd speed .",
+            "Li near wave loads .",
+            "P ote n t i a l t h e o ry .",
+            "Viscous effects ca n be added ."
+        ],
+        "bbox": [
+            50,
+            566,
+            473,
+            833
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/5d4dc3dbc5a7710cea2499a9771f0f7873c1477c75c1fe0e4d6fe5af3c0147d1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "SEAWAY for Windows (Hull: C:\\Program Files\\Octopus\\Hull forms\\Container_Ship_006.hul)\nFile Edit Tools Help\nSEAWAY hull forms\nBarge\nBarge Carrier\nBitumen Tanker\nBulk Carrier\nCatamaran Vessel\nCoaster\nContainer Feeder\nContainer Ship\nContainer_Ship_001.hul\nContainer_Ship_002.hul\nContainer_Ship_003.hul\nContainer_Ship_004.hul\nContainer_Ship_005.hul\nContainer_Ship_006.hul\nContainer_Ship_007.hul\nContainer_Ship_008.hul\nContainer_Ship_009.hul\nContainer_Ship_010.hul\nContainer_Ship_011.hul\nContainer_Ship_012.hul\nContainer_Ship_013.hul\nCrané Vessel\nCruise Vessel\nCutter Suction Dredger\nDiving Support Vessel\nDrilling Vessel\nFast Displacement Vessel\nFast Freighter\nFerry\nFPSO Vessel\nFreighter\nHeavy Lift Vessel\nHigh Speed Vessel\nHopper Dredger\nIce Breaker\nInland Waterway Coaster\nInland Waterway Ferry\nInland Waterway Tanker\nLemster Aak\nLow Air Draft Coaster\nMotor Yacht\nMulti-Purpose Ship\nGeographic Vessel\nMain characteristics Container Ships\nHull form:\nLength: 247.00  32.26  12.00  7.66  2.69  0.65  0.85  0.76  -3.00\nContainer_Ship_0\n205.00  29.20  9.10  7.02  3.21  0.58  0.74  0.78  -1.51\nContainer_Ship_0\n250.00  32.00  9.00  7.81  3.56  0.54  0.67  0.80  -4.00\nContainer_Ship_0\n300.00  37.00  11.00  8.11  3.36  0.55  0.73  0.76  -3.10\nContainer_Ship_0\n106.00  20.28  4.25  5.23  4.77  0.70  0.78  0.90  0.10\nContainer_Ship_0\n178.00  25.85  9.00  6.89  2.87  0.59  0.70  0.05  -0.89\nContainer_Ship_0\n247.00  29.25  12.00  7.45  2.69  0.55  0.65  0.66  -2.10\nContainer_Ship_0\n132.00  21.50  7.00  6.14  3.07  0.70  -0.96  0.82  -0.96\nSelect hull form (e.g. based on Cb).\nX 36.01\nFrame 2.92\nY\nZ\nHull form scale parameters\nLongitudinal, Sx (-): 247.00\nTransverse, Sy (-): 32.26\nVertical, Sz (-): 12.00\nDraft and tim\nDraft amidship (m): 12.00\nTrim by stem (m): 0.00\nBouygancy (m3): 62152\nCatamaran sections\nSpacing between\ncenterlines hulls: 0.00\nUse constant hull spacing\nX Y Z\n0  36.01  0.00  2.74\n1  36.01  0.35  2.74\n2  36.01  0.70  2.74\n3  36.01  3.77  3.63\n4  36.01  6.78  4.53\n5  36.01  9.49  5.44\n6  36.01  11.76  6.34\n7  36.01  13.54  7.25\n8  36.01  14.79  8.16\n9  36.01  15.52  9.06\n10  36.01  15.93  9.97\n11  36.01  16.11  10.87\n12  36.01  16.13  11.78\n13  36.01  16.13  13.14\n14  36.01  16.13  14.50",
+        "sub_type": "text_image",
+        "bbox": [
+            491,
+            140,
+            952,
+            601
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For the d esig n of control syste ms , sea keepi ng mod els are very usefu l .",
+        "bbox": [
+            520,
+            655,
+            919,
+            735
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "They provide prel i m i nary models b as ed o n l i ttl e d ata of th e s h i p .",
+        "bbox": [
+            520,
+            755,
+            888,
+            835
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "S",
+        "bbox": [
+            172,
+            912,
+            218,
+            977
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9",
+        "bbox": [
+            927,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Recent Resu lts on a U n ified Ma noeuvri ng a nd Sea keepi ng Model",
+        "text_level": 1,
+        "bbox": [
+            37,
+            46,
+            970,
+            229
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " Fosse n , T. I . an d Ø. N . S moge l i . N on l i nea r Ti me- Doma i n Stri p Theory Form u lation for Low-S peed Manoeuvri ng and Station-Keepi ng , Modelling, Identification and Con trol, M I C -2 5 (4 ) : 2 0 1 : 22 1 , 2 0 04 .",
+            " Fosse n , T. I . A N on l i nea r U n ified State-S pace M od el for S h i p M a noeuvri ng a nd Control i n a Seaway, Journal of Bifurcation and Chaos, Septem ber 2005 . (Plenary Tal k E N OC'05 , E i nd hoven , The N etherla nds) .",
+            " Perez, T. and T. I . Fossen . Ki nematic Models for Sea-keepi ng and M anoeuvri ng of M a ri n e Vesse l s . M od e l l i n g , I d e ntifi cati o n a n d Co ntro l , M I C -28 ( 1 ) : 1 - 1 2 , 2 00 7 .",
+            " Perez, T. an d T. I . Fossen . Ti me-Domai n M od els of M ari ne S u rface Vessels for S i m u lation and Control Desig n Based on Sea-keepi ng Com putations ( Plenary Tal k) . Proc. of the IFA C MCMC'06, Lisbon, Portugal, September 20-22, 2006.",
+            " Ross, A. , T. Perez and T. I . Fossen . A Novel Manoeuvri ng Model Based on Low-Aspect Ratio Lift Theory and Lag rang ian M echan i cs . Proc. of the I FAC CAM S'07 , C ro at i a ."
+        ],
+        "bbox": [
+            61,
+            298,
+            934,
+            868
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "1 0",
+        "bbox": [
+            922,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "U n ified Ma noeuvri ng a nd Sea keepi ng Model fo r Ti me- Doma i n Si m u lation",
+        "text_level": 1,
+        "bbox": [
+            38,
+            37,
+            995,
+            207
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The Force- Transfer-Functions are computed using hydrodynamic SW (WAMIT VERES or SEAWAY",
+        "bbox": [
+            50,
+            237,
+            537,
+            307
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\mathbf {v}} + \\mathbf {C} _ {R B} \\mathbf {v} + \\mathbf {D} \\mathbf {v} + \\mathbf {d} _ {n} (\\boldsymbol {\\Theta}, \\mathbf {v}) + \\boldsymbol {\\mu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} _ {\\mathrm{env}} + \\boldsymbol {\\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            562,
+            246,
+            984,
+            281
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/24252e8b693a2a8432a583d20e0ecc5e1ce0849fbdc42ad1b6e33ceb2a81f3a9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  subgraph Unified_Model[\"\\\"Unified Model\\\"\"]\n  A[\"Wave spectrum\"] --> B[\"FTF\"]\n  B --> C[\"Wave excitation spectrum\"]\n  C --> D[\"Σ\"]\n  D --> E[\"Reference frame transformation\"]\n  end\n\n  subgraph Motion[\"\\\"Motion\\\"\"]\n  F[\"Linear mass-damper-spring with memory effects – frequency dependent (ω ≥ 0)\"] --> G[\"Nonlinear terms (viscous damping, Coriolis etc.)\"]\n  E --> H((\"Control forces and moments\"))\n  G --> H\n  end\n\n  A -.-> H\n  D -.-> E\n  E -.-> F\n  F --> G\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            63,
+            309,
+            683,
+            872
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\eta} = \\mathbf {J} (\\Theta) \\mathbf {v}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            690,
+            309,
+            788,
+            344
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\boldsymbol {\\chi}} = \\mathbf {A} _ {r} \\boldsymbol {\\chi} + \\mathbf {B} _ {r} \\delta \\mathbf {v}, \\quad \\boldsymbol {\\chi} (0) = \\mathbf {0}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            700,
+            379,
+            970,
+            414
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\mu} = \\mathbf {C} _ {r} \\boldsymbol {\\chi} + \\mathbf {D} _ {r} \\delta \\mathbf {v}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            701,
+            425,
+            850,
+            459
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For 6 DOF this model will typically be represented by 6 + 6 + 90 = 1 02 ODEs which are computed using hydrodynamic SW ( WAMIT, VERES or SEAWAY)",
+        "bbox": [
+            690,
+            500,
+            952,
+            712
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "These terms are found using experimental results/curve fitting or sem i-empirical methods",
+        "bbox": [
+            680,
+            738,
+            943,
+            875
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            970
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "1 1",
+        "bbox": [
+            920,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Speed–Envi ron ment Envelope",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            827,
+            142
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "H u l l su p ported by mostly by hyd rostatic pressu re (forces)",
+        "bbox": [
+            23,
+            368,
+            238,
+            477
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/91460f61c0354dad00739d601c468d7ef643a69d505aae50f81e981d184462c6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Large red and white research vessel sailing on open water, no visible text or symbols",
+        "sub_type": "natural_image",
+        "bbox": [
+            44,
+            496,
+            240,
+            672
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/44e79d9367b44f814d62797f0a946097ea770f28e6310ff4f106a44cca0a9f89.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Offshore oil platform in open sea with red and white branding (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            66,
+            674,
+            233,
+            888
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/966a753e80307893fce998469e01c3f4a13d3e92b2c4d585f9e8847bfb2ff379.jpg",
+        "image_caption": [
+            "",
+            "Hyd rostatic and hyd rodynam ic forces ; Lift"
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Seakeeping\"] --> B[\"Manoeuvring\"]\n  B --> C[\"Speed\"]\n  C --> D[\"Planning\"]\n  D --> E[\"2D+t\"]\n  E --> F[\"Fn=0.3-0.4\"]\n  F --> G[\"3D & 2D\"]\n  G --> D\n  D --> H[\"Displ.\"]\n  H --> I[\"Uo=3kt\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            245,
+            129,
+            743,
+            788
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {n} = \\frac {U}{\\sqrt {g L}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            781,
+            192,
+            918,
+            303
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea36d9ff47e1468d40243fa456b34736cf491288a609ce08548ea2a2b3a9dd56.jpg",
+        "image_caption": [
+            "Aero and hyd rodynam ic fo rces ; stro n g flow se pa ration"
+        ],
+        "image_footnote": [],
+        "content": "Red Hydrolift boat on water with green trees in background (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            716,
+            496,
+            950,
+            688
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            966
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            970
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "1 2",
+        "bbox": [
+            922,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The 3 Speed Reg i mes for Control",
+        "text_level": 2,
+        "bbox": [
+            44,
+            46,
+            901,
+            133
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Dynam ic position i ng systems",
+        "text_level": 2,
+        "bbox": [
+            109,
+            168,
+            468,
+            207
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 3 D potential theory",
+            "• 2D potential theory (strip theory)"
+        ],
+        "bbox": [
+            111,
+            209,
+            468,
+            287
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Manoeuvri ng/motion dam pi ng",
+        "text_level": 2,
+        "bbox": [
+            500,
+            166,
+            859,
+            207
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 2D potential theory (strip theory) up to Froude numbers of 0-3 -0 .4",
+            "• 2 . 5 D potential theory for high-speed craft"
+        ],
+        "bbox": [
+            500,
+            209,
+            945,
+            325
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/82657a1c8e0af3b593ff09a0d861b73fa8291504f5daacf084b2b5cdcd25c3e5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Low-speed maneuvering\"] --> B[\"Manoeuvring at moderate speed (transit)\"]\n  B --> C[\"Manoeuvring at high speed (high-speed craft)\"]\n  C --> D[\"Station-keeping\"]\n  D --> E[\"Speed\"]\n  E --> F[\"1.5 m/s (3 knots)\"]\n  F --> G[\"U = 0.3√Lg\"]\n  G --> H[\".....\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            109,
+            368,
+            979,
+            896
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "1 3",
+        "bbox": [
+            922,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Motion i n Waves",
+        "text_level": 2,
+        "bbox": [
+            56,
+            59,
+            487,
+            129
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "M otions a nd loads of floati ng stru ctu res d u e to waves ca n be separated i nto",
+        "bbox": [
+            55,
+            168,
+            880,
+            272
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " Wave-freq u e n cy: l i n ea rly excitations a nd motion i n the wave freq u e n cy ra nge . Periods i n the ra nge 5-20s",
+            "H ig he r tha n wave freq u e n cy (ri ng i ng & spri ng i ng ) : non l i n ea r effects , wh i ch ca n prod u ce resona n ce i n T L Ps , with n atu ra l pe ri od s of 2-4s .",
+            "S low a nd mea n d rift: non l i n ea r effects with mea n va l u e a nd su b ha rmon i c excitation that ca n prod u ce osci l l ations with natu ra l pe riods of 20-30s ."
+        ],
+        "bbox": [
+            54,
+            340,
+            938,
+            887
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "1 4",
+        "bbox": [
+            920,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Motion a nd Control",
+        "text_level": 2,
+        "bbox": [
+            56,
+            59,
+            550,
+            129
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/14880775268f75ddec829be2c3fa7f450811a476f2bd3445e492b7ee246dc6d7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Total motion\"] --> B[\"Oscillatory motion\"]\n  B --> C[\"Non-oscillatory motion\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            358,
+            174,
+            719,
+            327
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The n , motion control probl e ms ca n have d iffe re nt obj ectives :",
+        "bbox": [
+            41,
+            333,
+            937,
+            381
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "• Control only the non-oscillatory motion (wave filtering needed)",
+        "bbox": [
+            88,
+            424,
+            866,
+            462
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• A u to p i l ots ,",
+            "• Dyn a m i c pos ition i ng ( D P)",
+            "• Th ruste r assisted position moori ng (TAP M OO R)"
+        ],
+        "bbox": [
+            138,
+            462,
+            569,
+            557
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "• Control only the oscillatory motion",
+        "bbox": [
+            90,
+            583,
+            525,
+            620
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Rid e control of h ig h s peed vesse ls (rol l a nd p itch sta b i l isation )",
+            "• H eave com pe nsation of offs hore stru ctu res"
+        ],
+        "bbox": [
+            138,
+            622,
+            686,
+            683
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "• Control both",
+        "bbox": [
+            90,
+            712,
+            262,
+            744
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Dyn a m i c pos ition i ng i n extre me seas ( D P + rol l & p itch sta b i l isation )",
+            "• Au to p i l ots w i t h ru d d e r ro l l sta b i l i s at i o n",
+            "• U n man ned S u rface Veh icles U SV"
+        ],
+        "bbox": [
+            138,
+            751,
+            738,
+            840
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            970
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "1 5",
+        "bbox": [
+            922,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "table",
+        "img_path": "images/41701190b9ff797501e9652f8a4aacf003e8037a46b977f36bc3b420f121b8b9.jpg",
+        "table_caption": [
+            "The Road Ahead"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Time</td><td>Topic</td><td>Presenter</td></tr><tr><td>09:00</td><td>M1: Motivation and overview</td><td>TIF</td></tr><tr><td>09:20</td><td>M2: Hydrodynamics for control engineers</td><td>TP</td></tr><tr><td>10:00</td><td>M3: Kinematics and kinetic models of marine vessels</td><td>TP</td></tr><tr><td>10:45</td><td>Coffee break</td><td></td></tr><tr><td>11:00</td><td>M4: Manoeuvring in calm water</td><td>TIF</td></tr><tr><td>11:30</td><td>M5: Environmental disturbances</td><td>TP</td></tr><tr><td>12:00</td><td>Lunch break</td><td></td></tr><tr><td>13:00</td><td>M6: Motion in waves a frequency-domain approach</td><td>TP</td></tr><tr><td>13:30</td><td>M7: Motion in waves a time-domain approach</td><td>TP</td></tr><tr><td>14:00</td><td>M8: Manoeuvring in a seaway</td><td>TP</td></tr><tr><td>14:30</td><td>M9: Models and marine control problems</td><td>TIF</td></tr><tr><td>15:00</td><td>M10: Software, and rapid model prototyping</td><td>TIF</td></tr></table>",
+        "bbox": [
+            45,
+            148,
+            952,
+            875
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            172,
+            912,
+            218,
+            975
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            223,
+            927,
+            305,
+            940
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            223,
+            940,
+            305,
+            957
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            223,
+            957,
+            268,
+            968
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "1 6",
+        "bbox": [
+            922,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 15
+    }
+]

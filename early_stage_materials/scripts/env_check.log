@@ -1,0 +1,25 @@
+﻿[2026-06-01T14:35:19.9406884+08:00] === env check ===
+[2026-06-01T14:35:20.0446225+08:00] git version 2.49.0.windows.1
+[2026-06-01T14:35:29.8151250+08:00] where curl: C:\Windows\System32\curl.exe
+D:\msys64\usr\bin\curl.exe
+D:\msys64\mingw64\bin\curl.exe
+[2026-06-01T14:35:30.0613223+08:00] where git: C:\Program Files\Git\cmd\git.exe
+[2026-06-01T14:35:30.0713140+08:00] --- curl -I https://github.com ---
+[2026-06-01T14:35:32.8860806+08:00] curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+所在位置 D:\Projects\20260601-Potential-flow-ship\early_stage_materials\scripts\env_check.ps1:14 字符: 10
++   $out = & curl.exe -I -L --max-time 30 --ssl-no-revoke $u 2>&1 | Out ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  
+[2026-06-01T14:35:32.8915313+08:00] --- curl -I https://trid.trb.org ---
+[2026-06-01T14:35:39.9453018+08:00] curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+所在位置 D:\Projects\20260601-Potential-flow-ship\early_stage_materials\scripts\env_check.ps1:14 字符: 10
++   $out = & curl.exe -I -L --max-time 30 --ssl-no-revoke $u 2>&1 | Out ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  
+[2026-06-01T14:38:00.7870693+08:00] curl_silent: github=HTTP200 trid=HTTP200 (see manual test)

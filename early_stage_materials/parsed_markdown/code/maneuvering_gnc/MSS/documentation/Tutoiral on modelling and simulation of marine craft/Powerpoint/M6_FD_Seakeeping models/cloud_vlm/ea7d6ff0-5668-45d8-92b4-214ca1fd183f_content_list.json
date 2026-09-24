@@ -1,0 +1,1819 @@
+[
+    {
+        "type": "text",
+        "text": "Seakeeping Models in the Frequency Domain  (Module 6)",
+        "text_level": 2,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr Tristan Perez",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Complex Dynamic Systems and Control (CDSC)",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prof. Thor I Fossen",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8962ba0bc872ad077847583e2841494ce51a6476cb145d28b6251702cc8e12a0.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e29b613ed08a3f4363bdbd18f84ff9baef4b407f0950166ce6b405c5c0a30cbe.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Linear hydrodynamic forces in waves",
+        "text_level": 2,
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Linear theory can describe hydrodynamic loads to a great extent in low to medium sea states (depending on the size of the ship)"
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Linear means that the loads and the motion are proportional to the wave amplitudes."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Linearity means superposition: the loads and responses due to irregular seas can be obtained by linear combination of responses to regular or sinusoidal seas."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Also due to the linearity assumption, the study can be performed either in time or frequency domain."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Linear hydrodynamic forces",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{hyd}=\\tau _{rad}+\\tau _{rest}+\\tau _{exc}$",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "waves",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "LinearLoads",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Linear eq of motion",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Motion",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Some of the loads depend on the excitation due to the waves, while other depend on the motion of the vessel itself.",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The second type of loads give the system a feedback structure.",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Adding nonlinear forces",
+        "text_level": 2,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Once we have a linear time-domain model, nonlinear loads can be added due to the assumption of force superposition:",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "waves",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "LinearLoads",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Loads",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Linear eq of motion",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Motion",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Nonlinear Loads",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "So, the linear model should not be seen as a limitation; rather as a basis upon which we can build nonlinear models based on the assumption of force superposition.",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Linear hydrodynamic analysis",
+        "text_level": 2,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Due to linearity, we can study the problem for sinusoidal excitation and then use these results to obtain solutions to non-sinusoidal cases via superposition.",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The hydrodynamic problem of obtaining loads and motion for sinusoidal waves can be separated into two sub-problems:",
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Excitation problem: The ship is restrained from moving and kept in its mean position, and the excitation loads are obtained as a result of changes in pressure due to the incoming waves."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Radiation problem: The ship is forced to oscillate in calm water in each DOF with a frequency equal to the wave excitation frequency."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Radiation forces",
+        "text_level": 2,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Radiation loads appear due to the motion of the ship—the change in momentum of the fluid due to the motion of the hull changes the pressure on the hull, which induce the loads.",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "These loads have two components",
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Proportional to the accelerations",
+            "- Proportional to the velocities"
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Radiation forces",
+        "text_level": 2,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Boundary conditions:",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "free surface condition (dynamic+kinematic conditions)",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "sea bed condition",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "dynamic body condition",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Regular outgoing waves",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "are observed at large distance from the vessel",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "radiation condition",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$\\Phi _{rad}=\\sum_{}^{}\\Phi _{j}$",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$\\nabla ^{2}\\Phi _{rad}=0$",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Computing forces",
+        "text_level": 2,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Forces and moments are obtained by integrating the pressure over the average wetted surface *Sw*:",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Radiation forces and moments:",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{rad,i}=\\left\\{\\begin{matrix}-\\iint_{}^{}\\left(\\frac{\\partial \\Phi _{rad}}{\\partial t}\\right) \\left(n\\right)_{i}ds i=1,2,3.\\\\-\\iint_{}^{}\\left(\\frac{\\partial \\Phi _{rad}}{\\partial t}\\right) \\left(r\\times n\\right)_{i-3}ds i=4,5,6.\\end{matrix}\\right.$",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "DOF:",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1-surge",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2-sway",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3-heave",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4-roll",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5-pitch",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "6-yaw",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Radiation forces for regular motion",
+        "text_level": 2,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If the motion of the vessel on the DOF *i* is harmonic:",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\xi _{i}=¯cos(\\omega t)$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Then, after integrating the pressure over the surface of the hull,  the radiation forces in the DOF *j* due to the motion in the DOF *i* take the following form:",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{rad,j}=-A_{ij}(\\omega ) ¨_{i}-B_{ij}(\\omega ) ˙_{i}$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "← Only in steady state condition.",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Radiation forces for regular motion",
+        "text_level": 2,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{rad,j}=-A_{ij}(\\omega ) ¨_{i}-B_{ij}(\\omega ) ˙_{i}$",
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The coefficients that multiply the accelerations are called added mass coefficients even though not all of them have units of mass. The added mass terms give the forces due to the accelerations of the fluid as the vessel oscillations—the whole fluid will oscillate with different fluid particle amplitudes."
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The coefficients proportional to the velocities are called potential damping coefficients. The potential damping terms represent the energy carried away by the waves generated due to the motion of the hull."
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Added mass and damping",
+        "text_level": 2,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Example of added mass and potential damping in heave of a symmetric rectangular barge 8x4x45m:",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The added mass and damping coefficients depend on",
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Shape of the hull",
+            "- Forward speed",
+            "- Water depth"
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Symmetry",
+        "text_level": 2,
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- There is a total of 36 added mass and 36 damping coefficients."
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- If the structure has zero speed and a plane of symmetry, half of the coefficients are zero. (for this to hold with forward speed, the plane of symmetry has to be parallel to the forward direction.)"
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- If the structure has zero speed and there is no current, then the matrices of added mass and damping are symmetric:"
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}A_{ij}(\\omega )=A_{ji}(\\omega )\\\\B_{ij}(\\omega )=B_{ji}(\\omega )\\end{array}$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Restoring forces (linear)",
+        "text_level": 2,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The resotring forces are due to changes in displacement:",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{rest}=$",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/cecb1ffb51cbc4665d6939f31df5fcaf3e0f55754003066bded8f909c0c49d99.jpg",
+        "image_caption": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "(*Awp* waterplane area)",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "These are computed for calm water—Calm water stability.",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Linear Wave Excitation",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The linear wave excitation or 1st order waves excitation are the loads on the structure when it is restrained from oscillating and there are incident waves. The linear assumption assumes the loads are proportional to the wave amplitude."
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- 1st order wave loads are separated into two components:",
+            "    - Froude-Kriloff",
+            "    - Diffraction"
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Froude-Kriloff loads",
+        "text_level": 2,
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The Froude-Kriloff loads are obtained by integrating the pressure due to undisturbed wave field over the mean wetted surface of the body—It is assumed that the body does not disturb the wave field."
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- These can be considered within a nonlinear framework by integrating over the instantaneous wetter surface."
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Diffraction loads",
+        "text_level": 2,
+        "page_idx": 15
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The diffraction loads appear due to the change in the wave field by the presence of the body."
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- These can be computed in a similar way as the radiation forces by considering a BVP; the main difference is that the boundary condition on the body:",
+            "    - The velocity due to the diffraction potential has to be equal and opposite to the velocity due to undisturbed wave potential."
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "This body condition ensures there will be no fluid transport through the body.",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "RAOS—Frequency response functions",
+        "text_level": 2,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{exc}$",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Force RAO",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Force to Motion RAO",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Sea surface elevation",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "combined",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Motion RAO",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "motion",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Force RAO",
+        "text_level": 2,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "For a regular wave",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\zeta =¯cos(\\omega t+\\phi _{\\zeta })$",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The linear excitation forces will be",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{exc,i}=¯_{i}(\\omega )cos[\\omega t+\\phi _{\\tau i}(\\omega )]$",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The amplitude and phase of the excitation force depend on",
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Wave Frequency",
+            "- Encounter angle",
+            "- Wave amplitude",
+            "- Forward speed"
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Force RAO",
+        "text_level": 2,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{exc,i}(t)=\\underbrace{¯ \\left|F_{i}(j\\omega )\\right|}_{¯_{i}(\\omega )}cos(\\omega t+\\underbrace{\\phi _{\\zeta }+arg[F_{i}(j\\omega )]}_{\\phi _{\\tau ,i}(\\omega )})$",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Example heave Force RAO (*i*=3) for a barge (8x4x45m):",
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/b0ac09fa2cdfbc3025cd3d5165a583745994a8ee54295b3b3f8aa0008078ef4a.jpg",
+        "image_caption": [],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Motion RAO",
+        "text_level": 2,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "$\\xi _{i}(t)=\\underbrace{¯ \\left|H_{i}(j\\omega )\\right|}_{¯_{i}(\\omega )}cos(\\omega t+\\underbrace{\\phi _{\\zeta }+arg[H_{i}(j\\omega )]}_{\\phi _{\\xi ,i}(\\omega )})$",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Example motion Force RAO (*i*=3) for a barge (8x4x45m):",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Force to motion FRF",
+        "text_level": 2,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Using the added mass and damping with the linear (seakeeping) equation of motion we can obtain the  force to motion frequency response function:",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "$[-\\omega ^{2}[M_{RB}+A(\\omega )]+j\\omega B(\\omega )+G]~=~_{exc}$",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "This is sometimes written in the hydrodynamic literature as",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "$[M_{RB}+A(\\omega )]¨(t)+B(\\omega )˙(t)+G\\xi (t)=\\tau _{exc}(t)$",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "This is an abuse of notation since this is not a true equation of motion; it is a different (rather confusing) way to write the frequency response function.",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Force to motion FRF",
+        "text_level": 2,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Then we can define the force to motion frequency response matrix:",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}G(j\\omega ):=[-\\omega ^{2}[M_{RB}+A(\\omega )]+j\\omega B(\\omega )+G]^{-1}\\\\\\\\ =\\left[\\begin{matrix}G_{11}(j\\omega )&G_{12}(j\\omega )&\\cdots &G_{16}(j\\omega )\\\\G_{21}(j\\omega )&G_{22}(j\\omega )&\\cdots &G_{26}(j\\omega )\\\\\\vdots &\\vdots &\\ddots &\\vdots \\\\G_{61}(j\\omega )&G_{62}(j\\omega )&\\cdots &G_{66}(j\\omega )\\end{matrix}\\right]\\end{array}$",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Motion RAO",
+        "text_level": 2,
+        "page_idx": 22
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The Force RAO relates the wave elevation to the linear excitation forces.",
+            "- By combining the Force RAO with the Force to motion frequency response matrix we obtain the motion frequency response due to wave elevation or Motion RAO:"
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "$H(j\\omega ):=G(j\\omega ) F(j\\omega )$",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "$H(j\\omega )=\\left[H_{1}(j\\omega ),H_{2}(j\\omega )\\ldots ,H_{6}(j\\omega )\\right]^{T}$",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "$F(j\\omega )=\\left[F_{1}(j\\omega ),F_{2}(j\\omega )\\ldots ,F_{6}(j\\omega )\\right]^{T}$",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Statistics of Loads and Motion",
+        "text_level": 2,
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Since the wave elevation is assumed a zero-mean Gaussian process and the system is assumed linear, the loads and the response are also zero-mean and Gaussian processes."
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The spectra of loads and response is all that is needed to compute any statistics:"
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "$S_{\\tau \\tau ,i}(\\omega )=\\left|F_{i}(j\\omega )\\right|^{2}S_{\\zeta \\zeta }(\\omega )$",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "$S_{\\xi \\xi ,i}(\\omega )=\\left|H_{i}(j\\omega )\\right|^{2}S_{\\zeta \\zeta }(\\omega )$",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Simulation of wave loads and motion time series",
+        "text_level": 2,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Having the spectrum, we can simulate time series of loads and motion in the same way we do it for the wave elevation:",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{i}(t)=\\sum_{n}^{}\\sum_{m}^{}¯_{nmi}cos\\left[\\omega _{e,n} t+\\phi _{nmi}+\\varepsilon _{n}\\right]$",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$¯_{nmi}=\\sqrt{2\\left|F_{i}(j\\omega _{n}^{},U,\\chi _{m}^{})\\right|^{2}S_{\\zeta \\zeta }(j\\omega _{n}^{},\\chi _{m}^{}) \\Delta \\omega \\Delta \\chi }$",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\phi _{nmi}=argF_{i}(j\\omega _{n}^{},U,\\chi _{m}^{})$",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\omega _{e,n}=\\left(\\omega _{n}^{}-\\frac{\\left(\\omega _{n}^{}\\right)^{2}U}{g}cos\\chi _{m}^{}\\right)$",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}\\omega _{n}^{}\\in \\left[\\omega _{n}-{\\Delta \\omega }/{2},\\omega _{n}+{\\Delta \\omega }/{2}\\right]\\\\\\chi _{m}^{}\\in \\left[\\chi _{m}-{\\Delta \\chi }/{2},\\chi _{m}+{\\Delta \\chi }/{2}\\right]\\end{array}$",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\varepsilon _{n}$",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "-uniformly distributed in [0,2]",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Non-linear wave loads",
+        "text_level": 2,
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- There are some problems related to wave-structure interactions which cannot be described by linear Theory alone."
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The nonlinear problems attempt to describe more accurately the free-surface and body conditions on the instantaneous rather than mean values."
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- A convenient way to solve nonlinear wave-structure problems is by using perturbation analysis."
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- In a second order theory, the problems are solved up second-order in incident wave amplitude—i.e., in the potential and pressure terms proportional to the wave amplitude and wave amplitude square are considered."
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 25
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Non-linear wave loads",
+        "text_level": 2,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The effects of second-order loads are important for structures which are kept in position by mooring lines, anchors, and propulsion systems, and for vessels following trajectories.",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The solution of a second order problem evidences",
+        "page_idx": 26
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Mean wave drift force",
+            "- Slowly-varying wave drift force (sub harmonic)",
+            "- Rapidly varying wave drift force (super harmonic)"
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 26
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Evidence of second-order loads",
+        "text_level": 2,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A simple way to evidence the effects of a second order problem is to look at the quadratic term in the Bernoulli equation:",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "$p+\\rho gz+\\rho \\frac{\\partial \\varphi }{dt}+\\frac{\\rho }{2}\\nabla \\varphi \\cdot \\nabla \\varphi =C$",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Then,",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "$\\nabla \\varphi \\cdot \\nabla \\varphi =V_{1}^{2}+V_{2}^{2}+V_{3}^{2}$",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 27
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Evidence of second-order loads",
+        "text_level": 2,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Consider the case where",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "$V_{1}=A_{1}cos(\\omega _{1}t)+A_{2}cos(\\omega _{2}t)$",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Then,",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}V_{1}^{2}=\\frac{A_{1}^{2}}{2}+\\frac{A_{2}^{2}}{2}\\\\ +\\frac{A_{1}^{2}}{2}cos(2\\omega _{1}t)+\\frac{A_{2}^{2}}{2}cos(2\\omega _{2}t)\\\\ +A_{1}A_{2}cos[(\\omega _{1}-\\omega _{2})t]+A_{1}A_{2}cos[(\\omega _{1}+\\omega _{2})t]\\end{array}$",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Mean components",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "rapidly varying components",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Slowly varying component",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "These give rise to 2nd order pressure force components!",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 28
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Non-linear wave load effects",
+        "text_level": 2,
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Mean wave-drift force: Determine the equilibrium position of the moored system (together with wind and current). They are important for the design of mooring lines and propulsion systems for dynamic positioning."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Slowly-varying wave-drift force: The forces have frequencies much slower than the wave elevation. These can excite resonant modes in the horizontal position of the moored vessel. Typical resonance periods in offshore structures are 1 to 2min."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Rapidly-varying wave-drift force: these forces have frequency components which are higher than the wave elevation frequency. These can excite structural resonant modes: periods 2 to 4s."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 29
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Example (Pinkster 1979)",
+        "text_level": 2,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 30
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Second order FRF",
+        "text_level": 2,
+        "page_idx": 31
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- For slowly varying wave-drift forces, the second order potential is needed.",
+            "- With the second order potential, the second order FRF be computed:"
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "$T_{jk}^{ic}(\\omega _{j},\\omega _{k})$",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "$T_{jk}^{is}(\\omega _{j},\\omega _{k})$",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}F_{i}^{SV}=\\sum_{j=1}^{N}\\sum_{k=1}^{N}\\zeta _{j}\\zeta _{k}[T_{jk}^{ic}cos([\\omega _{j}-\\omega _{k}] t+[\\varepsilon _{j}-\\varepsilon _{k}])\\\\ +T_{jk}^{is}sin([\\omega _{j}-\\omega _{k}] t+[\\varepsilon _{j}-\\varepsilon _{k}])]\\end{array}$",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 31
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Mean wave drift from 2ord FRF",
+        "text_level": 2,
+        "page_idx": 32
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Note that"
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Then the mean wave drift forces can ne obtained from:"
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "$T_{jk}^{ic}=T_{kj}^{ic}$",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "$T_{jk}^{is}=-T_{kj}^{is}$",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "$F_{i}^{MD}=¯_{i}^{SV}=\\sum_{j}^{N}\\zeta _{j}^{2}T_{jj}^{ic}$",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 32
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Hydrodynamic Codes",
+        "text_level": 2,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "The working principle of all codes:",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Input data and",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Pre-processing",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Code",
+        "page_idx": 33
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Hull geometry",
+            "- Loading condition",
+            "- Environment (frequencies)",
+            "- Calculation settings"
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Output data and",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Post-processing",
+        "page_idx": 33
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- A(w), [A(∞)]",
+            "- B(w), [B(∞)]",
+            "- 1st order force FRF",
+            "- 2nd order force FRF",
+            "- Motion FRF"
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 33
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "page_idx": 34
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Faltinsen, O.M. (1990) **Sea Loads on Ships and Ocean Structures**. Cambridge University Press."
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Journée, J.M.J. and W.W. Massie (2001) <strong>Offshore Hydromechanics.</strong> Lecture notes on offshore hydromechanics for Offshore Technology students, code OT4620. (<a href=\"http://www.ocp.tudelft.nl/mt/journee/\"><u>http://www.ocp.tudelft.nl/mt/journee/</u></a>)"
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Perez, T. and T. I. Fossen (2006) “Time-domain Models of Marine Surface Vessels  Based on Seakeeping Computations.” 7th IFAC Conference on Manoeuvring and Control of Marine Vessels MCMC, Portugal, September."
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 34
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 34
+    }
+]

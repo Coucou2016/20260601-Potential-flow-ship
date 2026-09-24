@@ -1,0 +1,2214 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "User manual for OceanWave3D-seakeeping"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                196,
+                131,
+                811,
+                156
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Mostafa Amini Afshar and Harry B. Bingham Section of Fluid Mechanics, Coastal and Maritime Engineering Department of Mechanical Engineering Technical University of Denmark"
+                    }
+                ]
+            },
+            "bbox": [
+                228,
+                172,
+                776,
+                239
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "January 31, 2017"
+                    }
+                ]
+            },
+            "bbox": [
+                426,
+                250,
+                579,
+                267
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1 Introduction"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                121,
+                304,
+                317,
+                322
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The OceanWave3D-Seakeeping code, is a linear time-domain seakeeping solver which has been developed at Technical University of Denmark. The solver is based on the high-order finite difference method and linearized potential-flow theory. Body-fitted overlapping grids are used to represent the hull geometry. With the current status of the code the following hydrodynamic problems can be solved:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                335,
+                885,
+                416
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "• Wave resistance,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "• Radiation,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "• Diffraction."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                426,
+                302,
+                494
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the following sections it is explained how the seakeeping code can be used."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                507,
+                746,
+                524
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2 The structure of the solver"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                545,
+                487,
+                563
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The solver comprised of two sub-program, i.e RUN and POST. In the RUN module all the time-domain computations are performed to solve for the unknown velocity potentials for the corresponding hydrodynamic problem. At the same time the required data for later post processing is also stored in binary files on the hard disk. After executing the RUN module, one can execute the POST program. This part of the seakeeping solver, uses the time-domain data obtained from the RUN modlue, and produces the desired frequency-domain results. Both RUN and POST use the same input file. In the next section it is explained how to prepare this input file."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                577,
+                887,
+                706
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3 Input file"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                728,
+                278,
+                747
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Both programs need the same input file in order to run. The input file is a text file with the extension .opt. In the input file the required data is supplied for solving and post processing a desired hydrodynamic problem. The input file is an ascii text file which must includes the following lines in the order presented below. It is mandatory to end each line with the modulo operator: %."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                759,
+                885,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 1 : gravitational acceleration "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textit { g } \\ m ^ { 2 } / s"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                850,
+                529,
+                868
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 2 : density ρ kg/m3,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 3 : Forward speed U m/s,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 4 : Wave heading β degrees,"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                84,
+                460,
+                156
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that at moment it is only possible to use the solver for head seas, i.e β = 180. Work is in progress, and in the new versions other wave headings will be accommodated."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                161,
+                884,
+                193
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 5 : Type of the base flow,"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                203,
+                428,
+                219
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this line a two letter string is accepted as follows:"
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                225,
+                591,
+                242
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- ZS : If the forward speed is zero."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- NK : If forward speed is not zero and for Neumann-Kelvin linearization."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- DB : If forward speed is not zero and for double-body linearization."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                253,
+                805,
+                310
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 6 : The path to the computational grid which also includes the name of the grid."
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                319,
+                868,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that the path is relative to the directory in which the input file is located."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                343,
+                808,
+                359
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 7 : The path to a fine resolution grid."
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                369,
+                522,
+                386
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that it is possible to supply 2 grids to the solver. This is due to the intended capability of the solver to make use of a highly refined mesh for the ship hull. This part of the solver is still in a validation phase, so one can simply leave this line blank with one space that ends with a modulo operator: %, as mentioned before."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                392,
+                884,
+                456
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 8 : The path to the directory where the output files are to be stored relative to the directory where the code is running."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 9 : The order of accuracy for the finite difference approximation of the temporal derivative in the Bernoulli equation. The suggested value is 4,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 10 : The Courant number for the time integration Cr where "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "0 . 5 < C r < 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 11 : The minimum resolvable wave length "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\lambda _ { m i n } \\ m ."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                466,
+                884,
+                595
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that this line is due to the early stage of code development, and it will be removed in a later revision of the solver. Basically a minimum wave length is obtained by the solver depending on the grid size at the free surface, and the piece of data in this line is in fact redundant. An arbitrary number can be provided here, as the number is not actually used at this time."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                601,
+                884,
+                680
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 12 : In this line the non-dimensional time limit of the simulation tmaxpg/L where L is the largest characteristic length of the body. A very large value makes the computational time unnecessarily large, on the other hand a too small value is insufficient to capture all the frequency domain information. The recommended value is 15."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 13 : In this line the shape of time-domain displacement is controlled by a number."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                690,
+                884,
+                783
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The seakeeping code solves the hydrodynamic problems in the time domain where the displacement which is applied to the body is of Gaussian type. This Gaussian displacement as a function of frequency f as follows:"
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                789,
+                884,
+                838
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\xi_ {k} (f) = \\frac {1}{s \\sqrt {2 \\pi}} \\exp \\left(- f _ {m a x} ^ {2} / \\left(2 s ^ {2}\\right)\\right),",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fe6215135883e47f5c2489954c64f0bfb70df5d05672140402e8e50c0e28ec90.jpg"
+                }
+            },
+            "bbox": [
+                381,
+                848,
+                668,
+                881
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where"
+                    }
+                ]
+            },
+            "bbox": [
+                166,
+                86,
+                220,
+                99
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "s = \\sqrt {\\frac {- f _ {m a x} ^ {2}}{2 \\log (r)}}.",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/40229c1db65ce393b937598a55e622d5cbf656f8b28e345ff9448d5c29dfb9d1.jpg"
+                }
+            },
+            "bbox": [
+                463,
+                97,
+                588,
+                139
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The ratio of the displacement at zero frequency to the one at the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f _ { m a x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is defined by r. It is the value of p which must be specified at this line. Note also that fmax is calculated by the solver based on the average grid spacing at the free surface or around the waterline. A recommended value for r is 0.0001."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                142,
+                885,
+                206
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 14 : Three numbers must be specified here which are the x, y, z coordinates of the point around which the moment integration should be performed. Just a space is sufficient to distinguish these three numbers. For the definition of the coordinate system refer to the section for the grid generation,"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                215,
+                885,
+                281
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 15 : The type of hydrodynamic problem to be solved. With the current status of the solver, there are 8 possibilities:"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                288,
+                885,
+                322
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– mode 0 : The wave resistance problem,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– mode 1-6 : Surge, heave, sway, roll, yaw and pitch radiation problem."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– mode 7 : The diffraction problem,"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                331,
+                773,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that the number corresponding to the desired hydrodynamic problem, must be repeated as many time as there are desired responses. The desired responses are defined in the next line."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                395,
+                885,
+                443
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 16 : The desired responses are specified at this line. There is possible to ask for the response in 6 directions, as follows:"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                454,
+                885,
+                485
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- 1 : surge,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- 2 : heave,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- 3 : sway,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- 4 : roll,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- 5 : yaw,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- 6 : pitch,"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                495,
+                290,
+                609
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As an example if the wave resistance problem is going to be solved and only the force in x direction is desired then at lines 15 and 16 one should write:"
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                619,
+                885,
+                650
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– 0 %"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– 1 %"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                659,
+                242,
+                694
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Or in the case of solving the ship response in head sees:"
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                706,
+                618,
+                722
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– 7 7 7 1 1 1 2 2 2 6 6 6 %"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "– 1 2 6 1 2 6 1 2 6 1 2 6 %"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                730,
+                411,
+                765
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that the diffraction run must be supplied first before the radiation runs."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                776,
+                794,
+                791
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Line 17 : In this line the filter parameters are supplied to the solver in the case of solving forward speed problems. Three numbers must be specified with a space in between. The first number defines the width of the stencil for the filter. The next number is for the desired order of the filter. The final number controls the strength of the filter. In the case a filter is required the following are recommended:"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                801,
+                885,
+                882
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that if all numbers for the filter are left 0, then an upwind biased stencil will be employed by the solver to take care of the convective derivatives. Both strategies are working with the forward speed problems in this solver. It is recommended not to use filter and leave this line with three zeros."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                112,
+                884,
+                175
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 18 : If a sponge layer is desired to dissipate the outgoing waves, give a value of 1 on this line. Note that at the moment the most effective strategy in the solver to dissipate the outgoing waves is in fact the large size of the domain where the grid spacing is stretched strongly towards the end of the domain. So one can simply leave this line with a zero value."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 19 : The type of the system solver can be specified here. There are at the moment three possibilities:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                187,
+                885,
+                310
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- DI : The direct solver,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- IT : The iterative solver,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- MG : The multigrid solver,"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                321,
+                433,
+                378
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Depending on the size of the grid and the memory capacity, the direct solver is generally recommended. For the very large grids one can instead use IT option."
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                390,
+                882,
+                422
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 20 : The solver can also provide a show file where the solution for the surface elevation has been stored. This show file can be read by the Overture plotStuff GUI. If a show file is desired put 1 at this line, otherwise leave a 0 there."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 21 : If the surface elevation is desired to be printed out in a text file instead, give a positive integer number on this line. If the number is 0 nothing will be printed out. All other numbers regarded as the rate at which the surface elevation is printed in time. For example 10 means that the surface elevation is printed out once every 10 time steps."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 22 : In this solver the frequency domain results are obtained by a Fourier transform of the time-domain data. If a high resolution of the frequency domain data is desired one can increase the length of the time signal by padding it with zeros. The number on this line specifies how much the time signal should be extended. A value of 50 is recommended."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 23 : This line defines the rate at which the time domain data should be stored in the binary files for frequency-domain post processing. A value of 1 means the data at each time step is stored."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 24 : If the wave drift force is desired put 1 on this line, otherwise leave a 0 there,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- Line 25 The mass matrix is supplied here. In fact the data begins at this line and may continue up to 5 more lines as follows:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                432,
+                887,
+                759
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\left( \\begin{array}{c c c c c c} m & 0 & 0 & 0 & 0 & - m y _ {g} \\\\ 0 & m & 0 & 0 & 0 & 0 \\\\ 0 & 0 & m & m y _ {g} & 0 & 0 \\\\ 0 & 0 & m y _ {g} & I _ {1 1} & I _ {1 2} & I _ {1 3} \\\\ 0 & 0 & 0 & I _ {2 1} & I _ {2 2} & I _ {2 3} \\\\ - m y _ {g} & 0 & 0 & I _ {3 1} & I _ {3 2} & I _ {3 3} \\end{array} \\right)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a66fedd982997aa785c5100628e1b90da509e2bed1ea835023766c51ae993a35.jpg"
+                }
+            },
+            "bbox": [
+                366,
+                770,
+                680,
+                869
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "- 11 9 0.3 ,"
+                    }
+                ]
+            },
+            "bbox": [
+                191,
+                86,
+                285,
+                99
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For example in the case of only surge, heave and pitch motions of the ship, one must define the mass matrix as:"
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                85,
+                884,
+                115
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\left( \\begin{array}{c c c} m & 0 & - m y _ {g} \\\\ 0 & m & 0 \\\\ - m y _ {g} & 0 & I _ {3 3} \\end{array} \\right)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/47060bc39e364cd2276ff9f8ceef53bdfbbf8daf6e38d7d28182b0b98b909659.jpg"
+                }
+            },
+            "bbox": [
+                436,
+                115,
+                610,
+                164
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- Last line : This line is remained from the earlier stages of the code development, and will be removed in the future versions. At this line one is supposed to supply the hydrostatic matrix. As the hydrostatic coefficients are in fact calculate by the solver, there is no need to specify any value here. Just keep these lines and leave 0 for each corresponding coefficient. Note that the hydrostatic matrix must have the same size as the mass matrix. So corresponding to the previous case one must specify:"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                172,
+                885,
+                269
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\left( \\begin{array}{c c c} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{array} \\right)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f2d3af79ca2c9639cbebe3972fd0fd99a7cb2e1ada28429b52741c49fc8cf827.jpg"
+                }
+            },
+            "bbox": [
+                478,
+                275,
+                569,
+                326
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Please also note that the mass and hydrostatic matrices are only required when both radiation and diffraction problems are solved. For the wave resistance problem, a pure radiation problems or a pure diffraction problem, there is no need to specify this data in the input file."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                338,
+                885,
+                388
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 Output files"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                409,
+                309,
+                428
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "After executing both RUN and POST modules of the solver, the output files will be generated and are stored in 2 folders with the same name as the corresponding program."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                439,
+                885,
+                472
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.1 Results in the RUN folder"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                489,
+                440,
+                505
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "text files :"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                514,
+                218,
+                529
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this folder following text files are printed out from the RUN module:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                539,
+                709,
+                555
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ prog.log (the data used for simulation)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ bondata.txt (the grid boundaries data)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ baseMtms.txt (the base-flow m-terms)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ symcof.txt (the symmetry coefficients used in the simulation)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ wabcords.txt (the free-surface coordinates at the body and the end of the domain."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ watlin.txt (The coordinates of the waterline (if any))."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ fdcof s*.txt (The finite difference coefficients for the points at surface *)"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ filter s*.txt (The filter coefficients for the points at surface *)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                560,
+                830,
+                762
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "hdf files :"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                775,
+                211,
+                790
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this folder the following hdf files are (or can be) printed out from the RUN module. Note that these hdf files can be shown and read by plotStuff from overture."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                800,
+                885,
+                832
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ baseShow.hdf (The base flow velocity potential)"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ * elev.hdf (The surface elevation at the desired time steps for problem *)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                840,
+                759,
+                883
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "binary files :"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                85,
+                240,
+                101
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this folder the following binary files are (or can be ) printed out from the RUN module. Note that these files are just created to be read by the POST module, and can not be used by the user. If they are accidentally deleted, the POST module will not run."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                110,
+                885,
+                159
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ simdata.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ time.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ tiIntegs.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ tiPotens.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ tiWlines.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ disp.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ elev.bin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                168,
+                268,
+                344
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note that only hdf and text files are readable by the user."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                356,
+                589,
+                372
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2 Results in the POST folder"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                390,
+                448,
+                406
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "text files :"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                416,
+                218,
+                430
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Similar to the RUN data the POST program will also make the following log file:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                439,
+                793,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "+ prog.log"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                467,
+                233,
+                483
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Moreover depending the solution domain, the following text file are (or can be) printed out:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                493,
+                863,
+                508
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2.1 time-domain solutions"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                527,
+                394,
+                542
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ * force time.txt (The time domain applied forces on the body for the problem *)"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ * asymp force.txt (The corresponding asymptotic extrapolation of forces)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                551,
+                818,
+                595
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2.2 frequency-domain solutions"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                613,
+                443,
+                629
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ addedMass *.txt : All added mass coefficients for the problem *"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ damping *.txt : All damping coefficients for the problem *"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ RAO.txt : Response amplitude operators"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ excitation force freq.txt : The wave excitation forces"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ scattering force freq.txt : The forces due to just scattering"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ nearField.txt : the wave drift force based on the near-field method"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ farField.txt : the wave drift force based on the far-field method"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                637,
+                705,
+                814
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8a7855f1449f77ba61d5bc37d2b7902238617ecd62b055d60f19ec73539f70aa.jpg"
+                },
+                "content": "Diagram showing a curved grid pattern with a grid overlay and coordinate axes (x, y), no text or symbols present.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1: An overset grid for a floating cylinder"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "natural_image",
+            "bbox": [
+                287,
+                85,
+                721,
+                407
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "binary files :"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                464,
+                240,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The following binary files will be created just in the case of wave drift calculations. These files are not readable by the user."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                488,
+                882,
+                520
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ fqPotens.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ fqNiPotens.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ fqWlines.bin"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "+ fqNiWlines.bin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                531,
+                290,
+                627
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5 Grid generation"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                650,
+                356,
+                669
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The coordinate system which is adopted in the solver has its positive x axis along the length of the body of the ship. The y axis is positive upward and the z axis is defined by the right hand rule. The selection of this coordinate system is motivated by the Overture library. During the grid generation one should keep this in mind that instead of z axis, the y axis is pointing upward. Note that the output results are transformed to the more standard right-handed coordinate system with the z axis pointing upward."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                681,
+                885,
+                777
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Only the wetted surface of the body must be included for the grid generation. The origin of the coordinate system then will be at the mean free surface. For the grid generation it is more convenient to start from the grid on the body surface. This is explained here by an example overset grid for a floating cylinder in a background domain, Figure 1. In this case the whole overlapping grid is comprised of 2 component grids. The fist component is shown in green and it fits around the surface of the cylinder which is shown by a magenta line. The other grid is shown by blue and represent the background domain of the basin. Note that only a small part of the background grid is shown in this figure. For generating such an overlapping grid one should use Ogen (Henshaw, 1998) from the Overture library (Brown et al., 1999). The important thing for this solver is that the correct boundary tags are assigned to the sides of each component grids. In this example the side of the cylinder grid which is representing the surface of the body should be given a boundary tag of 3. This is in fact a message to the solver that the body-boundary condition should be applied at this side of the grid. The sides of the cylinder grid which are located at the free surface, must be designated by a boundary tag of 1. As it is required by the Ogen for the overset grid generation, all other sides of the cylinder grid in this case must have a boundary tag of 0 to signify an interpolation side."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                778,
+                885,
+                875
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                117,
+                85,
+                887,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For the Cartesian background grid, again a boundary tag of 1 must be used for the upper side which would make up part of the free surface. Those sides of the background grid that are representing the far-field truncation boundary must have a boundary tag of 4. And finally at the bottom side of the background grid, the boundary tag must be 2."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                247,
+                885,
+                310
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For the three-dimensional grid one must assign a boundary tag of 5 to the symmetry plane (if any). Note that at the moment just one symmetry plane at z=0 is accommodated in the solver."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                311,
+                885,
+                357
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For two- and three-dimensional overlapping grids for closed form geometries like a cylinder or sphere, Ogen can be employed directly. For other geometries where there is not a closed form transformation, one can use Hyperbolic Grid Generation tools inside the Overture library. The rules regarding the boundary tags are exactly the same as before. The grid generation in this case starts by defining the surface of the body as an iges format. The prepared surface then is read by a tool called rap, which prepares the surface of the body for the grid generation. The prepared surface is saved in a file with hdf format. The next tool mbuilder generates the surface and volume grid for the body surface. Note that it is much easier if one writes a script to instruct these tools for the grid generation."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                359,
+                887,
+                504
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the sample grid folder one can find examples of overlapping grids for two- and threedimensional geometries. There are also 4 examples of the use of hyperbolic grid generation for ship geometries."
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                504,
+                887,
+                552
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6 Executing the solver"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                119,
+                574,
+                413,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Both RUN and POST can be rub from the command line as follows:"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                606,
+                692,
+                621
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- RUN.exe -opt=input file.opt"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "- POST.exe -opt=input file.opt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                633,
+                413,
+                675
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                121,
+                82,
+                253,
+                99
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Brown, D. L., W. D. Henshaw, and D. J. Quinlan. Overture: An object-oriented framework for solving partial differential equations on overlapping grids. Object Oriented Methods for Interoperable Scientific and Engineering Computing, SIAM, pages 245–255, 1999."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Henshaw, W. D. Ogen: An overlapping grid generator for overture. LANL unclassified report, pages 96–3466, 1998."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                121,
+                112,
+                887,
+                206
+            ]
+        }
+    ]
+]

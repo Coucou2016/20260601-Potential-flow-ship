@@ -1,0 +1,875 @@
+[
+    {
+        "type": "text",
+        "text": "Modelling and Simulation of Marine Surface Vessel Dynamics (Module 1: Motivation and Overview)",
+        "text_level": 2,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr Tristan Perez",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Complex Dynamic Systems and Control (CDSC)",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Professor Thor I Fossen",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8962ba0bc872ad077847583e2841494ce51a6476cb145d28b6251702cc8e12a0.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e29b613ed08a3f4363bdbd18f84ff9baef4b407f0950166ce6b405c5c0a30cbe.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Tutorial Goals",
+        "text_level": 2,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Model vessels and environmental loads in 6 DOF.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Use state-of-the-art hydrodynamic codes to compute model parameters: added mass, potential damping, 1st and 2nd-order wave loads.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Derive control plant models by postprocessing data from hydrodynamic codes (Matlab GNC toolbox).",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Use system identification to fit hydrodynamic data to state-space models.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Add viscous effects/manoeuvring terms.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Time-domain simulation in Matlab Simulink.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Applications",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/4eba21ce1689e05c3983a8fbd45d44ebe4ee128c40a387dca78237538dfdf9c3.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/e621c7609da9b52fbfadd7a64e9c7c0d9284d563e6849d1e5452c9f125701e25.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/86742121ff1605b6fcf966b2ca709191ba516e7ccb32fa036846539bf97f1a4b.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b832569d5fb64f98ba1065894d97448b6f1629236cf75d8bdd05894935e4a1f.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/db74f6b04134f436d8a3e55526532e4fbd46680951b8d9ebddf4586e18216b4a.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/4756ac32911bb1bc07082a0526c51eed3d56b2a4ef7db471a82a989dbd2c39f5.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/dd3c1b60471b789c2f3e45ecff93e0ff655fba48ba093a2ccfe8ddf5f243d32b.jpg",
+        "image_caption": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Modelling and Control",
+        "text_level": 2,
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- System designers make decisions to satisfy conflicting requirements based on some knowledge of the system they intend to design: this knowledge is represented in a mathematical model.",
+            "- Modelling is an essential part of control design and preliminary testing, which can consume up to 60% of effort in these tasks."
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Modelling of Marine Structures",
+        "text_level": 2,
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Models of marine structures are complex.",
+            "- Control engineers often base their models on models used by naval architects, which sometimes are not control-design oriented.",
+            "- In this tutorial, we will look at the models commonly used in naval architecture and ship theory from the control system’s perspective."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Obtaining Models",
+        "text_level": 2,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data-base",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Model testing",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Scaling",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "System",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Identification",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Main focus of this tutorial",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "**Mathematical**",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "**Models**",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "(Simulation,GNC-design",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "HIL-testing, Diagnosis)",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "System",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Identification",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "System",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Identification",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Numerical",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Hydrodynamics",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Full-scale",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Experiments",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Manoeuvring and Seakeeping",
+        "text_level": 2,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Ship theory has traditionally been separated into two main areas",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "table_caption": [],
+        "table_body": "<table>\n  <tr>\n    <th>Manoeuvring\nThe aim is to study steering characteristics of vessels with forward speed and the response to the command of propulsion systems and control surfaces. This is done in calm water.</th>\n    <th>Sea-keeping\nThe aim is to study the behavior of the vessel in waves while keeping a constant speed and course.</th>\n  </tr>\n</table>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Although both areas are concerned with the study of *motion*, *stability* and *control*, the separation allows one making assumptions that simplify the study in each case.",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "7",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Manoeuvring Models",
+        "text_level": 2,
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Nonlinear parametric models (classical and Lagrangian):"
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Obtained by fitting data from scaled model experiments.",
+            "- Calm water models.",
+            "- Horizontal motion models (surge-sway-yaw).",
+            "- Not commonly available.",
+            "- Restricted to a few speeds/loading conditions of the experiment."
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/1f3d48bc41896fbfe654affbd377c431aa6343eae1d22889ec0ba5e636a26492.png",
+        "image_caption": [],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/8f19b17499289a9c24d513a2fdfc61bb550a0b4599a2ad3b8cb3671008227cdb.png",
+        "image_caption": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "8",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Seakeeping Models",
+        "text_level": 2,
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4003be491fbc8e6b6eb38bbe59bf682c6599d10c14568bb274de8d6fe3258e35.jpg",
+        "image_caption": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Linear non-parametric models",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Obtained from hydrodynamic calculations based on simplifying assumptions:",
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Constant course and speed.",
+            "- Linear wave loads.",
+            "- Potential theory.",
+            "- Viscous effects can be added."
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For the design of control systems, seakeeping models are very useful.",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "They provide preliminary models based on little data of the ship.",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "9",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Recent Results on a Unified Manoeuvring and Seakeeping Model",
+        "text_level": 2,
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- <strong>Fossen, T. I. and Ø. N. Smogeli.</strong> Nonlinear Time-Domain Strip Theory Formulation for Low-Speed Manoeuvring and Station-Keeping, <em>Modelling, Identification and Control,</em> <strong>MIC-25</strong>(4):201:221, 2004.",
+            "- <strong>Fossen, T. I.</strong> A Nonlinear Unified State-Space Model for Ship Manoeuvring and Control in a Seaway, <em>Journal of Bifurcation and Chaos</em>, September 2005. (Plenary Talk ENOC'05, Eindhoven, The Netherlands).",
+            "- **Perez, T. and T. I. Fossen.**  Kinematic Models for Sea-keeping and Manoeuvring of Marine Vessels. Modelling, Identification and Control, **MIC-28**(1):1-12, 2007.",
+            "- <strong>Perez, T. and T. I. Fossen.</strong> Time-Domain Models of Marine Surface Vessels for Simulation and Control Design Based on Sea-keeping Computations (Plenary Talk). <em>Proc. of the IFAC MCMC'06, Lisbon, Portugal, September 20-22, 2006.</em>",
+            "- **Ross, A., T. Perez and T. I. Fossen .** A Novel Manoeuvring Model Based on Low-Aspect Ratio Lift Theory and Lagrangian Mechanics. Proc. of the IFAC CAMS'07, Croatia."
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "10",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Unified Manoeuvring and Seakeeping Model for Time-Domain Simulation",
+        "text_level": 2,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "<strong>The</strong> <em><strong>Force-Transfer-Functions</strong></em> <strong>are computed using hydrodynamic SW (WAMIT, VERES or SEAWAY )</strong>",
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/f20ee8f59ee386dd66951c4830e8be655e924ff52f07c05506e36c24f94e0e43.jpg",
+        "image_caption": [],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/a9eacf6ae97b3ee384cea112d6fab52ec7b8801d63db5616e5ebf4cf8caaef54.png",
+        "image_caption": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "*For 6 DOF this model will typically be represented by* *6 + 6 + 90 = 102 ODEs*",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "*which are computed using*",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "***hydrodynamic SW (WAMIT, VERES or SEAWAY )***",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "*These terms are found using experimental results/curve fitting or semi-empirical methods*",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "11",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Speed–Environment Envelope",
+        "text_level": 2,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Hull supported by mostly by hydrostatic pressure (forces)",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/4756ac32911bb1bc07082a0526c51eed3d56b2a4ef7db471a82a989dbd2c39f5.jpg",
+        "image_caption": [],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/e621c7609da9b52fbfadd7a64e9c7c0d9284d563e6849d1e5452c9f125701e25.jpg",
+        "image_caption": [],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ace22c5dc2d9d0441bbe154d32ee2af26100ad6cbee4b96e1859f53227b7f58.jpg",
+        "image_caption": [],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/745c78c6f1c10005c8bafafb8a7af9ab4cb43c8b2ae82304d3842e743b7a82d2.jpg",
+        "image_caption": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Hydrostatic and hydrodynamic forces; Lift",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a5ab88da1f8f2ad36abc706ae7eab14e716565a807d367bee24c3e550f8e692.jpg",
+        "image_caption": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Aero and hydrodynamic forces; strong flow separation",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "12",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The 3 Speed Regimes for Control",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "**Dynamic positioning systems**",
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- 3D potential theory",
+            "- 2D potential theory (strip theory)"
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "**Manoeuvring/motion damping**",
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- 2D potential theory (strip theory) up to *Froude numbers* of 0-3-0.4",
+            "- 2.5 D potential theory for high-speed craft"
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/e621c7609da9b52fbfadd7a64e9c7c0d9284d563e6849d1e5452c9f125701e25.jpg",
+        "image_caption": [],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/1ad3eb9d37c4f77ffc1aa8eebc6193f965fe3ac62aae440a7275d519fd442254.jpg",
+        "image_caption": [],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/2be45ccc87066e09559e9f0209a5d88d1814bdd5b1104a45eae6b3210b147ac7.jpg",
+        "image_caption": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Manoeuvring at moderate speed",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "(transit)",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Manoeuvring at high speed",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "(high-speed craft)",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Low-speed",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "maneuvering",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Station-keeping",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "0",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "1.5 m/s (3 knots)",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "….",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "…..",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "*Speed*",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "13",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Motion in Waves",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Motions and loads of floating structures due to waves can be separated into",
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Wave-frequency: linearly excitations and motion in the wave frequency range. Periods in the range 5-20s",
+            "- Higher than wave frequency (ringing & springing): nonlinear effects, which can produce resonance in TLPs, with natural periods of 2-4s."
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Slow and mean drift: nonlinear effects with mean value and sub harmonic excitation that can produce oscillations with natural periods of 20-30s."
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "14",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Motion and Control",
+        "text_level": 2,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Then, motion control problems can have different objectives:",
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- ***Control only the non-oscillatory  motion (wave filtering needed)***",
+            "    - Autopilots,",
+            "    - Dynamic positioning (DP)",
+            "    - Thruster assisted position mooring (TAPMOOR)",
+            "- ***Control only the oscillatory motion***",
+            "    - Ride control of high speed vessels (roll and pitch stabilisation)",
+            "    - Heave compensation of offshore structures",
+            "- ***Control both***",
+            "    - Dynamic positioning in extreme seas (DP + roll & pitch stabilisation)",
+            "    - Autopilots with rudder roll stabilisation",
+            "    - Unmanned Surface Vehicles USV"
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "15",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The Road Ahead",
+        "text_level": 2,
+        "page_idx": 15
+    },
+    {
+        "type": "table",
+        "table_caption": [],
+        "table_body": "<table>\n  <tr>\n    <th>Time</th>\n    <th>Topic</th>\n    <th>Presenter</th>\n  </tr>\n  <tr>\n    <td>09:00</td>\n    <td>M1: Motivation and overview</td>\n    <td>TIF</td>\n  </tr>\n  <tr>\n    <td>09:20</td>\n    <td>M2: Hydrodynamics for control engineers</td>\n    <td>TP</td>\n  </tr>\n  <tr>\n    <td>10:00</td>\n    <td>M3: Kinematics and kinetic models of marine vessels</td>\n    <td>TP</td>\n  </tr>\n  <tr>\n    <td>10:45</td>\n    <td>Coffee break</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>11:00</td>\n    <td>M4: Manoeuvring in calm water</td>\n    <td>TIF</td>\n  </tr>\n  <tr>\n    <td>11:30</td>\n    <td>M5: Environmental disturbances</td>\n    <td>TP</td>\n  </tr>\n  <tr>\n    <td>12:00</td>\n    <td>Lunch break</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>13:00</td>\n    <td>M6: Motion in waves a frequency-domain approach</td>\n    <td>TP</td>\n  </tr>\n  <tr>\n    <td>13:30</td>\n    <td>M7: Motion in waves a time-domain approach</td>\n    <td>TP</td>\n  </tr>\n  <tr>\n    <td>14:00</td>\n    <td>M8: Manoeuvring in a seaway</td>\n    <td>TP</td>\n  </tr>\n  <tr>\n    <td>14:30</td>\n    <td>M9: Models and marine control problems</td>\n    <td>TIF</td>\n  </tr>\n  <tr>\n    <td>15:00</td>\n    <td>M10: Software, and rapid model prototyping</td>\n    <td>TIF</td>\n  </tr>\n</table>",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "03/09/2007",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "16",
+        "page_idx": 15
+    }
+]

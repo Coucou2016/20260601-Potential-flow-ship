@@ -1,0 +1,1588 @@
+[
+    {
+        "type": "text",
+        "text": "Modelling and Simulation of Environmental Disturbances   (Module 5)",
+        "text_level": 2,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr Tristan Perez",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Complex Dynamic Systems and Control (CDSC)",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8962ba0bc872ad077847583e2841494ce51a6476cb145d28b6251702cc8e12a0.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prof. Thor I Fossen",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e29b613ed08a3f4363bdbd18f84ff9baef4b407f0950166ce6b405c5c0a30cbe.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Regular waves in deep water",
+        "text_level": 2,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The sea surface elevation is described by:",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ec5583e1d5da19d1479dd5657995cf0591dc3ccfabbe95850e13ec19e2a19a7.jpg",
+        "image_caption": [],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/cdcd5d295a651c1c73e3523922c77ea245385034b2821296b644ab4f400ea5a5.jpg",
+        "image_caption": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Wave frequency",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(rad/s)",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Phase velocity",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(m/sec)",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Wave length",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(m)",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Wave number",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(rad/m)",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "These expressions are only valid in deep water",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": ", where *h* is the water depth.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Sailing condition",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The sailing condition of a vessel is given by its forward speed  *U*  and its encounter angle, i.e., the heading angle relative to the waves.",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Encounter angle",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Encounter frequency",
+        "text_level": 2,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "If the waves are observed  from a reference frame that moves at a constant speed, the frequency observed is called Encounter Frequency.",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "This is a Doppler effect",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Negative encounter frequency => vessel overtakes the waves",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Ocean waves",
+        "text_level": 2,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Ocean waves present, in general, irregularity in time and space and cannot be predicted exactly: Stochastic Process.",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "ζ(x,y,0)",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "ζ(0,0,t)",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/a36cd32399347e00c35fb78ada8ab84582be682c65cd65ef23c71fc7b9c75ea2.jpg",
+        "image_caption": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "*t*",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Stochastic sea description",
+        "text_level": 2,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In practice, it is assumed that the variations of a stochastic nature of the sea are much slower than the variations of the sea surface itself; Hence,",
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- ζ(x, y, t) can be considered a realization of a stationary and homogeneous stochastic process.",
+            "- For deep water waves, ζ(x, y, t) is further assumed Gaussian."
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Gaussian waves",
+        "text_level": 2,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "p(ζ)",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "ζ(xo,yo,t)",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a36cd32399347e00c35fb78ada8ab84582be682c65cd65ef23c71fc7b9c75ea2.jpg",
+        "image_caption": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "*t*",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "ζ(x,y,0)",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "ζ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "(xo,yo)",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The elevation of the sea surface can be thought as being generated as the sum of many sinusoidal waves with different amplitudes, frequencies, and phases.",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "How good are these hypotheses?",
+        "text_level": 2,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "From data collected at sea (Haverre & Moan, 1985), it can be stated that",
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- For low and moderate seas (H1/3 < 4m), the sea can be considered stationary for periods over 20 min. For more severe sea states, stationarity can be questioned even for periods of 20 min.",
+            "- For medium seas (4m < H1/3 < 8m), Gaussian models are still accurate, but deviations from Gaussianity slightly increase with the increasing severity of the sea state.",
+            "- If the water is sufficiently deep, wave elevation can be consider Gaussian regardless of the sea state."
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "(H1/3 is the average of the highest one third of the waves recorded.)",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Random sea characterization",
+        "text_level": 2,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Under the Gaussianity assumption, the process is completely described by",
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Mean",
+            "- Variance"
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The sea surface elevation is described relative to the mean free surface; therefore, the mean of the SP is zero.",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The variance is described in terms of a sea power spectral density or sea spectrum.",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Power spectral density definition",
+        "text_level": 2,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If we use the frequency in Hz to define the FT, then",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}S_{xx}(f)=\\int_{}^{}R_{xx}(\\tau ) e^{-j2\\pi f\\tau }d\\tau \\\\R_{xx}(\\tau )=\\int_{}^{}S_{xx}(f) e^{j2\\pi f\\tau }df\\end{array}$",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "and",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$var\\left[x\\right]=R_{xx}(0)=\\int_{}^{}S_{xx}(f)df$",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "from which the name power spectral density follows.",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "This definition is common in the literature of electrical communications and signal processing.",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "PSD alternative definition",
+        "text_level": 2,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "When we use the circular frequency (rad/s) to define the FT,",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}S_{xx}(\\omega )=a \\int_{}^{}R_{xx}(\\tau ) e^{-j\\omega \\tau }d\\tau \\\\R_{xx}(\\tau )=b \\int_{}^{}S_{xx}(\\omega ) e^{j\\omega \\tau }d\\omega \\\\a b=\\frac{1}{2\\pi }\\end{array}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "We need to be careful on how we compute power!!!",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Random sea characterization",
+        "text_level": 2,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The spectral moments of order *n* are defined as:",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/2db4e4696c528214baa5357da58a72bd806cdb22e3532c04e4a94efa732f6d63.jpg",
+        "image_caption": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Then the variance and standard deviation (RMS value) are",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": " =",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Statistics of wave period",
+        "text_level": 2,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Narrow and wide banded processes",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Example narrow and wide-banded",
+        "text_level": 2,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Narrow-banded signal",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Wide-banded signal",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Statistics of wave height",
+        "text_level": 2,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Statistics of Maxima",
+        "text_level": 2,
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d7a61766478051d621a632e57f74d88c835f0d4abab606dfd831686511ca23e.jpg",
+        "image_caption": [],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ba1fa59d56df1b0795dfedded6313d8eced10d746eb2661e6b73a0895e8cee1.jpg",
+        "image_caption": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Long- and short-crested Seas",
+        "text_level": 2,
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- After the wind has blown constantly for a certain period of time, the sea elevation can be assumed statistically stable. In this case, the sea is referred to as *fully-developed*."
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- If the irregularity of the observed waves are only in the dominant wind direction, so that there are mainly uni-directional wave crests with varying separation but remaining parallel to each other, the sea is referred to as a *long-crested* irregular sea."
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- When irregularities are apparent along the wave crests at right angles to the direction of the wind, the sea is referred to as *short crested or confused sea.*"
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Long-crested Seas",
+        "text_level": 2,
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d708cf2524c3b24ec22dc7c81a21bbc77c97eebf0c13867a4491a64095b3c47.jpg",
+        "image_caption": [],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Short-crested Seas",
+        "text_level": 2,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Idealised spectra Long-crested seas",
+        "text_level": 2,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "In cases where no wave records are available, standard, idealized, formulae can be used. One family of idealized spectra is the *Bretschneither* family which was developed in early 1950s:",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/4166f8badcfa5381235a1d93f18f74add5b6f2d835dae72ceef3fe495f2607af.jpg",
+        "image_caption": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Modal frequency",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Spectral moments",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/d6cb69e6e4e1ab24ba6ce81e39bafdd965dc09f3bd960f038a702fc2bce09f33.jpg",
+        "image_caption": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "(This family can be used to represent rising and falling seas, as well as fully developed seas with no swell and unlimited fetch.)",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Idealised Spectra",
+        "text_level": 2,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "In the 1960’s, the *Pierson-Moskowitz* family was developed to forecast storm waves at a single point in fully developed seas with no swell using wind data. This family relates the parameters *A* and *B* to the",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "average wind speed at 19.5m above the sea surface:",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The ITTC recommends the use of the *Modified Pierson-Moskowitz* family; significant wave height and zero-crossing period or the average wave period is used:",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Example ITTC spectra",
+        "text_level": 2,
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/07e08faad5cf3a8d7d0b63c61d1817e2c00d7299b2e080481b6ea4df66050276.jpg",
+        "image_caption": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Other Spectra seas",
+        "text_level": 2,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Other families:",
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The JONSWAP spectral family accounts for the case of limited fetch wind waves"
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The TMA spectral family is an extension of the JONSWAP for finite water depth,"
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The double-peak Torsethaugen spectral family accounts for both swell and wind waves,"
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The Ochi six-parameter spectral family can be fitted to almost any wave record (it could account for swell and wind waves.)"
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "For further details see Ochi, K. (1998) Ocean Waves: The Stochastic Approach, Cambridge University Press. Ocean Tech. Series.",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 23
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Spectra for Short-crested Seas",
+        "text_level": 2,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Directional spectra are more realistic and are very important to calculate loads on marine structures since the motion response depends highly on the encounter angle. For simulation, it is common to separate the directional spectrum as a product of two functions:",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "is the spreading function",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Spreading Function",
+        "text_level": 2,
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/18b6e9654c1b3d3b531b9fa36d271d1fff4ca29ee7538c5e9ad5efe6ddc8bbf5.jpg",
+        "image_caption": [],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "where χ0 is the dominant wave propagation direction, and the values of s = 1, 2 are commonly used. See Lloyd (1989) for a more general form where |χ − χ0| < α; with α not necessarily equal to π/2",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 25
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Time-domain Simulations",
+        "text_level": 2,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "If ζ(t) is stationary and Gaussian on time interval [0, T], its realizations can be approximated to any degree of accuracy by",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "with N sufficiently large; where σn are constants and the phases εn are independent identically distributed random variables with uniform distribution in [0, 2π].",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The autocorrelation is given by",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 26
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Time-domain Simulations",
+        "text_level": 2,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 27
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Why is it done this way?",
+        "text_level": 2,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 28
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Formulae for Time-damin Simulations",
+        "text_level": 2,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 29
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Wind",
+        "text_level": 2,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Wind is commonly divided in two components; a mean value and a fluctuating component, or gust.",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "The mean component decreases with the distance towards the ground or the surface of the ocean, whereas the gust is approximately constant with the distance to the ground or the surface of the ocean—boundary layer.",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "It is a 3D phenomenon, but in marine applications  we restrict it to  2D, and velocities are considered only in the horizontal plane.",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Wind is parameterized by the velocity *U* and the direction *ψ*. The  direction is taken with respect to the North-East.",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Note that, in general, the direction of the wind is the direction from where the wind is coming from, e.g., a SE wind blows from the SE towards NW.",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 30
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Wind Mean-velocity Component",
+        "text_level": 2,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Slowly-varying fluctuations in the mean wind velocity can be modeled by a 1st order Gauss-Markov Process:",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "where *w* is Gaussian white noise and μ ≥ 0 is a constant.",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "The magnitude of the velocity should be restricted by saturation elements",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 31
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Wind Mean-direction component",
+        "text_level": 2,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Slowly-varying fluctuations in the mean wind direction  can also be implemented by a 1st order Gauss-Markov Process (Sorensen, 2005):",
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/c90a12b3414edde61c2b5f71205577090facf4682216cac8f104aeab11a506e2.jpg",
+        "image_caption": [],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "The direction is taken with respect to the (n-frame).",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "NOTE:  This direction is **often** the direction from where the wind is blowing: North-East (NE) wind blows from the NE",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 32
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Wind velocity and direction",
+        "text_level": 2,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Sorensen, (2005)",
+        "page_idx": 33
+    },
+    {
+        "type": "image",
+        "img_path": "images/05b577ee8b37b623038aca0f8c2361b6d9f4019e89c4da3c3e19e6989d150302.jpg",
+        "image_caption": [],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 33
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Wind Gust",
+        "text_level": 2,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "The wind gust is model as a realization of a stochastic process with a particular spectrum (Sorensen, 2005).",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 34
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Current",
+        "text_level": 2,
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/934a740da2a84056f744d7eea837234e9f5a285d1e72bd54108d85f59aaa1a2c.jpg",
+        "image_caption": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "**Surface Current**",
+        "text_level": 2,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Current velocity magnitude:",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Current direction:",
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/6c6af2e63039665053d7c6f6a30fe7c3c6e4329acd69867cbd5a39a6dda7a733.jpg",
+        "image_caption": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "The direction is taken with respect to the (n-frame). NOTE:  This direction is the direction  to where the current flows : North-East (NE) current flow towards the NE. (This is different from the convention for wind)",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 35
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "page_idx": 36
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Perez, T. (2005) **Ship Motion Control**. Springer."
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Ochi, M. (2005) **Ocean Waves: the stochastic approach**. Cambridge University Press."
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Sorensen, A.J. (2005) “*Marine Cybernetics*.” Lecture notes, Dept. of Marine Technology NTNU, NORWAY."
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 36
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 36
+    }
+]

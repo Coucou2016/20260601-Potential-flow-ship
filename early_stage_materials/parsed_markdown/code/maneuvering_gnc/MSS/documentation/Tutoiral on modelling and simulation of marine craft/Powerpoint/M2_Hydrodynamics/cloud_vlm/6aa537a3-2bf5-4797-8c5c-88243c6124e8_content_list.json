@@ -1,0 +1,1232 @@
+[
+    {
+        "type": "text",
+        "text": "Hydrodynamics for control engineers   (Module 2)",
+        "text_level": 2,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr Tristan Perez",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Complex Dynamic Systems and Control (CDSC)",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prof. Thor I Fossen",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8962ba0bc872ad077847583e2841494ce51a6476cb145d28b6251702cc8e12a0.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e29b613ed08a3f4363bdbd18f84ff9baef4b407f0950166ce6b405c5c0a30cbe.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Marine hydrodynamics",
+        "text_level": 2,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In order to study the motion of marine structures and vessels, we need to understand the effects the surrounding fluid has on them.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "This requires some basic concepts of hydrodynamics—which is fluid dynamics under special-case simplifications and assumptions particular of marine applications.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To solve problems related to ship motion we, need to know two things about the fluid:",
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- velocity",
+            "- pressure"
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Fluid flow description",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The velocity of the fluid at the location",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "**x**",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "**v**(**x**,t)",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "is given by the fluid-flow velocity vector:",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "this vector is usually described relative to an inertial coordinate system with origin in the mean free surface (h-frame, or s-frame).",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Incompressible fluid",
+        "text_level": 2,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "For the flow velocities involved in ship motion, the fluid can be considered *incompressible*, *i.e.,* constant density.",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Under this assumption, the net volume rate at a volume V enclosed by a surface *S* is",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "since this is valid for all the regions V in the fluid, then by assuming that            is continuous, we obtain the",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "*continuity equation* for incompressible flows:",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Material derivative",
+        "text_level": 2,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let                      be a scalar function and                    a vector-valued function; then,",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "If these are taken for the function",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "then we have a special notation—material derivative:",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/0da50ffa3fc24b00e84b300582c54e8bf25c27d5634ac8da442b202fb0eabba2.jpg",
+        "image_caption": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Flow equations",
+        "text_level": 2,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The conservation of momentum in the flow is described by the *Navier-Stokes (N-S) Equation:*",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "**F** are accelerations due to volumetric forces:",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "is the pressure, and *μ* is the viscosity of the fluid.",
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Unknowns: <strong>v</strong> and <em>p</em>",
+            "- N-S + Continuity eq. form a system of Nonlinear PDE",
+            "- No analytical solution exists for realistic ship flows.",
+            "- Numerical solutions are still far from feasible",
+            "- Practical approaches: RANS (CFD)"
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Potential theory",
+        "text_level": 2,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A further simplification is obtained by assuming that the fluid is *inviscid* and the flow is *irrotational.* Irrotaional means that",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Under this assumption, then exists a scalar function     called *potential* such that",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "So, if we know the potential, we can calculate the flow velocity vector (the gradient of the potential).",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 6
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "How do we obtain the potential?",
+        "text_level": 2,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In potential theory,  the continuity equation reverts to the *Laplacian* of the potential equal to zero:",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The potential is, thus, obtained by solving this  subject to appropriate boundary conditions, *i.e.,* by solving a boundary value problem (VBP).",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The Laplace Equation is linear ⇔ Superposition of flows.",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "How do we calculate pressure?",
+        "text_level": 2,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If we neglect viscosity in the N-S equation, we obtain the Euler Equation of flow:",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Then,",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Irrotaional flow assumption",
+        "text_level": 2,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Using some vector calculus",
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/48093a7de6428870328d6535e073c15ffb2e5f049a9237b7de55c69cba1c171d.jpg",
+        "image_caption": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If the flow is irrotational, then",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Bernoulli equation",
+        "text_level": 2,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "If this is valid in the whole fluid, then",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "which is the Bernoulli equation.",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 10
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Potential theory—summary",
+        "text_level": 2,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Potential theory offers a great simplification: if we know the potential, then we know the velocity and the pressure, from which we can calculate the forces acting on a floating body by integrating the pressure over the surface of the body.",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "<em>Inviscid</em> <em>fluid</em> and <em>irrotational flow</em>",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "*Potential*",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "*Flow velocity*",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "*Pressure*",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "for *most* problems related ship motion in waves, potential theory is sufficient for engineering purposes. Viscous effects are added to the models using empirical formulae or via system identification.",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Applications",
+        "text_level": 2,
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Regular waves",
+            "- Marine structures in waves"
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Regular waves in deep water",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/96b0f6dc7a7010b86eca777a8283e801bc10ced57a43f1a405385c7d4fc50e38.jpg",
+        "image_caption": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Kinematic free-surface Condition",
+        "text_level": 2,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Kinematic free-surface condition:  A fluid particle on the free surface is assumed to remain on the free surface.",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Let the free surface be defined as",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$z=\\zeta (x,y,t)$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Then, if",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$F:=z-\\zeta (x,y,t)$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$\\frac{DF}{Dt}=0$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The kinematic condition reverts to",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Hence,",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$\\frac{\\partial \\zeta }{\\partial t}+\\frac{\\partial \\varphi }{\\partial x}\\frac{\\partial \\zeta }{\\partial x}+\\frac{\\partial \\varphi }{\\partial y}\\frac{\\partial \\zeta }{\\partial y}-\\frac{\\partial \\varphi }{\\partial z}=0$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "on",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$z=\\zeta (x,y,t)$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Dynamic free-surface Conditions",
+        "text_level": 2,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Dynamic free-surface condition:  the water pressure equals the atmospheric pressure on the free surface.",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "If we choose the constant in the Bernoulli equation as",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "$C={p_{0}}/{\\rho }$",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Then,",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "$g\\zeta +\\frac{\\partial \\varphi }{\\partial t}+\\frac{1}{2}\\left[\\left(\\frac{\\partial \\varphi }{\\partial x}\\right)^{2}+\\left(\\frac{\\partial \\varphi }{\\partial y}\\right)^{2}+\\left(\\frac{\\partial \\varphi }{\\partial z}\\right)^{2}\\right]=0$",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "on",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "$z=\\zeta (x,y,t)$",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Linearised free-surface conditions",
+        "text_level": 2,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "The free-surface conditions can be linearised about the mean free-surface:",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$\\frac{\\partial \\zeta }{\\partial t}-\\frac{\\partial \\varphi }{\\partial z}=0$",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$g\\zeta +\\frac{\\partial \\varphi }{\\partial t}=0$",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "on",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$z=0$",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Combined:",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$g\\frac{\\partial \\varphi }{\\partial z}+\\frac{\\partial ^{2}\\varphi }{\\partial t^{2}}=0$",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "on",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "$z=0$",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Regular Wave linear BVP",
+        "text_level": 2,
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ba3eb9e27adf770880c1dd015404f4b68f62c82fa797f658713937f19261a9b.jpg",
+        "image_caption": [],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Regular Wave Potential",
+        "text_level": 2,
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ca383a061dcccc36fe026794281cb7fc69e7954f2bad76d4f187191d6bbd5aa.jpg",
+        "image_caption": [],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Regular wave formulae (Faltinsen, 1990)",
+        "text_level": 2,
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/4dd231219a38fa66fb4e5b630e1c8cc5e432f7c12d026f85065ceff12bd715a0.jpg",
+        "image_caption": [],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Potential theory for ships in waves",
+        "text_level": 2,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "The fluid forces are due to variations in pressure on the surface of the hull.",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "It is normally assumed that the forces (pressure) can be made of different components",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ca777aa4eafd1e0bbda804c28ef032a87ec388a647e6230c54b6afc419be169.jpg",
+        "image_caption": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Potential theory for ships in waves",
+        "text_level": 2,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Under linearity assumptions, the hydrodynamic problem is dealt as 2 separate problems and the solutions then added:",
+        "page_idx": 21
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Radiation problem: the ship is forced to oscillate in calm water."
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Diffraction problem: the ship is restrained from moving in the presence of a wave field."
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Potentials:",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "$\\Phi _{Total}=\\underbrace{\\sum_{}^{}\\Phi _{j}}_{Radiation problem}+\\underbrace{\\Phi _{Incident}+\\Phi _{Scattering}}_{Diffraction problem}$",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "$\\Phi _{j}$",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "\\- due to the motion in the j-th DOF.",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Radiation potential",
+        "text_level": 2,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Boundary conditions:",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "free surface condition (dynamic+kinematic conditions)",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "sea bed condition",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "dynamic body condition",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "radiation condition",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "$\\Phi _{rad}=\\sum_{}^{}\\Phi _{j}$",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "$\\nabla ^{2}\\Phi _{rad}=0$",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Computing forces",
+        "text_level": 2,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Forces and moments are obtained by integrating the pressure over the average wetted surface *Sw*:",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Notation: i-th component",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Radiation forces and moments:",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "DOF:",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "1-surge",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "2-sway",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "3-heave",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "4-roll",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "5-pitch",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "6-yaw",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Excitation forces (due to incident and scattered potentials) and moments:",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Faltinsen, O.M. (1990) **Sea Loads on Ships and Ocean Structures**. Cambridge University Press."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Journée, J.M.J. and W.W. Massie (2001) **Offshore Hydromechanics.** Lecture notes on offshore hydromechanics for Offshore Technology students, code OT4620. (http://www.ocp.tudelft.nl/mt/journee/)"
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 24
+    }
+]

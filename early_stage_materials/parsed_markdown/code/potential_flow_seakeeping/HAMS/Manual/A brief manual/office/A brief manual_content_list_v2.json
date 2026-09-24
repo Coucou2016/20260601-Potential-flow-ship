@@ -1,0 +1,187 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A brief manual for running HAMS",
+                        "style": [
+                            "bold"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Yingyi Liu"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Prepare the BEM mesh for the marine structure that the user wants to compute for. The mesh can be in an arbitrary format but will need a mesh converter to transform it to the HAMS mesh format. A good way is to use Rhinoceros to export the hydrodynamic CAD model to the *.gdf format of WAMIT. Then use the built-in tool \"WAMIT_MeshTran.exe\" to convert the *.gdf mesh to the HAMS mesh format just by clicking \"RunWAMIT_MeshTran.bat\", and then input manually the path and filename of the *.gdf file in the command line, or simply drag the *.gdf file to the command line. Do remember that the *.gdf file should better include both of the waterplane mesh and the submerged body mesh. The tool can automatically dispart the two meshes into the separate \"WaterplaneMesh.pnl\" and \"HullMesh.pnl\" files. Note that at the present stage, only the Windows version of the \"WAMIT_MeshTran\" program is available. Please wait for some while for the Linux version."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bf4f11f2173b0400c1149529a961412179c76a9137e77b0872e544f0cf585c7f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.1 Body mesh and waterplane mesh in Rhinoceros"
+                    },
+                    {
+                        "type": "text",
+                        "content": "TM",
+                        "style": [
+                            "superscript"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/53000e9d267465c75cebbb21077c95bc5ff312df34e068071586108a95db0de8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.2 Command line of \"RunWAMIT_MeshTran.bat\""
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Copy the \"WaterplaneMesh.pnl\" and \"HullMesh.pnl\" files to the \"Input\" Folder of HAMS. Make appropriate settings in the \"ControlFile.in\" file. There are several places that should be paid attention to:"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1) \"0_inf_frequency_limits\": set 1 if you’d like to calculate the added mass of the zero- and infinite-frequency limits or set 0 if not."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2) \"Number_of_frequencies\": following the WAMIT tradition, when a positive value is input, the next line right after this line should read a set a discrete wave frequencies (or wave periods, or wave numbers or wave lengths), see the \"Moonpool\" example in the \"CertTest\" Folder; when a negative value is input, the next two lines should read \"Minimum_frequency_Wmin\" (the minimum wave frequency, or wave period, or wave number or wave length, depending on the \"Input_frequency_type\") and \"Frequency_step\" separately, see the \"Cylinder\" example in the \"CertTest\" Folder."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3) \"Number_of_headings\": following the WAMIT tradition like \"Number_of_frequencies\"."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4) \"Number_of_field_points\": this is to specify how many field points the users want to output the field pressure or elevation. Right after this line, the coordinates of these field points are expected to be input."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5) \"If_remove_irr_freq\": set 0 if you do not want to remove the irregular frequencies and set 1 if you want to."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. In principle, the body mass matrix should be input by the users as it contains also the information for the structures above the water surface. \"WAMIT_MeshTran.exe\" can generate a \"Hydrostatic.in\" file in which the body mass matrix is calculated using only the simple information of the wetted body mesh. Therefore, the author should use this body mass matrix with caution. The External Damping Matrix and the External Restoring Matrix should be input by the users."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. After doing all the above, the user can run HAMS simply by clicking \"RunHAMS.bat\". It worth noting that, the results in the WAMIT format can be visualized easily by BEMRosetta or BEMIO, which can be downloaded here:"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "hyperlink",
+                        "content": "https://github.com/izabala123/BEMRosetta",
+                        "url": "https://github.com/izabala123/BEMRosetta"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "hyperlink",
+                        "content": "https://wec-sim.github.io/bemio/",
+                        "url": "https://wec-sim.github.io/bemio/"
+                    }
+                ]
+            }
+        }
+    ]
+]

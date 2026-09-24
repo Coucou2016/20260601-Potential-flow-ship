@@ -1,0 +1,2192 @@
+[
+    {
+        "type": "text",
+        "text": "HOW TO INCORPORATE WIND, WAVES AND OCEAN CURRENTS IN THE MARINE CRAFT EQUATIONS OF MOTION",
+        "text_level": 1,
+        "bbox": [
+            282,
+            198,
+            715,
+            244
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thor I. Fossen",
+        "bbox": [
+            433,
+            258,
+            563,
+            272
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics, Norwegian University of Science and Technology, NO-7491 Trondheim, NORWAY",
+        "bbox": [
+            315,
+            300,
+            680,
+            344
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract: This paper demystiÖes how ocean currents together with wind and wave loads ináuence the marine craft equations of motion. In the literature there exists great confusion of the use of absolute and relative velocity terms when modeling rigid-body and hydrodynamic forces. The article is useful for engineers who want to simulate and predict the motions of marine craft exposed to wind, wave and ocean currents as well as control engineers evaluating the performance of marine craft control systems. The results are also very useful for testing and tuning of integral action time constants for compensation of ocean current and 2nd-order wave-induced drift forces.",
+        "bbox": [
+            194,
+            385,
+            800,
+            512
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: Marine systems, wind, waves, ocean currents, equations of motion",
+        "bbox": [
+            196,
+            526,
+            766,
+            539
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "INTRODUCTION",
+        "text_level": 2,
+        "bbox": [
+            228,
+            596,
+            369,
+            611
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The equations of motion for underwater vehicles, ships, ocean structures and high-speed craft are usually derived using Newtonian and Lagrangian mechanics (Fossen, 1994, 2011). The resulting models are nonlinear mass-damper-springs which include rigid-body, hydrostatic and hydrodynamic generalized forces. The motions are coupled in six degrees of freedom (DOF). Marine craft are exposed to environmental forces due to wind, waves and ocean currents, which act like forcing on the mass-damper-spring system. In hydrodynamics it is common to assume linear superposition such that forcing due to wind and waves can be treated as generalized forces that can be directly added to the nonlinear equations of motion. However, generalized forces due to ocean currents do not follow the law of linear superposition and there exists much diversity and misunderstandings in the existing literature on how to include the e§ects of ocean currents in the equations of motion.",
+        "bbox": [
+            114,
+            640,
+            482,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper addresses the e§ect of ocean currents on marine craft in a tutorial perspective by using the concept of relative velocity, that is the velocity of the craft with respect to the ocean current, to effectively describe current-induced forces. Differ: ent properties and representations of the marine craft equations of motion are discussed and it is shown how the current velocity enters the equations. Nonlinear models for time-domain simulations and control systems design are presented using the compact vectorial notation of Fossen (1994, 2011).",
+        "bbox": [
+            510,
+            598,
+            880,
+            769
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. MARINE CRAFT EQUATIONS OF MOTION",
+        "text_level": 2,
+        "bbox": [
+            546,
+            778,
+            845,
+            804
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In Fossen (1991) it was shown that the coupled 6-DOF equations of a marine craft could be expressed as:",
+        "bbox": [
+            510,
+            820,
+            878,
+            860
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\boldsymbol {\\eta}} = \\mathbf {J} (\\boldsymbol {\\eta}) \\boldsymbol {\\nu} \\tag {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            653,
+            862,
+            878,
+            878
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {D} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            566,
+            879,
+            878,
+            895
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\pmb { \\eta } = [ N , E , D , \\phi , \\theta , \\psi ] ^ { \\top }$ and $\\pmb { \\nu } = [ u , v , w , p , q , r ] ^ { \\top }$ are the generalized position and velocity vectors,",
+        "bbox": [
+            510,
+            896,
+            905,
+            926
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "9th IFAC Conference on Manoeuvring and Control of Marine Craft, 2012 The International Federation of Automatic Control September 19-21, 2012. Arenzano, Italy",
+        "bbox": [
+            65,
+            28,
+            527,
+            66
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "IFAC",
+        "bbox": [
+            771,
+            24,
+            902,
+            86
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "©2012 IFAC",
+        "bbox": [
+            68,
+            932,
+            149,
+            944
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "126",
+        "bbox": [
+            484,
+            933,
+            510,
+            944
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "10.3182/20120919-3-IT-2046.00022",
+        "bbox": [
+            700,
+            932,
+            919,
+            944
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "respectively. The rotation and angular velocity transformation matrices between body coordinates (BODY) and the North-East-Down (NED) geographical reference frames are denoted $\\mathbf { R } _ { b } ^ { n }$ and $\\mathbf { T } _ { \\Theta } .$ respectively. The other quantities follow the notation of (Fossen, 1994, 2011):",
+        "bbox": [
+            115,
+            71,
+            482,
+            156
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {J} (\\boldsymbol {\\eta}) = \\left[ \\begin{array}{c c} \\mathbf {R} _ {b} ^ {n} & \\mathbf {0} _ {6 \\times 6} \\\\ \\mathbf {0} _ {6 \\times 6} & \\mathbf {T} _ {\\Theta} \\end{array} \\right] \\\\ \\mathbf {M} = \\mathbf {M} _ {R B} + \\mathbf {M} _ {A} \\\\ \\mathbf {C} (\\boldsymbol {\\nu}) = \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) + \\mathbf {C} _ {A} (\\boldsymbol {\\nu}) \\\\ \\mathbf {D} (\\boldsymbol {\\nu}) \\\\ \\mathbf {g} (\\boldsymbol {\\eta}) \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            117,
+            164,
+            497,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            121,
+            297,
+            134,
+            306
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            300,
+            166,
+            473,
+            223
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            300,
+            224,
+            497,
+            250
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            300,
+            252,
+            425,
+            265
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            300,
+            266,
+            477,
+            293
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            300,
+            294,
+            477,
+            307
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The subscripts RB and A are used for the rigidbody and added mass terms, respectively. The rigid-body system inertia matrix $\\mathbf { M } _ { R B }$ satisÖes:",
+        "bbox": [
+            115,
+            317,
+            482,
+            361
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {R B} = \\mathbf {M} _ {R B} ^ {\\top} > 0, \\quad \\dot {\\mathbf {M}} _ {R B} = \\mathbf {0} _ {6 \\times 6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            169,
+            379,
+            426,
+            397
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {R B} = \\left[ \\begin{array}{c c} m \\mathbf {I} _ {3 \\times 3} & - m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) & \\mathbf {I} _ {b} \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            171,
+            400,
+            384,
+            432
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            115,
+            442,
+            164,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {S} (\\boldsymbol {\\lambda}) = - \\mathbf {S} ^ {\\top} (\\boldsymbol {\\lambda}) = \\left[ \\begin{array}{c c c} 0 & - \\lambda_ {3} & \\lambda_ {2} \\\\ \\lambda_ {3} & 0 & - \\lambda_ {1} \\\\ - \\lambda_ {2} & \\lambda_ {1} & 0 \\end{array} \\right], \\boldsymbol {\\lambda} = \\left[ \\begin{array}{l} \\lambda_ {1} \\\\ \\lambda_ {2} \\\\ \\lambda_ {3} \\end{array} \\right] \\tag {3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            460,
+            482,
+            519
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "is the cross-product operator deÖned such that $\\pmb { \\lambda } \\times \\mathbf { a } : = \\mathbf { S } ( \\pmb { \\lambda } ) \\mathbf { a }$ .",
+        "bbox": [
+            115,
+            520,
+            480,
+            548
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The matrix ${ \\bf C } _ { R B }$ in (2) represents the Coriolis $\\boldsymbol { \\omega } _ { b / n } ^ { b } \\times \\mathbf { v } _ { b / n } ^ { b }$ and the centripetal vector term $\\boldsymbol { \\omega } _ { b / n } ^ { b } \\times ( \\boldsymbol { \\omega } _ { b / n } ^ { b } \\times { \\bf r } _ { g } ^ { b } )$ . Contrary to the representation of $\\mathbf { M } _ { R B } $ , it is possible to Önd a large number of representations for the matrix $\\mathbf { C } _ { R B }$ : We will present some useful representations below.",
+        "bbox": [
+            115,
+            554,
+            482,
+            643
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Theorem 1. (Coriolis-Centripetal Matrix from M). Consider the $6 \\times 6$ constant system inertia matrix:",
+        "bbox": [
+            115,
+            657,
+            489,
+            686
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} = \\mathbf {M} ^ {\\top} = \\left[ \\begin{array}{l l} \\mathbf {M} _ {1 1} & \\mathbf {M} _ {1 2} \\\\ \\mathbf {M} _ {2 1} & \\mathbf {M} _ {2 2} \\end{array} \\right] > 0 \\tag {4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            186,
+            694,
+            480,
+            726
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathbf { M } _ { 2 1 } = \\mathbf { M } _ { 1 2 } ^ { \\top }$ . Then the Coriolis-centripetal matrix can always be parameterized such that $\\mathbf { C } ( \\nu ) = - \\mathbf { C } ^ { \\top } ( \\nu )$ by choosing:",
+        "bbox": [
+            115,
+            733,
+            482,
+            778
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {C} (\\boldsymbol {\\nu}) = \\left[ \\begin{array}{c} \\mathbf {0} _ {3 \\times 3} \\\\ - \\mathbf {S} (\\mathbf {M} _ {1 1} \\boldsymbol {\\nu} _ {1} + \\mathbf {M} _ {1 2} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right. \\\\ \\left. \\begin{array}{l} - \\mathbf {S} (\\mathbf {M} _ {1 1} \\boldsymbol {\\nu} _ {1} + \\mathbf {M} _ {1 2} \\boldsymbol {\\nu} _ {2}) \\\\ - \\mathbf {S} (\\mathbf {M} _ {2 1} \\boldsymbol {\\nu} _ {1} + \\mathbf {M} _ {2 2} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right] \\tag {5} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            159,
+            795,
+            482,
+            862
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "with $\\nu _ { 1 } : = [ u , v , w ] ^ { \\top }$ and $\\pmb { \\nu } _ { 2 } : = [ p , q , r ] ^ { \\top }$ .",
+        "bbox": [
+            115,
+            871,
+            418,
+            889
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Proof: Sagatun and Fossen (1991).",
+        "bbox": [
+            115,
+            910,
+            381,
+            926
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The rigid-body Coriolis and centripetal matrix $\\mathbf { C } _ { R B } ( \\nu )$ can always be parametrized such that it is skew-symmetrical:",
+        "bbox": [
+            510,
+            71,
+            878,
+            112
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) = - \\mathbf {C} _ {R B} ^ {\\top} (\\boldsymbol {\\nu}), \\quad \\forall \\boldsymbol {\\nu} \\in \\mathbb {R} ^ {6} \\tag {6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            566,
+            117,
+            878,
+            135
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The skew-symmetric property is very useful when designing nonlinear motion control systems since the quadratic form $\\nu ^ { \\top } { \\bf C } _ { R B } ( \\nu ) \\nu ~ \\equiv ~ 0$ : This is exploited in energy-based designs where Lyapunov functions play a key role. There exists several parametrizations (Fossen and Fjellstad, 1995) that satisfy (6).",
+        "bbox": [
+            510,
+            146,
+            880,
+            247
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Lagrangian parametrization: Application of Theorem 1 with $\\textbf { M } = \\textbf { M } _ { R B }$ yields the following expression:",
+        "bbox": [
+            510,
+            250,
+            880,
+            293
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) = \\left[ \\begin{array}{c} \\mathbf {0} _ {3 \\times 3} \\\\ - m \\mathbf {S} (\\boldsymbol {\\nu} _ {1}) - m \\mathbf {S} (\\mathbf {S} (\\boldsymbol {\\nu} _ {2}) \\mathbf {r} _ {g} ^ {b}) \\end{array} \\right. \\\\ \\left. \\begin{array}{c} - m \\mathbf {S} (\\boldsymbol {\\nu} _ {1}) - m \\mathbf {S} (\\mathbf {S} (\\boldsymbol {\\nu} _ {2}) \\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {S} (\\boldsymbol {\\nu} _ {1}) \\mathbf {r} _ {g} ^ {b}) - \\mathbf {S} (\\mathbf {I} _ {b} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right] (7) \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            532,
+            307,
+            878,
+            376
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Linear velocity-independent parametrization: By using the cross-product property $\\begin{array} { r l } { \\mathbf { S } ( \\pmb { \\nu } _ { 1 } ) \\pmb { \\nu } _ { 2 } } & { { } = } \\end{array}$ $- \\mathbf { S } ( \\pmb { \\nu } _ { 2 } ) \\pmb { \\nu } _ { 1 }$ , it is possible to move $\\mathbf { S } ( \\nu _ { 1 } ) \\nu _ { 2 }$ from $C _ { R B } ^ { \\{ 1 2 \\} }$ to $C _ { R B } ^ { \\{ 1 1 \\} }$ in (7). This gives an expression for $\\mathbf { C } _ { R B } ( \\nu )$ that is independent of linear velocity $\\nu _ { 1 } \\colon$ :",
+        "bbox": [
+            512,
+            392,
+            878,
+            466
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) = \\left[ \\begin{array}{c c} m \\mathbf {S} (\\boldsymbol {\\nu} _ {2}) & - m \\mathbf {S} (\\boldsymbol {\\nu} _ {2}) \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\mathbf {S} (\\boldsymbol {\\nu} _ {2}) & - \\mathbf {S} (\\mathbf {I} _ {b} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right] (8)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            522,
+            470,
+            878,
+            504
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Remark 1. Formula (8) is useful when irrotationa ocean currents enter the equations of motion since $\\mathbf { C } _ { R B } ( \\nu )$ does not depend on the linear velocity $\\nu _ { 1 }$ (uses only angular velocity $\\nu _ { 2 }$ and lever arm $\\mathbf { r } _ { g } ^ { b } )$ . This is discussed in Section 3.2.",
+        "bbox": [
+            512,
+            510,
+            880,
+            581
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Gravitational and buoyancy forces for surface vessels show a linear behavior $\\mathbf { g } ( \\pmb { \\eta } ) = \\mathbf { G } \\pmb { \\eta }$ where",
+        "bbox": [
+            510,
+            585,
+            878,
+            614
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {G} = \\left[ \\begin{array}{c c c c c c} 0 & 0 & 0 & 0 & 0 & 0 \\\\ 0 & 0 & 0 & 0 & 0 & 0 \\\\ 0 & 0 & - Z _ {z} & 0 & - Z _ {\\theta} & 0 \\\\ 0 & 0 & 0 & - K _ {\\phi} & 0 & 0 \\\\ 0 & 0 & - M _ {z} & 0 & - M _ {\\theta} & 0 \\\\ 0 & 0 & 0 & 0 & 0 & 0 \\end{array} \\right] \\tag {9}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            574,
+            618,
+            878,
+            706
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "For underwater vehicles",
+        "bbox": [
+            512,
+            709,
+            692,
+            722
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {g} (\\boldsymbol {\\eta}) = \\left[ \\begin{array}{c} (W - B) \\sin (\\theta) \\\\ - (W - B) \\cos (\\theta) \\sin (\\phi) \\\\ - (W - B) \\cos (\\theta) \\cos (\\phi) \\\\ - (y _ {g} W - y _ {b} B) \\cos (\\theta) \\cos (\\phi) \\\\ (z _ {g} W - z _ {b} B) \\sin (\\theta) \\\\ - (x _ {g} W - x _ {b} B) \\cos (\\theta) \\sin (\\phi) \\end{array} \\right. \\\\ \\left. \\begin{array}{l} + (z _ {g} W - z _ {b} B) \\cos (\\theta) \\sin (\\phi) \\\\ + (x _ {g} W - x _ {b} B) \\cos (\\theta) \\cos (\\phi) \\\\ - (y _ {g} W - y _ {b} B) \\sin (\\theta) \\end{array} \\right] (1 0) \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            542,
+            736,
+            878,
+            906
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where the gravitational and buoyancy forces act through the centers of gravity (CG) and buoyancy (CB ) deÖned by the vectors $\\mathbf { r } _ { g } ^ { b } : = [ x _ { g } , y _ { g } , z _ { g } ] ^ { \\top }$ and $\\mathbf { r } _ { b } ^ { b } : = [ x _ { b } , y _ { b } , z _ { b } ] ^ { \\top }$ ; respectively.",
+        "bbox": [
+            512,
+            912,
+            878,
+            926
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "IFAC MCMC 2012",
+        "bbox": [
+            67,
+            29,
+            181,
+            41
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "September 19-21, 2012. Arenzano, Italy",
+        "bbox": [
+            67,
+            41,
+            319,
+            55
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "127",
+        "bbox": [
+            485,
+            933,
+            510,
+            944
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/cc7c9ee701bdaed665e6853fea324657b456f1e4b0f6d2a164182bf33d83e89d.jpg",
+        "image_caption": [
+            "Fig. 1. Wind coe¢ cients $C _ { X } , C _ { Y } , C _ { K }$ and $C _ { N }$ for a research vessel."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            117,
+            82,
+            505,
+            336
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            115,
+            397,
+            482,
+            444
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2. SUPERPOSITION OF WIND AND WAVE-INDUCED FORCES",
+        "text_level": 2,
+        "bbox": [
+            151,
+            480,
+            445,
+            507
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For control systems design it is common to assume the principle of superposition when considering wind and wave-induced forces such that (2) takes the following form:",
+        "bbox": [
+            115,
+            524,
+            482,
+            580
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {D} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\tag {11}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            589,
+            480,
+            618
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $\\pmb { \\tau } _ { \\mathrm { w i n d } } \\in \\mathbb { R } ^ { 6 }$ and $\\tau _ { \\mathrm { w a v e } } \\in \\mathbb { R } ^ { 6 }$ represent the generalized forces due to wind and waves.",
+        "bbox": [
+            115,
+            617,
+            482,
+            646
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.1 Wind forces and moments",
+        "text_level": 2,
+        "bbox": [
+            115,
+            668,
+            344,
+            682
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Wind can be deÖned as the movement of air relative to the surface of the Earth. For a marine craft moving at a forward speed, the wind forces and moments:",
+        "bbox": [
+            115,
+            697,
+            482,
+            753
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {\\text { wind }} = \\frac {1}{2} \\rho_ {a} V _ {r w} ^ {2} \\left[ \\begin{array}{c} C _ {X} (\\gamma_ {r w}) A _ {F w} \\\\ C _ {Y} (\\gamma_ {r w}) A _ {L w} \\\\ C _ {Z} (\\gamma_ {r w}) A _ {F w} \\\\ C _ {K} (\\gamma_ {r w}) A _ {L w} H _ {L _ {w}} \\\\ C _ {M} (\\gamma_ {r w}) A _ {F w} H _ {F _ {w}} \\\\ C _ {N} (\\gamma_ {r w}) A _ {L w} L _ {o a} \\end{array} \\right] \\tag {12}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            139,
+            757,
+            480,
+            847
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "are functions of relative wind speed $V _ { r w }$ and angle of attack $\\gamma _ { r w }$ according to:",
+        "bbox": [
+            115,
+            852,
+            482,
+            882
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV _ {r w} = \\sqrt {u _ {r w} ^ {2} + v _ {r w} ^ {2}} \\tag {13}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            206,
+            888,
+            480,
+            906
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\gamma_ {r w} = - \\mathrm{atan2} (v _ {r w}, u _ {r w}) \\tag {14}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            208,
+            908,
+            480,
+            923
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "which both are functions of the relative velocities:",
+        "bbox": [
+            512,
+            71,
+            878,
+            85
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nu _ {r w} = u - u _ {w} \\tag {15}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            643,
+            91,
+            878,
+            105
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nv _ {r w} = v - v _ {w} \\tag {16}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            645,
+            108,
+            877,
+            122
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The nondimensional wind coe¢ cients $C _ { X } , \\ C _ { Y }$ ; $C _ { Z } , C _ { K } , C _ { M }$ and $C _ { N }$ are usually computed using $h = 1 0$ m as reference height while $\\rho _ { a }$ is the air density. The frontal and lateral projected wind areas are denoted by $A _ { F w }$ and $A _ { L w }$ while $L _ { o a }$ is the length over all. The mean heights of the areas $A _ { F w }$ and $A _ { L w }$ are denoted by $H _ { L _ { w } }$ and $H _ { F _ { w } }$ , respectively. Figure 1 shows four wind coe¢ cients for a typical research vessel (Blendermann, 1994). Wind coe¢ cients for other vessels are found in Fossen (2011) and references therein.",
+        "bbox": [
+            510,
+            126,
+            880,
+            282
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.2 Wave-induced forces and moments",
+        "text_level": 2,
+        "bbox": [
+            512,
+            290,
+            801,
+            304
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The Örst- and second-order wave forces for varying wave directions $\\beta _ { i }$ and wave frequencies $\\omega _ { k }$ are denoted \u001c\\~fdofg ( $\\tilde { \\tau } _ { \\mathrm { w a v e 1 } } ^ { \\mathrm { \\{ d o f \\} } } ( \\omega _ { k } , \\beta _ { i } )$ and $\\tilde { \\tau } _ { \\mathrm { w a v e 2 } } ^ { \\{ \\mathrm { d o f } \\} } ( \\omega _ { k } , \\beta _ { i } )$ where dof $\\in \\ \\{ 1 , 2 , 3 , 4 , 5 , 6 \\}$ . The normalized force response amplitude operators (RAOs) are complex variables given by (WAMIT Inc., 2010):",
+        "bbox": [
+            510,
+            316,
+            878,
+            404
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) = \\left| \\frac {\\tilde {\\tau} _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k} , \\beta_ {i})}{\\rho g A _ {k}} \\right| e ^ {j \\angle \\tilde {\\tau} _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i})}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            517,
+            407,
+            872,
+            445
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta_ {i}) = \\left| \\frac {\\tilde {\\tau} _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k} , \\beta_ {i})}{\\rho g A _ {k} ^ {2}} \\right| e ^ {j \\angle \\tilde {\\tau} _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta_ {i})}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            447,
+            872,
+            485
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The output from the hydrodynamic code is usually an ASCII Öle containing RAOs in table format. Let us denote the imaginary and real parts of the force RAOs by; $\\mathrm { I m } _ { \\mathrm { w a v e 1 } } \\{ \\mathrm { d o f } \\} ( k , i )$ and $\\mathrm { R e } _ { \\mathrm { w a v e 1 } } \\{ \\mathrm { d o f } \\} ( k , i )$ . The amplitudes and phases for di§erent frequencies $\\omega _ { k }$ and wave directions $\\beta _ { i }$ for the Örst-order wave-induced forces can be computed according to the formulae:",
+        "bbox": [
+            510,
+            488,
+            880,
+            601
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\left| F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) \\right| = \\left(\\text { Im } _ {\\text { wave1 }} \\{\\text { dof } \\} (k, i) ^ {2} \\right. \\\\ \\left. + \\operatorname{Re} _ {\\text { wave1 }} \\{\\mathrm{dof} \\} (k, i) ^ {2}\\right) ^ {1 / 2} \\tag {17} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            526,
+            604,
+            877,
+            649
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\angle F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) = \\text { atan2 } \\left(\\text { Im } _ {\\text { wave1 }} \\{\\text { dof } \\} (k, i), \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            527,
+            651,
+            853,
+            669
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{Re} _ {\\text { wave1 }} \\{\\text { dof } \\} (k, i)) \\tag {18}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            647,
+            670,
+            877,
+            686
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The amplitudes and phases for the second-order mean forces are:",
+        "bbox": [
+            510,
+            689,
+            878,
+            715
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left| F _ {\\text { wave2 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) \\right| = \\text { Re } _ {\\text { wave2 }} \\{\\text { dof } \\} (k, i) \\tag {19}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            546,
+            718,
+            877,
+            741
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\angle F _ {\\text { wave2 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) = 0 \\tag {20}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            544,
+            743,
+            877,
+            762
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Since the Örst- and second-order wave forces are represented in terms of the complex variables dof $F _ { \\mathrm { w a v e 1 } } ^ { \\mathrm { \\ ' f d o f } } ( \\omega _ { k } , \\beta _ { i } )$ $F _ { \\mathrm { w a v e 2 } } ^ { \\{ \\mathrm { d o f } \\} } ( \\omega _ { k } , \\beta _ { i } )$ for sinusoidal excitations can be computed using di§erent wave spectra. A frequently used family of wave spectra is:",
+        "bbox": [
+            510,
+            772,
+            880,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS (\\omega) = A \\omega^ {- 5} \\exp (- B \\omega^ {- 4}) \\tag {21}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            594,
+            863,
+            877,
+            879
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where di§erent values for A and B are used. These values depend on geographical location and wind speed (see Chapter 8.2, Fossen 2011).",
+        "bbox": [
+            510,
+            883,
+            880,
+            926
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "IFAC MCMC 2012",
+        "bbox": [
+            67,
+            29,
+            181,
+            41
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "September 19-21, 2012. Arenzano, Italy",
+        "bbox": [
+            67,
+            42,
+            319,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "128",
+        "bbox": [
+            485,
+            933,
+            510,
+            944
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e843defa99c540089b93706e82e6cab85d3049e776d390dd2cc93080ac29811.jpg",
+        "image_caption": [
+            "Fig. 2. Computation of Örst- and second-order wave-induced forces from force RAOs."
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Sea state H_s,T_z\"] --> B[\"Wave spectrum S(ω)\"]\n  B --> C[\"Wave amplitude A_k\"]\n  C --> D[\"1st-order Force RAO\"]\n  D --> E[\"1st-order wave-induced force τ_wave1\"]\n  B --> F[\"2nd-order Force RAO\"]\n  F --> G[\"2nd-order wave drift force τ_wave2\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            122,
+            71,
+            480,
+            151
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "When computing the wave-induced forces, linear superposition is employed as illustrated in Fig. 2. The relationship between the a wave spectrum $S ( \\omega _ { k } )$ and the wave amplitude $A _ { k }$ for a wave component k is (Faltinsen, 1990):",
+        "bbox": [
+            115,
+            193,
+            482,
+            266
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {1}{2} A _ {k} ^ {2} = S (\\omega_ {k}) \\Delta \\omega \\tag {22}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            233,
+            271,
+            480,
+            298
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where \u0001! is a constant di§erence between the frequencies. Let the wave-induced forces in 6 DOF be denoted by the vectors:",
+        "bbox": [
+            115,
+            302,
+            482,
+            344
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {\\text { wave1 }} = \\left[ \\tau_ {\\text { wave1 }} ^ {\\{1 \\}}, \\tau_ {\\text { wave1 }} ^ {\\{2 \\}},..., \\tau_ {\\text { wave1 }} ^ {\\{6 \\}} \\right] ^ {\\top}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            161,
+            349,
+            433,
+            376
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {\\text { wave2 }} = \\left[ \\tau_ {\\text { wave2 }} ^ {\\{1 \\}}, \\tau_ {\\text { wave2 }} ^ {\\{2 \\}},..., \\tau_ {\\text { wave2 }} ^ {\\{6 \\}} \\right] ^ {\\top}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            164,
+            378,
+            433,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "For the no spreading case, the wave direction $\\beta =$ constant such that:",
+        "bbox": [
+            115,
+            407,
+            482,
+            436
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tau_ {\\mathrm{wave1}} ^ {\\{\\mathrm{dof} \\}} = \\sum_ {k = 1} ^ {N} \\rho g \\left| F _ {\\mathrm{wave1}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta) \\right|\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            439,
+            344,
+            479
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA _ {k} \\cos \\left(\\omega_ {e} (U, \\omega_ {k}, \\beta) t + \\angle F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta) + \\epsilon_ {k}\\right) \\tag {23}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            161,
+            480,
+            490,
+            518
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\tau_ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} = \\sum_ {k = 1} ^ {N} \\rho g \\left| F _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta) \\right|\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            521,
+            344,
+            558
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA _ {k} ^ {2} \\cos \\left(\\omega_ {e} (U, \\omega_ {k}, \\beta) t + \\epsilon_ {k}\\right) \\tag {24}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            163,
+            561,
+            480,
+            577
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            115,
+            583,
+            164,
+            595
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\omega_ {e} (U, \\omega_ {k}, \\beta) = \\omega_ {k} - \\frac {\\omega_ {k} ^ {2}}{g} U \\cos (\\beta) \\tag {25}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            179,
+            600,
+            480,
+            631
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "is the encounter frequency. The assumption that = constant can be relaxed to model spreading of the main wave propagation direction (see Chapter 8.3, Fossen 2011).",
+        "bbox": [
+            115,
+            634,
+            482,
+            692
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3. EQUATIONS OF MOTION INCLUDING OCEAN CURRENTS",
+        "text_level": 2,
+        "bbox": [
+            129,
+            719,
+            468,
+            747
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Ocean currents are horizontal and vertical circulation systems of ocean waters produced by gravity, wind friction and water density variation in different parts of the ocean. Besides wind-generated currents, the heat exchange at the sea surface together with salinity changes, develop an additional sea current component, usually referred to as thermohaline currents.",
+        "bbox": [
+            115,
+            762,
+            482,
+            875
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The oceans are conveniently divided into two water spheres, the cold and warm water sphere. Since the Earth is rotating, the Coriolis force will try to turn the major currents to the East in the northern hemisphere and West in the southern hemisphere. Finally, the major ocean circulations will also have a tidal component arising from planetary interactions and gravity. In coastal regions and fjords, tidal components can reach very high speeds, in fact speeds of 2ñ3 m/s or more have been measured.",
+        "bbox": [
+            115,
+            883,
+            482,
+            926
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            510,
+            71,
+            880,
+            184
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The forces on a marine craft due to ocean currents can be accounted for by replacing the generalized velocity vector in the hydrodynamic terms with relative velocities:",
+        "bbox": [
+            510,
+            192,
+            880,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\nu} _ {r} = \\boldsymbol {\\nu} - \\boldsymbol {\\nu} _ {c} \\tag {26}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            648,
+            255,
+            877,
+            269
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\nu _ { c } \\in \\mathbb { R } ^ { 6 }$ is the velocity of the ocean current expressed in BODY.",
+        "bbox": [
+            510,
+            273,
+            878,
+            302
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "DeÖnition 1. (Irrotational áuid). The generalized ocean current velocity of an irrotational áuid is:",
+        "bbox": [
+            512,
+            315,
+            878,
+            344
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\nu} _ {c} = \\left[ \\underbrace {u _ {c} , v _ {c} , w _ {c}} _ {\\mathbf {v} _ {c} ^ {b}}, 0, 0, 0 \\right] ^ {\\top} \\tag {27}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            606,
+            347,
+            877,
+            382
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathbf { v } _ { c } ^ { b } = [ u _ { c } , v _ { c } , w _ { c } ] ^ { \\top }$ is the linear velocity.",
+        "bbox": [
+            512,
+            387,
+            848,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The ocean current linear velocity vector satisÖes:",
+        "bbox": [
+            512,
+            423,
+            877,
+            437
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {v} _ {c} ^ {n} = \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\mathbf {v} _ {c} ^ {b} \\tag {28}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            630,
+            441,
+            877,
+            458
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\begin{array} { r } { \\Theta _ { n b } ~ = ~ [ \\phi , \\theta , \\psi ] ^ { \\top } } \\end{array}$ are the Euler angles between BODY and NED, and $\\mathbf { R } _ { b } ^ { n } ( \\Theta _ { n b } ) \\in S O ( 3 )$ is the corresponding rotation matrix.",
+        "bbox": [
+            510,
+            461,
+            878,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "DeÖnition 2. (Irrotational constant ocean current). An irrotational constant ocean current in NED satisÖes:",
+        "bbox": [
+            512,
+            518,
+            889,
+            558
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\mathbf {v}} _ {c} ^ {n} = \\dot {\\mathbf {R}} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\mathbf {v} _ {c} ^ {b} + \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\dot {\\mathbf {v}} _ {c} ^ {b} := \\mathbf {0} \\tag {29}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            544,
+            564,
+            877,
+            581
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            512,
+            586,
+            561,
+            598
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\mathbf {R}} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) = \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) \\tag {30}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            586,
+            602,
+            877,
+            621
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "This implies that the ocean current linear velocity vector in BODY coordinates is given by:",
+        "bbox": [
+            510,
+            624,
+            878,
+            653
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\mathbf {v}} _ {c} ^ {b} = - \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) \\mathbf {v} _ {c} ^ {b} \\tag {31}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            628,
+            656,
+            877,
+            674
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.1 Equations of Motion including Ocean Currents",
+        "text_level": 2,
+        "bbox": [
+            512,
+            700,
+            882,
+            714
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In order to simulate irrotational ocean currents and their e§ect on marine craft motion, the following model can be applied:",
+        "bbox": [
+            510,
+            727,
+            878,
+            770
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\underbrace {\\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta})} _ {\\text { rigid - body   and   hydrostatic   terms }} \\\\ + \\underbrace {\\mathbf {M} _ {A} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} _ {A} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} + \\mathbf {D} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r}} _ {\\text { hydrodynamic   terms }} \\\\ = \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\tag {32} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            531,
+            776,
+            877,
+            863
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            512,
+            868,
+            561,
+            879
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\nu} _ {r} = \\left[ \\begin{array}{c} \\mathbf {v} ^ {b} - \\mathbf {v} _ {c c} ^ {b} \\\\ \\boldsymbol {\\omega} _ {b / n} ^ {b} \\end{array} \\right] \\tag {33}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            636,
+            877,
+            877,
+            910
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "is the relative velocity vector. Notice that the rigid-body kinetics is independent of the ocean current.",
+        "bbox": [
+            510,
+            912,
+            878,
+            926
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "IFAC MCMC 2012",
+        "bbox": [
+            67,
+            29,
+            181,
+            41
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "September 19-21, 2012. Arenzano, Italy",
+        "bbox": [
+            67,
+            41,
+            319,
+            55
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "129",
+        "bbox": [
+            485,
+            933,
+            510,
+            944
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            115,
+            71,
+            482,
+            99
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2 Equations of Relative Velocity",
+        "text_level": 2,
+        "bbox": [
+            115,
+            110,
+            374,
+            124
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "It is possible to simplify (32) by exploiting the structure of ${ \\bf C } _ { R B } ( \\nu _ { r } )$ :",
+        "bbox": [
+            115,
+            137,
+            482,
+            167
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Theorem 2. If the Coriolis and centripetal matrix ${ \\bf C } _ { R B } ( \\nu _ { r } )$ is parametrized independent of linear velocity $\\nu _ { 1 } ~ = ~ [ u , v , w ] ^ { \\top }$ , for instance by using (8), and the ocean current is irrotational and constant (DeÖnition 2), the rigid-body kinetics satisÖes (HegrenÊs, 2010):",
+        "bbox": [
+            115,
+            180,
+            482,
+            266
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} \\equiv \\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} (3 4)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            124,
+            271,
+            480,
+            287
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "PROOF. Since the Coriolis and centripetal matrix represented by (8) is independent of linear velocity $\\pmb { \\nu } _ { 1 } = [ u , v , w ] ^ { \\top }$ , it follows that $\\mathbf { C } _ { R B } ( \\nu _ { r } ) =$ $\\mathbf { C } _ { R B } ( \\nu )$ . The property:",
+        "bbox": [
+            115,
+            307,
+            482,
+            365
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} _ {c} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {c} = \\mathbf {0} \\tag {35}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            200,
+            370,
+            480,
+            386
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "is proven by expanding the matrices $\\mathbf { M } _ { R B }$ and ${ \\bf C } _ { R B } ( \\nu _ { r } )$ ; and corresponding acceleration and velocity vectors according to:",
+        "bbox": [
+            115,
+            391,
+            482,
+            434
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\left[ \\begin{array}{c c} m \\mathbf {I} _ {3 \\times 3} & - m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) & \\mathbf {I} _ {b} \\end{array} \\right] \\left[ \\begin{array}{c} - \\mathbf {S} (\\pmb {\\omega} _ {b / n} ^ {b}) \\mathbf {v} _ {c} ^ {b} \\\\ \\mathbf {0} _ {3 \\times 1} \\end{array} \\right] \\\\ + \\left[ \\begin{array}{c c} m \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) & - m \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) & - \\mathbf {S} (\\mathbf {I} _ {b} \\boldsymbol {\\omega} _ {b / n} ^ {b}) \\end{array} \\right] \\left[ \\begin{array}{c} \\mathbf {v} _ {c} ^ {b} \\\\ \\mathbf {0} _ {3 \\times 1} \\end{array} \\right] = \\mathbf {0} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            439,
+            500,
+            513
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Finally, it follows that:",
+        "bbox": [
+            115,
+            516,
+            289,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {M} _ {R B} \\dot {\\pmb {\\nu}} + \\mathbf {C} _ {R B} (\\pmb {\\nu}) \\pmb {\\nu} = \\mathbf {M} _ {R B} [ \\dot {\\pmb {\\nu}} _ {r} + \\dot {\\pmb {\\nu}} _ {c} ] \\\\ + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) [ \\boldsymbol {\\nu} _ {r} + \\boldsymbol {\\nu} _ {c} ] \\\\ = \\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} \\tag {36} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            129,
+            536,
+            480,
+            599
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Theorem 2 when applied to (32) gives the di§erential equations:",
+        "bbox": [
+            115,
+            620,
+            482,
+            648
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\boldsymbol {\\eta}} = \\mathbf {J} (\\boldsymbol {\\eta}) \\boldsymbol {\\nu} _ {r} + \\left[ \\begin{array}{c} \\mathbf {v} _ {c} ^ {n} \\\\ \\mathbf {0} \\end{array} \\right] \\tag {37}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            220,
+            652,
+            480,
+            684
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} + \\mathbf {D} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\tag {38}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            688,
+            497,
+            717
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathbf { M } = \\mathbf { M } _ { R B } + \\mathbf { M } _ { A }$ and $\\mathbf { C } ( \\pmb { \\nu } _ { r } ) = \\mathbf { C } _ { R B } ( \\pmb { \\nu } _ { r } ) -$ + ${ \\bf C } _ { A } ( \\pmb { \\nu } _ { r } )$ . Notice that only $\\nu _ { r }$ and not \u0017 is used in (38) if compared to (32). The model (37)ñ(38) includes the bias $\\dot { \\mathbf { v } } _ { c } ^ { n } = \\mathbf { 0 }$ at the kinematic level while (32) models drift due to ocean currents at the kinetic level using $\\pmb { \\nu } _ { r } = \\pmb { \\nu } - \\pmb { \\nu } _ { c }$ .",
+        "bbox": [
+            115,
+            717,
+            482,
+            802
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.3 Equations of Motion for Zero Speed",
+        "text_level": 2,
+        "bbox": [
+            115,
+            813,
+            415,
+            827
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For low-speed applications such as DP, ocean currents and damping can be modeled by three current coe¢ cients $C _ { X } , C _ { Y }$ and $C _ { N }$ . These can be experimentally obtained using scale models in wind tunnels. The resulting forces are measured on the model, which is restrained from moving.",
+        "bbox": [
+            115,
+            840,
+            482,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/53a81f6f9c103f4ef34347d63fe4738b17e511f4f6c011429ef0a66c10232554.jpg",
+        "image_caption": [
+            "Fig. 3. Current speed $V _ { c } ,$ current direction $\\beta _ { c }$ and current angle of attack $\\gamma _ { c }$ relative bow."
+        ],
+        "image_footnote": [],
+        "content": "y_b\nV_c\nβ_c\nz_b\nψ\nx_b\nγ_c\nNorth\nEast",
+        "sub_type": "text_image",
+        "bbox": [
+            524,
+            71,
+            870,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In many textbooks and papers, for instance Blendermann (1994), wind and current coe¢ cients are deÖned relative to the bow using a counter clockwise rotation $\\gamma _ { c }$ (see Figure 3). The current forces on a marine craft at rest can be expressed in terms of the area-based current coe¢ cients $C _ { X } , C _ { Y }$ and $C _ { N }$ as:",
+        "bbox": [
+            510,
+            344,
+            880,
+            443
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX _ {\\text { current }} = \\frac {1}{2} \\rho A _ {F c} C _ {X} (\\gamma_ {c}) V _ {c} ^ {2} \\tag {39}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            579,
+            447,
+            878,
+            474
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nY _ {\\text { current }} = \\frac {1}{2} \\rho A _ {L c} C _ {Y} (\\gamma_ {c}) V _ {c} ^ {2} \\tag {40}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            583,
+            475,
+            878,
+            502
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nN _ {\\text { current }} = \\frac {1}{2} \\rho A _ {L c} L _ {o a} C _ {N} (\\gamma_ {c}) V _ {c} ^ {2} \\tag {41}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            579,
+            502,
+            877,
+            529
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $V _ { c }$ is the speed of the ocean current. The frontal and lateral projected currents areas are denoted $A _ { F c }$ and $A _ { L c } ,$ respectively while $L _ { o a }$ is the length over all and $\\rho$ is the density of water.",
+        "bbox": [
+            510,
+            533,
+            878,
+            590
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For vehicles at rest and motions limited to surge, sway and yaw, ocean currents are linearly superimposed according to:",
+        "bbox": [
+            510,
+            598,
+            880,
+            640
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {D} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\\\ \\boldsymbol {\\tau} _ {\\text { current }} + \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            527,
+            649,
+            862,
+            681
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$\\mathrm { w h e r e } \\ \\tau _ { \\mathrm { c u r r e n t } } = [ X _ { \\mathrm { c u r r e n t } } , Y _ { \\mathrm { c u r r e n t } } , N _ { \\mathrm { c u r r e n t } } ] ^ { \\top } .$",
+        "bbox": [
+            512,
+            688,
+            847,
+            705
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The current coe¢ cients can also be used at forward speed $U > 0$ and related to the surge resistance, cross-áow drag and the Munk moment used in maneuvering theory by using the concept of relative velocity (see Chapter 7.3, Fossen 2011).",
+        "bbox": [
+            510,
+            709,
+            878,
+            782
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4. OCEAN CURRENT SIMULATIONMODELS",
+        "text_level": 2,
+        "bbox": [
+            549,
+            810,
+            842,
+            839
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let the ocean current speed be denoted by $V _ { c }$ while its direction relative to the moving craft is expressed in terms of two angles: angle of attack $\\alpha _ { c }$ and sideslip angle $\\beta _ { c }$ as shown in Figure 4. For computer simulations the ocean current speed and direction can be generated by using Örst-order GaussñMarkov processes:",
+        "bbox": [
+            510,
+            854,
+            880,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "IFAC MCMC 2012",
+        "bbox": [
+            67,
+            29,
+            181,
+            41
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "September 19-21, 2012. Arenzano, Italy",
+        "bbox": [
+            67,
+            42,
+            319,
+            54
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "130",
+        "bbox": [
+            485,
+            933,
+            510,
+            944
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            115,
+            71,
+            482,
+            99
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {V} _ {c} + \\mu_ {1} V _ {c} = w _ {1} \\tag {42}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            240,
+            118,
+            480,
+            135
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\alpha} _ {c} + \\mu_ {2} \\alpha_ {c} = w _ {2} \\tag {43}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            240,
+            139,
+            480,
+            154
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\beta} _ {c} + \\mu_ {3} \\beta_ {c} = w _ {3} \\tag {44}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            240,
+            156,
+            480,
+            174
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "where $w _ { i } ~ ( i { \\mathrm { ~ = ~ } } 1 , 2 , 3 )$ are zero-mean Gaussian white noise processes and $\\mu _ { i } \\ \\ge \\ 0 \\ ( i \\ = \\ 1 , 2 , 3 )$ are constants. If $\\mu _ { 1 } = \\mu _ { 2 } = \\mu _ { 3 } = 0$ , the models reduce to a random walks, corresponding to time integration of white noise. A saturating element is usually used in the integration process to limit the current speed to:",
+        "bbox": [
+            115,
+            183,
+            482,
+            282
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV _ {\\min} \\leq V _ {c} (t) \\leq V _ {\\max} \\tag {45}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            221,
+            290,
+            480,
+            306
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The direction of the current can also be Öxed by specifying constant values for $\\alpha _ { c }$ and $\\beta _ { c } .$ :",
+        "bbox": [
+            115,
+            313,
+            482,
+            342
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3-D Irrotational Ocean Current Model: A 3-D irrotational ocean current model is obtained by transforming the ocean current speed $V _ { c }$ and directions $( \\alpha _ { c } , \\beta _ { c } )$ from FLOW axes to NED velocities:",
+        "bbox": [
+            115,
+            347,
+            482,
+            418
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {v} _ {c} ^ {n} = \\mathbf {R} _ {y, \\alpha_ {c}} ^ {\\top} \\mathbf {R} _ {z, - \\beta_ {c}} ^ {\\top} \\left[ \\begin{array}{l} V _ {c} \\\\ 0 \\\\ 0 \\end{array} \\right] \\\\ = \\left[ \\begin{array}{l} V _ {c} \\cos (\\alpha_ {c}) \\cos (\\beta_ {c}) \\\\ V _ {c} \\sin (\\beta_ {c}) \\\\ V _ {c} \\sin (\\alpha_ {c}) \\cos (\\beta_ {c}) \\end{array} \\right] \\tag {46} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            194,
+            432,
+            482,
+            527
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "where the principal rotations $\\mathbf { R } _ { y , \\alpha _ { c } }$ and $\\mathbf { R } _ { z , - \\beta _ { c } }$ are recognized as:",
+        "bbox": [
+            115,
+            535,
+            480,
+            564
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {R} _ {y, \\alpha} = \\left[ \\begin{array}{c c c} \\cos (\\alpha) & 0 & \\sin (\\alpha) \\\\ 0 & 1 & 0 \\\\ - \\sin (\\alpha) & 0 & \\cos (\\alpha) \\end{array} \\right] \\tag {47}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            193,
+            569,
+            480,
+            615
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {R} _ {z, - \\beta} = \\left[ \\begin{array}{c c c} \\cos (\\beta) & \\sin (\\beta) & 0 \\\\ - \\sin (\\beta) & \\cos (\\beta) & 0 \\\\ 0 & 0 & 1 \\end{array} \\right] \\tag {48}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            184,
+            615,
+            480,
+            662
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "This expression can be transformed from NED to BODY using the Euler angle rotation matrix $\\mathbf { R } _ { b } ^ { n }$ . Consequently,",
+        "bbox": [
+            115,
+            667,
+            482,
+            709
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left[ \\begin{array}{l} u _ {c} \\\\ v _ {c} \\\\ w _ {c} \\end{array} \\right] = \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) ^ {\\top} \\left[ \\begin{array}{l} V _ {c} \\cos (\\alpha_ {c}) \\cos (\\beta_ {c}) \\\\ V _ {c} \\sin (\\beta_ {c}) \\\\ V _ {c} \\sin (\\alpha_ {c}) \\cos (\\beta_ {c}) \\end{array} \\right] \\tag {49}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            131,
+            715,
+            480,
+            762
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2-D Irrotational Ocean Current Model: For motions in the horizontal plane, the 3-D equations (49) reduce to:",
+        "bbox": [
+            115,
+            778,
+            482,
+            822
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nu _ {c} = V _ {c} \\cos (\\beta_ {c} - \\psi) \\tag {50}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            226,
+            841,
+            480,
+            857
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nv _ {c} = V _ {c} \\sin (\\beta_ {c} - \\psi) \\tag {51}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            228,
+            860,
+            480,
+            877
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "for $\\alpha _ { c } = 0$ and $\\phi = \\theta = 0$ . Consequently,",
+        "bbox": [
+            115,
+            885,
+            415,
+            901
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV _ {c} = \\sqrt {u _ {c} ^ {2} + v _ {c} ^ {2}} \\tag {52}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            242,
+            906,
+            480,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/46169685d7908ae49605c93f9e99386472ed9586721270e1c0f75f3b7c2177b1.jpg",
+        "image_caption": [
+            "Fig. 4. Angle of attack and sideslip angle for a marine craft."
+        ],
+        "image_footnote": [],
+        "content": "y_b\n98000\nU\nx_flow\n-β\nα\nx_stab\nz_b",
+        "sub_type": "text_image",
+        "bbox": [
+            515,
+            72,
+            887,
+            203
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5. CONCLUSIONS",
+        "text_level": 2,
+        "bbox": [
+            620,
+            244,
+            769,
+            256
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A tutorial on how to include models for wind, waves and ocean currents for marine craft has been presented. The concept of equations of relative motions is used to model the e§ect of ocean currents while wind and wave-induced forces are added under the assumption of linear superposition. The article is intended for control engineers who want to simulate and predict the motions of marine craft exposed to wind, wave and ocean currents and use time-series to evaluate the performance of control systems.",
+        "bbox": [
+            510,
+            271,
+            880,
+            428
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES",
+        "text_level": 2,
+        "bbox": [
+            636,
+            451,
+            754,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "W. Blendermann. Parameter IdentiÖcation of Wind Loads on Ships. J. Wind Eng. Ind. Aerodyn, JWEIA-51:339ñ351, 1994.",
+            "O. M. Faltinsen. Sea Loads on Ships and O§ shore Structures. Cambridge University Press, 1990.",
+            "T. I. Fossen. Nonlinear Modeling and Control of Underwater Vehicles. PhD thesis, Department of Engineering Cybernetics, Norwegian University of Science and Technology, Trondheim, Norway, June 1991.",
+            "T. I. Fossen. Guidance and Control of Ocean Vehicles. John Wiley and Sons Ltd., 1994. ISBN 0-471-94113-1.",
+            "T. I. Fossen. Handbook of Marine Craft Hydrodynamics and Motion Control. John Wiley and Sons Ltd., 2011. ISBN 978-1-1199-9149-6.",
+            "T. I. Fossen and O. E. Fjellstad. Nonlinear Modelling of Marine Vehicles in 6 Degrees of Freedom. International Journal of Mathematical Modelling of Systems, JMMS-1(1):17ñ28, 1995.",
+            "ÿyvind HegrenÊs. Autonomous Navigation for Underwater Vehicles. PhD thesis, Dept. of Engineering Cybernetics, Norwegian University of Science and Technology, Trondheim, Norway, 2010.",
+            "S. I. Sagatun and T.I. Fossen. Lagrangian Formulation of Underwater VehiclesíDynamics. In Proceedings of the IEEE International Conference on Systems, Man and Cybernetics, pages 1029ñ1034, Charlottesville, VA, October 1991.",
+            "WAMIT Inc. WAMIT User Manual. <www.wamit.com>, 2010."
+        ],
+        "bbox": [
+            510,
+            470,
+            880,
+            926
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "IFAC MCMC 2012",
+        "bbox": [
+            67,
+            29,
+            181,
+            41
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "September 19-21, 2012. Arenzano, Italy",
+        "bbox": [
+            67,
+            42,
+            319,
+            54
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "131",
+        "bbox": [
+            485,
+            933,
+            510,
+            944
+        ],
+        "page_idx": 5
+    }
+]

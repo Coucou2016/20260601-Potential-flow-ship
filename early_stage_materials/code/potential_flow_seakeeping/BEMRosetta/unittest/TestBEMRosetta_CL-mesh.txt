@@ -1,0 +1,14 @@
+-mesh 
+
+-echo "\nTesting mesh functions"
+
+-echo "\n\nTesting inertia"
+-i "../examples/wamit/cylinder/cylinder inertia.gdf"
+-print volume				-isSimilarNum "37699.1 37699.1 37699.1"
+-print cg_vol				-isSimilarNum "100 100 15"
+-print surface				-isSimilarNum "6283.18"
+-print cg_surf				-isSimilarNum "100 100 15"
+-print inertia_vol  0 0 0	-isSimilarNum "101.9 * * * 101.9 * * * 142.1" 
+-print inertia_surf 0 0 0	-isSimilarNum "102.5 * * * 102.5 * * * 142.5"  
+-print inertia_vol  100 100 15	-isSimilarNum "13.23 * * * 13.23 * * * 14.14"  
+-print inertia_surf 100 100 15	-isSimilarNum "17.17 * * * 17.17 * * * 17.88"  

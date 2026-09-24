@@ -1,0 +1,3062 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        101,
+                        111,
+                        498,
+                        132
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                99,
+                                107,
+                                500,
+                                135
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        99,
+                                        107,
+                                        500,
+                                        135
+                                    ],
+                                    "type": "text",
+                                    "content": "Installation note for OceanWave3D-seakeeping",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        179,
+                        145,
+                        418,
+                        159
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                179,
+                                143,
+                                420,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        179,
+                                        143,
+                                        420,
+                                        161
+                                    ],
+                                    "type": "text",
+                                    "content": "Mostafa Amini Afshar and Harry B. Bingham",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        136,
+                        159,
+                        461,
+                        174
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 2,
+                    "lines": [
+                        {
+                            "bbox": [
+                                136,
+                                157,
+                                464,
+                                175
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        136,
+                                        157,
+                                        464,
+                                        175
+                                    ],
+                                    "type": "text",
+                                    "content": "Section of Fluid Mechanics, Coastal and Maritime Engineering",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        198,
+                        174,
+                        401,
+                        187
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 3,
+                    "lines": [
+                        {
+                            "bbox": [
+                                197,
+                                172,
+                                402,
+                                190
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        197,
+                                        172,
+                                        402,
+                                        190
+                                    ],
+                                    "type": "text",
+                                    "content": "Department of Mechanical Engineering",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        214,
+                        188,
+                        385,
+                        200
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 4,
+                    "lines": [
+                        {
+                            "bbox": [
+                                215,
+                                188,
+                                385,
+                                201
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        215,
+                                        188,
+                                        385,
+                                        201
+                                    ],
+                                    "type": "text",
+                                    "content": "Technical University of Denmark",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        254,
+                        211,
+                        344,
+                        225
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 5,
+                    "lines": [
+                        {
+                            "bbox": [
+                                255,
+                                211,
+                                345,
+                                227
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        255,
+                                        211,
+                                        345,
+                                        227
+                                    ],
+                                    "type": "text",
+                                    "content": "February 1, 2017",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        256,
+                        188,
+                        271
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 6,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                254,
+                                189,
+                                274
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        254,
+                                        189,
+                                        274
+                                    ],
+                                    "type": "text",
+                                    "content": "1 Introduction",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        71,
+                        283,
+                        528,
+                        417
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 7,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                284,
+                                525,
+                                297
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        284,
+                                        525,
+                                        297
+                                    ],
+                                    "type": "text",
+                                    "content": "In this document the required process for installation of the seakeeping solver is described.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                296,
+                                526,
+                                311
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        296,
+                                        526,
+                                        311
+                                    ],
+                                    "type": "text",
+                                    "content": "Please note that OceanWave3D-Seakeeping code is making use of several external libraries.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                310,
+                                527,
+                                324
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        310,
+                                        527,
+                                        324
+                                    ],
+                                    "type": "text",
+                                    "content": "These libraries must be built and installed before the seakeeping code is compiled and used.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                323,
+                                527,
+                                338
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        323,
+                                        527,
+                                        338
+                                    ],
+                                    "type": "text",
+                                    "content": "The main library is called Overture (Brown et al., 1999). It is assumed here that the Overture",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                338,
+                                527,
+                                351
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        338,
+                                        527,
+                                        351
+                                    ],
+                                    "type": "text",
+                                    "content": "library has already been installed. For Overture installation procedure, please refer to the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                351,
+                                527,
+                                364
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        351,
+                                        527,
+                                        364
+                                    ],
+                                    "type": "text",
+                                    "content": "relevant document in this folder. It is also recommended to install the PETSc library as it",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                71,
+                                363,
+                                528,
+                                379
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        363,
+                                        528,
+                                        379
+                                    ],
+                                    "type": "text",
+                                    "content": "has been explained in the Overture installation guide. The seakeeping code is also using the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                377,
+                                527,
+                                391
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        377,
+                                        527,
+                                        391
+                                    ],
+                                    "type": "text",
+                                    "content": "GNU Scientific Library (gsl) (Gough, 2009) whose installation will be described described in",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                391,
+                                527,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        391,
+                                        527,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "this note. For all other required libraries please refer to the documentation for the Overture",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                405,
+                                196,
+                                418
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        405,
+                                        196,
+                                        418
+                                    ],
+                                    "type": "text",
+                                    "content": "installation in this folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        437,
+                        264,
+                        454
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 8,
+                    "lines": [
+                        {
+                            "bbox": [
+                                70,
+                                433,
+                                265,
+                                456
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        70,
+                                        433,
+                                        265,
+                                        456
+                                    ],
+                                    "type": "text",
+                                    "content": "2 Building the gsl library",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        71,
+                        464,
+                        527,
+                        518
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 9,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                462,
+                                527,
+                                478
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        462,
+                                        527,
+                                        478
+                                    ],
+                                    "type": "text",
+                                    "content": "This library is a collection of routines for the numerical calculation in C and C++. In the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                477,
+                                527,
+                                491
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        477,
+                                        527,
+                                        491
+                                    ],
+                                    "type": "text",
+                                    "content": "seakeeping code it is used for instance to perform the fft, least-square fitting, complex number",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                490,
+                                527,
+                                506
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        490,
+                                        527,
+                                        506
+                                    ],
+                                    "type": "text",
+                                    "content": "operations and so on. The gsl library can be downloaded from https://ftp.gnu.org/gnu/gsl/.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                504,
+                                470,
+                                518
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        504,
+                                        470,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": "Note that he seakeeping code is written based on gsl version 1.16. For installation:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        528,
+                        183,
+                        541
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 10,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                526,
+                                184,
+                                543
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        526,
+                                        184,
+                                        543
+                                    ],
+                                    "type": "text",
+                                    "content": "tar xzf gsl-1.16.tar.gz",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        546,
+                        132,
+                        559
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 11,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                544,
+                                135,
+                                560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        544,
+                                        135,
+                                        560
+                                    ],
+                                    "type": "text",
+                                    "content": "cd gsl-1.16",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        565,
+                        127,
+                        578
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 12,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                564,
+                                129,
+                                580
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        564,
+                                        129,
+                                        580
+                                    ],
+                                    "type": "text",
+                                    "content": "./configure",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        584,
+                        100,
+                        595
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 13,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                582,
+                                102,
+                                597
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        582,
+                                        102,
+                                        597
+                                    ],
+                                    "type": "text",
+                                    "content": "make",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        602,
+                        132,
+                        613
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 14,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                601,
+                                134,
+                                614
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        601,
+                                        134,
+                                        614
+                                    ],
+                                    "type": "text",
+                                    "content": "make check",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        620,
+                        135,
+                        632
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 15,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                619,
+                                137,
+                                633
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        619,
+                                        137,
+                                        633
+                                    ],
+                                    "type": "text",
+                                    "content": "make install",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        644,
+                        527,
+                        671
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 16,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                643,
+                                527,
+                                658
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        643,
+                                        527,
+                                        658
+                                    ],
+                                    "type": "text",
+                                    "content": "For more information regarding the installation process for gsl refer to the INSTALL file in the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                657,
+                                157,
+                                671
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        657,
+                                        157,
+                                        671
+                                    ],
+                                    "type": "text",
+                                    "content": "gsl library folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        689,
+                        305,
+                        706
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 17,
+                    "lines": [
+                        {
+                            "bbox": [
+                                70,
+                                687,
+                                306,
+                                708
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        70,
+                                        687,
+                                        306,
+                                        708
+                                    ],
+                                    "type": "text",
+                                    "content": "3 Building the seakeeping code",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        71,
+                        716,
+                        376,
+                        729
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 18,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                714,
+                                377,
+                                730
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        714,
+                                        377,
+                                        730
+                                    ],
+                                    "type": "text",
+                                    "content": "The whole seakeeping code is arranged in the following folders:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                841
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        101,
+                        111,
+                        498,
+                        132
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                99,
+                                107,
+                                500,
+                                135
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        99,
+                                        107,
+                                        500,
+                                        135
+                                    ],
+                                    "type": "text",
+                                    "content": "Installation note for OceanWave3D-seakeeping",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        179,
+                        145,
+                        418,
+                        159
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                179,
+                                143,
+                                420,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        179,
+                                        143,
+                                        420,
+                                        161
+                                    ],
+                                    "type": "text",
+                                    "content": "Mostafa Amini Afshar and Harry B. Bingham",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        136,
+                        159,
+                        461,
+                        174
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 2,
+                    "lines": [
+                        {
+                            "bbox": [
+                                136,
+                                157,
+                                464,
+                                175
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        136,
+                                        157,
+                                        464,
+                                        175
+                                    ],
+                                    "type": "text",
+                                    "content": "Section of Fluid Mechanics, Coastal and Maritime Engineering",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        198,
+                        174,
+                        401,
+                        187
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 3,
+                    "lines": [
+                        {
+                            "bbox": [
+                                197,
+                                172,
+                                402,
+                                190
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        197,
+                                        172,
+                                        402,
+                                        190
+                                    ],
+                                    "type": "text",
+                                    "content": "Department of Mechanical Engineering",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        214,
+                        188,
+                        385,
+                        200
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 4,
+                    "lines": [
+                        {
+                            "bbox": [
+                                215,
+                                188,
+                                385,
+                                201
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        215,
+                                        188,
+                                        385,
+                                        201
+                                    ],
+                                    "type": "text",
+                                    "content": "Technical University of Denmark",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        254,
+                        211,
+                        344,
+                        225
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 5,
+                    "lines": [
+                        {
+                            "bbox": [
+                                255,
+                                211,
+                                345,
+                                227
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        255,
+                                        211,
+                                        345,
+                                        227
+                                    ],
+                                    "type": "text",
+                                    "content": "February 1, 2017",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        256,
+                        188,
+                        271
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 6,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                254,
+                                189,
+                                274
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        254,
+                                        189,
+                                        274
+                                    ],
+                                    "type": "text",
+                                    "content": "1 Introduction",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        71,
+                        283,
+                        528,
+                        417
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 7,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                284,
+                                525,
+                                297
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        284,
+                                        525,
+                                        297
+                                    ],
+                                    "type": "text",
+                                    "content": "In this document the required process for installation of the seakeeping solver is described.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                296,
+                                526,
+                                311
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        296,
+                                        526,
+                                        311
+                                    ],
+                                    "type": "text",
+                                    "content": "Please note that OceanWave3D-Seakeeping code is making use of several external libraries.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                310,
+                                527,
+                                324
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        310,
+                                        527,
+                                        324
+                                    ],
+                                    "type": "text",
+                                    "content": "These libraries must be built and installed before the seakeeping code is compiled and used.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                323,
+                                527,
+                                338
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        323,
+                                        527,
+                                        338
+                                    ],
+                                    "type": "text",
+                                    "content": "The main library is called Overture (Brown et al., 1999). It is assumed here that the Overture",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                338,
+                                527,
+                                351
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        338,
+                                        527,
+                                        351
+                                    ],
+                                    "type": "text",
+                                    "content": "library has already been installed. For Overture installation procedure, please refer to the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                351,
+                                527,
+                                364
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        351,
+                                        527,
+                                        364
+                                    ],
+                                    "type": "text",
+                                    "content": "relevant document in this folder. It is also recommended to install the PETSc library as it",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                71,
+                                363,
+                                528,
+                                379
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        363,
+                                        528,
+                                        379
+                                    ],
+                                    "type": "text",
+                                    "content": "has been explained in the Overture installation guide. The seakeeping code is also using the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                377,
+                                527,
+                                391
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        377,
+                                        527,
+                                        391
+                                    ],
+                                    "type": "text",
+                                    "content": "GNU Scientific Library (gsl) (Gough, 2009) whose installation will be described described in",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                391,
+                                527,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        391,
+                                        527,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "this note. For all other required libraries please refer to the documentation for the Overture",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                405,
+                                196,
+                                418
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        405,
+                                        196,
+                                        418
+                                    ],
+                                    "type": "text",
+                                    "content": "installation in this folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        437,
+                        264,
+                        454
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 8,
+                    "lines": [
+                        {
+                            "bbox": [
+                                70,
+                                433,
+                                265,
+                                456
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        70,
+                                        433,
+                                        265,
+                                        456
+                                    ],
+                                    "type": "text",
+                                    "content": "2 Building the gsl library",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        71,
+                        464,
+                        527,
+                        518
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 9,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                462,
+                                527,
+                                478
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        462,
+                                        527,
+                                        478
+                                    ],
+                                    "type": "text",
+                                    "content": "This library is a collection of routines for the numerical calculation in C and C++. In the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                477,
+                                527,
+                                491
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        477,
+                                        527,
+                                        491
+                                    ],
+                                    "type": "text",
+                                    "content": "seakeeping code it is used for instance to perform the fft, least-square fitting, complex number",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                490,
+                                527,
+                                506
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        490,
+                                        527,
+                                        506
+                                    ],
+                                    "type": "text",
+                                    "content": "operations and so on. The gsl library can be downloaded from https://ftp.gnu.org/gnu/gsl/.",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                504,
+                                470,
+                                518
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        504,
+                                        470,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": "Note that he seakeeping code is written based on gsl version 1.16. For installation:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        528,
+                        183,
+                        541
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 10,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                526,
+                                184,
+                                543
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        526,
+                                        184,
+                                        543
+                                    ],
+                                    "type": "text",
+                                    "content": "tar xzf gsl-1.16.tar.gz",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        546,
+                        132,
+                        559
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 11,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                544,
+                                135,
+                                560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        544,
+                                        135,
+                                        560
+                                    ],
+                                    "type": "text",
+                                    "content": "cd gsl-1.16",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        565,
+                        127,
+                        578
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 12,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                564,
+                                129,
+                                580
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        564,
+                                        129,
+                                        580
+                                    ],
+                                    "type": "text",
+                                    "content": "./configure",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        584,
+                        100,
+                        595
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 13,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                582,
+                                102,
+                                597
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        582,
+                                        102,
+                                        597
+                                    ],
+                                    "type": "text",
+                                    "content": "make",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        602,
+                        132,
+                        613
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 14,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                601,
+                                134,
+                                614
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        601,
+                                        134,
+                                        614
+                                    ],
+                                    "type": "text",
+                                    "content": "make check",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        72,
+                        620,
+                        135,
+                        632
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 15,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                619,
+                                137,
+                                633
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        619,
+                                        137,
+                                        633
+                                    ],
+                                    "type": "text",
+                                    "content": "make install",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        644,
+                        527,
+                        671
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 16,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                643,
+                                527,
+                                658
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        643,
+                                        527,
+                                        658
+                                    ],
+                                    "type": "text",
+                                    "content": "For more information regarding the installation process for gsl refer to the INSTALL file in the",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                657,
+                                157,
+                                671
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        657,
+                                        157,
+                                        671
+                                    ],
+                                    "type": "text",
+                                    "content": "gsl library folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        71,
+                        689,
+                        305,
+                        706
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 17,
+                    "lines": [
+                        {
+                            "bbox": [
+                                70,
+                                687,
+                                306,
+                                708
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        70,
+                                        687,
+                                        306,
+                                        708
+                                    ],
+                                    "type": "text",
+                                    "content": "3 Building the seakeeping code",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        71,
+                        716,
+                        376,
+                        729
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 18,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                714,
+                                377,
+                                730
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        714,
+                                        377,
+                                        730
+                                    ],
+                                    "type": "text",
+                                    "content": "The whole seakeeping code is arranged in the following folders:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                }
+            ]
+        },
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        74,
+                        74,
+                        95,
+                        85
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        74,
+                        93,
+                        377,
+                        105
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                93,
+                                379,
+                                106
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        93,
+                                        379,
+                                        106
+                                    ],
+                                    "type": "text",
+                                    "content": "This folder contains the whole implementation files of the code.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        121,
+                        117,
+                        134
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 2,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                121,
+                                119,
+                                136
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        121,
+                                        119,
+                                        136
+                                    ],
+                                    "type": "text",
+                                    "content": "include",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        74,
+                        142,
+                        524,
+                        168
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 3,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                142,
+                                526,
+                                157
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        142,
+                                        526,
+                                        157
+                                    ],
+                                    "type": "text",
+                                    "content": "Is the place for the header files. All implementation files in cpp folder are declared in the files",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                156,
+                                193,
+                                169
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        156,
+                                        193,
+                                        169
+                                    ],
+                                    "type": "text",
+                                    "content": "located in include folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        185,
+                        93,
+                        197
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 4,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                185,
+                                95,
+                                199
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        185,
+                                        95,
+                                        199
+                                    ],
+                                    "type": "text",
+                                    "content": "bin",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        74,
+                        206,
+                        524,
+                        232
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 5,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                206,
+                                526,
+                                219
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        206,
+                                        526,
+                                        219
+                                    ],
+                                    "type": "text",
+                                    "content": "All the binary and object files resulting from the compilation will be located in this folder. Note",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                220,
+                                451,
+                                233
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        220,
+                                        451,
+                                        233
+                                    ],
+                                    "type": "text",
+                                    "content": "that two executables RUN.exe and POST.exe are built in the parent folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        248,
+                        409,
+                        260
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 6,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                245,
+                                411,
+                                264
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        245,
+                                        411,
+                                        264
+                                    ],
+                                    "type": "text",
+                                    "content": "The compilation of the code is simple and can be done just by typing:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        272,
+                        99,
+                        283
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 7,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                271,
+                                102,
+                                285
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        271,
+                                        102,
+                                        285
+                                    ],
+                                    "type": "text",
+                                    "content": "make",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        295,
+                        531,
+                        334
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 8,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                294,
+                                534,
+                                310
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        294,
+                                        534,
+                                        310
+                                    ],
+                                    "type": "text",
+                                    "content": "in the parent folder. If successful, this would make the two executables RUN.exe and POST.exe",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                71,
+                                307,
+                                527,
+                                324
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        307,
+                                        527,
+                                        324
+                                    ],
+                                    "type": "text",
+                                    "content": "in the parent folder. Finally you can also add the paths of these executables to your existing",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                322,
+                                448,
+                                338
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        322,
+                                        448,
+                                        338
+                                    ],
+                                    "type": "text",
+                                    "content": "path, by adding the following line in to the .bashrc file in the home directory:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        344,
+                        418,
+                        359
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 9,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                343,
+                                421,
+                                361
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        343,
+                                        421,
+                                        361
+                                    ],
+                                    "type": "text",
+                                    "content": "export=$PATH:[the path to the executables (RUN.exe and POST.exe)].",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                841
+            ],
+            "page_idx": 1,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        74,
+                        74,
+                        95,
+                        85
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        74,
+                        93,
+                        377,
+                        105
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                93,
+                                379,
+                                106
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        93,
+                                        379,
+                                        106
+                                    ],
+                                    "type": "text",
+                                    "content": "This folder contains the whole implementation files of the code.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        121,
+                        117,
+                        134
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 2,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                121,
+                                119,
+                                136
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        121,
+                                        119,
+                                        136
+                                    ],
+                                    "type": "text",
+                                    "content": "include",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        74,
+                        142,
+                        524,
+                        168
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 3,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                142,
+                                526,
+                                157
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        142,
+                                        526,
+                                        157
+                                    ],
+                                    "type": "text",
+                                    "content": "Is the place for the header files. All implementation files in cpp folder are declared in the files",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                156,
+                                193,
+                                169
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        156,
+                                        193,
+                                        169
+                                    ],
+                                    "type": "text",
+                                    "content": "located in include folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        185,
+                        93,
+                        197
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 4,
+                    "lines": [
+                        {
+                            "bbox": [
+                                72,
+                                185,
+                                95,
+                                199
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        72,
+                                        185,
+                                        95,
+                                        199
+                                    ],
+                                    "type": "text",
+                                    "content": "bin",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        74,
+                        206,
+                        524,
+                        232
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 5,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                206,
+                                526,
+                                219
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        206,
+                                        526,
+                                        219
+                                    ],
+                                    "type": "text",
+                                    "content": "All the binary and object files resulting from the compilation will be located in this folder. Note",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                220,
+                                451,
+                                233
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        220,
+                                        451,
+                                        233
+                                    ],
+                                    "type": "text",
+                                    "content": "that two executables RUN.exe and POST.exe are built in the parent folder.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        248,
+                        409,
+                        260
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 6,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                245,
+                                411,
+                                264
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        245,
+                                        411,
+                                        264
+                                    ],
+                                    "type": "text",
+                                    "content": "The compilation of the code is simple and can be done just by typing:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        272,
+                        99,
+                        283
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 7,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                271,
+                                102,
+                                285
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        271,
+                                        102,
+                                        285
+                                    ],
+                                    "type": "text",
+                                    "content": "make",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        295,
+                        531,
+                        334
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 8,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                294,
+                                534,
+                                310
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        294,
+                                        534,
+                                        310
+                                    ],
+                                    "type": "text",
+                                    "content": "in the parent folder. If successful, this would make the two executables RUN.exe and POST.exe",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                71,
+                                307,
+                                527,
+                                324
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        307,
+                                        527,
+                                        324
+                                    ],
+                                    "type": "text",
+                                    "content": "in the parent folder. Finally you can also add the paths of these executables to your existing",
+                                    "score": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                73,
+                                322,
+                                448,
+                                338
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        322,
+                                        448,
+                                        338
+                                    ],
+                                    "type": "text",
+                                    "content": "path, by adding the following line in to the .bashrc file in the home directory:",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        74,
+                        344,
+                        418,
+                        359
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 9,
+                    "lines": [
+                        {
+                            "bbox": [
+                                71,
+                                343,
+                                421,
+                                361
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        71,
+                                        343,
+                                        421,
+                                        361
+                                    ],
+                                    "type": "text",
+                                    "content": "export=$PATH:[the path to the executables (RUN.exe and POST.exe)].",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "merge_prev": false
+                }
+            ]
+        },
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        72,
+                        69,
+                        151,
+                        84
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                68,
+                                152,
+                                87
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        68,
+                                        152,
+                                        87
+                                    ],
+                                    "type": "text",
+                                    "content": "References",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        72,
+                        95,
+                        528,
+                        161
+                    ],
+                    "type": "list",
+                    "angle": 0,
+                    "index": 3,
+                    "blocks": [
+                        {
+                            "bbox": [
+                                72,
+                                95,
+                                528,
+                                138
+                            ],
+                            "type": "ref_text",
+                            "angle": 0,
+                            "index": 1,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        96,
+                                        527,
+                                        111
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                96,
+                                                527,
+                                                111
+                                            ],
+                                            "type": "text",
+                                            "content": "Brown, D. L., W. D. Henshaw, and D. J. Quinlan. Overture: An object-oriented framework",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "bbox": [
+                                        83,
+                                        110,
+                                        528,
+                                        126
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                83,
+                                                110,
+                                                528,
+                                                126
+                                            ],
+                                            "type": "text",
+                                            "content": "for solving partial differential equations on overlapping grids. Object Oriented Methods for",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "bbox": [
+                                        83,
+                                        122,
+                                        475,
+                                        138
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                83,
+                                                122,
+                                                475,
+                                                138
+                                            ],
+                                            "type": "text",
+                                            "content": "Interoperable Scientific and Engineering Computing, SIAM, pages 245–255, 1999.",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                146,
+                                460,
+                                161
+                            ],
+                            "type": "ref_text",
+                            "angle": 0,
+                            "index": 2,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        146,
+                                        460,
+                                        160
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                146,
+                                                460,
+                                                160
+                                            ],
+                                            "type": "text",
+                                            "content": "Gough, B. GNU scientific library reference manual. Network Theory Ltd., 2009.",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sub_type": "ref_text"
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                841
+            ],
+            "page_idx": 2,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        72,
+                        69,
+                        151,
+                        84
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                73,
+                                68,
+                                152,
+                                87
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        68,
+                                        152,
+                                        87
+                                    ],
+                                    "type": "text",
+                                    "content": "References",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        72,
+                        95,
+                        528,
+                        161
+                    ],
+                    "type": "list",
+                    "angle": 0,
+                    "index": 3,
+                    "blocks": [
+                        {
+                            "bbox": [
+                                72,
+                                95,
+                                528,
+                                138
+                            ],
+                            "type": "ref_text",
+                            "angle": 0,
+                            "index": 1,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        96,
+                                        527,
+                                        111
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                96,
+                                                527,
+                                                111
+                                            ],
+                                            "type": "text",
+                                            "content": "Brown, D. L., W. D. Henshaw, and D. J. Quinlan. Overture: An object-oriented framework",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "bbox": [
+                                        83,
+                                        110,
+                                        528,
+                                        126
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                83,
+                                                110,
+                                                528,
+                                                126
+                                            ],
+                                            "type": "text",
+                                            "content": "for solving partial differential equations on overlapping grids. Object Oriented Methods for",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "bbox": [
+                                        83,
+                                        122,
+                                        475,
+                                        138
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                83,
+                                                122,
+                                                475,
+                                                138
+                                            ],
+                                            "type": "text",
+                                            "content": "Interoperable Scientific and Engineering Computing, SIAM, pages 245–255, 1999.",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                72,
+                                146,
+                                460,
+                                161
+                            ],
+                            "type": "ref_text",
+                            "angle": 0,
+                            "index": 2,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        73,
+                                        146,
+                                        460,
+                                        160
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                73,
+                                                146,
+                                                460,
+                                                160
+                                            ],
+                                            "type": "text",
+                                            "content": "Gough, B. GNU scientific library reference manual. Network Theory Ltd., 2009.",
+                                            "score": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sub_type": "ref_text"
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_ocr_enable": false,
+    "_vlm_ocr_enable": false,
+    "_version_name": "3.2.2"
+}

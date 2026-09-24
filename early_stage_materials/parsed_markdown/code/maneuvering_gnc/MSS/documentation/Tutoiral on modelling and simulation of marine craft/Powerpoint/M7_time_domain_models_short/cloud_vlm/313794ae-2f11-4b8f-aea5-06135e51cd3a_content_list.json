@@ -1,0 +1,2223 @@
+[
+    {
+        "type": "text",
+        "text": "Time-domain models based on frequency-domain data   (Module 7)",
+        "text_level": 2,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr Tristan Perez",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Complex Dynamic Systems and Control (CDSC)",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8962ba0bc872ad077847583e2841494ce51a6476cb145d28b6251702cc8e12a0.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prof. Thor I Fossen",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Engineering Cybernetics",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e29b613ed08a3f4363bdbd18f84ff9baef4b407f0950166ce6b405c5c0a30cbe.jpg",
+        "image_caption": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Time-domain modelling approaches",
+        "text_level": 2,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Two approaches can be distinguished for time-domain modelling:",
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Full time-domain hydrodynamic codes,"
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Time-domain models based on frequency-domain data."
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Here, we will follow the second approach.",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Linear time-domain models",
+        "text_level": 2,
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Linear time-domain models can be used for control system design and can serve as a basis for developing non-linear models:"
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Wave Loads",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Loads",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Linear model",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Motion",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Nonlinearities",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain Eq. of Motion",
+        "text_level": 2,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In the hydrodynamic literature it is common to find",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$[M_{RB}+A(\\omega )]¨(t)+B(\\omega )˙(t)+G\\xi (t)=\\tau _{exc}(t)$",
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This is valid to describe the steady-state response to sinusoidal excitations."
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This is a false time-domain model; it is simply an alternative (and confusing) way to write the frequency response of the system (Cummins, 1962)."
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Cummins’s equation",
+        "text_level": 2,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Cummins (1962), took a different modelling approach and consider the radiation problem *ab initio* in the time domain. He obtained the Cummins’s equation of motion:",
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The added mass matrix is constant—frequency and speed independent."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The convolution term accounts for fluid-memory effects.",
+            "- The kernel of the convolution is a matrix of retardation functions or impulse responses.",
+            "- This is a true linear equation of motion, and it is valid for any excitation, provided the linearity assumption holds."
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Cummins’s equation with forward speed",
+        "text_level": 2,
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The convolution terms depend on the forward speed."
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- With forward speed appears a constant damping term."
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The restoring forces are affected by hydrodynamic pressure—Lift, changes in trim.  (Usually ignored for Fn<0.3)"
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Ogilvie’s relations",
+        "text_level": 2,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "If Cummins’s Equation is valid for any input, it must then be valid for sinusoids in particular (Ogilvie, 1964).",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Ogilvie (1964) transformed the Cummins’ Equation to the frequency domain, and found that",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}A(\\omega )=A-\\frac{1}{\\omega }\\int_{0}^{\\infty }K(t)sin(\\omega t) dt\\\\B(\\omega )=B(U)+\\int_{0}^{\\infty }K(t)cos(\\omega t) dt\\end{array}$",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "From the Riemann-Lesbesgue Lemma:",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}A=\\lim_{\\omega \\to \\infty }A(\\omega ):=A(\\infty )\\\\B(U)=\\lim_{\\omega \\to \\infty }B(\\omega ):=B(\\infty )\\end{array}$",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Time- and Freq-domain Relationships",
+        "text_level": 2,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Time-domain relationship:",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$K(t)=\\frac{2}{\\pi }\\int_{0}^{\\infty }[B(\\omega )-B(\\infty )]cos(\\omega t) d\\omega$",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain relationship:",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$K(j\\omega )=[B(\\omega )-B(\\infty )]+j\\omega [A(\\omega )-A(\\infty )]$",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Properties of the convolution terms",
+        "text_level": 2,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The convolution terms have the following frequency and time-domain properties (e.g., Damaren, 2000):",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "table_caption": [],
+        "table_body": "<table>\n  <tr>\n    <th></th>\n    <th>Kij(s) have a zero at s=0</th>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Strictly proper</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Relative degree 1</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>BIBO stable</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>K(s) is passive =&gt; diagonal terms are positive real.</td>\n  </tr>\n</table>",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\lim_{\\omega \\to 0}K(j\\omega )=0$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\lim_{\\omega \\to \\infty }K(j\\omega )=0$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$K(t=0^{+})=\\int_{}^{}B(\\omega ) d\\omega \\ne 0$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\lim_{t\\to \\infty }K(t)=0$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$Re\\left\\{K_{ii}(j\\omega )\\right\\}\\geq 0$",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Convolution replacement",
+        "text_level": 2,
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The convolution in the Cummins equation can be time and memory consuming for simulation. Simulations can be 40-times faster (Taghipour et.al, 2007a)."
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- For analysis and design of a control system, the convolutions are not very well suited."
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- A state-space representation or appropriate order (*n*-order) eliminates the above problems:"
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$x=\\left[\\begin{matrix}x_{1}\\\\x_{2}\\\\\\vdots \\\\x_{n}\\end{matrix}\\right]$",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}˙=A_{c}x+B_{c}˙\\\\\\mu _{r}=C_{c}x+D_{c}˙\\end{array}$",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$\\mu _{r}=\\int_{0}^{\\infty }K(t-\\tau ) ˙(\\tau ) d\\tau$",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$\\Leftrightarrow$",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Convolution replacement",
+        "text_level": 2,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\tau _{w}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$+$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$-$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$-$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\mu _{r}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$[M+A(\\infty )]^{-1}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\int_{}^{}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\int_{0}^{\\infty }K(t-\\tau ) ˙(\\tau ) d\\tau$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\int_{}^{}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$˙$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\xi$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$G$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\mu _{r}=\\int_{0}^{\\infty }K(t-\\tau ) ˙(\\tau ) d\\tau$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\Leftrightarrow$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array}{c}˙=A_{c}x+B_{c}˙\\\\\\mu _{r}=C_{c}x\\end{array}$",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Note that **D**c=**0** due to the relative degree 1.",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Convolution replacement",
+        "text_level": 2,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The convolution replacement can be posed in different ways, which in “theory” should provide the same answer:",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Time-domain",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "identification",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\left[\\begin{matrix}^_{c}&^_{c}\\\\^_{c}&^_{c}\\end{matrix}\\right]$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\Rightarrow$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\Rightarrow$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$B(\\omega )$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$K(t)$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$A(\\omega ),B(\\omega )$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\Rightarrow$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Model",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "conversion",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "identification",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\left[\\begin{matrix}^_{c}&^_{c}\\\\^_{c}&^_{c}\\end{matrix}\\right]$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\Rightarrow$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$^(s)$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\Rightarrow$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$K(j\\omega )$",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In practice one method can be more favourable than the other.",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Identification problems",
+        "text_level": 2,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Different proposals have appeared in the literature:",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Time-domain identification:",
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- LS-fitting of the impulse response (Yu & Falnes, 1998)",
+            "- Realization theory (Kristiansen & Egeland, 2003)"
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain identification:",
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- LS-fitting of the frequency response (Jeffreys, 1984),(Damaren 2000).",
+            "- LS-fitting of added mass and damping (Soding 1982), (Xia et. al 1998), (Sutulo & Guedes-Soares 2006)."
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Time-domain identification",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "From <strong>K</strong>(<em>t</em>) to state-space models.",
+        "text_level": 2,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Numerical computations",
+        "text_level": 2,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A key issue for time-domain identification is to start with a good impulse response computed from the damping.",
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Numerical codes can only provide accurate computations of added mass and damping up to a certain frequency, say "
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- This introduces an error in the computation of the retardation functions:"
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$K(t,U)=\\frac{2}{\\pi }\\int_{0}^{\\Omega }[B(\\omega )-B(U)]cos(\\omega t)d\\omega +\\frac{2}{\\pi }\\int_{\\Omega }^{\\infty }[B(\\omega )-B(U)]cos(\\omega t)d\\omega$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$K(t,U)\\approx \\frac{2}{\\pi }\\int_{0}^{\\Omega }[B(\\omega )-B(U)]cos(\\omega t)d\\omega$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$Error(t,U)=\\frac{2}{\\pi }\\int_{\\Omega }^{\\infty }[B(\\omega )-B(U)]cos(\\omega t)d\\omega$",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "High-frequency values of A() and B()",
+        "text_level": 2,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "In the limit at high frequency the following tendencies are observed for the 3D damping and added mass:",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "$B_{ik}(\\omega )\\propto \\frac{\\alpha _{ik}}{\\omega ^{2}} as \\omega \\rightarrow \\infty$",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "$A_{ik}(\\omega )-A_{ik}(\\infty )\\propto \\frac{\\beta _{ik}}{\\omega ^{2}} as \\omega \\rightarrow \\infty$",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "As commented by Damaren (2000), this seems at odds with what is generally stated in the hydrodynamic literature!",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Note that there are no expansions involved to obtain these results, the only assumption is the linearity which results in a rational representation and the relative degree 1, which results from the integration of damping over the frequencies.",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Example Containership (Taghipour et al., 2007a)",
+        "text_level": 2,
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/79572f806596759a0a6aa19fe3a9a073a5756036c3fbd68daffafb90d6d43b5a.jpg",
+        "image_caption": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "The panel sizing was done to be able to compute frequencies up to 2.5 rad/s.",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Rule of thumb: characteristic panel length < 1/8 min wave length (Faltinsen, 1993).",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Numerical computations",
+        "text_level": 2,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Extending the damping with tail prop to 1/2",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "In this example, the tail /2 is not a very good for B35 and B53 (2.5rad/s is too low), whereas it is ok for B33 and B55.",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Numerical computations",
+        "text_level": 2,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "$K(t)\\approx \\frac{2}{\\pi }\\int_{0}^{\\Omega }B_{ext}(\\omega )cos(\\omega t)d\\omega$",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Note the differences at t=0+, and the errors at different time instants.",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "When doing time-domain identification, it is important to start from a good approx of the retardation function!",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Impulse response curve fitting",
+        "text_level": 2,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Given the SISO SS realization of order *n*:",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "The parameters can be obtained from",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "The application of this method to marine structures was proposed by Yu and Falnes (1998).",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Impulse response curve fitting",
+        "text_level": 2,
+        "page_idx": 20
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- It is hard to guess the order of the system by looking at the impulse response alone—one should start with lower order and increase it to improve the fit."
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The LS-problem is non-linear in the parameters. This problem can be solved with Gaussian-Newton methods."
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The Gaussian-Newton methods are known to work well if the parameters’ initial guess are close to the optimal parameters."
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Since the initial value of the parameters is difficult to obtain from the impulse response, and these depends on the particular realization being chosen, the method is not very practical."
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Realization theory",
+        "text_level": 2,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A key result of realization theory is the following factorization (Ho and Kalman, 1966):",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Hankel matrix of the impulse",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "response values (constant along",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "the anti-diagonals)",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Extended controllability matrix",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Extended observability matrix",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Realization theory",
+        "text_level": 2,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Kung’s Algorithm (Kung, 1978):",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Singular value decomposition",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The number of significant",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "singular values give the order",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "of the system:",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Realization theory",
+        "text_level": 2,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Kung’s Algorithm (Kung, 1978):",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "The application of this method to marine structures was proposed by Kristiansen and Egeland (2003).",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Realization theory",
+        "text_level": 2,
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The problem is solved in discrete time"
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Kung’s algorithm obtains the model based on a SVD-factorization of the Hankel matrix of samples of the impulse response."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- If the data is noisy or there are errors, it may not be quite clear to determine the order of the system from the singular values."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The conversion from discrete to continuous often gives a matrix **D**c in the state-space realization, which is inconsistent with the dynamics of the problem for the retardation function (relative degree 1)."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The MATLAB command **imp2ss** implements Kung’s algorithm, and chooses the order by neglecting singular values less than 1% of the largest one."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- **imp2ss** requires using model order reduction afterwards (Kristiansen et al 2005)."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The resulting models may not be passive."
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Example Container ship",
+        "text_level": 2,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Singular values of the Hankel matrix of the samples of the impulse response.",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "These suggest (based on the blue plots)",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Order K33(s) = 3 or 4",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Oder K35(s) = 5 or 6",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Order K55(s) = 3 or 4",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 25
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Example Container ship",
+        "text_level": 2,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Impulse response fitting for K33(t) with a system of order 4.",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Identification method: imp2ss + balmr (model order reduction).",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "K33(jw)",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "K33(t)",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The identified model is not passive and does not have a zero at s=0.",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 26
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Example Container ship",
+        "text_level": 2,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Impulse response fitting for K33(t) with a system of order 3.",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Identification method: imp2ss + balmr (model order reduction).",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "K33(t)",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "K33(jw)",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "The identified model is passive, but still does not have a zero at s=0.",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 27
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Example Container ship",
+        "text_level": 2,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Impulse response fitting for K35(t) with a system of order 5.",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "K35(jw)",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "K35(t)",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "The identified model is passive, but still does not have a zero at s=0.",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Note that the off-diagonal terms do not necessarily have to passive for **K**(s) to be passive (Unneland & Perez, 2007).",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 28
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Comments about Realization Theory",
+        "text_level": 2,
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Depending on the hydrodynamic data, it may be necessary to extend the damping at high freq. to have a good estimate the of the impulse response function before doing the idetification."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Looking at the impulse response fitting alone is not a good criteria—most properties are evident from the freq. response."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Imp2ss may require using model order reduction afterwards."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The models almost never satisfy the low frequency asymptotic values (zero at s=0)."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- High-order models may not be passive; this can solved trying different orders or using a model order reduction method that enforces passivity."
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 29
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain  Identification",
+        "text_level": 2,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "From **K**(j) to **K**(s)",
+        "text_level": 2,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 30
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Regression in the frequency domain",
+        "text_level": 2,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "In this method, a rational transfer function",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "is fitted to the frequency response data:",
+        "page_idx": 31
+    },
+    {
+        "type": "image",
+        "img_path": "images/05203b0a88b1fb402460d64fc42a330e1b0920987d71d24a1da4a266ef863fe9.jpg",
+        "image_caption": [],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "The application of this method to marine structures was proposed by Jeffreys (1984) and Damaren (2000).",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 31
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Quasi-linear regression",
+        "text_level": 2,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Levi (1959) proposed the following linearization:",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "This can be obtained If we chose the weights in the nonlinear problem as",
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/05203b0a88b1fb402460d64fc42a330e1b0920987d71d24a1da4a266ef863fe9.jpg",
+        "image_caption": [],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "which is affine in the parameters and reduces to a linear LS problem.",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 32
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Iterative Quasi-linear regression",
+        "text_level": 2,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "The quasi-linear regressor tend to have a poor fit a low freq. This can be avoided by solving the linear LS problem iteratively, starting with the quasi-linear regressor and using the parameters obtained to compute a weighing:",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "$k=2,3,\\ldots$",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "After a few iterations,                                             and the nonlinear problem is recovered.",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 33
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Minimum order transfer function",
+        "text_level": 2,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Because of the zero at s=0 and the restriction of relative degree 1, the minimum order TF that can represent a convolution term is",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "$K_{ij}^{min}(s)=\\frac{b_{1}s}{s^{2}+a_{1}s+a_{0}}$",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Therefore, we can start with a system of order n=2, and then increase the order until we improve the fitting at an appropriate level.",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 34
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Containership example",
+        "text_level": 2,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain identification of K33(jw) order 3",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Identification method: iterative quasi-linear regression (invfreqs.m)",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "The model is passive and satisfy the asymptotic values.",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 35
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Containership example",
+        "text_level": 2,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Frequency-domain identification of K35(jw) order 5 and K55(jw) order 3",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Identification method: iterative quasi-linear regression (invfreqs.m)",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 36
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Reconstructing B()",
+        "text_level": 2,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 37
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Reconstructing A()",
+        "text_level": 2,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "The model has good fitting at all frequencies.",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 38
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Comments about Freq.-dom. regression",
+        "text_level": 2,
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- FD-identification avoids having to compute the impulse response from the damping—thus, needing very high-frequency hydrodynamic data."
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The identification method is simple: a series of linear LS problems—easy to programme."
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The zero at s=0 and the relative degree can be enforced in the structure of the model, so the asymptotic values are always ensured."
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The resulting models may be unstable: this is fixed by reflecting the unstable poles about the imaginary axis."
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- The resulting models may not be passive: this can be solved using weights in the LS problem."
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 39
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Simulink Model implementation",
+        "text_level": 2,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "After obtaining a state-space representation or the transfers functions, we can assemble a complete model:",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 40
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "page_idx": 41
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Perez, T. and T. I. Fossen (2006) “Time-domain Models of Marine Surface Vessels  Based on Seakeeping Computations.” 7th IFAC Conference on Manoeuvring and Control of Marine Vessels MCMC, Portugal, September."
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Perez, T. (2007) Identification and Validation of a Time-domain Hydrodynamic Model of a Prototype Hull for a Wave Energy Converter (WEC). Technical Report. Centre for Complex Dynamic Systems and Control. Australia."
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Cummins, W., 1962. The impulse response function and ship motions. Schiffstechnik 9 (1661), 101–109."
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Ogilvie, T., 1964. Recent progress towards the understanding and prediction of ship motions. In: 6th Symposium on Naval Hydrodynamics."
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Kristiansen, E., Egeland, O., 2003. Frequency-dependent added mass in models for controller design for wave motion damping. In: Proceedings of 6th Conference on Maneoeuvering and Control ofMarine Craft, Girona, Spain."
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 41
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "page_idx": 42
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Damaren, C.J. (2000). Time-domain floating body dynamics by rational approximations of the radiation impedance and diffraction mapping. Ocean Engineering 27, 687–705."
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Yu, Z., Falnes, J., 1998. State-space modelling of dynamic systems in ocean engineering. Journal of Hydrodynamics B(1), 1–17."
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Sutulo, S., Guedes-Soares, C., 2005. An implementation of the method of auxiliary state variables for solving seakeeping problems. International shipbuilding progress (Int. shipbuild. prog.) 52, 357–384."
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Taghipour, R., Perez, T., Moan, T., 2007a. Hybrid Frequency-Time Domain Models for Dynamic Response Analysis of Marine Structures. (To appear in Ocean Engieering)"
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "list",
+        "list_items": [
+            "- Taghipour, R., Perez, T., Moan, T., 2007b. Time domain hydroelastic analysis of a flexible marine structure using state-space models. In: 26th International Conference on Offshore Mechanics and Arctic Engineering-OMAE 07, San Diego, CA, USA."
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "06/06/26",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "<number>",
+        "page_idx": 42
+    },
+    {
+        "type": "page_footnote",
+        "text": "<number>",
+        "page_idx": 42
+    }
+]

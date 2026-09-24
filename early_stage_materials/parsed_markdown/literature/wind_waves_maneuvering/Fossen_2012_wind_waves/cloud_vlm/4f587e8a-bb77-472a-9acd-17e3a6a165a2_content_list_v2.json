@@ -1,0 +1,4111 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "HOW TO INCORPORATE WIND, WAVES AND OCEAN CURRENTS IN THE MARINE CRAFT EQUATIONS OF MOTION"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                282,
+                198,
+                715,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Thor I. Fossen"
+                    }
+                ]
+            },
+            "bbox": [
+                433,
+                258,
+                563,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Department of Engineering Cybernetics, Norwegian University of Science and Technology, NO-7491 Trondheim, NORWAY"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                300,
+                680,
+                344
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract: This paper demystiÖes how ocean currents together with wind and wave loads ináuence the marine craft equations of motion. In the literature there exists great confusion of the use of absolute and relative velocity terms when modeling rigid-body and hydrodynamic forces. The article is useful for engineers who want to simulate and predict the motions of marine craft exposed to wind, wave and ocean currents as well as control engineers evaluating the performance of marine craft control systems. The results are also very useful for testing and tuning of integral action time constants for compensation of ocean current and 2nd-order wave-induced drift forces."
+                    }
+                ]
+            },
+            "bbox": [
+                194,
+                385,
+                800,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: Marine systems, wind, waves, ocean currents, equations of motion"
+                    }
+                ]
+            },
+            "bbox": [
+                196,
+                526,
+                766,
+                539
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "INTRODUCTION"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                228,
+                596,
+                369,
+                611
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The equations of motion for underwater vehicles, ships, ocean structures and high-speed craft are usually derived using Newtonian and Lagrangian mechanics (Fossen, 1994, 2011). The resulting models are nonlinear mass-damper-springs which include rigid-body, hydrostatic and hydrodynamic generalized forces. The motions are coupled in six degrees of freedom (DOF). Marine craft are exposed to environmental forces due to wind, waves and ocean currents, which act like forcing on the mass-damper-spring system. In hydrodynamics it is common to assume linear superposition such that forcing due to wind and waves can be treated as generalized forces that can be directly added to the nonlinear equations of motion. However, generalized forces due to ocean currents do not follow the law of linear superposition and there exists much diversity and misunderstandings in the existing literature on how to include the e§ects of ocean currents in the equations of motion."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                640,
+                482,
+                925
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper addresses the e§ect of ocean currents on marine craft in a tutorial perspective by using the concept of relative velocity, that is the velocity of the craft with respect to the ocean current, to effectively describe current-induced forces. Differ: ent properties and representations of the marine craft equations of motion are discussed and it is shown how the current velocity enters the equations. Nonlinear models for time-domain simulations and control systems design are presented using the compact vectorial notation of Fossen (1994, 2011)."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                598,
+                880,
+                769
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. MARINE CRAFT EQUATIONS OF MOTION"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                546,
+                778,
+                845,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Fossen (1991) it was shown that the coupled 6-DOF equations of a marine craft could be expressed as:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                820,
+                878,
+                860
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\boldsymbol {\\eta}} = \\mathbf {J} (\\boldsymbol {\\eta}) \\boldsymbol {\\nu} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6cedd8029d7ce40d48d03436a568cedd64c26c4abfc21a5322037246b29e3ecd.jpg"
+                }
+            },
+            "bbox": [
+                653,
+                862,
+                878,
+                878
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {D} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/10a4daf8cbd96ca0d316125bf886a1591832dd18768f57843a1ac3976d953021.jpg"
+                }
+            },
+            "bbox": [
+                566,
+                879,
+                878,
+                895
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\eta } = [ N , E , D , \\phi , \\theta , \\psi ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\nu } = [ u , v , w , p , q , r ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are the generalized position and velocity vectors,"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                896,
+                905,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "9th IFAC Conference on Manoeuvring and Control of Marine Craft, 2012 The International Federation of Automatic Control September 19-21, 2012. Arenzano, Italy"
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                28,
+                527,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFAC"
+                    }
+                ]
+            },
+            "bbox": [
+                771,
+                24,
+                902,
+                86
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "©2012 IFAC"
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                932,
+                149,
+                944
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "126"
+                    }
+                ]
+            },
+            "bbox": [
+                484,
+                933,
+                510,
+                944
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "10.3182/20120919-3-IT-2046.00022"
+                    }
+                ]
+            },
+            "bbox": [
+                700,
+                932,
+                919,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "respectively. The rotation and angular velocity transformation matrices between body coordinates (BODY) and the North-East-Down (NED) geographical reference frames are denoted "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } _ { b } ^ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { T } _ { \\Theta } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "respectively. The other quantities follow the notation of (Fossen, 1994, 2011):"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                71,
+                482,
+                156
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {J} (\\boldsymbol {\\eta}) = \\left[ \\begin{array}{c c} \\mathbf {R} _ {b} ^ {n} & \\mathbf {0} _ {6 \\times 6} \\\\ \\mathbf {0} _ {6 \\times 6} & \\mathbf {T} _ {\\Theta} \\end{array} \\right] \\\\ \\mathbf {M} = \\mathbf {M} _ {R B} + \\mathbf {M} _ {A} \\\\ \\mathbf {C} (\\boldsymbol {\\nu}) = \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) + \\mathbf {C} _ {A} (\\boldsymbol {\\nu}) \\\\ \\mathbf {D} (\\boldsymbol {\\nu}) \\\\ \\mathbf {g} (\\boldsymbol {\\eta}) \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5bc7f84f62cbc5ce31633c9b1f742a51fa01ab5c95b44f539f27d7c5b784adc5.jpg"
+                }
+            },
+            "bbox": [
+                117,
+                164,
+                497,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                121,
+                297,
+                134,
+                306
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                300,
+                166,
+                473,
+                223
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                300,
+                224,
+                497,
+                250
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                300,
+                252,
+                425,
+                265
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                300,
+                266,
+                477,
+                293
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                300,
+                294,
+                477,
+                307
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The subscripts RB and A are used for the rigidbody and added mass terms, respectively. The rigid-body system inertia matrix "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M } _ { R B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "satisÖes:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                317,
+                482,
+                361
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} _ {R B} = \\mathbf {M} _ {R B} ^ {\\top} > 0, \\quad \\dot {\\mathbf {M}} _ {R B} = \\mathbf {0} _ {6 \\times 6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d19110b29e6f4d68570e6dc99ac2ae0bfe0ec54cbc316d2af11635c3a9592f95.jpg"
+                }
+            },
+            "bbox": [
+                169,
+                379,
+                426,
+                397
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} _ {R B} = \\left[ \\begin{array}{c c} m \\mathbf {I} _ {3 \\times 3} & - m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) & \\mathbf {I} _ {b} \\end{array} \\right]",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c7c32af79b78ebffc6b66235691f3744bedab2934881810e265e2a9f1ce433e9.jpg"
+                }
+            },
+            "bbox": [
+                171,
+                400,
+                384,
+                432
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                442,
+                164,
+                454
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {S} (\\boldsymbol {\\lambda}) = - \\mathbf {S} ^ {\\top} (\\boldsymbol {\\lambda}) = \\left[ \\begin{array}{c c c} 0 & - \\lambda_ {3} & \\lambda_ {2} \\\\ \\lambda_ {3} & 0 & - \\lambda_ {1} \\\\ - \\lambda_ {2} & \\lambda_ {1} & 0 \\end{array} \\right], \\boldsymbol {\\lambda} = \\left[ \\begin{array}{l} \\lambda_ {1} \\\\ \\lambda_ {2} \\\\ \\lambda_ {3} \\end{array} \\right] \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1a3882546b8ef0d0bf22509511d9a6d907eeb70fe31a20d1cf46485a5b8bdd2a.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                460,
+                482,
+                519
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "is the cross-product operator deÖned such that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\lambda } \\times \\mathbf { a } : = \\mathbf { S } ( \\pmb { \\lambda } ) \\mathbf { a }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                520,
+                480,
+                548
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The matrix "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf C } _ { R B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in (2) represents the Coriolis "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\omega } _ { b / n } ^ { b } \\times \\mathbf { v } _ { b / n } ^ { b }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the centripetal vector term "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\omega } _ { b / n } ^ { b } \\times ( \\boldsymbol { \\omega } _ { b / n } ^ { b } \\times { \\bf r } _ { g } ^ { b } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Contrary to the representation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M } _ { R B } "
+                    },
+                    {
+                        "type": "text",
+                        "content": ", it is possible to Önd a large number of representations for the matrix "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } _ { R B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": We will present some useful representations below."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                554,
+                482,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 1. (Coriolis-Centripetal Matrix from M). Consider the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 \\times 6"
+                    },
+                    {
+                        "type": "text",
+                        "content": "constant system inertia matrix:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                657,
+                489,
+                686
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} = \\mathbf {M} ^ {\\top} = \\left[ \\begin{array}{l l} \\mathbf {M} _ {1 1} & \\mathbf {M} _ {1 2} \\\\ \\mathbf {M} _ {2 1} & \\mathbf {M} _ {2 2} \\end{array} \\right] > 0 \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/cb4059011f04859874f7122aebbc815aa0e4ea78bae365ec350070bf41216445.jpg"
+                }
+            },
+            "bbox": [
+                186,
+                694,
+                480,
+                726
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M } _ { 2 1 } = \\mathbf { M } _ { 1 2 } ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Then the Coriolis-centripetal matrix can always be parameterized such that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } ( \\nu ) = - \\mathbf { C } ^ { \\top } ( \\nu )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by choosing:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                733,
+                482,
+                778
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {C} (\\boldsymbol {\\nu}) = \\left[ \\begin{array}{c} \\mathbf {0} _ {3 \\times 3} \\\\ - \\mathbf {S} (\\mathbf {M} _ {1 1} \\boldsymbol {\\nu} _ {1} + \\mathbf {M} _ {1 2} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right. \\\\ \\left. \\begin{array}{l} - \\mathbf {S} (\\mathbf {M} _ {1 1} \\boldsymbol {\\nu} _ {1} + \\mathbf {M} _ {1 2} \\boldsymbol {\\nu} _ {2}) \\\\ - \\mathbf {S} (\\mathbf {M} _ {2 1} \\boldsymbol {\\nu} _ {1} + \\mathbf {M} _ {2 2} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right] \\tag {5} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b5042b987121ff680dac24f13a6955bfcaab7263a06c363c05931cc23880d003.jpg"
+                }
+            },
+            "bbox": [
+                159,
+                795,
+                482,
+                862
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { 1 } : = [ u , v , w ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\nu } _ { 2 } : = [ p , q , r ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                871,
+                418,
+                889
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof: Sagatun and Fossen (1991)."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                910,
+                381,
+                926
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The rigid-body Coriolis and centripetal matrix "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } _ { R B } ( \\nu )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "can always be parametrized such that it is skew-symmetrical:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                71,
+                878,
+                112
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) = - \\mathbf {C} _ {R B} ^ {\\top} (\\boldsymbol {\\nu}), \\quad \\forall \\boldsymbol {\\nu} \\in \\mathbb {R} ^ {6} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5891669fd3ca9ce784e599a56ee6de645d7b47d822338eb72c532197f73ddf0e.jpg"
+                }
+            },
+            "bbox": [
+                566,
+                117,
+                878,
+                135
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The skew-symmetric property is very useful when designing nonlinear motion control systems since the quadratic form "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu ^ { \\top } { \\bf C } _ { R B } ( \\nu ) \\nu ~ \\equiv ~ 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": This is exploited in energy-based designs where Lyapunov functions play a key role. There exists several parametrizations (Fossen and Fjellstad, 1995) that satisfy (6)."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                146,
+                880,
+                247
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lagrangian parametrization: Application of Theorem 1 with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textbf { M } = \\textbf { M } _ { R B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields the following expression:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                250,
+                880,
+                293
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) = \\left[ \\begin{array}{c} \\mathbf {0} _ {3 \\times 3} \\\\ - m \\mathbf {S} (\\boldsymbol {\\nu} _ {1}) - m \\mathbf {S} (\\mathbf {S} (\\boldsymbol {\\nu} _ {2}) \\mathbf {r} _ {g} ^ {b}) \\end{array} \\right. \\\\ \\left. \\begin{array}{c} - m \\mathbf {S} (\\boldsymbol {\\nu} _ {1}) - m \\mathbf {S} (\\mathbf {S} (\\boldsymbol {\\nu} _ {2}) \\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {S} (\\boldsymbol {\\nu} _ {1}) \\mathbf {r} _ {g} ^ {b}) - \\mathbf {S} (\\mathbf {I} _ {b} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right] (7) \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/138e9e16affc5fac4939930dff36d3756d46c7b33a407823209cd45d4269e971.jpg"
+                }
+            },
+            "bbox": [
+                532,
+                307,
+                878,
+                376
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Linear velocity-independent parametrization: By using the cross-product property "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r l } { \\mathbf { S } ( \\pmb { \\nu } _ { 1 } ) \\pmb { \\nu } _ { 2 } } & { { } = } \\end{array}"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "- \\mathbf { S } ( \\pmb { \\nu } _ { 2 } ) \\pmb { \\nu } _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", it is possible to move "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { S } ( \\nu _ { 1 } ) \\nu _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { R B } ^ { \\{ 1 2 \\} }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { R B } ^ { \\{ 1 1 \\} }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in (7). This gives an expression for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } _ { R B } ( \\nu )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "that is independent of linear velocity "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { 1 } \\colon"
+                    },
+                    {
+                        "type": "text",
+                        "content": ":"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                392,
+                878,
+                466
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) = \\left[ \\begin{array}{c c} m \\mathbf {S} (\\boldsymbol {\\nu} _ {2}) & - m \\mathbf {S} (\\boldsymbol {\\nu} _ {2}) \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\mathbf {S} (\\boldsymbol {\\nu} _ {2}) & - \\mathbf {S} (\\mathbf {I} _ {b} \\boldsymbol {\\nu} _ {2}) \\end{array} \\right] (8)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/00773b221620a577085e3ce3ad5c07d1d5c3b2bd469f23985ede1bdbe84089d1.jpg"
+                }
+            },
+            "bbox": [
+                522,
+                470,
+                878,
+                504
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Remark 1. Formula (8) is useful when irrotationa ocean currents enter the equations of motion since "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } _ { R B } ( \\nu )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "does not depend on the linear velocity "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(uses only angular velocity "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and lever arm "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { r } _ { g } ^ { b } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". This is discussed in Section 3.2."
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                510,
+                880,
+                581
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Gravitational and buoyancy forces for surface vessels show a linear behavior "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { g } ( \\pmb { \\eta } ) = \\mathbf { G } \\pmb { \\eta }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "where"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                585,
+                878,
+                614
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {G} = \\left[ \\begin{array}{c c c c c c} 0 & 0 & 0 & 0 & 0 & 0 \\\\ 0 & 0 & 0 & 0 & 0 & 0 \\\\ 0 & 0 & - Z _ {z} & 0 & - Z _ {\\theta} & 0 \\\\ 0 & 0 & 0 & - K _ {\\phi} & 0 & 0 \\\\ 0 & 0 & - M _ {z} & 0 & - M _ {\\theta} & 0 \\\\ 0 & 0 & 0 & 0 & 0 & 0 \\end{array} \\right] \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/884aadae1bcdd4c8d67d5877741cd9e9235b616c5e83f0a7aade72e7fe034485.jpg"
+                }
+            },
+            "bbox": [
+                574,
+                618,
+                878,
+                706
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For underwater vehicles"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                709,
+                692,
+                722
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {g} (\\boldsymbol {\\eta}) = \\left[ \\begin{array}{c} (W - B) \\sin (\\theta) \\\\ - (W - B) \\cos (\\theta) \\sin (\\phi) \\\\ - (W - B) \\cos (\\theta) \\cos (\\phi) \\\\ - (y _ {g} W - y _ {b} B) \\cos (\\theta) \\cos (\\phi) \\\\ (z _ {g} W - z _ {b} B) \\sin (\\theta) \\\\ - (x _ {g} W - x _ {b} B) \\cos (\\theta) \\sin (\\phi) \\end{array} \\right. \\\\ \\left. \\begin{array}{l} + (z _ {g} W - z _ {b} B) \\cos (\\theta) \\sin (\\phi) \\\\ + (x _ {g} W - x _ {b} B) \\cos (\\theta) \\cos (\\phi) \\\\ - (y _ {g} W - y _ {b} B) \\sin (\\theta) \\end{array} \\right] (1 0) \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/294b8dfd036103f96afb5f7728c736e0b36bf1948b3431efd33bae08dd29795d.jpg"
+                }
+            },
+            "bbox": [
+                542,
+                736,
+                878,
+                906
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where the gravitational and buoyancy forces act through the centers of gravity (CG) and buoyancy (CB ) deÖned by the vectors "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { r } _ { g } ^ { b } : = [ x _ { g } , y _ { g } , z _ { g } ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { r } _ { b } ^ { b } : = [ x _ { b } , y _ { b } , z _ { b } ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; respectively."
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                912,
+                878,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFAC MCMC 2012"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                29,
+                181,
+                41
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "September 19-21, 2012. Arenzano, Italy"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                41,
+                319,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "127"
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                933,
+                510,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cc7c9ee701bdaed665e6853fea324657b456f1e4b0f6d2a164182bf33d83e89d.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Wind coe¢ cients "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { X } , C _ { Y } , C _ { K }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for a research vessel."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                117,
+                82,
+                505,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                115,
+                397,
+                482,
+                444
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. SUPERPOSITION OF WIND AND WAVE-INDUCED FORCES"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                151,
+                480,
+                445,
+                507
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For control systems design it is common to assume the principle of superposition when considering wind and wave-induced forces such that (2) takes the following form:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                524,
+                482,
+                580
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {D} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/50e397f97f07d297149c3946ddc73d625e908756fad10fc85d97813f1ace3fa5.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                589,
+                480,
+                618
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\tau } _ { \\mathrm { w i n d } } \\in \\mathbb { R } ^ { 6 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { \\mathrm { w a v e } } \\in \\mathbb { R } ^ { 6 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "represent the generalized forces due to wind and waves."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                617,
+                482,
+                646
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1 Wind forces and moments"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                115,
+                668,
+                344,
+                682
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Wind can be deÖned as the movement of air relative to the surface of the Earth. For a marine craft moving at a forward speed, the wind forces and moments:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                697,
+                482,
+                753
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\boldsymbol {\\tau} _ {\\text { wind }} = \\frac {1}{2} \\rho_ {a} V _ {r w} ^ {2} \\left[ \\begin{array}{c} C _ {X} (\\gamma_ {r w}) A _ {F w} \\\\ C _ {Y} (\\gamma_ {r w}) A _ {L w} \\\\ C _ {Z} (\\gamma_ {r w}) A _ {F w} \\\\ C _ {K} (\\gamma_ {r w}) A _ {L w} H _ {L _ {w}} \\\\ C _ {M} (\\gamma_ {r w}) A _ {F w} H _ {F _ {w}} \\\\ C _ {N} (\\gamma_ {r w}) A _ {L w} L _ {o a} \\end{array} \\right] \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/4e1679a3390a30b7bf33cbe9fe2445e72e4d6b8f0631f505ef175ff762a4c41d.jpg"
+                }
+            },
+            "bbox": [
+                139,
+                757,
+                480,
+                847
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "are functions of relative wind speed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { r w }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and angle of attack "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma _ { r w }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "according to:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                852,
+                482,
+                882
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "V _ {r w} = \\sqrt {u _ {r w} ^ {2} + v _ {r w} ^ {2}} \\tag {13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/02e7ce60fa89e92e9993bede90d57b005c72091e12214ea935a67c8324ff403a.jpg"
+                }
+            },
+            "bbox": [
+                206,
+                888,
+                480,
+                906
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\gamma_ {r w} = - \\mathrm{atan2} (v _ {r w}, u _ {r w}) \\tag {14}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/302edcfe745a5f74e295552f0deeb777495a2afe7f16b6edad24d38c23c09882.jpg"
+                }
+            },
+            "bbox": [
+                208,
+                908,
+                480,
+                923
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "which both are functions of the relative velocities:"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                71,
+                878,
+                85
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "u _ {r w} = u - u _ {w} \\tag {15}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/275f37a0502961316429956edca4407d3a0bc8e78613be55901589876c71b3c6.jpg"
+                }
+            },
+            "bbox": [
+                643,
+                91,
+                878,
+                105
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "v _ {r w} = v - v _ {w} \\tag {16}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/aa42afdb506324ef176c76de3e399cb0d0e35419de5200728174526cbd6f94c9.jpg"
+                }
+            },
+            "bbox": [
+                645,
+                108,
+                877,
+                122
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The nondimensional wind coe¢ cients "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { X } , \\ C _ { Y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { Z } , C _ { K } , C _ { M }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are usually computed using "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "h = 1 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "m as reference height while "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho _ { a }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the air density. The frontal and lateral projected wind areas are denoted by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { F w }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { L w }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "while "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L _ { o a }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the length over all. The mean heights of the areas "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { F w }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { L w }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are denoted by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H _ { L _ { w } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H _ { F _ { w } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. Figure 1 shows four wind coe¢ cients for a typical research vessel (Blendermann, 1994). Wind coe¢ cients for other vessels are found in Fossen (2011) and references therein."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                126,
+                880,
+                282
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2 Wave-induced forces and moments"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                512,
+                290,
+                801,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The Örst- and second-order wave forces for varying wave directions "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and wave frequencies "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are denoted \u001c~fdofg ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tilde { \\tau } _ { \\mathrm { w a v e 1 } } ^ { \\mathrm { \\{ d o f \\} } } ( \\omega _ { k } , \\beta _ { i } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tilde { \\tau } _ { \\mathrm { w a v e 2 } } ^ { \\{ \\mathrm { d o f } \\} } ( \\omega _ { k } , \\beta _ { i } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "where dof "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\in \\ \\{ 1 , 2 , 3 , 4 , 5 , 6 \\}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The normalized force response amplitude operators (RAOs) are complex variables given by (WAMIT Inc., 2010):"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                316,
+                878,
+                404
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) = \\left| \\frac {\\tilde {\\tau} _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k} , \\beta_ {i})}{\\rho g A _ {k}} \\right| e ^ {j \\angle \\tilde {\\tau} _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i})}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/79aec6023ac9c1dc25695c64c8e51adfcca35b25511f7fcb88c5365d82eee98d.jpg"
+                }
+            },
+            "bbox": [
+                517,
+                407,
+                872,
+                445
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta_ {i}) = \\left| \\frac {\\tilde {\\tau} _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k} , \\beta_ {i})}{\\rho g A _ {k} ^ {2}} \\right| e ^ {j \\angle \\tilde {\\tau} _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta_ {i})}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/cd4e8e38a03cc5c2f28eb18beca08f593b0e623d4614f8dc5f7a8bbc72f981f2.jpg"
+                }
+            },
+            "bbox": [
+                519,
+                447,
+                872,
+                485
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The output from the hydrodynamic code is usually an ASCII Öle containing RAOs in table format. Let us denote the imaginary and real parts of the force RAOs by; "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { I m } _ { \\mathrm { w a v e 1 } } \\{ \\mathrm { d o f } \\} ( k , i )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { R e } _ { \\mathrm { w a v e 1 } } \\{ \\mathrm { d o f } \\} ( k , i )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The amplitudes and phases for di§erent frequencies "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and wave directions "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the Örst-order wave-induced forces can be computed according to the formulae:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                488,
+                880,
+                601
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\left| F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) \\right| = \\left(\\text { Im } _ {\\text { wave1 }} \\{\\text { dof } \\} (k, i) ^ {2} \\right. \\\\ \\left. + \\operatorname{Re} _ {\\text { wave1 }} \\{\\mathrm{dof} \\} (k, i) ^ {2}\\right) ^ {1 / 2} \\tag {17} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5b44338c5b7b545af45908c1b68793c4fb9c25b1042c569713455a1b3e083046.jpg"
+                }
+            },
+            "bbox": [
+                526,
+                604,
+                877,
+                649
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\angle F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) = \\text { atan2 } \\left(\\text { Im } _ {\\text { wave1 }} \\{\\text { dof } \\} (k, i), \\right.",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/333fb7e30704535ec8fd58fc5f05db124c5e52b3c9fec37e9808edc7fd03f05c.jpg"
+                }
+            },
+            "bbox": [
+                527,
+                651,
+                853,
+                669
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathrm{Re} _ {\\text { wave1 }} \\{\\text { dof } \\} (k, i)) \\tag {18}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3a96ef6ded6bdcc83648c4e65a061203ad5b8fb73b521d032b76c2d135b2807a.jpg"
+                }
+            },
+            "bbox": [
+                647,
+                670,
+                877,
+                686
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The amplitudes and phases for the second-order mean forces are:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                689,
+                878,
+                715
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\left| F _ {\\text { wave2 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) \\right| = \\text { Re } _ {\\text { wave2 }} \\{\\text { dof } \\} (k, i) \\tag {19}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/57a7ddccb60ba6c9b276c4029efd6eda2f8ba2ac46e35784cee06e3985e90ee0.jpg"
+                }
+            },
+            "bbox": [
+                546,
+                718,
+                877,
+                741
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\angle F _ {\\text { wave2 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta_ {i}) = 0 \\tag {20}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/cd3fdd09a2341f1fd29ed6af94bf9ea07e27a01e62cae95005cff98bc8c6a650.jpg"
+                }
+            },
+            "bbox": [
+                544,
+                743,
+                877,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Since the Örst- and second-order wave forces are represented in terms of the complex variables dof "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F _ { \\mathrm { w a v e 1 } } ^ { \\mathrm { \\ ' f d o f } } ( \\omega _ { k } , \\beta _ { i } )"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F _ { \\mathrm { w a v e 2 } } ^ { \\{ \\mathrm { d o f } \\} } ( \\omega _ { k } , \\beta _ { i } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for sinusoidal excitations can be computed using di§erent wave spectra. A frequently used family of wave spectra is:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                772,
+                880,
+                859
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S (\\omega) = A \\omega^ {- 5} \\exp (- B \\omega^ {- 4}) \\tag {21}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6dd9cebd4efb82e546538bbbda7080655ab8d2e5ad8d71bb582a8e49aea3dfd5.jpg"
+                }
+            },
+            "bbox": [
+                594,
+                863,
+                877,
+                879
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where di§erent values for A and B are used. These values depend on geographical location and wind speed (see Chapter 8.2, Fossen 2011)."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                883,
+                880,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFAC MCMC 2012"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                29,
+                181,
+                41
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "September 19-21, 2012. Arenzano, Italy"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                42,
+                319,
+                54
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "128"
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                933,
+                510,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5e843defa99c540089b93706e82e6cab85d3049e776d390dd2cc93080ac29811.jpg"
+                },
+                "content": "```mermaid\ngraph LR\n  A[\"Sea state H_s,T_z\"] --> B[\"Wave spectrum S(ω)\"]\n  B --> C[\"Wave amplitude A_k\"]\n  C --> D[\"1st-order Force RAO\"]\n  D --> E[\"1st-order wave-induced force τ_wave1\"]\n  B --> F[\"2nd-order Force RAO\"]\n  F --> G[\"2nd-order wave drift force τ_wave2\"]\n```",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. Computation of Örst- and second-order wave-induced forces from force RAOs."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "flowchart",
+            "bbox": [
+                122,
+                71,
+                480,
+                151
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When computing the wave-induced forces, linear superposition is employed as illustrated in Fig. 2. The relationship between the a wave spectrum "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( \\omega _ { k } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the wave amplitude "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for a wave component k is (Faltinsen, 1990):"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                193,
+                482,
+                266
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {1}{2} A _ {k} ^ {2} = S (\\omega_ {k}) \\Delta \\omega \\tag {22}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ddba83daa39683efa58206158a4a7bc1d49072ae7ba52e0cefc5e65f7601c44d.jpg"
+                }
+            },
+            "bbox": [
+                233,
+                271,
+                480,
+                298
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where \u0001! is a constant di§erence between the frequencies. Let the wave-induced forces in 6 DOF be denoted by the vectors:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                302,
+                482,
+                344
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\boldsymbol {\\tau} _ {\\text { wave1 }} = \\left[ \\tau_ {\\text { wave1 }} ^ {\\{1 \\}}, \\tau_ {\\text { wave1 }} ^ {\\{2 \\}},..., \\tau_ {\\text { wave1 }} ^ {\\{6 \\}} \\right] ^ {\\top}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/cd3a4e35f27f5abdf30c55bb08b1627624cf284cbe152facda5648d702d71671.jpg"
+                }
+            },
+            "bbox": [
+                161,
+                349,
+                433,
+                376
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\boldsymbol {\\tau} _ {\\text { wave2 }} = \\left[ \\tau_ {\\text { wave2 }} ^ {\\{1 \\}}, \\tau_ {\\text { wave2 }} ^ {\\{2 \\}},..., \\tau_ {\\text { wave2 }} ^ {\\{6 \\}} \\right] ^ {\\top}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5841c63067632e960bcf838b2a22b04080a8885398015bc5273394ed29e97681.jpg"
+                }
+            },
+            "bbox": [
+                164,
+                378,
+                433,
+                404
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For the no spreading case, the wave direction "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta ="
+                    },
+                    {
+                        "type": "text",
+                        "content": "constant such that:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                407,
+                482,
+                436
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\tau_ {\\mathrm{wave1}} ^ {\\{\\mathrm{dof} \\}} = \\sum_ {k = 1} ^ {N} \\rho g \\left| F _ {\\mathrm{wave1}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta) \\right|",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ad30e6fb08ab612b6ca9096b21f0fc22e604aff7bb218b87e2890a6541b1d8b7.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                439,
+                344,
+                479
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A _ {k} \\cos \\left(\\omega_ {e} (U, \\omega_ {k}, \\beta) t + \\angle F _ {\\text { wave1 }} ^ {\\{\\text { dof } \\}} (\\omega_ {k}, \\beta) + \\epsilon_ {k}\\right) \\tag {23}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1a41a649b54813f3705f341855f9ffeb1935d118bf9603c5ae487b10838e7669.jpg"
+                }
+            },
+            "bbox": [
+                161,
+                480,
+                490,
+                518
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\tau_ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} = \\sum_ {k = 1} ^ {N} \\rho g \\left| F _ {\\mathrm{wave2}} ^ {\\{\\mathrm{dof} \\}} (\\omega_ {k}, \\beta) \\right|",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7cf1a6e03bc751c661ea8412dfd5304d7b4313ca86ef61c077b8ac932b750ff4.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                521,
+                344,
+                558
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A _ {k} ^ {2} \\cos \\left(\\omega_ {e} (U, \\omega_ {k}, \\beta) t + \\epsilon_ {k}\\right) \\tag {24}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/8bd8bcb3c4b78c5a5f3b31a02d9d6b2c9c806eb9b7ea648b32e392f4bd7e74c0.jpg"
+                }
+            },
+            "bbox": [
+                163,
+                561,
+                480,
+                577
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                583,
+                164,
+                595
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\omega_ {e} (U, \\omega_ {k}, \\beta) = \\omega_ {k} - \\frac {\\omega_ {k} ^ {2}}{g} U \\cos (\\beta) \\tag {25}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ce161119a8e46a52fe723bcd89225142f125d5bb1a4ec9caa9a6827c5780c2be.jpg"
+                }
+            },
+            "bbox": [
+                179,
+                600,
+                480,
+                631
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "is the encounter frequency. The assumption that = constant can be relaxed to model spreading of the main wave propagation direction (see Chapter 8.3, Fossen 2011)."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                634,
+                482,
+                692
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. EQUATIONS OF MOTION INCLUDING OCEAN CURRENTS"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                129,
+                719,
+                468,
+                747
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Ocean currents are horizontal and vertical circulation systems of ocean waters produced by gravity, wind friction and water density variation in different parts of the ocean. Besides wind-generated currents, the heat exchange at the sea surface together with salinity changes, develop an additional sea current component, usually referred to as thermohaline currents."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                762,
+                482,
+                875
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The oceans are conveniently divided into two water spheres, the cold and warm water sphere. Since the Earth is rotating, the Coriolis force will try to turn the major currents to the East in the northern hemisphere and West in the southern hemisphere. Finally, the major ocean circulations will also have a tidal component arising from planetary interactions and gravity. In coastal regions and fjords, tidal components can reach very high speeds, in fact speeds of 2ñ3 m/s or more have been measured."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                883,
+                482,
+                926
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                510,
+                71,
+                880,
+                184
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The forces on a marine craft due to ocean currents can be accounted for by replacing the generalized velocity vector in the hydrodynamic terms with relative velocities:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                192,
+                880,
+                247
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\boldsymbol {\\nu} _ {r} = \\boldsymbol {\\nu} - \\boldsymbol {\\nu} _ {c} \\tag {26}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/509996b170d7947b16d49348fc7a2a917b07920b02362585dc7c20113d196bc4.jpg"
+                }
+            },
+            "bbox": [
+                648,
+                255,
+                877,
+                269
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { c } \\in \\mathbb { R } ^ { 6 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the velocity of the ocean current expressed in BODY."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                273,
+                878,
+                302
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "DeÖnition 1. (Irrotational áuid). The generalized ocean current velocity of an irrotational áuid is:"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                315,
+                878,
+                344
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\boldsymbol {\\nu} _ {c} = \\left[ \\underbrace {u _ {c} , v _ {c} , w _ {c}} _ {\\mathbf {v} _ {c} ^ {b}}, 0, 0, 0 \\right] ^ {\\top} \\tag {27}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f05f14a53394679d8ba76d903026007e82bf5bf9acca6e1f8099e823891e7f94.jpg"
+                }
+            },
+            "bbox": [
+                606,
+                347,
+                877,
+                382
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { v } _ { c } ^ { b } = [ u _ { c } , v _ { c } , w _ { c } ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the linear velocity."
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                387,
+                848,
+                404
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The ocean current linear velocity vector satisÖes:"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                423,
+                877,
+                437
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {v} _ {c} ^ {n} = \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\mathbf {v} _ {c} ^ {b} \\tag {28}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/54a018bcc9ffce75bf6030a573cf01082923aa24203be193ea4aca9337c5c28f.jpg"
+                }
+            },
+            "bbox": [
+                630,
+                441,
+                877,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r } { \\Theta _ { n b } ~ = ~ [ \\phi , \\theta , \\psi ] ^ { \\top } } \\end{array}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are the Euler angles between BODY and NED, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } _ { b } ^ { n } ( \\Theta _ { n b } ) \\in S O ( 3 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the corresponding rotation matrix."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                461,
+                878,
+                505
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "DeÖnition 2. (Irrotational constant ocean current). An irrotational constant ocean current in NED satisÖes:"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                518,
+                889,
+                558
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\mathbf {v}} _ {c} ^ {n} = \\dot {\\mathbf {R}} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\mathbf {v} _ {c} ^ {b} + \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\dot {\\mathbf {v}} _ {c} ^ {b} := \\mathbf {0} \\tag {29}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0e5002c700f4d69a7018453925eef947707727e72dfc6b3bc2944e7bf908e9ec.jpg"
+                }
+            },
+            "bbox": [
+                544,
+                564,
+                877,
+                581
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                586,
+                561,
+                598
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\mathbf {R}} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) = \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) \\tag {30}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/46cb5ceb8523285c94a3e8320246dd3f3fce701ae4be2ced24b1ee8a9e1cee17.jpg"
+                }
+            },
+            "bbox": [
+                586,
+                602,
+                877,
+                621
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This implies that the ocean current linear velocity vector in BODY coordinates is given by:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                624,
+                878,
+                653
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\mathbf {v}} _ {c} ^ {b} = - \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) \\mathbf {v} _ {c} ^ {b} \\tag {31}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b5111f9049239e115946a4689e617ff65f95a435349ce0ef060416e68bef307d.jpg"
+                }
+            },
+            "bbox": [
+                628,
+                656,
+                877,
+                674
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1 Equations of Motion including Ocean Currents"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                512,
+                700,
+                882,
+                714
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to simulate irrotational ocean currents and their e§ect on marine craft motion, the following model can be applied:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                727,
+                878,
+                770
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\underbrace {\\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta})} _ {\\text { rigid - body   and   hydrostatic   terms }} \\\\ + \\underbrace {\\mathbf {M} _ {A} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} _ {A} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} + \\mathbf {D} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r}} _ {\\text { hydrodynamic   terms }} \\\\ = \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\tag {32} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7e48858372084ee9db82ec8915830f72ab5268ff40ec339ac2f9dcf45d3313c6.jpg"
+                }
+            },
+            "bbox": [
+                531,
+                776,
+                877,
+                863
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where"
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                868,
+                561,
+                879
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\boldsymbol {\\nu} _ {r} = \\left[ \\begin{array}{c} \\mathbf {v} ^ {b} - \\mathbf {v} _ {c c} ^ {b} \\\\ \\boldsymbol {\\omega} _ {b / n} ^ {b} \\end{array} \\right] \\tag {33}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/54151f6468874586fe218eabc11ca0869d0a1f5c977a7f4d289c1c466edc567a.jpg"
+                }
+            },
+            "bbox": [
+                636,
+                877,
+                877,
+                910
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "is the relative velocity vector. Notice that the rigid-body kinetics is independent of the ocean current."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                912,
+                878,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFAC MCMC 2012"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                29,
+                181,
+                41
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "September 19-21, 2012. Arenzano, Italy"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                41,
+                319,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "129"
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                933,
+                510,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                115,
+                71,
+                482,
+                99
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2 Equations of Relative Velocity"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                115,
+                110,
+                374,
+                124
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It is possible to simplify (32) by exploiting the structure of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf C } _ { R B } ( \\nu _ { r } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ":"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                137,
+                482,
+                167
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 2. If the Coriolis and centripetal matrix "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf C } _ { R B } ( \\nu _ { r } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is parametrized independent of linear velocity "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { 1 } ~ = ~ [ u , v , w ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", for instance by using (8), and the ocean current is irrotational and constant (DeÖnition 2), the rigid-body kinetics satisÖes (HegrenÊs, 2010):"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                180,
+                482,
+                266
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} \\equiv \\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} (3 4)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7b11bb649e7b36752557619978edd832f2313479b93f072608efe183c1cc56fd.jpg"
+                }
+            },
+            "bbox": [
+                124,
+                271,
+                480,
+                287
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PROOF. Since the Coriolis and centripetal matrix represented by (8) is independent of linear velocity "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\nu } _ { 1 } = [ u , v , w ] ^ { \\top }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", it follows that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } _ { R B } ( \\nu _ { r } ) ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } _ { R B } ( \\nu )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The property:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                307,
+                482,
+                365
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} _ {c} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {c} = \\mathbf {0} \\tag {35}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ec4d513daffad19ea44b1406e73d3112068727cba53d67a12e51502101049d5c.jpg"
+                }
+            },
+            "bbox": [
+                200,
+                370,
+                480,
+                386
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "is proven by expanding the matrices "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M } _ { R B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf C } _ { R B } ( \\nu _ { r } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; and corresponding acceleration and velocity vectors according to:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                391,
+                482,
+                434
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\left[ \\begin{array}{c c} m \\mathbf {I} _ {3 \\times 3} & - m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) & \\mathbf {I} _ {b} \\end{array} \\right] \\left[ \\begin{array}{c} - \\mathbf {S} (\\pmb {\\omega} _ {b / n} ^ {b}) \\mathbf {v} _ {c} ^ {b} \\\\ \\mathbf {0} _ {3 \\times 1} \\end{array} \\right] \\\\ + \\left[ \\begin{array}{c c} m \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) & - m \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\\\ m \\mathbf {S} (\\mathbf {r} _ {g} ^ {b}) \\mathbf {S} (\\boldsymbol {\\omega} _ {b / n} ^ {b}) & - \\mathbf {S} (\\mathbf {I} _ {b} \\boldsymbol {\\omega} _ {b / n} ^ {b}) \\end{array} \\right] \\left[ \\begin{array}{c} \\mathbf {v} _ {c} ^ {b} \\\\ \\mathbf {0} _ {3 \\times 1} \\end{array} \\right] = \\mathbf {0} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a8224f6ef9098f7ce3de4cfff80efa3bcd1cb781bd4c6d6330e96535bbdef486.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                439,
+                500,
+                513
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Finally, it follows that:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                516,
+                289,
+                530
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {M} _ {R B} \\dot {\\pmb {\\nu}} + \\mathbf {C} _ {R B} (\\pmb {\\nu}) \\pmb {\\nu} = \\mathbf {M} _ {R B} [ \\dot {\\pmb {\\nu}} _ {r} + \\dot {\\pmb {\\nu}} _ {c} ] \\\\ + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) [ \\boldsymbol {\\nu} _ {r} + \\boldsymbol {\\nu} _ {c} ] \\\\ = \\mathbf {M} _ {R B} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} _ {R B} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} \\tag {36} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/101d1dd4999c5d0d88236bc82861bb61dccdf9dc949304e3016c6ae0fcd94047.jpg"
+                }
+            },
+            "bbox": [
+                129,
+                536,
+                480,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 2 when applied to (32) gives the di§erential equations:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                620,
+                482,
+                648
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\boldsymbol {\\eta}} = \\mathbf {J} (\\boldsymbol {\\eta}) \\boldsymbol {\\nu} _ {r} + \\left[ \\begin{array}{c} \\mathbf {v} _ {c} ^ {n} \\\\ \\mathbf {0} \\end{array} \\right] \\tag {37}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7460ee37e8bf56aff43bbc07b5bdadf8f6912c00f37827e9dc6cbfd27690d03b.jpg"
+                }
+            },
+            "bbox": [
+                220,
+                652,
+                480,
+                684
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {M} \\dot {\\boldsymbol {\\nu}} _ {r} + \\mathbf {C} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} + \\mathbf {D} (\\boldsymbol {\\nu} _ {r}) \\boldsymbol {\\nu} _ {r} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\tag {38}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f1258886d5b977992a016692b235575022c8471046ccbf764c839c568ad1cd2f.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                688,
+                497,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M } = \\mathbf { M } _ { R B } + \\mathbf { M } _ { A }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C } ( \\pmb { \\nu } _ { r } ) = \\mathbf { C } _ { R B } ( \\pmb { \\nu } _ { r } ) -"
+                    },
+                    {
+                        "type": "text",
+                        "content": "+ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf C } _ { A } ( \\pmb { \\nu } _ { r } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Notice that only "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { r }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and not \u0017 is used in (38) if compared to (32). The model (37)ñ(38) includes the bias "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\dot { \\mathbf { v } } _ { c } ^ { n } = \\mathbf { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at the kinematic level while (32) models drift due to ocean currents at the kinetic level using "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { \\nu } _ { r } = \\pmb { \\nu } - \\pmb { \\nu } _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                717,
+                482,
+                802
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.3 Equations of Motion for Zero Speed"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                115,
+                813,
+                415,
+                827
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For low-speed applications such as DP, ocean currents and damping can be modeled by three current coe¢ cients "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { X } , C _ { Y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". These can be experimentally obtained using scale models in wind tunnels. The resulting forces are measured on the model, which is restrained from moving."
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                840,
+                482,
+                926
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/53a81f6f9c103f4ef34347d63fe4738b17e511f4f6c011429ef0a66c10232554.jpg"
+                },
+                "content": "y_b\nV_c\nβ_c\nz_b\nψ\nx_b\nγ_c\nNorth\nEast",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. Current speed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { c } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "current direction "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and current angle of attack "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "relative bow."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "text_image",
+            "bbox": [
+                524,
+                71,
+                870,
+                298
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In many textbooks and papers, for instance Blendermann (1994), wind and current coe¢ cients are deÖned relative to the bow using a counter clockwise rotation "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(see Figure 3). The current forces on a marine craft at rest can be expressed in terms of the area-based current coe¢ cients "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { X } , C _ { Y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                344,
+                880,
+                443
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "X _ {\\text { current }} = \\frac {1}{2} \\rho A _ {F c} C _ {X} (\\gamma_ {c}) V _ {c} ^ {2} \\tag {39}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/39cf4377ee020a70ea670ec9ba36139ed95ba6a32a3695c4b3eeb437d91a937d.jpg"
+                }
+            },
+            "bbox": [
+                579,
+                447,
+                878,
+                474
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "Y _ {\\text { current }} = \\frac {1}{2} \\rho A _ {L c} C _ {Y} (\\gamma_ {c}) V _ {c} ^ {2} \\tag {40}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5f81667ff4e16f037a552caa469f7bd4d4fdeac799ba81a17b42b88d6c5c04db.jpg"
+                }
+            },
+            "bbox": [
+                583,
+                475,
+                878,
+                502
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "N _ {\\text { current }} = \\frac {1}{2} \\rho A _ {L c} L _ {o a} C _ {N} (\\gamma_ {c}) V _ {c} ^ {2} \\tag {41}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/35c65e077aff75233443cb492a1302aaf7cf11e95f9c1ad2a1a109a970b3427c.jpg"
+                }
+            },
+            "bbox": [
+                579,
+                502,
+                877,
+                529
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the speed of the ocean current. The frontal and lateral projected currents areas are denoted "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { F c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { L c } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "respectively while "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L _ { o a }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the length over all and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the density of water."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                533,
+                878,
+                590
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For vehicles at rest and motions limited to surge, sway and yaw, ocean currents are linearly superimposed according to:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                598,
+                880,
+                640
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {C} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {D} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\\\ \\boldsymbol {\\tau} _ {\\text { current }} + \\boldsymbol {\\tau} _ {\\text { wind }} + \\boldsymbol {\\tau} _ {\\text { wave }} + \\boldsymbol {\\tau} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/4a9984642231de002c21f9ab73490beb4d3e2edd61b317a7730b113fb90bdcd4.jpg"
+                }
+            },
+            "bbox": [
+                527,
+                649,
+                862,
+                681
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { w h e r e } \\ \\tau _ { \\mathrm { c u r r e n t } } = [ X _ { \\mathrm { c u r r e n t } } , Y _ { \\mathrm { c u r r e n t } } , N _ { \\mathrm { c u r r e n t } } ] ^ { \\top } ."
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                688,
+                847,
+                705
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The current coe¢ cients can also be used at forward speed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U > 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and related to the surge resistance, cross-áow drag and the Munk moment used in maneuvering theory by using the concept of relative velocity (see Chapter 7.3, Fossen 2011)."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                709,
+                878,
+                782
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. OCEAN CURRENT SIMULATIONMODELS"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                549,
+                810,
+                842,
+                839
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Let the ocean current speed be denoted by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "while its direction relative to the moving craft is expressed in terms of two angles: angle of attack "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and sideslip angle "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as shown in Figure 4. For computer simulations the ocean current speed and direction can be generated by using Örst-order GaussñMarkov processes:"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                854,
+                880,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFAC MCMC 2012"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                29,
+                181,
+                41
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "September 19-21, 2012. Arenzano, Italy"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                42,
+                319,
+                54
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "130"
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                933,
+                510,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                115,
+                71,
+                482,
+                99
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {V} _ {c} + \\mu_ {1} V _ {c} = w _ {1} \\tag {42}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/58e10f0305d3351ddef4a3156ea49087ca1f90df86d190f850a0327b46fc9551.jpg"
+                }
+            },
+            "bbox": [
+                240,
+                118,
+                480,
+                135
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\alpha} _ {c} + \\mu_ {2} \\alpha_ {c} = w _ {2} \\tag {43}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0e8ce4988df8cda69f2dce5d0f71360e19149ef7ce898c01309c4c31b79267cc.jpg"
+                }
+            },
+            "bbox": [
+                240,
+                139,
+                480,
+                154
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\beta} _ {c} + \\mu_ {3} \\beta_ {c} = w _ {3} \\tag {44}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0b6a5298ea13bf45df5257fe1bd1a1360fa8bcb149e96d3348b00e8dcdb858c3.jpg"
+                }
+            },
+            "bbox": [
+                240,
+                156,
+                480,
+                174
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w _ { i } ~ ( i { \\mathrm { ~ = ~ } } 1 , 2 , 3 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are zero-mean Gaussian white noise processes and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu _ { i } \\ \\ge \\ 0 \\ ( i \\ = \\ 1 , 2 , 3 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are constants. If "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu _ { 1 } = \\mu _ { 2 } = \\mu _ { 3 } = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the models reduce to a random walks, corresponding to time integration of white noise. A saturating element is usually used in the integration process to limit the current speed to:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                183,
+                482,
+                282
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "V _ {\\min} \\leq V _ {c} (t) \\leq V _ {\\max} \\tag {45}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7e91007c13e659b2f0b072c1491cda0febcdb798b0d3d0463a4b7c85f4f2cbb4.jpg"
+                }
+            },
+            "bbox": [
+                221,
+                290,
+                480,
+                306
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The direction of the current can also be Öxed by specifying constant values for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\beta _ { c } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ":"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                313,
+                482,
+                342
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3-D Irrotational Ocean Current Model: A 3-D irrotational ocean current model is obtained by transforming the ocean current speed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and directions "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\alpha _ { c } , \\beta _ { c } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "from FLOW axes to NED velocities:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                347,
+                482,
+                418
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\mathbf {v} _ {c} ^ {n} = \\mathbf {R} _ {y, \\alpha_ {c}} ^ {\\top} \\mathbf {R} _ {z, - \\beta_ {c}} ^ {\\top} \\left[ \\begin{array}{l} V _ {c} \\\\ 0 \\\\ 0 \\end{array} \\right] \\\\ = \\left[ \\begin{array}{l} V _ {c} \\cos (\\alpha_ {c}) \\cos (\\beta_ {c}) \\\\ V _ {c} \\sin (\\beta_ {c}) \\\\ V _ {c} \\sin (\\alpha_ {c}) \\cos (\\beta_ {c}) \\end{array} \\right] \\tag {46} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f6bfa1e9e979d6458a63b25ee5cca66aa22b3df38ef8db0b766b204163ccd8b7.jpg"
+                }
+            },
+            "bbox": [
+                194,
+                432,
+                482,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where the principal rotations "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } _ { y , \\alpha _ { c } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } _ { z , - \\beta _ { c } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are recognized as:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                535,
+                480,
+                564
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {R} _ {y, \\alpha} = \\left[ \\begin{array}{c c c} \\cos (\\alpha) & 0 & \\sin (\\alpha) \\\\ 0 & 1 & 0 \\\\ - \\sin (\\alpha) & 0 & \\cos (\\alpha) \\end{array} \\right] \\tag {47}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/8c74a8b21d2370c5182cac7ff1b0c7d1a5817e803568b1c9cabee8261651c2cb.jpg"
+                }
+            },
+            "bbox": [
+                193,
+                569,
+                480,
+                615
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathbf {R} _ {z, - \\beta} = \\left[ \\begin{array}{c c c} \\cos (\\beta) & \\sin (\\beta) & 0 \\\\ - \\sin (\\beta) & \\cos (\\beta) & 0 \\\\ 0 & 0 & 1 \\end{array} \\right] \\tag {48}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b25e050f1554147b70bdbf4e12794c0e6c658aa6e904d7bf66008ae6fe282887.jpg"
+                }
+            },
+            "bbox": [
+                184,
+                615,
+                480,
+                662
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This expression can be transformed from NED to BODY using the Euler angle rotation matrix "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } _ { b } ^ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Consequently,"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                667,
+                482,
+                709
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\left[ \\begin{array}{l} u _ {c} \\\\ v _ {c} \\\\ w _ {c} \\end{array} \\right] = \\mathbf {R} _ {b} ^ {n} (\\boldsymbol {\\Theta} _ {n b}) ^ {\\top} \\left[ \\begin{array}{l} V _ {c} \\cos (\\alpha_ {c}) \\cos (\\beta_ {c}) \\\\ V _ {c} \\sin (\\beta_ {c}) \\\\ V _ {c} \\sin (\\alpha_ {c}) \\cos (\\beta_ {c}) \\end{array} \\right] \\tag {49}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/97538d4696bc5ff3d7e09550d834d806e1638679b6b74c4e643e3b2a5db9750e.jpg"
+                }
+            },
+            "bbox": [
+                131,
+                715,
+                480,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2-D Irrotational Ocean Current Model: For motions in the horizontal plane, the 3-D equations (49) reduce to:"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                778,
+                482,
+                822
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "u _ {c} = V _ {c} \\cos (\\beta_ {c} - \\psi) \\tag {50}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d2924b56c0fbe82872221b13d6239acb8bfa081de284e65a343670ed2c2781d8.jpg"
+                }
+            },
+            "bbox": [
+                226,
+                841,
+                480,
+                857
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "v _ {c} = V _ {c} \\sin (\\beta_ {c} - \\psi) \\tag {51}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/797963e7a8482d40577d95ef9f96fcd94a6e20eba4e20be8507bf9984851a6b4.jpg"
+                }
+            },
+            "bbox": [
+                228,
+                860,
+                480,
+                877
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { c } = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi = \\theta = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Consequently,"
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                885,
+                415,
+                901
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "V _ {c} = \\sqrt {u _ {c} ^ {2} + v _ {c} ^ {2}} \\tag {52}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6896e69b4cf27d986d660f3cf8c16dcea8ed3f693b5cb9d5c74faae05a7c238d.jpg"
+                }
+            },
+            "bbox": [
+                242,
+                906,
+                480,
+                923
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/46169685d7908ae49605c93f9e99386472ed9586721270e1c0f75f3b7c2177b1.jpg"
+                },
+                "content": "y_b\n98000\nU\nx_flow\n-β\nα\nx_stab\nz_b",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. Angle of attack and sideslip angle for a marine craft."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "text_image",
+            "bbox": [
+                515,
+                72,
+                887,
+                203
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. CONCLUSIONS"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                620,
+                244,
+                769,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A tutorial on how to include models for wind, waves and ocean currents for marine craft has been presented. The concept of equations of relative motions is used to model the e§ect of ocean currents while wind and wave-induced forces are added under the assumption of linear superposition. The article is intended for control engineers who want to simulate and predict the motions of marine craft exposed to wind, wave and ocean currents and use time-series to evaluate the performance of control systems."
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                271,
+                880,
+                428
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                636,
+                451,
+                754,
+                464
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "W. Blendermann. Parameter IdentiÖcation of Wind Loads on Ships. J. Wind Eng. Ind. Aerodyn, JWEIA-51:339ñ351, 1994."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "O. M. Faltinsen. Sea Loads on Ships and O§ shore Structures. Cambridge University Press, 1990."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "T. I. Fossen. Nonlinear Modeling and Control of Underwater Vehicles. PhD thesis, Department of Engineering Cybernetics, Norwegian University of Science and Technology, Trondheim, Norway, June 1991."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "T. I. Fossen. Guidance and Control of Ocean Vehicles. John Wiley and Sons Ltd., 1994. ISBN 0-471-94113-1."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "T. I. Fossen. Handbook of Marine Craft Hydrodynamics and Motion Control. John Wiley and Sons Ltd., 2011. ISBN 978-1-1199-9149-6."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "T. I. Fossen and O. E. Fjellstad. Nonlinear Modelling of Marine Vehicles in 6 Degrees of Freedom. International Journal of Mathematical Modelling of Systems, JMMS-1(1):17ñ28, 1995."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "ÿyvind HegrenÊs. Autonomous Navigation for Underwater Vehicles. PhD thesis, Dept. of Engineering Cybernetics, Norwegian University of Science and Technology, Trondheim, Norway, 2010."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "S. I. Sagatun and T.I. Fossen. Lagrangian Formulation of Underwater VehiclesíDynamics. In Proceedings of the IEEE International Conference on Systems, Man and Cybernetics, pages 1029ñ1034, Charlottesville, VA, October 1991."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "WAMIT Inc. WAMIT User Manual. <www.wamit.com>, 2010."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                470,
+                880,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFAC MCMC 2012"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                29,
+                181,
+                41
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "September 19-21, 2012. Arenzano, Italy"
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                42,
+                319,
+                54
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "131"
+                    }
+                ]
+            },
+            "bbox": [
+                485,
+                933,
+                510,
+                944
+            ]
+        }
+    ]
+]

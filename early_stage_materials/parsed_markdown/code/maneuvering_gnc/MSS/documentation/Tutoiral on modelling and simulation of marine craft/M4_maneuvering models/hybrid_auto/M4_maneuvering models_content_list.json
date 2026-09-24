@@ -1,0 +1,6232 @@
+[
+    {
+        "type": "text",
+        "text": "Ma noeuvri ng Models",
+        "text_level": 1,
+        "bbox": [
+            213,
+            214,
+            795,
+            307
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "( M od u l e 4)",
+        "text_level": 2,
+        "bbox": [
+            387,
+            387,
+            616,
+            459
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prepared together with And rew Ross",
+        "text_level": 2,
+        "bbox": [
+            241,
+            490,
+            788,
+            540
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D r Tri sta n P e rez",
+        "text_level": 2,
+        "bbox": [
+            147,
+            596,
+            434,
+            646
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre for Com plex Dynam ic Systems a nd Control (C DSC)",
+        "bbox": [
+            145,
+            662,
+            477,
+            740
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "P rofessor Thor I Fosse n",
+        "text_level": 2,
+        "bbox": [
+            506,
+            596,
+            927,
+            646
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "De pa rtme nt of E ng i n ee ri ng Cybernetics",
+        "bbox": [
+            506,
+            662,
+            809,
+            740
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ef44e76c731ce25ff1f7bef0835a5d2564757af296fd48cf8f2da6636cbc5f5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            195,
+            783,
+            276,
+            888
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            279,
+            807,
+            415,
+            825
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "NEWCASTLE",
+        "bbox": [
+            279,
+            827,
+            415,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AUSTRALIA",
+        "bbox": [
+            280,
+            859,
+            352,
+            875
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/bb5144ec753e3d88becf855dd466a5fcf9d62c57d0fb0ffe19455d90b577a474.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            595,
+            794,
+            640,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "NTNU",
+        "bbox": [
+            651,
+            792,
+            825,
+            857
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Det skapende universitet",
+        "bbox": [
+            651,
+            864,
+            855,
+            896
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            363,
+            944,
+            634,
+            970
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1",
+        "bbox": [
+            929,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Vectoria l Representation for Sh i ps",
+        "text_level": 2,
+        "bbox": [
+            51,
+            46,
+            927,
+            133
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "F rom roboti cs to sh i p mod el i ng ( Fosse n 1 99 1 )",
+        "text_level": 2,
+        "bbox": [
+            68,
+            185,
+            641,
+            231
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consid e r the cl assi ca l robot ma n i pu l ator mod el :",
+        "bbox": [
+            66,
+            246,
+            600,
+            283
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "I t is here assu med that the hyd rodynam ic coefficients are freq uency i ndependent. Th is wi l l be relaxed later!",
+        "bbox": [
+            684,
+            196,
+            983,
+            333
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} (\\mathbf {q}) \\ddot {\\mathbf {q}} + \\mathbf {C} (\\mathbf {q}, \\dot {\\mathbf {q}}) \\mathbf {q} = \\boldsymbol {\\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            66,
+            335,
+            331,
+            385
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- q i s a ve cto r of j o i n t a n g l e s",
+            "- i s a ve cto r of to rq u e"
+        ],
+        "bbox": [
+            369,
+            320,
+            654,
+            425
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- M a nd C a re the syste m i n e rtia a nd Coriol is matri ces",
+        "bbox": [
+            370,
+            392,
+            906,
+            425
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Th is mod el stru ctu re ca n be used as fou nd ation to write the 6 DO F ma ri n e vessel eq u ations of motion i n a com pact vectorial setti ng ( Fosse n 1 994, 2002 ) :",
+        "bbox": [
+            65,
+            446,
+            950,
+            525
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\eta} = \\mathbf {J} (\\eta) \\mathbf {v}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            209,
+            544,
+            323,
+            587
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\mathbf {v}} + \\mathbf {C} (\\mathbf {v}) \\mathbf {v} + \\mathbf {D} (\\mathbf {v}) \\mathbf {v} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            91,
+            607,
+            448,
+            650
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- body ve l ociti es : $\\mathbf { \\nu } = [ u , \\nu , w , p , q , r ] ^ { T }$",
+            "- p os i t i o n a n d E u l e r a n g l e s :  x, y, z,  ,  ,  T",
+            "- M , C a n d D d e n ote th e syste m i n e rti a , Coriol is and dam pi ng matrices",
+            "- g is a vector of g ravitationa l a nd buoya n cy forces and moments"
+        ],
+        "bbox": [
+            63,
+            677,
+            500,
+            888
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/272d117a79ce6fc3e2f8538cfd4d02fb9a1a51d0efab9fa70e8c64459211e085.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            586,
+            557,
+            931,
+            846
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            927,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rig id- Body Eq uations of Motion",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            866,
+            142
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "N ewton ian Form u lation (Body F rame)",
+        "bbox": [
+            75,
+            175,
+            547,
+            220
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {R B} \\dot {\\mathbf {v}} + \\mathbf {C} _ {R B} (\\mathbf {v}) \\mathbf {v} = \\boldsymbol {\\tau} _ {R B}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            79,
+            250,
+            366,
+            300
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "bbox": [
+            79,
+            320,
+            155,
+            355
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "${ \\pmb M } _ { R B }$ ri g i d - bod y syste m i n e rti a m atrix $\\pmb { C } _ { R B }$ ri g i d - b o d y C o ri o l i s/ce n t ri p eta l m at ri x",
+        "bbox": [
+            79,
+            398,
+            540,
+            481
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "See Fossen (1 994, 2002) for parameterizations of $\\pmb { C } _ { R B }$",
+        "bbox": [
+            77,
+            520,
+            626,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {R B} = \\left[ \\begin{array}{c c c c c c} m & 0 & 0 & 0 & m z _ {g} & - m y _ {g} \\\\ 0 & m & 0 & - m z _ {g} & 0 & m x _ {g} \\\\ 0 & 0 & m & m y _ {g} & - m x _ {g} & 0 \\\\ 0 & - m z _ {g} & m y _ {g} & I _ {x} & - I _ {x y} & - I _ {x z} \\\\ m z _ {g} & 0 & - m x _ {g} & - I _ {y x} & I _ {y} & - I _ {y z} \\\\ - m y _ {g} & m x _ {g} & 0 & - I _ {z x} & - I _ {z y} & I _ {z} \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            583,
+            151,
+            988,
+            437
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Rigid-body system inertia matrix",
+        "bbox": [
+            654,
+            448,
+            977,
+            485
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The general ized forces on a floati ng vessel are su perpositioned :",
+        "bbox": [
+            75,
+            664,
+            793,
+            705
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {R B} = \\boldsymbol {\\tau} _ {H} + \\boldsymbol {\\tau} _ {w a v e} + \\boldsymbol {\\tau} _ {w i n d} + \\boldsymbol {\\tau} _ {c u r r e n t} + \\boldsymbol {\\tau} _ {c o n t r o l}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            79,
+            759,
+            558,
+            796
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Hyd rodynam ic rad iation-i nd uced forces + viscous dam pi ng",
+        "bbox": [
+            201,
+            840,
+            855,
+            883
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            977
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            929,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Rad iation-I nd uced Hyd rodyn . Forces",
+        "text_level": 2,
+        "bbox": [
+            45,
+            59,
+            988,
+            144
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": " Forces on the body whe n the body is forced to osci l l ate with the wave excitation freq u e n cy a nd the re a re no i n cid e nt waves ( F a l t i n s e n 1 9 9 0 ) :",
+        "bbox": [
+            88,
+            161,
+            913,
+            285
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "(1) Added mass d u e to the i n e rtia of the su rrou nd i ng fl u id",
+            "( 2 ) Rad iation-i nd u ced (l i n ea r) potential damping d u e to the e n e rgy carried away by generated su rface waves",
+            "( 3 ) Restori ng forces d ue to Archimedes (weig ht and buoyancy)"
+        ],
+        "bbox": [
+            138,
+            327,
+            950,
+            512
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {R} = - \\underbrace {\\mathbf {M} _ {A} \\dot {\\mathbf {v}} - \\mathbf {C} _ {A} (\\mathbf {v}) \\mathbf {v}} _ {\\text {added mass}} - \\underbrace {\\mathbf {D} _ {P} (\\mathbf {v}) \\mathbf {v}} _ {\\text {potential damping}} - \\underbrace {\\mathbf {g} (\\boldsymbol {\\eta})} _ {\\text {restoring forces}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            129,
+            551,
+            922,
+            627
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "“hyd rodyna m ic mass-d a m per-spri ng”",
+        "bbox": [
+            137,
+            674,
+            552,
+            714
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Falti nsen (1 990) . Sea Loads on Ships and Offshore Structures, Cam bridge .",
+        "bbox": [
+            88,
+            831,
+            937,
+            875
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            927,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Added Mass a nd I n e rti a",
+        "text_level": 2,
+        "bbox": [
+            75,
+            50,
+            688,
+            120
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "F l u id Ki n eti c E n e rgy",
+            "The con ce pt of fl u id ki n eti c e n e rgy:"
+        ],
+        "bbox": [
+            86,
+            157,
+            516,
+            251
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT _ {A} = \\frac {1}{2} \\mathbf {v} ^ {\\top} \\mathbf {M} _ {A} \\mathbf {v}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            133,
+            275,
+            284,
+            320
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "can be used to derive the added mass terms .",
+        "bbox": [
+            87,
+            355,
+            488,
+            429
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Any motion of th e vesse l wi l l i nd u ce a motion i n the othe rwise stationa ry fl u i d . I n o rd e r to a l l ow th e vess e l to pass th roug h th e fl u id , it m ust move asid e a nd the n close be h i nd the vessel .",
+        "bbox": [
+            87,
+            481,
+            525,
+            716
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Conseq u e ntly, th e fl u id motion possesses ki n eti c e n e rgy that it wou ld lack otherwise ( Lam b 1 932 ) .",
+        "bbox": [
+            87,
+            729,
+            519,
+            850
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} _ {A} = - \\left[ \\begin{array}{c c c c c c} X _ {\\dot {u}} & X _ {\\dot {v}} & X _ {\\dot {w}} & X _ {\\dot {p}} & X _ {\\dot {q}} & X _ {\\dot {r}} \\\\ Y _ {\\dot {u}} & Y _ {\\dot {v}} & Y _ {\\dot {w}} & Y _ {\\dot {p}} & Y _ {\\dot {q}} & Y _ {\\dot {r}} \\\\ Z _ {\\dot {u}} & Z _ {\\dot {v}} & Z _ {\\dot {w}} & Z _ {\\dot {p}} & Z _ {\\dot {q}} & Z _ {\\dot {r}} \\\\ K _ {\\dot {u}} & K _ {\\dot {v}} & K _ {\\dot {w}} & K _ {\\dot {p}} & K _ {\\dot {q}} & K _ {\\dot {r}} \\\\ M _ {\\dot {u}} & M _ {\\dot {v}} & M _ {\\dot {w}} & M _ {\\dot {p}} & M _ {\\dot {q}} & M _ {\\dot {r}} \\\\ N _ {\\dot {u}} & N _ {\\dot {v}} & N _ {\\dot {w}} & N _ {\\dot {p}} & N _ {\\dot {q}} & N _ {\\dot {r}} \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            563,
+            144,
+            913,
+            405
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/0af096a47c9ad189cdec6b2feaaf494d4e8ed023b2df85eb928c276f74041fdd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "T_{RB}=1/2 vᵀM_{RB}v\nKinetic energy of fluid: T_A=1/2 vᵀM_Av",
+        "sub_type": "text_image",
+        "bbox": [
+            559,
+            414,
+            986,
+            874
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            929,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "6 DOF Body- Fixed Representation for Added Mass (I ncl udes Coriol is/Centri peta l Terms d ue to Added M ass)",
+        "text_level": 2,
+        "bbox": [
+            66,
+            46,
+            973,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX _ {A} = X _ {\\dot {u}} \\dot {u} + X _ {\\dot {w}} (\\dot {w} + u q) + X _ {\\dot {q}} \\dot {q} + Z _ {\\dot {w}} w q + Z _ {\\dot {q}} q ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            125,
+            177,
+            400,
+            201
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ X _ {\\dot {v}} \\dot {v} + X _ {\\dot {p}} \\dot {p} + X _ {\\dot {r}} \\dot {r} - Y _ {\\dot {v}} v r - Y _ {\\dot {p}} r p - Y _ {\\dot {r}} r ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            207,
+            400,
+            233
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- X _ {\\dot {v}} u r - Y _ {\\dot {w}} w r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            238,
+            254,
+            259
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ Y _ {\\dot {w}} v q + Z _ {\\dot {p}} p q - (Y _ {\\dot {q}} - Z _ {\\dot {r}}) q r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            268,
+            337,
+            292
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nY _ {A} = X _ {\\dot {v}} \\dot {u} + Y _ {\\dot {w}} \\dot {w} + Y _ {\\dot {q}} \\dot {q}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            127,
+            300,
+            263,
+            320
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ Y _ {\\dot {v}} \\dot {v} + Y _ {\\dot {p}} \\dot {p} + Y _ {\\dot {r}} \\dot {r} + X _ {\\dot {v}} v r - Y _ {\\dot {w}} v p + X _ {\\dot {r}} r ^ {2} + (X _ {\\dot {p}} - Z _ {\\dot {r}}) r p - Z _ {\\dot {p}} p ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            327,
+            527,
+            351
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- X _ {\\dot {w}} (u p - w r) + X _ {\\dot {u}} u r - Z _ {\\dot {w}} w p\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            357,
+            343,
+            379
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- Z _ {\\dot {q}} p q + X _ {\\dot {q}} q r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            387,
+            252,
+            411
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nZ _ {A} = X _ {\\dot {w}} (\\dot {u} - w q) + Z _ {\\dot {w}} \\dot {w} + Z _ {\\dot {q}} \\dot {q} - X _ {\\dot {u}} u q - X _ {\\dot {q}} q ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            127,
+            416,
+            397,
+            440
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ Y _ {\\dot {w}} \\dot {v} + Z _ {\\dot {p}} \\dot {p} + Z _ {\\dot {r}} \\dot {r} + Y _ {\\dot {v}} v p + Y _ {\\dot {r}} r p + Y _ {\\dot {p}} p ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            446,
+            401,
+            470
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ X _ {i} u p + Y _ {w} w p\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            477,
+            256,
+            500
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- X _ {\\dot {v}} v q - (X _ {\\dot {p}} - Y _ {\\dot {q}}) p q - X _ {\\dot {r}} q r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            507,
+            338,
+            529
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {A} = X _ {\\dot {p}} \\dot {u} + Z _ {\\dot {p}} \\dot {w} + K _ {\\dot {q}} \\dot {q} - X _ {\\dot {v}} w u + X _ {\\dot {r}} u q - Y _ {\\dot {w}} w ^ {2} - (Y _ {\\dot {q}} - Z _ {\\dot {r}}) w q + M _ {\\dot {r}} q ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            126,
+            535,
+            534,
+            559
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ Y _ {\\dot {p}} \\dot {v} + K _ {\\dot {p}} \\dot {p} + K _ {\\dot {r}} \\dot {r} + Y _ {\\dot {w}} v ^ {2} - (Y _ {\\dot {q}} - Z _ {\\dot {r}}) v r + Z _ {\\dot {p}} v p - M _ {\\dot {r}} r ^ {2} - K _ {\\dot {q}} r p\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            564,
+            534,
+            590
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ X _ {\\dot {w}} u v - \\left(Y _ {\\dot {v}} - Z _ {\\dot {w}}\\right) v w - \\left(Y _ {\\dot {r}} + Z _ {\\dot {q}}\\right) w r - Y _ {\\dot {p}} w p - X _ {\\dot {q}} u r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            596,
+            472,
+            618
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ (Y _ {\\dot {r}} + Z _ {\\dot {q}}) v q + K _ {\\dot {r}} p q - (M _ {\\dot {q}} - N _ {\\dot {r}}) q r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            627,
+            381,
+            650
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nM _ {A} = X _ {\\dot {q}} (\\dot {u} + w q) + Z _ {\\dot {q}} (\\dot {w} - u q) + M _ {\\dot {q}} \\dot {q} - X _ {\\dot {w}} (u ^ {2} - w ^ {2}) - (Z _ {\\dot {w}} - X _ {\\dot {u}}) w u\n$$",
+        "text_format": "latex",
+        "bbox": [
+            125,
+            655,
+            529,
+            679
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ Y _ {\\dot {q}} \\dot {v} + K _ {\\dot {q}} \\dot {p} + M _ {\\dot {r}} \\dot {r} + Y _ {\\dot {p}} v r - Y _ {\\dot {r}} v p - K _ {\\dot {r}} (p ^ {2} - r ^ {2}) + (K _ {\\dot {p}} - N _ {\\dot {r}}) r p\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            685,
+            531,
+            709
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- Y _ {\\dot {w}} u v + X _ {\\dot {v}} v w - (X _ {\\dot {r}} + Z _ {\\dot {p}}) (u p - w r) + (X _ {\\dot {p}} - Z _ {\\dot {r}}) (w p + u r)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            716,
+            506,
+            738
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- M _ {\\dot {r}} p q + K _ {\\dot {q}} q r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            746,
+            256,
+            768
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nN _ {A} = X _ {\\dot {r}} \\dot {u} + Z _ {\\dot {r}} \\dot {w} + M _ {\\dot {r}} \\dot {q} + X _ {\\dot {v}} u ^ {2} + Y _ {\\dot {w}} w u - (X _ {\\dot {p}} - Y _ {\\dot {q}}) u q - Z _ {\\dot {p}} w q - K _ {\\dot {q}} q ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            126,
+            772,
+            533,
+            798
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n+ Y _ {\\dot {r}} \\dot {v} + K _ {\\dot {r}} \\dot {p} + N _ {\\dot {r}} \\dot {r} - X _ {\\dot {v}} v ^ {2} - X _ {\\dot {r}} v r - (X _ {\\dot {p}} - Y _ {\\dot {q}}) v p + M _ {\\dot {r}} r p + K _ {\\dot {q}} p ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            803,
+            534,
+            829
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- (X _ {\\dot {u}} - Y _ {\\dot {v}}) u v - X _ {\\dot {w}} v w + (X _ {\\dot {q}} + Y _ {\\dot {p}}) u p + Y _ {\\dot {r}} u r + Z _ {\\dot {q}} w p\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            835,
+            470,
+            859
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- (X _ {\\dot {q}} + Y _ {\\dot {p}}) v q - (K _ {\\dot {p}} - M _ {\\dot {q}}) p q - K _ {\\dot {r}} q r\n$$",
+        "text_format": "latex",
+        "bbox": [
+            166,
+            864,
+            384,
+            888
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Ki rch hoff's Eq uations (1 869)",
+        "text_level": 2,
+        "bbox": [
+            600,
+            183,
+            943,
+            222
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT = \\frac {1}{2} \\mathbf {v} ^ {\\top} \\mathbf {M} _ {A} \\mathbf {v}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            609,
+            246,
+            758,
+            292
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "ki n eti c e n e rgy d u e to th e fl u i d",
+        "bbox": [
+            781,
+            235,
+            966,
+            301
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {d}{d t} \\left(\\frac {\\partial T}{\\partial \\mathbf {v} _ {1}}\\right) + \\mathbf {S} (\\mathbf {v} _ {2}) \\frac {\\partial T}{\\partial \\mathbf {v} _ {1}} = \\boldsymbol {\\tau} _ {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            720,
+            327,
+            952,
+            387
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {d}{d t} \\left(\\frac {\\partial T}{\\partial \\mathbf {v} _ {2}}\\right) + \\mathbf {S} (\\mathbf {v} _ {2}) \\frac {\\partial T}{\\partial \\mathbf {v} _ {2}} + \\mathbf {S} (\\mathbf {v} _ {1}) \\frac {\\partial T}{\\partial \\mathbf {v} _ {1}} = \\boldsymbol {\\tau} _ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            620,
+            392,
+            952,
+            453
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\boxed {\\frac {d}{d t} \\frac {\\partial T _ {A}}{\\partial u}} = \\boxed {r \\frac {\\partial T _ {A}}{\\partial v} - q \\frac {\\partial T _ {A}}{\\partial w} - X _ {A}} \\\\ \\boxed {\\frac {d}{d t} \\frac {\\partial T _ {A}}{\\partial v}} = \\boxed {p \\frac {\\partial T _ {A}}{\\partial w} - r \\frac {\\partial T _ {A}}{\\partial u} - Y _ {A}} \\\\ \\boxed {\\frac {d}{d t} \\frac {\\partial T _ {A}}{\\partial w}} = \\boxed {q \\frac {\\partial T _ {A}}{\\partial u} - p \\frac {\\partial T _ {A}}{\\partial v} - Z _ {A}} \\\\ \\boxed {\\frac {d}{d t} \\frac {\\partial T _ {A}}{\\partial p}} = \\boxed {w \\frac {\\partial T _ {A}}{\\partial v} - v \\frac {\\partial T _ {A}}{\\partial w} + r \\frac {\\partial T _ {A}}{\\partial q} - q \\frac {\\partial T _ {A}}{\\partial r} e - K _ {A}} \\\\ \\boxed {\\frac {d}{d t} \\frac {\\partial T _ {A}}{\\partial q}} = \\boxed {u \\frac {\\partial T _ {A}}{\\partial w} - w \\frac {\\partial T _ {A}}{\\partial u} + p \\frac {\\partial T _ {A}}{\\partial r} - r \\frac {\\partial T _ {A}}{\\partial p} - M _ {A}} \\\\ \\boxed {\\frac {d}{d t} \\frac {\\partial T _ {A}}{\\partial r}} = \\boxed {v \\frac {\\partial T _ {A}}{\\partial u} - u \\frac {\\partial T _ {A}}{\\partial v} + q \\frac {\\partial T _ {A}}{\\partial p} - p \\frac {\\partial T _ {A}}{\\partial q} - N _ {A}} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            615,
+            475,
+            956,
+            827
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nM _ {A} \\quad C _ {A} (\\nu)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            634,
+            835,
+            777,
+            875
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            912,
+            268,
+            975
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Viscous Hyd rodyna m ic Da m pi ng",
+        "text_level": 2,
+        "bbox": [
+            55,
+            57,
+            881,
+            142
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": " I n ad d ition to pote ntia l d a m p i ng we have to i n cl u d e othe r d issi pative viscous terms l i ke skin friction, wa ve drift damping etc:",
+        "bbox": [
+            109,
+            164,
+            958,
+            253
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {D} = - \\underbrace {\\mathbf {D} _ {S} (\\mathbf {v}) \\mathbf {v}} _ {\\text {skin}} - \\underbrace {\\mathbf {D} _ {W} (\\mathbf {v}) \\mathbf {v}} _ {\\text {wave drift}} - \\underbrace {\\mathbf {D} _ {M} (\\mathbf {v}) \\mathbf {v}} _ {\\text {damping due to}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            144,
+            300,
+            937,
+            425
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Total hydrodynamic damping matrix:",
+        "bbox": [
+            109,
+            475,
+            602,
+            518
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {D} (\\mathbf {v}) := \\mathbf {D} _ {P} (\\mathbf {v}) + \\mathbf {D} _ {S} (\\mathbf {v}) + \\mathbf {D} _ {W} (\\mathbf {v}) + \\mathbf {D} _ {M} (\\mathbf {v})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            251,
+            537,
+            727,
+            581
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": " The hyd rodynam ic forces and moments can be now be writte n as the su m of :",
+        "bbox": [
+            109,
+            609,
+            876,
+            692
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {H} = - \\mathbf {M} _ {A} \\dot {\\mathbf {v}} - \\mathbf {C} _ {A} (\\mathbf {v}) \\mathbf {v} - \\mathbf {D} (\\mathbf {v}) \\mathbf {v} - \\mathbf {g} (\\boldsymbol {\\eta})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            241,
+            740,
+            740,
+            794
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            927,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Eq uations of Motion",
+        "text_level": 2,
+        "bbox": [
+            58,
+            59,
+            572,
+            140
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The resu lti ng mod el is (freq u e n cy-i nd e pe nd e nt coeffi cie nts) :",
+        "bbox": [
+            59,
+            151,
+            727,
+            192
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\mathbf {v}} + \\mathbf {C} (\\mathbf {v}) \\mathbf {v} + \\mathbf {D} (\\mathbf {v}) \\mathbf {v} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} _ {\\text {wave}} + \\boldsymbol {\\tau} _ {\\text {wind}} + \\boldsymbol {\\tau} _ {\\text {current}} + \\boldsymbol {\\tau} _ {\\text {control}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            113,
+            225,
+            811,
+            281
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d58ffee720acc96335f5d9b6fc42ef7f48a3e7fbfd7856433096a2cd8f5a69e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  subgraph SeakeepingModel[\"Seakeeping Model (FTF)\"]\n  A[\"Wave spectrum\"] --> B[\"FTF\"]\n  B --> C[\"Wave excitation spectrum\"]\n  C --> D[\"Σ\"]\n  D --> E[\"Reference frame transformation\"]\n  end\n\n  subgraph Motion[\"Motion\"]\n  F[\"Control forces and moments\"] --> G[\"Linear mass-damper-spring (frequency-independent)\"]\n  H[\"Nonlinear terms (viscous damping, Coriolis etc.)\"] --> G\n  G --> I[\"Motion\"]\n  end\n\n  subgraph Matrix[\"System inertia matrix including added mass\"]\n    J[\"M = M_RB + M_A\"]\n    K[\"C(v) = C_RB(v) + C_A(v)\"]\n  end\n\n  D --> J\n  E --> K\n  G --> K\n  H --> K\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            52,
+            329,
+            991,
+            883
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            561,
+            583,
+            995,
+            618
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} = \\mathbf {M} _ {R B} + \\mathbf {M} _ {A}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            683,
+            685,
+            865,
+            725
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {C} (\\mathbf {v}) = \\mathbf {C} _ {R B} (\\mathbf {v}) + \\mathbf {C} _ {A} (\\mathbf {v})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            684,
+            750,
+            934,
+            790
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            929,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Ma noeuvri ng Hyd rodyna m ics",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            802,
+            142
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "I n classi cal ma noeuvri ng theory, the forces a re mod el l ed at a ge n e ra l non-l i n ea r fu n ction :",
+        "bbox": [
+            63,
+            175,
+            855,
+            264
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\mathbf {v}} = \\mathbf {f} (\\dot {\\mathbf {v}}, \\mathbf {v}, \\boldsymbol {\\eta}) + \\boldsymbol {\\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            169,
+            292,
+            406,
+            340
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A pa rti cu l a r affi n e pa ra mete rization is the n used , a nd the coeffi cie nts a re esti mated l i n ea r reg ression from the d ata .",
+        "bbox": [
+            75,
+            375,
+            858,
+            457
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The d isadvantage of th is mod el representation to a energy-based ( Lag ra ng ia n ) a p proach is that mod el red u ction , sym metry/skew-sym metry properties , positive matrices , etc. a re d i ffi cu l t to exp l o i t i n s i m u l ati o n a n d co n tro l d es i g n .",
+        "bbox": [
+            75,
+            505,
+            922,
+            662
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Th is mod el ca n , however, be related to the Lag ra ng ia n mod el : as shown by Ross et al . 2007 :",
+        "bbox": [
+            75,
+            709,
+            916,
+            792
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\mathbf {v}} + \\mathbf {C} (\\mathbf {v}) \\mathbf {v} + \\mathbf {D} (\\mathbf {v}) \\mathbf {v} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            162,
+            824,
+            568,
+            870
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            968
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9",
+        "bbox": [
+            927,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Pa ra meterisations",
+        "text_level": 2,
+        "bbox": [
+            58,
+            59,
+            520,
+            129
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Two types of para meterisations for the hyd rodyna m ic forces are ge n e ra l ly used i n cl assi ca l ma noeuvri ng theory:",
+        "bbox": [
+            91,
+            242,
+            959,
+            335
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Tru n cated Taylor-series expa nsions :",
+        "bbox": [
+            91,
+            385,
+            661,
+            431
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "D av i s o n a n d S h i ff ( 1 94 6 ) : 1 st-o rd e r ( l i n e a r) te rm s .",
+            "Abkowitz ( 1 964 ) : odd terms u p to $3 ^ { \\mathsf { r d } }$ o rd e r ."
+        ],
+        "bbox": [
+            138,
+            440,
+            876,
+            540
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2 nd -o rd e r m od u l u s",
+        "bbox": [
+            91,
+            601,
+            416,
+            642
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Fedyaevsky and Sobolev ( 1 963)",
+            " N o rrb i n ( 1 9 70 )"
+        ],
+        "bbox": [
+            140,
+            646,
+            643,
+            746
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            968
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "1 0",
+        "bbox": [
+            922,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Pa ra meterisations",
+        "text_level": 2,
+        "bbox": [
+            55,
+            59,
+            516,
+            129
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2 nd -o rd e r m od u l u s",
+        "text_level": 2,
+        "bbox": [
+            93,
+            200,
+            444,
+            253
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} Y ^ {\\prime} = Y _ {v} ^ {\\prime} v ^ {\\prime} + Y _ {r} ^ {\\prime} r ^ {\\prime} + Y _ {v | v |} ^ {\\prime} v ^ {\\prime} \\big | v ^ {\\prime} \\big | + Y _ {v | r |} ^ {\\prime} v ^ {\\prime} \\big | r ^ {\\prime} \\big | \\\\ + Y _ {| v | r} ^ {\\prime} \\big | v ^ {\\prime} \\big | r ^ {\\prime} + Y _ {r | r} ^ {\\prime} \\big | r ^ {\\prime} \\big | r ^ {\\prime} \\big | \\\\ N ^ {\\prime} = N _ {v} ^ {\\prime} v ^ {\\prime} + N _ {r} ^ {\\prime} r ^ {\\prime} + N _ {v | v |} ^ {\\prime} v ^ {\\prime} \\big | v ^ {\\prime} \\big | + N _ {v | r |} ^ {\\prime} v ^ {\\prime} \\big | r ^ {\\prime} \\big | \\\\ + N _ {| v | r} ^ {\\prime} \\left| v ^ {\\prime} \\right| r ^ {\\prime} + N _ {r | r} ^ {\\prime} \\left| r ^ {\\prime} \\right| \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            63,
+            296,
+            463,
+            546
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Taylor-series",
+        "text_level": 2,
+        "bbox": [
+            515,
+            201,
+            797,
+            261
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} Y ^ {\\prime} = Y _ {v} ^ {\\prime} v ^ {\\prime} + Y _ {r} ^ {\\prime} r ^ {\\prime} + Y _ {v v v} ^ {\\prime} v ^ {\\prime 3} + Y _ {v v r} ^ {\\prime} v ^ {\\prime 2} r ^ {\\prime} \\\\ + Y _ {v r r} ^ {\\prime} v ^ {\\prime} r ^ {\\prime 2} + Y _ {r r r} ^ {\\prime} r ^ {\\prime 3} \\\\ N ^ {\\prime} = N _ {v} ^ {\\prime} v ^ {\\prime} + N _ {r} ^ {\\prime} r ^ {\\prime} + N _ {v v v} ^ {\\prime} v ^ {\\prime 3} + N _ {v v r} ^ {\\prime} v ^ {\\prime 2} r ^ {\\prime} \\\\ + N _ {v r r} ^ {\\prime} v ^ {\\prime} r ^ {\\prime 2} + N _ {r r r} ^ {\\prime} r ^ {\\prime 3} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            540,
+            275,
+            969,
+            518
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/25c7466c4c697393aa6705b2815187be71ad0e18e131599c287cb862e530596e.jpg",
+        "content": "| r' | v' | Value (Color Gradient) |\n| --- | --- | --- |\n| N/A | N/A | N/A |",
+        "chart_caption": [
+            "SECOND ORDER MODULUS FI"
+        ],
+        "chart_footnote": [],
+        "sub_type": "surface_3d",
+        "bbox": [
+            140,
+            581,
+            413,
+            883
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/d287c0f3cdbd5c1511584e1bbcce75224091f62e4c15058107c2cbfb8f4a452b.jpg",
+        "content": "| r' | v' | Value |\n| --- | --- | --- |\n| ~0 | ~0 | ~0 |\n| ~0 | ~1 | ~0 |\n| ~0 | ~2 | ~0 |\n| ~0 | ~3 | ~0 |\n| ~0 | ~4 | ~0 |\n| ~0 | ~5 | ~0 |\n| ~0 | ~6 | ~0 |\n| ~0 | ~7 | ~0 |\n| ~0 | ~8 | ~0 |\n| ~0 | ~9 | ~0 |\n| ~0 | ~10 | ~0 |\n| ~0 | ~11 | ~0 |\n| ~0 | ~12 | ~0 |\n| ~0 | ~13 | ~0 |\n| ~0 | ~14 | ~0 |\n| ~0 | ~15 | ~0 |\n| ~0 | ~16 | ~0 |\n| ~0 | ~17 | ~0 |\n| ~0 | ~18 | ~0 |\n| ~0 | ~19 | ~0 |\n| ~0 | ~20 | ~0 |\n| ~0 | ~21 | ~0 |\n| ~0 | ~22 | ~0 |\n| ~0 | ~23 | ~0 |\n| ~0 | ~24 | ~0 |\n| ~0 | ~25 | ~0 |\n| ~0 | ~26 | ~0 |\n| ~0 | ~27 | ~0 |\n| ~0 | ~28 | ~0 |\n| ~0 | ~29 | ~0 |\n| ~0 | ~30 | ~0 |\n| ~0 | ~31 | ~0 |\n| ~0 | ~32 | ~0 |\n| ~0 | ~33 | ~0 |\n| ~0 | ~34 | ~0 |\n| ~0 | ~35 | ~0 |\n| ~0 | ~36 | ~0 |\n| ~0 | ~37 | ~0 |\n| ~0 | ~38 | ~0 |\n| ~0 | ~39 | ~0 |\n| ~0 | ~40 | ~0 |\n| ~0 | ~41 | ~0 |\n| ~0 | ~42 | ~0 |\n| ~0 | ~43 | ~0 |\n| ~0 | ~44 | ~0 |\n| ~0 | ~45 | ~0 |\n| ~0 | ~46 | ~0 |\n| ~0 | ~47 | ~0 |\n| ~0 | ~48 | ~0 |\n| ~0 | ~49 | ~0 |\n| ~0 | ~50 | ~0 |\n| ~0 | ~51 | ~0 |\n| ~0 | ~52 | ~0 |\n| ~0 | ~53 | ~0 |\n| ~0 | ~54 | ~0 |\n| ~0 | ~55 | ~0 |\n| ~0 | ~56 | ~0 |\n| ~0 | ~57 | ~0 |\n| ~0 | ~58 | ~0 |\n| ~0 | ~59 | ~0 |\n| ~0 | ~60 | ~0 |\n| ~0 | ~61 | ~0 |\n| ~0 | ~62 | ~0 |\n| ~0 | ~63 | ~0 |\n| ~0 | ~64 | ~0 |\n| ~0 | ~65 | ~0 |\n| ~0 | ~66 | ~0 |\n| ~0 | ~67 | ~0 |\n| ~0 | ~68 | ~0 |\n| ~0 | ~69 | ~0 |\n| ~0 | ~70 | ~0 |\n| ~0 | ~71 | ~0 |\n| ~0 | ~72 | ~0 |\n| ~0 | ~73 | ~0 |\n| ~0 | ~74 | ~0 |\n| ~0 | ~75 | ~0 |\n| ~0 | ~76 | ~0 |\n| ~0 | ~77 | ~0 |\n| ~0 | ~78 | ~0 |\n| ~0 | ~79 | ~0 |\n| ~0 | ~80 | ~0 |\n| ~0 | ~81 | ~0 |\n| ~0 | ~82 | ~0 |\n| ~0 | ~83 | ~0 |\n| ~0 | ~84 | ~0 |\n| ~0 | ~85 | ~0 |\n| ~0 | ~86 | ~0 |\n| ~0 | ~87 | ~0 |\n| ~0 | ~88 | ~0 |\n| ~0 | ~89 | ~0 |\n| ~0 | ~90 | ~0 |\n| ~0 | ~91 | ~0 |\n| ~0 | ~92 | ~0 |\n| ~0 | ~93 | ~0 |\n| ~0 | ~94 | ~0 |\n| ~0 | ~95 | ~0 |\n| ~0 | ~96 | ~0 |\n| ~0 | ~97 | ~0 |\n| ~0 | ~98 | ~0 |\n| ~0 | ~99 | ~0 |\n| ~0 | ~100 | ~0 |",
+        "chart_caption": [
+            "ODD FUNCTION TAYLORSERIES FIT"
+        ],
+        "chart_footnote": [],
+        "sub_type": "surface_3d",
+        "bbox": [
+            588,
+            581,
+            863,
+            887
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            912,
+            268,
+            975
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "1 1",
+        "bbox": [
+            922,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Pa ra meterisations",
+        "text_level": 2,
+        "bbox": [
+            58,
+            59,
+            520,
+            129
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "As com mented by Clarke (2003),",
+        "bbox": [
+            62,
+            185,
+            597,
+            242
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " Taylor expa nsions g ive rise to a smooth re p rese ntation of th e forces , b ut have no p hysi ca l mea n i ng ."
+        ],
+        "bbox": [
+            63,
+            320,
+            788,
+            503
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": " 2nd-ord e r mod u l us expa ns ions re p rese nt we l l th e hyd rodyna m i c forces at a ng l es of i n cid e n ce : cross-flow d rag .",
+        "bbox": [
+            63,
+            575,
+            912,
+            750
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            955,
+            841,
+            977
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            922,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Taylor-Series Expa nsions",
+        "text_level": 2,
+        "bbox": [
+            47,
+            55,
+            695,
+            142
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boldsymbol {\\tau} _ {h y d} = \\mathbf {f} _ {h y d} (\\mathbf {x}) + \\frac {\\partial \\mathbf {f} _ {h y d}}{\\partial \\mathbf {x}} (\\mathbf {x} - \\overline {{\\mathbf {x}}}) + \\frac {\\partial^ {2} \\mathbf {f} _ {h y d}}{\\partial \\mathbf {x} ^ {2}} (\\mathbf {x} - \\overline {{\\mathbf {x}}}) ^ {2} + \\dots\n$$",
+        "text_format": "latex",
+        "bbox": [
+            133,
+            194,
+            837,
+            333
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {x} = \\left[ \\begin{array}{c c c} \\dot {\\mathbf {v}} & \\mathbf {v} & \\boldsymbol {\\eta} \\end{array} \\right] ^ {T}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            184,
+            368,
+            397,
+            440
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Wh e re th e pa rtia l d e rivatives a re ta ke n at a n e q u i l i b r i u m :",
+        "bbox": [
+            38,
+            542,
+            756,
+            655
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\overline {{\\mathbf {x}}} = \\left[ \\begin{array}{c c c} \\mathbf {0} & \\overline {{\\mathbf {v}}} & \\mathbf {0} \\end{array} \\right] ^ {T} \\quad \\overline {{\\mathbf {v}}} = \\left[ \\begin{array}{c c c c c c} U & 0 & 0 & 0 & 0 & 0 \\end{array} \\right] ^ {T}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            169,
+            709,
+            865,
+            788
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "1 3",
+        "bbox": [
+            922,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Model of Abkowitz ( 1 964)",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            719,
+            142
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathcal {X} = \\mathcal {X} _ {0} + \\mathcal {X} _ {u} \\dot {u} + \\mathcal {X} _ {u} \\Delta u + \\mathcal {X} _ {u u} \\Delta u ^ {2} + \\mathcal {X} _ {u u u} \\Delta u ^ {3} + \\mathcal {X} _ {v v} v ^ {2} + \\mathcal {X} _ {r r} r ^ {2} \\\\ + \\mathcal {X} _ {\\delta \\delta} \\delta^ {2} + \\mathcal {X} _ {r v} r v + \\mathcal {X} _ {r \\delta} r \\delta + \\mathcal {X} _ {v \\delta} v \\delta + \\mathcal {X} _ {v v u} v ^ {2} \\Delta u + \\mathcal {X} _ {r r u} r ^ {2} \\Delta u \\\\ + \\mathcal {X} _ {\\delta \\delta u} \\delta^ {2} \\Delta u + \\mathcal {X} _ {r v u} r v \\Delta u + \\mathcal {X} _ {r \\delta u} r + \\delta \\Delta u + \\mathcal {X} _ {v \\delta u} v \\Delta u \\\\ + (1 - t) T + \\mathcal {X} _ {e x t} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            113,
+            194,
+            629,
+            364
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathcal {Y} = \\mathcal {Y} _ {0} + \\mathcal {Y} _ {u} \\Delta u + \\mathcal {Y} _ {u u} \\Delta u ^ {2} + \\mathcal {Y} _ {r} r + \\mathcal {Y} _ {v} v + \\mathcal {Y} _ {\\dot {r}} \\dot {r} + \\mathcal {Y} _ {\\dot {v}} \\dot {v} + \\mathcal {Y} _ {\\delta} \\delta \\\\ + \\mathcal {Y} _ {r r r} r ^ {3} + \\mathcal {Y} _ {v v v} v ^ {3} + \\mathcal {Y} _ {\\delta \\delta \\delta} \\delta^ {3} + \\mathcal {Y} _ {r r \\delta} r ^ {2} \\delta + \\mathcal {Y} _ {\\delta \\delta r} \\delta^ {2} r + \\mathcal {Y} _ {r r v} r ^ {2} v \\\\ + \\mathcal {Y} _ {v v r} v ^ {2} r + \\mathcal {Y} _ {\\delta \\delta v} \\delta^ {2} v + \\mathcal {Y} _ {v v \\delta} v ^ {2} \\delta + \\mathcal {Y} _ {\\delta v r} \\delta v r + \\mathcal {Y} _ {v u} v \\Delta u + \\mathcal {Y} _ {r u} r \\Delta u \\\\ + \\mathcal {Y} _ {v u u} v \\Delta u ^ {2} + \\mathcal {Y} _ {r u u} r \\Delta u ^ {2} + \\mathcal {Y} _ {\\delta u} \\delta \\Delta u + \\mathcal {Y} _ {\\delta u u} \\delta \\Delta u ^ {2} + \\mathcal {Y} _ {e x t} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            427,
+            659,
+            590
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathcal {N} = \\mathcal {N} _ {0} + \\mathcal {N} _ {u} \\Delta u + \\mathcal {N} _ {u u} \\Delta u ^ {2} + \\mathcal {N} _ {r} r + \\mathcal {N} _ {v} v + \\mathcal {N} _ {\\dot {r}} \\dot {r} + \\mathcal {N} _ {\\dot {v}} \\dot {v} + N _ {\\delta} \\delta \\\\ + \\mathcal {N} _ {r r r} r ^ {3} + \\mathcal {N} _ {v v v} v ^ {3} + \\mathcal {N} _ {\\delta \\delta \\delta} \\delta^ {3} + \\mathcal {N} _ {r r \\delta} r ^ {2} \\delta + \\mathcal {N} _ {\\delta \\delta r} \\delta^ {2} r + \\mathcal {N} _ {r r v} r ^ {2} v \\\\ + \\mathcal {N} _ {v v r} v ^ {2} r + \\mathcal {N} _ {\\delta \\delta v} \\delta^ {2} v + \\mathcal {N} _ {v v \\delta} v ^ {2} \\delta + \\mathcal {N} _ {\\delta v r} \\delta v r + \\mathcal {N} _ {v u} v \\Delta u + \\mathcal {N} _ {r u} r \\Delta u \\\\ + \\mathcal {N} _ {v u u} v \\Delta u ^ {2} + \\mathcal {N} _ {r u u} r \\Delta u ^ {2} + \\mathcal {N} _ {\\delta u} \\delta \\Delta u + \\mathcal {N} _ {\\delta u u} \\delta \\Delta u ^ {2} + \\mathcal {N} _ {e x t} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            653,
+            676,
+            820
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The coeffi cie nts a re cal led hyd rodynam ic d e rivatives .",
+        "bbox": [
+            701,
+            266,
+            972,
+            381
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "M a ny te rm s a re set to zero by exploiti ng physi cal ly properties . I f n ot , t h e re w i l l thousa nds of coeffi cie nts .",
+        "bbox": [
+            700,
+            444,
+            975,
+            677
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            912,
+            268,
+            975
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "1 4",
+        "bbox": [
+            922,
+            946,
+            940,
+            964
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Model of Norrbi n ( 1 9 70)",
+        "text_level": 1,
+        "bbox": [
+            77,
+            59,
+            701,
+            146
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Speed equation:",
+        "bbox": [
+            63,
+            175,
+            195,
+            203
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} (1 - X _ {u} ^ {\\prime \\prime}) \\dot {u} = \\frac {1}{2} L ^ {- 1} X _ {u u} ^ {\\prime \\prime} u ^ {2} + \\frac {1}{2 4} L ^ {- 2} g ^ {- 1} X _ {u u u u} ^ {\\prime \\prime} u ^ {4} + g (1 - t) T ^ {\\prime \\prime} + (1 + X _ {v r} ^ {\\prime \\prime}) v r \\\\ + L (x _ {g} ^ {\\prime \\prime} + \\frac {1}{2} X _ {r r} ^ {\\prime \\prime}) r ^ {2} + \\frac {1}{6} L ^ {- 2} g ^ {- 1} X _ {u v v v} ^ {\\prime \\prime} u | v | v ^ {2} + \\frac {1}{4} L ^ {- 1} X _ {c | c | \\delta \\delta} | c | c \\delta_ {e} ^ {2} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            129,
+            227,
+            752,
+            350
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Steering equations:",
+        "bbox": [
+            63,
+            375,
+            223,
+            405
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} (1 - Y _ {\\dot {v}} ^ {\\prime \\prime}) \\dot {v} = L (Y _ {\\dot {r}} ^ {\\prime \\prime} - x _ {g} ^ {\\prime \\prime}) \\dot {r} + (Y _ {u r} ^ {\\prime \\prime} - 1) u r + \\frac {1}{2} (L g) ^ {- 1 / 2} Y _ {u u r} ^ {\\prime \\prime} u ^ {2} r \\\\ + L ^ {- 1} Y _ {u v} ^ {\\prime \\prime} u v + \\frac {1}{2} L ^ {- 3 / 2} g ^ {- 1 / 2} Y _ {u u v} ^ {\\prime \\prime} u ^ {2} v + \\frac {1}{2} L ^ {- 1} Y _ {| v | v} ^ {\\prime \\prime} | v | v + \\frac {1}{2} L Y _ {| r | r} ^ {\\prime \\prime} | r | r \\\\ + Y _ {| v | r} ^ {\\prime \\prime} | v | r + Y _ {v | r} ^ {\\prime \\prime} | v | r | + \\frac {1}{2} L ^ {- 1} Y _ {| c | c \\delta} ^ {\\prime \\prime} | c | c \\delta_ {\\epsilon} + k _ {\\gamma} g T ^ {\\prime \\prime} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            127,
+            431,
+            741,
+            609
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} ((k _ {z} ^ {\\prime \\prime}) ^ {2} - N _ {\\dot {r}} ^ {\\prime \\prime}) \\dot {r} = L ^ {- 1} (N _ {\\dot {v}} ^ {\\prime \\prime} - x _ {g} ^ {\\prime \\prime}) \\dot {v} + L ^ {- 1} (N _ {u r} ^ {\\prime \\prime} - x _ {g} ^ {\\prime \\prime}) u r \\\\ + \\frac {1}{2} L ^ {- 3 / 2} g ^ {- 1 / 2} N _ {u u r} ^ {\\prime \\prime} u ^ {2} r + L ^ {- 2} N _ {u v} ^ {\\prime \\prime} u v + \\frac {1}{2} L ^ {- 5 / 2} g ^ {- 1 / 2} N _ {u u v} ^ {\\prime \\prime} u ^ {2} v \\\\ + \\frac {1}{2} L ^ {- 2} N _ {| v | v} ^ {\\prime \\prime} | v | v + \\frac {1}{2} N _ {| r | r} ^ {\\prime \\prime} | r | r + L ^ {- 1} N _ {| v | r} ^ {\\prime \\prime} | v | r \\\\ + L ^ {- 1} N _ {v | r |} ^ {\\prime \\prime} v | r | + \\frac {1}{2} L ^ {- 2} N _ {| c | c \\delta} ^ {\\prime \\prime} | c | c \\delta_ {\\epsilon} + L ^ {- 1} g k _ {N} T ^ {\\prime \\prime} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            129,
+            657,
+            741,
+            877
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            912,
+            268,
+            975
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "1 5",
+        "bbox": [
+            922,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "2nd-Order Mod u l us",
+        "text_level": 2,
+        "bbox": [
+            50,
+            55,
+            552,
+            129
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "F rom B l a n ke a nd Ch ristia nse n ( 1 986 ) :",
+        "text_level": 2,
+        "bbox": [
+            50,
+            174,
+            641,
+            229
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Sway terms",
+        "bbox": [
+            159,
+            248,
+            263,
+            279
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\tau_ {\\mathrm{2hyd}} ^ {b} = Y _ {\\dot {v}} \\dot {v} + Y _ {\\dot {r}} \\dot {r} + Y _ {\\dot {p}} \\dot {p} \\\\ + Y _ {| u | v} | U | v + Y _ {u r} U r + Y _ {v | v |} v | v | + Y _ {v | r |} v | r | + Y _ {r | v |} r | v | \\tag {4.46} \\\\ + Y _ {\\phi | u v |} \\phi | U v | + Y _ {\\phi | u r |} \\phi | U r | + Y _ {\\phi u u} \\phi U ^ {2}. \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            190,
+            303,
+            772,
+            412
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Roll terms",
+        "bbox": [
+            159,
+            435,
+            255,
+            462
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\tau_ {4 \\mathrm{hyd}} ^ {b} = K _ {\\dot {v}} \\dot {v} + K _ {\\dot {p}} \\dot {p} \\\\ + K _ {| u | v} | U | v + K _ {u r} U r + K _ {v | v |} v | v | + K _ {v | r |} v | r | + K _ {r | v |} r | v | + K _ {u r} \\phi | U _ {v} | + K _ {u r} \\phi | U _ {r} | + K _ {u r} \\phi U ^ {2} + K _ {u r} | U | v (4.47) \\\\ + K _ {\\phi | u v |} \\phi | U v | + K _ {\\phi | u r |} \\phi | U r | + K _ {\\phi u u} \\phi U ^ {2} + K _ {| u | p} | U | p (4.47) \\\\ + K _ {p | p |} p | p | + K _ {p} p + K _ {\\phi \\phi \\phi} \\phi^ {3} - \\rho g \\nabla G Z (\\phi). \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            177,
+            487,
+            772,
+            629
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Yaw terms",
+        "bbox": [
+            159,
+            653,
+            256,
+            679
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\tau_ {6 \\mathrm{hyd}} ^ {b} = N _ {\\dot {v}} \\dot {v} + N _ {\\dot {r}} \\dot {r} \\\\ + N _ {| u | v} | U | v + N _ {| u | r} | U | r + N _ {r | r} | r | r | + N _ {r | v} | r | v | \\\\ + N _ {\\phi | u v |} \\phi | U v | + N _ {\\phi u | r |} \\phi U | r | + N _ {p} p + N _ {| p | p} | p | p + N _ {| u | p} | U | p \\\\ + N _ {\\phi u | u |} \\phi U | U |. \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            195,
+            703,
+            769,
+            875
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            719,
+            842,
+            769,
+            875
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            912,
+            268,
+            977
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "1 6",
+        "bbox": [
+            922,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Measu rement of Hyd rodyna m ic Derivatives",
+        "text_level": 2,
+        "bbox": [
+            38,
+            53,
+            988,
+            127
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "PMM",
+        "text_level": 2,
+        "bbox": [
+            775,
+            164,
+            843,
+            200
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Expe ri me nts with mod el tests .",
+            "F u l l sca l e sea tria ls a nd syste m id e ntifi cation .",
+            "Theoretical pred iction methods .",
+            "Reg ression a na lysis resu lts from si m i l a r d esig ns ."
+        ],
+        "bbox": [
+            66,
+            175,
+            615,
+            346
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/bac3f07bd6151bcc34b973eec979498dd8eca8f08a740b81be2c9f4a2ee2609a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Green boat with white hoses operating near industrial machinery in a storage facility (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            631,
+            214,
+            961,
+            462
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "M od el tests that can be performed",
+        "bbox": [
+            63,
+            396,
+            406,
+            429
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " St ra i g h t l i n e i n a tow i n g ta n k ,",
+            "Rotat i n g a rm ,",
+            " Pla nar motion mecha n ism P M M ,",
+            "O s c i l l ato r te sts ,",
+            " F ree ru n n i n g ( rad i o co ntro l l ed ) ."
+        ],
+        "bbox": [
+            66,
+            475,
+            456,
+            690
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/884cc0a1be6fb65d34a9a472fa998020de2e7a56b8ae942941d165fe80eb716e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "O₀\ns₂\nψ/s₃\nx₀\ny₀\ns₁",
+        "sub_type": "text_image",
+        "bbox": [
+            570,
+            544,
+            956,
+            803
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "page_number",
+        "text": "1 7",
+        "bbox": [
+            922,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Experi menta l Methods",
+        "text_level": 2,
+        "bbox": [
+            127,
+            35,
+            700,
+            118
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/7c6fab7b95239df06c12a1bf3bb0e12cc1ad7892bed549bf45feb7a9ba402f22.jpg",
+        "image_caption": [
+            "Model testing in Peerlesspool in London"
+        ],
+        "image_footnote": [],
+        "content": "Historical painting depicting a riverside scene with people, windmills, and a large wheelbarrow (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            100,
+            133,
+            765,
+            835
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            912,
+            268,
+            975
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            946,
+            640,
+            970
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "page_number",
+        "text": "1 8",
+        "bbox": [
+            922,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Measu rement of Hyd rodyna m ic Derivatives",
+        "text_level": 1,
+        "bbox": [
+            38,
+            53,
+            988,
+            129
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1520c0b638746bdec525d6d96d5c43740aca80695fc640f4404cb1e86cf0bef.jpg",
+        "image_caption": [
+            "Rotati ng arm"
+        ],
+        "image_footnote": [],
+        "content": "x₀\ns₂\nx\ny\ns₃\ns₁\nO₀\ny₀",
+        "sub_type": "text_image",
+        "bbox": [
+            325,
+            212,
+            743,
+            807
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "page_number",
+        "text": "1 9",
+        "bbox": [
+            922,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Typica l Tests",
+        "text_level": 2,
+        "bbox": [
+            55,
+            59,
+            395,
+            142
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Pu re Sway:",
+        "bbox": [
+            95,
+            196,
+            300,
+            257
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/19c81de288af12543c87f96581b200ad8218c72c30abbab8bc8b76a932e73c68.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "x\ny\nx₀\nx\ny\nx\ny\nx\nx₀",
+        "sub_type": "text_image",
+        "bbox": [
+            411,
+            118,
+            909,
+            353
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "P u re yaw:",
+        "bbox": [
+            105,
+            418,
+            281,
+            475
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/8a1e476652eed43365132696d3abcb785ef66a3c533c0be7d88b96c3c89c0428.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Diagram showing a wave-like path with coordinate axes labeled x and y, featuring two elliptical loops and directional arrows.",
+        "sub_type": "text_image",
+        "bbox": [
+            409,
+            394,
+            925,
+            612
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "D ri ft a n d yaw :",
+        "bbox": [
+            97,
+            659,
+            338,
+            716
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "D ifferent tests are used to fi t d i ffe re n t p a rts of th e model .",
+        "bbox": [
+            55,
+            770,
+            347,
+            885
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/834b519199464075dd7439ba02c72b872d6b49a4542e0f22c2b01400d832d7af.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Diagram showing a wave-like trajectory with labeled x and y axes and directional arrows, likely illustrating a physics or mathematical concept.",
+        "sub_type": "text_image",
+        "bbox": [
+            409,
+            614,
+            965,
+            883
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "page_number",
+        "text": "2 0",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Measu rement of Hyd rodyna m ic Derivatives",
+        "text_level": 2,
+        "bbox": [
+            38,
+            53,
+            988,
+            129
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "D u ri n g th e m od e l tests , th e mod el is forces to move and forces velocities and accelerations are recorded .",
+        "bbox": [
+            48,
+            312,
+            390,
+            485
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Then the hyd rodynam ic derivatives are esti mated from reg ression a na lysis .",
+        "bbox": [
+            48,
+            579,
+            362,
+            712
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "chart",
+        "img_path": "images/c8439a27110461a1d86c9f5d23985db102a328bd2cea776e983ff148c8179523.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            438,
+            248,
+            922,
+            809
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "page_number",
+        "text": "2 1",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A Novel 4 DOF Ma noeuvri ng Model",
+        "text_level": 2,
+        "bbox": [
+            44,
+            57,
+            947,
+            142
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Ross et. al . (2007) has reassessed the ma noeuvri ng mod els i n the l ite ratu re , a n d fo rm u l ated a n ove l 4 D O F (s u rg e , sway , ro l l , yaw) Lag ra ng ia n mod el usi ng fi rst pri n ci pl es a nd su pe rposition of:",
+        "bbox": [
+            55,
+            194,
+            970,
+            340
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Potential (add ed mass)",
+            "C i rcu l ati o n effe cts : l i ft a n d d rag",
+            "Effe ct of ro l l o n ci rcu l ati o n effe cts",
+            "C ross-fl ow d rag ."
+        ],
+        "bbox": [
+            55,
+            400,
+            550,
+            624
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {M} \\dot {\\boldsymbol {\\nu}} + \\mathbf {N} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathbf {g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau},\n$$",
+        "text_format": "latex",
+        "bbox": [
+            580,
+            446,
+            916,
+            494
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\eta} = \\mathbf {J} (\\eta) \\nu\n$$",
+        "text_format": "latex",
+        "bbox": [
+            804,
+            512,
+            970,
+            557
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The adva ntage of the Lag ra ng ia n mod el is its vector re prese ntation wh i ch is ta i lor mad e for e nergy-based control d esig n ( Lya pu nov) .",
+        "bbox": [
+            56,
+            683,
+            976,
+            779
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "page_number",
+        "text": "22",
+        "bbox": [
+            920,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Added Mass a nd Coriol l is",
+        "text_level": 2,
+        "bbox": [
+            55,
+            57,
+            701,
+            133
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The 4 DO F sol ution of Ki rch hoff’s eq u ations ca n be expressed as ( Fossen , 2002 )",
+        "bbox": [
+            113,
+            222,
+            876,
+            329
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left[ \\begin{array}{c c c c} X _ {A} & Y _ {A} & K _ {A} & N _ {A} \\end{array} \\right] ^ {\\top} = - \\mathbf {M} _ {A} \\dot {\\boldsymbol {\\nu}} - \\mathbf {C} _ {A} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            193,
+            361,
+            784,
+            433
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Added mass",
+        "bbox": [
+            316,
+            509,
+            459,
+            544
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Added mass Coriol l is and Ce ntri petal terms",
+        "bbox": [
+            606,
+            496,
+            897,
+            575
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {C} _ {A} (\\pmb {\\nu}) = \\left[ \\begin{array}{c c c c} 0 & 0 & 0 & Y _ {\\dot {v}} v + Y _ {\\dot {p}} p + Y _ {\\dot {r}} r \\\\ 0 & 0 & 0 & - X _ {\\dot {u}} u \\\\ 0 & 0 & 0 & 0 \\\\ - Y _ {\\dot {v}} v - Y _ {\\dot {p}} p - Y _ {\\dot {r}} r & X _ {\\dot {u}} u & 0 & 0 \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            138,
+            616,
+            908,
+            837
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "page_number",
+        "text": "2 3",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "M odel of Ross et a l . (2007)",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            758,
+            142
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "C i rcu l ati o n effe cts ( l i ft a n d d rag ) , effe ct of ro l l o n ci rcu l ati o n effe cts a n d crossflow d rag (mod u l us re prese ntation ) a re d e rived i n Ross et a l . (2007 ) :",
+        "bbox": [
+            50,
+            175,
+            909,
+            255
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathbf {N} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} \\triangleq (\\mathbf {C} (\\boldsymbol {\\nu}) + \\mathbf {D} (\\boldsymbol {\\nu})) \\boldsymbol {\\nu} \\\\ = \\left[ \\begin{array}{c c c c} X _ {N} & Y _ {N} & K _ {N} & N _ {N} \\end{array} \\right] ^ {\\top} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            165,
+            285,
+            527,
+            390
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "where the com ponents are :",
+        "bbox": [
+            50,
+            407,
+            359,
+            442
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} X _ {N} = - X _ {u u} ^ {L} u ^ {2} - X _ {v u u} ^ {L} u ^ {3} - X _ {v v} ^ {L} v ^ {2} - X _ {r r} ^ {L} r ^ {2} - X _ {r v} ^ {L} r v - X _ {u v v} ^ {L} u v ^ {2} \\\\ - X _ {r v u} ^ {L} r v u - X _ {u r r} ^ {L} u r ^ {2} - X _ {u v \\phi \\phi} ^ {L} u v \\phi^ {2} + Y _ {i} v r + Y _ {\\dot {p}} p r + Y _ {\\dot {r}} r ^ {2} \\\\ Y _ {N} = - Y _ {u v} ^ {L} u v - Y _ {u r} ^ {L} u r - Y _ {u u r} ^ {L} u ^ {2} r - Y _ {u u v} ^ {L} u ^ {2} v - Y _ {v v v} ^ {L} v ^ {3} - Y _ {r r r} ^ {L} r ^ {3} - Y _ {r r v} ^ {L} r ^ {2} v \\\\ - Y _ {v v r} ^ {L} v ^ {2} r - Y _ {u v \\phi \\phi} ^ {L} u v \\phi^ {2} - Y _ {| v | v} | v | v - Y _ {| r | v} | r | v - Y _ {| v | r} | v | r - Y _ {| r | r} | r | r - X _ {\\dot {u}} u r \\\\ K _ {N} = - K _ {p} p - K _ {p p p} p ^ {3} - K _ {u v} ^ {L} u v - K _ {u r} ^ {L} u r - K _ {u u r} ^ {L} u ^ {2} r - K _ {u u v} ^ {L} u ^ {2} v - K _ {v v v} ^ {L} v ^ {3} - K _ {r r r} ^ {L} r ^ {3} - K _ {r r v} ^ {L} r ^ {2} v \\\\ - K _ {v v r} ^ {L} v ^ {2} r - K _ {u v \\phi \\phi} ^ {L} u v \\phi^ {2} - K _ {| v | v} | v | v - K _ {| r | v} | r | v - K _ {| v | r} | v | r - K _ {| r | r} | r | r \\\\ N _ {N} = - N _ {u v} ^ {L} u v - N _ {u r} ^ {L} u r - N _ {u u r} ^ {L} u ^ {2} r - N _ {u u v} ^ {L} u ^ {2} v - N _ {v v v} ^ {L} v ^ {3} - N _ {r r r} ^ {L} r ^ {3} - N _ {r r v} ^ {L} r ^ {2} v - N _ {v v r} ^ {L} v ^ {2} r - N _ {u u \\phi \\phi} ^ {L} u v \\phi^ {2} \\\\ - N _ {| v | v} | v | v - N _ {| r | v} | r | v - N _ {| v | r} | v | r - N _ {| r | r} | r | r - Y _ {\\dot {p}} p u - Y _ {\\dot {r}} r u + (X _ {\\dot {u}} - Y _ {\\dot {v}}) u v. \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            52,
+            477,
+            951,
+            846
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} Y _ {N} = - Y _ {u v} ^ {L} u v - Y _ {u r} ^ {L} u r - Y _ {u u r} ^ {L} u ^ {2} r - Y _ {u u v} ^ {L} u ^ {2} v - Y _ {v v v} ^ {L} v ^ {3} - Y _ {r r r} ^ {L} r ^ {3} - Y _ {r r v} ^ {L} r ^ {2} v \\\\ - Y _ {v v r} ^ {L} v ^ {2} r - Y _ {u v \\phi \\phi} ^ {L} u v \\phi^ {2} - Y _ {| v | v} | v | v - Y _ {| r | v} | r | v - Y _ {| v | r} | v | r - Y _ {| r | r} | r | r - X _ {\\dot {u}} u r \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            63,
+            574,
+            797,
+            659
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            968
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "page_number",
+        "text": "2 4",
+        "bbox": [
+            920,
+            946,
+            940,
+            964
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Ma noeuvri ng Model",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            562,
+            142
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Co m b i n i n g a l l t h e te rm s i n a m atri x fo r, we o bta i n th e ma noe uvri ng eq u ations i n Lag ra ng ia n form ( Fossen 1 994 , 2002 ) .",
+        "bbox": [
+            56,
+            194,
+            919,
+            387
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{M} \\dot {\\boldsymbol {\\nu}} + \\mathrm{N} (\\boldsymbol {\\nu}) \\boldsymbol {\\nu} + \\mathrm{g} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau},\n$$",
+        "text_format": "latex",
+        "bbox": [
+            208,
+            468,
+            661,
+            522
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\dot {\\eta} = \\mathrm{J} (\\eta) \\nu\n$$",
+        "text_format": "latex",
+        "bbox": [
+            509,
+            546,
+            731,
+            603
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            968
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "page_number",
+        "text": "2 5",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Model Va l idation with PMM Data",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            890,
+            133
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "To val id ate the mod el , Ross et al . (2007) used d ata of several P M M tests , a nd perform a reg ression based on the mod el stru ctu re d e rived .",
+        "bbox": [
+            55,
+            244,
+            912,
+            503
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "T h e n co m pa red th e fi t wi th th at of a m od e l fi tted by a ta n k testi ng faci l ity to the sa me d ataset.",
+        "bbox": [
+            55,
+            605,
+            941,
+            735
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "page_number",
+        "text": "2 6",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Fitti n g Usi ng PMM Data @ 30kt",
+        "text_level": 2,
+        "bbox": [
+            56,
+            59,
+            866,
+            140
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "chart",
+        "img_path": "images/f6e54577cfe24b2e720efd20f894fbde9f833aab79617e719cce1ffcc63dec43.jpg",
+        "content": "| time (s) | Surge Force (N)::Lagrangian Model | Surge Force (N)::PMM Test data | Sway Force (N)::Lagrangian Model | Sway Force (N)::PMM Test data | Yaw Moment (N.m)::Lagrangian Model | Yaw Moment (N.m)::PMM Test data | Roll Moment (N.m)::Lagrangian Model | Roll Moment (N.m)::PMM Test data |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 0 | ~-65 | ~-65 | ~-5 | ~-5 | ~-5 | ~-5 | ~1 | ~1 |\n| 10 | ~-65 | ~-65 | ~15 | ~15 | ~-100 | ~-100 | ~5 | ~5 |\n| 20 | ~-65 | ~-65 | ~25 | ~25 | ~100 | ~100 | ~-5 | ~-5 |\n| 30 | ~-65 | ~-65 | ~-25 | ~-25 | ~-150 | ~-150 | ~-5 | ~-5 |\n| 40 | ~-15 | ~-15 | ~-15 | ~-15 | ~100 | ~100 | ~-5 | ~-5 |\n| 50 | ~-15 | ~-15 | ~-15 | ~-15 | ~100 | ~100 | ~-5 | ~-5 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            61,
+            201,
+            858,
+            857
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "page_number",
+        "text": "2 7",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Va l i d atio n i n Fu l l Sca l e ( Pe rez et a l . , 2007)",
+        "text_level": 2,
+        "bbox": [
+            52,
+            53,
+            930,
+            129
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "P e rez et a l . (2 0 0 7 ) fi tte d a s i m p l i fi e d m od e l to d ata record ed on fu l l scale ma noeuvres of Austal ’s Tri maran H u l l 260 .",
+        "bbox": [
+            50,
+            179,
+            861,
+            331
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/41436ad05bb6cc1a73132ad8eb70de84424f92ac78504ba676b16d4ec813c725.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Large white and yellow cargo ship named 'Boschugia Express 7A' sailing on open sea under cloudy sky (no visible text or symbols on vessel body)",
+        "sub_type": "natural_image",
+        "bbox": [
+            325,
+            340,
+            709,
+            683
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "The pa ra meters were fitted with d ata of a 20-20 zigzag test, a nd the n the mod el va l id ated with d ata of a 1 0 - 1 0 z i g -za g te st .",
+        "bbox": [
+            41,
+            703,
+            922,
+            864
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "page_number",
+        "text": "2 8",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "S i m p l ifi ed Model",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            480,
+            142
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "The mod el was si m pl ified accord i ng to the that of B l a n ke ( 1 98 1 ) . Th is was done because the excitation sig nal was not ri ch e noug h to esti mate a l l the pa ra mete rs—the zig-zag test is not d esig n ed for syste m id e ntifi cation !",
+        "bbox": [
+            56,
+            192,
+            937,
+            387
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\dot {\\boldsymbol {\\eta}} = \\mathbf {J} (\\boldsymbol {\\eta}) \\mathbf {v} \\\\ \\mathbf {M} \\dot {\\mathbf {v}} + \\mathbf {C} (\\mathbf {v}) \\mathbf {v} + \\mathbf {D} (\\mathbf {v}) \\mathbf {v} + \\mathbf {G} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            309,
+            433,
+            704,
+            533
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {D} (\\mathbf {v}) = \\mathbf {D} _ {L D} (\\mathbf {v}) + \\mathbf {D} _ {N L} (\\mathbf {v})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            347,
+            600,
+            616,
+            644
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathbf {D} _ {L D} (\\mathbf {v}) = \\left[ \\begin{array}{c c c c} 0 & 0 & 0 & X r v v \\\\ 0 & Y u v u & 0 & Y u r u \\\\ 0 & K u v u & 0 & K u r u \\\\ 0 & N u v u & 0 & K u r u \\end{array} \\right] \\quad \\mathbf {D} _ {N L} (\\mathbf {v}) = \\left[ \\begin{array}{c c c c} X _ {| u | u} & 0 & 0 & 0 \\\\ 0 & Y _ {| v | v} | v | + Y _ {| r | v} | r | & 0 & Y _ {| v | r} | v | + Y _ {| r | r} | r | \\\\ 0 & 0 & K _ {| p | p} | p | + Y _ {p} & 0 \\\\ 0 & N _ {| v | v} | v | + N _ {| r | v} | r | & 0 & N _ {| v | r} | v | + N _ {| r | r} | r | \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            81,
+            687,
+            933,
+            872
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "page_number",
+        "text": "2 9",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Model Fitti n g (20-20 ZZ)",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            686,
+            146
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f3e79889e2a16836e31bd1ac5de9f284b7a59fb0e636935a521d184617b7091.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Large white and blue cargo ship sailing on open sea under clear sky (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            766,
+            46,
+            976,
+            235
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "chart",
+        "img_path": "images/40ce9f3ac90fbf6b1d2736d6e0d447de8a3659bbfffc8df11d0a2ca235c941a7.jpg",
+        "content": "| t [s] | u [m/s]::Trial | u [m/s]::Model | v [m/s]::Estim | v [m/s]::Model | p [deg/s]::Trial | p [deg/s]::Model | r [deg/s]::Trial | r [deg/s]::Model |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 0 | ~19 | ~19 | ~4 | ~0 | ~0 | ~0 | ~0 | ~0 |\n| 50 | ~10 | ~11 | ~-2 | ~-2 | ~-1.5 | ~-1.5 | ~1.2 | ~1.2 |\n| 100 | ~6 | ~7 | ~2 | ~1 | ~0 | ~0 | ~-1.5 | ~-1.5 |\n| 150 | ~5 | ~6 | ~-3 | ~-2 | ~-1.2 | ~-1.2 | ~1.2 | ~1.2 |\n| 200 | ~6 | ~6 | ~1 | ~1 | ~1.2 | ~1.2 | ~-1.5 | ~-1.5 |\n| 250 | ~6 | ~6 | ~-2 | ~-2 | ~-1.2 | ~-1.2 | ~1.2 | ~1.2 |\n| 300 | ~7 | ~7 | ~-3 | ~-2 | ~-1.2 | ~-1.2 | ~-1.5 | ~-1.5 |\n| 350 | ~6 | ~6 | ~-3 | ~-2 | ~-1.2 | ~-1.2 | ~-1.5 | ~-1.5 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            152,
+            164,
+            759,
+            824
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "page_number",
+        "text": "3 0",
+        "bbox": [
+            920,
+            946,
+            938,
+            966
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Model Va l idation ( 1 0- 1 0 ZZ)",
+        "text_level": 2,
+        "bbox": [
+            56,
+            57,
+            776,
+            140
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc0bbe82e6c6cbac81678dd24b7443e7b688482a4878013573d980a48ff7a7e2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Large white and blue cargo ship sailing on open sea under cloudy sky (no visible text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            797,
+            55,
+            975,
+            216
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e726019b0038315d184f660ff96d8fe86415ca93f16aff4b483796e07d77373.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            148,
+            188,
+            755,
+            842
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            970
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "page_number",
+        "text": "3 1",
+        "bbox": [
+            920,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Effects of Cu rre nts",
+        "text_level": 2,
+        "bbox": [
+            56,
+            59,
+            540,
+            129
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "I n some a p pl i cations , whe re position i ng is i m porta nt, the effects of cu rre nt m ust be consid e red :",
+        "bbox": [
+            62,
+            164,
+            844,
+            262
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\dot {\\boldsymbol {\\eta}} = \\mathbf {J} (\\boldsymbol {\\eta}) \\mathbf {v} \\\\ (\\mathbf {M} _ {R B} + \\mathbf {M} _ {A}) \\dot {\\mathbf {v}} + \\mathbf {C} _ {R B} (\\mathbf {v}) + \\mathbf {C} _ {A} (\\mathbf {v} _ {r}) \\mathbf {v} _ {r} + \\mathbf {D} _ {A} (\\mathbf {v} _ {r}) \\mathbf {v} _ {r} + \\mathbf {G} (\\boldsymbol {\\eta}) = \\boldsymbol {\\tau} \\\\ \\mathbf {v} _ {r} = \\mathbf {v} - \\mathbf {v} _ {c} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            134,
+            303,
+            830,
+            472
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "The cu rre nt has to effects , wh i ch a re re prese nted with the ve l ocity of th e vesse l re l ative to th e cu rre nt ve l ocity :",
+        "bbox": [
+            70,
+            500,
+            859,
+            585
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " Pote ntia l : The M u n k mome nt is i n corporated i n the ad d ed m a ss C o ri o l l i s - C e n t ri p eta l te rm s .",
+            " Viscous : ed dy ma ki ng a nd ski n fri ction . These a re i n corporated i n the cross-flow d rag ."
+        ],
+        "bbox": [
+            70,
+            637,
+            893,
+            859
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            55,
+            944,
+            140,
+            968
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial CAMS'07 Bol Croatia",
+        "bbox": [
+            370,
+            944,
+            641,
+            970
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            698,
+            951
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            953
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "page_number",
+        "text": "3 2",
+        "bbox": [
+            920,
+            946,
+            940,
+            966
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "bbox": [
+            59,
+            59,
+            344,
+            129
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            " Davidson , K. S . M . a nd L . I . Sch iff ( 1 946 ) . “Tu rn i ng a nd Cou rse Kee p i ng Qu a l ities . ” Tra nsactions of S NAM E .",
+            " Ab kowitz, M . A. ( 1 964 ) . “ Lectu res on S h i p Hyd rodyna m i cs - Steeri ng a nd M a noeuvra b i l ity. ” Tech n i cal Re port Hy-5 . Hyd ro- and Aerodynam ic Laboratory. Lyng by, Den mark.",
+            " Fed ayevsky, K. K. a nd G .V. Sobol ev ( 1 963 ) . “Control a nd Sta b i l ity i n S h i p Desig n . ” State U n ion S h i pbu i ld i ng P u bl ish i ng H ouse . Le n i ng rad , U SS R.",
+            " N orrb i n , N . ( 1 97 1 ) . “Theory a nd obse rvations on the use of a mathe mati ca l mod el for sh i p ma noeuvri ng i n d eep and con ned water. ” Tech n ical Report 63 . Swed ish State S h i pbu i ld i ng Experi mental Tan k. Gothen bu rg .",
+            " Cl a rke , D . (2003 ) . “The fou nd ations of stee ri ng a nd ma noeuvri ng . ” I n : P roceed i ngs of the I FAC Confe re n ce on Control Ap pl i cations . P l e na ry ta l k.",
+            " Ross , A. , T . Perez, a nd T . Fossen (2007) \"A N ovel M anoeuvri ng M od el based on Low-aspect-ratio Lift Theory and Lag rang ian M echan ics . \" I FAC Conference on Control Appl ications i n M ari ne Systems (CAM S ) . B o l , C ro at i a , S e pt .",
+            " B la n ke , M . ( 1 98 1 ) . S h i p P ropu lsion Losses Rel ated to Automated Stee ri ng a nd P ri me M over Control . P h D thesis . The Tech n i cal U n iversity of De n ma rk, Lyng by.",
+            " Ch riste nse n , A. a nd M . B l a n ke ( 1 986 ) . A Li nea rized State-S pace M od el i n Steeri ng a nd Rol l of a H ig h-S peed Conta i ner S h i p . Tech n ical Report 86- D-574 . Servolaboratoriet, Tech n ical U n iversity of De n ma rk. De n ma rk.",
+            " Pe rez, T . , T, M a k, T . Armstrong , A. Ross , T . I . Fosse n (2007 ) “Va l id ation of a 4 DO F M a noeuvri ng M od el of a H ig h-speed Ve h i cl e- Passe nge r Tri ma ra n . \" I n P roc. 9th I nte rnationa l confe re n ce on Fast Tra nsportation . S ha ng ha i , Ch i na Se pt."
+        ],
+        "bbox": [
+            84,
+            172,
+            925,
+            842
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "03 /09 /2007",
+        "bbox": [
+            56,
+            944,
+            138,
+            968
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            219,
+            911,
+            268,
+            975
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "THE UNIVERSITY OF",
+        "bbox": [
+            270,
+            927,
+            352,
+            940
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "NEWCASTLE",
+        "bbox": [
+            270,
+            940,
+            352,
+            957
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "AUSTRALIA",
+        "bbox": [
+            270,
+            957,
+            315,
+            968
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "One-day Tutorial, CAMS'07, Bol, Croatia",
+        "bbox": [
+            372,
+            944,
+            640,
+            968
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "",
+        "bbox": [
+            665,
+            909,
+            697,
+            951
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "NTNU",
+        "bbox": [
+            702,
+            907,
+            820,
+            951
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "Det skapende universitet",
+        "bbox": [
+            702,
+            957,
+            841,
+            977
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "page_number",
+        "text": "3 3",
+        "bbox": [
+            920,
+            946,
+            938,
+            964
+        ],
+        "page_idx": 32
+    }
+]

@@ -1,0 +1,1818 @@
+[
+    [
+        {
+            "type": "title",
+            "content": "Seakeeping Models in the Frequency Domain  (Module 6)",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Dr Tristan Perez"
+        },
+        {
+            "type": "text",
+            "content": "Centre for Complex Dynamic Systems and Control (CDSC)"
+        },
+        {
+            "type": "text",
+            "content": "Prof. Thor I Fossen"
+        },
+        {
+            "type": "text",
+            "content": "Department of Engineering Cybernetics"
+        },
+        {
+            "type": "image",
+            "content": "data:image/jpeg;base64,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"
+        },
+        {
+            "type": "image",
+            "content": "data:image/jpeg;base64,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"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Linear hydrodynamic forces in waves",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Linear theory can describe hydrodynamic loads to a great extent in low to medium sea states (depending on the size of the ship)"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Linear means that the loads and the motion are proportional to the wave amplitudes."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Linearity means superposition: the loads and responses due to irregular seas can be obtained by linear combination of responses to regular or sinusoidal seas."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Also due to the linearity assumption, the study can be performed either in time or frequency domain."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Linear hydrodynamic forces",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{hyd}=\\tau _{rad}+\\tau _{rest}+\\tau _{exc}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "waves"
+        },
+        {
+            "type": "text",
+            "content": "LinearLoads"
+        },
+        {
+            "type": "text",
+            "content": "Linear eq of motion"
+        },
+        {
+            "type": "text",
+            "content": "Motion"
+        },
+        {
+            "type": "text",
+            "content": "Some of the loads depend on the excitation due to the waves, while other depend on the motion of the vessel itself."
+        },
+        {
+            "type": "text",
+            "content": "The second type of loads give the system a feedback structure."
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Adding nonlinear forces",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Once we have a linear time-domain model, nonlinear loads can be added due to the assumption of force superposition:"
+        },
+        {
+            "type": "text",
+            "content": "waves"
+        },
+        {
+            "type": "text",
+            "content": "LinearLoads"
+        },
+        {
+            "type": "text",
+            "content": "Loads"
+        },
+        {
+            "type": "text",
+            "content": "Linear eq of motion"
+        },
+        {
+            "type": "text",
+            "content": "Motion"
+        },
+        {
+            "type": "text",
+            "content": "Nonlinear Loads"
+        },
+        {
+            "type": "text",
+            "content": "So, the linear model should not be seen as a limitation; rather as a basis upon which we can build nonlinear models based on the assumption of force superposition."
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Linear hydrodynamic analysis",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Due to linearity, we can study the problem for sinusoidal excitation and then use these results to obtain solutions to non-sinusoidal cases via superposition."
+        },
+        {
+            "type": "text",
+            "content": "The hydrodynamic problem of obtaining loads and motion for sinusoidal waves can be separated into two sub-problems:"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Excitation problem: The ship is restrained from moving and kept in its mean position, and the excitation loads are obtained as a result of changes in pressure due to the incoming waves."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Radiation problem: The ship is forced to oscillate in calm water in each DOF with a frequency equal to the wave excitation frequency."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Radiation forces",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Radiation loads appear due to the motion of the ship—the change in momentum of the fluid due to the motion of the hull changes the pressure on the hull, which induce the loads."
+        },
+        {
+            "type": "text",
+            "content": "These loads have two components"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Proportional to the accelerations"
+                },
+                {
+                    "type": "text",
+                    "content": "Proportional to the velocities"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Radiation forces",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Boundary conditions:"
+        },
+        {
+            "type": "text",
+            "content": "free surface condition (dynamic+kinematic conditions)"
+        },
+        {
+            "type": "text",
+            "content": "sea bed condition"
+        },
+        {
+            "type": "text",
+            "content": "dynamic body condition"
+        },
+        {
+            "type": "text",
+            "content": "Regular outgoing waves"
+        },
+        {
+            "type": "text",
+            "content": "are observed at large distance from the vessel"
+        },
+        {
+            "type": "text",
+            "content": "radiation condition"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\Phi _{rad}=\\sum_{}^{}\\Phi _{j}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\nabla ^{2}\\Phi _{rad}=0</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Computing forces",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Forces and moments are obtained by integrating the pressure over the average wetted surface <text style=\"italic\">Sw</text>:"
+        },
+        {
+            "type": "text",
+            "content": "Radiation forces and moments:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{rad,i}=\\left\\{\\begin{matrix}-\\iint_{}^{}\\left(\\frac{\\partial \\Phi _{rad}}{\\partial t}\\right) \\left(n\\right)_{i}ds i=1,2,3.\\\\-\\iint_{}^{}\\left(\\frac{\\partial \\Phi _{rad}}{\\partial t}\\right) \\left(r\\times n\\right)_{i-3}ds i=4,5,6.\\end{matrix}\\right.</eq>"
+        },
+        {
+            "type": "text",
+            "content": "DOF:"
+        },
+        {
+            "type": "text",
+            "content": "1-surge"
+        },
+        {
+            "type": "text",
+            "content": "2-sway"
+        },
+        {
+            "type": "text",
+            "content": "3-heave"
+        },
+        {
+            "type": "text",
+            "content": "4-roll"
+        },
+        {
+            "type": "text",
+            "content": "5-pitch"
+        },
+        {
+            "type": "text",
+            "content": "6-yaw"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Radiation forces for regular motion",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "If the motion of the vessel on the DOF <text style=\"italic\">i</text> is harmonic:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\xi _{i}=¯cos(\\omega t)</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Then, after integrating the pressure over the surface of the hull,  the radiation forces in the DOF <text style=\"italic\">j</text> due to the motion in the DOF<text style=\"italic\"> i</text> take the following form:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{rad,j}=-A_{ij}(\\omega ) ¨_{i}-B_{ij}(\\omega ) ˙_{i}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "← Only in steady state condition."
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Radiation forces for regular motion",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{rad,j}=-A_{ij}(\\omega ) ¨_{i}-B_{ij}(\\omega ) ˙_{i}</eq>"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The coefficients that multiply the accelerations are called added mass coefficients even though not all of them have units of mass. The added mass terms give the forces due to the accelerations of the fluid as the vessel oscillations—the whole fluid will oscillate with different fluid particle amplitudes."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The coefficients proportional to the velocities are called potential damping coefficients. The potential damping terms represent the energy carried away by the waves generated due to the motion of the hull."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Added mass and damping",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Example of added mass and potential damping in heave of a symmetric rectangular barge 8x4x45m:"
+        },
+        {
+            "type": "text",
+            "content": "The added mass and damping coefficients depend on"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Shape of the hull"
+                },
+                {
+                    "type": "text",
+                    "content": "Forward speed"
+                },
+                {
+                    "type": "text",
+                    "content": "Water depth"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Symmetry",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "There is a total of 36 added mass and 36 damping coefficients."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "If the structure has zero speed and a plane of symmetry, half of the coefficients are zero. (for this to hold with forward speed, the plane of symmetry has to be parallel to the forward direction.)"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "If the structure has zero speed and there is no current, then the matrices of added mass and damping are symmetric:"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\begin{array}{c}A_{ij}(\\omega )=A_{ji}(\\omega )\\\\B_{ij}(\\omega )=B_{ji}(\\omega )\\end{array}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Restoring forces (linear)",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "The resotring forces are due to changes in displacement:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{rest}=</eq>"
+        },
+        {
+            "type": "image",
+            "content": "data:image/jpeg;base64,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"
+        },
+        {
+            "type": "text",
+            "content": "(<text style=\"italic\">Awp</text> waterplane area)"
+        },
+        {
+            "type": "text",
+            "content": "These are computed for calm water—Calm water stability."
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Linear Wave Excitation",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The linear wave excitation or 1st order waves excitation are the loads on the structure when it is restrained from oscillating and there are incident waves. The linear assumption assumes the loads are proportional to the wave amplitude."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "1st order wave loads are separated into two components:"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "Froude-Kriloff"
+                        },
+                        {
+                            "type": "text",
+                            "content": "Diffraction"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Froude-Kriloff loads",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The Froude-Kriloff loads are obtained by integrating the pressure due to undisturbed wave field over the mean wetted surface of the body—It is assumed that the body does not disturb the wave field."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "These can be considered within a nonlinear framework by integrating over the instantaneous wetter surface."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Diffraction loads",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The diffraction loads appear due to the change in the wave field by the presence of the body."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "These can be computed in a similar way as the radiation forces by considering a BVP; the main difference is that the boundary condition on the body:"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "The velocity due to the diffraction potential has to be equal and opposite to the velocity due to undisturbed wave potential."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "This body condition ensures there will be no fluid transport through the body."
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "RAOS—Frequency response functions",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{exc}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Force RAO"
+        },
+        {
+            "type": "text",
+            "content": "Force to Motion RAO"
+        },
+        {
+            "type": "text",
+            "content": "Sea surface elevation"
+        },
+        {
+            "type": "text",
+            "content": "combined"
+        },
+        {
+            "type": "text",
+            "content": "Motion RAO"
+        },
+        {
+            "type": "text",
+            "content": "motion"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Force RAO",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "For a regular wave"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\zeta =¯cos(\\omega t+\\phi _{\\zeta })</eq>"
+        },
+        {
+            "type": "text",
+            "content": "The linear excitation forces will be"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{exc,i}=¯_{i}(\\omega )cos[\\omega t+\\phi _{\\tau i}(\\omega )]</eq>"
+        },
+        {
+            "type": "text",
+            "content": "The amplitude and phase of the excitation force depend on"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Wave Frequency"
+                },
+                {
+                    "type": "text",
+                    "content": "Encounter angle"
+                },
+                {
+                    "type": "text",
+                    "content": "Wave amplitude"
+                },
+                {
+                    "type": "text",
+                    "content": "Forward speed"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Force RAO",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{exc,i}(t)=\\underbrace{¯ \\left|F_{i}(j\\omega )\\right|}_{¯_{i}(\\omega )}cos(\\omega t+\\underbrace{\\phi _{\\zeta }+arg[F_{i}(j\\omega )]}_{\\phi _{\\tau ,i}(\\omega )})</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Example heave Force RAO (<text style=\"italic\">i</text>=3) for a barge (8x4x45m):"
+        },
+        {
+            "type": "image",
+            "content": "data:image/jpeg;base64,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b/4UAegUV5//AMJb8Q/+iYf+V+3/AMKP+Et+If8A0TD/AMr9v/hQB6BRXn//AAlvxD/6Jh/5X7f/AAo/4S34h/8ARMP/ACv2/wDhQB6BRXn/APwlvxD/AOiYf+V+3/wo/wCEt+If/RMP/K/b/wCFAHoFFef/APCW/EP/AKJh/wCV+3/wo/4S34h/9Ew/8r9v/hQB6BRXn/8AwlvxD/6Jh/5X7f8Awo/4S34h/wDRMP8Ayv2/+FAHoFFcf4N8Zaj4j1jW9J1bQP7GvtJ8jzIvti3G7zVZhyqgDgA8E9e2K7CgAooooAKKKKACiiigAooooAKKKKACuL8U/DnQtX8Oana6boOiW+pXMLLDctZohSQ/xFlUsPqOa7SigDjtb8H3H9l6OfDDWOmajo8jS2qGHbbtuUiRGVMEK2ckjnPNJoHhfWJbvU9U8XXVlcahf2osvJsFYQQwAsSql/mJYtk59B1rsqKAPM7bwV4ymtbLw5qusaVL4Ys3iIkijk+13EcbKyRvn5APlAJHYe9XPjb/AMkh13/t3/8ASiOvQK8/+Nv/ACSHXf8At3/9KI6APQKKKKACiiigAooooAKKKKACiiigAqvf2NvqenXNheR+Za3UTwzJuI3IwIYZHIyCelWKKAK9hY2+madbWFnH5draxJDCm4naigBRk8nAA61YoooAKKKKACiiigAooooAKKKKACiiigDP0TRNO8OaPBpOk2/2exg3eXFvZ9u5ix5Yknkk8mtCiigAooooAKKKKACiiigAooooAKKKKAM/StE07RPtv9nW/k/bruS9uPnZt8z43NyTjOBwMD2rQoooAKKKKACiiigAooooAKKKKACiiigDz/wl/wAle+Iv/cM/9J2r0CvP/CX/ACV74i/9wz/0navQKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArz/42/8AJIdd/wC3f/0ojr0CvP8A42/8kh13/t3/APSiOgD0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPP8Awl/yV74i/wDcM/8ASdq9Arz/AMJf8le+Iv8A3DP/AEnavQKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArz/wCNv/JIdd/7d/8A0ojr0CvP/jb/AMkh13/t3/8ASiOgD0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvMPib49vfD2vaHo2kzLHPPMkt0Sob93vAC8/3vmz3wPevSL69t9OsLi9upBHb28bSSOeygZNfL2tvd6wX+IOoeYsNxq6Q28WOfLUFjj6BVX67q+g4fwMK9Z1KyvFaK/WT2X6mVWTSsj6oooor581CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDz/wl/yV74i/9wz/ANJ2r0CvP/CX/JXviL/3DP8A0navQKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArz/AONv/JIdd/7d/wD0ojr0CvP/AI2/8kh13/t3/wDSiOgD0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK57xr4stfB3hyfUp9rTfct4ScGWQ9B9O59hWlGlOtUVOmrt6ITaSuzh/iprN3rmqWPgDRG3XV66teOv/LNOoB9sDcfYD1qh8ZdIttB+GehaXZriC2vEjX1P7t8k+5OSfrW58J/Ct1bW9z4s1vc+s6sTIPMHzRxk5/AtwcdgFHHNUv2gP8AkTdO/wCwgv8A6LevqcJVhTzChgqLvGD1feVtX6LZGMleDk+p6zRRRXyRuFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHn/hL/AJK98Rf+4Z/6TtXoFef+Efm+LfxEccqTpwBHqIGB/WvQKqUZRdpKwBRRRUgFFFFABRRRQAUUUUAFFFFABRRXnviTw7rlx/a2u33jK80dLQO+nxWMwS3jjC8NOGX5yT1GcDsaAPQqK81vNa1rxFpHgzSPtc2k32vQNcX09sNkscccYZhHnOwszLg9RS2Wo3ngTVdc0i+1a+1axttHbVrSbUJBJMNhYSIXwC3O0jjjNAHpNef/ABt/5JDrv/bv/wClEdYM1p4h8PeF7Px5ceKdVurxhb3F/YSSg2fkyMm9Ujx8u1W+9nPB9a3vjYc/CDXCOn+j/wDo+OgD0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA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"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Motion RAO",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\xi _{i}(t)=\\underbrace{¯ \\left|H_{i}(j\\omega )\\right|}_{¯_{i}(\\omega )}cos(\\omega t+\\underbrace{\\phi _{\\zeta }+arg[H_{i}(j\\omega )]}_{\\phi _{\\xi ,i}(\\omega )})</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Example motion Force RAO (<text style=\"italic\">i</text>=3) for a barge (8x4x45m):"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Force to motion FRF",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Using the added mass and damping with the linear (seakeeping) equation of motion we can obtain the  force to motion frequency response function:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>[-\\omega ^{2}[M_{RB}+A(\\omega )]+j\\omega B(\\omega )+G]~=~_{exc}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "This is sometimes written in the hydrodynamic literature as"
+        },
+        {
+            "type": "text",
+            "content": "<eq>[M_{RB}+A(\\omega )]¨(t)+B(\\omega )˙(t)+G\\xi (t)=\\tau _{exc}(t)</eq>"
+        },
+        {
+            "type": "text",
+            "content": "This is an abuse of notation since this is not a true equation of motion; it is a different (rather confusing) way to write the frequency response function."
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Force to motion FRF",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Then we can define the force to motion frequency response matrix:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\begin{array}{c}G(j\\omega ):=[-\\omega ^{2}[M_{RB}+A(\\omega )]+j\\omega B(\\omega )+G]^{-1}\\\\\\\\ =\\left[\\begin{matrix}G_{11}(j\\omega )&G_{12}(j\\omega )&\\cdots &G_{16}(j\\omega )\\\\G_{21}(j\\omega )&G_{22}(j\\omega )&\\cdots &G_{26}(j\\omega )\\\\\\vdots &\\vdots &\\ddots &\\vdots \\\\G_{61}(j\\omega )&G_{62}(j\\omega )&\\cdots &G_{66}(j\\omega )\\end{matrix}\\right]\\end{array}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Motion RAO",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The Force RAO relates the wave elevation to the linear excitation forces."
+                },
+                {
+                    "type": "text",
+                    "content": "By combining the Force RAO with the Force to motion frequency response matrix we obtain the motion frequency response due to wave elevation or Motion RAO:"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<eq>H(j\\omega ):=G(j\\omega ) F(j\\omega )</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>H(j\\omega )=\\left[H_{1}(j\\omega ),H_{2}(j\\omega )\\ldots ,H_{6}(j\\omega )\\right]^{T}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>F(j\\omega )=\\left[F_{1}(j\\omega ),F_{2}(j\\omega )\\ldots ,F_{6}(j\\omega )\\right]^{T}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Statistics of Loads and Motion",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Since the wave elevation is assumed a zero-mean Gaussian process and the system is assumed linear, the loads and the response are also zero-mean and Gaussian processes."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The spectra of loads and response is all that is needed to compute any statistics:"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<eq>S_{\\tau \\tau ,i}(\\omega )=\\left|F_{i}(j\\omega )\\right|^{2}S_{\\zeta \\zeta }(\\omega )</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>S_{\\xi \\xi ,i}(\\omega )=\\left|H_{i}(j\\omega )\\right|^{2}S_{\\zeta \\zeta }(\\omega )</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Simulation of wave loads and motion time series",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Having the spectrum, we can simulate time series of loads and motion in the same way we do it for the wave elevation:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\tau _{i}(t)=\\sum_{n}^{}\\sum_{m}^{}¯_{nmi}cos\\left[\\omega _{e,n} t+\\phi _{nmi}+\\varepsilon _{n}\\right]</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>¯_{nmi}=\\sqrt{2\\left|F_{i}(j\\omega _{n}^{},U,\\chi _{m}^{})\\right|^{2}S_{\\zeta \\zeta }(j\\omega _{n}^{},\\chi _{m}^{}) \\Delta \\omega \\Delta \\chi }</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\phi _{nmi}=argF_{i}(j\\omega _{n}^{},U,\\chi _{m}^{})</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\omega _{e,n}=\\left(\\omega _{n}^{}-\\frac{\\left(\\omega _{n}^{}\\right)^{2}U}{g}cos\\chi _{m}^{}\\right)</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\begin{array}{c}\\omega _{n}^{}\\in \\left[\\omega _{n}-{\\Delta \\omega }/{2},\\omega _{n}+{\\Delta \\omega }/{2}\\right]\\\\\\chi _{m}^{}\\in \\left[\\chi _{m}-{\\Delta \\chi }/{2},\\chi _{m}+{\\Delta \\chi }/{2}\\right]\\end{array}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\varepsilon _{n}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "-uniformly distributed in [0,2]"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Non-linear wave loads",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "There are some problems related to wave-structure interactions which cannot be described by linear Theory alone."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "The nonlinear problems attempt to describe more accurately the free-surface and body conditions on the instantaneous rather than mean values."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "A convenient way to solve nonlinear wave-structure problems is by using perturbation analysis."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "In a second order theory, the problems are solved up second-order in incident wave amplitude—i.e., in the potential and pressure terms proportional to the wave amplitude and wave amplitude square are considered."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Non-linear wave loads",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "The effects of second-order loads are important for structures which are kept in position by mooring lines, anchors, and propulsion systems, and for vessels following trajectories."
+        },
+        {
+            "type": "text",
+            "content": "The solution of a second order problem evidences"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Mean wave drift force"
+                },
+                {
+                    "type": "text",
+                    "content": "Slowly-varying wave drift force (sub harmonic)"
+                },
+                {
+                    "type": "text",
+                    "content": "Rapidly varying wave drift force (super harmonic)"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Evidence of second-order loads",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "A simple way to evidence the effects of a second order problem is to look at the quadratic term in the Bernoulli equation:"
+        },
+        {
+            "type": "text",
+            "content": "<eq>p+\\rho gz+\\rho \\frac{\\partial \\varphi }{dt}+\\frac{\\rho }{2}\\nabla \\varphi \\cdot \\nabla \\varphi =C</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Then,"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\nabla \\varphi \\cdot \\nabla \\varphi =V_{1}^{2}+V_{2}^{2}+V_{3}^{2}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Evidence of second-order loads",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "Consider the case where"
+        },
+        {
+            "type": "text",
+            "content": "<eq>V_{1}=A_{1}cos(\\omega _{1}t)+A_{2}cos(\\omega _{2}t)</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Then,"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\begin{array}{c}V_{1}^{2}=\\frac{A_{1}^{2}}{2}+\\frac{A_{2}^{2}}{2}\\\\ +\\frac{A_{1}^{2}}{2}cos(2\\omega _{1}t)+\\frac{A_{2}^{2}}{2}cos(2\\omega _{2}t)\\\\ +A_{1}A_{2}cos[(\\omega _{1}-\\omega _{2})t]+A_{1}A_{2}cos[(\\omega _{1}+\\omega _{2})t]\\end{array}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "Mean components"
+        },
+        {
+            "type": "text",
+            "content": "rapidly varying components"
+        },
+        {
+            "type": "text",
+            "content": "Slowly varying component"
+        },
+        {
+            "type": "text",
+            "content": "These give rise to 2nd order pressure force components!"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Non-linear wave load effects",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Mean wave-drift force: Determine the equilibrium position of the moored system (together with wind and current). They are important for the design of mooring lines and propulsion systems for dynamic positioning."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Slowly-varying wave-drift force: The forces have frequencies much slower than the wave elevation. These can excite resonant modes in the horizontal position of the moored vessel. Typical resonance periods in offshore structures are 1 to 2min."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Rapidly-varying wave-drift force: these forces have frequency components which are higher than the wave elevation frequency. These can excite structural resonant modes: periods 2 to 4s."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Example (Pinkster 1979)",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Second order FRF",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "For slowly varying wave-drift forces, the second order potential is needed."
+                },
+                {
+                    "type": "text",
+                    "content": "With the second order potential, the second order FRF be computed:"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<eq>T_{jk}^{ic}(\\omega _{j},\\omega _{k})</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>T_{jk}^{is}(\\omega _{j},\\omega _{k})</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>\\begin{array}{c}F_{i}^{SV}=\\sum_{j=1}^{N}\\sum_{k=1}^{N}\\zeta _{j}\\zeta _{k}[T_{jk}^{ic}cos([\\omega _{j}-\\omega _{k}] t+[\\varepsilon _{j}-\\varepsilon _{k}])\\\\ +T_{jk}^{is}sin([\\omega _{j}-\\omega _{k}] t+[\\varepsilon _{j}-\\varepsilon _{k}])]\\end{array}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Mean wave drift from 2ord FRF",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Note that"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Then the mean wave drift forces can ne obtained from:"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<eq>T_{jk}^{ic}=T_{kj}^{ic}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>T_{jk}^{is}=-T_{kj}^{is}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "<eq>F_{i}^{MD}=¯_{i}^{SV}=\\sum_{j}^{N}\\zeta _{j}^{2}T_{jj}^{ic}</eq>"
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "Hydrodynamic Codes",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "The working principle of all codes:"
+        },
+        {
+            "type": "text",
+            "content": "Input data and"
+        },
+        {
+            "type": "text",
+            "content": "Pre-processing"
+        },
+        {
+            "type": "text",
+            "content": "Code"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Hull geometry"
+                },
+                {
+                    "type": "text",
+                    "content": "Loading condition"
+                },
+                {
+                    "type": "text",
+                    "content": "Environment (frequencies)"
+                },
+                {
+                    "type": "text",
+                    "content": "Calculation settings"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "Output data and"
+        },
+        {
+            "type": "text",
+            "content": "Post-processing"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "A(w), [A(∞)]"
+                },
+                {
+                    "type": "text",
+                    "content": "B(w), [B(∞)]"
+                },
+                {
+                    "type": "text",
+                    "content": "1st order force FRF"
+                },
+                {
+                    "type": "text",
+                    "content": "2nd order force FRF"
+                },
+                {
+                    "type": "text",
+                    "content": "Motion FRF"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "References",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Faltinsen, O.M. (1990) <text style=\"bold\">Sea Loads on Ships and Ocean Structures</text>. Cambridge University Press."
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Journée, J.M.J. and W.W. Massie (2001) <text style=\"bold\">Offshore Hydromechanics. </text>Lecture notes on offshore hydromechanics for Offshore Technology students, code OT4620. (<hyperlink><text style=\"underline\">http://www.ocp.tudelft.nl/mt/journee/</text><url>http://www.ocp.tudelft.nl/mt/journee/</url></hyperlink>)"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "Perez, T. and T. I. Fossen (2006) “Time-domain Models of Marine Surface Vessels  Based on Seakeeping Computations.” 7th IFAC Conference on Manoeuvring and Control of Marine Vessels MCMC, Portugal, September."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "06/06/26"
+        },
+        {
+            "type": "text",
+            "content": "One-day Tutorial, CAMS'07, Bol, Croatia"
+        },
+        {
+            "type": "text",
+            "content": "<number>"
+        },
+        {
+            "type": "page_footnote",
+            "content": "<number>"
+        }
+    ]
+]

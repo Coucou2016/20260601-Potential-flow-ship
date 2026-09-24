@@ -1,0 +1,5195 @@
+[
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.06,
+                0.05,
+                0.411,
+                0.064
+            ],
+            "angle": 0,
+            "content": "Marine Technology, Vol. 23, No. 4, Oct. 1986, pp. 345–370"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.897,
+                0.021,
+                0.93,
+                0.043
+            ],
+            "angle": 0,
+            "content": "26"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.062,
+                0.073,
+                0.924,
+                0.576
+            ],
+            "angle": 0,
+            "content": "YP676",
+            "sub_type": "text_image"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.439,
+                0.58,
+                0.547,
+                0.593
+            ],
+            "angle": 0,
+            "content": "YP 676 underway"
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.063,
+                0.649,
+                0.673,
+                0.703
+            ],
+            "angle": 0,
+            "content": "Resistance of a Systematic Series of Semiplaning Transom-Stern Hulls"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.064,
+                0.722,
+                0.238,
+                0.743
+            ],
+            "angle": 0,
+            "content": "Roger H. Compton \\( ^{1} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.182,
+                0.769,
+                0.805,
+                0.903
+            ],
+            "angle": 0,
+            "content": "The results of a systematic series of small (5 ft) models of hulls typical of coastal patrol, training, or recreational powerboats are presented and discussed. Hull form parameters studied include length-to-beam ratio, displacement-length ratio, longitudinal position of the center of gravity and section shape (hard chine or round bilge). The effects of these parameters on the calm-water resistance and running attitude (sinkage and trim) over a range of speeds corresponding to waterline length Froude numbers from 0.10 to 0.60 were investigated in the 120-ft towing tank at the U.S. Naval Academy Hydromechanics Laboratory (NAHL). Experimental procedures and computer-based data acquisition and analysis methods used at NAHL are described. The experimental results as well as the cross-faired and nondimensionalized stillwater resistance trends are presented. Comparisons with other resistance prediction methods for hulls of the subject type are made. An example of the application of the resistance prediction to the new 108-ft yard patrol craft (YP) being acquired by the U.S. Naval Academy is included.",
+            "merge_prev": false
+        },
+        {
+            "type": "page_footnote",
+            "bbox": [
+                0.064,
+                0.937,
+                0.484,
+                0.962
+            ],
+            "angle": 0,
+            "content": "\\( ^{1} \\)  Professor of naval architecture, Naval Systems Engineering Department, U.S. Naval Academy, Annapolis, Maryland."
+        },
+        {
+            "type": "page_footnote",
+            "bbox": [
+                0.497,
+                0.924,
+                0.922,
+                0.96
+            ],
+            "angle": 0,
+            "content": "Presented at the October 3, 1985 meeting of the Hampton Roads Section of THE SOCIETY OF NAVAL ARCHITECTS AND MARINE ENGINEERS."
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.064,
+                0.984,
+                0.166,
+                0.996
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.388,
+                0.983,
+                0.601,
+                0.995
+            ],
+            "angle": 0,
+            "content": "0025-3316/86/2304-0345$00.77/0"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.898,
+                0.98,
+                0.922,
+                0.992
+            ],
+            "angle": 0,
+            "content": "345"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "bbox": [
+                0.244,
+                0.039,
+                0.357,
+                0.053
+            ],
+            "angle": 0,
+            "content": "Introduction"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.076,
+                0.059,
+                0.525,
+                0.171
+            ],
+            "angle": 0,
+            "content": "AS A CONTRIBUTION to the Naval Sea Systems Command-Norfolk Detachment (NAVSEA:NORFOLK) design of a new yard patrol craft (YP) for the U.S. Naval Academy, the staff of the Naval Academy Hydromechanics Laboratory (NAHL) performed a series of experiments involving a systematically varied set of hull forms representing medium-speed, transom-stern, high displacement-length ratio, low length-beam ratio, coastal patrol craft. Quantitatively, the ranges of the above parameters covered by this experimental program are as follows:",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.205,
+                0.176,
+                0.404,
+                0.189
+            ],
+            "angle": 0,
+            "content": "Hard chine and round bilge",
+            "merge_prev": false
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.225,
+                0.189,
+                0.38,
+                0.202
+            ],
+            "angle": 0,
+            "content": "\\[\n0. 3 5 <   V / \\sqrt {L _ {\\mathrm{WL}}} <   2. 0 0\n\\]"
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.233,
+                0.202,
+                0.345,
+                0.214
+            ],
+            "angle": 0,
+            "content": "\\[\n0. 3 <   F _ {\\mathrm{N} \\nabla} <   1. 5\n\\]"
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.23,
+                0.214,
+                0.351,
+                0.226
+            ],
+            "angle": 0,
+            "content": "\\[\n1 0 5 <   \\Delta_ {\\mathrm{PP}} <   1 5 0\n\\]"
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.214,
+                0.226,
+                0.403,
+                0.238
+            ],
+            "angle": 0,
+            "content": "\\[\n- 0. 1 3 <   \\mathrm{LCG} / L _ {\\mathrm{PP}} <   - 0. 0 2\n\\]"
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.234,
+                0.238,
+                0.36,
+                0.251
+            ],
+            "angle": 0,
+            "content": "\\[\n4. 0 <   L _ {\\mathrm{PP}} / B <   5. 2\n\\]"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.078,
+                0.256,
+                0.527,
+                0.439
+            ],
+            "angle": 0,
+            "content": "The conceptual design of the new YP's began as a series of midshipman senior design projects in 1977 under the guidance of the author. Impetus for such a design effort was provided by the Naval Academy Superintendent (at the time) VADM Kinnard R. McKee, USN. Two of the midshipman design studies—one by (then) Midshipmen Corey Glab and Rich Maurer and the other by (then) Midshipmen Ron Miller and Mike Wertz of the Class of 1977—were the starting point for the design evolution at NAVSEA:NORFOLK which resulted in the 108-ft YP, the first of which, YP676, has completed her trial period, and is presently in service at the U.S. Naval Academy. YP676 and the initial six of her sister ships were (and are being) built by Peterson Builders, Inc. of Sturgeon Bay, Wisconsin. A photograph of YP676 underway serves as the frontispiece for this paper.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.08,
+                0.44,
+                0.53,
+                0.526
+            ],
+            "angle": 0,
+            "content": "To avoid ambiguity as to the speed range of concern in this study, the term “semiplaning” requires definition. For the present purpose, a definition centering upon the sinkage of the hull’s center of gravity as a function of speed will be used. As a hull begins to move from rest, it generates a pressure field around it which causes vertical attitudinal changes (sinkage and trim). At zero and low speeds, the weight of the ship is",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.539,
+                0.036,
+                0.986,
+                0.269
+            ],
+            "angle": 0,
+            "content": "supported by buoyancy in accordance with Archimedes Principle. As speed increases and the pressure field deviates more and more from its original hydrostatic form, the effects of the resulting waves and pressure forces on the hull cause ever more significant translation (rise or sinkage) of the center of gravity and rotation (trim) about the same center. At very high speeds—planing speeds—the weight of the hull is supported primarily by high hydrodynamic pressures on the hull's bottom. These planing pressures can cause the hull to be lifted above its static absolute vertical position. If the absolute vertical position of the center of gravity is plotted as a function of hull speed, a curve like that shown in Fig. 1 is typically found. For the purposes of this paper, the three “speed regimes”—displacement, semiplaning, and planing—are defined in the figure. While arbitrary, the definitions as a function of what the center of gravity does are considered to be physically reasonable. Thus, the hull speeds covered in the results presented herein are within the “displacement” and “semiplaning” speed regimes.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.54,
+                0.269,
+                0.987,
+                0.38
+            ],
+            "angle": 0,
+            "content": "The systematic series, whose stillwater resistance results are summarized here, was developed to assess the effects of practical hull shape and loading variations on the powering of such boats. This report covers but the first phase of testing on this series of hull forms. Seakeeping investigations concerning head sea motions, added resistance due to waves, and zero speed beam sea rolling are in progress or are planned. The present results are offered as the first installment in a set of tools for the small-craft designer to have in his professional toolkit.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.555,
+                0.393,
+                0.975,
+                0.419
+            ],
+            "angle": 0,
+            "content": "Geometric and hydrostatic characteristics of the series"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.542,
+                0.425,
+                0.988,
+                0.502
+            ],
+            "angle": 0,
+            "content": "The basic hull shape from which variations in bilge geometry (that is, hard chine or soft chine) and slenderness (as measured by length-beam ratio) represents an amalgamation of the form features of several existing hulls. Among the contributing influences were the hull form of the 100-ft torpedo weapons retriever (TWR) presently in service with the U.S. Navy, Series 64 [1], \\( ^{2} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "page_footnote",
+            "bbox": [
+                0.555,
+                0.51,
+                0.938,
+                0.524
+            ],
+            "angle": 0,
+            "content": "\\( ^{2} \\) Numbers in brackets designate References at end of paper."
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.469,
+                0.549,
+                0.603,
+                0.564
+            ],
+            "angle": 0,
+            "content": "Nomenclature"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.113,
+                0.578,
+                0.358,
+                0.601
+            ],
+            "angle": 0,
+            "content": "\\(A =\\) regression coefficient, sectional area, \\(\\mathbf{ft}^2\\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.603,
+                0.262,
+                0.615
+            ],
+            "angle": 0,
+            "content": "AP = after perpendicular",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.087,
+                0.616,
+                0.343,
+                0.638
+            ],
+            "angle": 0,
+            "content": "\\( A_{T}/A_{x}= \\) ratio of immersed transom area to maximum sectional area",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.116,
+                0.639,
+                0.326,
+                0.651
+            ],
+            "angle": 0,
+            "content": "\\(B =\\) regression coefficient, beam, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.097,
+                0.652,
+                0.346,
+                0.664
+            ],
+            "angle": 0,
+            "content": "\\(BM_{L} =\\) longitudinal metacentric radius, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.115,
+                0.665,
+                0.271,
+                0.677
+            ],
+            "angle": 0,
+            "content": "\\(C =\\) regression coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.109,
+                0.678,
+                0.272,
+                0.689
+            ],
+            "angle": 0,
+            "content": "\\(C_A =\\) correlation allowance",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.109,
+                0.691,
+                0.244,
+                0.703
+            ],
+            "angle": 0,
+            "content": "\\(C_B =\\) block coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.111,
+                0.704,
+                0.326,
+                0.717
+            ],
+            "angle": 0,
+            "content": "\\(C_f =\\) frictional resistance coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.111,
+                0.718,
+                0.267,
+                0.73
+            ],
+            "angle": 0,
+            "content": "\\(C_p =\\) prismatic coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.11,
+                0.732,
+                0.318,
+                0.744
+            ],
+            "angle": 0,
+            "content": "\\(C_R =\\) residual resistance coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.113,
+                0.745,
+                0.3,
+                0.757
+            ],
+            "angle": 0,
+            "content": "\\(C_t =\\) total resistance coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.1,
+                0.759,
+                0.279,
+                0.771
+            ],
+            "angle": 0,
+            "content": "\\(C_{\\mathrm{WP}} =\\) waterplane coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.097,
+                0.776,
+                0.246,
+                0.788
+            ],
+            "angle": 0,
+            "content": "CRT = cathode ray tube",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.116,
+                0.789,
+                0.272,
+                0.8
+            ],
+            "angle": 0,
+            "content": "\\(D =\\) regression coefficient",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.097,
+                0.801,
+                0.269,
+                0.813
+            ],
+            "angle": 0,
+            "content": "EHP = effective horsepower",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.102,
+                0.814,
+                0.352,
+                0.838
+            ],
+            "angle": 0,
+            "content": "\\( F_{NL} = \\text{Froude number based on waterline length} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.101,
+                0.839,
+                0.352,
+                0.863
+            ],
+            "angle": 0,
+            "content": "\\(F_{\\mathrm{N}\\nabla} =\\) Froude number based on displaced volume",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.108,
+                0.866,
+                0.258,
+                0.878
+            ],
+            "angle": 0,
+            "content": "FP = fore perpendicular",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.427,
+                0.577,
+                0.557,
+                0.589
+            ],
+            "angle": 0,
+            "content": "G = center of gravity",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.429,
+                0.589,
+                0.616,
+                0.601
+            ],
+            "angle": 0,
+            "content": "\\(i_{e} =\\) half angle of entrance, deg",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.404,
+                0.602,
+                0.667,
+                0.626
+            ],
+            "angle": 0,
+            "content": "ITTC = International Towing Tank Conference",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.408,
+                0.627,
+                0.682,
+                0.65
+            ],
+            "angle": 0,
+            "content": "\\( KM_{T}= \\)  height of transverse metacenter above keel, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.414,
+                0.652,
+                0.557,
+                0.664
+            ],
+            "angle": 0,
+            "content": "\\(L_{\\mathrm{OA}} =\\) length overall, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.416,
+                0.665,
+                0.657,
+                0.677
+            ],
+            "angle": 0,
+            "content": "\\(L_{\\mathrm{PP}} =\\) length between perpendiculars, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.412,
+                0.679,
+                0.59,
+                0.691
+            ],
+            "angle": 0,
+            "content": "\\(L_{\\mathrm{WL}} =\\) length on waterline, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.411,
+                0.692,
+                0.677,
+                0.716
+            ],
+            "angle": 0,
+            "content": "LCB = longitudinal distance from amidships to center of buoyancy, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.409,
+                0.717,
+                0.677,
+                0.74
+            ],
+            "angle": 0,
+            "content": "\\(\\mathrm{LCG} =\\) longitudinal distance from amidships to center of gravity, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.4,
+                0.741,
+                0.573,
+                0.753
+            ],
+            "angle": 0,
+            "content": "LTSW = long tons salt water",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.423,
+                0.753,
+                0.52,
+                0.765
+            ],
+            "angle": 0,
+            "content": "(M) = \\(L_{\\mathbf{WL}} / \\nabla^{1/3}\\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.399,
+                0.766,
+                0.658,
+                0.79
+            ],
+            "angle": 0,
+            "content": "NAHL = Naval Academy Hydromechanics Laboratory",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.411,
+                0.791,
+                0.632,
+                0.803
+            ],
+            "angle": 0,
+            "content": "NPL = National Physical Laboratory",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.424,
+                0.803,
+                0.566,
+                0.815
+            ],
+            "angle": 0,
+            "content": "\\(R_{T} =\\) total resistance, lb",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.425,
+                0.816,
+                0.525,
+                0.828
+            ],
+            "angle": 0,
+            "content": "⑤ = WSA/ \\( \\nabla^{2/3} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.423,
+                0.829,
+                0.562,
+                0.84
+            ],
+            "angle": 0,
+            "content": "SA = sectional area, ft²",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.404,
+                0.841,
+                0.662,
+                0.852
+            ],
+            "angle": 0,
+            "content": "SHCP = Ship Hull Characteristics Program",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.408,
+                0.853,
+                0.667,
+                0.864
+            ],
+            "angle": 0,
+            "content": "SSPA = Swedish Maritime Research Centre",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.431,
+                0.865,
+                0.508,
+                0.877
+            ],
+            "angle": 0,
+            "content": "\\(T =\\) draft,ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.71,
+                0.575,
+                0.916,
+                0.587
+            ],
+            "angle": 0,
+            "content": "TWR = torpedo weapons retriever",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.735,
+                0.588,
+                0.848,
+                0.599
+            ],
+            "angle": 0,
+            "content": "\\(V =\\) velocity, knots",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.737,
+                0.6,
+                0.851,
+                0.612
+            ],
+            "angle": 0,
+            "content": "\\(v =\\) velocity,ft/sec",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.713,
+                0.612,
+                0.9,
+                0.623
+            ],
+            "angle": 0,
+            "content": "WSA = wetted surface area, ft\\( ^{2} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.727,
+                0.624,
+                0.862,
+                0.635
+            ],
+            "angle": 0,
+            "content": "YP = yard patrol craft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.722,
+                0.636,
+                0.958,
+                0.66
+            ],
+            "angle": 0,
+            "content": "\\(Z_{\\mathrm{CG}} =\\) vertical displacement of center of gravity, ft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.726,
+                0.661,
+                0.942,
+                0.673
+            ],
+            "angle": 0,
+            "content": "\\(\\beta_{10} =\\) deadrise angle at transom, deg",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.736,
+                0.674,
+                0.842,
+                0.686
+            ],
+            "angle": 0,
+            "content": "\\(\\Delta =\\) displacement",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.736,
+                0.687,
+                0.86,
+                0.697
+            ],
+            "angle": 0,
+            "content": "\\(\\lambda =\\) linear scale ratio",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.738,
+                0.698,
+                0.921,
+                0.71
+            ],
+            "angle": 0,
+            "content": "\\(\\nu =\\) kinematic viscosity, \\(\\mathrm{ft}^2 /\\mathrm{sec}\\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.737,
+                0.711,
+                0.874,
+                0.723
+            ],
+            "angle": 0,
+            "content": "\\(\\rho =\\) density, lb-sec2/ft4",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.735,
+                0.723,
+                0.904,
+                0.735
+            ],
+            "angle": 0,
+            "content": "\\(\\tau =\\) running trim angle, deg",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.733,
+                0.736,
+                0.812,
+                0.747
+            ],
+            "angle": 0,
+            "content": "\\( \\mathbb{E} = \\text{baseline} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.732,
+                0.749,
+                0.824,
+                0.761
+            ],
+            "angle": 0,
+            "content": "\\(\\mathcal{Q} =\\) centerline",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.721,
+                0.762,
+                0.979,
+                0.775
+            ],
+            "angle": 0,
+            "content": "\\( \\Delta_{PP} = displacement-length ratio, LTSW/ft^{3} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.734,
+                0.776,
+                0.889,
+                0.788
+            ],
+            "angle": 0,
+            "content": "\\(\\nabla =\\) displaced volume, \\(\\mathrm{ft}^3\\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.725,
+                0.789,
+                0.824,
+                0.801
+            ],
+            "angle": 0,
+            "content": "\\( \\text{∅} = \\text{amidships} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.704,
+                0.812,
+                0.767,
+                0.823
+            ],
+            "angle": 0,
+            "content": "Subscripts"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.733,
+                0.826,
+                0.803,
+                0.837
+            ],
+            "angle": 0,
+            "content": "\\(m =\\) model",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.718,
+                0.838,
+                0.914,
+                0.849
+            ],
+            "angle": 0,
+            "content": "REF = reference waterline value",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.739,
+                0.85,
+                0.79,
+                0.862
+            ],
+            "angle": 0,
+            "content": "s = ship",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.739,
+                0.863,
+                0.826,
+                0.873
+            ],
+            "angle": 0,
+            "content": "\\(x =\\) maximum",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.086,
+                0.9,
+                0.113,
+                0.91
+            ],
+            "angle": 0,
+            "content": "346"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.834,
+                0.893,
+                0.989,
+                0.905
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.08,
+                0.036,
+                0.474,
+                0.049
+            ],
+            "angle": 0,
+            "content": "the series of Marwood and Bailey [2], and Series 63 [3].",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.079,
+                0.049,
+                0.531,
+                0.256
+            ],
+            "angle": 0,
+            "content": "The soft-chine shape, designated YP81-1, was the starting point for the series. Two soft-chine variants were designed and built to evaluate the effects of varying slenderness and are designated YP81-2 and YP81-3. YP81-4, YP81-5, and YP81-6 represent hard-chine shapes that have slenderness ratios nominally equal to their soft-chine counterparts. Since the hard-chine shapes were developed from their soft-chine counterparts by simply extending bottom and side tangents at each station until they intersected (with fairing accomplished as necessary), no great change in slenderness or longitudinal volume distribution should be expected between corresponding soft- and hard-chine hulls (for example, YP81-1 and YP81-4, YP81-2 and YP81-5, YP81-3 and YP81-6). Figure 2 shows the body plans and end profiles of the six hulls built and tested for the results reported here, which are for unappended hulls built to the molded lines shown. The model lines drawings were provided by NAVSEA:NORFOLK.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.08,
+                0.256,
+                0.532,
+                0.415
+            ],
+            "angle": 0,
+            "content": "The U.S. Navy's Ship Hull Characteristics Program (SHCP) was run for each hull to quantify its hydrostatic characteristics. To facilitate numerical comparisons, a \"reference waterline\" was defined for each hull. The \"reference waterline\" and its corresponding draft, \\( T_{\\mathrm{REF}} \\), represent the zero-trim condition for which the waterline length (\\( L_{\\mathrm{WLREF}} \\)) equals the arbitrarily defined length between perpendiculars (\\( L_{\\mathrm{PP}} \\)). The degree of similarity of the longitudinal volume distribution for all series models is shown by the sectional area curves for \\( T_{\\mathrm{REF}} \\) in Fig. 3. Figures 4 and 5 show the variation of wetted surface and waterline length with displacement for soft- and hard-chine shapes, respectively. These hull characteristics must be known for subsequent resistance prediction applications.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.147,
+                0.44,
+                0.465,
+                0.454
+            ],
+            "angle": 0,
+            "content": "Description of the series test models"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.08,
+                0.459,
+                0.534,
+                0.619
+            ],
+            "angle": 0,
+            "content": "Six 5-ft (\\(L_{\\text{PP}}\\)) models were built to the lines shown in Fig. 2 by Alfred C. Seebode of Tabernacle-Vincentown, New Jersey. The models were constructed using 2-in. clear pine lifts faired to the molded shape given by the lines drawings. A nominal wall thickness of \\(1/2\\) in. was maintained on the model topsides. To facilitate the mounting of towing apparatus, the upper surface of the bottom lift was parallel to, and 2 in. above, the base plane. Also, horizontal topped wedges were built into the sheer at the fore perpendicular and amidships to facilitate freeboard measurement by hook gage. The models were finished with multiple coats of clear spar varnish. Wet sanding after each coat (including the final coat) resulted in a smooth wetting surface. No external appendages were fitted to the series models.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.083,
+                0.618,
+                0.534,
+                0.74
+            ],
+            "angle": 0,
+            "content": "The models were outfitted according to the normal procedures followed at the NAHL; that is, station lines were painted on the model with vertical scales at the ends and amidships to facilitate wave-hull intersection definition (and for subsequent testing in waves for relative motions), a vertical scale up the transom to quantify transom immersion, vertical threaded ballast rods fore and aft, a stud array (described later) for turbulence stimulation, and a mounting plate for connection to the towing dynamometry. Figure 6 is a photograph of one of the models ready for ballasting.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.082,
+                0.74,
+                0.534,
+                0.875
+            ],
+            "angle": 0,
+            "content": "Because the experimental plan included testing each model at three different longitudinal positions of the models' center of gravity (LCG), and since NAHL's convention is to tow from the LCG, the dynamometry mounting plate locations had to be established. To minimize unwanted trimming moment due to the difference in the vertical position of the model towing point and the designed propeller shaft line, it was decided to position the towing point (physically, the trim pivot point on the towing dynamometer) on the hypothetical propeller shaft centerline at the longitudinal position of the model center of gravity. With the dynamometer trim pivot point thus located, the mounting",
+            "merge_prev": false
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.543,
+                0.035,
+                0.996,
+                0.219
+            ],
+            "angle": 0,
+            "content": "| Phase          | Absolute Vertical Position of G |\n| -------------- | ------------------------------- |\n| Down           | 0                               |\n| Displacement   | -up                             |\n| Semi-Planing   | 0                               |\n| Planing        | up                              |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.652,
+                0.223,
+                0.893,
+                0.236
+            ],
+            "angle": 0,
+            "content": "Fig. 1 Speed range definition sketch"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.543,
+                0.28,
+                0.99,
+                0.355
+            ],
+            "angle": 0,
+            "content": "plate location was completely defined. For all six hulls, the hypothetical propeller shaft centerline passed through a point 1.95 in. below the lowest point (on Q) of the model transom and made an angle of 9.75 deg with the design waterline. The dynamometry mounting plate was shimmed to maintain this condition for all LCG's tested.",
+            "merge_prev": true
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.654,
+                0.369,
+                0.886,
+                0.384
+            ],
+            "angle": 0,
+            "content": "Ballasting of series models"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.544,
+                0.389,
+                0.99,
+                0.427
+            ],
+            "angle": 0,
+            "content": "Each model was to be tested at three LCG's for each of three displacements. The three LCG's, identical for all six models, were",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.647,
+                0.432,
+                0.888,
+                0.447
+            ],
+            "angle": 0,
+            "content": "Forward: 2.44% \\(L_{\\mathrm{PP}}\\) aft 20",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.649,
+                0.449,
+                0.885,
+                0.463
+            ],
+            "angle": 0,
+            "content": "Middle: 7.78% \\(L_{\\mathrm{PP}}\\) aft",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.649,
+                0.465,
+                0.892,
+                0.48
+            ],
+            "angle": 0,
+            "content": "Aft: 13.12% \\(L_{\\mathrm{PP}}\\) aft ②",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.543,
+                0.487,
+                0.99,
+                0.572
+            ],
+            "angle": 0,
+            "content": "These odd values correspond, nominally, to 45, 40, and 35 percent of \\( L_{\\text{OA}} \\) forward of the transom for YP81-1, and were specified by NAVSEA:NORFOLK. The three displacements correspond to zero-trim waterlines which were fixed distances below the reference waterline on each model. Specifically, for a 100-ft \\( L_{\\text{PP}} \\), the drafts for testing were 0.15, 0.55, and 0.95 ft below the reference waterline.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.544,
+                0.572,
+                0.99,
+                0.596
+            ],
+            "angle": 0,
+            "content": "The consistently followed ballasting procedure was as follows:",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.561,
+                0.597,
+                0.99,
+                0.647
+            ],
+            "angle": 0,
+            "content": "1. For each model, the SHCP output (zero trim condition) was consulted to get displacement and wetted surface area at each test draft. The displacements were corrected for the towing tank water conditions; that is",
+            "merge_prev": false
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.635,
+                0.655,
+                0.908,
+                0.682
+            ],
+            "angle": 0,
+            "content": "\\[\n\\Delta_ {m} = \\Delta_ {s} (\\text { in   LTSW }) \\times \\frac {\\rho_ {m}}{\\rho_ {s}} \\times 2 2 4 0 \\div \\lambda^ {3}\n\\]"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.591,
+                0.689,
+                0.918,
+                0.702
+            ],
+            "angle": 0,
+            "content": "For all SHCP runs, a 100 ft \\( L_{\\mathrm{PP}} \\) was specified.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.563,
+                0.702,
+                0.991,
+                0.738
+            ],
+            "angle": 0,
+            "content": "2. Model freeboards at the fore perpendicular, amidships, and after perpendicular were scaled from the lines drawings for the three drafts to be tested.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.563,
+                0.738,
+                0.992,
+                0.786
+            ],
+            "angle": 0,
+            "content": "3. The model to be tested was floated in the tank and ballasted to the measured freeboards (zero trim and zero heel) for all three test displacements. All hydrostatic data were recorded.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.563,
+                0.787,
+                0.993,
+                0.872
+            ],
+            "angle": 0,
+            "content": "4. When testing was imminent, the model, with the mounting plate fixed for a given LCG, was ballasted to a weight equal to (or slightly heavier than) the heaviest displacement. Weights were then placed on an unloading-arm arrangement to bring the model to the correct test displacement. By so doing, the three displacements at one LCG could be easily accomplished without adjusting",
+            "merge_prev": false
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.563,
+                0.702,
+                0.993,
+                0.872
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.085,
+                0.894,
+                0.192,
+                0.905
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.967,
+                0.89,
+                0.992,
+                0.9
+            ],
+            "angle": 0,
+            "content": "347"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.264,
+                0.008,
+                0.788,
+                0.284
+            ],
+            "angle": 0,
+            "content": "| LPP/BREF | 4.59 | CB    | 0.437 | KM_T/B_REF | 0.686 |\n| -------- | ---- | ----- | ----- | ---------- | ----- |\n| BREF/T   | 3.84 | CP    | 0.720 | EM_L/L_PP | 2.020 |\n| A        | 154.7 | GWP   | 0.807 | ie°        | 17.5  |\n| ③       | 6.695 | LCB/LPP | -0.081 | β_0°       | 16.1  |",
+            "sub_type": "line"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.263,
+                0.298,
+                0.788,
+                0.589
+            ],
+            "angle": 0,
+            "content": "|        | LPP/BREF | CB    | 0.432 | KMT/BREF | 0.815 |\n| ------ | -------- | ----- | ----- | -------- | ----- |\n| BREF/T | 5.05     | CP    | 0.724 | BML/LPP  | 2.294 |\n| 4      | 155.2    | CWP   | 0.798 | ie°      | 20.9  |\n| ③      | 7.222    | LCB/LPP | -0.082 | β°       | 12.4  |",
+            "sub_type": "line"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.264,
+                0.607,
+                0.788,
+                0.893
+            ],
+            "angle": 0,
+            "content": "Figure 2c: Abbreviated Lines of Series Model YP81-3\n| Component | Value |\n| :--- | :--- |\n| LPP/BREF | 5.17 |\n| BREF/T | 3.06 |\n| θ | 151.0 |\n| θ* | 6.412 |\n| C_B | 0.432 |\n| C_P | 0.716 |\n| C_WP | 0.799 |\n| LCB/L_PP | -0.086 |\n| KM_T/B_REF | 0.594 |\n| B_ML/L_PP | 1.807 |\n| i_e° | 16.5 |\n| θ_θ° | 20.8 |",
+            "sub_type": "other"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.395,
+                0.899,
+                0.66,
+                0.912
+            ],
+            "angle": 0,
+            "content": "Fig. 2 Abbreviated lines of series models"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.089,
+                0.932,
+                0.113,
+                0.942
+            ],
+            "angle": 0,
+            "content": "348"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.813,
+                0.933,
+                0.962,
+                0.944
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.231,
+                0.019,
+                0.737,
+                0.284
+            ],
+            "angle": 0,
+            "content": "",
+            "sub_type": "other"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.742,
+                0.01,
+                0.761,
+                0.258
+            ],
+            "angle": 90,
+            "content": "Figure 2d: Abbreviated Lines of Series Model YP81-4"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.234,
+                0.298,
+                0.758,
+                0.567
+            ],
+            "angle": 0,
+            "content": "| LPP/BREF | 3.86 | CB    | 0.452 | KMT/BREF | 0.817 |\n| -------- | ---- | ----- | ----- | -------- | ----- |\n| BREF/T   | 5.25 | CP    | 0.720 | BML/LPP  | 2.246 |\n| A        | 164.7 | CWP   | 0.804 | ie*      | 21.5  |\n| S        | 7.345| LCB/LPP| -0.086| βo*      | 12.4  |",
+            "sub_type": "line"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.231,
+                0.583,
+                0.739,
+                0.856
+            ],
+            "angle": 0,
+            "content": "|        | LPP/B_REF | C_B   | C_P   | C_WP  | -0.084 |\n| ------ | --------- | ----- | ----- | ----- | ------ |\n| LPP    | 5.17      |       |       |       |        |\n| B_REF/T| 3.03      |       |       |       |        |\n| Φ      | 154.8     |       |       |       |        |\n| Σ      | 6.513     |       |       |       |        |",
+            "sub_type": "other"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.743,
+                0.583,
+                0.762,
+                0.832
+            ],
+            "angle": 90,
+            "content": "Figure 2f: Abbreviated Lines of Series Model YRP1-6"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.437,
+                0.861,
+                0.556,
+                0.874
+            ],
+            "angle": 0,
+            "content": "Fig. 2 (continued)"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.066,
+                0.888,
+                0.165,
+                0.902
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.907,
+                0.895,
+                0.932,
+                0.905
+            ],
+            "angle": 0,
+            "content": "349"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.139,
+                0.048,
+                0.964,
+                0.439
+            ],
+            "angle": 0,
+            "content": "| Season | Value |\n| ------ | ----- |\n| YEAR-5 | 57 |\n| YEAR-6 | 37 |\n| YEAR-7 | 4 |\n| YEAR-8 | 3 |\n| YEAR-9 | 2 |\n| YEAR-10 | 1 |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.411,
+                0.445,
+                0.698,
+                0.457
+            ],
+            "angle": 0,
+            "content": "Fig. 3 Sectional area curves of series models"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.157,
+                0.489,
+                0.547,
+                0.514
+            ],
+            "angle": 0,
+            "content": "weights inside the model or removing the model from the test rig.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.132,
+                0.514,
+                0.548,
+                0.574
+            ],
+            "angle": 0,
+            "content": "5. The required LCG was obtained by hanging the model on the towing rig (attached at the model's LCG) and adjusting the ballast weights longitudinally until the model floor was level. Weights were then secured and testing could begin.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.117,
+                0.573,
+                0.549,
+                0.621
+            ],
+            "angle": 0,
+            "content": "Minor changes in model displacement due to tank water temperature variation over the time needed to complete the testing of one model were made by adjusting the weight on the unloading arm.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.117,
+                0.621,
+                0.55,
+                0.682
+            ],
+            "angle": 0,
+            "content": "The three LCG's specified resulted in varying degrees of static trim. The middle LCG was close to the zero-trim condition, but not exactly so for all models. The forward CG location results in a nominal bow-down trim of \\(1^{1/2}\\) deg while the aft CG location causes a nominal \\(1^{1/4}\\)-deg trim by the stern.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.187,
+                0.697,
+                0.48,
+                0.71
+            ],
+            "angle": 0,
+            "content": "Testing equipment and procedures"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.117,
+                0.716,
+                0.55,
+                0.836
+            ],
+            "angle": 0,
+            "content": "All resistance data were acquired in the 120-ft towing tank located in Rickover Hall at the U.S. Naval Academy. The International Towing Tank Conference (ITTC) description of this tank is shown as Fig. 7. The fresh-water depth for all tests was 5.5 ft. Blockage was not considered to be a problem with the test series since the blockage area ratio (maximum model sectional area divided by tank cross-sectional area) was less than 0.0045. Check tests of YP81-1 in a much larger towing tank (380 by 26 by 16 ft) verified that no measurable blockage effects were present in the smaller tank results.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.118,
+                0.835,
+                0.551,
+                0.873
+            ],
+            "angle": 0,
+            "content": "The dynamometer used for all tests is shown in Fig. 8. The dynamometer restrained the model in surge, roll, sway, and yaw. The free motions of trim (pitch) and sinkage (heave) were",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.56,
+                0.488,
+                0.99,
+                0.691
+            ],
+            "angle": 0,
+            "content": "measured by rotary potentiometers. Resistance force was measured by a 2-in. Hydronautics force block whose rated maximum load was 10 lb (block was linear to about ±100 percent of rated maximum load). The model speed was measured by an optical encoder activated by the carriage towing cable. All four transducers were calibrated (statically) before each test series and were rezeroed (electrically) between each run down the tank. All transducers demonstrated linear response over the anticipated ranges of the measured variables as can be seen from the sample force block calibration plot included as Fig. 9. The figure shows unretouched output from the laboratory's computer system. The resistance force is plotted on the ordinate, while the abscissa is directly proportional to a corresponding dc voltage (converted to a digital value). The coefficients for the least-squares linear fit (which are actually used in raw data conversion) are shown in the upper left corner of the calibration plot.",
+            "merge_prev": true
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.561,
+                0.691,
+                0.99,
+                0.763
+            ],
+            "angle": 0,
+            "content": "The force block remains horizontal regardless of model trim and thus measures pure resistance directly. The model was run from the wavemaker to the beach to minimize reflection of the model's transverse wave system. An interrun time of 10 min (nominal) was used for the entire stillwater resistance test series.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.561,
+                0.762,
+                0.991,
+                0.87
+            ],
+            "angle": 0,
+            "content": "Data for each measured variable were acquired using the laboratory's computer-based data acquisition, control and analysis system [4]. Each channel of experimental data consisted of a system like the one shown schematically in Fig. 10. For the 120-ft tank, the \"DATA TRANSMISSION SYSTEM\" consists of a trailing cable from the carriage to the tank control station (the 380-ft tank employs a modulated laser as the link between the moving carriage and the shore-based data acquisition system). For both tanks the \"TERMINAL\" is the operators active",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.12,
+                0.894,
+                0.145,
+                0.904
+            ],
+            "angle": 0,
+            "content": "350"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.842,
+                0.89,
+                0.992,
+                0.9
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.087,
+                0.051,
+                0.964,
+                0.445
+            ],
+            "angle": 270,
+            "content": "| Displacement Length Ratio (L1/L2) | Value |\n| --------------------------------- | ----- |\n| 0                                 | 1     |\n| 0                                 | 2     |\n| 0                                 | 3     |\n| 0                                 | 4     |\n| 0                                 | 5     |\n| 10                                | 1     |\n| 10                                | 2     |\n| 10                                | 3     |\n| 10                                | 4     |\n| 10                                | 5     |\n| 20                                | 1     |\n| 20                                | 2     |\n| 20                                | 3     |\n| 20                                | 4     |\n| 20                                | 5     |\n| 30                                | 1     |\n| 30                                | 2     |\n| 30                                | 3     |\n| 30                                | 4     |\n| 30                                | 5     |\n| 40                                | 1     |\n| 40                                | 2     |\n| 40                                | 3     |\n| 40                                | 4     |\n| 40                                | 5     |\n| 50                                | 1     |\n| 50                                | 2     |\n| 50                                | 3     |\n| 50                                | 4     |\n| 50                                | 5     |\n| 60                                | 1     |\n| 60                                | 2     |\n| 60                                | 3     |\n| 60                                | 4     |\n| 60                                | 5     |",
+            "sub_type": "line"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.082,
+                0.478,
+                0.958,
+                0.873
+            ],
+            "angle": 270,
+            "content": "| Displacement Length Ratio (cm/s) | Value |\n| -------------------------------- | ----- |\n| 100                              | 100   |\n| 95                               | 95    |\n| 90                               | 90    |\n| 85                               | 85    |\n| 80                               | 80    |\n| 75                               | 75    |\n| 70                               | 70    |\n| 65                               | 65    |\n| 60                               | 60    |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.964,
+                0.084,
+                0.984,
+                0.421
+            ],
+            "angle": 270,
+            "content": "Fig. 5 Wetted surface and waterline length characteristics for hard-chine hulls"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.066,
+                0.894,
+                0.173,
+                0.905
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.964,
+                0.898,
+                0.989,
+                0.908
+            ],
+            "angle": 0,
+            "content": "351"
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.123,
+                0.133,
+                0.161,
+                0.395
+            ],
+            "angle": 270,
+            "content": "INTERNATIONAL TOWING TANK CONFERENCE CATALOGUE OF FACILITIES\nTOWING TANKS, SEAKEEPING AND MANOEUVRING BASINS",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.162,
+                0.522,
+                0.481,
+                0.824
+            ],
+            "angle": 270,
+            "content": "3\n2\n1\n0\n10\n15\n18\n20\n25\n28\n30\n35\n38\n40\n45\n48\n50\n55\n60\n65\n70\n75\n80\n85\n90\n95\n100",
+            "sub_type": "text_image"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.101,
+                0.892,
+                0.127,
+                0.902
+            ],
+            "angle": 0,
+            "content": "352"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.539,
+                0.521,
+                0.868,
+                0.82
+            ],
+            "angle": 270,
+            "content": "Top-down view of a small boat or similar vessel with visible structural details and no text or symbols",
+            "sub_type": "natural_image"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.171,
+                0.091,
+                0.241,
+                0.44
+            ],
+            "angle": 270,
+            "content": "U. S. NAVAL ACADEMY HYDROMECHANICS LABORATORY\nANNAPOLIS, MARYLAND 21402\nTELEPHONE: (301) 267-3361\n36.6m TOWING TANK (1976)",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.283,
+                0.091,
+                0.619,
+                0.443
+            ],
+            "angle": 270,
+            "content": "120 FOOT TANK AND WAVEMAKER SYSTEM\nU.S. NAVAL ACADEMY\nCARRIAGE\n120 METERS\nDOUBLE FLAP WAVE BOARD\nBEACH 7 LAYERS RECTANGULAR BARS\n350 METERS\nLGT M\n24 M",
+            "sub_type": "text_image"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.674,
+                0.285,
+                0.688,
+                0.436
+            ],
+            "angle": 270,
+            "content": "DESCRIPTION OF CARRIAGE: unmanned",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.699,
+                0.099,
+                0.754,
+                0.437
+            ],
+            "angle": 270,
+            "content": "TYPE OF DRIVE SYSTEM AND TOTAL POWER: cable drive with 15 HP DC drive motor, digital speed control, manual/computer controlled\nMAXIMUM CARRIAGE SPEED: 6 m/s (20 fps)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.775,
+                0.32,
+                0.79,
+                0.436
+            ],
+            "angle": 270,
+            "content": "MODEL SIZE RANGE: 1m - 2m",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.802,
+                0.089,
+                0.842,
+                0.436
+            ],
+            "angle": 270,
+            "content": "TESTS PERFORMED: resistance in calm water and waves, seakeeping tests, various tests of ocean structures, hydrodynamic forces on submerged bodies, foils, etc., flow visualization",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.854,
+                0.086,
+                0.882,
+                0.436
+            ],
+            "angle": 270,
+            "content": "OTHER REMARKS: extensive software developed for standard test data base, shares computer with 128m towing tank, gravity towing capability",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.906,
+                0.14,
+                0.924,
+                0.381
+            ],
+            "angle": 270,
+            "content": "Fig. 7 ITTC facility description of the USNA 120-ft tank",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.911,
+                0.575,
+                0.93,
+                0.765
+            ],
+            "angle": 270,
+            "content": "Fig. 6 Model YP81-2 outfitted for ballasting",
+            "merge_prev": false
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.842,
+                0.888,
+                0.995,
+                0.898
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "bbox": [
+                0.15,
+                0.041,
+                0.442,
+                0.314
+            ],
+            "angle": 0,
+            "content": "Industrial machinery setup with control panel and wiring (no visible text or symbols)",
+            "sub_type": "natural_image"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.169,
+                0.318,
+                0.418,
+                0.331
+            ],
+            "angle": 0,
+            "content": "Fig. 8 Dynamometer used for all tests"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.389,
+                0.517,
+                0.45
+            ],
+            "angle": 0,
+            "content": "control station for data acquisition and analysis. The \"CATHODERAY TUBE\" and the \"TERMINAL\" provide the test engineer graphical and numerical data on a run-by-run basis while the \"VERSATEC PRINTER-PLOTTER\" presents cumulative output in both tabular and graphical formats at the end of a test.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.067,
+                0.45,
+                0.516,
+                0.595
+            ],
+            "angle": 0,
+            "content": "An annotated example of the dialog between operator and the aforementioned computer-based data acquisition system is shown as Fig. 11. The sample terminal hard copy begins with the test start-up sequence, continues with a force block calibration (see Fig. 9 for a typical graphical output), and concludes with a sample data run output. Two previously saved programs are called by the operator in the example: AUTO 120SETUP and AUTO EHPASW. These operating programs are written in a language unique to the NAHL system. With a little introduction and frequent use, the language becomes quite simple for the test engineer to use. The listings for these two programs are shown in Fig. 12.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.186,
+                0.609,
+                0.393,
+                0.623
+            ],
+            "angle": 0,
+            "content": "Turbulence stimulation"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.065,
+                0.629,
+                0.514,
+                0.736
+            ],
+            "angle": 0,
+            "content": "The requirement that both model and ship experience similar flow regimes dictates that small models, such as those employed for this study, have turbulence stimulation devices fitted to trip the flow from a laminar to a turbulent regime. It is hoped that, once tripped, the flow remains turbulent over the length of the model hull. It is assumed that the added resistance caused by the stimulating device will be offset by the deficit in frictional resistance due to the laminar flow upstream of the device.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.065,
+                0.737,
+                0.514,
+                0.833
+            ],
+            "angle": 0,
+            "content": "Studs were selected as the turbulence stimulation device for this series following standard NAHL practice. The final stud configuration, shown in Fig. 6, was chosen after considerable experimentation. There are three vertical rows of studs—at stations  \\( 1\\frac{1}{2} \\) ,  \\( 2\\frac{1}{2} \\) , and  \\( 3\\frac{1}{2} \\)  (of 10). The stud spacing in each row is  \\( \\frac{1}{2} \\)  in. Each stud is a right circular cylinder with a length (height) of  \\( \\frac{1}{10} \\)  in. and a diameter of  \\( \\frac{1}{8} \\)  in. The studs, made of brass, are attached to each hull with commercially available adhesive.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.065,
+                0.833,
+                0.514,
+                0.87
+            ],
+            "angle": 0,
+            "content": "The stud configuration employed was chosen on the basis of a series of tests in which sand strips of various constant widths were placed near the bow of model YP81-1. Model YP81-1 was",
+            "merge_prev": false
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.534,
+                0.048,
+                0.993,
+                0.405
+            ],
+            "angle": 0,
+            "content": "| A/D READING | TRUE LOAD-LB |\n| ----------- | ------------- |\n| -5600       | -3.2          |\n| -4800       | -2.8          |\n| -4000       | -2.4          |\n| -3200       | -2.0          |\n| -2400       | -1.6          |\n| -1600       | -1.2          |\n| -800        | 0.0           |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.619,
+                0.407,
+                0.908,
+                0.42
+            ],
+            "angle": 0,
+            "content": "Fig. 9 Typical force block calibration curve"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.528,
+                0.444,
+                0.989,
+                0.532
+            ],
+            "angle": 0,
+            "content": "chosen for the stimulator study for both pragmatical and technical reasons. In the former category, it was the first hull model available for testing; in the latter category, it represents the middle of the hull form variations. By performing resistance tests over a speed range with sand strips having constant widths of  \\( \\frac{1}{4} \\) ,  \\( \\frac{1}{2} \\) , and  \\( \\frac{3}{4} \\)  in., respectively, three resistance coefficient curves could be plotted as shown in Fig. 13. By extrapolating to",
+            "merge_prev": true
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.589,
+                0.553,
+                0.927,
+                0.853
+            ],
+            "angle": 0,
+            "content": "```mermaid\ngraph TD\n    A[\"TRANSDUCER\"] --> B[\"SIGNAL CONDITIONING UNIT\"]\n    B --> C[\"DATA TRANSMISSION SYSTEM\"]\n    C --> D[\"ANALOG STRIP CHART RECORDER\"]\n    C --> E[\"ANALOG - TO DIGITAL CONVERTER\"]\n    D --> F[\"FILTER\"]\n    E --> F\n    F --> G[\"TANK OPERATING STATION\"]\n    G --> H[\"CATHODE RAY TUBE\"]\n    G --> I[\"TERMINAL\"]\n    H --> J[\"HYDRO LAB PDP 11/50 COMPUTER\"]\n    I --> J\n    J --> K[\"VERSATEC PRINTER-PIOTTER\"]\n    K --> L[\"COMPUTER ROOM\"]\n    L --> M[\"TOWING CARRIAGE\"]\n```",
+            "sub_type": "flowchart"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.559,
+                0.858,
+                0.953,
+                0.872
+            ],
+            "angle": 0,
+            "content": "Fig. 10 Typical data acquisition channel schematic diagram"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.068,
+                0.888,
+                0.174,
+                0.901
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.962,
+                0.892,
+                0.989,
+                0.902
+            ],
+            "angle": 0,
+            "content": "353"
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "bbox": [
+                0.111,
+                0.068,
+                0.932,
+                0.844
+            ],
+            "angle": 270,
+            "content": "******************\n*** WAVEMAKER SYSTEM\n******************\nTEST # > By hitting \"RETURN\", operator lets\nTEST # = 045 system assign a test number\nHISTORICAL FILE REQUIRED > NO\nWILL A TANK BE USED > YES\nTANK ID > 120\nWATER DEPTH > 60IN\nTEMP CHAN >\nDRIVE > POWER\nOI >AUTO 120SETUP\nAUTO>CHAN S30,VELO,120SPD\nAUTO>INP S,ADC,OFF,ON,OFF\nAUTO>WAIT 1 SEC\nAUTO>DYN PLNDYN\nAUTO>SCAN S,128,1-30\nAUTO>CHAN S22,DRAG,120DRAG\nAUTO>CHAN S23,PITH,120PITCH\nAUTO>CHAN S24,HEVE,120HEVE\nAUTO>CHAN S25,ENCW,ECNWAVE\nAUTO>SFZ 64,1\nAUTO>ENDA\nOI >LOAD\nMODE > NEW\nCHANNEL ID RANGE > S22\nLOAD > OLBS\n!! FILE DPO:[50,4]120DRAG\nCHANNEL ID RANGE > S22\nLOAD > 0.5LBS\n!! FILE DPO:[50,4]120DRAG\nCHANNEL ID RANGE > S22\nLOAD > 1.0LBS\n!! FILE DPO:[50,4]120DRAG\nCHANNEL ID RANGE > S22\nLOAD > 1.5LBS\n!! FILE DPO:[50,4]120DRAG\nCHANNEL ID RANGE > S22\nLOAD > 2.0LBS\n!! FILE DPO:[50,4]120DRAG\nCHANNEL ID RANGE > S22\nLOAD > 2.5LBS\n!! FILE DPO:[50,4]120DRAG\nCHANNEL ID RANGE >\nOI >DSI\\ISP S22,1\nHARD COPY > NO\nOI >FIX S22,1\nOI >AUTO EHPASW\nAUTO>DRUN TEST,0,0,45,*,* \nOperator calls up stored routine\n\"AUTO EHPASW\";see Figure 1?\nOperator indicates that he is ready to calibrate a transducer; in this case, a force block\nCDF HAS 1 POINTS\nCDF HAS 2 POINTS\nCDF HAS 3 POINTS\nCDF HAS 4 POINTS\nCDF HAS 5 POINTS\nAuto>BEGL 100,YES \nALSV>READ DRAG,HEVE,PITH\n!! TYPE <CR> WHEN READY TO REZERO >\n0.235E-01 LB\n0.193E-02 FT\n0.856E-01 DEG\nThese are what the system thinks correspond to zero Rm, Zcm, and cm\nALSV>REZR\nCHANNEL NAME >\nALSV>READ\nCHANNEL NAME >\nALSV>MRUN TEST,NONE\n!!\n!!! *** TYPE CTRL-X TO STOP RUN MANUALLY *** On an audible signal,\n!!! BEGINING ACQUISITION\n!! RUN TERMINATED BY OPERATOR\n!! TEST RUN COMPLETED !! \nALSV>PLOT CRT,ON,*/DRAG.EU \nALSV>EHPA\nMODEL NAME > YF HVY \nPROCESSING MODE > SW \nDISPLACEMENT > 46.7LB \nSTIMULATOR > STUDS X2 \nWETTED SURFACE AREA > 5.95SQFT \nLENGTH ON WATERLINE > 5.00FT \nSAVE CTM FOR SHP TEST > NO \nTANK TEMPERATURE > 62 \nLENGTH BETWEEN PERFENDICULARS > 5.0FT \nAMIDSHIPS TO LCG > -.22FT \n! IS TOWING LINK PRESENT? > NO \nAMIDSHIPS TO TOWING POINT > -.22FT \n! IS FORCE BLOCK IN MODEL AXIS > DR\\\\NO \nENTER INPUT CHANNEL NAMES:\nRESISTANCE CHANNEL NAME > DRAG \nHEAVE POT CHANNEL NAME > HEVE \nPITCH CHANNEL NAME > PITH \nTRUNCATION DESIRED? > YES \nSTART TIME > 14 \nSTOP TIME > 22.5\n!! VELOCITY = 3.813 FPS \n!! DRAG = 0.7462 LBS \n!! FP RISE = -0.6312E-02 FT \n!! AP RISE = -0.1145E-01 FT \n!! TRIM = 0.5883E-01 DEG \n!! FROUDE # = 0.3007 \n!! CTM = 0.8903E-02 \n!! REYN # = 0.1624E+07 \n!! CT DELTA = 0.6421E-01 \n!! PLEASE VERIFY ALL ENTRIES-THEY MAY NOT BE CHANGED AFTER THE SECOND MODEL RUN ALSV>PLOT CRT,OFF,EHPVM.ACT/EHPCFM.ACT/EHPCTM.ACT Cumulative ALSV>ENDL\nSYS-END OF LOOP ITERATION 1 loop ACTION>\nLOOP>READ DRAG,HEVE,PITH \n! TYPE <CR> WHEN READY TO REZERO ? by hitting return, operation begins loop iteration #2 \n...\netc.\nNOTE:",
+            "sub_type": "text_image"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.091,
+                0.889,
+                0.115,
+                0.899
+            ],
+            "angle": 0,
+            "content": "354"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.836,
+                0.888,
+                0.991,
+                0.899
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        },
+        {
+            "type": "aside_text",
+            "bbox": [
+                0.942,
+                0.281,
+                0.959,
+                0.628
+            ],
+            "angle": 90,
+            "content": "Fig. 1.1 Terminal record of operator/machine interaction during a testing program"
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "bbox": [
+                0.149,
+                0.312,
+                0.895,
+                0.692
+            ],
+            "angle": 270,
+            "content": "...\n!! CTM = 0.1644E-01\n!! REYN # = 0.3215E+07\n!! CT DELTA = 0.1105\nLOOP>PLOT CRT,OFF,EHPVM.ACT/EHPCTM.ACT/EHPCFM.ACT\nSYS-END OF LOOP ITERATION 11\nLOOP ACTION>\nLOOP>READ DRAG,PITH,HEVE\n!! TYPE <CR> WHEN READY TO REZERO >\n0.886E-03 LB\n0.389E-01 DEG\n-0.160E-02 FT\nLOOP>REZR\nCHANNEL NAME > DRAG\nCHANNEL NAME >\nLOOP>READ\nCHANNEL NAME >\nLOOP>MRUN TEST,NONE\n!!\n!! *** TYPE CTRL-X TO STOP RUN MANUALLY ***\n!!\n! BEGINING ACQUISITION\n! RUN TERMINATED BY OPERATOR\n! TEST RUN COMPLETED !!\nLOOP>PLOT CRT,ON,*/DRAG.EU\nLOOP>EHPA\nENTER RUN # FOR ANALYSIS OUTPUT >\nTRUNCATION DESIRED? > YES\nSTART TIME > 8\nSTOP TIME > 20\n!! VELOCITY = 2.177 FPS\n!! DRAG = 0.1909 LBS\n!! FP RISE = -0.2775E-02 FT\n!! AP RISE = -0.6195E-02 FT\n!! TRIM = 0.3919E-01 DEG\n!! FROUDE # = 0.1717\n!! CTM = 0.8031E-02\n!! REYN # = 0.1007E+07\n!! CT DELTA = 0.5396E-01\nLOOP>PLOT CRT,OFF,EHPVM.ACT/EHPCTM.ACT/EHPCFM.ACT\nSYS-END OF LOOP ITERATION 12\nLOOP ACTION>EHPPO\n$$ ILLEGAL COMMAND\nLOOP ACTION>XITL\nSYS-END OF LOOP PROCESSING\nAUTO>EHPO MODEL\nAUTO>EHPO SHIP\nSCALE RATIO> 20.333 Ship scale and C_A must be input\nCORRELATION ALLOWANCE> .0004\nARE THERE ANY FAIRED FILES > NO\nOI >SUSP\nSYS-TEST 317 SUSPENDED Operator terminates the tank session\n**************************\n*** EXIT FROM WAVEMAKER SYSTEM ***\n**************************",
+            "sub_type": "text_image"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.944,
+                0.449,
+                0.961,
+                0.548
+            ],
+            "angle": 270,
+            "content": "Fig. 11. (continued)"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.076,
+                0.983,
+                0.182,
+                0.995
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.972,
+                0.98,
+                0.993,
+                0.99
+            ],
+            "angle": 0,
+            "content": "355"
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "bbox": [
+                0.137,
+                0.043,
+                0.934,
+                0.382
+            ],
+            "angle": 0,
+            "content": "AUTO 120SETUP\n★ This routine organizes the housekeeping required to set up the hardware of the data acquisition system\nINF S,ABC,OFF,ON,OFF\nWAIT 1 SEC\nSFZ 64,1\nDYN PLNDYN\nSCAN S,12B,1-30\nCHAN S22,DRAG,120DRAG\nCHAN S23,PITH,120PITCH\nCHAN S24,HEVE,120HEAVE\nCHAN S25,ENCW,120ENCWVE\nCHAN S30,VELO,120SPEED\nENDA\n★. This routine defines the series of actions taken during the actual model testing process\nDRUN TEST,0,0,45,*,**\nBEGL 99,YES\nREAD DRAG,PITH,HEVE\nREZR\nREAD\nMRUN TEST,NONE\nPLOT CRT,ON,*/DRAG.EU\nEHPA\nPLOT CRT,OFF,EHPVM.ACT/EHPCTM.ACT/EHPCFM.ACT\nENDL\nEHPO MODEL\nEHPO SHIP\nENDA\nDefine a \"zero speed run\" during which experimental data channels may be rezeroed to remove slow shifting\nRead data channels, rezero if desired, and reread\nA data run is begun\nThe time history of model resistance is displayed on the CRT for evaluation by the test engineer model measured variables and computer variables (Ctm, Cfm, etc)\nRoutine to compute and file\nEnd of loop\nRoutine to produce model and ship scale tabular and graphical output for all test runs\nEnd of routine\nDisplay accumulated run Ctm and Cfm data vs. vm on CRT",
+            "sub_type": "text_image"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.324,
+                0.387,
+                0.744,
+                0.4
+            ],
+            "angle": 0,
+            "content": "Fig. 12 Previously written and saved programs for model testing"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.193,
+                0.512,
+                0.876,
+                0.853
+            ],
+            "angle": 0,
+            "content": "| Model Scale (×10⁵) | Value |\n| ------------------ | ----- |\n| 0                  | 0     |\n| 5                  | 0     |\n| 10                 | 0     |\n| 15                 | 0     |\n| 20                 | 0     |\n| 25                 | 0     |\n| 30                 | 0     |\n| 35                 | 0     |\n| 40                 | 0     |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.28,
+                0.858,
+                0.791,
+                0.871
+            ],
+            "angle": 0,
+            "content": "Fig. 13 Turbulence stimulation study results using sand strips of various widths"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.074,
+                0.89,
+                0.1,
+                0.9
+            ],
+            "angle": 0,
+            "content": "356"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.839,
+                0.89,
+                0.997,
+                0.9
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.172,
+                0.042,
+                0.794,
+                0.384
+            ],
+            "angle": 0,
+            "content": "| MODEL SCALE REYNOLDS NUMBERS X 10^5 | POSTANCE |\n| ---------------------------------- | -------- |\n| 0                                  | 0        |\n| 4                                  | -1       |\n| 8                                  | -2       |\n| 12                                 | -3       |\n| 16                                 | -4       |\n| 20                                 | -5       |\n| 24                                 | -6       |\n| 28                                 | -7       |\n| 32                                 | -8       |\n| 36                                 | -9       |\n| 40                                 | -10      |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.206,
+                0.389,
+                0.761,
+                0.402
+            ],
+            "angle": 0,
+            "content": "Fig. 14 Resistance curves for final stud configuration and extrapolated \"zero width\" sand strip"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.047,
+                0.437,
+                0.479,
+                0.569
+            ],
+            "angle": 0,
+            "content": "a hypothetical “zero width” sand strip condition, the fully turbulent but zero stimulator drag condition is determined. Also shown in Fig. 13 is the unstimulated resistance curve which shows symptoms of laminar flow presence at low speeds. Indeed, even with sand strip stimulation, some laminar (or at least transitional) flow might be expected at model scale Reynold’s numbers below  \\( 6 \\times 10^{5} \\) . It would appear that some viscous wavemaking interaction might exist in the results shown in Fig. 13 due to the shift of the dominant hump in the total resistance coefficient between the unstimulated and the stimulated curves (near Reynold’s number of about  \\( 27 \\times 10^{5} \\) ).",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.048,
+                0.569,
+                0.481,
+                0.655
+            ],
+            "angle": 0,
+            "content": "Several stud geometries were tried. The one for which the resistance behavior most closely matched the “zero width” sand strip condition was chosen as the configuration for all of the subsequent tests from which the data for this study were acquired. The resistance coefficient curves for the “zero width” sand strip and that for the selected stud configuration are shown in Fig. 14.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.188,
+                0.668,
+                0.342,
+                0.682
+            ],
+            "angle": 0,
+            "content": "Model test results"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.051,
+                0.687,
+                0.483,
+                0.87
+            ],
+            "angle": 0,
+            "content": "A total of 54 separate model tests were conducted to acquire the data presented in this paper. For each of the six hulls, three displacements at each of three longitudinal centers of gravity were studied over a range of speeds corresponding to Froude numbers (based on waterline length) from 0.05 to 0.625. At each of 24 discrete model speeds \\((v_{m})\\), model resistance \\((R_{t_m})\\), model running trim angle \\((\\tau_{m})\\), and model sinkage \\((Z_{\\mathrm{CG}_m})\\) were measured. The latter two variables were converted by the NAMB acquisition/analysis system to rise or sinkage at the fore and after perpendiculars (FP and AP). Figures 15 and 16 show typical raw data plots of total model resistance coefficient \\((C_{t_m})\\) versus Froude number and FP/AP rise versus Froude number, respectively. The results of three tests of a given hull at a given displacement are shown in each figure. Each plot symbol corresponds to a different LCG condition. Except at the extreme",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.493,
+                0.435,
+                0.915,
+                0.47
+            ],
+            "angle": 0,
+            "content": "low-speed end of the speed range, the  \\( C_{t_{m}} \\)  data are amazingly free of experimental scatter and make physical sense for the different LCG values.",
+            "merge_prev": true
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.493,
+                0.47,
+                0.915,
+                0.543
+            ],
+            "angle": 0,
+            "content": "Also plotted in Fig. 15 is the ITTC 1957 Ship-Model Correlation Line ( \\( C_{f_{m}} \\) ), which was used for all resistance data reduction reported herein. The sinkage data (Fig. 16) tend to be more erratic than the resistance data. Similar data plots for all remaining tests were developed [5] for Models YP81-1 through YP81-6, respectively.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.493,
+                0.543,
+                0.917,
+                0.627
+            ],
+            "angle": 0,
+            "content": "After the three sets of  \\( C_{t_{m}} \\)  data were plotted, as in Fig. 15, smooth curves were faired through each set of data which represent the author's best estimate of the physical trends suggested by the data. Consistency among data for various LCG's (for a fixed displacement) and displacements (for a fixed LCG) were considered when fairing the family of  \\( C_{t_{m}} \\)  curves for a given model.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.494,
+                0.626,
+                0.918,
+                0.677
+            ],
+            "angle": 0,
+            "content": "The data shown in Figs. 15 and 16 represent bare hull conditions—no appendages of any sort were fitted. A limited series of tests on YP81-1 and YP81-4 was run in which centerline skegs were fitted [5].",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.563,
+                0.689,
+                0.851,
+                0.704
+            ],
+            "angle": 0,
+            "content": "Series resistance results: graphical"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.493,
+                0.709,
+                0.918,
+                0.842
+            ],
+            "angle": 0,
+            "content": "To maximize the utility of the resistance results obtained during the series of model tests performed, it was decided that nondimensional results would be plotted. Residual resistance coefficient  \\( (C_{R}) \\)  was chosen as the nondimensional force variable. Both waterline length based and volumetric Froude numbers  \\( (F_{\\mathrm{NL}} \\)  and  \\( F_{N\\nu}) \\)  were chosen as dimensionless speed variables. Hull form variables of length-to-beam ratio  \\( (L_{\\mathrm{PP}}/B) \\) , longitudinal distance of the center of gravity from amidships-to-length ratio  \\( (\\mathrm{LCG}/L_{\\mathrm{PP}}) \\) , and displacement-length ratio  \\( (\\Delta_{\\mathrm{PP}}) \\)  were chosen. (The displacement-length ratio is not really nondimensional since  \\( \\Delta \\)  is in long tons while  \\( L_{PP} \\)  is in feet.)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.494,
+                0.841,
+                0.918,
+                0.866
+            ],
+            "angle": 0,
+            "content": "The consistent procedure followed in plotting resistance data was as follows for each series hull:",
+            "merge_prev": false
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.056,
+                0.888,
+                0.158,
+                0.901
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.894,
+                0.885,
+                0.921,
+                0.896
+            ],
+            "angle": 0,
+            "content": "357"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.095,
+                0.041,
+                0.521,
+                0.481
+            ],
+            "angle": 0,
+            "content": "| Model | LPR (ft.) | Lw2 (ft.) | Δ (lb.) |\n|-------|-----------|-----------|---------|\n| S     | 4.97      | 35.45     | 4.565   |\n| TST   | 600       | 60.8      | -       |\n| S15   | 600       | 60.8      | -       |\n| S23   | 600       | 60.8      | -       |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.114,
+                0.485,
+                0.505,
+                0.499
+            ],
+            "angle": 0,
+            "content": "Fig. 15 Typical raw data plot:  \\( C_{t_{m}} \\)  and  \\( C_{f_{m}} \\)  versus Froude number"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.534,
+                0.042,
+                0.952,
+                0.468
+            ],
+            "angle": 0,
+            "content": "| Model Characteristics | Value |\n| --- | --- |\n| HULL ID | YP81-3 |\n| Lpp | 5.00 ft. |\n| Lvl | 4.97 ft. |\n| ΔS | 35.45 lb. |\n| S | 4.56±5 ft² |\n| Turbulence Stimulators: Stinds | - |",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.543,
+                0.47,
+                0.944,
+                0.483
+            ],
+            "angle": 0,
+            "content": "Fig. 16 Typical raw data plot: FP and AP rise versus Froude number"
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.113,
+                0.533,
+                0.522,
+                0.631
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.113,
+                0.533,
+                0.522,
+                0.582
+            ],
+            "angle": 0,
+            "content": "1. Residual resistance coefficients for a fixed LCG/LPP and the three  \\( \\Delta_{PP} \\) 's from the individual test results (as in Fig. 15) were plotted versus Froude number based on waterline length.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.113,
+                0.582,
+                0.522,
+                0.63
+            ],
+            "angle": 0,
+            "content": "2. The set of curves drawn above was read at 13 selected values of volumetric Froude number, and plotted versus displacement-length ratio. The conversion from length-based to volume-based Froude number was",
+            "merge_prev": false
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.18,
+                0.636,
+                0.444,
+                0.67
+            ],
+            "angle": 0,
+            "content": "\\[\nF _ {\\mathrm{N} \\nabla} = F _ {\\mathrm{NL}} \\times 5. 5 2 9 \\sqrt {\\frac {L _ {\\mathrm{WL}}}{L _ {\\mathrm{PP}}}} \\times \\Delta_ {\\mathrm{PP}} ^ {- 1 / 6}\n\\]"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.139,
+                0.676,
+                0.521,
+                0.689
+            ],
+            "angle": 0,
+            "content": "where the  \\( L_{WL}/L_{PP} \\)  values were taken from Figs. 4 and 5.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.113,
+                0.688,
+                0.522,
+                0.736
+            ],
+            "angle": 0,
+            "content": "3. The cross curves generated in Step 2 were read at convenient values of displacement-length ratio. The resulting curves were drawn on the same set of axes as the individual test data (Step 1).",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.098,
+                0.736,
+                0.522,
+                0.773
+            ],
+            "angle": 0,
+            "content": "Other cross fairings of  \\( C_{R} \\)  versus LCG/ \\( L_{PP} \\)  and L/B for the range of  \\( F_{N\\nabla} \\)  were accomplished to insure the physical reasonableness of the data [5].",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.098,
+                0.773,
+                0.522,
+                0.844
+            ],
+            "angle": 0,
+            "content": "The same series of three consistently done steps was performed on the data for the three hard-chine hulls. The resulting sets of dimensionless residual resistance data are presented as Figs. 17 through 34. While not an exhaustive set of crossplots, they do provide the user with the basic resistance-speed-hull condition relationships needed for design purposes.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.098,
+                0.844,
+                0.522,
+                0.869
+            ],
+            "angle": 0,
+            "content": "For the first set of curves (Step 1), the  \\( (C_{R}, F_{\\mathrm{NL}}) \\)  values read from faired individual test results are shown as dashed curves",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.534,
+                0.533,
+                0.95,
+                0.571
+            ],
+            "angle": 0,
+            "content": "between the plotted points. The similar curves shown as solid lines result from the cross-fairing (Step 3) at convenient \\(\\Delta_{\\mathrm{PP}}\\) values.",
+            "merge_prev": true
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.598,
+                0.586,
+                0.887,
+                0.599
+            ],
+            "angle": 0,
+            "content": "Series resistance results: numerical"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.534,
+                0.605,
+                0.95,
+                0.726
+            ],
+            "angle": 0,
+            "content": "The residual resistance coefficient data acquired from all tests were digitized and treated as the dependent variable values in a multiple linear regression analysis in which the hull shape and loading parameters of  \\( L_{PP}/B \\) ,  \\( \\underline{\\Delta}_{PP} \\) , and  \\( LCG/L_{PP} \\)  were treated as independent variables. Separate regression analyses were conducted at fixed speed parameter values. A series of BASIC programs was used to prepare the data for and to perform the multiple linear regression analysis [6]. The soft-chine and hard-chine hulls were run through the regression analysis routine separately.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.535,
+                0.726,
+                0.949,
+                0.751
+            ],
+            "angle": 0,
+            "content": "The regression equation for the residual resistance coefficient at a fixed value of Froude number is of the form",
+            "merge_prev": false
+        },
+        {
+            "type": "equation",
+            "bbox": [
+                0.549,
+                0.758,
+                0.937,
+                0.775
+            ],
+            "angle": 0,
+            "content": "\\[\nC _ {R} \\times 1 0 ^ {3} = A + B (L _ {\\mathrm{PP}} / B _ {x}) + C (\\underline {{{\\Delta}}} _ {\\mathrm{PP}}) + D (\\mathrm{LCG} / L _ {\\mathrm{PP}} \\times 1 0 ^ {2})\n\\]"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.534,
+                0.783,
+                0.95,
+                0.832
+            ],
+            "angle": 0,
+            "content": "The regression coefficients for the soft-chine hull form are given as functions of Froude number based on waterline length in the top half of Table 1 while those for the hard-chine hull form are given similarly in the bottom half of the same table.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.535,
+                0.832,
+                0.95,
+                0.857
+            ],
+            "angle": 0,
+            "content": "The above-described four-term regression equation must be considered as only a first attempt to numerically quantify the",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.657,
+                0.857,
+                0.828,
+                0.869
+            ],
+            "angle": 0,
+            "content": "(text continued on page 368)",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.1,
+                0.889,
+                0.125,
+                0.899
+            ],
+            "angle": 0,
+            "content": "358"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.804,
+                0.889,
+                0.952,
+                0.9
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "image_block",
+            "bbox": [
+                0.087,
+                0.042,
+                0.987,
+                0.862
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.087,
+                0.887,
+                0.192,
+                0.898
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.969,
+                0.887,
+                0.992,
+                0.896
+            ],
+            "angle": 0,
+            "content": "359"
+        }
+    ],
+    [
+        {
+            "type": "page_number",
+            "bbox": [
+                0.065,
+                0.885,
+                0.09,
+                0.895
+            ],
+            "angle": 0,
+            "content": "360"
+        },
+        {
+            "type": "image_block",
+            "bbox": [
+                0.065,
+                0.039,
+                0.999,
+                0.866
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.065,
+                0.453,
+                0.999,
+                0.866
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.829,
+                0.89,
+                0.989,
+                0.901
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "image_block",
+            "bbox": [
+                0.046,
+                0.042,
+                0.923,
+                0.453
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.046,
+                0.457,
+                0.923,
+                0.866
+            ],
+            "angle": 270,
+            "content": "| CHINE: Soft | LPP/BREF | LCG/LPP | le   | β10   |\n| ----------- | -------- | ------- | ---- | ----- |\n| 3.966       | -0.078   | -0.078  | 20.9°| 12.4° |",
+            "sub_type": "line"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.047,
+                0.888,
+                0.147,
+                0.9
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.901,
+                0.89,
+                0.926,
+                0.9
+            ],
+            "angle": 0,
+            "content": "361"
+        }
+    ],
+    [
+        {
+            "type": "image_block",
+            "bbox": [
+                0.091,
+                0.04,
+                0.991,
+                0.864
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.093,
+                0.04,
+                0.481,
+                0.452
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.484,
+                0.04,
+                0.918,
+                0.452
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.919,
+                0.04,
+                0.991,
+                0.452
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.095,
+                0.454,
+                0.991,
+                0.864
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.093,
+                0.887,
+                0.117,
+                0.896
+            ],
+            "angle": 0,
+            "content": "362"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.838,
+                0.887,
+                0.99,
+                0.898
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "bbox": [
+                0.036,
+                0.481,
+                0.992,
+                0.866
+            ],
+            "angle": 270,
+            "content": "| Displacement-Length Ratio (AT/FF²) | Residual Resistance Coefficient (x10³) |\n| ----------------------------------- | -------------------------------------- |\n| 0                                   | 0                                      |\n| 100                                 | 10                                     |\n| 120                                 | 20                                     |\n| 140                                 | 30                                     |\n| 160                                 | 40                                     |\n| 180                                 | 50                                     |\n| 200                                 | 60                                     |\n| 220                                 | 70                                     |\n| 240                                 | 80                                     |\n| 260                                 | 90                                     |\n| 280                                 | 100                                    |\n| 300                                 | 110                                    |\n| 320                                 | 120                                    |\n| 340                                 | 130                                    |\n| 360                                 | 140                                    |\n| 380                                 | 150                                    |\n| 400                                 | 160                                    |\n| 420                                 | 170                                    |\n| 440                                 | 180                                    |\n| 460                                 | 190                                    |\n| 480                                 | 200                                    |\n| 500                                 | 210                                    |\n| 520                                 | 220                                    |\n| 540                                 | 230                                    |\n| 560                                 | 240                                    |\n| 580                                 | 250                                    |\n| 600                                 | 260                                    |\n| 620                                 | 270                                    |\n| 640                                 | 280                                    |\n| 660                                 | 290                                    |\n| 680                                 | 300                                    |\n| 700                                 | 310                                    |\n| 720                                 | 320                                    |\n| 740                                 | 330                                    |\n| 760                                 | 340                                    |\n| 780                                 | 350                                    |\n| 800                                 | 360                                    |\n| 820                                 | 370                                    |\n| 840                                 | 380                                    |\n| 860                                 | 390                                    |\n| 880                                 | 400                                    |\n| 900                                 | 410                                    |\n| 920                                 | 420                                    |\n| 940                                 | 430                                    |\n| 960                                 | 440                                    |\n| 980                                 | 450                                    |\n| 1000                                | 460                                    |\n| 1020                                | 470                                    |\n| 1040                                | 480                                    |\n| 1060                                | 490                                    |\n| 1080                                | 500                                    |\n| 1100                                | 510                                    |\n| 1120                                | 520                                    |\n| 1140                                | 530                                    |\n| 1160                                | 540                                    |\n| 1180                                | 550                                    |\n| 1200                                | 560                                    |\n| 1220                                | 570                                    |\n| 1240                                | 580                                    |\n| 1260                                | 590                                    |\n| 1280                                | 600                                    |\n| 1300                                | 610                                    |\n| 1320                                | 620                                    |\n| 1340                                | 630                                    |\n| 1360                                | 640                                    |\n| 1380                                | 650                                    |\n| 1400                                | 660                                    |\n| 1420                                | 670                                    |\n| 1440                                | 680                                    |\n| 1460                                | 690                                    |\n| 1480                                | 700                                    |\n| 1500                                | 710                                    |\n| 1520                                | 720                                    |\n| 1540                                | 730                                    |\n| 1560                                | 740                                    |\n| 1580                                | 750                                    |\n| 1600                                | 760                                    |\n| Note: The data is extracted from the provided image in the code and presented in CSV format as requested. The table data includes the original table data and the corresponding numerical values for each data series. The table data is labeled with 'HULL PARAMETERS' and 'FROUDE NUMBER BASED ON WATERLINE LENGTH'.",
+            "sub_type": "line"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.08,
+                0.89,
+                0.186,
+                0.902
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.968,
+                0.888,
+                0.992,
+                0.897
+            ],
+            "angle": 0,
+            "content": "363"
+        }
+    ],
+    [
+        {
+            "type": "image_block",
+            "bbox": [
+                0.101,
+                0.042,
+                0.958,
+                0.87
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.104,
+                0.043,
+                0.958,
+                0.456
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.107,
+                0.459,
+                0.955,
+                0.87
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.101,
+                0.893,
+                0.126,
+                0.903
+            ],
+            "angle": 0,
+            "content": "364"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.808,
+                0.894,
+                0.955,
+                0.905
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "footer",
+            "bbox": [
+                0.076,
+                0.886,
+                0.179,
+                0.897
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "image_block",
+            "bbox": [
+                0.083,
+                0.454,
+                0.932,
+                0.864
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.083,
+                0.454,
+                0.932,
+                0.864
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.857,
+                0.931,
+                0.865
+            ],
+            "angle": 0,
+            "content": ":"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.865,
+                0.931,
+                0.873
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.873,
+                0.931,
+                0.881
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.881,
+                0.931,
+                0.889
+            ],
+            "angle": 0,
+            "content": "•"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.889,
+                0.931,
+                0.897
+            ],
+            "angle": 0,
+            "content": "65"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.897,
+                0.931,
+                0.905
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.905,
+                0.931,
+                0.913
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.913,
+                0.931,
+                0.921
+            ],
+            "angle": 0,
+            "content": "。"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.921,
+                0.931,
+                0.929
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.929,
+                0.931,
+                0.937
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.937,
+                0.931,
+                0.945
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.945,
+                0.931,
+                0.953
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.953,
+                0.931,
+                0.961
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.961,
+                0.931,
+                0.969
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.969,
+                0.931,
+                0.977
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.977,
+                0.931,
+                0.985
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.985,
+                0.931,
+                0.993
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.993,
+                0.931,
+                0.999
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.007,
+                0.931,
+                0.999
+            ],
+            "angle": 0,
+            "content": "65"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.007,
+                0.931,
+                0.015
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.015,
+                0.931,
+                0.023
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.023,
+                0.931,
+                0.031
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.031,
+                0.931,
+                0.039
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.039,
+                0.931,
+                0.047
+            ],
+            "angle": 0,
+            "content": "The Ground Truth image displays a single, solid horizontal line. According to Rule 2 (UNDERSCORE & LINE RULES), if the GT contains lines used for stylistic emphasis or as background elements (like ruled paper), the OCR result must ignore them. The provided OCR content is \"____\", which consists of four underscores. This is incorrect because underscores are not equivalent to a solid line and should not be output for stylistic/background lines. The OCR has hallucinated placeholder underscores where none exist in the GT, violating the rule to ignore stylistic lines. Therefore, the OCR result is inconsistent with the Ground Truth."
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.047,
+                0.931,
+                0.055
+            ],
+            "angle": 0,
+            "content": "[NO TEXT]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.055,
+                0.931,
+                0.063
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.063,
+                0.931,
+                0.071
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.071,
+                0.931,
+                0.079
+            ],
+            "angle": 0,
+            "content": "图"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.079,
+                0.931,
+                0.087
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.087,
+                0.931,
+                0.095
+            ],
+            "angle": 0,
+            "content": "出"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.095,
+                0.931,
+                0.103
+            ],
+            "angle": 0,
+            "content": "图"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.103,
+                0.931,
+                0.111
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.111,
+                0.931,
+                0.119
+            ],
+            "angle": 0,
+            "content": "图"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.119,
+                0.931,
+                0.127
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.127,
+                0.931,
+                0.135
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.135,
+                0.931,
+                0.143
+            ],
+            "angle": 0,
+            "content": "1.2"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.143,
+                0.931,
+                0.151
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.151,
+                0.931,
+                0.159
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.159,
+                0.931,
+                0.167
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.167,
+                0.931,
+                0.175
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.175,
+                0.931,
+                0.183
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.183,
+                0.931,
+                0.191
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.191,
+                0.931,
+                0.199
+            ],
+            "angle": 0,
+            "content": "The image is too blurry to recognize any text content."
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.199,
+                0.931,
+                0.207
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.207,
+                0.931,
+                0.215
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.215,
+                0.931,
+                0.223
+            ],
+            "angle": 0,
+            "content": "."
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.223,
+                0.931,
+                0.231
+            ],
+            "angle": 0,
+            "content": "图 2-1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.231,
+                0.931,
+                0.239
+            ],
+            "angle": 0,
+            "content": "图"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.239,
+                0.931,
+                0.247
+            ],
+            "angle": 0,
+            "content": "2"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.247,
+                0.931,
+                0.255
+            ],
+            "angle": 0,
+            "content": "::1:"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.255,
+                0.931,
+                0.263
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.263,
+                0.931,
+                0.271
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.271,
+                0.931,
+                0.279
+            ],
+            "angle": 0,
+            "content": ":"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.279,
+                0.931,
+                0.287
+            ],
+            "angle": 0,
+            "content": ":"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.287,
+                0.931,
+                0.295
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.295,
+                0.931,
+                0.303
+            ],
+            "angle": 0,
+            "content": "-"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.303,
+                0.931,
+                0.311
+            ],
+            "angle": 0,
+            "content": "A"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.311,
+                0.931,
+                0.319
+            ],
+            "angle": 0,
+            "content": "[Unreadable]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.319,
+                0.931,
+                0.327
+            ],
+            "angle": 0,
+            "content": "12"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.327,
+                0.931,
+                0.335
+            ],
+            "angle": 0,
+            "content": "4"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.335,
+                0.931,
+                0.343
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.343,
+                0.931,
+                0.351
+            ],
+            "angle": 0,
+            "content": ":"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.351,
+                0.931,
+                0.359
+            ],
+            "angle": 0,
+            "content": "• • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.359,
+                0.931,
+                0.367
+            ],
+            "angle": 0,
+            "content": "• • • • • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.367,
+                0.931,
+                0.375
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.375,
+                0.931,
+                0.383
+            ],
+            "angle": 0,
+            "content": "……"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.383,
+                0.931,
+                0.391
+            ],
+            "angle": 0,
+            "content": "• • • • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.391,
+                0.931,
+                0.399
+            ],
+            "angle": 0,
+            "content": "• • • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.399,
+                0.931,
+                0.407
+            ],
+            "angle": 0,
+            "content": "1.1.1"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.407,
+                0.931,
+                0.415
+            ],
+            "angle": 0,
+            "content": "• • • • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.415,
+                0.931,
+                0.423
+            ],
+            "angle": 0,
+            "content": ": : :"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.423,
+                0.931,
+                0.431
+            ],
+            "angle": 0,
+            "content": "• • • •\n• • • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.431,
+                0.931,
+                0.439
+            ],
+            "angle": 0,
+            "content": "• • • •\n• • • •\n• • • •"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.439,
+                0.931,
+                0.447
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.447,
+                0.931,
+                0.455
+            ],
+            "angle": 0,
+            "content": "+ -"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.863,
+                0.931,
+                0.871
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.871,
+                0.931,
+                0.879
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.879,
+                0.931,
+                0.887
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.887,
+                0.931,
+                0.896
+            ],
+            "angle": 0,
+            "content": "65"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.896,
+                0.931,
+                0.904
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.904,
+                0.931,
+                0.912
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.912,
+                0.931,
+                0.92
+            ],
+            "angle": 0,
+            "content": "。"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.92,
+                0.931,
+                0.928
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.928,
+                0.931,
+                0.936
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.936,
+                0.931,
+                0.944
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.944,
+                0.931,
+                0.952
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.952,
+                0.931,
+                0.96
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.96,
+                0.931,
+                0.968
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.968,
+                0.931,
+                0.976
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.976,
+                0.931,
+                0.984
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.984,
+                0.931,
+                0.992
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.919,
+                0.992,
+                0.931,
+                0.999
+            ],
+            "angle": 0,
+            "content": "[Non-Text]"
+        }
+    ],
+    [
+        {
+            "type": "image_block",
+            "bbox": [
+                0.111,
+                0.042,
+                0.969,
+                0.873
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.111,
+                0.459,
+                0.969,
+                0.873
+            ],
+            "angle": 270,
+            "content": null
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.109,
+                0.891,
+                0.134,
+                0.901
+            ],
+            "angle": 0,
+            "content": "366"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.817,
+                0.896,
+                0.963,
+                0.907
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "footer",
+            "bbox": [
+                0.096,
+                0.979,
+                0.201,
+                0.99
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "image_block",
+            "bbox": [
+                0.096,
+                0.504,
+                0.984,
+                0.956
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.096,
+                0.504,
+                0.492,
+                0.956
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.501,
+                0.504,
+                0.985,
+                0.956
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.911,
+                0.064,
+                0.992,
+                0.479
+            ],
+            "angle": 270,
+            "content": "<table><tr><td rowspan=\"3\"></td><td colspan=\"8\">Fig. 34 Residual resistance coefficient as a function of speed and displacement for YP81-6 having LCG/LPP=0.1312</td></tr><tr><td rowspan=\"2\">a</td><td>90</td><td>100</td><td>110</td><td>120</td><td>130</td><td>140</td><td>150</td></tr><tr><td colspan=\"7\">DISPLACEMENT LENGTH RATIO (LT/Ft-3)</td></tr></table>"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.906,
+                0.504,
+                0.985,
+                0.956
+            ],
+            "angle": 270,
+            "content": "<table><tr><td>D</td><td>50</td><td>100</td><td>110</td><td>120</td><td>130</td><td>140</td><td>150</td><td>160</td></tr><tr><td></td><td colspan=\"8\">DISPLACEMENT: LENGTH RATIO: (LF/F-2)</td></tr></table>"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.96,
+                0.984,
+                0.984,
+                0.995
+            ],
+            "angle": 0,
+            "content": "367"
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.21,
+                0.029,
+                0.354,
+                0.041
+            ],
+            "angle": 0,
+            "content": "03/01'94 11:54"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.416,
+                0.032,
+                0.564,
+                0.044
+            ],
+            "angle": 0,
+            "content": "239406763443"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.656,
+                0.034,
+                0.793,
+                0.047
+            ],
+            "angle": 0,
+            "content": "ARCH.HAVALE TS"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.858,
+                0.038,
+                0.898,
+                0.049
+            ],
+            "angle": 0,
+            "content": "F.02"
+        },
+        {
+            "type": "table_caption",
+            "bbox": [
+                0.225,
+                0.069,
+                0.764,
+                0.088
+            ],
+            "angle": 0,
+            "content": "Table 1 Regression coefficients: \\( C_R \\times 10^3 = A + B(L/B) + C(\\mathcal{L}_{PP}) + D(LCG/L \\times 10^2) \\)"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.065,
+                0.09,
+                0.927,
+                0.242
+            ],
+            "angle": 0,
+            "content": "<table><tr><td rowspan=\"2\">SOFT CHINE</td><td colspan=\"11\"><eq>F_{NL}</eq></td></tr><tr><td>0.10</td><td>0.15</td><td>0.20</td><td>0.25</td><td>0.30</td><td>0.35</td><td>0.40</td><td>0.45</td><td>0.50</td><td>0.55</td><td>0.60</td></tr><tr><td>A</td><td>-3.1551</td><td>-2.9756</td><td>-2.5305</td><td>-2.3637</td><td>-3.2734</td><td>-3.3070</td><td>-2.5114</td><td>-6.3063</td><td>-13.3525</td><td>-12.8032</td><td>-10.9613</td></tr><tr><td>B</td><td>0.11734</td><td>0.13670</td><td>0.14597</td><td>0.16082</td><td>0.28838</td><td>0.34376</td><td>0.19296</td><td>0.85295</td><td>1.71032</td><td>1.66136</td><td>1.46348</td></tr><tr><td>C</td><td>0.03036</td><td>0.02882</td><td>0.02780</td><td>0.03099</td><td>0.03994</td><td>0.05040</td><td>0.05704</td><td>0.07999</td><td>0.11094</td><td>0.10600</td><td>0.09407</td></tr><tr><td>D</td><td>0.24272</td><td>0.23790</td><td>0.24179</td><td>0.27135</td><td>0.31552</td><td>0.31348</td><td>0.31572</td><td>0.35185</td><td>0.34211</td><td>0.27149</td><td>0.19962</td></tr><tr><td>HARD CHINE</td><td>0.10</td><td>0.15</td><td>0.20</td><td>0.25</td><td>0.30</td><td>0.35</td><td>0.40</td><td>0.45</td><td>0.50</td><td>0.55</td><td>0.60</td></tr><tr><td>A</td><td>-4.0091</td><td>-3.8616</td><td>-3.4016</td><td>-3.8165</td><td>-4.9268</td><td>-5.0339</td><td>-3.3313</td><td>-7.4907</td><td>-13.4033</td><td>-13.4605</td><td>-11.7117</td></tr><tr><td>B</td><td>0.38551</td><td>0.36559</td><td>0.30585</td><td>0.32553</td><td>0.49059</td><td>0.45322</td><td>0.33365</td><td>0.97457</td><td>1.65367</td><td>1.73983</td><td>1.71066</td></tr><tr><td>C</td><td>0.02891</td><td>0.02838</td><td>0.02864</td><td>0.03506</td><td>0.04371</td><td>0.05459</td><td>0.06064</td><td>0.08270</td><td>0.11335</td><td>0.10502</td><td>0.08773</td></tr><tr><td>D</td><td>0.21182</td><td>0.21086</td><td>0.22727</td><td>0.26631</td><td>0.31399</td><td>0.31524</td><td>0.30777</td><td>0.33763</td><td>0.33905</td><td>0.27315</td><td>0.19874</td></tr></table>"
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.177,
+                0.269,
+                0.806,
+                0.5
+            ],
+            "angle": 0,
+            "content": "| Dimension | Value |\n| --------- | ----- |\n| Principal Dimensions | LWA = 108.0' |\n| Principal Dimensions | BMAX = 22.6' |\n| Principal Dimensions | TSW = 6.0' |\n| Principal Dimensions | LWL = 101.7' |\n| Principal Dimensions | Δ = 163 LT |\n| Principal Dimensions | Cp = 0.667 |\n| Keyline | RABBIT LINE |\n| Top of Bulwark | 10 |\n| Top of Bulwark | 4.5 |\n| Top of Bulwark | 2.5 |\n| Top of Bulwark | 1.5 |\n| Top of Bulwark | 0.5 |\n| Propshift | 0.5 |\nThis figure is pictorial - not an engineering drawing.",
+            "sub_type": "other"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.304,
+                0.502,
+                0.715,
+                0.516
+            ],
+            "angle": 0,
+            "content": "Fig. 35. Abbreviated lines sketch of 108-ft yard patrol craft (YP 676)"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.175,
+                0.542,
+                0.367,
+                0.554
+            ],
+            "angle": 0,
+            "content": "(text continued from page 358)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.06,
+                0.552,
+                0.483,
+                0.579
+            ],
+            "angle": 0,
+            "content": "influence of the shape and speed variables on the residual resistance coefficient of hulls of the type discussed here.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.077,
+                0.591,
+                0.469,
+                0.62
+            ],
+            "angle": 0,
+            "content": "Application and comparison of series resistance results"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.059,
+                0.624,
+                0.486,
+                0.713
+            ],
+            "angle": 0,
+            "content": "To establish the reasonableness of the resistance predictions based on the graphical and numerical results presented in this report, a case study centering on the 108-ft YP shown as the frontispiece was performed. In addition to comparing actual model results [7] on the subject YP hull with series predictions, comparisons with widely used, published, early-stage power estimating schemes—standard series and a regression meth-",
+            "merge_prev": false
+        },
+        {
+            "type": "table_caption",
+            "bbox": [
+                0.13,
+                0.741,
+                0.416,
+                0.756
+            ],
+            "angle": 0,
+            "content": "Table 2 108-ft YP case study: hull particulars"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.064,
+                0.758,
+                0.486,
+                0.887
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>Length overall, <eq>L_{OA}</eq></td><td>108.0 ft</td></tr><tr><td>Length between perpendiculars, <eq>L_{PP}</eq></td><td>101.2 ft</td></tr><tr><td>Reference draft, <eq>T_{REF}</eq></td><td>6.0 ft</td></tr><tr><td>Maximum sectional area at <eq>T_{REF}</eq>, <eq>SA_x</eq></td><td>84.8 ft<eq>^{2}</eq></td></tr><tr><td>Waterline beam at <eq>T_{REF}</eq> and <eq>SA_x</eq>, <eq>B_{REF}</eq></td><td>21.4 ft</td></tr><tr><td>Prismatic coefficient at <eq>T_{REF}</eq>, <eq>C_p</eq></td><td>0.667</td></tr><tr><td>Length-to-beam ratio at <eq>T_{REF}</eq>, <eq>L/B</eq></td><td>4.719</td></tr><tr><td>Displacement, <eq>\\Delta</eq></td><td>163.2 LT</td></tr><tr><td>Longitudinal distance of center of gravity aft of <eq>\\mathfrak{X}</eq>, LCG</td><td>4.47 ft</td></tr><tr><td>Wetted surface area, WSA</td><td>2377 ft<eq>^{2}</eq></td></tr><tr><td>Waterline length, <eq>L_{WL}</eq></td><td>101.7 ft</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.496,
+                0.544,
+                0.92,
+                0.68
+            ],
+            "angle": 0,
+            "content": "od—will be made. For the purpose of the case study, the 108-ft YP has the principal characteristics given in Table 2. The abbreviated lines sketch of the YP is shown as Fig. 35. Notice the differences between the case study hull and those of which the presently reported standard series are composed. Most notably, the case study hull has a more generous bilge radius (to better suit planked wood construction), a full length integral skegkeel, and a less deeply immersed transom. The first and the last of these differences would suggest lower resistance at low to moderate speeds for the case study hull while the integral appendage would suggest a higher resistance at all speeds.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.496,
+                0.679,
+                0.918,
+                0.701
+            ],
+            "angle": 0,
+            "content": "The standard powering estimators chosen for this comparison are as follows:",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.512,
+                0.702,
+                0.92,
+                0.785
+            ],
+            "angle": 0,
+            "content": "1. Taylor Standard Series [8]—Although the Taylor hull form is not at all similar to the present hull forms, this is a widely used benchmark for widely varying hull types. Inputs include prismatic coefficient \\((C_p)\\), length-to-beam ratio \\((L/B)\\), beam-to-draft ratio \\((B/T)\\), and speed. At the high end of the speed range, the series is extrapolated beyond its original experimental data limits.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.512,
+                0.785,
+                0.922,
+                0.893
+            ],
+            "angle": 0,
+            "content": "2. Mercier and Savitsky's regression equation for transomsterned boats in the \"preplaning\" speed regime [9]—This estimate is based on many hull forms, hard- and soft-chined, operating at volumetric Froude numbers between 1.0 and 2.0. Inputs include angle of entrance at the static waterline \\((i_{c})\\), transom sectional area to maximum sectional area ratio \\((A_{7} / A_{\\lambda})\\), a loading coefficient based on beam \\((\\nabla / B_{\\lambda}^{3})\\), a volumetric coefficient \\((L_{\\mathrm{WL}} / \\nabla^{1/3})\\), and a longitudinal center of gravity parameter (LCG/",
+            "merge_prev": false
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.512,
+                0.702,
+                0.922,
+                0.893
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.062,
+                0.904,
+                0.086,
+                0.915
+            ],
+            "angle": 0,
+            "content": "368"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.77,
+                0.915,
+                0.921,
+                0.928
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY"
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.208,
+                0.033,
+                0.361,
+                0.045
+            ],
+            "angle": 0,
+            "content": "03/01'94 11:55"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.425,
+                0.034,
+                0.576,
+                0.045
+            ],
+            "angle": 0,
+            "content": "239406763443"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.674,
+                0.033,
+                0.815,
+                0.044
+            ],
+            "angle": 0,
+            "content": "ARCH.NAVALE TS"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.88,
+                0.034,
+                0.922,
+                0.045
+            ],
+            "angle": 0,
+            "content": "F.03"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.078,
+                0.069,
+                0.471,
+                0.094
+            ],
+            "angle": 0,
+            "content": "\\( L_{PP} \\) ). This estimator does not cover the low end of the speed range at all.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.058,
+                0.096,
+                0.472,
+                0.177
+            ],
+            "angle": 0,
+            "content": "3. National Physical Laboratory (NPL) Series of Marwood and Bailey [2]—These hull forms are very similar in shape to the case study hull forms. Inputs include length-to-beam ratio \\((L / B)\\) and a volumetric coefficient \\((\\mathbf{M} = \\mathrm{LWL} / \\nabla^{1 / 3})\\). EHP values were read directly from curves drawn for a waterline length of 100 ft. A wetted surface was read from curves provided in the report.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.058,
+                0.177,
+                0.473,
+                0.223
+            ],
+            "angle": 0,
+            "content": "4. Series 63 of Beys [3]—A round bilged planing hull which was tested at low (subplaning) and high (planing) speeds. Inputs include length-to-beam ratio \\((L / B)\\) and a volumetric coefficient \\((L_{\\mathrm{TP}} / \\nabla^{1 / 3})\\).",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.058,
+                0.223,
+                0.475,
+                0.305
+            ],
+            "angle": 0,
+            "content": "5. Swedish Maritime Research Centre (SSPA) Series [10]-- The speed regime for this series is generally higher than that described here. Only the upper range of the case study hull's speed can be estimated by this reference. The plotted contours of \\( C_R \\) for a block coefficient of 0.4 were increased by 5 percent on the basis of Appendix A of reference [10].",
+            "merge_prev": false
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.058,
+                0.096,
+                0.475,
+                0.305
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.048,
+                0.306,
+                0.477,
+                0.422
+            ],
+            "angle": 0,
+            "content": "Neither Series 64 [1] nor the Webb Trawler series of Ridgely-Nevitt [11] was applicable to the present study because of displacement-length ratio mismatches. For all predictions the friction formulation employed by the series originator was used. All had the value of the correlation allowance, \\( C_A \\), set at 0.0004. The wetted surfaces used were those estimated by the predictors authors, not the actual wetted surface of the case study hull. This approach was adopted since each estimator normalized residual resistance (that is, calculated \\( C_R \\)) by using its own wetted surface and friction formulation.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.048,
+                0.423,
+                0.482,
+                0.662
+            ],
+            "angle": 0,
+            "content": "The resulting effective horsepower estimates are shown in Fig. 36. Besides the five estimators listed above, the present series results—contours and four-term regression equation—were employed to estimate EHP. For the \\( C_R \\) contours, linear interpolation was used over both \\( L_{CG}/L_{PP} \\) and \\( L/B \\)—and in that order. Similar linear interpolation was used to determine waterline length (\\( L_{WL} \\)) and wetted surface from plotted S curves (see Fig. 4). The results are encouraging for the present series validity. The solid curve in Fig. 36 represents the EHP estimated from model testing a 5-ft geosim of the ship in a manner virtually identical to that used for the present series. Most of the estimators underpredict EHP, especially at low speeds. At high speeds, the severely extrapolated Taylor Series overpredicts badly, due to its cruiser stern and the attendant high trim by the stern. Neither Marwood and Bailey nor Mercier and Savitsky is applicable at the low end of the speed range. Series 63 gives the best estimate for the upper speed regime (above 15 knots for \\( L_{PP} = 101.7 \\) ft). It overpredicts EHP throughout the speed range, unlike most of the other estimators attempted.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.05,
+                0.662,
+                0.486,
+                0.759
+            ],
+            "angle": 0,
+            "content": "The contours and regression equation developed in this report overpredict EHP at low speeds (up to 13 knots) and under-predict at high speeds (over 16 knots) for the case study presented. However, the present series is reasonably close over the entire speed range. How well each predictor does at estimating EHP is shown quantitatively in Table 3. Several more case study situations should be studied before any widespread acceptance of the present series work is established.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.223,
+                0.773,
+                0.312,
+                0.787
+            ],
+            "angle": 0,
+            "content": "Summary"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.052,
+                0.791,
+                0.49,
+                0.887
+            ],
+            "angle": 0,
+            "content": "The series of stillwater resistance tests on three soft-chined and three hard-chined models of comparable slenderness and loading has resulted in, first, a set of residual resistance coefficient contours as functions of \\( L / B \\), \\( \\Delta_{PP} \\), \\( \\mathrm{LCG} / L^* \\) and speed-measured by \\( F_{\\mathrm{NL}} \\) and \\( F_{\\mathrm{NV}} \\) which appear to give reasonable results for craft falling within the scope of the series parameters, and second, an initial formulation based on multiple linear regression analysis which predicts surprisingly well, at least for",
+            "merge_prev": false
+        },
+        {
+            "type": "chart",
+            "bbox": [
+                0.497,
+                0.068,
+                0.925,
+                0.495
+            ],
+            "angle": 0,
+            "content": "LEGEND\n● TAYLOR STANDARD SERIES\n● MERCIER & SAVITSKY\n▲ MARWOOD & BAILEY\n▼ LINDGREN & WILLIAMS\n◇ BEYS: SERIES 63\n× USNA SERIES CONTOURS\n+ USNA SERIES REGRESSION\nNOTES\n• SFE TABLE II FOR HULL CHARACTERISTICS\n• SALT WATER @ 59°F\n• ITTC Cf\n• Ca = 0.0004\nSHIP SPEED IN KNOTD",
+            "sub_type": "line"
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.508,
+                0.499,
+                0.925,
+                0.513
+            ],
+            "angle": 0,
+            "content": "Fig. 36 EHP as a function of speed for YP 676: various predictions"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.496,
+                0.539,
+                0.938,
+                0.576
+            ],
+            "angle": 0,
+            "content": "the case study example chosen. Linear interpolation over L/B, and LCG/L appears adequate and simple to employ when using the  \\( C_{R} \\)  contours.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.514,
+                0.576,
+                0.771,
+                0.588
+            ],
+            "angle": 0,
+            "content": "The following trends were observed:",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.515,
+                0.588,
+                0.938,
+                0.625
+            ],
+            "angle": 0,
+            "content": "1. The aftmost center-of-gravity loading condition results in the highest total and residual resistance coefficients (and running trim angle) for all hulls.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.515,
+                0.625,
+                0.938,
+                0.647
+            ],
+            "angle": 0,
+            "content": "2. The heaviest displacement has the highest total and residual resistance coefficients for all hulls.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.515,
+                0.648,
+                0.938,
+                0.672
+            ],
+            "angle": 0,
+            "content": "3. The difference in resistance due to LCG differences lessens or disappears at the highest speeds tested.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.515,
+                0.672,
+                0.938,
+                0.695
+            ],
+            "angle": 0,
+            "content": "4. The primary hump in the residual resistance coefficient curves occurs near a volumetric Froude number of 1.2.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.515,
+                0.695,
+                0.94,
+                0.756
+            ],
+            "angle": 0,
+            "content": "5. Hard-chine hulls have slightly lower residual resistance coefficients than soft-chine hulls of the same nominal length-to-beam ratio and loading ( \\( \\alpha_{PP} \\)  and LCG/L) at a given speed. The difference generally becomes more pronounced at higher speeds.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.515,
+                0.755,
+                0.94,
+                0.778
+            ],
+            "angle": 0,
+            "content": "6. More slender hulls within the series have higher residual resistance coefficients than the beamier hulls.",
+            "merge_prev": false
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.515,
+                0.588,
+                0.94,
+                0.778
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.502,
+                0.779,
+                0.942,
+                0.838
+            ],
+            "angle": 0,
+            "content": "Trends 5 and 6 may appear contrary to intuition for designers. It must be remembered that the trends stated apply to residual resistance coefficients only. Differences in wetted surface caused by differing hull slenderness may result in higher resistance forces and horsepowers.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.643,
+                0.851,
+                0.808,
+                0.865
+            ],
+            "angle": 0,
+            "content": "Future series work"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.52,
+                0.87,
+                0.942,
+                0.884
+            ],
+            "angle": 0,
+            "content": "As mentioned at the outset, this paper represents the first",
+            "merge_prev": false
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.056,
+                0.907,
+                0.158,
+                0.92
+            ],
+            "angle": 0,
+            "content": "OCTOBER 1986"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.919,
+                0.906,
+                0.946,
+                0.917
+            ],
+            "angle": 0,
+            "content": "369"
+        }
+    ],
+    [
+        {
+            "type": "table_caption",
+            "bbox": [
+                0.31,
+                0.038,
+                0.704,
+                0.051
+            ],
+            "angle": 0,
+            "content": "Table 3 Percent differences from model test EHP's: 108-ft YP"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.07,
+                0.054,
+                0.951,
+                0.31
+            ],
+            "angle": 0,
+            "content": "<table><tr><td rowspan=\"2\"><eq>V_s</eq>,knots</td><td rowspan=\"2\">EHP5-ft ModelTest [7]</td><td colspan=\"6\">[(EHPmodel - EHPest)/EHPmodel] × 100→</td></tr><tr><td>TaylorStandard Series[Ref. 8]</td><td>SubplanRegression[Ref. 9]</td><td>NPLSeries[Ref. 2]</td><td>Series63[Ref. 3]</td><td>SSPASeries[Ref. 10]</td><td>USNASeries</td></tr><tr><td>4</td><td>4</td><td>0</td><td>...</td><td>...</td><td>...</td><td>...↑</td><td>0</td></tr><tr><td>5</td><td>10</td><td>10</td><td>... ↑</td><td>...</td><td>...</td><td>...↑</td><td>-10</td></tr><tr><td>6</td><td>19</td><td>21</td><td>...</td><td>...</td><td>-26</td><td>...</td><td>-10</td></tr><tr><td>7</td><td>29</td><td>21</td><td>...</td><td>...</td><td>-38</td><td>...</td><td>-10</td></tr><tr><td>8</td><td>44</td><td>18</td><td>...</td><td>...</td><td>-41</td><td>...</td><td>-11</td></tr><tr><td>9</td><td>72</td><td>19</td><td>...</td><td>...</td><td>-30</td><td>...</td><td>-10</td></tr><tr><td>10</td><td>112</td><td>8</td><td>...</td><td>...</td><td>-25</td><td>...</td><td>-8</td></tr><tr><td>11</td><td>161</td><td>3</td><td>...</td><td>...</td><td>-18</td><td>...</td><td>-10</td></tr><tr><td>12</td><td>227</td><td>3</td><td>...</td><td>9</td><td>-19</td><td>...</td><td>-9</td></tr><tr><td>13</td><td>336</td><td>3</td><td>...</td><td>14</td><td>-16</td><td>... Out of Series Range</td><td>-6</td></tr><tr><td>14</td><td>491</td><td>-1</td><td>3</td><td>13</td><td>-10</td><td>0</td><td>-3</td></tr><tr><td>15</td><td>702</td><td>-4</td><td>5</td><td>12</td><td>-4</td><td>9</td><td>0</td></tr><tr><td>16</td><td>935</td><td>-17</td><td>8</td><td>10</td><td>-4</td><td>12</td><td>1</td></tr><tr><td>17</td><td>1143</td><td>-44</td><td>8</td><td>9</td><td>-1</td><td>14</td><td>1</td></tr><tr><td>18</td><td>1335</td><td>-83</td><td>8</td><td>8</td><td>-2</td><td>14</td><td>2</td></tr><tr><td>19</td><td>1518</td><td>-135</td><td>10</td><td>9</td><td>-2</td><td>13</td><td>4</td></tr><tr><td>20</td><td>1703</td><td>-200 ↓ Extrapolated <eq>C_R</eq></td><td>11</td><td>11</td><td>-1</td><td>13</td><td>5</td></tr><tr><td colspan=\"2\"></td><td colspan=\"6\">Positive values indicate underestimates relative to model data</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.068,
+                0.369,
+                0.505,
+                0.418
+            ],
+            "angle": 0,
+            "content": "installment in a series of performance estimating tools for the designers of coastal patrol type craft in the displacement and semiplaning speed regimes. Work has begun or is in the planning stages for the following extensions of this work:",
+            "merge_prev": false
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.088,
+                0.419,
+                0.506,
+                0.621
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.088,
+                0.419,
+                0.506,
+                0.453
+            ],
+            "angle": 0,
+            "content": "- Running trim angle ( \\( \\tau \\) ) and rise/sinkage at the center of gravity ( \\( Z_{CG} \\) ) will be presented in the same format as the residual resistance data included herein.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.088,
+                0.453,
+                0.506,
+                0.478
+            ],
+            "angle": 0,
+            "content": "- One or more heavier displacement conditions will be included in the model test matrix.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.088,
+                0.478,
+                0.506,
+                0.501
+            ],
+            "angle": 0,
+            "content": "- Resistance of the series in shallow water typical of coastal operational areas will be studied.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.088,
+                0.502,
+                0.506,
+                0.549
+            ],
+            "angle": 0,
+            "content": "- Seakeeping tests in head and following seas will be conducted to assess the effects of hull changes on pitch, heave, relative motion, and added resistance due to encountered waves.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.088,
+                0.549,
+                0.506,
+                0.585
+            ],
+            "angle": 0,
+            "content": "- Seakeeping tests at zero speed in beam seas will be completed to assess hull shape and loading effects on roll motion.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.089,
+                0.585,
+                0.506,
+                0.621
+            ],
+            "angle": 0,
+            "content": "- The linear regression equation will be refined as necessary to improve its ability to predict residual resistance coefficients.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.076,
+                0.622,
+                0.511,
+                0.709
+            ],
+            "angle": 0,
+            "content": "The series represents the first systematic resistance data published by the staff of the USNA Hydromechanics Laboratory. Consequently, considerable discussion of facilities and lab techniques are included in this report. Of particular interest are the interactive operator/computer aspects of the laboratory data acquisition system and the turbulence stimulator study presented.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.218,
+                0.722,
+                0.373,
+                0.735
+            ],
+            "angle": 0,
+            "content": "Acknowledgments"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.079,
+                0.741,
+                0.514,
+                0.863
+            ],
+            "angle": 0,
+            "content": "Many talented people were responsible for the work reported here. The entire staff of the U.S. Naval Academy Hydromechanics Laboratory—both permanent and temporary—deserve recognition for the precision and consistency with which this large number of model tests was carried out. Special thanks are due to Don Bunker, Howard Chatterton, Steve Enzinger, Jeff Hough, and John Hoyt for their efforts. NAVSEA:NORFOLK supported this effort materially and technically throughout. Mr. Don Blount and Mr. Gordon Hatchell of that organization were especially supportive. For turning pages of handwritten",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.519,
+                0.368,
+                0.95,
+                0.394
+            ],
+            "angle": 0,
+            "content": "scrawl to the finished manuscript, my thanks to Darlene Batten, Judy Anway, Mary Palombo, and Helen Wanbaugh.",
+            "merge_prev": false
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.688,
+                0.408,
+                0.785,
+                0.421
+            ],
+            "angle": 0,
+            "content": "References"
+        },
+        {
+            "type": "list",
+            "bbox": [
+                0.52,
+                0.428,
+                0.953,
+                0.767
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.52,
+                0.428,
+                0.952,
+                0.459
+            ],
+            "angle": 0,
+            "content": "1 Yeh, H. Y. H., \"Series 64: Resistance Experiments on High-Speed Displacement Forms,\" MARINE TECHNOLOGY, Vol. 2, No. 3, July 1965.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.52,
+                0.459,
+                0.952,
+                0.488
+            ],
+            "angle": 0,
+            "content": "2 Marwood, W. J. and Bailey, D., \"Design Data for High Speed Displacement Hulls of Round-Bilge Form,\" National Physical Laboratory Ship Report No. 99, Feb. 1969.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.52,
+                0.488,
+                0.952,
+                0.517
+            ],
+            "angle": 0,
+            "content": "3 Beys, P. M., \"Series 63 Round Bottom Boats,\" Davidson Laboratory Report No. 949, Stevens Institute of Technology, Hoboken, N.J., April 1963.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.52,
+                0.516,
+                0.952,
+                0.555
+            ],
+            "angle": 0,
+            "content": "4 Gebhardt, J. C., Williams, S., and Compton, R. H., \"The U.S. Naval Academy Hydromechanics Laboratory Data Acquisition, Control and Analysis System,\" 18th American Towing Tank Conference, U.S. Naval Academy, Annapolis, Md., Aug. 1977.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.521,
+                0.555,
+                0.953,
+                0.593
+            ],
+            "angle": 0,
+            "content": "5 Compton, R. H., \"USNA YP Replacement Model Test Program: Still Water Testing of Systematic Series: YP81-1 through YP81-6,\" U.S. Naval Academy Hydromechanics Laboratory Report (in progress).",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.521,
+                0.592,
+                0.953,
+                0.612
+            ],
+            "angle": 0,
+            "content": "6 Draper, M. and Smith, H., Applied Regression Analysis, Wiley, New York, 1966, pp. 104–227.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.521,
+                0.611,
+                0.953,
+                0.651
+            ],
+            "angle": 0,
+            "content": "7 Compton, R. H., \"USNA Replacement Model Test Program: Effective Horsepower Tests for YP81-7,\" U.S. Naval Academy, Division of Engineering and Weapons, Report No. EW-20-82, Annapolis, Md., July 1982.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.521,
+                0.649,
+                0.953,
+                0.68
+            ],
+            "angle": 0,
+            "content": "8 Gertler, M., \"The Reanalysis of the Original Test Data for the Taylor Standard Series,\" David Taylor Model Basin Report No. 806, March 1954 (with high-speed extrapolation by Mr. Kenneth Walker).",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.521,
+                0.679,
+                0.953,
+                0.708
+            ],
+            "angle": 0,
+            "content": "9 Mercier, J. A. and Savitsky, D., \"Resistance of Transom-Stern Craft in the Preplaning Regime,\" Davidson Laboratory Report No. R-1667, Stevens Institute of Technology, Hoboken, N.J., June 1973.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.521,
+                0.707,
+                0.954,
+                0.747
+            ],
+            "angle": 0,
+            "content": "10 Lindgren, H. and Williams, A., \"Systematic Tests with Small Fast Displacement Vessels, Including a Study of the Influence of Spray Strips,\" Proceedings, SNAME Diamond Jubilee International Meeting, New York, 1968.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.527,
+                0.744,
+                0.955,
+                0.767
+            ],
+            "angle": 0,
+            "content": "11 Ridgely-Nevitt, C., \"The Resistance of a High Displacement-Length Ratio Trawler Series,\" Trans. SNAME, Vol. 75, 1967.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.659,
+                0.795,
+                0.824,
+                0.806
+            ],
+            "angle": 0,
+            "content": "Metric Conversion Factors",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.692,
+                0.809,
+                0.793,
+                0.819
+            ],
+            "angle": 0,
+            "content": "1 ft = 0.3048 m",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.692,
+                0.819,
+                0.793,
+                0.828
+            ],
+            "angle": 0,
+            "content": "\\(1\\mathrm{ft}^2 = 0.0929\\mathrm{m}^2\\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.692,
+                0.828,
+                0.802,
+                0.837
+            ],
+            "angle": 0,
+            "content": "1 ft\\( ^{3} \\) = 0.02831 m\\( ^{3} \\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.692,
+                0.838,
+                0.787,
+                0.848
+            ],
+            "angle": 0,
+            "content": "1 in. = 25.4 mm",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.692,
+                0.848,
+                0.78,
+                0.857
+            ],
+            "angle": 0,
+            "content": "1 lb = 0.45 kg",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.082,
+                0.884,
+                0.108,
+                0.894
+            ],
+            "angle": 0,
+            "content": "370"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.806,
+                0.873,
+                0.956,
+                0.885
+            ],
+            "angle": 0,
+            "content": "MARINE TECHNOLOGY",
+            "merge_prev": false
+        }
+    ]
+]
