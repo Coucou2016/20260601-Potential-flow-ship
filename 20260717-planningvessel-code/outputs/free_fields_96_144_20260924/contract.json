@@ -1,0 +1,13 @@
+{
+  "hashes": {
+    "D:\\Projects\\20260601-Potential-flow-ship\\20260717-planningvessel-code\\scripts\\audit_free_surface_fields.py": "5f54797f6fca8999104733c8fa1fbe2c2d5422fdadae7380606f76a5ef083631",
+    "outputs\\analytic_panel_free_finer_20260924\\free_96\\free_surface_fn167.npz": "5b0ee6502995bec94bbbd2781ce4a02e755f1770ad23fc8dc7172e7d5db4e80a",
+    "outputs\\analytic_panel_free_finer_20260924\\free_96\\free_surface_fn226.npz": "7a1c2020158794a0174675849f2f7dfae0e946695fc0ec958b2991d4e3db8621",
+    "outputs\\analytic_panel_free_finer_20260924\\free_96\\free_surface_fn282.npz": "7147620535f6053af07dcc4f167f693d1ccf15702fccdabb61cb5ba6122d03b2",
+    "outputs\\analytic_panel_free_finer_20260924\\free_144\\free_surface_fn167.npz": "8805af0d7b1af4c11440f013480cd2dd1fc37c97af121883cd0cab81ef19b1a9",
+    "outputs\\analytic_panel_free_finer_20260924\\free_144\\free_surface_fn226.npz": "d61eb76029910586e484f8c9a638b55f9dd2c91ba841085d5ca54207a1283fb8",
+    "outputs\\analytic_panel_free_finer_20260924\\free_144\\free_surface_fn282.npz": "92cc645cdeb77e3b2e9133a2e8ffc013cc7ba746d016589ae72230489cd6f883"
+  },
+  "comparison": "Same x and time; separate sides; fine to mid interpolation; no extrapolation",
+  "scope": "Field diagnostic only, no new acceptance threshold"
+}

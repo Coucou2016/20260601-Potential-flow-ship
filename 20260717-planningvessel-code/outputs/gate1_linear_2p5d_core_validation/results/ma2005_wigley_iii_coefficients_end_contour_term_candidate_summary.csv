@@ -1,0 +1,6 @@
+benchmark,candidate_name,candidate_order,end_term_scale,row_count,pass_count,fail_count,pass_fraction,median_gate_error_ratio,max_gate_error_ratio,median_gate_ratio_delta_vs_current,max_gate_ratio_delta_vs_current,improved_row_count,worsened_row_count,candidate_gate_status,gate_role,path_diagnostic_status
+ma2005_wigley_iii_coefficients,end_flipped,2,-1.0,8,0,8,0.0,34.385523600797875,134.0050847673665,-1.7819502515229786,24.183610556383115,4,2,FAIL,diagnostic_end_contour_term_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,end_removed,1,0.0,8,0,8,0.0,35.27649872655935,148.9547881390961,-0.8909751257614964,12.09180527819156,4,2,FAIL,diagnostic_end_contour_term_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,end_half_scale,3,0.5,8,0,8,0.0,35.721986289440096,156.4296398249609,-0.44548756288075353,6.045902639095782,4,2,FAIL,diagnostic_end_contour_term_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,current_default,0,1.0,8,1,7,0.125,36.16747385232084,163.90449151082572,0.0,2.842170943040401e-14,3,3,FAIL,diagnostic_end_contour_term_candidate_not_hard_gate,INFO
+ma2005_wigley_iii_coefficients,end_double_scale,4,2.0,8,0,8,0.0,37.058448978082325,178.85419488255536,4.13513093451577,20.51431518231786,0,6,FAIL,diagnostic_end_contour_term_candidate_not_hard_gate,INFO

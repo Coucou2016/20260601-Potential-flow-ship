@@ -1,0 +1,34 @@
+{
+  "schema": "ma2005_gate1_grid_convergence_manifest_v1",
+  "base_grid": {
+    "grid_label": "base",
+    "body_panels_per_section": 30,
+    "free_surface_inner_panels_per_side": 20,
+    "control_surface_panels": 40
+  },
+  "refined_grid": {
+    "grid_label": "refined",
+    "body_panels_per_section": 40,
+    "free_surface_inner_panels_per_side": 30,
+    "control_surface_panels": 60
+  },
+  "allowed_changed_fields": [
+    "body_panels_per_section",
+    "free_surface_inner_panels_per_side",
+    "control_surface_panels"
+  ],
+  "observed_changed_fields": [
+    "body_panels_per_section",
+    "free_surface_inner_panels_per_side",
+    "control_surface_panels"
+  ],
+  "mesh_only_change": true,
+  "max_grid_change": 0.01110915312705525,
+  "max_grid_change_limit": 0.02,
+  "reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+  "approved_reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+  "combined_source_sha256": "8a2284219b27623adc7a7b033aa19ab9bb8fd340a25384368da1f52e6f65b6cf",
+  "invariant_solver_config_sha256_base": "8ed417dcfbf900ed3d962a2c6a7d77b10bd43fe5e3d4046eb085ad9c61fa65bf",
+  "invariant_solver_config_sha256_refined": "8ed417dcfbf900ed3d962a2c6a7d77b10bd43fe5e3d4046eb085ad9c61fa65bf",
+  "invariant_solver_config_match": true
+}

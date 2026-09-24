@@ -1,0 +1,11 @@
+hydro_model,coefficient,pitch_axis_variant,pass_checks,fail_checks,total_checks,median_gate_error_ratio,max_gate_error_ratio,median_axis_offset_over_l,pass_fraction,current_lcg_median_gate_error_ratio,current_lcg_fail_checks,improves_over_current_lcg,diagnosis
+matched_bie_provider,A55,axis_5pctL_forward_of_lcg,0,1,1,4.638451569115818,4.638451569115818,0.05000000000000001,0.0,10.248766559603501,1,True,axis_shift_reduces_error
+matched_bie_provider,A55,current_lcg,0,1,1,10.248766559603501,10.248766559603501,0.0,0.0,10.248766559603501,1,False,axis_shift_not_helpful
+matched_bie_provider,A55,axis_10pctL_forward_of_lcg,0,1,1,14.136033033039526,14.136033033039526,0.10000000000000002,0.0,10.248766559603501,1,False,axis_shift_not_helpful
+matched_bie_provider,A55,axis_5pctL_aft_of_lcg,0,1,1,30.525621353118428,30.525621353118428,-0.05000000000000001,0.0,10.248766559603501,1,False,axis_shift_not_helpful
+matched_bie_provider,A55,axis_10pctL_aft_of_lcg,0,1,1,56.19211281142897,56.19211281142897,-0.10000000000000002,0.0,10.248766559603501,1,False,axis_shift_not_helpful
+matched_bie_provider,B55,axis_10pctL_aft_of_lcg,0,1,1,91.23334153531923,91.23334153531923,-0.10000000000000002,0.0,131.01564946214893,1,True,axis_shift_reduces_error
+matched_bie_provider,B55,axis_5pctL_aft_of_lcg,0,1,1,109.42441616466184,109.42441616466184,-0.05000000000000001,0.0,131.01564946214893,1,True,axis_shift_reduces_error
+matched_bie_provider,B55,current_lcg,0,1,1,131.01564946214893,131.01564946214893,0.0,0.0,131.01564946214893,1,False,axis_shift_not_helpful
+matched_bie_provider,B55,axis_5pctL_forward_of_lcg,0,1,1,156.00704142778056,156.00704142778056,0.05000000000000001,0.0,131.01564946214893,1,False,axis_shift_not_helpful
+matched_bie_provider,B55,axis_10pctL_forward_of_lcg,0,1,1,184.39859206155666,184.39859206155666,0.10000000000000002,0.0,131.01564946214893,1,False,axis_shift_not_helpful

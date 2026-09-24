@@ -1,0 +1,11 @@
+{
+  "scope_correction": "This refined protocol varies history quadrature count as well as station and boundary panels.",
+  "authoritative_history_counts_by_grid": [
+    32,
+    48,
+    64
+  ],
+  "history_cache_steps": 128,
+  "fixed_spectral_cutoff": 25.0,
+  "note": "Legacy scalar history_quadrature_count and held-fixed scope text are descriptive leftovers; the loop uses history_quadrature_counts_by_grid. Frozen contract remains unmodified; thresholds unchanged."
+}

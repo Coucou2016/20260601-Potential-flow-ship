@@ -1,0 +1,12 @@
+{
+  "panel_integration_route": "reconstructed_symmetric",
+  "benchmark": "ma2005_wigley_iii",
+  "provider_route": "matched_bie_station_sweep",
+  "force_assembly_route": "eq32_stokes_body_plus_end",
+  "formula_version": "ma2005_a1_eq4_eq6_eq30_eq34_matched_bie_v1",
+  "reference_file_sha256": "475a733831d0d8df785559b5eefc02ead0d8f1ec0c4735ea5becd518fd8d0b65",
+  "relative_tolerance": 0.15,
+  "max_grid_change": 0.02,
+  "matrix_residual_tolerance": 1e-08,
+  "empirical_output_scaling_used": false
+}

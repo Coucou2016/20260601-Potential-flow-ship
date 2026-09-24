@@ -1,0 +1,21 @@
+{
+  "scope": "analytic incident-pressure integral and sine-phase adapter; diffraction accuracy not certified",
+  "length_m": 2.0,
+  "beam_m": 0.4,
+  "draft_m": 0.1,
+  "lcg_m": 0.8,
+  "rho": 1000.0,
+  "g": 9.80665,
+  "speeds_mps": [1.0, 3.0],
+  "wavenumbers_rad_m": [0.001, 0.5, 2.0],
+  "stations": 33,
+  "body_panels": 24,
+  "free_inner": 8,
+  "free_outer": 16,
+  "amplitude_relative_limit": 0.05,
+  "phase_absolute_limit_deg": 1.0,
+  "long_wave_relative_limit": 0.005,
+  "pressure_identity_limit": 1e-8,
+  "wave_at_cg": "eta(t)=sin(omega_e*t); real(qhat*exp(i*omega_e*t))",
+  "reference": "V-prism FK density = rho*g*B*(1-exp(-k*d))/(k*d); integrate exp(i*k*(x-lcg)) with lever [1,x-lcg], then multiply by -i"
+}

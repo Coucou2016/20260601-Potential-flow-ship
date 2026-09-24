@@ -1,0 +1,15 @@
+requirement,evidence,status,artifact
+default_provider_route,unique=matched_bie_station_sweep,PASS,ma2005_wigley_iii_coefficients_comparison.csv
+a33_a53_hard_gate,pass=4/4; max_gate=0.678133815742,PASS,ma2005_wigley_iii_coefficients_comparison.csv
+force_assembly_closure,max_abs=9.71445146547e-17,PASS,ma2005_wigley_iii_coefficients_comparison.csv
+free_surface_state_reconstruction,pass=8/8; update=0.0; transfer=0.0,PASS,ma2005_wigley_iii_coefficients_a1_free_surface_grid_implementation_summary.csv
+rhs_source_decomposition,pass=2/2; max=4.09441817882e-15,PASS,ma2005_wigley_iii_coefficients_rhs_source_decomposition_summary.csv
+body_potential_scale_audit,"rows=2; correction_supported=['False', 'False']",PASS,ma2005_wigley_iii_coefficients_body_potential_constant_mode_summary.csv
+body_potential_normalization_trace,target_fail=0; blockers=0; path=PASS,PASS,ma2005_wigley_iii_coefficients_body_potential_normalization_trace_summary.csv
+body_potential_time_pressure_chain,pass=4/4; blockers=0; selected_closure=1.38777878078e-17; path=PASS,PASS,ma2005_wigley_iii_coefficients_body_potential_time_pressure_chain_summary.csv
+diagnostic_candidate_isolation,rows=163; eligible_true=0,PASS,ma2005_wigley_iii_coefficients_candidate_impact_summary.csv
+all_coefficient_outputs_finite,rows=10; finite=True,PASS,ma2005_wigley_iii_coefficients_comparison.csv
+source_resolution_reproduction,status=PASS; max_rel=0.0186206929651,PASS,outputs/ma2005_a33_a53_source_resolution/ma2005_a33_a53_source_resolution_summary.csv
+grid_convergence,status=PASS; max_change=0.00242180221798,PASS,outputs/ma2005_a33_a53_source_resolution/ma2005_a33_a53_grid_convergence_summary.csv
+full_pytest,278 passed; 1247 warnings; 764.13 s,PASS,"python -m pytest -q, executed 2026-08-15"
+stage_report,exists=True; bytes=17420,PASS,docs\线性2p5D_Gate1硬验证通过_阶段报告.md

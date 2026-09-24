@@ -1,0 +1,15 @@
+{
+  "input_sha256": "925b1c5163700d66bae069e683b4545e711b569d8998f2e76f13c9fe5b6d812a",
+  "case_ids": [
+    "fn167",
+    "fn226",
+    "fn282"
+  ],
+  "frequency_index": 4,
+  "reference_shift_beams": 0.1,
+  "relative_limit": 1e-08,
+  "absolute_limit": 1e-08,
+  "scope": "station integration and moment-origin invariance; not physical diffraction validation",
+  "reference": "F'=exp(-ik*d)*F; M'=exp(-ik*d)*(M-d*F)",
+  "transom_cutoff_beams": 0.5
+}
