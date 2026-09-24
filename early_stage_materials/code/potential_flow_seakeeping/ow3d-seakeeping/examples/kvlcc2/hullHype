@@ -1,0 +1,113 @@
+    *
+    *
+    read rap model
+    cleanedWhole.hdf
+    builder
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "HULL"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    create surface grid      
+    edge curve tolerance 0.00001
+    set view:0 0.0127234 0.00702238 0 1.98991 0.642788 -0.262003 0.719846 0.766044 0.219846 -0.604023 -1.0631e-16 0.939693 0.34202
+    smaller:0
+      choose edge curve 80 2.048220e-08 -2.896993e+01 -9.276053e+00 
+      choose edge curve 99 9.835751e-06 -2.827448e+01 -2.011909e+01 
+      choose edge curve 142 -2.942091e-14 -7.535411e-02 -2.080000e+01
+      choose edge curve 98 8.005505e-06 2.818985e+01 -2.019785e+01 
+      choose edge curve 87 1.919282e-08 2.896971e+01 -9.123986e+00
+    done
+    pause
+    uniform dissipation 4
+    forward and backward
+    lines to march 350 350
+    distance to march 139 142
+    points on initial curve 150
+    equidistribution 0.5 (in [0,1])
+    generate
+    pause
+    *smoothing...
+    *GSM:project smoothed grid onto reference surface 1
+    *GSM:smooth grid
+    *close smoothing options
+    lines
+    150 150
+    *post stretching...
+    *GST:pick to stretch
+    *stretch r2 1 1 5  1   (id,weight,exponent,position)
+    *stretch r2 2 1 5  0   (id,weight,exponent,position)
+    *exit
+    *GST:stretch grid
+    *close post stretching options
+    *pause
+      *smoothing...
+      *GSM:project smoothed grid onto reference surface 0
+      *GSM:do not project 0, 0 95 0 241 (id, l r b t)
+      *GSM:smooth ghost points 0
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *GSM:smooth grid
+      *SM:smooth grid
+      *close smoothing options
+    exit   
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                 VOLUME GRID "HULL"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid...
+    backward
+    distance to march 90
+    lines to march 159
+    BC: left  fix z, float x and y
+    BC: right fix z, float x and y
+    volume smooths 100
+    geometric stretching, specified ratio
+    1.02
+    apply boundary conditions to start curve 1
+    generate
+    name HULL
+    boundary conditions
+    1 1 0 0 3 0
+    plot ghost points 0 
+    close plot options
+    set view:0 -0.0287687 0.0207135 0 1.20694 1 0 0 0 1 0 0 0 1
+    *pause
+    *mapping parameters
+    * vert. - long. - radi. 
+    *lines 31 61 21
+    *close mapping dialog
+    *pause
+    exit
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                       VIEW AND SAVE
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    *
+    colour boundaries by BC number
+    plot reference surface 0
+    plot volume grids 1
+    plot surface grids 1
+    plot shaded on reference surface 0
+    pause
+    save grids to a file...
+    file name: HYPED_HULL.hdf
+    save file
+    exit 
+    exit
+    exit
+    

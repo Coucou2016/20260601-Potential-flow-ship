@@ -1,0 +1,86 @@
+# ------------------------------
+# *** For the current directory
+# ------------------------------
+/*.in
+/*.hs
+/*.ms
+*.ck
+*_ow3dt
+*_ow3df
+*.asv
+*.o
+*.d
+*.d.*
+*~
+*.bin
+*.bbl
+*.blg
+*.log
+*.hdf
+*.bak
+*.check
+*.bib
+*.mod
+*.swp
+*.aux
+mbuilder.*
+ogen.*
+ogmg.*
+plotStuff.*
+*.cmd
+*.json
+*.b*
+*.show
+*.sf
+ow3df/ow3df
+ow3dt/ow3dt
+Makefile
+*#
+# ------------------------------
+# *** For the example folders
+# ------------------------------
+examples/*/*/*.rimp*
+examples/*/*/*.simp*
+examples/*/*/*.o*
+examples/*/*/*.imps
+examples/ppc/.venv/*
+examples/*/*.info
+examples/*/ogmg.*
+examples/*/*/base.err
+examples/*/*tfm
+examples/*/*_ppc/*
+examples/*/*_ppc_*/*
+# ------------------------------
+# *** For the verify folder
+# ------------------------------
+verify/src/*.so
+verify/tests/*/ogmg.debug
+verify/tests/*/ogmg.info
+verify/src/Test*
+!verify/src/Test*.cpp
+# * Keep track of the expected folders
+verify/tests/*/*/expected/*
+verify/tests/*/expected/*
+!verify/tests/*/*/expected/*.rimp*
+!verify/tests/*/*/expected/*.simp*
+!verify/tests/*/*/expected/*.wimp*
+!verify/tests/*/*/expected/*.o*
+!verify/tests/*/expected/*.txt
+!verify/tests/*/expected/*.rimp*
+!verify/tests/*/expected/*.simp*
+!verify/tests/*/expected/*.wimp*
+!verify/tests/*/expected/*.o*
+# * Keep track of the input files and grid scripts
+!verify/tests/*/build_grid
+!verify/tests/*/ow3d.in
+!verify/tests/*/ow3d.ms
+!verify/tests/*/ow3d.sf
+!verify/tests/*/ow3d.ssf
+!verify/tests/*/ow3d.hs
+!verify/tests/*/*/build_grid
+!verify/tests/*/*/ow3d.in
+!verify/tests/*/*/ow3d.ms
+!verify/tests/*/*/ow3d.sf
+!verify/tests/*/*/ow3d.hs
+#
+core*

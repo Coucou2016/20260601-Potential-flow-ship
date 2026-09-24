@@ -1,0 +1,22 @@
+The input file for test04
+name: test04
+sped: 0.15
+base: db
+idif: 0
+irad: 0
+ires: 1
+mode: 1 1 1 1 1 1
+drif: 0
+cour: 1
+time: 4
+beta: 180
+grid: test_grid.hdf
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grac: 0 0 0
+grav: 9.81
+ulen: 10
+solv: di
+fftz: 5
+orat: 1

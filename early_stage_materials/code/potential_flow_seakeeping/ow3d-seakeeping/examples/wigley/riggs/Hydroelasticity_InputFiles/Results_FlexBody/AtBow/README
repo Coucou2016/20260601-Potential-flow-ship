@@ -1,0 +1,13 @@
+
+This folder contains input file, grid file, mass matrix file, stiffness matrix file
+for the Riggs Wigley hull case at Bow in the Journal paper 
+'Solving for hydroelastic ship response using Timoshenko beam modes at forward speed'
+
+Note that please select the Euler-Bernoulli beam and Newman hydrostatic model inside the codes, 'OW3DConstants.cpp'.
+
+
+In the paper, only 'double body' base flow has been used, so just set 'db' in the 'base' line in ow3d.in file.
+
+Three froude number have been applied for this case, i.e., 
+Froude number = 0.1, 0.2 0.3, please set 'sped:' = '3.132', '6.264', '9.4' respectivelty in the 'sped' line in ow3d.in file.
+

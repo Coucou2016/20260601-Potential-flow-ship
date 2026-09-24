@@ -1,0 +1,126 @@
+* this scrpit is used for grid generation of a two-dimensional
+* submerged cylinder in a channel.
+*
+* grid parameters
+*
+* tank
+  $t_left  = -40;
+  $t_right = 40;
+  $t_depth = 6;
+  $t_resolution = 2; $t_lines_horizontal = 167; $t_lines_vertical = 49; 
+  $tlh = int($t_resolution*$t_lines_horizontal);
+  $tlv = int($t_resolution*$t_lines_vertical);
+*
+* cylinder
+  $c_x = 20; 
+  $c_y = 0;
+  $c_resolution = 1; $c_lines_radial = 17; $c_lines_circumferential = 65;
+  $clr = int($c_resolution*$c_lines_radial);
+  $clc = int($c_resolution*$c_lines_circumferential);
+  $inner_a = 0.5;
+  $outer_a = 1.0;
+*
+*
+create mappings
+       rectangle
+       set corners
+       $t_left $t_right -$t_depth 0.0
+       lines
+       $tlh $tlv
+       boundary conditions
+       4 4 2 1 * periodic=-1, interpolation=0, free=1, impermeable=2, exciting=3, absorbing=4
+       share
+       0 0 0 1 * free=1
+       mappingName
+       tank
+       exit
+        annulus
+    	centre
+	$c_x $c_y
+    	inner and outer radii
+      	$inner_a $outer_a
+    	start and end angles 
+      	0.5 1.0
+    	lines
+     	$clc $clr
+    	boundary conditions
+      	1 1 3 0	
+    	share
+      	1 1 0 0
+   	 mappingName
+      	 semicircle
+	 pause
+  exit
+*
+* stretching
+	stretch coordinates
+	transform which mapping?
+	semicircle
+	stretch
+	specify stretching along axis=1
+	layers
+	1
+	2 2 0
+	exit
+	exit
+	mappingName
+        stretchedSemicircle
+	exit
+	stretch coordinates
+	transform which mapping?
+	tank
+	stretch
+	specify stretching along axis=0
+	layers
+	1
+	10 10 0.75
+	*1 1 0.2
+	exit
+	specify stretching along axis=1
+	layers
+	1
+	2 3 1
+	exit
+	exit
+	mappingName
+	stretchedTank
+	exit
+* View mappings.
+*
+ view mappings
+      stretchedTank
+      stretchedSemicircle
+      colour boundaries by boundary condition number
+      pause
+      colour boundaries by share value
+      pause
+      erase and exit
+exit
+*
+* Generate an overlapping grid.
+*
+generate an overlapping grid
+	 stretchedTank
+    	 stretchedSemicircle
+	 *tank
+	 *semicircle
+	 done
+	 change parameters
+    	 interpolation type
+      	 implicit for all grids
+    	 ghost points
+      	 all
+      	 2 2 2 2 * number of ghost points 
+    	 order of accuracy
+      	 fourth order
+exit
+*
+compute overlap
+exit
+*
+* Save an overlapping grid.
+*
+save an overlapping grid
+     floating_cylinder.hdf
+exit
+exit

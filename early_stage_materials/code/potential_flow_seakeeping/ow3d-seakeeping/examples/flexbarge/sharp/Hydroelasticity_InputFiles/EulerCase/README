@@ -1,0 +1,8 @@
+
+This folder contains input file, grid file, mass matrix file, stiffness matrix file, shear stiffness matrix file
+for the flexible barge case with the 6mm high steel plates in the Journal paper 
+
+'Solving for hydroelastic ship response using Timoshenko beam modes at forward speed'
+
+Note that please select the Euler beam model and Newman hydrostatic model inside the codes, 'OW3DConstants.cpp'.
+

@@ -1,0 +1,40 @@
+*
+* Rap command file
+*
+new/append model
+filename 2020.igs
+all mappings
+read file
+set view:0 0.0225518 -0.0158887 0 2.03727 0.5 -0.55667 0.663414 0.866025 0.321394 -0.383022 -1.20185e-16 0.766044 0.642788     
+smaller:0
+pause
+heal model
+HEAL:plot grid lines on boundaries (3D) toggle 1
+pause
+close
+*
+* Build the connectivity and a global triangulation
+*
+topology
+merge tolerance 0.025
+maximum area 0.01
+split tolerance factor 1
+deltaS 0.35
+build edge curves 
+merge edge curves 
+* the connectivity is determined
+pause
+*
+* triangulate
+*
+triangulate
+* global triangulation
+pause
+exit
+*
+* Save the  hull
+*
+save model
+cleanedWhole.hdf
+* model has been saved
+exit

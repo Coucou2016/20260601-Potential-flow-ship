@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir patches
+cd src
+$Overture/bin/rap -noplot patch_s0_yz
+$Overture/bin/rap -noplot patch_s1_yz
+$Overture/bin/rap -noplot patch_s2_xz
+$Overture/bin/rap -noplot patch_s3_xy
+

@@ -1,0 +1,42 @@
+*
+* Rap command file
+*
+new/append model
+filename wigley.igs
+all mappings
+read file
+x-r:0 45
+y-r:0 45
+z-r:0 45
+bigger:0
+bigger:0
+bigger:0
+heal model
+HEAL:plot grid lines on boundaries (3D) toggle 1
+pause
+close
+* Build the connectivity and a global triangulation
+topology
+merge tolerance 0.001
+split tolerance factor 1 
+deltaS 0.01
+maximum area 0.0001
+build edge curves 
+merge edge curves 
+* the connectivity is determined
+pause
+*
+* triangulate
+*
+triangulate
+* global triangulation
+pause
+exit
+*
+* Save the  hull
+*
+save model
+cleanModel.hdf
+* model has been saved
+pause
+exit

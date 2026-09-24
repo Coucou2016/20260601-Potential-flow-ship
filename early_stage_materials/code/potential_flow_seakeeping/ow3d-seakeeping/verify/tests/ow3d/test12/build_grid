@@ -1,0 +1,342 @@
+   *
+   *
+   $bsn_L1         =  20; # circumfrential
+   $bsn_L2         =  13; # vertical
+   $bsn_L3         =  15; # radial
+   $bsn_depth      = -25;
+   $bsn_out_radius =  25;
+   $bsn_in_radius  =  5;
+   @bsn_str_0      =  (0, 1, 1);  # circumfrential
+   @bsn_str_1      =  (3, 3, 1);  # vertical
+   @bsn_str_2      =  (3, 5, .25); # radial
+   $res = 1;
+   *
+* for core:
+   *
+   $core_L1        =  10;
+   $core_L2        =  10;
+   $core_L3        =  5;
+   $core_left_x    = -9;
+   $core_right_x   =  9;
+   $core_bottom_y  =  $bsn_depth;
+   $core_aft_z     =  10;
+*
+*
+ * - NOTE : SHARE TAGS :
+ *
+  * 6 : free surface
+  * 7 : body
+  * 8 : bed 
+  * 9 : symmetry plane
+  * 
+  * - NOTE : BOUNDARY TAGS :
+  *  
+  * 1 : free surface
+  * 2 : bed
+  * 3 : body 
+  * 4 : wall
+  * 5 : symmetry
+*
+create mappings
+*
+* ----------------------------------
+* Mapping for the truncated cylinder
+* ----------------------------------
+*
+  SmoothedPolygon
+    vertices
+    7
+    -6.66 0.
+    -6.66 9.9
+    -6.66 10
+    0. 10
+    6.66 10
+    6.66 9.9
+    6.66 0.
+    n-dist
+    fixed normal distance
+    .1
+    n-dist
+    fixed normal distance
+    6
+    corners
+    specify positions of corners
+    -6.66 0.
+    6.66 0
+    -12.66 0.
+    12.66 0
+    t-stretch
+     0 10
+    .25 30
+    .15 10
+     0 10
+    .25 30
+    .12 10
+     0 10
+  exit
+* making a body of revolution
+  body of revolution
+    tangent of line to revolve about
+      1. 0 0
+       choose a point on the line to revolve about
+      0 0 0
+    mappingName
+     cylinder
+    lines
+      25 20 7
+   exit
+   # Cut the cylinder full
+   reparameterize
+    transform which mapping?
+    cylinder
+    restrict parameter space
+    set corners
+    0.1 0.9 0.25 .75 0 1
+    exit
+    boundary conditions
+     0 0 1 1 3 0
+    share
+     0 0 6 6 7 0
+     mappingName
+     cylinder-half
+     exit
+   # Patches on the front and back of the floating cylinder
+   reparameterize
+    transform which mapping?
+    cylinder
+    orthographic
+    choose north or south pole
+    1
+    specify sa,sb
+    0.4 0.4
+    exit
+    mappingName
+    front_full
+    exit
+    reparameterize
+    transform which mapping?
+    front_full
+    restrict parameter space
+    set corners
+    0 .5 0 1 0 1
+    exit
+    boundary conditions
+    0 1 0 0 3 0
+    share
+    0 6 0 0 7 0
+    lines
+    6 8 7
+    mappingName
+    front
+    exit
+    #
+    reparameterize
+    transform which mapping?
+    cylinder
+    orthographic
+    choose north or south pole
+    -1
+    specify sa,sb
+    0.4 0.4
+    exit
+    mappingName
+    back_full
+    exit
+    reparameterize
+    transform which mapping?
+    back_full
+    restrict parameter space
+    set corners
+    0 .5 0 1 0 1
+    exit
+    boundary conditions
+    0 1 0 0 3 0
+    share
+    0 6 0 0 7 0
+    lines
+    6 8 7
+    mappingName
+    back
+    exit
+*
+* ---------------------------------
+* Mapping for the core
+* ---------------------------------
+*
+    Box
+    set corners
+    $core_left_x $core_right_x $core_bottom_y -15  -$core_aft_z $core_aft_z
+    lines
+    *length, height, width
+    $L1 = int($core_L1 * $res);
+    $L2 = int($core_L2 * $res);
+    $L3 = int($core_L3 * $res) + 1;
+    $L1 $L2 $L3
+    boundary conditions
+    0 0 2 0 0 0
+    share
+    0 0 8 0 0 0
+    mappingName
+    cylinderCore
+    exit
+*
+* ---------------------------------
+* Mapping for the basin
+* ---------------------------------
+*
+    Cylinder
+    orientation
+    0 2 1
+    bounds on the radial variable
+    $bsn_in_radius $bsn_out_radius
+    bounds on the axial variable
+    $bsn_depth 0
+    exit
+    rotate/scale/shift
+    rotate
+    90 1
+    0 0 0
+    mappingName
+    cylinder-out
+    exit
+    reparameterize
+    transform which mapping?
+    cylinder-out
+    restrict parameter space
+    set corners
+    0 1 0 1 0 1
+    exit
+    boundary conditions
+    -1 -1 2 1 0 4
+    share
+    0 0 8 6 0 0
+    lines
+    * circumferential, vertical, radial
+    $L1 = int($bsn_L1 * $res) + 1;
+    $L2 = int($bsn_L2 * $res);
+    $L3 = int($bsn_L3 * $res);
+    $L1 $L2 $L3
+    mappingName
+    basin
+    exit
+*
+* Grid Stretching ************************************************************
+*
+*
+    stretch coordinates
+    transform which mapping?
+    basin
+    stretch
+    ** radially **
+    specify stretching along axis=2
+    layers
+    1
+    $bsn_s20 = $bsn_str_2[0];
+    $bsn_s21 = $bsn_str_2[1];
+    $bsn_s22 = $bsn_str_2[2];
+    $bsn_s20 $bsn_s21 $bsn_s22
+    exit
+    ** vertically **
+    specify stretching along axis=1
+    layers
+    1
+    $bsn_s10 = $bsn_str_1[0];
+    $bsn_s11 = $bsn_str_1[1];
+    $bsn_s12 = $bsn_str_1[2];
+    $bsn_s10 $bsn_s11 $bsn_s12
+    exit
+    ** circumfrentially **	
+    specify stretching along axis=0
+    layers
+    1
+    $bsn_s00 = $bsn_str_0[0];
+    $bsn_s01 = $bsn_str_0[1];
+    $bsn_s02 = $bsn_str_0[2];
+    $bsn_s00 $bsn_s01 $bsn_s02
+    exit
+    exit
+    mappingName
+    str-basin
+    exit
+*
+    stretch coordinates
+    transform which mapping?
+    cylinderCore
+    stretch
+    ** vertically **
+    specify stretching along axis=1
+    layers
+    1
+    5 2  1
+    exit
+    exit
+    mappingName
+    str-core
+    exit
+*
+    stretch coordinates
+    transform which mapping?
+    cylinder-half
+    stretch
+    specify stretching along axis=2
+    layers
+    1
+    1 1 0
+    exit  
+    exit
+    mappingName
+    str-cylinder
+    exit
+*
+    stretch coordinates
+    transform which mapping?
+    back
+    stretch
+    specify stretching along axis=2
+    layers
+    1
+    1 1 0
+    exit
+    exit
+    mappingName
+    str-back
+    exit
+*
+    stretch coordinates
+    transform which mapping?
+    front
+    stretch
+    specify stretching along axis=2
+    layers
+    1
+    1 1 0
+    exit
+    exit
+    mappingName
+    str-front
+    exit
+    exit
+*
+*
+generate an overlapping grid
+  str-basin
+  str-cylinder
+  str-front
+  str-back
+  str-core
+  done
+    change parameters
+    interpolation type
+    implicit for all grids
+    order of accuracy 
+    fourth order
+    ghost points
+    all
+    2 2 2 2 2 2
+    exit
+    compute overlap
+    exit    
+    save an overlapping grid
+    test_grid.hdf
+    exit
+exit    

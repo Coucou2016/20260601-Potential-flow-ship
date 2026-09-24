@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Python Vehicle Simulator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/index_style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/python.css">
+<link rel="shortcut icon" href="/figs/fossen-favicon.ico">
+
+<body>
+
+<!------------------------------------------------------------------------------------->
+<!-- Header -->
+<!------------------------------------------------------------------------------------->
+<header class="w3-container w3-light-green w3-padding">
+  <div style="font-familiy:Tahoma;font-weight:Bold; font-size:30px">
+    Python Vehicle Simulator</div>
+</header>
+
+<!------------------------------------------------------------------------------------->
+<!-- Navigation -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-hide-small">
+  <style type="text/css"> 
+  @media print {
+    .noprint {display:none;}
+  }       
+</style>
+
+<!------------------------------------------------------------------------------------->
+<!-- Navigation -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-bar w3-black noprint">
+
+  <a href="/" class="w3-bar-item w3-button w3-green">Home</a>
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Publications</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/publications/" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-database" aria-hidden="true"></i> Publication database (MySQL)</a>
+      <a href="https://www.amazon.com/author/fossen" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-amazon" aria-hidden="true"></i>mazon.com author page</a>        
+      <a href="https://scholar.google.com/citations?user=Sn8fzegAAAAJ&hl=en" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-google" aria-hidden="true"></i>oogle scholar</a>      
+<!--      <a href="/publications/pdf/Fossen Publications.pdf" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Printable publication list</a>
+-->          
+    </div>  
+  </div> 
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Research</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/php/research/attitude.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Attitude control and estimation</a>  
+      <a href="/php/research/cybersecurity.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Cybersecurity of autonomous vehicles</a>
+      <a href="/html/marineCraftModel.html" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Fossen's marine craft model</a>
+      <a href="/php/research/path_following.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Guidance Systems for path following</a>              
+      <a href="/php/research/sea_state_estimation.php" class="w3-bar-item w3-button"><i class="fa fa-hashtag" aria-hidden="true"></i> Sea-state estimation</a>
+      <a href="#" class="w3-bar-item w3-button">....more to come</a>        
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Teaching</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://www.ntnu.edu/studies/courses/TTK4190" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> TTK4109 Guidance, Navigation and Control of Marine Craft, Aircraft and Drones</a>       
+      <a href="https://www.ntnu.edu/studies/courses/TK8109" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> TK8109 Advanced Guidance, Navigation and Control Systems</a>  
+    </div>
+  </div> 
+
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">Lecture Material</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://github.com/cybergalactic/FossenHandbook" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> Lecture Notes for Fossen’s Handbook of Marine Craft Hydrodynamics and Motion Control</a>
+      <a href="/html/marineCraftModel.html" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> Mathematical Description of Fossen's Marine Craft Model</a>      
+       <a href="https://drive.google.com/file/d/1ETAf6KjlEDPyxzujcPyctGHI9wNHcLbl/view?usp=sharing" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-book" aria-hidden="true"></i> Workshop Lecture on 2-D and 3-D Line-of-Sight Guidance Laws for Path Following</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover w3-mobile"><button class="w3-button">Students</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/php/PhD.php" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i> PhD graduates</a>
+      <a href="/php/MSc.php" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i> MSc graduates</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">Software on GitHub</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+     <a href="/MSS/" class="w3-bar-item w3-button w3-mobile"> 
+      <i class="fa fa-github-square" aria-hidden="true"></i> Marine Systems Simulator (MSS)</a>
+      <a href="/pythonVehicleSim/" class="w3-bar-item w3-button w3-mobile"> <i class="fa fa-github-square" aria-hidden="true"></i> Python Vehicle Simulator</a>
+    </div>  
+  </div> 
+<!--
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">GitHub</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://github.com/cybergalactic/MSS" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> cybergalactic/MSS</a>
+      <a href="https://github.com/cybergalactic/PythonVehicleSimulator" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> cybergalactic/PythonVehicleSimulator</a>
+      <a href="https://github.com/pettsol/CryptoToolbox" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> pettsol/CryptoToolbox</a>  
+      <a href="https://github.com/oysteinvolden/Real-time-sensor-encryption" class="w3-bar-item w3-button w3-mobile">
+        <i class="fa fa-github-square" aria-hidden="true"></i> oysteinvolden/Real-time-sensor-encryption</a>             
+    </div>  
+  </div>   
+ -->
+  <a href="/php/recognitions.php" class="w3-bar-item w3-button w3-mobile">Recognitions</a> 
+ <!-- <a href="/php/patents.php" class="w3-bar-item w3-button w3-mobile">Patents</a>   -->  
+  <a href="/php/appointments.php" class="w3-bar-item w3-button w3-mobile">Appointments</a>  
+
+<!--
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">Labs</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="https://www.ntnu.edu/aur-lab" class="w3-bar-item w3-button w3-mobile">
+        AUR-Lab</a>
+      <a href="https://www.ntnu.edu/imt/lab/cybernetics" class="w3-bar-item w3-button w3-mobile">
+        MC-Lab</a>  
+      <a href="https://www.itk.ntnu.no/english/lab/unmanned" class="w3-bar-item w3-button w3-mobile">
+        UAV-Lab</a>   
+      <a href="https://www.ntnu.edu/smallsat" class="w3-bar-item w3-button w3-mobile">
+        Small Satellite Lab</a>              
+      <a href="https://www.ntnu.edu/oceans/gunnerus" class="w3-bar-item w3-button w3-mobile">
+        Research Vessel</a>              
+    </div>  
+  </div>  
+ -->
+
+  <a href="/html/addressCard.html" class="w3-bar-item w3-button w3-mobile">
+    <i class="fa fa-address-card fa-lg" aria-hidden="true"></i></a>
+  
+  <!--
+  <a href="mailto:&#116;hor.&#102;ossen@ntnu.no" class="w3-bar-item w3-button w3-mobile">
+    <i class="fa fa-envelope fa-lg"></i></a>
+ -->
+
+  <a href="https://use.mazemap.com/#v=1&config=ntnu&zlevel=3&center=10.399500,63.418349&zoom=18&sharepoitype=poi&sharepoi=1000306780&campusid=1" class="w3-bar-item w3-button w3-mobile"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+
+</div>
+</div>
+
+<!------------------------------------------------------------------------------------->
+<!-- Top -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-row w3-padding-small">  
+
+  <!-- Column1 --> 
+
+  <div class="w3-half w3-padding-small">
+
+    <p>
+      The Python Vehicle Simulator is a supplementary Python implementation of the Matlab and GNU Octave scripts in the VESSELS catalogue of the <a class=txt href="https://github.com/cybergalactic/MSS">MSS toolbox</a>. The library also contains guidance, navigation, and control (GNC) blocks for time-domain simulation. The software can be downloaded from:
+    </p>
+    <p class="indented-text">
+      <i class="fa fa-github-square" aria-hidden="true"></i><b> GitHub Repository:</b>
+      <a class=txt href="https://github.com/cybergalactic/PythonVehicleSimulator">https://github.com/cybergalactic/PythonVehicleSimulator</a> 
+    </p>
+    <p>
+    <p>
+      Hydrodynamic modelling and the GNC algorithms are described in:
+    </p>  
+    <p class="indented-text">
+      <b> T. I. Fossen (2021)</b>. <a class=txt href="https://www.fossen.biz/wiley/">Handbook of Marine Craft Hydrodynamics and Motion Control</a>, 2nd Edition, John Wiley & Sons, Chichester, UK.
+    </p>
+    <p> 
+      The different vehicles are defined as Python "objects" with "methods" for feedback control. For instance, the Remus 100 AUV is specified by choosing option #9 from the commad line interface shown below. 
+    </p>
+    <div class="w3-row w3-padding" align="center">
+      <img src="figs/remus100.jpg" class="responsive" width="70%">
+    </div> 
+    <p> 
+      The picture shows the Remus 100 Autonomous Underwater Vehicle (AUV) of the <a class=txt href="https://www.ntnu.edu/aur-lab/auv-remus-100">NTNU AUR-lab</a>. The length of the vehicle is 1.9 m, the cylinder diameter is 19 cm and the mass of the vehicle is 31.9 kg. The maximum speed of 2.5 m/s is obtained when the propeller runs at 1525 RPM in zero currents.
+    </p> 
+  </div>
+
+  <!-- Column2 -->
+
+  <div class="w3-half w3-padding">
+    <div align="center">
+      <img src="figs/3D_animation.gif" class="responsive" width="110%">
+      <figcaption>
+          The animated GIF file "3D_animation.gif".
+        </figcaption>
+      </div> 
+  </div>	
+
+</div>
+
+<!------------------------------------------------------------------------------------->
+<!-- Middle -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-row w3-padding-small">    
+  
+  <div align="left" class="w3-padding-small">
+    <img src="figs/spyder.png" class="responsive" width="100%">    
+  </div>  
+  
+ <div class="w3-row w3-padding-small"> 
+    The Python code for the constrcutor and main simulation loop are shown below (see <a style="color:red">main.py</a> and <a style="color:red">remus100.py</a> for more details). The constructor, vehicle = remus100('depthHeadingAutopilot',30,50,1525,0.5,170), defines the Remus 100 AUV with a heading and depth autopilot. The setpoints (constructor arguments) are 50 degrees in yaw and 30 m depth. The propeller revolution is chosen as 1525 rpm. The AUV is exposed for an ocean current of speed 0.5 m/s and direction 170 deg. The vehicle's state plots below confirm that the autopilots achieve their control objectives.
+  </div>
+		
+<div class="w3-row w3-padding-small">    
+  
+  <div align="left" class="w3-half w3-padding-small">
+    <img src="figs/GUI_main.png" class="responsive" width="70%">  
+  </div>  
+<!--
+    <pre style="pre code"><code id="python_code">
+vehicle = remus100('depthHeadingAutopilot',30,50,1525,0.5,170) 
+
+def main():    # Main simulation loop
+    
+    [simTime, simData] = simulate(N, sampleTime, vehicle)
+    
+    plotVehicleStates(simTime, simData, 1)                    
+    plotControls(simTime, simData, vehicle, 2)
+    plot3D(simData, numDataPoints, FPS, filename, 3)   
+    
+    webbrowser.get(browser).open_new_tab('file://' 
+      + os.path.abspath(filename))
+    
+    plt.show()
+    plt.close()
+
+main()
+    </code></pre>
+
+
+  <div align="left" class="w3-half w3-padding-small">
+    <img src="pythonVehicleSim/GUI_remus100.png" class="responsive" width="60%"> 
+  </div>   
+         
+    <pre style="pre code"><code id="python_code">
+# Python vehicle constructor:      
+remus100('depthHeadingAutopilot',z_d,psi_d,n_d,V_c,beta_c)
+
+z_d:    desired depth (m), positive downwards
+psi_d:  desired yaw angle (deg)
+n_d:    desired propeller revolution (rpm)
+V_c:    current speed (m/s)
+beta_c: current direction (deg)
+    </code></pre>
+-->    
+
+</div>
+
+<div class="w3-row w3-padding-small"> 
+  The main simulation loop is used to generate time series. The results are plotted as three figures numbered 1-3 using the functions plotVehicleStates(simTime, simData, 1), plotControls(simTime, simData, vehicle, 2) and plot3D(simData, numDataPoints, FPS, filename, 3). In addition, a 3D animated GIF file is generated. The GIF file can be opended manually in a web browser by right-clicking the file or automatically by adding webbrowser.get(browser).open_new_tab('file://' + os.path.abspath(filename)) to the main loop.
+</div>
+
+<!------------------------------------------------------------------------------------->
+<!-- Bottom -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-row">		
+	
+  <div class="w3-half w3-padding-small">
+    <div align="center">
+      <img src="figs/fig2.png" class="responsive" width="100%">
+    </div> 
+  </div>	
+  <div class="w3-half w3-padding-small">
+    <div align="center">
+        <img src="figs/fig3.png" class="responsive" width="100%">
+    </div> 
+  </div>
+</div>
+
+
+<!------------------------------------------------------------------------------------->
+<!-- Footer -->
+<!------------------------------------------------------------------------------------->
+<div class="w3-row-padding w3-light-green w3-mobile">
+
+	<center>
+		<span>
+  		Copyright &copy; Thor I. Fossen <br>
+  		Last updated: 16 June 2024		</span>
+	</center>    
+
+</div>
+<!------------------------------------------------------------------------------------->
+
+</body>
+</html> 

@@ -1,0 +1,98 @@
+    *
+    *
+    read rap model
+    cleanedWhole.hdf
+    builder
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                SURFACE GRID "HULL"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    create surface grid      
+    edge curve tolerance 0.000000001
+    set view:0 0.0127234 0.00702238 0 1.98991 0.642788 -0.262003 0.719846 0.766044 0.219846 -0.604023 -1.0631e-16 0.939693 0.34202
+      choose edge curve 219 2.542122e-14 -1.610008e+01 -6.713396e+00 
+      choose edge curve 203 7.235965e-15 -6.616016e+00 -1.200000e+01 
+      choose edge curve 64 7.251203e-15 6.983572e+00 -1.200000e+01
+      choose edge curve 85 2.542671e-14 1.610008e+01 -6.713396e+00
+    done
+    pause
+    uniform dissipation 1
+    forward and backward
+    lines to march 350 350
+    distance to march 81 80
+    points on initial curve 950
+    equidistribution 0.5
+    generate
+      smoothing...
+      *GSM:number of elliptic smooths 3
+      GSM:project smoothed grid onto reference surface 0
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      GSM:smooth grid
+      close smoothing options
+    pause
+    lines
+    150 150
+    *post stretching...
+    *GST:pick to stretch
+    *stretch r2 1 1 5  1   (id,weight,exponent,position)
+    *stretch r2 2 1 5  0   (id,weight,exponent,position)
+    *exit
+    *GST:stretch grid
+    *close post stretching options
+    pause
+    exit   
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                 VOLUME GRID "HULL"
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    create volume grid...
+    forward
+    distance to march 48
+    lines to march 100
+    BC: left  fix z, float x and y
+    BC: right fix z, float x and y
+    volume smooths 100
+    geometric stretching, specified ratio
+    1.02
+    apply boundary conditions to start curve 1 
+    generate
+    *evaluate as nurbs 1
+    *degree of nurbs 3
+    name HULL
+    *boundary offset 0 0 0 0 6 6 (l r b t b f)
+    boundary conditions
+    1 1 0 0 3 0
+    plot ghost points 1 
+    ghost lines to plot: 2
+    pause
+    close plot options
+    exit
+    *
+    * ------------------------------------------------------------------------------------------------------------
+    * 
+    *                                                       VIEW AND SAVE
+    * 
+    * ------------------------------------------------------------------------------------------------------------
+    *
+    colour boundaries by BC number
+    plot reference surface 0
+    plot volume grids 1
+    plot surface grids 1
+    plot shaded on reference surface 0
+    pause
+    save grids to a file...
+    file name: HYPED_HULL.hdf
+    save file
+    exit 
+    exit
+    exit
+    

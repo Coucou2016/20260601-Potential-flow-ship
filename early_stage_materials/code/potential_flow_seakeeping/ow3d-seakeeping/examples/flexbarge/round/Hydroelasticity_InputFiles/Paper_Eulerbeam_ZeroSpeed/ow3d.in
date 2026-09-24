@@ -1,0 +1,24 @@
+The input file for Prism_Barge
+name: FleBarge_3578910
+sped: 0
+base: 
+idif: 1
+irad: 1
+ires: 0
+mode: 0 0 1 0 1 0 4
+drif: 0
+cour: 0.5
+time: 10
+beta: 180
+grid: fbarge.hdf
+gdim: 3
+symx: 1
+rotc: 0 0.008 0
+grac: 0 0 0
+grav: 9.81
+ulen: 10
+solv: di
+fftz: 80
+psho: 0
+elvo: 0
+orat: 1

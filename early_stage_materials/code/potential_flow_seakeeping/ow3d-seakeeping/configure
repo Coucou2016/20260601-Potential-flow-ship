@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# ====================================================================
+# Check if Overture library exists
+# ====================================================================
+if [[ ! -f $Overture/lib/libOverture.so ]]; then
+	echo -e "\e[0;40;1;31m Error. Overture library is not built. \e[0m"
+	exit
+else
+	printf "%30s %-10s\n" "Overture directory :" "$Overture/lib"
+fi
+# ====================================================================
+# Check if PETSC variables are defined
+# ====================================================================
+if [[ ! -f $PETSC_DIR/$PETSC_ARCH/lib/libpetsc.so ]]; then
+	echo -e "\e[0;40;1;31m Error. PETSC library is not built. \e[0m"
+	exit
+else
+	printf "%30s %-10s\n" "PETSC libraries :" "$PETSC_DIR/$PETSC_ARCH/lib"
+fi
+# ====================================================================
+# Check if GSL variables are defined
+# ====================================================================
+if [[ ! -f $GSL_DIR/lib/libgsl.so ]]; then
+	echo -e "\e[0;40;1;31m Error. GSL_DIR is not built. \e[0m"
+	exit
+else
+	printf "%30s %-10s\n" "GSL libraries :" "$GSL_DIR/lib"
+fi
+# ====================================================================
+# Check if OW3D_DIR is defined
+# ====================================================================
+if [[ ! -d $OW3D_DIR ]]; then
+	echo -e "\e[0;40;1;31m Error. OW3D_DIR is not defined. \e[0m"
+	exit
+else
+	printf "%30s %-10s\n" "OW3DSeakeeping directory :" "$OW3D_DIR"
+fi
+# ====================================================================
+# Check gcc version
+# ====================================================================
+gcc_version=$(gcc --version | awk '/gcc/{print $3+0}')
+if [ "$(echo $gcc_version '<' 9 | bc -l)" = 1 ]; then
+echo -e "\e[0;40;1;31m Error. Use a gcc version higher than 9. The selected version is $gcc_version. \e[0m"
+exit
+else
+printf "%30s %-10s\n" "gcc version :" "$gcc_version"
+fi
+# ====================================================================
+# Create Makefile for ow3dt
+# ====================================================================
+cd ${OW3D_DIR}/ow3dt
+cat ${OW3D_DIR}/utility/MakeDefs.linux > Makefile
+cat ${OW3D_DIR}/utility/Makefile.in >> Makefile
+cat Makefile.in >> Makefile
+# ====================================================================
+# Create Makefile for ow3df
+# ====================================================================
+cd ${OW3D_DIR}/ow3df
+cat ${OW3D_DIR}/utility/MakeDefs.linux > Makefile
+cat ${OW3D_DIR}/utility/Makefile.in >> Makefile
+cat Makefile.in >> Makefile
+# ====================================================================
+# Create Makefile for whole package
+# ====================================================================
+cd ${OW3D_DIR}
+echo ".PHONY: all" > Makefile
+echo "all:" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/ow3df; \$(MAKE)" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/ow3dt; \$(MAKE)" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/verify/src; \$(MAKE)" >> Makefile
+echo -e '\t'"@echo =======================================================================" >> Makefile
+echo -e '\t'"@echo \"Now type make check to run some of the tests in the verify folder.\"" >> Makefile
+echo -e '\t'"@echo =======================================================================" >> Makefile
+cd ${OW3D_DIR}
+echo ".PHONY: clean" >> Makefile
+echo "clean:" >> Makefile
+echo -e '\t'rm -rf Makefile >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/ow3df; \$(MAKE) clean" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/ow3dt; \$(MAKE) clean" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/verify/src; \$(MAKE) clean" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/ow3dt; rm -f Makefile" >> Makefile
+echo -e '\t'"@cd \${OW3D_DIR}/ow3df; rm -f Makefile" >> Makefile
+cd ${OW3D_DIR}
+echo ".PHONY: check" >> Makefile
+echo "check:" >> Makefile
+echo -e '\t'"@cd verify;./run_tests.sh -ow3d" >> Makefile
+echo "=============================================================================="
+echo "Type make to build OW3DSeakeeping package."
+echo "As an option, use make -j8 to build the package for example by 8 processors."
+echo "=============================================================================="

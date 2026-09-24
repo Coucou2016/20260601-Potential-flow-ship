@@ -1,0 +1,8 @@
+#!/bin/bash
+
+$Overture/bin/rap -noplot Wigley_rap_noplot
+$Overture/bin/mbuilder -noplot Wigley_aft_hype_noplot
+$Overture/bin/mbuilder -noplot Wigley_fore_hype_noplot
+$Overture/bin/mbuilder -noplot Wigley_ms_hype_noplot
+$Overture/bin/ogen -noplot Wigley_overlap_noplot
+

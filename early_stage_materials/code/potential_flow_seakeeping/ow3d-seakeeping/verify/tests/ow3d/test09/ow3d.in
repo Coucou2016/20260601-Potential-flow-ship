@@ -1,0 +1,22 @@
+The input file for test09
+name: test09
+sped: 0.15
+base: db
+idif: 1
+irad: 1
+ires: 0
+mode: 1 1 1 1 1 1 2
+drif: 0
+cour: 1
+time: 4
+beta: 130
+grid: test_grid.hdf
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grac: 0 0 0
+grav: 9.81
+ulen: 10
+solv: di
+fftz: 10
+orat: 1

@@ -1,0 +1,22 @@
+The input file for test13 (triangulation integration)
+name: test13
+sped: 0.05
+base: db
+idif: 1
+irad: 1
+ires: 0
+mode: 1 0 1 0 1 0
+drif: 1
+cour: 1
+time: 2
+beta: 155
+grid: test_grid
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grac: 0 0 0
+grav: 9.81
+ulen: 12
+solv: di
+fftz: 5
+orat: 1

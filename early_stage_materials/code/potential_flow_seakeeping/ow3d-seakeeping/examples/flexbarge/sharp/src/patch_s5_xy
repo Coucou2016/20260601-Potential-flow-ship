@@ -1,0 +1,43 @@
+*
+* Rap command file
+*
+new/append model
+filename patch_s5_xy.igs
+all mappings
+read file
+x-r:0 45
+y-r:0 45
+z-r:0 45
+bigger:0
+bigger:0
+bigger:0
+heal model
+HEAL:plot grid lines on boundaries (3D) toggle 1
+set view:0 0.073437 0.0423894 0 1.37156 1 0 0 0 1 0 0 0 1
+#pause
+close
+* Build the connectivity and a global triangulation
+topology
+merge tolerance 0.01
+split tolerance factor 0.5
+deltaS 0.01
+maximum area 0.00004
+build edge curves 
+merge edge curves 
+* the connectivity is determined
+#pause
+*
+* triangulate
+*
+triangulate
+* global triangulation
+#pause
+exit
+*
+* Save the  hull
+*
+save model
+../patches/s5_xy.hdf
+* model has been saved
+#pause
+exit

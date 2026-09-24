@@ -1,0 +1,39 @@
+* 
+* Rap command file
+* For barge aft part
+*
+new/append model 
+filename Wigley.igs
+all mappings
+read file
+heal model
+HEAL:plot grid lines on boundaries (3D) toggle 1 
+set view:0 -0.0701956 -0.10702 0 2.01283 0.642788 -0.383022 0.663414 0.766044 0.321394 -0.55667 -1.0631e-16 0.866025 0.5
+pause
+close
+*
+* Build the connectivity and a global triangulation
+*
+topology
+merge tolerance 0.0009
+split tolerance factor 0.001
+maximum area 0.00001
+deltaS 0.001
+build edge curves 
+merge edge curves    
+* the connectivity is determined
+pause
+*
+* triangulate
+*
+triangulate
+* global triangulation
+pause
+exit
+*
+* Save the  hull
+*
+save model
+Wigley_rap_out.hdf
+* model has been saved
+exit

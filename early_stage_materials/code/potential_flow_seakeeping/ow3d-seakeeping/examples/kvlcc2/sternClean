@@ -1,0 +1,29 @@
+* 
+* Rap command file 
+* 
+new/append model 
+filename kvlcc2_stern.igs 
+all mappings 
+read file
+heal model 
+HEAL:plot grid lines on boundaries (3D) toggle 1 
+*pause 
+*HEAL:selection function Delete Surface
+close
+set view:0 -0.0731632 -0.0451945 0 4.30446 -0.173648 -0.17101 -0.969846 -0.984808 0.0301537 0.17101 1.3667e-16 0.984808 -0.173648
+x+:0
+pause
+topology
+merge tolerance 0.022
+maximum area 0.01
+deltaS 0.055
+split tolerance factor 1
+build edge curves
+merge edge curves
+pause
+compute topology	
+pause
+exit
+save model
+cleanedStern.hdf
+exit

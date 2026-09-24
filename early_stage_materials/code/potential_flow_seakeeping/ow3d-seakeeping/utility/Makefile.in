@@ -1,0 +1,57 @@
+# =========================================================================================
+# Define utility sources
+# =========================================================================================
+SOLVER_SRC = Solver.cpp buildEquationSolvers.cpp PETScEquationSolver.cpp
+BASEFLOW_SRC = Baseflow.cpp BuildBaseflowSystemMatrix_.cpp BuildBaseflowSystemRight_.cpp CheckDoublebodyBoundaryCondition_.cpp \
+ComputeBaseDerivativesOnSurface_.cpp ComputeBaseflowElevationDerivatives_.cpp ComputeDoublebodyElevation_.cpp ComputeDoublebodyForces_.cpp ComputeMTerms_.cpp\
+CylinderDoublebody.cpp ExtractBaseflowData.cpp FindDoublebodyElevation_.cpp Findroot_.cpp Polcoe_.cpp Poleval_.cpp PrintAnalyticalDoublebody_.cpp\
+PrintBaseFlowDerivatives_.cpp PrintBaseFlowDerivativesBody_.cpp PrintBaseFlowElevation_.cpp PrintDoubleBodyForces_.cpp PrintMTerms_.cpp SphereDoublebody.cpp\
+SearchElevation_0_1_2_.cpp SearchElevation_0_2_1_.cpp SearchElevation_1_2_0_.cpp ComputeActBodyVelocities_.cpp ComputeForwardSpeedHydrostatics_.cpp
+GRID_SRC = Grid.cpp ComputeGModeShape_.cpp ComputeHydrostatics.cpp ComputeSymmetryCoefficients_.cpp ExtractBoundariesData_.cpp ExtractBoundaryData_.cpp\
+ExtractBoundaryOutline_.cpp ExtractDiscRanges_.cpp ExtractGridData_.cpp ExtractLiftedVerticalCoordinates_.cpp ExtractSurfaceFundamentals_.cpp\
+ExtractWaterlineData_.cpp FindBodyGeometry.cpp FindBodySurfaceType_.cpp FindFreeSurfaceType_.cpp FindShortest.cpp FindWallAndBodyCoordinates_.cpp\
+PrintBoundariesData_.cpp PrintGridFeatures.cpp PrintGridHydrostatics_.cpp PrintSymmetryCoefficients_.cpp PrintWallAndBodyCoordinates_.cpp PrintWaterlineData_.cpp\
+BuildTriangulationData_.cpp FDInterpolate2DWLS_.cpp GaussianIntegration2DWLSSetUp_.cpp GLTree.cpp ComputeGridSpacings_.cpp CheckPatchInterpolations_.cpp\
+PrintOW3DDerivatives.cpp PrintPatchInterpolations_.cpp PrintDiskRanges_.cpp PrintLaplacianErrors.cpp SetManufacturedSolution_.cpp
+INPUT_SRC = Input.cpp ExtractRunPacks_.cpp PrintUserData_.cpp
+DATASTRUCT_SRC = Comperrf.cpp ComplexArray.cpp ComplexNumbers.cpp Faddeeva.cpp VRealArrays.cpp
+FDOPER_SRC = CalculateCoefficients.cpp CalculateFirstCoefficients.cpp Compute1DDerivatives.cpp ComputeSurfaceDerivatives.cpp InterpolatePointsOnAGrid_OW3D.cpp\
+DefineOperators.cpp FdAllCoefficients.cpp FdCf.cpp FdCoefficients.cpp GetIntegratorOverBody.cpp IntegrateLineData.cpp SetFreeSurfaceGhostPoints.cpp\
+ComputeIntegralByTriangulation.cpp ComputeSurfaceIntegral.cpp ExtrapolateSurfaceBoundaries.cpp LagrangeInterpolation.cpp
+FILEOPER_SRC = DoubleToString.cpp AddDotsForTwoDigitsModes.cpp GetTimeString.cpp OverrideResults.cpp PrintLogMessage.cpp\
+PrintSurfaceDerivatives.cpp PrintGslStructures.cpp GetColoredMessage.cpp
+DIFRACT_SRC = FSK0limFunction.cpp FSK01Function.cpp FSK02Function.cpp FSK03Function.cpp GetFSK0lim.cpp GetFSK01.cpp IncidentWaveFunctions.cpp\
+GetFSK02.cpp GetFSK03.cpp Wavenumber.cpp Dispersion.cpp
+OW3DCTE_SRC = OW3DConstants.cpp
+FILTER_SRC = Filter.cpp ApplyFilter.cpp BuildFilters_.cpp Filter_0_1_.cpp Filter_0_2_.cpp Filter_1_2_.cpp LUdcmp.cpp Savgol.cpp
+SOLVER_FULL = $(addprefix $(OW3D_DIR)/utility/solver/,$(SOLVER_SRC))
+BASEFLOW_FULL = $(addprefix $(OW3D_DIR)/utility/baseflow/,$(BASEFLOW_SRC))
+GRID_FULL = $(addprefix $(OW3D_DIR)/utility/grid/,$(GRID_SRC))
+INPUT_FULL = $(addprefix $(OW3D_DIR)/utility/input/,$(INPUT_SRC))
+DATASTRUCT_FULL = $(addprefix $(OW3D_DIR)/utility/datastruct/,$(DATASTRUCT_SRC))
+FDOPER_FULL = $(addprefix $(OW3D_DIR)/utility/fdoper/,$(FDOPER_SRC))
+FILEOPER_FULL = $(addprefix $(OW3D_DIR)/utility/fileoper/,$(FILEOPER_SRC))
+OW3DCTE_FULL = $(addprefix $(OW3D_DIR)/utility/ow3dutils/,$(OW3DCTE_SRC))
+DIFRACT_FULL = $(addprefix $(OW3D_DIR)/utility/difract/,$(DIFRACT_SRC))
+FILTER_FULL = $(addprefix $(OW3D_DIR)/utility/filter/,$(FILTER_SRC))
+UTIL_SRC = $(BASEFLOW_FULL) $(GRID_FULL) $(INPUT_FULL) $(DATASTRUCT_FULL) $(FDOPER_FULL) $(FILEOPER_FULL) $(OW3DCTE_FULL) $(SOLVER_FULL) $(DIFRACT_FULL) $(FILTER_FULL)
+
+# The fortran source files
+FORTRAN_SRC = $(OW3D_DIR)/utility/baseflow/actdisc/bspline.f90 $(OW3D_DIR)/utility/baseflow/actdisc/kvlcc2_prop.f90
+
+# Set the compiler options.
+
+COMPILE.cpp = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) $(CCFLAGS) -c -std=c++17 -g  -Wall -Wshadow -DOVERTURE_USE_PETSC #-DBOUNDS_CHECK
+COMPILE.frt = gfortran -c -J $(OW3D_DIR)/utility/baseflow/actdisc
+
+# Set the linker options.
+
+LINK.deps = $(CXX) $(LDFLAGS) $(TARGET_ARCH) $(CCFLAGS)
+
+# Define the pattern rule for making .$(depsfolder) files from .cpp files.
+
+%.o: %.f90
+	$(COMPILE.frt) -o $@ $<
+
+%.o: %.cpp
+	$(COMPILE.cpp) -o $@ $<

@@ -1,0 +1,78 @@
+*
+*
+read rap model
+Wigley_rap_out.hdf
+builder
+* 
+* ------------------------------------------------------------------------------------------------------------
+* 
+*                                                SURFACE GRID "HULL"
+* 
+* ------------------------------------------------------------------------------------------------------------
+create surface grid    
+edge curve tolerance 0.001 
+     set view:0 0.0351251 0.0202963 0 1.98716 0.766044 -0.321394 0.55667 0.642788 0.383022 -0.663414 -8.92047e-17 0.866025 0.5
+     smaller:0
+      choose edge curve 24 9.089574e-16 1.196806e-01 -1.061815e-01 
+      choose edge curve 27 -6.465727e-06 2.734958e-04 -1.249583e-01
+      choose edge curve 31 -1.284251e-15 -1.190453e-01 -1.064173e-01
+done
+#pause
+uniform dissipation 4
+forward and backward
+lines to march 100 100
+*lines to march 50 50
+distance to march 0.85 0.85
+*BC: left fix y, float x and z
+points on initial curve 150
+*points on initial curve 65
+equidistribution 0.5 (in [0,1])
+generate
+lines
+150 450
+#pause
+exit
+* 
+* ------------------------------------------------------------------------------------------------------------
+* 
+*                                                 VOLUME GRID "HULL"
+* 
+* ------------------------------------------------------------------------------------------------------------
+* 
+create volume grid...
+backward
+distance to march 0.5
+lines to march 159
+BC: left  fix z, float x and y
+BC: right fix z, float x and y
+volume smooths 100
+geometric stretching, specified ratio
+1.02
+apply boundary conditions to start curve 1
+generate
+name HULL
+boundary conditions
+1 1 0 0 3 0
+plot ghost points 0 
+close plot options
+#pause
+exit
+*
+* ------------------------------------------------------------------------------------------------------------
+* 
+*                                                       VIEW AND SAVE
+* 
+* ------------------------------------------------------------------------------------------------------------
+*
+colour boundaries by BC number
+plot reference surface 0
+plot volume grids 1
+plot surface grids 1
+plot shaded on reference surface 0
+#pause
+save grids to a file...
+file name: Wigley_ms_hype_out.hdf
+save file
+exit 
+exit
+exit

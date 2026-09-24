@@ -1,0 +1,22 @@
+The input file for wigley
+name: wigley
+sped: 0
+base: 
+idif: 1
+irad: 1
+ires: 0
+mode: 0 0 1 0 1 0 2
+drif: 0
+cour: 0.5
+time: 10
+beta: 180
+grid: wigley.hdf
+gdim: 3
+symx: 1
+rotc: 0 0 0
+grac: 0 0 0
+grav: 9.81
+ulen: 2
+solv: it
+fftz: 80
+orat: 1
