@@ -1,0 +1,28 @@
+# Local conda / Python env (regenerable; contains multi-hundred-MB binaries GitHub rejects)
+early_stage_materials/.conda-mineru/
+
+# Duplicate archive of already-tracked folder (>100MB GitHub hard limit)
+20260717-planningvessel-code.zip
+
+# Nested repo metadata kept locally only (working trees are still committed)
+**/.git_local_backup/
+
+# Python / tooling caches
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
